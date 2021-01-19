@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import styled from 'styled-components'
+import Button from "../stories/Button"
 
 const Title = styled.h1`
   font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
 `
 
-export default function Home() {
+export default function Home({ theme }) {
   return (
     <div>
       <Head>
@@ -17,6 +17,8 @@ export default function Home() {
       <main>
         <Title>My page</Title>
       </main>
+
+      <Button>Botão</Button>
 
       <footer>
         <a

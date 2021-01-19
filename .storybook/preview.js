@@ -1,17 +1,27 @@
-
-
 import React from "react";
-import { ThemeProvider } from 'styled-components';
-import theme from '../theme'
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { resetCss, theme } from '../utils'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 }
 
+const GlobalStyle = createGlobalStyle`
+  {resetCss}
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+`
+
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={theme}>
-      <Story />
-    </ThemeProvider>
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    </>
   ),
 ];
