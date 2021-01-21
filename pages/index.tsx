@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import View from './components/View';
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
+        <View component='p' margin='30px' padding='10px'>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
-        </p>
+        </View>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
