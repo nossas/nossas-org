@@ -1,11 +1,19 @@
 import Head from 'next/head'
-import { Flex } from '@chakra-ui/react';
+import { Button, Flex, Text } from '@chakra-ui/react';
 import styles from '../styles/Home.module.css'
 import View from './components/View';
 import Navbar from './components/Navbar';
+import NextI18n from '../i18n'
 import GoogleFonts from "next-google-fonts";
 
-export default function Home() {
+const { withTranslation, i18n } = NextI18n;
+
+const Home = ({ t }) => {
+
+  const changeLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'pt-BR' ? 'en' : 'pt-BR')
+  }
+
   return (
     <Flex minH='100vh' direction='column'>
       <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bebas+Neue:400,700" />
@@ -16,10 +24,12 @@ export default function Home() {
 
       <Flex as='main' direction='column' flex='1'>
         <Navbar />
-        <View component='p' margin='30px' padding='10px'>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </View>
+        <Flex p={10} m={15} bg='lightblue' alignItems='center' direction='column'>
+          <Text>{t('Welcome')}</Text>
+          <Button onClick={changeLanguage} maxW={200} mt={5}>
+            {t('Change Language')}
+          </Button>
+        </Flex>
       </Flex>
 
       <footer className={styles.footer}>
@@ -35,3 +45,9 @@ export default function Home() {
     </Flex>
   )
 }
+
+Home.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+});
+
+export default withTranslation()(Home);
