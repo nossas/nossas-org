@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { Button, Flex, Text } from '@chakra-ui/react';
 import styles from '../styles/Home.module.css'
-import View from './components/View';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import NextI18n from '../i18n'
 import GoogleFonts from "next-google-fonts";
+import Slider from './components/Slider';
 
 const { withTranslation, i18n } = NextI18n;
 
@@ -30,6 +30,7 @@ const Home = ({ t }) => {
             {t('Change Language')}
           </Button>
         </Flex>
+        <Slider />
       </Flex>
 
       <footer className={styles.footer}>
