@@ -13,7 +13,7 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import { withTranslation } from "../../../i18n";
+import { withTranslation } from "../../i18n";
 
 const Footer = ({ t }) => {
   return (

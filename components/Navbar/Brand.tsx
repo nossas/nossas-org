@@ -31,6 +31,6 @@ const Brand = () => {
       </defs>
     </svg>
   );
-}
+};
 
 export default Brand;

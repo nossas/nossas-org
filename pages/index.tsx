@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { Button, Container, Flex, Text } from "@chakra-ui/react";
-import styles from "../styles/Home.module.css";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import NextI18n from "../i18n";
 import GoogleFonts from "next-google-fonts";
-import Slider from "./components/Slider";
-import Footer from "./components/Footer";
+import Slider from "../components/Slider";
+import Footer from "../components/Footer";
 
 const { withTranslation, i18n } = NextI18n;
 

@@ -1,13 +1,13 @@
 import React from "react";
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 type Props = {
-  rotate?: '-90deg' | '90deg'
-}
+  rotate?: "-90deg" | "90deg";
+};
 
 const IconSVG = styled.svg<Props>`
-  transform: rotate(${props => props.rotate});
-`
+  transform: rotate(${(props) => props.rotate});
+`;
 
 const Arrow: React.FC<Props> = ({ rotate }) => (
   <IconSVG
