@@ -1,0 +1,21 @@
+{
+  "about": "conoce nossas",
+  "projects": "nuestros proyectos",
+  "work": "que estamos haciendo",
+  "actvist": "sea un activista",
+  "donate": "done ahora",
+  "social": {
+    "title": "SEGUIR EN REDES SOCIALES",
+    "icons": {
+      "instagram": "Logotipo de Instagram",
+      "twitter": "Logotipo de Twitter",
+      "facebook": "Logotipo de Facebook",
+      "linkedin": "Logotipo de Linkedin"
+    }
+  },
+  "newsletter": {
+    "title": "RECIBE NUESTRO BOLETÍN",
+    "placeholder": "Su e-mail",
+    "button": "Guardar"
+  }
+}
