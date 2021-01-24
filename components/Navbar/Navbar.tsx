@@ -3,6 +3,7 @@ import { Button, Flex, Link, Stack, Box } from "@chakra-ui/react";
 import { fallDown as Menu } from "react-burger-menu";
 import { MobileView, BrowserView, isMobile } from "react-device-detect";
 import Brand from "./Brand";
+import { withTranslation } from "../../i18n";
 
 export const LinkStyled = ({ children, ...props }) => (
   <Link color="white" {...props}>
@@ -12,7 +13,7 @@ export const LinkStyled = ({ children, ...props }) => (
 
 const NavbarComponent = ({ children }) => {
   const [open, setOpen] = useState(false);
-  console.log("isMobile", { isMobile });
+
   return (
     <Flex
       bg="nossas.blue"
@@ -21,39 +22,43 @@ const NavbarComponent = ({ children }) => {
       alignItems="center"
       justifyContent="space-between"
     >
-      <MobileView>
-        <Menu
-          pageWrapId="page-wrap"
-          outerContainerId="page-container"
-          isOpen={open}
-          onOpen={() => setOpen(true)}
-          onClose={() => setOpen(false)}
-        >
-          {children}
-        </Menu>
-        <Box pl="41px">
+      {isMobile ? (
+        <>
           <Brand />
-        </Box>
-      </MobileView>
-      <BrowserView>
-        <Brand />
-        <Stack flex="1" justifyContent="center" spacing="10" direction="row">
-          {children}
-        </Stack>
-      </BrowserView>
-      <Button size="md">Doar</Button>
+          <Button size="md">Doar</Button>
+          <Menu
+            pageWrapId="page-wrap"
+            outerContainerId="page-container"
+            isOpen={open}
+            onOpen={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+          >
+            {children}
+          </Menu>
+        </>
+      ) : (
+        <>
+          <Brand />
+          <Stack flex="1" justifyContent="center" spacing="10" direction="row">
+            {children}
+          </Stack>
+          <Button size="md">Doar</Button>
+        </>
+      )}
     </Flex>
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ t }) => {
   return (
     <NavbarComponent>
-      <LinkStyled href="#">Quem somos</LinkStyled>
-      <LinkStyled href="#">Seja um ativista</LinkStyled>
-      <LinkStyled href="#">Acontecendo agora</LinkStyled>
+      <LinkStyled href="#">{t("about")}</LinkStyled>
+      <LinkStyled href="#">{t("projects")}</LinkStyled>
+      <LinkStyled href="#">{t("work")}</LinkStyled>
+      <LinkStyled href="#">{t("actvist")}</LinkStyled>
+      <LinkStyled href="#">{t("donate")}</LinkStyled>
     </NavbarComponent>
   );
 };
 
-export default Navbar;
+export default withTranslation('common')(Navbar);

@@ -1,4 +1,23 @@
 {
   "Welcome": "Welcome to NOSSAS and react-i18next",
-  "Change Language": "Change Language"
+  "Change Language": "Change Language",
+  "about": "about nossas",
+  "projects": "our projects",
+  "work": "our work",
+  "actvist": "be an actvist",
+  "donate": "donate now",
+  "social": {
+    "title": "FOLLOW US",
+    "icons": {
+      "instagram": "Instagram's Logo",
+      "twitter": "Twitter's Logo",
+      "facebook": "Facebook's Logo",
+      "linkedin": "Linkedin's Logo"
+    }
+  },
+  "newsletter": {
+    "title": "SUBSCRIBE TO OUR NEWSLETTER",
+    "placeholder": "Your e-mail",
+    "button": "Save"
+  }
 }

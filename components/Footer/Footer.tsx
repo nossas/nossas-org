@@ -140,4 +140,4 @@ const Footer = ({ t }) => {
   );
 };
 
-export default withTranslation("footer")(Footer);
+export default withTranslation("common")(Footer);

@@ -31,14 +31,14 @@ const Home = ({ t }) => {
           </Flex>
           <Slider />
         </Container>
+        <Footer />
       </Flex>
-      <Footer t={t} />
     </Flex>
   );
 };
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "footer"],
+  namespacesRequired: ["common"],
 });
 
 export default withTranslation()(Home);
