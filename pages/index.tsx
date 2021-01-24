@@ -22,15 +22,9 @@ const Home = ({ t }) => {
       </Head>
       <Flex id="page-container" direction="column" flex="1">
         <Navbar />
-        <Container as="main" id="page-wrap" px={30}>
-          <Flex
-            p={10}
-            m={15}
-            bg="lightblue"
-            alignItems="center"
-            direction="column"
-          >
-            <Text>{t("Welcome")}</Text>
+        <Container as='main' id='page-wrap' flex='1' maxW='none' padding='0'>
+          <Flex p={10} m={15} bg='lightblue' alignItems='center' direction='column'>
+            <Text>{t('Welcome')}</Text>
             <Button onClick={changeLanguage} maxW={200} mt={5}>
               {t("Change Language")}
             </Button>

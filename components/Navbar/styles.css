@@ -18,17 +18,14 @@
 }
 
 /* Background color for burger bars focus state */
-.bm-burger-button {
-  button:focus + span {
-    span.bm-burger-bars {
-      background-color: #c94e50;
-    }
-  }
+.bm-burger-button button:focus + span span.bm-burger-bars{
+  background-color: #c94e50;
 }
 
 .bm-burger-bars {
   background: #fff;
   height: 3px !important;
+  opacity: 1 !important;
 }
 
 .bm-morph-shape {
@@ -37,24 +34,34 @@
 
 .bm-menu {
   background: var(--blue);
+}
 
-  a {
-    color: #b8b7ad;
+.bm-menu a {
+  color: #b8b7ad;
+}
+  
+.bm-menu a:hover,
+.bm-menu a:focus {
+  color: #c94e50;
+}
 
-    &:hover,
-    &:focus {
-      color: #c94e50;
-    }
-  }
+.bm-item-list {
+  padding: 50px 10px;
 }
 
 .bm-item-list a {
-  padding: 0.8em;
+  font-family: 'Bebas Neue';
+  padding: 8px 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+}
 
-  span {
-    margin-left: 10px;
-    font-weight: 700;
-  }
+.bm-item-list a span {
+  margin-left: 10px;
+  font-weight: 700;
 }
 
 .bm-item:focus {
@@ -71,7 +78,10 @@
 }
 
 .bm-cross-button {
-  left: 8px !important;
+  width: 25px !important;
+  height: 25px !important;
+  top: 25px !important;
+  left: 25px !important;
 }
 
 /* Outline for cross button focus state */
@@ -81,12 +91,8 @@
 }
 
 /* Background color for cross focus state */
-.bm-cross-button {
-  button:focus + span {
-    span.bm-cross {
-      background-color: #c94e50;
-    }
-  }
+.bm-cross-button button:focus + span span.bm-cross {
+  background-color: #c94e50;
 }
 
 /* Full size menu */
