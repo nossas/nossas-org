@@ -34,6 +34,7 @@
 
 .bm-menu {
   background: var(--blue);
+  padding: 0 30px;
 }
 
 .bm-menu a {
@@ -46,12 +47,13 @@
 }
 
 .bm-item-list {
-  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bm-item-list a {
   font-family: 'Bebas Neue';
-  padding: 8px 0;
+  padding: 5px 0;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 50px;
@@ -64,8 +66,16 @@
   font-weight: 700;
 }
 
+.bm-item-list-menu {
+  padding: 50px 0;
+}
+
 .bm-item:focus {
   outline: none;
+}
+
+.bm-item {
+  display: flex !important;
 }
 
 .bm-cross {
@@ -73,8 +83,7 @@
 }
 
 .bm-menu {
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  padding: 2.5em 30px 0;
 }
 
 .bm-cross-button {
