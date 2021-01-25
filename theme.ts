@@ -18,12 +18,12 @@ export const nossas = {
         },
       },
     },
-    Input: {
-      variants: {
-        filled: {
-          backgroundColor: 'white'
-        }
-      }
-    }
+    Text: {
+      sizes: {
+        "2xl": {
+          fontSize: "26px",
+        },
+      },
+    },
   },
 };
