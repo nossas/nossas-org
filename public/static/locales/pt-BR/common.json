@@ -1,0 +1,23 @@
+{
+  "Welcome": "Bem vindo ao NOSSAS e ao react-i18next",
+  "Change Language": "Mudar idioma",
+  "about": "conheça o nossas",
+  "projects": "nossos projetos",
+  "work": "o que estamos fazendo",
+  "actvist": "seja um ativista",
+  "donate": "doar agora",
+  "social": {
+    "title": "SIGA NAS REDES SOCIAIS",
+    "icons": {
+      "instagram": "Logo do Instagram",
+      "twitter": "Logo do Twitter",
+      "facebook": "Logo do Facebook",
+      "linkedin": "Logo do Linkedin"
+    }
+  },
+  "newsletter": {
+    "title": "RECEBA NOSSA NEWSLETTER",
+    "placeholder": "Seu e-mail",
+    "button": "Salvar"
+  }
+}
