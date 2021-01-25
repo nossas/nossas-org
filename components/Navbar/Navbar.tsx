@@ -4,6 +4,7 @@ import { fallDown as Menu } from "react-burger-menu";
 import { isMobile } from "react-device-detect";
 import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
+import I18nButton from '../I18nButton';
 
 export const LinkStyled = ({ children, ...props }) => (
   <Link color="white" {...props}>
@@ -44,16 +45,13 @@ const NavbarComponent = ({ children, t }) => {
               <Brand />
               <Button size="md">Doar</Button>
             </Flex>
-            <Flex className='bm-item-list-menu' flex='1' direction='column'>
+            <Flex className='bm-item-list-menu' direction='column'>
               {children}
             </Flex>
             <Flex alignItems='center'>
-              <Link href='#' flex={1}>
-                <img
-                  src="/static/media/i18n/en.svg"
-                  alt={t("i18n.button.en")}
-                />
-              </Link>
+              <Box flex={1}>
+                <I18nButton />
+              </Box>
               <Stack direction='row' spacing={3}>
                 <Link href='#'>
                   <img
@@ -89,7 +87,10 @@ const NavbarComponent = ({ children, t }) => {
           <Stack flex="1" justifyContent="center" spacing="10" direction="row">
             {children}
           </Stack>
-          <Button size="md">Doar</Button>
+          <Stack spacing={8} direction='row' alignContent='center'>
+            <I18nButton />
+            <Button size="md">Doar</Button>
+          </Stack>
         </>
       )}
     </Flex>
