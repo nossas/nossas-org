@@ -6,6 +6,7 @@ import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
 import I18nButton from '../I18nButton';
 import Newsletter from '../Newsletter';
+import SocialMedia from '../SocialMedia';
 
 export const LinkStyled = ({ children, ...props }) => (
   <Link color="white" {...props}>
@@ -54,32 +55,7 @@ const NavbarComponent = ({ children, t }) => {
               <Box flex={1}>
                 <I18nButton />
               </Box>
-              <Stack direction='row' spacing={3}>
-                <Link href='#'>
-                  <img
-                    src="/static/media/ig-icon.svg"
-                    alt={t("social.icons.instagram")}
-                  />
-                </Link>
-                <Link href='#'>
-                  <img
-                    src="/static/media/fb-icon.svg"
-                    alt={t("social.icons.facebook")}
-                  />
-                </Link>
-                <Link href='#'>
-                  <img
-                    src="/static/media/tt-icon.svg"
-                    alt={t("social.icons.twitter")}
-                  />
-                </Link>
-                <Link href='#'>
-                  <img
-                    src="/static/media/linkedin-icon.svg"
-                    alt={t("social.icons.linkedin")}
-                  />
-                </Link>
-              </Stack>
+              <SocialMedia />
             </Flex>
           </Menu>
         </>

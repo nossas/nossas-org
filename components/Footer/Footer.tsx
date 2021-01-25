@@ -6,15 +6,12 @@ import {
   Flex,
   Box,
   Grid,
-  InputGroup,
-  Input,
-  InputRightElement,
-  Button,
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Newsletter from '../Newsletter';
+import SocialMedia from '../SocialMedia';
 
 const Footer = ({ t }) => {
   return (
@@ -88,32 +85,7 @@ const Footer = ({ t }) => {
           <Heading as="h5" size="xl" color="nossas.blue" mb={5}>
             {t("social.title")}
           </Heading>
-          <Flex>
-            <Box pr={3} maxHeight={30}>
-              <img
-                src="/static/media/ig-icon.svg"
-                alt={t("social.icons.instagram")}
-              />
-            </Box>
-            <Box pr={3} maxHeight={30}>
-              <img
-                src="/static/media/fb-icon.svg"
-                alt={t("social.icons.facebook")}
-              />
-            </Box>
-            <Box pr={3} maxHeight={30}>
-              <img
-                src="/static/media/tt-icon.svg"
-                alt={t("social.icons.twitter")}
-              />
-            </Box>
-            <Box pr={3} maxHeight={30}>
-              <img
-                src="/static/media/linkedin-icon.svg"
-                alt={t("social.icons.linkedin")}
-              />
-            </Box>
-          </Flex>
+          <SocialMedia />
         </div>
       </Grid>
     </footer>
