@@ -18,5 +18,12 @@ export const nossas = {
         },
       },
     },
+    Input: {
+      variants: {
+        filled: {
+          backgroundColor: 'white'
+        }
+      }
+    }
   },
 };

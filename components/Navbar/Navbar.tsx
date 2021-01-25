@@ -5,6 +5,7 @@ import { isMobile } from "react-device-detect";
 import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
 import I18nButton from '../I18nButton';
+import Newsletter from '../Newsletter';
 
 export const LinkStyled = ({ children, ...props }) => (
   <Link color="white" {...props}>
@@ -30,7 +31,7 @@ const NavbarComponent = ({ children, t }) => {
     >
       {isMobile ? (
         <>
-          <Flex alignItems='center' justifyContent='space-between'>
+          <Flex alignItems='center' justifyContent='space-between' flex={1} ml='40px'>
             <Brand />
             <Button size="md">Doar</Button>
           </Flex>
@@ -45,10 +46,11 @@ const NavbarComponent = ({ children, t }) => {
               <Brand />
               <Button size="md">Doar</Button>
             </Flex>
-            <Flex className='bm-item-list-menu' direction='column'>
+            <Flex className='bm-item-list-menu' direction='column' >
               {children}
             </Flex>
-            <Flex alignItems='center'>
+            <Newsletter inverted />
+            <Flex alignItems='center' mt='40px'>
               <Box flex={1}>
                 <I18nButton />
               </Box>

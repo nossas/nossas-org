@@ -14,6 +14,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
+import Newsletter from '../Newsletter';
 
 const Footer = ({ t }) => {
   return (
@@ -82,28 +83,7 @@ const Footer = ({ t }) => {
             </ListItem>
           </UnorderedList>
         </div>
-        <div>
-          <Heading as="h4" size="xl" color="nossas.blue" mb={5}>
-            {t("newsletter.title")}
-          </Heading>
-          <InputGroup>
-            <Input
-              pr="4.45rem"
-              type="email"
-              placeholder={t("newsletter.placeholder")}
-            />
-            <InputRightElement width="4.45rem">
-              <Button
-                color="white"
-                backgroundColor="nossas.pink"
-                size="sm"
-                onClick={() => console.log("ola")}
-              >
-                {t("newsletter.button")}
-              </Button>
-            </InputRightElement>
-          </InputGroup>
-        </div>
+        <Newsletter />
         <div>
           <Heading as="h5" size="xl" color="nossas.blue" mb={5}>
             {t("social.title")}
