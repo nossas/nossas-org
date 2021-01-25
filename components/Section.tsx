@@ -6,7 +6,13 @@ const Section: React.FC<SimpleGridProps> = ({
   columns,
   ...props
 }) => (
-  <SimpleGrid columns={columns} px="90px" py="80px" {...props}>
+  <SimpleGrid
+    as="section"
+    columns={columns}
+    px={["30px", "90px"]}
+    py={["50px", "80px"]}
+    {...props}
+  >
     {children}
   </SimpleGrid>
 );

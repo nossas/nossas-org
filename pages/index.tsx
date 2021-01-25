@@ -2,12 +2,12 @@ import Head from "next/head";
 import { Stack, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import Navbar from "../components/Navbar/Navbar";
 import GoogleFonts from "next-google-fonts";
-import Slider from "../components/Slider";
+import Slider, { SliderContent } from "../components/Slider";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Form from "../components/Form";
 import Section from "../components/Section";
-import { withTranslation } from '../i18n';
+import { withTranslation } from "../i18n";
 
 const schema: any = {
   title: "Baixar o manual",
@@ -106,9 +106,26 @@ const Home = ({ t }) => {
         /> */}
         <Container as="main" id="page-wrap" flex="1" maxW="none" padding="0">
           <Section>
-            <Slider />
+            <Slider>
+              <div>
+                <SliderContent
+                  imageUrl="/static/media/leftcontent.png"
+                  tag="TREINAMENTOS REALIZADOS"
+                  title="PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA"
+                  description="É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
+                />
+              </div>
+              <div>
+                <SliderContent
+                  imageUrl="/static/media/leftcontent.png"
+                  tag="TREINAMENTOS REALIZADOS"
+                  title="PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA"
+                  description="É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
+                />
+              </div>
+            </Slider>
           </Section>
-          <Section columns={2} bgColor="#f7f7f7">
+          <Section columns={[1, 2]} bgColor="#f7f7f7" gap={[6, 12]}>
             <Stack spacing={6} maxW="400px">
               <Heading
                 as="h3"
@@ -118,7 +135,7 @@ const Home = ({ t }) => {
               >
                 <b>Manual de</b> mobilização
               </Heading>
-              <Text size="2xl">
+              <Text fontSize={["xl", "2xl"]}>
                 Ao longo dos 10 capítulos você vai encontrar referências, casos
                 de sucesso, exercícios e tudo que você precisa de informação
                 para construir campanhas de ativismo de impacto.
