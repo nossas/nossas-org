@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 
 import "react-awesome-slider/dist/styles.css";
 
-const AwesomeSliderStyled = styled(AwesomeSlider)`
+const AwesomeSliderStyled = styled(AwesomeSlider)<SliderProps>`
   --slider-height-percentage: 170%;
   --slider-transition-duration: 575ms;
   --organic-arrow-thickness: 4px;
@@ -26,17 +26,38 @@ const AwesomeSliderStyled = styled(AwesomeSlider)`
 
   .awssld__content > div {
     width: 100%;
+    ${({ px }) =>
+      px &&
+      `
+      padding-left: ${px}px;
+      padding-right: ${px}px;
+    `}
   }
 
   .awssld__next {
-    right: -48px;
+    ${({ px }) =>
+      px
+        ? `
+      right: -15px;
+    `
+        : `
+      right: -48px;
+    `}
   }
   .awssld__prev {
-    left: -48px;
+    ${({ px }) =>
+      px
+        ? `
+      left: -15px;
+    `
+        : `
+      left: -48px;
+    `}
   }
 
   @media screen and (min-width: 30em) {
-    --slider-height-percentage: 40%;
+    --slider-height-percentage: ${({ height }) =>
+      height ? `${height}%` : "40%"};
     --control-button-height: 25%;
     --organic-arrow-color: #aaaaaa;
 
@@ -46,8 +67,15 @@ const AwesomeSliderStyled = styled(AwesomeSlider)`
   }
 `;
 
-const Slider = ({ children }) => (
-  <AwesomeSliderStyled bullets={isMobile}>{children}</AwesomeSliderStyled>
+export interface SliderProps {
+  height?: number;
+  px?: number;
+}
+
+const Slider = ({ children, height, px }) => (
+  <AwesomeSliderStyled bullets={isMobile} px={px} height={height}>
+    {children}
+  </AwesomeSliderStyled>
 );
 
 export default Slider;

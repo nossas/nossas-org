@@ -7,6 +7,7 @@ export const nossas = {
     nossas: {
       blue: "#2D00A1",
       pink: "#FF0095",
+      green: "#00C3B0",
     },
   },
   components: {

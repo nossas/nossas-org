@@ -1,13 +1,10 @@
-import Head from "next/head";
-import { Stack, Container, Flex, Heading, Text } from "@chakra-ui/react";
-import Navbar from "../components/Navbar/Navbar";
-import GoogleFonts from "next-google-fonts";
+import { Stack, Heading, Text } from "@chakra-ui/react";
 import Slider, { SliderContent } from "../components/Slider";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Form from "../components/Form";
 import Section from "../components/Section";
 import { withTranslation } from "../i18n";
+import { Body } from "../components/Page";
 
 const schema: any = {
   title: "Baixar o manual",
@@ -66,97 +63,65 @@ const onSubmit = (formData: any) => {
 
 const Home = ({ t }) => {
   return (
-    <Flex minH="100vh" direction="column">
-      <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bebas+Neue:400,700" />
-      <Head>
-        <title>NOSSAS</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Flex id="page-container" direction="column" flex="1">
-        <Navbar />
-        <Hero
-          Title={
-            <Heading
-              as="h1"
-              fontSize={["3xl", "6xl"]}
-              color="white"
-              textAlign="center"
-            >
-              {t("Hero")}
-            </Heading>
-          }
-          // bgImage="/static/media/bg-example.png"
-          videoUrl="/static/media/video-example.mp4"
-        />
-        {/* Examplo de Hero com titulo e subtitulo */}
-        {/* <Hero
-          Title={
-            <Box maxWidth="800px">
-              <Heading as="h1" fontSize={["3xl", "6xl"]} color="white">
-                {t("Hero")}
-              </Heading>
-            </Box>
-          }
-          Subtitle={
-            <Text fontSize={["md", "xl"]} color="white">
-              {t("HeroSubtitle")}
-            </Text>
-          }
-          bgColor="nossas.blue"
-        /> */}
-        <Container as="main" id="page-wrap" flex="1" maxW="none" padding="0">
-          <Section>
-            <Slider>
-              <div>
-                <SliderContent
-                  imageUrl="/static/media/leftcontent.png"
-                  tag="TREINAMENTOS REALIZADOS"
-                  title="PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA"
-                  description="É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
-                />
-              </div>
-              <div>
-                <SliderContent
-                  imageUrl="/static/media/leftcontent.png"
-                  tag="TREINAMENTOS REALIZADOS"
-                  title="PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA"
-                  description="É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
-                />
-              </div>
-            </Slider>
-          </Section>
-          <Section columns={[1, 2]} bgColor="#f7f7f7" gap={[6, 12]}>
-            <Stack spacing={6} maxW="400px">
-              <Heading
-                as="h3"
-                size="3xl"
-                color="nossas.pink"
-                fontWeight="normal"
-              >
-                <b>Manual de</b> mobilização
-              </Heading>
-              <Text fontSize={["xl", "2xl"]}>
-                Ao longo dos 10 capítulos você vai encontrar referências, casos
-                de sucesso, exercícios e tudo que você precisa de informação
-                para construir campanhas de ativismo de impacto.
-              </Text>
-            </Stack>
-            <Form
-              uiSchema={uiSchema}
-              schema={schema}
-              onSubmit={onSubmit}
-              submitText="BAIXAR"
+    <Body>
+      <Hero
+        Title={
+          <Heading
+            as="h1"
+            fontSize={["3xl", "6xl"]}
+            color="white"
+            textAlign="center"
+          >
+            {t("Hero")}
+          </Heading>
+        }
+        // bgImage="/static/media/bg-example.png"
+        videoUrl="/static/media/video-example.mp4"
+      />
+      <Section>
+        <Slider height={40}>
+          <div>
+            <SliderContent
+              imageUrl="/static/media/leftcontent.png"
+              tag={t("sliders:mobilizations.1.tag")}
+              title={t("sliders:mobilizations.1.title")}
+              description={t("sliders:mobilizations.1.description")}
             />
-          </Section>
-        </Container>
-        <Footer />
-      </Flex>
-    </Flex>
+          </div>
+          <div>
+            <SliderContent
+              imageUrl="/static/media/leftcontent.png"
+              tag={t("sliders:mobilizations.1.tag")}
+              title={t("sliders:mobilizations.1.title")}
+              description={t("sliders:mobilizations.1.description")}
+            />
+          </div>
+        </Slider>
+      </Section>
+      <Section columns={[1, 2]} bgColor="#f7f7f7" gap={[6, 12]}>
+        <Stack spacing={6} maxW="400px">
+          <Heading as="h3" size="3xl" color="nossas.pink" fontWeight="normal">
+            <b>Manual de</b> mobilização
+          </Heading>
+          <Text fontSize={["xl", "2xl"]}>
+            Ao longo dos 10 capítulos você vai encontrar referências, casos de
+            sucesso, exercícios e tudo que você precisa de informação para
+            construir campanhas de ativismo de impacto.
+          </Text>
+        </Stack>
+        <Form
+          uiSchema={uiSchema}
+          schema={schema}
+          onSubmit={onSubmit}
+          submitText="BAIXAR"
+        />
+      </Section>
+    </Body>
   );
 };
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common"],
+  namespacesRequired: ["common", "sliders"],
 });
 
-export default withTranslation("common")(Home);
+export default withTranslation(["common", "sliders"])(Home);
