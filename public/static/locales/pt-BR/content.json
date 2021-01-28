@@ -1,0 +1,40 @@
+{
+  "forms": {
+    "buttons": {
+      "download": "Baixar"
+    }
+  },
+  "links": {
+    "knowmore": "Saiba mais",
+    "actionnow": "Entrar em ação"
+  },
+  "images": {
+    "home": {
+      "etudonossas": "É tudo nossas",
+      "doacao": "Sustentabilidade"
+    }
+  },
+  "covers": {
+    "home": {
+      "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
+    }
+  },
+  "blocks": {
+    "home": {
+      "actionnow": "<b>O que estamos</b> fazendo",
+      "doacao": {
+        "title": "<b>Faça uma</b> doação",
+        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Para manter nossa independência, não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas públicas. Por isso, precisamos de você.",
+        "button": "Faça uma doação"
+      },
+      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
+      "grid": {
+        "mobilization": "Participe de uma mobilização",
+        "books": "Acesse nossos materiais educativos",
+        "learning": "Seja treinado em metodologias de mobilização",
+        "support": "Receba apoio para seu projeto",
+        "tech": "Use as melhores tecnologias para ativismo"
+      }
+    }
+  }
+}

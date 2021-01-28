@@ -1,65 +1,25 @@
-import { Stack, Heading, Text } from "@chakra-ui/react";
-import Slider, { SliderContent } from "../components/Slider";
+import { Button, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import Hero from "../components/Hero";
-import Form from "../components/Form";
-import Section from "../components/Section";
 import { withTranslation } from "../i18n";
-import { Body } from "../components/Page";
+import { Body, Section } from "../components/Page";
+import Slider, { SliderPanel } from "../components/Slider";
 
-const schema: any = {
-  title: "Baixar o manual",
-  type: "object",
-  required: ["email", "name"],
-  properties: {
-    name: {
-      type: "string",
-      title: "Nome",
-    },
-    email: {
-      type: "string",
-      title: "E-mail",
-      format: "email",
-    },
-    whatsapp: {
-      type: "string",
-      title: "Whatsapp",
-    },
-    state: {
-      type: "string",
-      title: "Estado",
-    },
-    city: {
-      type: "string",
-      title: "Cidade",
-    },
-  },
-};
-
-const uiSchema: any = {
-  name: {
-    "ui:placeholder": "Seu nome",
-  },
-  email: {
-    "ui:placeholder": "Seu e-mail",
-  },
-  whatsapp: {
-    "ui:placeholder": "(DDD) 00000-0000",
-  },
-  state: {
-    "ui:widget": "select",
-    "ui:placeholder": "Selecione",
-    "ui:options": {
-      items: ["AM", "ES"],
-    },
-  },
-  city: {
-    "ui:placeholder": "Sua cidade",
-  },
-};
-
-const onSubmit = (formData: any) => {
-  console.log("formData", { formData });
-};
+const ImageTitle = ({ src, title, alt, w = 300, ...props }: any) => (
+  <Stack
+    direction="column"
+    spacing={6}
+    w={w}
+    h={[250, 345]}
+    alignItems="center"
+    justifyContent="flex-end"
+    textAlign="center"
+  >
+    <Image src={src} alt={alt} {...props} />
+    <Heading as="h4" size="lg" color="nossas.blue" textTransform="uppercase">
+      {title}
+    </Heading>
+  </Stack>
+);
 
 const Home = ({ t }) => {
   return (
@@ -72,56 +32,149 @@ const Home = ({ t }) => {
             color="white"
             textAlign="center"
           >
-            {t("Hero")}
+            {t("content:covers.home.title")}
           </Heading>
         }
         // bgImage="/static/media/bg-example.png"
         videoUrl="/static/media/video-example.mp4"
       />
-      <Section>
-        <Slider height={40}>
+      <Section
+        alignItems={["flex-start", "center"]}
+        direction={["column", "row"]}
+        px={["60px", "300px"]}
+        py={["30px", "130px"]}
+        spacing={[30, 60]}
+      >
+        <Image
+          maxW={[155, 250]}
+          src="/static/media/s3/etudonossas.png"
+          alt={t("content:images.home.etudonossas")}
+        />
+        <Stack spacing={6} direction="column">
+          <Text fontSize={["xl", "2xl"]} color="nossas.darkgrey">
+            {t("content:blocks.home.etudonossas")}
+          </Text>
+          <Link
+            href="#"
+            title={t("content:links.knowmore")}
+            color="nossas.pink"
+            fontWeight={700}
+            fontSize={["xl", "2xl"]}
+          >
+            {t("content:links.knowmore")} +
+          </Link>
+        </Stack>
+      </Section>
+      <Section
+        alignItems="center"
+        justifyContent="center"
+        direction={["column", "row"]}
+        flexWrap="wrap"
+        spacing={16}
+        py={[20, 0]}
+      >
+        <ImageTitle
+          src="/static/media/s3/mobilizacaohome.png"
+          alt={t("content:images.home.etudonossas")}
+          transform="rotate(10deg)"
+          w={280}
+          title={t("content:blocks.home.grid.mobilization")}
+        />
+        <ImageTitle
+          src="/static/media/s3/materiaiseducativoshome.png"
+          alt={t("content:images.home.etudonossas")}
+          title={t("content:blocks.home.grid.books")}
+        />
+        <ImageTitle
+          src="/static/media/s3/treinamentohome.png"
+          alt={t("content:images.home.etudonossas")}
+          title={t("content:blocks.home.grid.learning")}
+        />
+        <ImageTitle
+          src="/static/media/s3/apoioprojetohome.png"
+          alt={t("content:images.home.etudonossas")}
+          title={t("content:blocks.home.grid.support")}
+        />
+        <ImageTitle
+          src="/static/media/s3/tecnologiashome.png"
+          alt={t("content:images.home.etudonossas")}
+          title={t("content:blocks.home.grid.tech")}
+        />
+      </Section>
+      <Section px={["20px"]}>
+        <Heading
+          px={["70px"]}
+          as="h2"
+          color="nossas.pink"
+          size="2xl"
+          fontWeight="normal"
+        >
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.home.actionnow", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        </Heading>
+        <Slider height={50}>
           <div>
-            <SliderContent
-              imageUrl="/static/media/leftcontent.png"
-              tag={t("sliders:mobilizations.1.tag")}
-              title={t("sliders:mobilizations.1.title")}
-              description={t("sliders:mobilizations.1.description")}
-            />
-          </div>
-          <div>
-            <SliderContent
-              imageUrl="/static/media/leftcontent.png"
-              tag={t("sliders:mobilizations.1.tag")}
-              title={t("sliders:mobilizations.1.title")}
-              description={t("sliders:mobilizations.1.description")}
+            <SliderPanel
+              items={[
+                {
+                  src: "/static/media/s3/programademobilizadores.png",
+                  title: t("sliders:home.actionnow.rendabasica.title"),
+                  description: t(
+                    "sliders:home.actionnow.rendabasica.description"
+                  ),
+                  link: t("content:links.actionnow"),
+                  href: "#",
+                },
+                {
+                  src: "/static/media/s3/rendabasica.png",
+                  title: t(
+                    "sliders:home.actionnow.programamobilizadores.title"
+                  ),
+                  description: t(
+                    "sliders:home.actionnow.programamobilizadores.description"
+                  ),
+                  link: t("content:links.actionnow"),
+                  href: "#",
+                },
+              ]}
             />
           </div>
         </Slider>
       </Section>
-      <Section columns={[1, 2]} bgColor="#f7f7f7" gap={[6, 12]}>
-        <Stack spacing={6} maxW="400px">
-          <Heading as="h3" size="3xl" color="nossas.pink" fontWeight="normal">
-            <b>Manual de</b> mobilização
+      <Section columns={[1, 2]} alignItems="center">
+        <Image
+          src="/static/media/s3/sustentabilidade.png"
+          alt={t("content:images.home.doacao")}
+        />
+        <Stack spacing={8}>
+          <Heading as="h2" color="nossas.green" size="2xl" fontWeight="normal">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("content:blocks.home.doacao.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           </Heading>
           <Text fontSize={["xl", "2xl"]}>
-            Ao longo dos 10 capítulos você vai encontrar referências, casos de
-            sucesso, exercícios e tudo que você precisa de informação para
-            construir campanhas de ativismo de impacto.
+            {t("content:blocks.home.doacao.description")}
           </Text>
+          <Button color="white" maxW={190} backgroundColor="nossas.blue">
+            {t("content:blocks.home.doacao.button")}
+          </Button>
         </Stack>
-        <Form
-          uiSchema={uiSchema}
-          schema={schema}
-          onSubmit={onSubmit}
-          submitText="BAIXAR"
-        />
       </Section>
     </Body>
   );
 };
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "sliders"],
+  namespacesRequired: ["common", "sliders", "content"],
 });
 
-export default withTranslation(["common", "sliders"])(Home);
+export default withTranslation(["common", "sliders", "content"])(Home);

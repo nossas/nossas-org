@@ -1,7 +1,7 @@
 import React from "react";
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import Form from "../../components/Form";
-import Section from "../../components/Section";
+import Section from "../../components/Page/Section";
 
 const onSubmit = (formData: any) => {
   console.log("formData", { formData });
