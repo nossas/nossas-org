@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import { withTranslation } from "../i18n";
 import { Body, Section } from "../components/Page";
 import Slider, { SliderPanel } from "../components/Slider";
+import Media from "../components/Media";
 
 const ImageTitle = ({ src, title, alt, w = 300, ...props }: any) => (
   <Stack
@@ -169,6 +170,19 @@ const Home = ({ t }) => {
           </Button>
         </Stack>
       </Section>
+      <Media
+        title="NA MÍDIA"
+        logos={[
+          "/static/media/s3/dias.png",
+          "/static/media/s3/reuters.png",
+          "/static/media/s3/nyt.png",
+          "/static/media/s3/piaui.png",
+          "/static/media/s3/elpais.png",
+          "/static/media/s3/forbes.png",
+          "/static/media/s3/ted.png",
+          "/static/media/s3/zeitgeist.png",
+        ]}
+      />
     </Body>
   );
 };
