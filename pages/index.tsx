@@ -5,7 +5,7 @@ import { Body, Section } from "../components/Page";
 import Slider, { SliderPanel } from "../components/Slider";
 import Media from "../components/Media";
 
-const ImageTitle = ({ src, title, alt, w = 300, ...props }: any) => (
+const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
   <Stack
     direction="column"
     spacing={6}
@@ -69,16 +69,17 @@ const Home = ({ t }) => {
       <Section
         alignItems="center"
         justifyContent="center"
-        direction={["column", "row"]}
+        direction="row"
         flexWrap="wrap"
-        spacing={16}
-        py={[20, 0]}
+        spacing={[4, 16]}
+        px={["10px", "90px"]}
+        py={0}
       >
         <ImageTitle
           src="/static/media/s3/mobilizacaohome.png"
           alt={t("content:images.home.etudonossas")}
           transform="rotate(10deg)"
-          w={280}
+          w={["40%", 280]}
           title={t("content:blocks.home.grid.mobilization")}
         />
         <ImageTitle
