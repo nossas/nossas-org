@@ -7,6 +7,7 @@ export const nossas = {
     nossas: {
       blue: "#2D00A1",
       pink: "#FF0095",
+      green: "#00C3B0",
     },
   },
   components: {
@@ -18,12 +19,12 @@ export const nossas = {
         },
       },
     },
-    Input: {
-      variants: {
-        filled: {
-          backgroundColor: 'white'
-        }
-      }
-    }
+    Text: {
+      sizes: {
+        "2xl": {
+          fontSize: "26px",
+        },
+      },
+    },
   },
 };

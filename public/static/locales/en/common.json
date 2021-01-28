@@ -1,6 +1,4 @@
 {
-  "Welcome": "Welcome to NOSSAS and react-i18next",
-  "Change Language": "Change Language",
   "about": "about nossas",
   "projects": "our projects",
   "work": "our work",
@@ -19,6 +17,11 @@
     "title": "SUBSCRIBE TO OUR NEWSLETTER",
     "placeholder": "Your e-mail",
     "button": "Save"
+  },
+  "slider": {
+    "defaults": {
+      "more": "More about +"
+    }
   },
   "Hero": "NOSSAS is an organization that promotes democratic and solidary activism in Brazil",
   "HeroSubtitle": "Há 10 anos desenvolvemos projetos, táticas e estratégias de mobilização - tudo isso resultou em projetos de impacto."

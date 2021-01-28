@@ -1,6 +1,4 @@
 {
-  "Welcome": "Bem vindo ao NOSSAS e ao react-i18next",
-  "Change Language": "Mudar idioma",
   "about": "conheça o nossas",
   "projects": "nossos projetos",
   "work": "o que estamos fazendo",
@@ -13,6 +11,11 @@
       "twitter": "Logo do Twitter",
       "facebook": "Logo do Facebook",
       "linkedin": "Logo do Linkedin"
+    }
+  },
+  "slider": {
+    "defaults": {
+      "more": "Saiba mais +"
     }
   },
   "newsletter": {

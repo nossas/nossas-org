@@ -23,8 +23,8 @@ const Hero = ({
     <section>
       <Flex
         justifyContent="center"
-        minHeight="100vh"
-        maxHeight={["none", "100vh"]}
+        minHeight={["600px", "670px"]}
+        maxHeight={["600px", "670px"]}
         bgColor={bgColor}
         position="relative"
       >
