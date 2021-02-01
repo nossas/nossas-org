@@ -128,6 +128,7 @@ const Home: React.FC<Props> = ({ t, ua }) => {
           isMobile={ua.isMobile}
           items={[
             {
+              alt: "teste",
               src: "/static/media/s3/programademobilizadores.png",
               title: t("sliders:home.actionnow.rendabasica.title"),
               description: t("sliders:home.actionnow.rendabasica.description"),
@@ -135,6 +136,7 @@ const Home: React.FC<Props> = ({ t, ua }) => {
               href: "#",
             },
             {
+              alt: "teste",
               src: "/static/media/s3/rendabasica.png",
               title: t("sliders:home.actionnow.programamobilizadores.title"),
               description: t(
