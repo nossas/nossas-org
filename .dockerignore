@@ -34,4 +34,11 @@ yarn-error.log*
 .vercel
 
 /.waypoint/
-*.db*
+
+
+.dockerignore
+node_modules
+npm-debug.log
+Dockerfile
+.git
+.gitignore
