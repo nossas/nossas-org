@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 import AwesomeSlider from "react-awesome-slider";
-import { isMobile } from "react-device-detect";
 
 import "react-awesome-slider/dist/styles.css";
 
@@ -70,9 +69,10 @@ const AwesomeSliderStyled = styled(AwesomeSlider)<SliderProps>`
 export interface SliderProps {
   height?: number;
   px?: number;
+  isMobile?: boolean;
 }
 
-const Slider = ({ children, height, px }) => (
+const Slider: React.FC<SliderProps> = ({ children, height, px, isMobile }) => (
   <AwesomeSliderStyled bullets={isMobile} px={px} height={height}>
     {children}
   </AwesomeSliderStyled>

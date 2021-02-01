@@ -9,55 +9,41 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const Panel = () => (
-  <SimpleGrid columns={2} gap={4}>
-    <Box boxShadow="base">
-      <Image
-        src="/static/media/s3/mapadoacolhimento.png"
-        alt="Mapa do Acolhimento"
-        width="100%"
-        height={380}
-      />
-      <Stack p={8} spacing={4}>
-        <Heading as="h3">MAPA DO ACOLHIMENTO</Heading>
-        <Text>
-          O Conselho Nacional do Meio Ambiente (Conama) derrubou resoluções
-          importantes para preservação de resoluções importantes.
-        </Text>
-        <Link
-          href="#"
-          fontSize={["xl", "2xl"]}
-          fontWeight="700"
-          color="nossas.pink"
-        >
-          {`Saber mais >`}
-        </Link>
-      </Stack>
-    </Box>
-    <Box boxShadow="base">
-      <Image
-        src="/static/media/s3/projetoincubado2.png"
-        alt="Projeto Incubado 2"
-        width="100%"
-        height={380}
-      />
-      <Stack p={8} spacing={4}>
-        <Heading as="h3">PROJETO INCUBADO 2</Heading>
-        <Text>
-          O Conselho Nacional do Meio Ambiente (Conama) derrubou resoluções
-          importantes para preservação de resoluções importantes.
-        </Text>
-        <Link
-          href="#"
-          fontSize={["xl", "2xl"]}
-          fontWeight="700"
-          color="nossas.pink"
-        >
-          {`Saber mais >`}
-        </Link>
-      </Stack>
-    </Box>
-  </SimpleGrid>
+type Item = {
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+  href: string;
+  link: string;
+};
+
+export interface Props {
+  items: Item[];
+}
+
+export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
+  <Box boxShadow="base">
+    <Image src={item.src} alt={item.alt} width="100%" height={380} />
+    <Stack p={8} spacing={4}>
+      <Heading as="h3">{item.title}</Heading>
+      <Text>{item.description}</Text>
+      <Link
+        href={item.href}
+        fontSize={["xl", "2xl"]}
+        fontWeight="700"
+        color="nossas.pink"
+      >
+        {`${item.link} >`}
+      </Link>
+    </Stack>
+  </Box>
 );
 
-export default Panel;
+export const Group: React.FC<Props> = ({ items }) => (
+  <SimpleGrid columns={items.length} gap={4}>
+    {items.map((item: Item, index: number) => (
+      <Panel key={index} items={item} />
+    ))}
+  </SimpleGrid>
+);

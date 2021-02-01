@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Button, Flex, Link, Stack, Box } from "@chakra-ui/react";
 import { fallDown as Menu } from "react-burger-menu";
-import { isMobile } from "react-device-detect";
 import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
-import I18nButton from '../I18nButton';
-import Newsletter from '../Newsletter';
-import SocialMedia from '../SocialMedia';
+import I18nButton from "../I18nButton";
+import Newsletter from "../Newsletter";
+import SocialMedia from "../SocialMedia";
 
 export const LinkStyled = ({ children, ...props }) => (
   <Link color="white" {...props}>
@@ -14,12 +13,12 @@ export const LinkStyled = ({ children, ...props }) => (
   </Link>
 );
 
-const NavbarComponent = ({ children, t }) => {
+const NavbarComponent = ({ children, t, isMobile }) => {
   const [open, setOpen] = useState(false);
 
-  let flexStyles = { padding: '0 60px' };
+  let flexStyles = { padding: "0 60px" };
   if (isMobile) {
-    flexStyles = { padding: '0 30px' };
+    flexStyles = { padding: "0 30px" };
   }
 
   return (
@@ -32,7 +31,12 @@ const NavbarComponent = ({ children, t }) => {
     >
       {isMobile ? (
         <>
-          <Flex alignItems='center' justifyContent='space-between' flex={1} ml='40px'>
+          <Flex
+            alignItems="center"
+            justifyContent="space-between"
+            flex={1}
+            ml="40px"
+          >
             <Brand />
             <Button size="md">Doar</Button>
           </Flex>
@@ -43,15 +47,20 @@ const NavbarComponent = ({ children, t }) => {
             onOpen={() => setOpen(true)}
             onClose={() => setOpen(false)}
           >
-            <Flex alignItems='center' justifyContent='space-between' ml='40px' mt='-22px'>
+            <Flex
+              alignItems="center"
+              justifyContent="space-between"
+              ml="40px"
+              mt="-22px"
+            >
               <Brand />
               <Button size="md">Doar</Button>
             </Flex>
-            <Flex className='bm-item-list-menu' direction='column' >
+            <Flex className="bm-item-list-menu" direction="column">
               {children}
             </Flex>
             <Newsletter inverted />
-            <Flex alignItems='center' mt='40px'>
+            <Flex alignItems="center" mt="40px">
               <Box flex={1}>
                 <I18nButton />
               </Box>
@@ -65,7 +74,7 @@ const NavbarComponent = ({ children, t }) => {
           <Stack flex="1" justifyContent="center" spacing="10" direction="row">
             {children}
           </Stack>
-          <Stack spacing={8} direction='row' alignContent='center'>
+          <Stack spacing={8} direction="row" alignContent="center">
             <I18nButton />
             <Button size="md">Doar</Button>
           </Stack>
@@ -75,9 +84,9 @@ const NavbarComponent = ({ children, t }) => {
   );
 };
 
-const Navbar = ({ t }) => {
+const Navbar = ({ t, isMobile }) => {
   return (
-    <NavbarComponent t={t}>
+    <NavbarComponent t={t} isMobile={isMobile}>
       <LinkStyled href="#">{t("about")}</LinkStyled>
       <LinkStyled href="#">{t("projects")}</LinkStyled>
       <LinkStyled href="#">{t("work")}</LinkStyled>
@@ -87,4 +96,4 @@ const Navbar = ({ t }) => {
   );
 };
 
-export default withTranslation('common')(Navbar);
+export default withTranslation("common")(Navbar);

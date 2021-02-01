@@ -8,6 +8,7 @@ export const nossas = {
       blue: "#2D00A1",
       pink: "#FF0095",
       green: "#00C3B0",
+      darkgrey: "#606373",
     },
   },
   components: {
@@ -23,6 +24,7 @@ export const nossas = {
       sizes: {
         "2xl": {
           fontSize: "26px",
+          color: "#606373",
         },
       },
     },

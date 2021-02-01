@@ -5,5 +5,17 @@
       "title": "PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA",
       "description": "É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
     }
+  },
+  "home": {
+    "actionnow": {
+      "rendabasica": {
+        "title": "Renda Básica",
+        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria, a campanha da Renda Básica lutará pela distribuição de renda para os mais pobres."
+      },
+      "programamobilizadores": {
+        "title": "Programa de Mobilizadores",
+        "description": "Inscreva-se para as turmas para aprender a fazer mobilizações de impacto na sua cidade. As inscrições estarão abertas a partir de fevereiro."
+      }
+    }
   }
 }
