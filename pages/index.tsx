@@ -105,7 +105,7 @@ const Home = ({ t }) => {
       </Section>
       <Section px={["20px"]}>
         <Heading
-          px={["70px"]}
+          px={[0, "70px"]}
           as="h2"
           color="nossas.pink"
           size="2xl"
@@ -119,34 +119,26 @@ const Home = ({ t }) => {
             }}
           />
         </Heading>
-        <Slider height={50}>
-          <div>
-            <SliderPanel
-              items={[
-                {
-                  src: "/static/media/s3/programademobilizadores.png",
-                  title: t("sliders:home.actionnow.rendabasica.title"),
-                  description: t(
-                    "sliders:home.actionnow.rendabasica.description"
-                  ),
-                  link: t("content:links.actionnow"),
-                  href: "#",
-                },
-                {
-                  src: "/static/media/s3/rendabasica.png",
-                  title: t(
-                    "sliders:home.actionnow.programamobilizadores.title"
-                  ),
-                  description: t(
-                    "sliders:home.actionnow.programamobilizadores.description"
-                  ),
-                  link: t("content:links.actionnow"),
-                  href: "#",
-                },
-              ]}
-            />
-          </div>
-        </Slider>
+        <SliderPanel
+          items={[
+            {
+              src: "/static/media/s3/programademobilizadores.png",
+              title: t("sliders:home.actionnow.rendabasica.title"),
+              description: t("sliders:home.actionnow.rendabasica.description"),
+              link: t("content:links.actionnow"),
+              href: "#",
+            },
+            {
+              src: "/static/media/s3/rendabasica.png",
+              title: t("sliders:home.actionnow.programamobilizadores.title"),
+              description: t(
+                "sliders:home.actionnow.programamobilizadores.description"
+              ),
+              link: t("content:links.actionnow"),
+              href: "#",
+            },
+          ]}
+        />
       </Section>
       <Section columns={[1, 2]} alignItems="center">
         <Image
