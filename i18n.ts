@@ -14,4 +14,8 @@ export const withTranslation = NextI18n.withTranslation;
 
 export const i18n = NextI18n.i18n;
 
+export type I18nInitialProps = {
+  namespacesRequired: string[];
+};
+
 export default NextI18n;

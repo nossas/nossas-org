@@ -16,6 +16,12 @@ export interface Props extends SliderProps {
   isMobile: boolean;
 }
 
+const renderItems = (items: any[], Content: React.ElementType) =>
+  items.map((values: any, index: number) => (
+    <div key={index}>
+      <Content items={values} />
+    </div>
+  ));
 const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
   const Content = isMobile ? Panel : Group;
   let newItems = isMobile
@@ -25,15 +31,7 @@ const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
         return items.splice(keys[index][0], keys[index][1]);
       });
 
-  return (
-    <Slider {...props}>
-      {newItems.map((values: any, index: number) => (
-        <div key={index}>
-          <Content items={values} />
-        </div>
-      ))}
-    </Slider>
-  );
+  return <Slider {...props}>{renderItems(newItems, Content)}</Slider>;
 };
 
 export default SliderPanel;

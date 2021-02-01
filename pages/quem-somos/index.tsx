@@ -1,12 +1,13 @@
 import React from "react";
-// import { withTranslation } from "../i18n";
+import { NextPage } from "next";
+import { I18nInitialProps } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { Heading, Text } from "@chakra-ui/react";
 import { Body } from "../../components/Page";
 import Hero from "../../components/Hero";
 import SubscribeForm from "./_form";
 
-const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => (
+const QuemSomos: NextPage<WithUserAgentProps, I18nInitialProps> = ({ ua }) => (
   <Body isMobile={ua.isMobile}>
     <Hero
       bgColor="nossas.blue"

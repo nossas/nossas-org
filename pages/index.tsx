@@ -1,3 +1,4 @@
+import { NextPage, NextPageContext } from "next";
 import {
   Flex,
   Button,
@@ -9,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import Hero from "../components/Hero";
-import { withTranslation } from "../i18n";
+import { withTranslation, I18nInitialProps } from "../i18n";
 import { Body, Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
 import Media from "../components/Media";
@@ -35,7 +36,7 @@ interface Props extends WithUserAgentProps {
   t: any;
 }
 
-const Home: React.FC<Props> = ({ t, ua }) => {
+const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
     <Body isMobile={ua.isMobile}>
       <Hero
@@ -133,6 +134,7 @@ const Home: React.FC<Props> = ({ t, ua }) => {
           />
         </Heading>
         <SliderPanel
+          height={50}
           isMobile={ua.isMobile}
           items={[
             {

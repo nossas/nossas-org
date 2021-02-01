@@ -69,7 +69,7 @@ const AwesomeSliderStyled = styled(AwesomeSlider)<SliderProps>`
 export interface SliderProps {
   height?: number;
   px?: number;
-  isMobile: boolean;
+  isMobile?: boolean;
 }
 
 const Slider: React.FC<SliderProps> = ({ children, height, px, isMobile }) => (
