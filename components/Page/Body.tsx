@@ -4,7 +4,7 @@ import GoogleFonts from "next-google-fonts";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-const Body = ({ children }) => (
+const Body = ({ children, isMobile }) => (
   <Flex minH="100vh" direction="column">
     <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bebas+Neue:400,700" />
     <Head>
@@ -12,7 +12,7 @@ const Body = ({ children }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Flex id="page-container" direction="column" flex="1">
-      <Navbar />
+      <Navbar isMobile={isMobile} />
       <Container as="main" id="page-wrap" flex="1" maxW="none" padding="0">
         {children}
       </Container>

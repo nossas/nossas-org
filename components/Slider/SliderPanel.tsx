@@ -1,5 +1,4 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
 import Slider, { SliderProps } from "./Slider";
 import { Group, Panel } from "./Panel";
 
@@ -14,9 +13,10 @@ type Item = {
 
 export interface Props extends SliderProps {
   items: Item[];
+  isMobile: boolean;
 }
 
-const SliderPanel: React.FC<Props> = ({ items, ...props }) => {
+const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
   const Content = isMobile ? Panel : Group;
   let newItems = isMobile
     ? items

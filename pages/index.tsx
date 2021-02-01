@@ -1,8 +1,9 @@
 import { Button, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
+import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import Hero from "../components/Hero";
 import { withTranslation } from "../i18n";
 import { Body, Section } from "../components/Page";
-import Slider, { SliderPanel } from "../components/Slider";
+import { SliderPanel } from "../components/Slider";
 import Media from "../components/Media";
 
 const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
@@ -22,9 +23,13 @@ const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
   </Stack>
 );
 
-const Home = ({ t }) => {
+interface Props extends WithUserAgentProps {
+  t: any;
+}
+
+const Home: React.FC<Props> = ({ t, ua }) => {
   return (
-    <Body>
+    <Body isMobile={ua.isMobile}>
       <Hero
         Title={
           <Heading
@@ -120,6 +125,7 @@ const Home = ({ t }) => {
           />
         </Heading>
         <SliderPanel
+          isMobile={ua.isMobile}
           items={[
             {
               src: "/static/media/s3/programademobilizadores.png",
@@ -184,4 +190,6 @@ Home.getInitialProps = async () => ({
   namespacesRequired: ["common", "sliders", "content"],
 });
 
-export default withTranslation(["common", "sliders", "content"])(Home);
+export default withUserAgent(
+  withTranslation(["common", "sliders", "content"])(Home)
+);
