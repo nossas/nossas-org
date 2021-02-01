@@ -1,4 +1,12 @@
-import { Button, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  Button,
+  Heading,
+  Image,
+  Text,
+  Stack,
+  Link,
+} from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import Hero from "../components/Hero";
 import { withTranslation } from "../i18n";
@@ -146,12 +154,22 @@ const Home: React.FC<Props> = ({ t, ua }) => {
           ]}
         />
       </Section>
-      <Section columns={[1, 2]} alignItems="center">
-        <Image
-          src="/static/media/s3/sustentabilidade.png"
-          alt={t("content:images.home.doacao")}
-        />
-        <Stack spacing={8}>
+      <Section
+        alignItems={["center"]}
+        direction={["column", "row"]}
+        px={["30px", "90px"]}
+        py={["60px", "60px"]}
+        spacing={[30, 0]}
+      >
+        <Flex flex={1} justifyContent="space-around">
+          <Image
+            maxW={[226, 339]}
+            maxH={[232, 347]}
+            src="/static/media/s3/sustentabilidade.png"
+            alt={t("content:images.home.doacao")}
+          />
+        </Flex>
+        <Stack flex={1} spacing={8} alignItems="center">
           <Heading as="h2" color="nossas.green" size="2xl" fontWeight="normal">
             <div
               dangerouslySetInnerHTML={{
@@ -161,7 +179,7 @@ const Home: React.FC<Props> = ({ t, ua }) => {
               }}
             />
           </Heading>
-          <Text fontSize={["xl", "2xl"]}>
+          <Text fontSize={["xl", "2xl"]} textAlign={["center", "left"]}>
             {t("content:blocks.home.doacao.description")}
           </Text>
           <Button color="white" maxW={190} backgroundColor="nossas.blue">
