@@ -1,5 +1,5 @@
 import React from "react";
-import App from "next/app";
+import NextApp from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import NextI18n from "../i18n";
 import { nossas } from "../theme";
@@ -7,16 +7,20 @@ import "../components/Navbar/styles.css";
 
 const theme = extendTheme(nossas);
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  );
+class App extends React.Component<any, any> {
+  render() {
+    const { Component, pageProps } = this.props;
+
+    return (
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    );
+  }
 }
 
-MyApp.getInitialProps = async (appContext) => ({
-  ...(await App.getInitialProps(appContext)),
+App.getInitialProps = async (appContext) => ({
+  ...(await NextApp.getInitialProps(appContext)),
 });
 
-export default NextI18n.appWithTranslation(MyApp);
+export default NextI18n.appWithTranslation(App);

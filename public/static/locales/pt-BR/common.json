@@ -3,7 +3,16 @@
   "projects": "nossos projetos",
   "work": "o que estamos fazendo",
   "actvist": "seja um ativista",
-  "donate": "doar agora",
+  "donate": {
+    "button": "DOAR",
+    "title": "<b>DOE PARA</b> O NOSSAS",
+    "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+    "padlock": "doação segura",
+    "tabs": {
+      "yourdata": "Seus dados",
+      "payments": "Pagamentos"
+    }
+  },
   "social": {
     "title": "SIGA NAS REDES SOCIAIS",
     "icons": {
