@@ -4,7 +4,7 @@ import ThemeForm from "./ThemeForm";
 
 interface FormProps {
   onSubmit: (formData: any) => any;
-  submitText: string;
+  submitText?: string;
   uiSchema: any;
   schema: any;
 }
@@ -18,15 +18,17 @@ const Form: React.FC<FormProps> = ({
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
       <ThemeForm uiSchema={uiSchema} schema={schema} onSubmit={onSubmit}>
-        <Button
-          isFullWidth
-          type="submit"
-          bg="nossas.blue"
-          color="#fff"
-          size="lg"
-        >
-          {submitText}
-        </Button>
+        {submitText && (
+          <Button
+            isFullWidth
+            type="submit"
+            bg="nossas.blue"
+            color="#fff"
+            size="lg"
+          >
+            {submitText}
+          </Button>
+        )}
       </ThemeForm>
     </Box>
   );

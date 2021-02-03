@@ -132,7 +132,6 @@ const ElementsForm = () => {
         />
         <StripeTestCards />
         <fieldset className="elements-style">
-          <legend>Your payment details:</legend>
           <input
             placeholder="Cardholder name"
             className="elements-style"
@@ -167,7 +166,7 @@ const ElementsForm = () => {
         </button>
       </form>
       <PaymentStatus status={payment.status} />
-      <PrintObject content={payment} />
+      {/* <PrintObject content={payment} /> */}
     </>
   );
 };

@@ -12,6 +12,7 @@ import {
   Heading,
   useDisclosure,
 } from "@chakra-ui/react";
+import { Form } from "formik";
 
 import { withTranslation } from "../../i18n";
 // import getStripe from '../../lib/getStripe';
@@ -21,19 +22,22 @@ interface DonationProps {
   t: any;
   onClick: any;
   btnText: string;
+  isDisabled: boolean;
+  onSubmit: any;
 }
 
 const Donation: React.FC<DonationProps> = ({
   t,
   children,
-  onClick,
+  onSubmit,
   btnText,
+  isDisabled,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
   return (
-    <>
+    <Form>
       <Button ref={btnRef} size="md" onClick={onOpen}>
         {t("donate.button")}
       </Button>
@@ -65,14 +69,21 @@ const Donation: React.FC<DonationProps> = ({
             </DrawerHeader>
             <DrawerBody>{children}</DrawerBody>
             <DrawerFooter>
-              <Button size="md" onClick={onClick}>
+              <Button
+                onClick={onSubmit}
+                flex={1}
+                size="md"
+                isDisabled={isDisabled}
+                color={isDisabled ? "nossa.darkgray" : "white"}
+                bgColor={isDisabled ? "nossas.gray" : "nossas.blue"}
+              >
                 {btnText}
               </Button>
             </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </>
+    </Form>
   );
 };
 
