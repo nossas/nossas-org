@@ -7,7 +7,7 @@ import "../components/Navbar/styles.css";
 
 const theme = extendTheme(nossas);
 
-class App extends React.Component<any, any> {
+class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;
 

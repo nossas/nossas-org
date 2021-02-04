@@ -73,7 +73,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             href="#"
             title={t("content:links.knowmore")}
             color="nossas.pink"
-            fontWeight={700}
+            fontWeight="700"
             fontSize={["xl", "2xl"]}
           >
             {t("content:links.knowmore")} +
