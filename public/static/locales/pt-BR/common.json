@@ -43,9 +43,15 @@
       },
       "buttons": {
         "continue": "Continuar",
-        "donate": "Doar R${{value}}",
+        "donate": "Doar {{currency}}{{value}}",
         "finish": "Finalizar"
       }
+    },
+    "finish": {
+      "imageAlt": "Doação bem sucedida!",
+      "title": "<b>Valeu,</b> {{name}}!",
+      "thanks": "Sua doação faz toda a diferença!",
+      "message": "Mensagem de agradecimento etc etc."
     }
   },
   "social": {

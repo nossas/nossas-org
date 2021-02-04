@@ -156,6 +156,7 @@ export const handleSubmit = async (
   // Create a PaymentIntent with the specified amount.
   const response = await fetchPostJSON("/api/paymentIntents", {
     amount: formData.customDonation,
+    currency: formData.currency,
   });
   // setPayment(response);
 

@@ -28,7 +28,7 @@ const styles = {
 const Lock = ({ t }: any) => (
   <Stack
     position="absolute"
-    top="45px"
+    bottom="-60px"
     right="5px"
     direction="row"
     spacing={2}

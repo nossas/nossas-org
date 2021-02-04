@@ -1,5 +1,4 @@
 import React from "react";
-import { Elements } from "@stripe/react-stripe-js";
 import {
   Button,
   Drawer,
@@ -9,14 +8,12 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
-  Heading,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 import { Form } from "formik";
 
 import { withTranslation } from "../../i18n";
-// import getStripe from '../../lib/getStripe';
-// import ElementsForm from './ElementsForm';
 
 interface DonationProps {
   t: any;
@@ -46,26 +43,18 @@ const Donation: React.FC<DonationProps> = ({
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-        size="lg"
+        size="md"
       >
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader>
-              <Heading
-                as="h2"
-                color="nossas.green"
-                size="2xl"
-                fontWeight="normal"
-              >
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: t("donate.title", {
-                      interpolation: { escapeValue: false },
-                    }),
-                  }}
-                />
-              </Heading>
+              <Image
+                src="/static/media/brand.png"
+                alt="NOSSAS"
+                w="69px"
+                h="32px"
+              />
             </DrawerHeader>
             <DrawerBody>{children}</DrawerBody>
             <DrawerFooter>

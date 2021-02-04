@@ -1,10 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import {
-  CURRENCY,
-  MIN_AMOUNT,
-  MAX_AMOUNT,
-} from "../../components/Donation/config";
+import { MIN_AMOUNT, MAX_AMOUNT } from "../../components/Donation/config";
 import { formatAmountForStripe } from "../../lib/stripeHelpers";
 
 import Stripe from "stripe";
@@ -18,7 +14,10 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { amount }: { amount: number } = req.body;
+    const {
+      amount,
+      currency,
+    }: { amount: number; currency: "usd" | "brl" } = req.body;
     try {
       // Validate the amount that was passed from the client.
       if (!(amount >= MIN_AMOUNT && amount <= MAX_AMOUNT)) {
@@ -27,8 +26,8 @@ export default async function handler(
       // Create PaymentIntent from body params.
       const params: Stripe.PaymentIntentCreateParams = {
         payment_method_types: ["card"],
-        amount: formatAmountForStripe(amount, CURRENCY),
-        currency: CURRENCY,
+        amount: formatAmountForStripe(amount, currency),
+        currency,
       };
       const payment_intent: Stripe.PaymentIntent = await stripe.paymentIntents.create(
         params

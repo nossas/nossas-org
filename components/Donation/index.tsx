@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Heading,
   Text,
   Tab,
   Tabs,
@@ -11,7 +12,7 @@ import {
 import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
 
-import { withTranslation } from "../../i18n";
+import { withTranslation, i18n } from "../../i18n";
 import getStripe from "../../lib/getStripe";
 import Lock from "./Lock";
 import {
@@ -30,12 +31,15 @@ import {
 } from "./CardForm";
 // import ElementsForm from './ElementsForm';
 import DonationDrawer from "./DonationDrawer";
+import Finish from "./Finish";
 
 interface DonationProps {
   t: any;
 }
 
-interface Values extends YourDataValues, CardFormValues {}
+interface Values extends YourDataValues, CardFormValues {
+  currency: "usd" | "brl";
+}
 
 const Donation: React.FC<DonationProps> = ({ t }) => {
   const [index, setIndex] = useState(0);
@@ -60,6 +64,7 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
       initialValues={{
         ...yourDataInitialValues,
         ...cardInitialValues,
+        currency: i18n.language === "pt-BR" ? "brl" : "usd",
       }}
       validationSchema={isYourData ? YourDataSchema({ t }) : CardSchema({ t })}
       onSubmit={async (formData: any, actions: any) => {
@@ -77,9 +82,6 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
           setDonation({ ...donation, payment });
           setIndex(2);
         }
-
-        if (!isYourData && !isPayment) {
-        }
       }}
     >
       {({
@@ -95,7 +97,10 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
         const btnText: string = isYourData
           ? t("donate.form.buttons.continue")
           : isPayment
-          ? t("donate.form.buttons.donate", { value: values.customDonation })
+          ? t("donate.form.buttons.donate", {
+              value: values.customDonation,
+              currency: values.currency === "brl" ? "R$" : "$",
+            })
           : t("donate.form.buttons.finish");
 
         return (
@@ -105,17 +110,33 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
             onSubmit={isPayment || isYourData ? handleSubmit : undefined}
           >
             {index === 2 ? (
-              <Stack>
-                <Text>Etapa de finalizar</Text>
-              </Stack>
+              <Finish t={t} name={values.name} />
             ) : (
-              <Stack spacing={6} position="relative">
-                <Text fontSize="md">{t("donate.description")}</Text>
-                <Lock t={t} />
+              <Stack spacing={6} mt="45px">
+                <Stack position="relative">
+                  <Heading
+                    as="h2"
+                    color="nossas.green"
+                    size="2xl"
+                    fontWeight="normal"
+                  >
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: t("donate.title", {
+                          interpolation: { escapeValue: false },
+                        }),
+                      }}
+                    />
+                  </Heading>
+                  <Text fontSize="md">{t("donate.description")}</Text>
+                  <Lock t={t} />
+                </Stack>
                 <Tabs index={index} onChange={(i: number) => setIndex(i)}>
                   <TabList>
                     <Tab {...tabProps}>{t("donate.tabs.yourdata")}</Tab>
-                    <Tab {...tabProps}>{t("donate.tabs.payments")}</Tab>
+                    <Tab {...tabProps} isDisabled={isYourData}>
+                      {t("donate.tabs.payments")}
+                    </Tab>
                   </TabList>
                   <TabPanels>
                     <TabPanel>
