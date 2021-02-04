@@ -4,7 +4,11 @@ import GoogleFonts from "next-google-fonts";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-const Body = ({ children, isMobile }) => (
+interface BodyProps {
+  isMobile: boolean;
+}
+
+const Body: React.FC<BodyProps> = ({ children, isMobile }) => (
   <Flex minH="100vh" direction="column">
     <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bebas+Neue:400,700" />
     <Head>

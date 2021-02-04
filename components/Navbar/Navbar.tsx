@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Button, Flex, Link, Stack, Box } from "@chakra-ui/react";
 import { fallDown as Menu } from "react-burger-menu";
+
 import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
+import DonationButton from "../Donation";
 import I18nButton from "../I18nButton";
 import Newsletter from "../Newsletter";
 import SocialMedia from "../SocialMedia";
@@ -38,7 +40,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
             ml="40px"
           >
             <Brand />
-            <Button size="md">Doar</Button>
+            <DonationButton />
           </Flex>
           <Menu
             pageWrapId="page-wrap"
@@ -54,7 +56,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
               mt="-22px"
             >
               <Brand />
-              <Button size="md">Doar</Button>
+              <DonationButton />
             </Flex>
             <Flex className="bm-item-list-menu" direction="column">
               {children}
@@ -76,7 +78,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
           </Stack>
           <Stack spacing={8} direction="row" alignContent="center">
             <I18nButton />
-            <Button size="md">Doar</Button>
+            <DonationButton />
           </Stack>
         </>
       )}
@@ -91,7 +93,6 @@ const Navbar = ({ t, isMobile }) => {
       <LinkStyled href="#">{t("projects")}</LinkStyled>
       <LinkStyled href="#">{t("work")}</LinkStyled>
       <LinkStyled href="#">{t("actvist")}</LinkStyled>
-      <LinkStyled href="#">{t("donate")}</LinkStyled>
     </NavbarComponent>
   );
 };

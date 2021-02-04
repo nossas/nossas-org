@@ -3,7 +3,57 @@
   "projects": "nossos projetos",
   "work": "o que estamos fazendo",
   "actvist": "seja um ativista",
-  "donate": "doar agora",
+  "donate": {
+    "button": "DOAR",
+    "title": "<b>DOE PARA</b> O NOSSAS",
+    "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+    "padlock": "doação segura",
+    "tabs": {
+      "yourdata": "Seus dados",
+      "payments": "Pagamentos"
+    },
+    "form": {
+      "fields": {
+        "cardholderName": {
+          "label": "Nome",
+          "placeholder": "Nome no cartão",
+          "required": "Preencha seu nome como no cartão"
+        },
+        "customDonation": {
+          "label": "Valor",
+          "required": "Informe um valor de doação",
+          "min": "Informe ao menos 1 para doação"
+        },
+        "name": {
+          "label": "Nome",
+          "placeholder": "Seu nome",
+          "required": "Informe seu nome"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Seu e-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "Informe um e-mail válido"
+        },
+        "phone": {
+          "label": "Whatsapp",
+          "placeholder": "(000) 00000-0000",
+          "required": "Informe seu whatsapp"
+        }
+      },
+      "buttons": {
+        "continue": "Continuar",
+        "donate": "Doar {{currency}}{{value}}",
+        "finish": "Finalizar"
+      }
+    },
+    "finish": {
+      "imageAlt": "Doação bem sucedida!",
+      "title": "<b>Valeu,</b> {{name}}!",
+      "thanks": "Sua doação faz toda a diferença!",
+      "message": "Mensagem de agradecimento etc etc."
+    }
+  },
   "social": {
     "title": "SIGA NAS REDES SOCIAIS",
     "icons": {

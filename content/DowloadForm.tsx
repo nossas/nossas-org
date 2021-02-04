@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../components/Form";
+import Form from "../components/FormSchema";
 import { withTranslation } from "../i18n";
 
 const schema: any = {
