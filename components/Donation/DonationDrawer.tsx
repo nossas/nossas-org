@@ -23,7 +23,7 @@ interface DonationProps {
   onClick: any;
   btnText: string;
   isDisabled: boolean;
-  onSubmit: any;
+  onSubmit?: any;
 }
 
 const Donation: React.FC<DonationProps> = ({
@@ -70,7 +70,7 @@ const Donation: React.FC<DonationProps> = ({
             <DrawerBody>{children}</DrawerBody>
             <DrawerFooter>
               <Button
-                onClick={onSubmit}
+                onClick={onSubmit || onClose}
                 flex={1}
                 size="md"
                 isDisabled={isDisabled}

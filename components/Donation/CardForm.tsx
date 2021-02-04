@@ -1,26 +1,35 @@
 import React from "react";
-import { Stack } from "@chakra-ui/react";
+import styled from "@emotion/styled";
+import { Stack, FormHelperText } from "@chakra-ui/react";
 import { CardElement } from "@stripe/react-stripe-js";
 import * as Yup from "yup";
 
 import { fetchPostJSON } from "../../lib/apiHelpers";
 import InputField from "../Form/InputField";
 
-export const schema = Yup.object().shape({
-  cardholderName: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  customDonation: Yup.number().required("Required"),
-});
+export const schema = ({ t }) =>
+  Yup.object().shape({
+    cardholderName: Yup.string().required(
+      t("donate.form.fields.cardholderName.required")
+    ),
+    customDonation: Yup.number()
+      .min(1, t("donate.form.fields.customDonation.min"))
+      .required(t("donate.form.fields.customDonation.required")),
+  });
 
-export const initialValues = {
+export interface CardFormValues {
+  customDonation?: number;
+  cardholderName?: string;
+}
+
+export const initialValues: CardFormValues = {
   customDonation: 50,
   cardholderName: "",
 };
 
 const CARD_OPTIONS = {
   iconStyle: "solid" as const,
+  hidePostalCode: true,
   style: {
     base: {
       height: "2.5rem",
@@ -34,7 +43,7 @@ const CARD_OPTIONS = {
         color: "#fce883",
       },
       "::placeholder": {
-        color: "#606373",
+        color: "#E2E8F0",
       },
     },
     invalid: {
@@ -64,37 +73,56 @@ const PaymentStatus = ({
       return <h2>Payment Succeeded 🥳</h2>;
 
     case "error":
-      return (
-        <>
-          <h2>Error 😭</h2>
-          <p className="error-message">{errors.form}</p>
-        </>
-      );
+      return <FormHelperText color="red">{errors.form}</FormHelperText>;
 
     default:
       return null;
   }
 };
 
-const styles = {
-  border: "1px solid #aaa",
-  borderRadius: "0.375rem",
-};
+const InputCardField = styled.div`
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
 
-export const Fields = ({ status, setStatus, errors, setErrors }) => {
-  // const stripe = useStripe();
-  // const elements = useElements();
+  .StripeElement--webkit-autofill {
+    background: transparent !important;
+  }
 
+  .StripeElement {
+    width: 100%;
+    padding: 11px 15px;
+  }
+`;
+
+interface FieldsProps {
+  t: any;
+  status?: string;
+  setStatus: any;
+  errors?: any;
+  setErrors: any;
+}
+
+export const Fields: React.FC<FieldsProps> = ({
+  t,
+  status,
+  setStatus,
+  errors,
+  setErrors,
+}) => {
   return (
     <Stack spacing={4}>
       <InputField
         name="cardholderName"
         type="text"
-        label="Nome"
-        placeholder="Nome no cartão"
+        label={t("donate.form.fields.cardholderName.label")}
+        placeholder={t("donate.form.fields.cardholderName.placeholder")}
       />
-      <InputField name="customDonation" type="number" label="Valor" />
-      <div style={styles}>
+      <InputField
+        name="customDonation"
+        type="number"
+        label={t("donate.form.fields.customDonation.label")}
+      />
+      <InputCardField>
         <CardElement
           options={CARD_OPTIONS}
           onChange={(e) => {
@@ -107,7 +135,7 @@ export const Fields = ({ status, setStatus, errors, setErrors }) => {
             }
           }}
         />
-      </div>
+      </InputCardField>
       <PaymentStatus status={status} errors={errors} />
     </Stack>
   );

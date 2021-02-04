@@ -3,38 +3,53 @@ import { Stack } from "@chakra-ui/react";
 import * as Yup from "yup";
 import InputField from "../Form/InputField";
 
-export const handleSubmit = async (formData: any) => {
-  console.log("formData", formData);
+export const handleSubmit = async (formData: YourDataValues): Promise<any> => {
+  return formData;
 };
 
-export const Fields = () => (
+interface FieldsProps {
+  t: any;
+}
+
+export const Fields: React.FC<FieldsProps> = ({ t }) => (
   <Stack spacing={4}>
-    <InputField name="name" type="text" label="Nome" placeholder="Seu nome" />
+    <InputField
+      name="name"
+      type="text"
+      label={t("donate.form.fields.name.label")}
+      placeholder={t("donate.form.fields.name.placeholder")}
+    />
     <InputField
       name="email"
       type="email"
-      label="E-mail"
-      placeholder="Seu e-mail"
+      label={t("donate.form.fields.email.label")}
+      placeholder={t("donate.form.fields.email.placeholder")}
     />
     <InputField
-      name="whatsapp"
-      type="text"
-      label="WhatsApp"
-      placeholder="(000) 00000-0000"
+      name="phone"
+      type="tel"
+      label={t("donate.form.fields.phone.label")}
+      placeholder={t("donate.form.fields.phone.placeholder")}
     />
   </Stack>
 );
 
-export const schema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  whatsapp: Yup.string().required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-});
+export const schema = ({ t }: { t: any }) =>
+  Yup.object().shape({
+    name: Yup.string().required(t("donate.form.fields.name.required")),
+    phone: Yup.string().required(t("donate.form.fields.phone.required")),
+    email: Yup.string()
+      .email(t("donate.form.fields.email.invalid"))
+      .required(t("donate.form.fields.email.required")),
+  });
 
-export const initialValues = {
+export interface YourDataValues {
+  name?: string;
+  email?: string;
+  whatsapp?: string;
+}
+
+export const initialValues: YourDataValues = {
   name: "",
   email: "",
   whatsapp: "",

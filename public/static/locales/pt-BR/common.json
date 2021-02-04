@@ -11,6 +11,41 @@
     "tabs": {
       "yourdata": "Seus dados",
       "payments": "Pagamentos"
+    },
+    "form": {
+      "fields": {
+        "cardholderName": {
+          "label": "Nome",
+          "placeholder": "Nome no cartão",
+          "required": "Preencha seu nome como no cartão"
+        },
+        "customDonation": {
+          "label": "Valor",
+          "required": "Informe um valor de doação",
+          "min": "Informe ao menos 1 para doação"
+        },
+        "name": {
+          "label": "Nome",
+          "placeholder": "Seu nome",
+          "required": "Informe seu nome"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Seu e-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "Informe um e-mail válido"
+        },
+        "phone": {
+          "label": "Whatsapp",
+          "placeholder": "(000) 00000-0000",
+          "required": "Informe seu whatsapp"
+        }
+      },
+      "buttons": {
+        "continue": "Continuar",
+        "donate": "Doar R${{value}}",
+        "finish": "Finalizar"
+      }
     }
   },
   "social": {
