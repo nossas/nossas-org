@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export const nossas = {
   fonts: {
     heading: "Bebas Neue",
@@ -6,10 +8,15 @@ export const nossas = {
   colors: {
     nossas: {
       blue: "#2D00A1",
+      lightblue: "#3707B4",
+      darkblue: "#250086",
+      lightpink: "#F10991",
       pink: "#FF0095",
+      darkpink: "#CC097B",
       green: "#00C3B0",
-      darkgrey: "#606373",
-      grey: "#aaaaaa",
+      darkgray: "#606373",
+      gray: "#BCBEC0",
+      lightgray: "#eee",
     },
   },
   fontSizes: {
@@ -23,45 +30,27 @@ export const nossas = {
     "4xl": "70px",
   },
   components: {
-    Button: {
+    Button,
+    Text: {
       sizes: {
+        xs: {
+          fontSize: ["xs"],
+        },
+        sm: {
+          fontSize: ["xs", "sm"],
+        },
         md: {
-          fontSize: "15px",
-          padding: "12px 16px",
-        },
-      },
-      variants: {
-        solid: {
-          bg: "nossas.blue",
-          color: "white",
-        },
-        outline: {
-          bg: "white",
-          color: "nossas.blue",
-        },
-        pink: {
-          bg: "nossas.pink",
-          color: "white",
-        },
-        link: {
-          bg: "transparent",
-          color: "nossas.blue",
           fontSize: ["sm", "md"],
         },
       },
-      defaultProps: {
-        size: "md",
-        variant: "solid",
-      },
-    },
-    Text: {
       variants: {
         paragraph: {
-          color: "nossas.darkgrey",
+          color: "nossas.darkgray",
         },
       },
       defaultProps: {
         variant: "paragraph",
+        size: "md",
       },
     },
     Heading: {
@@ -92,9 +81,15 @@ export const nossas = {
       variants: {
         blue: {
           color: "nossas.blue",
+          _hover: {
+            color: "nossas.lightblue",
+          },
         },
         pink: {
           color: "nossas.pink",
+          _hover: {
+            color: "nossas.lightpink",
+          },
         },
         nav: {
           fontWeight: "normal",

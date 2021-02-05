@@ -21,6 +21,7 @@ interface DonationProps {
   btnText: string;
   isDisabled: boolean;
   onSubmit?: any;
+  btnChildren: any;
 }
 
 const Donation: React.FC<DonationProps> = ({
@@ -61,12 +62,9 @@ const Donation: React.FC<DonationProps> = ({
             <DrawerBody>{children}</DrawerBody>
             <DrawerFooter>
               <Button
-                onClick={onSubmit || onClose}
                 flex={1}
-                size="md"
+                onClick={onSubmit || onClose}
                 isDisabled={isDisabled}
-                color={isDisabled ? "nossa.darkgray" : "white"}
-                bgColor={isDisabled ? "nossas.gray" : "nossas.blue"}
               >
                 {btnText}
               </Button>

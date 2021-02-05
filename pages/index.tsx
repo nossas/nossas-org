@@ -10,10 +10,11 @@ import {
 } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import Hero from "../components/Hero";
-import { withTranslation, I18nInitialProps } from "../i18n";
 import { Body, Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
 import Media from "../components/Media";
+import Donation from "../components/Donation";
+import { withTranslation, I18nInitialProps } from "../i18n";
 
 const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
   <Stack
@@ -51,9 +52,9 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       <Section
         alignItems={["flex-start", "center"]}
         direction={["column", "row"]}
-        px={["60px", "300px"]}
+        px={["60px", "310px"]}
         py={["30px", "130px"]}
-        spacing={[30, 60]}
+        spacing={["30px", "60px"]}
       >
         <Image
           maxW={[155, 250]}
@@ -61,15 +62,11 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           alt={t("content:images.home.etudonossas")}
         />
         <Stack spacing={6} direction="column">
-          <Text fontSize={["sm", "md"]} color="nossas.darkgrey">
-            {t("content:blocks.home.etudonossas")}
-          </Text>
+          <Text>{t("content:blocks.home.etudonossas")}</Text>
           <Link
             href="#"
             title={t("content:links.knowmore")}
             color="nossas.pink"
-            fontWeight="700"
-            fontSize={["sm", "md"]}
           >
             {t("content:links.knowmore")} +
           </Link>
@@ -179,7 +176,9 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           <Text fontSize={["sm", "md"]} textAlign={["center", "left"]}>
             {t("content:blocks.home.doacao.description")}
           </Text>
-          <Button maxW={190}>{t("content:blocks.home.doacao.button")}</Button>
+          <Donation maxW={190}>
+            {t("content:blocks.home.doacao.button")}
+          </Donation>
         </Stack>
       </Section>
       <Media

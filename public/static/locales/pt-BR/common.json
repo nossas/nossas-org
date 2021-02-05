@@ -1,8 +1,8 @@
 {
   "donate": {
     "button": "Doar",
-    "title": "<b>DOE PARA</b> O NOSSAS",
-    "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+    "title": "<b>APOIE</b> O NOSSAS",
+    "description": "Nossas atividades são sustentadas exclusivamente por doações de pessoas e fundações que acreditam no que fazemos. Faça sua doação:",
     "padlock": "doação segura",
     "tabs": {
       "yourdata": "Seus dados",
@@ -65,7 +65,8 @@
     }
   },
   "newsletter": {
-    "title": "RECEBA NOSSA NEWSLETTER",
+    "title": "FIQUE POR DENTRO",
+    "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
     "placeholder": "Seu e-mail",
     "button": "Salvar"
   },

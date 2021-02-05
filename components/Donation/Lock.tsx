@@ -28,14 +28,14 @@ const styles = {
 const Lock = ({ t }: any) => (
   <Stack
     position="absolute"
-    bottom="-60px"
+    bottom="-45px"
     right="5px"
     direction="row"
     spacing={2}
     alignItems="center"
   >
     <Icon />
-    <Text color="nossas.green" fontSize="xs" w="40px">
+    <Text color="nossas.green" fontSize="12px" w="40px">
       {t("donate.padlock")}
     </Text>
   </Stack>

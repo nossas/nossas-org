@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Heading, Input, Stack } from "@chakra-ui/react";
+import { Button, Heading, Input, Text, Stack } from "@chakra-ui/react";
 import { withTranslation } from "../i18n";
 
 type Props = {
@@ -9,10 +9,11 @@ type Props = {
 
 const Newsletter: React.FC<Props> = ({ t, inverted }) => {
   return (
-    <div>
-      <Heading as="h4" color={inverted ? "white" : "nossas.blue"} mb={4}>
+    <Stack spacing={4} maxW="430px">
+      <Heading as="h4" color={inverted ? "white" : "nossas.blue"}>
         {t("newsletter.title")}
       </Heading>
+      <Text size="xs">{t("newsletter.description")}</Text>
       <Stack direction="row" spacing={1} alignItems="center">
         <Input
           variant="filled"
@@ -24,7 +25,7 @@ const Newsletter: React.FC<Props> = ({ t, inverted }) => {
           {t("newsletter.button")}
         </Button>
       </Stack>
-    </div>
+    </Stack>
   );
 };
 

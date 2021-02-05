@@ -26,10 +26,8 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
   <Box boxShadow="base">
     <Image src={item.src} alt={item.alt} width="100%" height={380} />
     <Stack p={8} spacing={4}>
-      <Heading as="h3" fontSize={["lg", "2xl"]}>
-        {item.title}
-      </Heading>
-      <Text fontSize={["sm", "md"]}>{item.description}</Text>
+      <Heading as="h3">{item.title}</Heading>
+      <Text>{item.description}</Text>
       <Link href={item.href} variant="pink">
         {`${item.link} >`}
       </Link>

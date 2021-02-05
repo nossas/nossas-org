@@ -4,7 +4,7 @@ import { fallDown as Menu } from "react-burger-menu";
 
 import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
-import DonationButton from "../Donation";
+import Donation from "../Donation";
 import I18nButton from "../I18nButton";
 import Newsletter from "../Newsletter";
 import SocialMedia from "../SocialMedia";
@@ -40,7 +40,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
             ml="40px"
           >
             <Brand />
-            <DonationButton variant="outline" />
+            <Donation variant="outline">{t("donate.button")}</Donation>
           </Flex>
           <Menu
             pageWrapId="page-wrap"
@@ -56,7 +56,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
               mt="-22px"
             >
               <Brand />
-              <DonationButton variant="outline" />
+              <Donation variant="outline">{t("donate.button")}</Donation>
             </Flex>
             <Flex className="bm-item-list-menu" direction="column">
               {children}
@@ -78,7 +78,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
           </Stack>
           <Stack spacing={8} direction="row" alignContent="center">
             <I18nButton />
-            <DonationButton variant="outline" />
+            <Donation variant="outline">{t("donate.button")}</Donation>
           </Stack>
         </>
       )}
@@ -89,10 +89,9 @@ const NavbarComponent = ({ children, t, isMobile }) => {
 const Navbar = ({ t, isMobile }) => {
   return (
     <NavbarComponent t={t} isMobile={isMobile}>
-      <LinkStyled href="#">{t("about")}</LinkStyled>
-      <LinkStyled href="#">{t("projects")}</LinkStyled>
-      <LinkStyled href="#">{t("work")}</LinkStyled>
-      <LinkStyled href="#">{t("actvist")}</LinkStyled>
+      <LinkStyled href="#">{t("footer.about")}</LinkStyled>
+      <LinkStyled href="#">{t("footer.actvist")}</LinkStyled>
+      <LinkStyled href="#">{t("footer.work")}</LinkStyled>
     </NavbarComponent>
   );
 };

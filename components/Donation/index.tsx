@@ -55,11 +55,15 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const isPayment: boolean = index === 1;
   // default props to tab
   const tabProps: any = {
-    fontSize: "lg",
+    fontSize: "18px",
     fontFamily: "Bebas Neue",
     color: "nossas.grey",
     _selected: { color: "nossas.blue" },
     textTransform: "uppercase",
+    p: "0 35px 0 0",
+  };
+  const tagPanelProps: any = {
+    p: "20px 0",
   };
 
   return (
@@ -146,8 +150,8 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                 <Stack position="relative">
                   <Heading
                     as="h2"
+                    size="lg"
                     color="nossas.green"
-                    size="2xl"
                     fontWeight="normal"
                   >
                     <div
@@ -158,7 +162,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                       }}
                     />
                   </Heading>
-                  <Text fontSize="md">{t("donate.description")}</Text>
+                  <Text size="sm">{t("donate.description")}</Text>
                   <Lock t={t} />
                 </Stack>
                 <Tabs index={index} onChange={(i: number) => setIndex(i)}>
@@ -169,10 +173,10 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                     </Tab>
                   </TabList>
                   <TabPanels>
-                    <TabPanel>
+                    <TabPanel {...tagPanelProps}>
                       <YourDataFields t={t} />
                     </TabPanel>
-                    <TabPanel>
+                    <TabPanel {...tagPanelProps}>
                       <CardFields
                         {...{ t, errors, setErrors, status, setStatus }}
                       />

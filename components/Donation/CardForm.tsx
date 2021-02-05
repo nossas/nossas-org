@@ -112,12 +112,14 @@ export const Fields: React.FC<FieldsProps> = ({
   return (
     <Stack spacing={4}>
       <InputField
+        inline
         name="cardholderName"
         type="text"
         label={t("donate.form.fields.cardholderName.label")}
         placeholder={t("donate.form.fields.cardholderName.placeholder")}
       />
       <InputField
+        inline
         name="customDonation"
         type="number"
         label={t("donate.form.fields.customDonation.label")}
