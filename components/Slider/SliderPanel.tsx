@@ -22,6 +22,7 @@ const renderItems = (items: any[], Content: React.ElementType) =>
       <Content items={values} />
     </div>
   ));
+
 const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
   const Content = isMobile ? Panel : Group;
   let newItems = isMobile
@@ -31,7 +32,11 @@ const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
         return items.splice(keys[index][0], keys[index][1]);
       });
 
-  return <Slider {...props}>{renderItems(newItems, Content)}</Slider>;
+  return (
+    <Slider isMobile={isMobile} {...props}>
+      {renderItems(newItems, Content)}
+    </Slider>
+  );
 };
 
 export default SliderPanel;

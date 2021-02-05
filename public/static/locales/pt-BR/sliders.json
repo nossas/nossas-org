@@ -8,11 +8,11 @@
   },
   "home": {
     "actionnow": {
-      "rendabasica": {
-        "title": "Renda Básica",
-        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria, a campanha da Renda Básica lutará pela distribuição de renda para os mais pobres."
+      "1": {
+        "title": "Auxílio até o fim da pandemia",
+        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. Nossa campanha é para lutar pela continuação da distribuição de recursos enquanto durar a crise."
       },
-      "programamobilizadores": {
+      "2": {
         "title": "Programa de Mobilizadores",
         "description": "Inscreva-se para as turmas para aprender a fazer mobilizações de impacto na sua cidade. As inscrições estarão abertas a partir de fevereiro."
       }

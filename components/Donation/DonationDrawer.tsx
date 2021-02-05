@@ -29,14 +29,16 @@ const Donation: React.FC<DonationProps> = ({
   onSubmit,
   btnText,
   isDisabled,
+  btnChildren,
+  ...props
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
   return (
     <Form>
-      <Button ref={btnRef} size="md" onClick={onOpen}>
-        {t("donate.button")}
+      <Button size="md" {...props} onClick={onOpen} ref={btnRef}>
+        {btnChildren}
       </Button>
       <Drawer
         isOpen={isOpen}

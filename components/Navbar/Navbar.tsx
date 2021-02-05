@@ -10,7 +10,7 @@ import Newsletter from "../Newsletter";
 import SocialMedia from "../SocialMedia";
 
 export const LinkStyled = ({ children, ...props }) => (
-  <Link color="white" {...props}>
+  <Link variant="nav" {...props}>
     {children}
   </Link>
 );
@@ -40,7 +40,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
             ml="40px"
           >
             <Brand />
-            <DonationButton />
+            <DonationButton variant="outline" />
           </Flex>
           <Menu
             pageWrapId="page-wrap"
@@ -56,7 +56,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
               mt="-22px"
             >
               <Brand />
-              <DonationButton />
+              <DonationButton variant="outline" />
             </Flex>
             <Flex className="bm-item-list-menu" direction="column">
               {children}
@@ -78,7 +78,7 @@ const NavbarComponent = ({ children, t, isMobile }) => {
           </Stack>
           <Stack spacing={8} direction="row" alignContent="center">
             <I18nButton />
-            <DonationButton />
+            <DonationButton variant="outline" />
           </Stack>
         </>
       )}

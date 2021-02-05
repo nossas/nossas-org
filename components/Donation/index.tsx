@@ -44,7 +44,7 @@ interface Values extends YourDataValues, CardFormValues {
   widget_id: number;
 }
 
-const Donation: React.FC<DonationProps> = ({ t, registerDonate }) => {
+const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const [index, setIndex] = useState(0);
   const [donation, setDonation] = useState({});
   // use stripe in 2-step, see ./CardForm handleSubmit
@@ -136,6 +136,8 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate }) => {
             btnText={btnText}
             isDisabled={isSubmitting || !isValid}
             onSubmit={isPayment || isYourData ? handleSubmit : undefined}
+            btnChildren={props.children}
+            {...props}
           >
             {index === 2 ? (
               <Finish t={t} name={values.name} />
@@ -232,7 +234,7 @@ interface Result {
   };
 }
 
-const StripeDonation = ({ t }) => {
+const StripeDonation = ({ t, ...props }) => {
   const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
 
   const registerDonate = async (args: SubmitArgs): Promise<Result> => {
@@ -248,7 +250,7 @@ const StripeDonation = ({ t }) => {
 
   return (
     <Elements stripe={getStripe()} options={ELEMENTS_OPTIONS}>
-      <Donation t={t} registerDonate={registerDonate} />
+      <Donation t={t} registerDonate={registerDonate} {...props} />
     </Elements>
   );
 };

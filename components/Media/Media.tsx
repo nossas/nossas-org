@@ -14,7 +14,6 @@ const Media = ({ title, logos }) => {
         <Heading
           display="flex"
           alignItems="center"
-          fontSize={["3xl", "5xl"]}
           color="nossas.blue"
           fontWeight="200"
         >

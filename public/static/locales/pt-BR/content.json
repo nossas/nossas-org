@@ -23,7 +23,7 @@
     "home": {
       "actionnow": "<b>O que estamos</b> fazendo",
       "doacao": {
-        "title": "<b>Faça uma</b> doação",
+        "title": "Faça uma <b>doação</b>",
         "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Para manter nossa independência, não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas públicas. Por isso, precisamos de você.",
         "button": "Faça uma doação"
       },

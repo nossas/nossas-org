@@ -1,10 +1,6 @@
 {
-  "about": "conheça o nossas",
-  "projects": "nossos projetos",
-  "work": "o que estamos fazendo",
-  "actvist": "seja um ativista",
   "donate": {
-    "button": "DOAR",
+    "button": "Doar",
     "title": "<b>DOE PARA</b> O NOSSAS",
     "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
     "padlock": "doação segura",
@@ -73,6 +69,11 @@
     "placeholder": "Seu e-mail",
     "button": "Salvar"
   },
-  "Hero": "O NOSSAS é a organização que impulsiona o ativismo democrático e solidário no Brasil",
-  "HeroSubtitle": "Há 10 anos desenvolvemos projetos, táticas e estratégias de mobilização - tudo isso resultou em projetos de impacto."
+  "footer": {
+    "about": "conheça o nossas",
+    "projects": "nossos projetos",
+    "work": "acontecendo agora",
+    "actvist": "seja um ativista",
+    "donate": "faça uma doação"
+  }
 }

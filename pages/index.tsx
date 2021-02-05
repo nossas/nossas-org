@@ -26,7 +26,7 @@ const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
     textAlign="center"
   >
     <Image src={src} alt={alt} {...props} />
-    <Heading as="h4" size="lg" color="nossas.blue" textTransform="uppercase">
+    <Heading as="h4" size="sm" color="nossas.blue" textTransform="uppercase">
       {title}
     </Heading>
   </Stack>
@@ -41,12 +41,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
     <Body isMobile={ua.isMobile}>
       <Hero
         Title={
-          <Heading
-            as="h1"
-            fontSize={["3xl", "6xl"]}
-            color="white"
-            textAlign="center"
-          >
+          <Heading as="h1" size="lg" color="white" textAlign="center">
             {t("content:covers.home.title")}
           </Heading>
         }
@@ -66,7 +61,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           alt={t("content:images.home.etudonossas")}
         />
         <Stack spacing={6} direction="column">
-          <Text fontSize={["xl", "2xl"]} color="nossas.darkgrey">
+          <Text fontSize={["sm", "md"]} color="nossas.darkgrey">
             {t("content:blocks.home.etudonossas")}
           </Text>
           <Link
@@ -74,7 +69,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             title={t("content:links.knowmore")}
             color="nossas.pink"
             fontWeight="700"
-            fontSize={["xl", "2xl"]}
+            fontSize={["sm", "md"]}
           >
             {t("content:links.knowmore")} +
           </Link>
@@ -119,10 +114,10 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       </Section>
       <Section px={["20px"]}>
         <Heading
-          px={[0, "70px"]}
           as="h2"
+          size="lg"
+          px={[0, "70px"]}
           color="nossas.pink"
-          size="2xl"
           fontWeight="normal"
         >
           <div
@@ -134,24 +129,22 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Heading>
         <SliderPanel
-          height={50}
+          height={40}
           isMobile={ua.isMobile}
           items={[
             {
               alt: "teste",
-              src: "/static/media/s3/programademobilizadores.png",
-              title: t("sliders:home.actionnow.rendabasica.title"),
-              description: t("sliders:home.actionnow.rendabasica.description"),
+              src: "/static/media/s3/rendabasica.png",
+              title: t("sliders:home.actionnow.1.title"),
+              description: t("sliders:home.actionnow.1.description"),
               link: t("content:links.actionnow"),
               href: "#",
             },
             {
               alt: "teste",
-              src: "/static/media/s3/rendabasica.png",
-              title: t("sliders:home.actionnow.programamobilizadores.title"),
-              description: t(
-                "sliders:home.actionnow.programamobilizadores.description"
-              ),
+              src: "/static/media/s3/programademobilizadores.png",
+              title: t("sliders:home.actionnow.2.title"),
+              description: t("sliders:home.actionnow.2.description"),
               link: t("content:links.actionnow"),
               href: "#",
             },
@@ -173,8 +166,8 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1} spacing={8} alignItems="center">
-          <Heading as="h2" color="nossas.green" size="2xl" fontWeight="normal">
+        <Stack flex={1} spacing={8}>
+          <Heading as="h2" size="lg" color="nossas.green" fontWeight="normal">
             <div
               dangerouslySetInnerHTML={{
                 __html: t("content:blocks.home.doacao.title", {
@@ -183,12 +176,10 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               }}
             />
           </Heading>
-          <Text fontSize={["xl", "2xl"]} textAlign={["center", "left"]}>
+          <Text fontSize={["sm", "md"]} textAlign={["center", "left"]}>
             {t("content:blocks.home.doacao.description")}
           </Text>
-          <Button color="white" maxW={190} backgroundColor="nossas.blue">
-            {t("content:blocks.home.doacao.button")}
-          </Button>
+          <Button maxW={190}>{t("content:blocks.home.doacao.button")}</Button>
         </Stack>
       </Section>
       <Media
