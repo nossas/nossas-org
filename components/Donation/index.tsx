@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { gql, useMutation } from "@apollo/client";
 import {
   Heading,
   Text,
@@ -35,13 +36,15 @@ import Finish from "./Finish";
 
 interface DonationProps {
   t: any;
+  registerDonate: (args: SubmitArgs) => Promise<Result>;
 }
 
 interface Values extends YourDataValues, CardFormValues {
   currency: "usd" | "brl";
+  widget_id: number;
 }
 
-const Donation: React.FC<DonationProps> = ({ t }) => {
+const Donation: React.FC<DonationProps> = ({ t, registerDonate }) => {
   const [index, setIndex] = useState(0);
   const [donation, setDonation] = useState({});
   // use stripe in 2-step, see ./CardForm handleSubmit
@@ -64,10 +67,11 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
       initialValues={{
         ...yourDataInitialValues,
         ...cardInitialValues,
+        widget_id: parseInt(process.env.NEXT_PUBLIC_WIDGET_ID),
         currency: i18n.language === "pt-BR" ? "brl" : "usd",
       }}
       validationSchema={isYourData ? YourDataSchema({ t }) : CardSchema({ t })}
-      onSubmit={async (formData: any, actions: any) => {
+      onSubmit={async (formData: Values, actions: any) => {
         if (isYourData) {
           const yourData = await yourDataHandleSubmit(formData);
           setDonation({ ...donation, ...yourData });
@@ -75,12 +79,36 @@ const Donation: React.FC<DonationProps> = ({ t }) => {
         }
 
         if (isPayment) {
+          // Submit donation on stripe
           const payment = await cardHandleSubmit(formData, actions, {
             stripe,
             elements,
           });
-          setDonation({ ...donation, payment });
-          setIndex(2);
+
+          try {
+            // Register donation in Bonde API
+            await registerDonate({
+              activist: {
+                name: formData.name,
+                phone: formData.phone,
+                email: formData.email,
+              },
+              input: {
+                amount: formData.customDonation,
+                payment_method: "credit_card",
+                checkout_data: { formData },
+                gateway_data: { payment },
+              },
+              widget_id: formData.widget_id,
+            });
+
+            // Prepare state to success message
+            setDonation({ ...donation, payment });
+            setIndex(2);
+          } catch (e) {
+            console.error(e);
+            actions.setErrors({ form: "Register donation failed!" });
+          }
         }
       }}
     >
@@ -166,10 +194,63 @@ const ELEMENTS_OPTIONS = {
   ],
 };
 
-const StripeDonation = ({ t }) => (
-  <Elements stripe={getStripe()} options={ELEMENTS_OPTIONS}>
-    <Donation t={t} />
-  </Elements>
-);
+const CREATE_DONATION_GQL = gql`
+  mutation(
+    $activist: ActivistInput!
+    $input: DonationInput!
+    $widget_id: Int!
+  ) {
+    create_donation(activist: $activist, input: $input, widget_id: $widget_id) {
+      data
+    }
+  }
+`;
+
+type ActivistInput = {
+  name: string;
+  email: string;
+  phone: string;
+};
+
+type DonationInput = {
+  amount: number;
+  payment_method: string;
+  checkout_data: any;
+  gateway_data: any;
+};
+
+interface SubmitArgs {
+  activist: ActivistInput;
+  input: DonationInput;
+  widget_id: number;
+}
+
+interface Result {
+  data: {
+    id: number;
+    created_at: string;
+  };
+}
+
+const StripeDonation = ({ t }) => {
+  const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
+
+  const registerDonate = async (args: SubmitArgs): Promise<Result> => {
+    const { data, errors } = await donate({ variables: args });
+
+    if (errors) {
+      console.log("RegisterDonate failed!", { errors });
+      throw new Error("RegisterDonate failed!");
+    }
+
+    return data;
+  };
+
+  return (
+    <Elements stripe={getStripe()} options={ELEMENTS_OPTIONS}>
+      <Donation t={t} registerDonate={registerDonate} />
+    </Elements>
+  );
+};
 
 export default withTranslation("common")(StripeDonation);

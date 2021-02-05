@@ -46,11 +46,11 @@ export const schema = ({ t }: { t: any }) =>
 export interface YourDataValues {
   name?: string;
   email?: string;
-  whatsapp?: string;
+  phone?: string;
 }
 
 export const initialValues: YourDataValues = {
   name: "",
   email: "",
-  whatsapp: "",
+  phone: "",
 };
