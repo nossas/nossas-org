@@ -102,5 +102,35 @@ export const nossas = {
         size: "md",
       },
     },
+    Input: {
+      variants: {
+        outline: {
+          field: {
+            _focus: {
+              borderColor: "inherit",
+              boxShadow: "0",
+            },
+            _hover: {
+              borderColor: "inherit",
+            },
+          },
+        },
+      },
+    },
+    Select: {
+      variants: {
+        outline: {
+          field: {
+            _focus: {
+              borderColor: "inherit",
+              boxShadow: "0",
+            },
+            _hover: {
+              borderColor: "inherit",
+            },
+          },
+        },
+      },
+    },
   },
 };

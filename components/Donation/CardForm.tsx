@@ -6,6 +6,7 @@ import * as Yup from "yup";
 
 import { fetchPostJSON } from "../../lib/apiHelpers";
 import InputField from "../Form/InputField";
+import SelectField from "../Form/SelectField";
 
 export const schema = ({ t }) =>
   Yup.object().shape({
@@ -135,7 +136,16 @@ export const Fields: React.FC<FieldsProps> = ({
         placeholder={t("donate.form.fields.cardholderName.placeholder")}
       />
       <Stack direction="row" spacing={4}>
-        <InputField flex={1.5} inline name="currency" label="Moeda" />
+        <SelectField
+          flex={1.5}
+          inline
+          name="currency"
+          label="Moeda"
+          options={{
+            items: { brl: "BRL", usd: "USD" },
+            type: "object",
+          }}
+        />
         <InputField
           flex={2}
           inline
