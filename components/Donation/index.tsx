@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import { gql, useMutation } from "@apollo/client";
 import {
+  Box,
   Heading,
+  Image,
   Text,
-  Tab,
+  // Tab,
   Tabs,
   TabList,
   TabPanels,
   TabPanel,
   Stack,
+  chakra,
   useDisclosure,
+  useTab,
+  useStyles,
 } from "@chakra-ui/react";
 import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
@@ -59,7 +64,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const tabProps: any = {
     fontSize: "18px",
     fontFamily: "Bebas Neue",
-    color: "nossas.grey",
+    color: "nossas.gray",
     _selected: { color: "nossas.blue" },
     textTransform: "uppercase",
     p: "0 35px 0 0",
@@ -67,6 +72,35 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const tagPanelProps: any = {
     p: "20px 0",
   };
+  // Custom tabs
+  // 1. Reuse the styles for the Tab
+  const StyledTab = chakra("button", { themeKey: "Tabs.Tab" } as any);
+
+  const CustomTab = React.forwardRef(({ last, ...props }: any, ref) => {
+    // 2. Reuse the `useTab` hook
+    const tabProps = useTab(props);
+
+    // 3. Hook into the Tabs `size`, `variant`, props
+    const styles = useStyles();
+
+    return (
+      <StyledTab
+        __css={styles.tab}
+        style={{ position: "relative" }}
+        {...tabProps}
+      >
+        {tabProps.children}
+        {!last && (
+          <Image
+            position="absolute"
+            right="15px"
+            top="7px"
+            src="/static/media/icon-left-arrow.png"
+          />
+        )}
+      </StyledTab>
+    );
+  });
 
   return (
     <Formik
@@ -171,11 +205,13 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                   <Lock t={t} />
                 </Stack>
                 <Tabs index={index} onChange={(i: number) => setIndex(i)}>
-                  <TabList>
-                    <Tab {...tabProps}>{t("donate.tabs.yourdata")}</Tab>
-                    <Tab {...tabProps} isDisabled={isYourData}>
+                  <TabList border="0">
+                    <CustomTab {...tabProps}>
+                      {t("donate.tabs.yourdata")}
+                    </CustomTab>
+                    <CustomTab {...tabProps} last isDisabled={isYourData}>
                       {t("donate.tabs.payments")}
-                    </Tab>
+                    </CustomTab>
                   </TabList>
                   <TabPanels>
                     <TabPanel {...tagPanelProps}>
