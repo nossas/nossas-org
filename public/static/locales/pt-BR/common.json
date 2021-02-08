@@ -16,7 +16,7 @@
           "required": "Preencha seu nome como no cartão"
         },
         "customDonation": {
-          "label": "Valor",
+          "label": "Valor {{currency}}",
           "required": "Informe um valor de doação",
           "min": "Informe ao menos 1 para doação"
         },

@@ -28,7 +28,7 @@ export const initialValues: CardFormValues = {
 };
 
 const CARD_OPTIONS = {
-  iconStyle: "solid" as const,
+  iconStyle: "default" as const,
   hidePostalCode: true,
   style: {
     base: {
@@ -43,7 +43,7 @@ const CARD_OPTIONS = {
         color: "#fce883",
       },
       "::placeholder": {
-        color: "#E2E8F0",
+        color: "#aaa",
       },
     },
     invalid: {
@@ -100,6 +100,7 @@ interface FieldsProps {
   setStatus: any;
   errors?: any;
   setErrors: any;
+  values: any;
 }
 
 export const Fields: React.FC<FieldsProps> = ({
@@ -108,22 +109,10 @@ export const Fields: React.FC<FieldsProps> = ({
   setStatus,
   errors,
   setErrors,
+  values,
 }) => {
   return (
     <Stack spacing={4}>
-      <InputField
-        inline
-        name="cardholderName"
-        type="text"
-        label={t("donate.form.fields.cardholderName.label")}
-        placeholder={t("donate.form.fields.cardholderName.placeholder")}
-      />
-      <InputField
-        inline
-        name="customDonation"
-        type="number"
-        label={t("donate.form.fields.customDonation.label")}
-      />
       <InputCardField>
         <CardElement
           options={CARD_OPTIONS}
@@ -138,6 +127,25 @@ export const Fields: React.FC<FieldsProps> = ({
           }}
         />
       </InputCardField>
+      <InputField
+        inline
+        name="cardholderName"
+        type="text"
+        label={t("donate.form.fields.cardholderName.label")}
+        placeholder={t("donate.form.fields.cardholderName.placeholder")}
+      />
+      <Stack direction="row" spacing={4}>
+        <InputField flex={1.5} inline name="currency" label="Moeda" />
+        <InputField
+          flex={2}
+          inline
+          name="customDonation"
+          type="number"
+          label={t("donate.form.fields.customDonation.label", {
+            currency: values.currency === "brl" ? "R$" : "$",
+          })}
+        />
+      </Stack>
       <PaymentStatus status={status} errors={errors} />
     </Stack>
   );

@@ -9,6 +9,7 @@ import {
   TabPanels,
   TabPanel,
   Stack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
@@ -47,6 +48,7 @@ interface Values extends YourDataValues, CardFormValues {
 const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const [index, setIndex] = useState(0);
   const [donation, setDonation] = useState({});
+  const { isOpen, onOpen, onClose } = useDisclosure();
   // use stripe in 2-step, see ./CardForm handleSubmit
   const stripe = useStripe();
   const elements = useElements();
@@ -80,9 +82,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
           const yourData = await yourDataHandleSubmit(formData);
           setDonation({ ...donation, ...yourData });
           setIndex(1);
-        }
-
-        if (isPayment) {
+        } else if (isPayment) {
           // Submit donation on stripe
           const payment = await cardHandleSubmit(formData, actions, {
             stripe,
@@ -113,6 +113,10 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
             console.error(e);
             actions.setErrors({ form: "Register donation failed!" });
           }
+        } else {
+          onClose();
+          setIndex(0);
+          actions.resetForm();
         }
       }}
     >
@@ -139,8 +143,9 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
           <DonationDrawer
             btnText={btnText}
             isDisabled={isSubmitting || !isValid}
-            onSubmit={isPayment || isYourData ? handleSubmit : undefined}
+            onSubmit={handleSubmit}
             btnChildren={props.children}
+            disclosureOpts={{ isOpen, onOpen, onClose }}
             {...props}
           >
             {index === 2 ? (
@@ -178,7 +183,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                     </TabPanel>
                     <TabPanel {...tagPanelProps}>
                       <CardFields
-                        {...{ t, errors, setErrors, status, setStatus }}
+                        {...{ t, errors, setErrors, status, setStatus, values }}
                       />
                     </TabPanel>
                   </TabPanels>

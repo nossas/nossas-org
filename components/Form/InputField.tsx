@@ -20,14 +20,23 @@ const InputField: React.FC<InputFieldProps> = ({
   name,
   label,
   inline,
+  flex,
   ...props
 }) => {
   const [field, meta, helpers] = useField(name);
 
   return (
-    <FormControl flexDirection="column">
+    <FormControl
+      flexDirection="column"
+      flex={flex}
+      borderColor={meta.touched && !!meta.error ? "red" : "nossas.lightgray"}
+    >
       {inline ? (
-        <InputGroup>
+        <InputGroup
+          borderColor={
+            meta.touched && !!meta.error ? "red" : "nossas.lightgray"
+          }
+        >
           <InputLeftAddon
             children={label}
             minW="100px"
@@ -45,7 +54,7 @@ const InputField: React.FC<InputFieldProps> = ({
         </>
       )}
       {meta.touched && !!meta.error && (
-        <FormHelperText color="red" fontSize="xs" textAlign="right">
+        <FormHelperText color="red" fontSize="xs" textAlign="left">
           {meta.error}
         </FormHelperText>
       )}
