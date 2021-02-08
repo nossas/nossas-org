@@ -1,11 +1,22 @@
 import React from "react";
-import { Button, Heading, Input, Text, Stack } from "@chakra-ui/react";
+import { Button, Heading, Text, Stack } from "@chakra-ui/react";
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
+import InputField from "../components/Form/InputField";
 import { withTranslation } from "../i18n";
 
 type Props = {
   t: any;
   inverted: boolean;
 };
+
+export const schema = ({ t }: { t: any }) =>
+  Yup.object().shape({
+    firstname: Yup.string().required(t("newsletter.firstname.required")),
+    email: Yup.string()
+      .email(t("newsletter.email.invalid"))
+      .required(t("newsletter.email.required")),
+  });
 
 const Newsletter: React.FC<Props> = ({ t, inverted }) => {
   return (
@@ -14,17 +25,42 @@ const Newsletter: React.FC<Props> = ({ t, inverted }) => {
         {t("newsletter.title")}
       </Heading>
       <Text size="xs">{t("newsletter.description")}</Text>
-      <Stack direction="row" spacing={1} alignItems="center">
-        <Input
-          variant="filled"
-          type="email"
-          borderRadius="0"
-          placeholder={t("newsletter.placeholder")}
-        />
-        <Button variant="pink" onClick={() => console.log("ola")}>
-          {t("newsletter.button")}
-        </Button>
-      </Stack>
+      <Formik
+        initialValues={{ firstname: "", lastname: "", email: "" }}
+        validationSchema={schema({ t })}
+        onSubmit={(formData: any) => {
+          console.log("subscribe newsletter", { formData });
+        }}
+      >
+        {() => (
+          <Form>
+            <Stack w="100%" direction="column" spacing={2} alignItems="center">
+              <Stack w="100%" direction="row" spacing={2}>
+                <InputField
+                  name="firstname"
+                  type="text"
+                  placeholder={t("newsletter.firstname.placeholder")}
+                />
+                <InputField
+                  name="lastname"
+                  type="text"
+                  placeholder={t("newsletter.lastname.placeholder")}
+                />
+              </Stack>
+              <Stack w="100%" direction="row" spacing={2}>
+                <InputField
+                  name="email"
+                  type="email"
+                  placeholder={t("newsletter.email.placeholder")}
+                />
+                <Button variant="pink" type="submit">
+                  {t("newsletter.button")}
+                </Button>
+              </Stack>
+            </Stack>
+          </Form>
+        )}
+      </Formik>
     </Stack>
   );
 };

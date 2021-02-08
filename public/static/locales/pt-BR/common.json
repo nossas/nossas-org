@@ -67,7 +67,18 @@
   "newsletter": {
     "title": "FIQUE POR DENTRO",
     "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
-    "placeholder": "Seu e-mail",
+    "email": {
+      "placeholder": "Seu e-mail",
+      "required": "Informe seu e-mail",
+      "invalid": "Informe um e-mail válido"
+    },
+    "firstname": {
+      "placeholder": "Nome",
+      "required": "Informe seu nome"
+    },
+    "lastname": {
+      "placeholder": "Sobrenome"
+    },
     "button": "Salvar"
   },
   "footer": {

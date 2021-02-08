@@ -15,7 +15,8 @@ const Media = ({ title, logos }) => {
           display="flex"
           alignItems="center"
           color="nossas.blue"
-          fontWeight="200"
+          size="lg"
+          fontWeight="normal"
         >
           {title}{" "}
           <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span>
@@ -28,6 +29,7 @@ const Media = ({ title, logos }) => {
           ]}
           justifyItems="center"
           gridRowGap={["25px"]}
+          gridColumnGap={["25px"]}
         >
           {logos.map((logo, i) => (
             <Image

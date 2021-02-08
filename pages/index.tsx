@@ -163,7 +163,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1} spacing={8}>
+        <Stack flex={1.5} spacing={8}>
           <Heading as="h2" size="lg" color="nossas.green" fontWeight="normal">
             <div
               dangerouslySetInnerHTML={{
@@ -182,7 +182,15 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         </Stack>
       </Section>
       <Media
-        title="NA MÍDIA"
+        title={
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.home.media.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        }
         logos={[
           "/static/media/s3/dias.png",
           "/static/media/s3/reuters.png",
