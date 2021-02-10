@@ -1,5 +1,6 @@
 import React from "react";
 import Slider, { SliderProps } from "./Slider";
+import Carousel from "./Carousel";
 import { Group, Panel } from "./Panel";
 
 type Item = {
@@ -16,16 +17,9 @@ export interface Props extends SliderProps {
   isMobile: boolean;
 }
 
-const renderItems = (items: any[], Content: React.ElementType) =>
-  items.map((values: any, index: number) => (
-    <div key={index}>
-      <Content items={values} />
-    </div>
-  ));
-
-const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
+const SliderPanel: React.FC<Props> = ({ items, isMobile }) => {
   const Content = isMobile ? Panel : Group;
-  let newItems = isMobile
+  let newItems: any[] = isMobile
     ? items
     : Array.from(new Array(items.length / 2)).map((_v: any, index: number) => {
         const keys = { 0: [0, 2], 1: [2, 4], 2: [4, 6] };
@@ -33,9 +27,12 @@ const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
       });
 
   return (
-    <Slider isMobile={isMobile} {...props}>
-      {renderItems(newItems, Content)}
-    </Slider>
+    <Carousel
+      isMobile={isMobile}
+      items={newItems.map((values: any) => (
+        <Content items={values} />
+      ))}
+    />
   );
 };
 

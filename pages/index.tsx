@@ -52,7 +52,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       <Section
         alignItems={["flex-start", "center"]}
         direction={["column", "row"]}
-        px={["60px", "310px"]}
         py={["30px", "130px"]}
         spacing={["30px", "60px"]}
       >
@@ -109,14 +108,8 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           title={t("content:blocks.home.grid.tech")}
         />
       </Section>
-      <Section px={["20px"]}>
-        <Heading
-          as="h2"
-          size="lg"
-          px={[0, "70px"]}
-          color="nossas.pink"
-          fontWeight="normal"
-        >
+      <Section>
+        <Heading as="h2" size="lg" color="nossas.pink" fontWeight="normal">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.home.actionnow", {
@@ -126,7 +119,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Heading>
         <SliderPanel
-          height={40}
           isMobile={ua.isMobile}
           items={[
             {
@@ -163,7 +155,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1.5} spacing={8}>
+        <Stack flex={1.5} spacing={8} alignItems={["center", "left"]}>
           <Heading as="h2" size="lg" color="nossas.green" fontWeight="normal">
             <div
               dangerouslySetInnerHTML={{

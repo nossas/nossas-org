@@ -23,13 +23,25 @@ export interface Props {
 }
 
 export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
-  <Box boxShadow="base">
-    <Image src={item.src} alt={item.alt} width="100%" height={380} />
-    <Stack p={8} spacing={4}>
+  <Box boxShadow={["base", "lg"]} rounded="base">
+    <Image src={item.src} alt={item.alt} width="100%" height={[229, 380]} />
+    <Stack p={8} spacing={4} textAlign="left">
       <Heading as="h3">{item.title}</Heading>
       <Text>{item.description}</Text>
-      <Link href={item.href} variant="pink">
-        {`${item.link} >`}
+      <Link
+        href={item.href}
+        variant="pink"
+        flexDirection="row"
+        display="flex"
+        alignItems="center"
+      >
+        <span>{`${item.link}`}</span>
+        <Image
+          src="/static/media/icon-right-arrow-pink.png"
+          width="10px !important"
+          height="17px"
+          ml="19px"
+        />
       </Link>
     </Stack>
   </Box>
