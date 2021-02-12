@@ -1,13 +1,5 @@
-import { NextPage, NextPageContext } from "next";
-import {
-  Flex,
-  Button,
-  Heading,
-  Image,
-  Text,
-  Stack,
-  Link,
-} from "@chakra-ui/react";
+import { NextPage } from "next";
+import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
@@ -50,6 +42,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         videoUrl="/static/media/video-example.mp4"
       />
       <Section
+        justifyContent={["flex-start", "center"]}
         alignItems={["flex-start", "center"]}
         direction={["column", "row"]}
         py={["30px", "130px"]}
@@ -60,7 +53,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           src="/static/media/s3/etudonossas.png"
           alt={t("content:images.home.etudonossas")}
         />
-        <Stack spacing={6} direction="column">
+        <Stack spacing={6} direction="column" maxW="500px">
           <Text>{t("content:blocks.home.etudonossas")}</Text>
           <Link
             href="#"
@@ -109,7 +102,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         />
       </Section>
       <Section>
-        <Heading as="h2" size="lg" color="nossas.pink" fontWeight="normal">
+        <Heading as="h2" size="lg" color="nossas.pink">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.home.actionnow", {
@@ -156,7 +149,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Flex>
         <Stack flex={1.5} spacing={8} alignItems={["center", "left"]}>
-          <Heading as="h2" size="lg" color="nossas.green" fontWeight="normal">
+          <Heading as="h2" size="lg" color="nossas.green">
             <div
               dangerouslySetInnerHTML={{
                 __html: t("content:blocks.home.doacao.title", {

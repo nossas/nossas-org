@@ -6,7 +6,6 @@ import Brand from "./Brand";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
 import I18nButton from "../I18nButton";
-import Newsletter from "../Newsletter";
 import SocialMedia from "../SocialMedia";
 
 export const LinkStyled = ({ children, ...props }) => (
@@ -61,7 +60,6 @@ const NavbarComponent = ({ children, t, isMobile }) => {
             <Flex className="bm-item-list-menu" direction="column">
               {children}
             </Flex>
-            <Newsletter inverted />
             <Flex alignItems="center" mt="40px">
               <Box flex={1}>
                 <I18nButton />

@@ -22,12 +22,12 @@ export const nossas = {
   fontSizes: {
     xs: "16px",
     sm: "21px",
-    md: "26px",
+    md: "24px",
     lg: "30px",
     xl: "36px",
     "2xl": "40px",
     "3xl": "42px",
-    "4xl": "70px",
+    "4xl": "60px",
   },
   components: {
     Button,
@@ -54,6 +54,9 @@ export const nossas = {
       },
     },
     Heading: {
+      baseStyle: {
+        fontWeight: 100,
+      },
       sizes: {
         sm: {
           fontSize: ["md", null, "lg"],
