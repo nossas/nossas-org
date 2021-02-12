@@ -99,6 +99,16 @@ export const nossas = {
           fontSize: "16px",
           color: "white",
         },
+        mobile: {
+          fontFamily: "Bebas Neue",
+          fontSize: "2xl",
+          fontWeight: "normal",
+          textTransform: "uppercase",
+          color: "#fff",
+          _hover: {
+            color: "nossas.pink",
+          },
+        },
       },
       defaultProps: {
         variant: "blue",

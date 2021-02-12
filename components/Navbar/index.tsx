@@ -1,32 +1,42 @@
 import React from "react";
 
-// export { default } from "./Navbar";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
 import I18n from "../I18nButton";
 import Logo from "./Brand";
-import { Nav, NavLink, Bars, NavSide, NavMenu } from "./Elements";
+import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
+import NavMobile from "./NavMobile";
 
-type Props = {
-  t: any;
-};
+const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => (
+  <>
+    <NavLink href="/" variant={variant}>
+      {t("footer.about")}
+    </NavLink>
+    <NavLink href="/activist" variant={variant}>
+      {t("footer.actvist")}
+    </NavLink>
+    <NavLink href="/work" variant={variant}>
+      {t("footer.work")}
+    </NavLink>
+  </>
+);
 
-const Navbar: React.FC<Props> = ({ t }) => {
+const Navbar: React.FC<{ t: any }> = ({ t }) => {
   return (
     <>
       <Nav>
         <NavSide>
-          <Bars />
+          <NavMobile>
+            <MenuItems t={t} variant="mobile" />
+          </NavMobile>
           <NavLink href="/">
             <Logo />
           </NavLink>
         </NavSide>
         <NavMenu>
-          <NavLink href="/">{t("footer.about")}</NavLink>
-          <NavLink href="/activist">{t("footer.actvist")}</NavLink>
-          <NavLink href="/work">{t("footer.work")}</NavLink>
+          <MenuItems t={t} />
         </NavMenu>
-        <NavSide spacing={[6, 8]}>
+        <NavSide>
           <I18n />
           <Donation variant="outline">{t("donate.button")}</Donation>
         </NavSide>

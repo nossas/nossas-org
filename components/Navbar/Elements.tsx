@@ -16,25 +16,28 @@ export const Nav = ({ children }) => (
   </Flex>
 );
 
-export const NavLink = ({ href, children }) => (
+interface NavLinkProps {
+  href: string;
+  variant?: string;
+}
+
+export const NavLink: React.FC<NavLinkProps> = ({
+  href,
+  children,
+  variant,
+}) => (
   <NextLink href={href} passHref>
-    <Link variant="nav">{children}</Link>
+    <Link variant={variant}>{children}</Link>
   </NextLink>
 );
 
+NavLink.defaultProps = {
+  variant: "nav",
+};
+
 export const Bars = styled(FaBars)`
-  display: none;
   color: #fff;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    transform: translate(-100%, 75%);
-    font-size: 1.5rem;
-    cursor: pointer;
-
-    margin-top: -35px;
-    margin-left: 20px;
-  }
+  font-size: 1.5rem;
 `;
 
 export const NavMenu = styled.div`
@@ -51,12 +54,8 @@ export const NavMenu = styled.div`
   }
 `;
 
-interface NavSideProps {
-  spacing?: number | number[];
-}
-
-export const NavSide: React.FC<NavSideProps> = ({ children, spacing }) => (
-  <Stack spacing={spacing} direction="row" alignItems="center">
+export const NavSide = ({ children }) => (
+  <Stack spacing={[6, 8]} direction="row" alignItems="center">
     {children}
   </Stack>
 );
