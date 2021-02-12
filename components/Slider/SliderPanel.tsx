@@ -1,5 +1,4 @@
 import React from "react";
-import Slider, { SliderProps } from "./Slider";
 import Carousel from "./Carousel";
 import { Group, Panel } from "./Panel";
 
@@ -12,7 +11,7 @@ type Item = {
   link: string;
 };
 
-export interface Props extends SliderProps {
+export interface Props {
   items: Item[];
   isMobile: boolean;
 }

@@ -21,7 +21,11 @@ export const schema = ({ t }: { t: any }) =>
 const Newsletter: React.FC<Props> = ({ t, inverted }) => {
   return (
     <Stack spacing={4} maxW="430px">
-      <Heading as="h4" color={inverted ? "white" : "nossas.blue"}>
+      <Heading
+        as="h4"
+        color={inverted ? "white" : "nossas.blue"}
+        fontWeight="bold"
+      >
         {t("newsletter.title")}
       </Heading>
       <Text size="xs">{t("newsletter.description")}</Text>

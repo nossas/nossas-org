@@ -55,7 +55,7 @@ export const nossas = {
     },
     Heading: {
       baseStyle: {
-        fontWeight: 100,
+        fontWeight: 400,
       },
       sizes: {
         sm: {

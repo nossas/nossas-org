@@ -19,7 +19,13 @@ const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
     textAlign="center"
   >
     <Image src={src} alt={alt} {...props} />
-    <Heading as="h4" size="sm" color="nossas.blue" textTransform="uppercase">
+    <Heading
+      as="h4"
+      size="sm"
+      color="nossas.blue"
+      textTransform="uppercase"
+      fontWeight="bold"
+    >
       {title}
     </Heading>
   </Stack>
@@ -34,7 +40,13 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
     <Body isMobile={ua.isMobile}>
       <Hero
         Title={
-          <Heading as="h1" size="lg" color="white" textAlign="center">
+          <Heading
+            as="h1"
+            size="lg"
+            fontWeight="bold"
+            color="white"
+            textAlign="center"
+          >
             {t("content:covers.home.title")}
           </Heading>
         }

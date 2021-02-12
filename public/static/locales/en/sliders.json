@@ -1,9 +1,21 @@
 {
   "mobilizations": {
     "1": {
-      "tag": "CONDUCTED TRAININGS",
-      "title": "AMAZON REGION MOBILIZER PROGRAM",
-      "description": "It is a network composed of local organizations that operate in different regions of Brazil for more participatory cities"
+      "tag": "TREINAMENTOS REALIZADOS",
+      "title": "PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA",
+      "description": "É uma rede composta por organizações locais que atuam em diversas regiões do Brasil por cidades mais participativas"
+    }
+  },
+  "home": {
+    "actionnow": {
+      "1": {
+        "title": "Auxílio até o fim da pandemia",
+        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. Nossa campanha é para lutar pela continuação da distribuição de recursos enquanto durar a crise."
+      },
+      "2": {
+        "title": "Programa de Mobilizadores",
+        "description": "Inscreva-se para as turmas para aprender a fazer mobilizações de impacto na sua cidade. As inscrições estarão abertas a partir de fevereiro."
+      }
     }
   }
 }

@@ -5,6 +5,8 @@ import { ApolloProvider } from "@apollo/client";
 import NextI18n from "../i18n";
 import { nossas } from "../theme";
 import { createApolloClient } from "../lib";
+// add global css
+import "../styles/globals.css";
 
 const theme = extendTheme(nossas);
 
