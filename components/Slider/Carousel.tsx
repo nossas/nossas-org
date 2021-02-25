@@ -7,42 +7,72 @@ import { Carousel } from "react-responsive-carousel";
 
 interface CarouselProps {
   items: React.ReactNode[];
+  infiniteLoop?: boolean;
   isMobile?: boolean;
 }
 
+interface ArrowProps {
+  direction: "previous" | "next";
+  disabled: boolean;
+  label?: string;
+  onClick?: any;
+}
+
+const ARROW_MARGIN: string = "10px";
+
+const Arrow: React.FC<ArrowProps> = ({
+  direction,
+  disabled,
+  label,
+  onClick,
+}) => {
+  let ownProps: { mr?: string; ml?: string } = {};
+  if (direction === "previous") ownProps.mr = ARROW_MARGIN;
+  else ownProps.ml = ARROW_MARGIN;
+
+  return (
+    <Button
+      variant="ghost"
+      onClick={onClick}
+      title={label}
+      visibility={disabled ? "hidden" : "visible"}
+      disabled={disabled}
+      {...ownProps}
+    >
+      <Image
+        src={`/static/media/arrow-${
+          direction === "previous" ? "left" : "right"
+        }-carousel.png`}
+      />
+    </Button>
+  );
+};
+
 const CarouselStyled: React.FC<CarouselProps> = styled(
-  ({ className, items }) => (
+  ({ className, items, infiniteLoop }) => (
     <Carousel
       className={className}
       showThumbs={false}
       showIndicators={false}
       dynamicHeight={true}
       showStatus={false}
-      infiniteLoop={true}
-      renderArrowPrev={(onClickHandler, hasPrev, label) =>
-        hasPrev && (
-          <Button
-            variant="ghost"
-            onClick={onClickHandler}
-            title={label}
-            mr="10px"
-          >
-            <Image src="/static/media/arrow-left-carousel.png" />
-          </Button>
-        )
-      }
-      renderArrowNext={(onClickHandler, hasNext, label) =>
-        hasNext && (
-          <Button
-            variant="ghost"
-            onClick={onClickHandler}
-            title={label}
-            ml="10px"
-          >
-            <Image src="/static/media/arrow-right-carousel.png" />
-          </Button>
-        )
-      }
+      infiniteLoop={infiniteLoop}
+      renderArrowPrev={(onClickHandler, hasPrev, label) => (
+        <Arrow
+          direction="previous"
+          disabled={!hasPrev}
+          label={label}
+          onClick={onClickHandler}
+        />
+      )}
+      renderArrowNext={(onClickHandler, hasNext, label) => (
+        <Arrow
+          direction="next"
+          disabled={!hasNext}
+          label={label}
+          onClick={onClickHandler}
+        />
+      )}
     >
       {items.map((content: React.ReactNode, index: number) => (
         <div key={index}>{content}</div>
@@ -66,5 +96,9 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
     `}
   }
 `;
+
+CarouselStyled.defaultProps = {
+  infiniteLoop: false,
+};
 
 export default CarouselStyled;

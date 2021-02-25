@@ -50,6 +50,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Section direction="column" spacing="55px">
       <TagAsTitle>Linha do tempo</TagAsTitle>
       <TimelineController
+        isMobile={ua.isMobile}
         items={{
           2011: [
             {

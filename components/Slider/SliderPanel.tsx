@@ -27,6 +27,7 @@ const SliderPanel: React.FC<Props> = ({ items, isMobile }) => {
 
   return (
     <Carousel
+      infiniteLoop
       isMobile={isMobile}
       items={newItems.map((values: any) => (
         <Content items={values} />
