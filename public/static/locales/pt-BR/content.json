@@ -19,6 +19,23 @@
       "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
     }
   },
+  "timeline": {
+    "2011": {
+      "meurio": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local"
+    },
+    "2014": {
+      "minhasampa": "O Meu Rio faz sua primeira experiência de republicação de seu modelo, exportando metodologia e tecnologia para São Paulo",
+      "rnc": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
+    },
+    "2016": {
+      "defezap": "Criamos o primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, direto do whatsapp",
+      "mapadoacolhimento": "O Mapa do Acolhimento é uma plataforma que permite a conexão entre mulheres que sofreram violência e uma rede de pessoas dispostas a ajudar"
+    },
+    "2017": {
+      "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
+      "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
+    }
+  },
   "blocks": {
     "home": {
       "actionnow": "O que estamos <b>fazendo</b>",
