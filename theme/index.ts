@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Text from "./Text";
 
 export const nossas = {
   fonts: {
@@ -31,28 +32,7 @@ export const nossas = {
   },
   components: {
     Button,
-    Text: {
-      sizes: {
-        xs: {
-          fontSize: ["xs"],
-        },
-        sm: {
-          fontSize: ["xs", "sm"],
-        },
-        md: {
-          fontSize: ["sm", "md"],
-        },
-      },
-      variants: {
-        paragraph: {
-          color: "nossas.darkgray",
-        },
-      },
-      defaultProps: {
-        variant: "paragraph",
-        size: "md",
-      },
-    },
+    Text,
     Heading: {
       baseStyle: {
         fontWeight: 400,
