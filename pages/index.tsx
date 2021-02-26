@@ -170,7 +170,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               }}
             />
           </Heading>
-          <Text fontSize={["sm", "md"]} textAlign={["center", "left"]}>
+          <Text textAlign={["center", "left"]}>
             {t("content:blocks.home.doacao.description")}
           </Text>
           <Donation maxW={190}>

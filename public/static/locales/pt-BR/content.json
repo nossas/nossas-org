@@ -64,7 +64,45 @@
           "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
           "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
         }
-      }
+      },
+      "impact": {
+        "donations": {
+          "number": "+3 milhões",
+          "text": "de reais arrecadados em financiamento coletivo"
+        },
+        "volunteers": {
+          "number": "+5.400",
+          "text": "voluntárias e voluntários cadastrados"
+        },
+        "politicalChange": {
+          "number": "+120",
+          "text": "mudanças de política pública"
+        },
+        "mobilizations": {
+          "number": "+200",
+          "text": "campanhas lançadas"
+        },
+        "peopleDonations": {
+          "number": "+26 mil",
+          "text": "pessoas já fizeram doações"
+        },
+        "peopleMobilizations": {
+          "number": "+1 milhão",
+          "text": "de pessoas mobilizadas"
+        }
+      },
+      "financiers": {
+        "title": "Quem financia o <b>NOSSAS</b>",
+        "description": "Nossos projetos são financiados por organizações filantrópicas nacionais e internacionais, como Open Society Foundation, OAK Foundation e Fundo Malala. Também recebemos apoio de pessoas físicas no país inteiro que acreditam em nosso trabalho e fazem doações mensais para manter nossas engrenagens funcionando. Prezando pela transparência e honestidade, anualmente fazemos uma auditoria de contas independente e divulgamos os resultados em nossos canais públicos.",
+        "button": "Você pode baixar esse documento aqui",
+        "imageText": "Quem financia o NOSSAS"
+      },
+      "team": {
+        "title": "Equipe",
+        "directorship": "Valorizamos a equidade de gênero, por isso a diretoria do NOSSAS é composta apenas por mulheres:",
+        "board": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:"
+      },
+      "contact": "Entre em <b>contato</b>"
     }
   }
 }

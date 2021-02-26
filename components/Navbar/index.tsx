@@ -9,7 +9,7 @@ import NavMobile from "./NavMobile";
 
 const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => (
   <>
-    <NavLink href="/" variant={variant}>
+    <NavLink href="/about" variant={variant}>
       {t("footer.about")}
     </NavLink>
     <NavLink href="/activist" variant={variant}>
