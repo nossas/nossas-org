@@ -1,23 +1,31 @@
 import React from "react";
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading } from "@chakra-ui/react";
 import Video from "../Video";
 
 type HeroProps = {
   bgImage?: string;
   bgColor?: string;
-  Title: React.ReactElement;
+  title?: string;
+  titleColor?: string;
+  titleAlign?: "left" | "center" | "right";
+  Title?: React.ReactElement;
   Subtitle?: React.ReactElement;
   imageDesc?: string;
   videoUrl?: string;
+  maxWidth?: string;
 };
 
 const Hero = ({
   bgImage,
   bgColor,
   Title,
+  title,
+  titleColor,
+  titleAlign,
   Subtitle,
   imageDesc,
   videoUrl,
+  maxWidth,
 }: HeroProps) => {
   return (
     <section>
@@ -39,7 +47,7 @@ const Hero = ({
         )}
         {videoUrl && !bgImage && <Video videoUrl={videoUrl} />}
         <Box
-          maxWidth={"800px"}
+          maxWidth={maxWidth}
           text-align={"center"}
           position={"absolute"}
           top={"50%"}
@@ -49,12 +57,29 @@ const Hero = ({
           gridTemplateRows={Title && Subtitle ? "auto auto" : "auto"}
           gridRowGap={5}
         >
-          {Title}
+          {title && (
+            <Heading
+              as="h1"
+              fontWeight="bold"
+              textColor={titleColor}
+              size="lg"
+              textAlign={titleAlign}
+            >
+              {title}
+            </Heading>
+          )}
+          {Title && Title}
           {Subtitle && Subtitle}
         </Box>
       </Flex>
     </section>
   );
+};
+
+Hero.defaultProps = {
+  titleColor: "white",
+  titleAlign: "center",
+  maxWidth: "800px",
 };
 
 export default Hero;

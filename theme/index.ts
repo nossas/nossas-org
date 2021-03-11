@@ -20,6 +20,7 @@ export const nossas = {
       darkgray: "#606373",
       gray: "#BCBEC0",
       lightgray: "#eee",
+      bggray: "#f7f7f7",
     },
   },
   fontSizes: {

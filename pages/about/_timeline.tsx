@@ -1,10 +1,13 @@
 import React from "react";
-import { TagAsTitle, Section } from "../../components/Page";
+import { Heading } from "@chakra-ui/react";
+import { Section } from "../../components/Page";
 import { TimelineController } from "../../components/Timeline";
 
 const Timeline = ({ isMobile, t }: any) => (
   <Section direction="column" spacing="55px">
-    <TagAsTitle>{t("content:blocks.about.timeline.title")}</TagAsTitle>
+    <Heading as="h2" variant="tag">
+      {t("content:blocks.about.timeline.title")}
+    </Heading>
     <TimelineController
       isMobile={isMobile}
       items={{

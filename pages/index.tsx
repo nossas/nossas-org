@@ -38,19 +38,9 @@ interface Props extends WithUserAgentProps {
 const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
     <Body isMobile={ua.isMobile}>
+      {/* Cover */}
       <Hero
-        Title={
-          <Heading
-            as="h1"
-            size="lg"
-            fontWeight="bold"
-            color="white"
-            textAlign="center"
-          >
-            {t("content:covers.home.title")}
-          </Heading>
-        }
-        // bgImage="/static/media/bg-example.png"
+        title={t("content:covers.home.title")}
         videoUrl="/static/media/video-example.mp4"
       />
       <Section

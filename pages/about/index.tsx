@@ -11,7 +11,7 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
-import { Body, Section, TagAsTitle } from "../../components/Page";
+import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../components/Media";
 import Timeline from "./_timeline";
@@ -39,21 +39,15 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     {/* Cover */}
     <Hero
       bgColor="white"
-      Title={
-        <Heading
-          as="h1"
-          size="4xl"
-          fontWeight="700"
-          color="nossas.blue"
-          maxW={[710]}
-        >
-          {t("content:covers.home.title")}
-        </Heading>
-      }
+      title={t("content:covers.home.title")}
+      titleColor="nossas.blue"
+      titleAlign="left"
     />
     {/* History */}
     <Section direction={["column", "row"]} spacing={["40px", "115px"]}>
-      <TagAsTitle>{t("content:blocks.about.history.title")}</TagAsTitle>
+      <Heading as="h2" variant="tag">
+        {t("content:blocks.about.history.title")}
+      </Heading>
       <Text maxW={["925px"]}>
         {t("content:blocks.about.history.description")}
       </Text>
@@ -221,7 +215,13 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       spacing={["20px", "280px"]}
     >
       <Heading as="h2" color="white">
-        {t("content:blocks.about.contact")}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: t("content:blocks.about.contact", {
+              interpolation: { escapeValue: false },
+            }),
+          }}
+        />
       </Heading>
       <Text
         display="inline-table"

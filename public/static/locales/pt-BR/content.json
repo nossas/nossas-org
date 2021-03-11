@@ -17,6 +17,9 @@
   "covers": {
     "home": {
       "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
+    },
+    "incubations": {
+      "title": "Incube seu projeto com a gente!"
     }
   },
   "blocks": {
@@ -103,6 +106,77 @@
         "board": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:"
       },
       "contact": "Entre em <b>contato</b>"
+    },
+    "incubations": {
+      "about": {
+        "title": "Incubar:<br/><b>o que é isso?</b>",
+        "description": "Você pode receber capacitação e apoio para desenvolver ou acelerar seu projeto de mobilização ou solidariedade utilizando as metodologias desenvolvidas pelo NOSSAS."
+      },
+      "offer": {
+        "title": "A gente oferece",
+        "mobilization": "Formação nas principais ferramentas de mobilização",
+        "peoples": "Formação em gestão de pessoas e voluntários",
+        "communication": "Formação em comunicação em larga escala"
+      },
+      "projects": {
+        "title": "O que já <b>incubamos</b>",
+        "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
+        "defezap": {
+          "title": "Defezap",
+          "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
+        },
+        "acolhe": {
+          "title": "Acolhe LGBT+",
+          "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
+        },
+        "representa": {
+          "title": "Me Representa",
+          "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
+        }
+      },
+      "current_projects": {
+        "title": "Projetos <b>Atuais</b>",
+        "mapa": {
+          "title": "Mapa do acolhimento",
+          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+        },
+        "manaus": {
+          "title": "Minha manaus",
+          "description": "Inserir descrição. Ex: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+        }
+      },
+      "incubate": {
+        "title": "Incube seu <b>projeto</b>",
+        "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
+        "form": {
+          "title": "Inscreva-se",
+          "fields": {
+            "name": {
+              "label": "Nome",
+              "placeholder": "Seu nome"
+            },
+            "email": {
+              "label": "E-mail",
+              "placeholder": "Seu e-mail"
+            },
+            "whatsapp": {
+              "label": "Whatsapp",
+              "placeholder": "(DDD) 00000-0000"
+            },
+            "state": {
+              "label": "Estado",
+              "placeholder": "Selecione"
+            },
+            "city": {
+              "label": "Cidade",
+              "placeholder": "Sua cidade"
+            }
+          },
+          "button": {
+            "submit": "Enviar"
+          }
+        }
+      }
     }
   }
 }
