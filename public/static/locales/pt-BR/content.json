@@ -20,6 +20,9 @@
     },
     "incubations": {
       "title": "Incube seu projeto com a gente!"
+    },
+    "materials": {
+      "title": "Faça você mesmo sua própria campanha de impacto!"
     }
   },
   "blocks": {
@@ -175,6 +178,27 @@
           "button": {
             "submit": "Enviar"
           }
+        }
+      }
+    },
+    "materials": {
+      "manual": {
+        "title": "A gente preparou um manual incrível <b>pra você :)</b>",
+        "description": "Há uma década a gente vem se dedicando a fazer mobilizações que já reuniram milhares de pessoas e conseguiram inúmeras vitórias. Documentamos todos esses aprendizados para te ajudar a tirar sua campanha do papel. Vem!",
+        "link": "Baixar manual"
+      },
+      "learning": {
+        "title": "O que você pode aprender com o manual?",
+        "strategy": "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
+        "target": "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
+        "create": "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência"
+      },
+      "manualform": {
+        "title": "Manual de <b>mobilização</b>",
+        "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto.",
+        "form": {
+          "title": "Baixar manual",
+          "submit": "Baixar"
         }
       }
     }

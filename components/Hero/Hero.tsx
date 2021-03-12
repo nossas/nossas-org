@@ -8,6 +8,7 @@ type HeroProps = {
   title?: string;
   titleColor?: string;
   titleAlign?: "left" | "center" | "right";
+  left?: string;
   Title?: React.ReactElement;
   Subtitle?: React.ReactElement;
   imageDesc?: string;
@@ -22,6 +23,7 @@ const Hero = ({
   title,
   titleColor,
   titleAlign,
+  left,
   Subtitle,
   imageDesc,
   videoUrl,
@@ -51,7 +53,7 @@ const Hero = ({
           text-align={"center"}
           position={"absolute"}
           top={"50%"}
-          left={"50%"}
+          left={left || "50%"}
           transform={"translate(-50%, -50%)"}
           display="grid"
           gridTemplateRows={Title && Subtitle ? "auto auto" : "auto"}

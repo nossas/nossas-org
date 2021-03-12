@@ -1,11 +1,16 @@
 import React from "react";
-import Form from "../../components/FormSchema";
+import Form from "../components/FormSchema";
 
 const onSubmit = (formData: any) => {
   console.log("formData", { formData });
 };
 
-const ContentForm = ({ title }) => {
+interface SubscribeFormProps {
+  title: string;
+  submitText: string;
+}
+
+const SubscribeForm: React.FC<SubscribeFormProps> = ({ title, submitText }) => {
   const schema: any = {
     title,
     type: "object",
@@ -62,9 +67,9 @@ const ContentForm = ({ title }) => {
       uiSchema={uiSchema}
       schema={schema}
       onSubmit={onSubmit}
-      submitText="ENVIAR"
+      submitText={submitText}
     />
   );
 };
 
-export default ContentForm;
+export default SubscribeForm;

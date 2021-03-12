@@ -21,7 +21,7 @@ const ImageIcon = styled(Image)`
 `;
 
 ImageIcon.defaultProps = {
-  scale: 0.5,
+  scale: 0.7,
 };
 
 const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
