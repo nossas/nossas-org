@@ -153,31 +153,7 @@
         "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
         "form": {
           "title": "Inscreva-se",
-          "fields": {
-            "name": {
-              "label": "Nome",
-              "placeholder": "Seu nome"
-            },
-            "email": {
-              "label": "E-mail",
-              "placeholder": "Seu e-mail"
-            },
-            "whatsapp": {
-              "label": "Whatsapp",
-              "placeholder": "(DDD) 00000-0000"
-            },
-            "state": {
-              "label": "Estado",
-              "placeholder": "Selecione"
-            },
-            "city": {
-              "label": "Cidade",
-              "placeholder": "Sua cidade"
-            }
-          },
-          "button": {
-            "submit": "Enviar"
-          }
+          "submit": "Enviar"
         }
       }
     },

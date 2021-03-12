@@ -8,8 +8,8 @@ import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Carousel, SliderPanel } from "../../components/Slider";
+import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 
-import IncubateForm from "./_form";
 import { ImageText } from "./_slides";
 
 interface PageProps extends WithUserAgentProps {
@@ -53,40 +53,26 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         {t("content:blocks.incubations.about.description")}
       </Text>
     </Section>
-    <Section direction="column" spacing="60px">
-      <Heading as="h2" variant="tag">
-        {t("content:blocks.incubations.offer.title")}
-      </Heading>
-      <Stack
-        direction={["column", null, "row"]}
-        spacing="55px"
-        textAlign="center"
-        justifyItems="center"
-        alignItems="flex-end"
-      >
-        <Stack alignItems="center">
-          <ImageIcon
-            src="/static/media/assets/icon-eyelash.png"
-            alt="Icone Eyelash"
-          />
-          <Text>{t("content:blocks.incubations.offer.mobilization")}</Text>
-        </Stack>
-        <Stack alignItems="center">
-          <ImageIcon
-            src="/static/media/assets/icon-launch.png"
-            alt="Icone Launch"
-          />
-          <Text>{t("content:blocks.incubations.offer.peoples")}</Text>
-        </Stack>
-        <Stack alignItems="center">
-          <ImageIcon
-            src="/static/media/assets/icon-question.png"
-            alt="Icone Question"
-          />
-          <Text>{t("content:blocks.incubations.offer.communication")}</Text>
-        </Stack>
-      </Stack>
-    </Section>
+    <ImageTextListBox
+      title={t("content:blocks.incubations.offer.title")}
+      items={[
+        {
+          src: "/static/media/assets/icon-eyelash.png",
+          alt: "Icone Eyelash",
+          description: t("content:blocks.incubations.offer.mobilization"),
+        },
+        {
+          src: "/static/media/assets/icon-launch.png",
+          alt: "Icone Launch",
+          description: t("content:blocks.incubations.offer.peoples"),
+        },
+        {
+          src: "/static/media/assets/icon-question.png",
+          alt: "Icone Question",
+          description: t("content:blocks.incubations.offer.communication"),
+        },
+      ]}
+    />
     <Section direction="column" spacing="110px" bgColor="nossas.bggray">
       <Stack
         direction={["column", null, null, "row"]}
@@ -176,22 +162,23 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         ]}
       />
     </Section>
-    <Section
-      columns={[1, null, null, 2]}
-      columnGap="120px"
-      rowGap="35px"
-      bgColor="nossas.bggray"
+    <DescriptionBox
+      title={
+        <div
+          dangerouslySetInnerHTML={{
+            __html: t("content:blocks.incubations.incubate.title", {
+              interpolation: { escapeValue: false },
+            }),
+          }}
+        />
+      }
+      description={t("content:blocks.incubations.incubate.description")}
     >
-      <Stack spacing="35px">
-        <Heading as="h2" color="nossas.pink">
-          {t("content:blocks.incubations.incubate.title")}
-        </Heading>
-        <Text>{t("content:blocks.incubations.incubate.description")}</Text>
-      </Stack>
-      <Box>
-        <IncubateForm />
-      </Box>
-    </Section>
+      <SubscribeForm
+        title={t("content:blocks.incubations.incubate.form.title")}
+        submitText={t("content:blocks.incubations.incubate.form.submit")}
+      />
+    </DescriptionBox>
   </Body>
 );
 
