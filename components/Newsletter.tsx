@@ -23,7 +23,7 @@ const Newsletter: React.FC<Props> = ({ t, inverted }) => {
     <Stack spacing={4} maxW="430px">
       <Heading
         as="h4"
-        color={inverted ? "white" : "nossas.blue"}
+        color={inverted ? "white" : "blue.main"}
         fontWeight="bold"
       >
         {t("newsletter.title")}

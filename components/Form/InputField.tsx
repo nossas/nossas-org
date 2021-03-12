@@ -29,19 +29,17 @@ const InputField: React.FC<InputFieldProps> = ({
     <FormControl
       flexDirection="column"
       flex={flex}
-      borderColor={meta.touched && !!meta.error ? "red" : "nossas.lightgray"}
+      borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
     >
       {inline ? (
         <InputGroup
-          borderColor={
-            meta.touched && !!meta.error ? "red" : "nossas.lightgray"
-          }
+          borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
         >
           <InputLeftAddon
             children={label}
             minW="100px"
             bg="white"
-            color="nossas.darkgray"
+            color="gray.dark"
             fontSize="xs"
             borderRight="0"
           />

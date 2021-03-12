@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Box, SimpleGrid, Heading, Stack, Text, Image } from "@chakra-ui/react";
+import { Heading, Stack, Text, Image, Link } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
@@ -10,7 +10,47 @@ import Hero from "../../components/Hero";
 import { Carousel, SliderPanel } from "../../components/Slider";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 
-import { ImageText } from "./_slides";
+interface ImageTextProps {
+  src: string;
+  alt?: string;
+  title: string;
+  description: string;
+  href?: string;
+  linkText?: string;
+}
+
+export const ImageText: React.FC<ImageTextProps> = ({
+  alt,
+  src,
+  title,
+  description,
+  href,
+  linkText,
+}) => {
+  const imageSizes = {
+    maxW: ["510px", null, null, null, "610px"],
+    height: "auto",
+  };
+
+  return (
+    <Stack
+      direction={["column", null, null, "row"]}
+      spacing="70px"
+      alignItems="center"
+    >
+      <Image src={src} alt={alt} {...imageSizes} />
+      <Stack spacing="10px" textAlign="left">
+        <Heading as="h3" color="nossas.blue" fontWeight="bold">
+          {title}
+        </Heading>
+        <Text>{description}</Text>
+        <Link href={href} target="_self" variant="pink">
+          {linkText}
+        </Link>
+      </Stack>
+    </Stack>
+  );
+};
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -37,7 +77,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Section direction={["column", null, "row"]}>
       <Heading
         as="h2"
-        textColor="nossas.blue"
+        textColor="blue.main"
         flex={1}
         marginBottom={["20px", null, 0]}
       >

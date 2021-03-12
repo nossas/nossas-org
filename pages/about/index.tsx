@@ -24,7 +24,7 @@ interface PageProps extends WithUserAgentProps {
 const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
     <Heading as="h4" display="flex" flexDirection="column">
-      <Text as="span" size="lg" color="nossas.pink">
+      <Text as="span" size="lg" color="pink.main">
         {numberText}
       </Text>
       <Text as="span" size="sm">
@@ -40,7 +40,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Hero
       bgColor="white"
       title={t("content:covers.home.title")}
-      titleColor="nossas.blue"
+      titleColor="blue.main"
       titleAlign="left"
     />
     {/* History */}
@@ -56,7 +56,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Timeline t={t} isMobile={ua.isMobile} />
     {/* Impacto */}
     <Section direction={["column", "row"]} spacing={["50px", "150px"]}>
-      <Heading as="h2" size="lg" color="nossas.pink">
+      <Heading as="h2" size="lg" color="pink.main">
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.about.numbers.title", {
@@ -114,7 +114,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </Flex>
       <Stack flex={1.5} spacing={8} alignItems={["center", "flex-start"]}>
-        <Heading as="h2" size="lg" color="nossas.green">
+        <Heading as="h2" size="lg" color="green">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.about.financiers.title", {
@@ -132,7 +132,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
     {/* Equipe */}
-    <Section direction="column" backgroundColor="nossas.blue" spacing="20px">
+    <Section direction="column" backgroundColor="blue.main" spacing="20px">
       <Heading as="h2" color="white" fontWeight="700" size="lg">
         {t("content:blocks.about.team.title")}
       </Heading>
@@ -211,7 +211,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     />
     <Section
       direction={["column", "row"]}
-      backgroundColor="nossas.blue"
+      backgroundColor="blue.main"
       spacing={["20px", "280px"]}
     >
       <Heading as="h2" color="white">
@@ -227,7 +227,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         display="inline-table"
         color="white"
         borderLeftWidth="6px"
-        borderLeftColor="nossas.pink"
+        borderLeftColor="pink.main"
         paddingLeft="30px"
         marginLeft={["30px", "0"]}
       >

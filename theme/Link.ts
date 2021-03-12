@@ -9,15 +9,15 @@ export default {
   },
   variants: {
     blue: {
-      color: "nossas.blue",
+      color: "blue.main",
       _hover: {
-        color: "nossas.lightblue",
+        color: "blue.light",
       },
     },
     pink: {
-      color: "nossas.pink",
+      color: "pink.main",
       _hover: {
-        color: "nossas.lightpink",
+        color: "pink.light",
       },
     },
     nav: {
@@ -30,9 +30,9 @@ export default {
       fontSize: "2xl",
       fontWeight: "normal",
       textTransform: "uppercase",
-      color: "#fff",
+      color: "white",
       _hover: {
-        color: "nossas.pink",
+        color: "pink.main",
       },
     },
   },

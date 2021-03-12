@@ -20,7 +20,7 @@ export default {
   },
   variants: {
     paragraph: {
-      color: "nossas.darkgray",
+      color: "gray.dark",
     },
   },
   defaultProps: {

@@ -5,7 +5,7 @@ const Media = ({ title, logos }) => {
   return (
     <section>
       <Grid
-        backgroundColor="#F7F7F7"
+        backgroundColor="gray.light"
         templateColumns={["auto", "auto", "300px 50%"]}
         templateRows={["auto auto", "auto auto", "auto"]}
         p={["30px", "30px", "100px"]}
@@ -14,7 +14,7 @@ const Media = ({ title, logos }) => {
         <Heading
           display="flex"
           alignItems="center"
-          color="nossas.blue"
+          color="blue.main"
           size="lg"
           fontWeight="normal"
         >

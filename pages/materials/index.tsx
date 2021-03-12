@@ -28,11 +28,11 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       bgColor="white"
       left="30%"
       title={t("content:covers.materials.title")}
-      titleColor="nossas.green"
+      titleColor="green"
       titleAlign="left"
     />
     <Section direction={["column", null, null, "row"]} spacing="145px">
-      <Heading as="h2" color="nossas.blue" maxW="370px">
+      <Heading as="h2" color="blue.main" maxW="370px">
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.materials.manual.title", {

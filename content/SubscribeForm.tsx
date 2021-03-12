@@ -1,9 +1,20 @@
 import React from "react";
-import Form from "../components/FormSchema";
+import { Button, Heading, Box, Stack } from "@chakra-ui/react";
+import { Formik, Form, FormikProps } from "formik";
+import InputField from "../components/Form/InputField";
+import SelectField from "../components/Form/SelectField";
 
 const onSubmit = (formData: any) => {
   console.log("formData", { formData });
 };
+
+interface Values {
+  name: string;
+  email: string;
+  whatsapp?: string;
+  state?: string;
+  city?: string;
+}
 
 interface SubscribeFormProps {
   title: string;
@@ -11,65 +22,107 @@ interface SubscribeFormProps {
 }
 
 const SubscribeForm: React.FC<SubscribeFormProps> = ({ title, submitText }) => {
-  const schema: any = {
-    title,
-    type: "object",
-    required: ["email", "name"],
-    properties: {
-      name: {
-        type: "string",
-        title: "Nome",
-      },
-      email: {
-        type: "string",
-        title: "E-mail",
-        format: "email",
-      },
-      whatsapp: {
-        type: "string",
-        title: "Whatsapp",
-      },
-      state: {
-        type: "string",
-        title: "Estado",
-      },
-      city: {
-        type: "string",
-        title: "Cidade",
-      },
-    },
-  };
-
-  const uiSchema: any = {
-    name: {
-      "ui:placeholder": "Seu nome",
-    },
-    email: {
-      "ui:placeholder": "Seu e-mail",
-    },
-    whatsapp: {
-      "ui:placeholder": "(DDD) 00000-0000",
-    },
-    state: {
-      "ui:widget": "select",
-      "ui:placeholder": "Selecione",
-      "ui:options": {
-        items: ["AM", "ES"],
-      },
-    },
-    city: {
-      "ui:placeholder": "Sua cidade",
-    },
-  };
-
   return (
-    <Form
-      uiSchema={uiSchema}
-      schema={schema}
-      onSubmit={onSubmit}
-      submitText={submitText}
-    />
+    <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
+      <Formik
+        initialValues={{
+          name: "",
+          email: "",
+          whatsapp: "",
+          state: "",
+          city: "",
+        }}
+        onSubmit={onSubmit}
+      >
+        {({ handleSubmit, dirty, isSubmitting }: FormikProps<Values>) => (
+          <Form>
+            <Stack spacing={6}>
+              <Heading
+                as="h3"
+                color="blue.main"
+                fontWeight="bold"
+                textAlign="center"
+              >
+                {title}
+              </Heading>
+              <Stack spacing={4}>
+                <InputField
+                  inline
+                  name="name"
+                  label="Nome"
+                  placeholder="Seu nome"
+                />
+                <InputField
+                  inline
+                  name="email"
+                  label="E-mail"
+                  placeholder="Seu e-mail"
+                />
+                <InputField
+                  inline
+                  name="whatsapp"
+                  label="Whatsapp"
+                  placeholder="Seu whatsapp"
+                />
+                <SelectField
+                  inline
+                  name="state"
+                  label="Estado"
+                  placeholder="Seu estado"
+                  options={{ type: "array", items: STATES }}
+                />
+                <InputField
+                  inline
+                  name="city"
+                  label="Cidade"
+                  placeholder="Sua cidade"
+                />
+              </Stack>
+              <Button
+                isFullWidth
+                bgColor="blue.main"
+                color="white"
+                onClick={handleSubmit as any}
+                disabled={isSubmitting || !dirty}
+              >
+                {submitText}
+              </Button>
+            </Stack>
+          </Form>
+        )}
+      </Formik>
+    </Box>
   );
 };
+
+const STATES = [
+  "Acre(AC)",
+  "Alagoas(AL)",
+  "Amapá(AP)",
+  "Amazonas(AM)",
+  "Bahia(BA)",
+  "Ceará(CE)",
+  "Distrito Federal(DF)",
+  "Espírito Santo(ES)",
+  "Goiás(GO)",
+  "Maranhão(MA)",
+  "Mato Grosso(MT)",
+  "Mato Grosso do Sul(MS)",
+  "Minas Gerais(MG)",
+  "Pará(PA)",
+  "Paraíba(PB)",
+  "Paraná(PR)",
+  "Pernambuco(PE)",
+  "Piauí(PI)",
+  "Rio de Janeiro(RJ)",
+  "Rio Grande do Norte(RN)",
+  "Rio Grande do Sul(RS)",
+  "Rondônia(RO)",
+  "Roraima(RR)",
+  "Santa Catarina(SC)",
+  "São Paulo(SP)",
+  "Sergipe(SE)",
+  "Tocantins(TO)",
+];
 
 export default SubscribeForm;

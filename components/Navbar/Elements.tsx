@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 export const Nav = ({ children }) => (
   <Flex
     as="nav"
-    bgColor="nossas.blue"
+    bgColor="blue.main"
     height="70px"
     alignItems="center"
     justifyContent="space-between"

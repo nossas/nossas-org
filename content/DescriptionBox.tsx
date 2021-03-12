@@ -22,7 +22,7 @@ const DescriptionBox: React.FC<Props> = ({
       <Heading
         as="h3"
         size="3xl"
-        color="nossas.pink"
+        color="pink.main"
         fontWeight="normal"
         maxW="360px"
         {...headingStyles}
@@ -36,7 +36,7 @@ const DescriptionBox: React.FC<Props> = ({
 );
 
 DescriptionBox.defaultProps = {
-  bgColor: "nossas.bggray",
+  bgColor: "gray.light",
   headingStyles: {},
 };
 

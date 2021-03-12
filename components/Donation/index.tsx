@@ -187,12 +187,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
             ) : (
               <Stack spacing={6} mt="45px">
                 <Stack position="relative">
-                  <Heading
-                    as="h2"
-                    size="lg"
-                    color="nossas.green"
-                    fontWeight="normal"
-                  >
+                  <Heading as="h2" size="lg" color="green" fontWeight="normal">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: t("donate.title", {

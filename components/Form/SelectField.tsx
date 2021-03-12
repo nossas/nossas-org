@@ -40,19 +40,17 @@ const SelectWidget: React.FC<SelectWidgetProps> = ({
     <FormControl
       flexDirection="column"
       flex={flex}
-      borderColor={meta.touched && !!meta.error ? "red" : "nossas.lightgray"}
+      borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
     >
       {inline ? (
         <InputGroup
-          borderColor={
-            meta.touched && !!meta.error ? "red" : "nossas.lightgray"
-          }
+          borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
         >
           <InputLeftAddon
             children={label}
             minW="100px"
             bg="white"
-            color="nossas.darkgray"
+            color="gray.dark"
             fontSize="xs"
             borderRight="0"
           />
@@ -60,7 +58,7 @@ const SelectWidget: React.FC<SelectWidgetProps> = ({
             fontSize="xs"
             borderLeft="0"
             borderLeftRadius="0"
-            borderColor="nossas.lightgray"
+            borderColor="gray.light"
             {...field}
             {...props}
           >

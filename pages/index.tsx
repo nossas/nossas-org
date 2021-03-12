@@ -22,7 +22,7 @@ const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
     <Heading
       as="h4"
       size="sm"
-      color="nossas.blue"
+      color="blue.main"
       textTransform="uppercase"
       fontWeight="bold"
     >
@@ -57,11 +57,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         />
         <Stack spacing={6} direction="column" maxW="500px">
           <Text>{t("content:blocks.home.etudonossas")}</Text>
-          <Link
-            href="#"
-            title={t("content:links.knowmore")}
-            color="nossas.pink"
-          >
+          <Link href="#" title={t("content:links.knowmore")} color="pink.main">
             {t("content:links.knowmore")} +
           </Link>
         </Stack>
@@ -104,7 +100,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         />
       </Section>
       <Section>
-        <Heading as="h2" size="lg" color="nossas.pink">
+        <Heading as="h2" size="lg" color="pink.main">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.home.actionnow", {
@@ -151,7 +147,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Flex>
         <Stack flex={1.5} spacing={8} alignItems={["center", "left"]}>
-          <Heading as="h2" size="lg" color="nossas.green">
+          <Heading as="h2" size="lg" color="green">
             <div
               dangerouslySetInnerHTML={{
                 __html: t("content:blocks.home.doacao.title", {

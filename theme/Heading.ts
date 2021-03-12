@@ -16,12 +16,12 @@ export default {
   variants: {
     tag: {
       display: "inline-table",
-      color: "nossas.blue",
+      color: "blue.main",
       fontSize: ["md", null, "lg"],
       fontWeight: "700",
       paddingLeft: "15px",
       borderLeftWidth: "3px",
-      borderLeftColor: "nossas.blue",
+      borderLeftColor: "blue.main",
     },
   },
   defaultProps: {

@@ -18,51 +18,54 @@ export default {
       fontSize: "15px",
       padding: "12px 16px",
     },
+    lg: {
+      fontSize: "18px",
+    },
   },
   variants: {
     solid: {
-      bg: "nossas.blue",
+      bg: "blue.main",
       color: "white",
       _hover: {
-        bg: "nossas.lightblue",
+        bg: "blue.light",
         _disabled,
       },
       _active: {
-        bg: "nossas.darkblue",
+        bg: "blue.dark",
       },
     },
     outline: {
       bg: "white",
-      color: "nossas.blue",
+      color: "blue.main",
       _hover: {
         bg: "#f7f7f7",
         _disabled,
       },
       _active: {
-        bg: "nossas.lightgray",
+        bg: "gray.main",
       },
     },
     pink: {
-      bg: "nossas.pink",
+      bg: "pink.main",
       color: "white",
       _hover: {
-        bg: "nossas.lightpink",
+        bg: "pink.light",
         _disabled,
       },
       _active: {
-        bg: "nossas.darkpink",
+        bg: "pink.dark",
       },
     },
     link: {
       bg: "transparent",
-      color: "nossas.blue",
-      fontSize: ["sm", "25px"],
+      color: "blue.main",
+      fontSize: ["sm", "md"],
       fontWeight: "600",
       lineHeight: "1.5",
       padding: 0,
       borderRadius: 0,
       _hover: {
-        color: "nossas.lightblue",
+        color: "blue.light",
       },
     },
   },
