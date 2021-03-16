@@ -26,6 +26,9 @@
     },
     "mobilizations": {
       "title": "Junte-se agora a uma de nossas campanhas!"
+    },
+    "technologies": {
+      "title": "Conheça nossas ferramentas de tecnologia"
     }
   },
   "blocks": {
@@ -213,6 +216,41 @@
             "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
           }
         }
+      }
+    },
+    "technologies": {
+      "emergence": {
+        "title": "Assim surgiu <b>o BONDE</b>",
+        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma incrível de mobilização que agora está disponível para outras organizações causarem também.",
+        "more": "Saiba mais"
+      },
+      "functionalities": {
+        "title": "Funcionalidades",
+        "mobilizations": "Crie páginas para suas campanhas de mobilização",
+        "pressure": "Pressione tomadores de decisão por email, telefone ou petição",
+        "donation": "Faça um financiamento coletivo para o seu projeto",
+        "form": "Receba inscrições de voluntários para a sua causa",
+        "redes": "Crie uma rede de solidariedade e aumente o seu impacto"
+      },
+      "partners": "Quem já causou <b>com o BONDE</b>",
+      "campaingStories": {
+        "title": "Campanhas que fizeram história",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "Saldão da Amazônia",
+            "description": "Um projeto de lei que facilitaria a grilagem foi posto em pauta na Câmara dos Deputados, mas graças à campanha mais de 30 mil pessoas se mobilizaram e conseguiram barrar o PL."
+          },
+          "2": {
+            "title": "Amazônia Contra a Covid",
+            "description": "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas."
+          }
+        }
+      },
+      "bonde": {
+        "title": "Use o BONDE para <b>causar</b>",
+        "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, levantar recursos para sua organização, criar redes de solidariedade sem precisar sacar nadinha de programação.",
+        "button": "Saiba mais"
       }
     }
   }
