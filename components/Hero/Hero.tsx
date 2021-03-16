@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Flex, Image, Heading } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, StyleProps } from "@chakra-ui/react";
 import Video from "../Video";
 
-type HeroProps = {
+interface HeroProps extends StyleProps {
   bgImage?: string;
   bgColor?: string;
   title?: string;
@@ -14,9 +14,9 @@ type HeroProps = {
   imageDesc?: string;
   videoUrl?: string;
   maxWidth?: string;
-};
+}
 
-const Hero = ({
+const Hero: React.FC<HeroProps> = ({
   bgImage,
   bgColor,
   Title,
@@ -28,7 +28,7 @@ const Hero = ({
   imageDesc,
   videoUrl,
   maxWidth,
-}: HeroProps) => {
+}) => {
   return (
     <section>
       <Flex
@@ -64,8 +64,8 @@ const Hero = ({
               as="h1"
               fontWeight="bold"
               textColor={titleColor}
-              size="lg"
               textAlign={titleAlign}
+              size="lg"
             >
               {title}
             </Heading>

@@ -23,6 +23,9 @@
     },
     "materials": {
       "title": "Faça você mesmo sua própria campanha de impacto!"
+    },
+    "mobilizations": {
+      "title": "Junte-se agora a uma de nossas campanhas!"
     }
   },
   "blocks": {
@@ -175,6 +178,40 @@
         "form": {
           "title": "Baixar manual",
           "submit": "Baixar"
+        }
+      }
+    },
+    "mobilizations": {
+      "done": {
+        "title": "O que já fizemos",
+        "description": "Ao longo dos anos, conseguimos incontáveis vitórias e avanços em políticas públicas, que beneficiaram milhares de pessoas em todo o país. Chega mais e vem com a gente fazer parte da mudança!"
+      },
+      "doing": {
+        "title": "O que estamos <b>fazendo</b>",
+        "carousel": {
+          "action": "Entrar em ação",
+          "1": {
+            "title": "Auxílio até o fim da pandemia",
+            "description": "A suspensão do Auxílio Emergencial levou milhares de brasileiros para baixo da linha da pobreza. Pressione a Câmara dos Deputados para retomar o auxílio até o final da pandemia."
+          },
+          "2": {
+            "title": "Respira Manaus",
+            "description": "A crise de saúde em Manaus continua muito grave! Os hospitais estão em colapso e a tendência é que o problema se espalhe pelo país. Pressione o Ministério da Saúde a cuidar dessa pauta."
+          }
+        }
+      },
+      "victories": {
+        "title": "Nossas <b>vitórias</b>",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "RESTINGA E MANGUE FICAM",
+            "description": "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. Nossa mobilização, que reuniu mais de 180 mil assinaturas, conseguiu  frear a boiada e garantir a preservação do litoral brasileiro e seus ecossistemas."
+          },
+          "2": {
+            "title": "4G para estudar",
+            "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
+          }
         }
       }
     }
