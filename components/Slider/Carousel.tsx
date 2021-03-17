@@ -75,7 +75,9 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
       )}
     >
       {items.map((content: React.ReactNode, index: number) => (
-        <div key={index}>{content}</div>
+        <div key={index} style={{ padding: "5px 0" }}>
+          {content}
+        </div>
       ))}
     </Carousel>
   )

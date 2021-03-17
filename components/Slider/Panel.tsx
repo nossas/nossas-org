@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Image,
-  Link,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
 
 type Item = {
   src: string;
@@ -23,7 +15,7 @@ export interface Props {
 }
 
 export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
-  <Box boxShadow={["base", "lg"]} rounded="base" bgColor="white">
+  <Box flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
     <Image src={item.src} alt={item.alt} width="100%" height={[229, 380]} />
     <Stack p={8} spacing={4} textAlign="left">
       <Heading as="h3" fontWeight="bold">
@@ -50,9 +42,9 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
 );
 
 export const Group: React.FC<Props> = ({ items }) => (
-  <SimpleGrid columns={items.length} gap={4}>
+  <Stack direction="row" spacing={4}>
     {items.map((item: Item, index: number) => (
       <Panel key={index} items={item} />
     ))}
-  </SimpleGrid>
+  </Stack>
 );

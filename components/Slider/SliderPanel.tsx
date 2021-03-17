@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "@emotion/styled";
 import Carousel from "./Carousel";
 import { Group, Panel } from "./Panel";
 
@@ -14,9 +15,20 @@ type Item = {
 export interface Props {
   items: Item[];
   isMobile: boolean;
+  minH?: string;
 }
 
-const SliderPanel: React.FC<Props> = ({ items, isMobile }) => {
+const CustomStyles = styled.div<Pick<Props, "minH">>`
+  ${(props) =>
+    props.minH &&
+    `
+    .carousel .slider-wrapper {
+      min-height: ${props.minH} !important;
+    }
+  `}
+`;
+
+const SliderPanel: React.FC<Props> = ({ items, isMobile, minH }) => {
   const Content = isMobile ? Panel : Group;
   let newItems: any[] = isMobile
     ? items

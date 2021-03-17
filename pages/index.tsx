@@ -41,7 +41,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       {/* Cover */}
       <Hero
         title={t("content:covers.home.title")}
-        videoUrl="/static/media/video-example.mp4"
+        videoUrl="/static/media/covers/home.mov"
       />
       <Section
         justifyContent={["flex-start", "center"]}
@@ -99,7 +99,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           title={t("content:blocks.home.grid.tech")}
         />
       </Section>
-      <Section>
+      <Section direction="column" spacing={8}>
         <Heading as="h2" size="lg" color="pink.main">
           <div
             dangerouslySetInnerHTML={{
