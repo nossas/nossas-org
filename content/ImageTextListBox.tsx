@@ -2,7 +2,7 @@ import React from "react";
 import { Heading, Text, Stack, Image, StyleProps } from "@chakra-ui/react";
 import { Section } from "../components/Page";
 
-interface ImageTextListProps extends StyleProps {
+interface ImageTextListProps {
   imgScale?: number;
   title: React.ReactNode | string;
   items: {
@@ -10,6 +10,7 @@ interface ImageTextListProps extends StyleProps {
     alt?: string;
     description: string;
   }[];
+  width?: string;
 }
 
 const ImageTextListBox: React.FC<ImageTextListProps> = ({
