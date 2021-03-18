@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
-import Media from "../components/Media";
 import Donation from "../components/Donation";
+import Media from "../content/Media";
 import { withTranslation, I18nInitialProps } from "../i18n";
 
 const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
@@ -146,7 +147,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1.5} spacing={8} alignItems={["center", "left"]}>
+        <Stack flex={1.5} spacing={8} alignItems={["center", "flex-start"]}>
           <Heading as="h2" size="lg" color="green">
             <div
               dangerouslySetInnerHTML={{
@@ -174,16 +175,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             }}
           />
         }
-        logos={[
-          "/static/media/s3/dias.png",
-          "/static/media/s3/reuters.png",
-          "/static/media/s3/nyt.png",
-          "/static/media/s3/piaui.png",
-          "/static/media/s3/elpais.png",
-          "/static/media/s3/forbes.png",
-          "/static/media/s3/ted.png",
-          "/static/media/s3/zeitgeist.png",
-        ]}
       />
     </Body>
   );

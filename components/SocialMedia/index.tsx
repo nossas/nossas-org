@@ -20,16 +20,32 @@ const MediaLink = styled(Link)`
 const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
   return (
     <Stack direction="row" spacing={3}>
-      <MediaLink href="#" title={t("social.icons.instagram")} color={color}>
+      <MediaLink
+        href="https://instagram.com/_nossas"
+        title={t("social.icons.instagram")}
+        color={color}
+      >
         <Instagram />
       </MediaLink>
-      <MediaLink href="#" title={t("social.icons.facebook")} color={color}>
+      <MediaLink
+        href="https://www.facebook.com/nossasorg/"
+        title={t("social.icons.facebook")}
+        color={color}
+      >
         <Facebook />
       </MediaLink>
-      <MediaLink href="#" title={t("social.icons.twitter")} color={color}>
+      <MediaLink
+        href="https://www.twitter.com/_nossas"
+        title={t("social.icons.twitter")}
+        color={color}
+      >
         <Twitter />
       </MediaLink>
-      <MediaLink href="#" title={t("social.icons.linkedin")} color={color}>
+      <MediaLink
+        href="https://www.linkedin.com/company/nossas/"
+        title={t("social.icons.linkedin")}
+        color={color}
+      >
         <Linkedin />
       </MediaLink>
     </Stack>

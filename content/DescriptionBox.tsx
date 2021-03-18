@@ -17,7 +17,12 @@ const DescriptionBox: React.FC<Props> = ({
   title,
   headingStyles,
 }) => (
-  <Section columns={[1, null, null, 2]} columnGap="120px" bgColor={bgColor}>
+  <Section
+    columns={[1, null, null, 2]}
+    columnGap="120px"
+    rowGap="35px"
+    bgColor={bgColor}
+  >
     <Stack spacing={6}>
       <Heading
         as="h3"

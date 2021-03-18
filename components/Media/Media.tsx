@@ -1,6 +1,22 @@
 import React from "react";
 import { Heading, Image, Grid } from "@chakra-ui/react";
 
+const ImageLogo = ({ logo }: any) => {
+  const image = (
+    <Image src={logo?.src || logo} alt="" width={["80%", "50%", "unset"]} />
+  );
+
+  if (logo?.href) {
+    return (
+      <a href={logo.href} target="_blank">
+        {image}
+      </a>
+    );
+  }
+
+  return image;
+};
+
 const Media = ({ title, logos }) => {
   return (
     <section>
@@ -31,13 +47,8 @@ const Media = ({ title, logos }) => {
           gridRowGap={["25px"]}
           gridColumnGap={["25px"]}
         >
-          {logos.map((logo, i) => (
-            <Image
-              src={logo}
-              alt=""
-              key={`media-${i}`}
-              width={["80%", "50%", "unset"]}
-            />
+          {logos.map((logo: any, i: number) => (
+            <ImageLogo key={`media-${i}`} logo={logo} />
           ))}
         </Grid>
       </Grid>

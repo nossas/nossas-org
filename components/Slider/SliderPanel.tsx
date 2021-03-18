@@ -17,17 +17,6 @@ export interface Props {
   isMobile: boolean;
   minH?: string;
 }
-
-const CustomStyles = styled.div<Pick<Props, "minH">>`
-  ${(props) =>
-    props.minH &&
-    `
-    .carousel .slider-wrapper {
-      min-height: ${props.minH} !important;
-    }
-  `}
-`;
-
 const SliderPanel: React.FC<Props> = ({ items, isMobile, minH }) => {
   const Content = isMobile ? Panel : Group;
   let newItems: any[] = isMobile

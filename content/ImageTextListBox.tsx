@@ -37,7 +37,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
           key={`item_${i}`}
           alignItems="center"
           justifyContent="center"
-          width={width}
+          maxW={width}
           mb="55px"
         >
           <Image

@@ -7,34 +7,94 @@ import {
   SimpleGrid,
   Stack,
   Image,
+  Box,
 } from "@chakra-ui/react";
 
-interface Team {
-  description: string;
-  members: { photo: string; name: string }[];
+interface Member {
+  image: string;
+  name: string;
+  role: string;
 }
 
-interface SectionTeamProps {
-  teams: Team[];
-}
+const members = [
+  {
+    image: "/static/media/team/ana-carolina.png",
+    name: "Ana Carolina Evangelista",
+    role: "Presidente do Conselho",
+  },
+  {
+    image: "/static/media/team/ana-paula.png",
+    name: "Ana Paula Lisboa",
+    role: "Conselheira",
+  },
+  {
+    image: "/static/media/team/roberto-andres.png",
+    name: "Roberto Andres",
+    role: "Conselheiro",
+  },
+  {
+    image: "/static/media/team/bianca-vianna.png",
+    name: "Bianca Vianna",
+    role: "Conselheira",
+  },
+  {
+    image: "/static/media/team/felipe-estefam.png",
+    name: "Felipe Estefan",
+    role: "Conselheiro",
+  },
+  {
+    image: "/static/media/team/ines-lafer.png",
+    name: "Inês Laffer",
+    role: "Conselheira",
+  },
+];
 
-const Team: React.FC<SectionTeamProps> = ({ teams }) => (
-  <Stack direction={["column", "row"]} spacing={["30px", "100px"]}>
-    {teams.map((team, index: number) => (
-      <Stack key={`team-${index}`} direction="column" spacing="30px">
-        <Text color="white">{team.description}</Text>
-        <SimpleGrid columns={[2, null, null, null, 3]}>
-          {team.members.map((member, index: number) => (
+const Team = () => (
+  <Stack direction={["column", "row"]} spacing={["30px", "120px"]}>
+    <Stack flex={1} direction="column" spacing="25px">
+      <Image
+        maxW="245px"
+        maxH="240px"
+        src="/static/media/team/alessandra-orofino.png"
+        alt="Alessandra Orofino"
+      />
+      <Box>
+        <Heading as="h3" size="md" fontWeight="bold">
+          Alessandra Orofino
+        </Heading>
+        <Text>Co-fundadora e Diretora Executiva</Text>
+      </Box>
+      <Text>
+        Formada em Economia e Direitos Humanos pela Columbia University, fellow
+        no Obama Foundation e diretora do Greg News na HBO. Alessandra fundou o
+        Meu Rio em 2011 e desde então vem contribuindo com o desenvolvimento do
+        NOSSAS.
+      </Text>
+    </Stack>
+    <Stack flex={1} direction="column" spacing="30px">
+      <Text>
+        Nosso conselho é consultivo e conta com seis pessoas, eleitas para
+        mandatos de dois anos:
+      </Text>
+      <SimpleGrid columns={[2, null, null, 3]} columnGap="25px" rowGap="35px">
+        {members.map((member: Member, index: number) => (
+          <Stack direction="column" spacing="15px" key={`member-${index}`}>
             <Image
-              key={`member-${index}`}
-              transform={["scale(0.9)", "scale(1)"]}
-              src={member.photo}
+              maxW={["145px", null, null, "160px"]}
+              maxH={["145px", null, null, "160px"]}
+              src={member.image}
               alt={member.name}
             />
-          ))}
-        </SimpleGrid>
-      </Stack>
-    ))}
+            <Box>
+              <Heading as="h3" size="sm" fontWeight="bold">
+                {member.name}
+              </Heading>
+              <Text>{member.role}</Text>
+            </Box>
+          </Stack>
+        ))}
+      </SimpleGrid>
+    </Stack>
   </Stack>
 );
 

@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import Media from "../../components/Media";
+import Media from "../../content/Media";
 import Timeline from "./_timeline";
 import Team from "./_team";
 
@@ -23,14 +23,12 @@ interface PageProps extends WithUserAgentProps {
 
 const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
-    <Heading as="h4" display="flex" flexDirection="column">
-      <Text as="span" size="lg" color="pink.main">
-        {numberText}
-      </Text>
-      <Text as="span" size="sm">
-        {description}
-      </Text>
+    <Heading as="span" size="lg" color="pink.main" fontWeight="bold">
+      {numberText}
     </Heading>
+    <Text as="span" size="sm">
+      {description}
+    </Text>
   </Flex>
 );
 
@@ -107,13 +105,13 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     >
       <Flex flex={1} justifyContent="space-around">
         <Image
-          maxW={[226, 339]}
-          maxH={[232, 347]}
-          src="/static/media/s3/sustentabilidade.png"
+          maxW={[226, 282]}
+          maxH={[232, 374]}
+          src="/static/media/s3/sustentabilidade2.png"
           alt={t("content:blocks.about.financiers.imageText")}
         />
       </Flex>
-      <Stack flex={1.5} spacing={8} alignItems={["center", "flex-start"]}>
+      <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
         <Heading as="h2" size="lg" color="green">
           <div
             dangerouslySetInnerHTML={{
@@ -132,60 +130,11 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
     {/* Equipe */}
-    <Section direction="column" backgroundColor="blue.main" spacing="20px">
-      <Heading as="h2" color="white" fontWeight="700" size="lg">
+    <Section direction="column" spacing="20px">
+      <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
         {t("content:blocks.about.team.title")}
       </Heading>
-      <Team
-        teams={[
-          {
-            description: t("content:blocks.about.team.directorship"),
-            members: [
-              {
-                photo: "/static/media/team/alessandra-orofino.png",
-                name: "Alessandra Orofino",
-              },
-              {
-                photo: "/static/media/team/enrica-duncan.png",
-                name: "Enrica Duncan",
-              },
-              {
-                photo: "/static/media/team/virginia-rigot.png",
-                name: "Virginia Rigot-Muller",
-              },
-            ],
-          },
-          {
-            description: t("content:blocks.about.team.board"),
-            members: [
-              {
-                photo: "/static/media/team/ana-carolina.png",
-                name: "Ana Carolina Evangelista",
-              },
-              {
-                photo: "/static/media/team/ana-paula.png",
-                name: "Ana Paula Lisboa",
-              },
-              {
-                photo: "/static/media/team/ines-lafer.png",
-                name: "Inês Lafer",
-              },
-              {
-                photo: "/static/media/team/bianca-vianna.png",
-                name: "Bianca Vianna",
-              },
-              {
-                photo: "/static/media/team/felipe-estefam.png",
-                name: "Felipe Estefam",
-              },
-              {
-                photo: "/static/media/team/roberto-andres.png",
-                name: "Roberto Andres",
-              },
-            ],
-          },
-        ]}
-      />
+      <Team />
     </Section>
     {/* Na midia */}
     <Media
@@ -198,16 +147,6 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       }
-      logos={[
-        "/static/media/s3/dias.png",
-        "/static/media/s3/reuters.png",
-        "/static/media/s3/nyt.png",
-        "/static/media/s3/piaui.png",
-        "/static/media/s3/elpais.png",
-        "/static/media/s3/forbes.png",
-        "/static/media/s3/ted.png",
-        "/static/media/s3/zeitgeist.png",
-      ]}
     />
     <Section
       direction={["column", "row"]}

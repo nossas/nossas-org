@@ -40,7 +40,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
     >
       <Image src={src} alt={alt} {...imageSizes} />
       <Stack spacing="10px" textAlign="left">
-        <Heading as="h3" color="nossas.blue" fontWeight="bold">
+        <Heading as="h3" color="blue.main" fontWeight="bold">
           {title}
         </Heading>
         <Text>{description}</Text>
@@ -74,13 +74,8 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       title={t("content:covers.incubations.title")}
     />
     {/* Content */}
-    <Section direction={["column", null, "row"]}>
-      <Heading
-        as="h2"
-        textColor="blue.main"
-        flex={1}
-        marginBottom={["20px", null, 0]}
-      >
+    <Section direction={["column", null, "row"]} spacing="20px">
+      <Heading as="h2" flex={1} size="lg" textColor="blue.main">
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.incubations.about.title", {
@@ -89,7 +84,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <Text flex={[1, null, 2, null, 3]}>
+      <Text flex={[1, null, 2, null, null]}>
         {t("content:blocks.incubations.about.description")}
       </Text>
     </Section>
@@ -97,28 +92,28 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       title={t("content:blocks.incubations.offer.title")}
       items={[
         {
-          src: "/static/media/assets/icon-eyelash.png",
-          alt: "Icone Eyelash",
+          src: "/static/media/assets/icon-mobilizations.png",
+          alt: "Mobilizações",
           description: t("content:blocks.incubations.offer.mobilization"),
         },
         {
-          src: "/static/media/assets/icon-launch.png",
-          alt: "Icone Launch",
+          src: "/static/media/assets/icon-network.png",
+          alt: "Network",
           description: t("content:blocks.incubations.offer.peoples"),
         },
         {
-          src: "/static/media/assets/icon-question.png",
-          alt: "Icone Question",
+          src: "/static/media/assets/icon-communication.png",
+          alt: "Comunicação",
           description: t("content:blocks.incubations.offer.communication"),
         },
       ]}
     />
-    <Section direction="column" spacing="110px" bgColor="nossas.bggray">
+    <Section direction="column" spacing="110px" bgColor="gray.light">
       <Stack
         direction={["column", null, null, "row"]}
         justifyContent="space-between"
       >
-        <Heading as="h2" color="nossas.blue" maxW="210px">
+        <Heading as="h2" color="blue.main" maxW="215px" size="lg">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.incubations.projects.title", {
@@ -165,7 +160,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       />
     </Section>
     <Section direction="column" spacing="30px">
-      <Heading as="h2" color="nossas.green">
+      <Heading as="h2" color="green" size="lg">
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.incubations.current_projects.title", {
