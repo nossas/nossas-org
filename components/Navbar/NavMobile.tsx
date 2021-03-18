@@ -45,7 +45,7 @@ const NavMobile = ({ t, children }) => {
         size="full"
       >
         <DrawerOverlay>
-          <DrawerContent backgroundColor="nossas.blue">
+          <DrawerContent backgroundColor="blue.main">
             <DrawerHeader
               display="flex"
               alignItems="center"
