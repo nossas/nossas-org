@@ -1,25 +1,48 @@
 import React from "react";
 import { Stack, Heading, Text } from "@chakra-ui/react";
+import { Section } from "../components/Page";
 
 interface Props {
-  title: React.ReactNode;
-  content: React.ReactNode | string;
+  title: React.ReactNode | string;
+  description: React.ReactNode | string;
   maxW?: string | number;
+  bgColor?: string;
+  headingStyles?: any;
 }
 
-const DescriptionBox: React.FC<Props> = ({ maxW, title, content }) => (
-  <Stack spacing={6} maxW={maxW}>
-    <Heading as="h3" size="3xl" color="nossas.pink" fontWeight="normal">
-      {title}
-      {/* <b>Manual de</b> mobilização */}
-    </Heading>
-    <Text fontSize={["xl", "2xl"]}>
-      {content}
-      {/* Ao longo dos 10 capítulos você vai encontrar referências, casos de
-      sucesso, exercícios e tudo que você precisa de informação para
-      construir campanhas de ativismo de impacto. */}
-    </Text>
-  </Stack>
+const DescriptionBox: React.FC<Props> = ({
+  children,
+  bgColor,
+  description,
+  title,
+  headingStyles,
+}) => (
+  <Section
+    columns={[1, null, null, 2]}
+    columnGap="120px"
+    rowGap="35px"
+    bgColor={bgColor}
+  >
+    <Stack spacing={6}>
+      <Heading
+        as="h3"
+        size="3xl"
+        color="pink.main"
+        fontWeight="normal"
+        maxW="360px"
+        {...headingStyles}
+      >
+        {title}
+      </Heading>
+      <Text>{description}</Text>
+    </Stack>
+    {children}
+  </Section>
 );
+
+DescriptionBox.defaultProps = {
+  bgColor: "gray.light",
+  headingStyles: {},
+};
 
 export default DescriptionBox;

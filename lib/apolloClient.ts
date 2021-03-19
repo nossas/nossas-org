@@ -28,7 +28,7 @@ let accessToken = null;
 
 const createHttpLink = (headers) => {
   const httpLink = new HttpLink({
-    uri: "https://api-graphql.staging.bonde.org/v1/graphql",
+    uri: process.env.BONDE_API_GRAPHQL_URL,
     credentials: "include",
     headers, // auth token is fetched on the server side
     fetch,
@@ -38,7 +38,7 @@ const createHttpLink = (headers) => {
 
 const createWSLink = () => {
   return new WebSocketLink(
-    new SubscriptionClient("wss://api-graphql.staging.bonde.org/v1/graphql", {
+    new SubscriptionClient(process.env.NEXT_PUBLIC_BONDE_API_GRAPHQL_URL, {
       lazy: true,
       reconnect: true,
       connectionParams: async () => {

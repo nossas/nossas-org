@@ -1,11 +1,27 @@
 import React from "react";
 import { Heading, Image, Grid } from "@chakra-ui/react";
 
+const ImageLogo = ({ logo }: any) => {
+  const image = (
+    <Image src={logo?.src || logo} alt="" width={["80%", "50%", "unset"]} />
+  );
+
+  if (logo?.href) {
+    return (
+      <a href={logo.href} target="_blank">
+        {image}
+      </a>
+    );
+  }
+
+  return image;
+};
+
 const Media = ({ title, logos }) => {
   return (
     <section>
       <Grid
-        backgroundColor="#F7F7F7"
+        backgroundColor="gray.light"
         templateColumns={["auto", "auto", "300px 50%"]}
         templateRows={["auto auto", "auto auto", "auto"]}
         p={["30px", "30px", "100px"]}
@@ -14,9 +30,9 @@ const Media = ({ title, logos }) => {
         <Heading
           display="flex"
           alignItems="center"
-          fontSize={["3xl", "5xl"]}
-          color="nossas.blue"
-          fontWeight="200"
+          color="blue.main"
+          size="lg"
+          fontWeight="normal"
         >
           {title}{" "}
           <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span>
@@ -29,14 +45,10 @@ const Media = ({ title, logos }) => {
           ]}
           justifyItems="center"
           gridRowGap={["25px"]}
+          gridColumnGap={["25px"]}
         >
-          {logos.map((logo, i) => (
-            <Image
-              src={logo}
-              alt=""
-              key={`media-${i}`}
-              width={["80%", "50%", "unset"]}
-            />
+          {logos.map((logo: any, i: number) => (
+            <ImageLogo key={`media-${i}`} logo={logo} />
           ))}
         </Grid>
       </Grid>

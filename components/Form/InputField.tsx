@@ -2,30 +2,59 @@ import React from "react";
 import {
   FormControl,
   FormHelperText,
+  FormLabel,
   InputGroup,
   InputLeftAddon,
   Input,
+  InputProps,
 } from "@chakra-ui/react";
 import { useField } from "formik";
 
-const InputField = ({ name, label, ...props }: any) => {
+interface InputFieldProps extends InputProps {
+  name: string;
+  label?: string;
+  inline?: boolean;
+}
+
+const InputField: React.FC<InputFieldProps> = ({
+  name,
+  label,
+  inline,
+  flex,
+  ...props
+}) => {
   const [field, meta, helpers] = useField(name);
 
   return (
-    <FormControl flexDirection="column">
-      <InputGroup>
-        <InputLeftAddon
-          children={label}
-          minW="100px"
-          bg="white"
-          color="nossas.darkgrey"
-          fontSize="sm"
-          borderRight="0"
-        />
-        <Input fontSize="md" borderLeft="0" {...field} {...props} />
-      </InputGroup>
+    <FormControl
+      flexDirection="column"
+      flex={flex}
+      borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
+    >
+      {inline ? (
+        <InputGroup
+          borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
+        >
+          <InputLeftAddon
+            children={label}
+            minW="100px"
+            bg="white"
+            color="gray.dark"
+            fontSize="xs"
+            borderRight="0"
+          />
+          <Input fontSize="xs" borderLeft="0" {...field} {...props} />
+        </InputGroup>
+      ) : (
+        <>
+          {label && <FormLabel>{label}</FormLabel>}
+          <Input fontSize="xs" {...field} {...props} />
+        </>
+      )}
       {meta.touched && !!meta.error && (
-        <FormHelperText color="red">{meta.error}</FormHelperText>
+        <FormHelperText color="red" fontSize="xs" textAlign="left">
+          {meta.error}
+        </FormHelperText>
       )}
     </FormControl>
   );

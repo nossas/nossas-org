@@ -1,19 +1,13 @@
-import { NextPage, NextPageContext } from "next";
-import {
-  Flex,
-  Button,
-  Heading,
-  Image,
-  Text,
-  Stack,
-  Link,
-} from "@chakra-ui/react";
+import { NextPage } from "next";
+import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+
 import Hero from "../components/Hero";
-import { withTranslation, I18nInitialProps } from "../i18n";
 import { Body, Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
-import Media from "../components/Media";
+import Donation from "../components/Donation";
+import Media from "../content/Media";
+import { withTranslation, I18nInitialProps } from "../i18n";
 
 const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
   <Stack
@@ -26,7 +20,13 @@ const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
     textAlign="center"
   >
     <Image src={src} alt={alt} {...props} />
-    <Heading as="h4" size="lg" color="nossas.blue" textTransform="uppercase">
+    <Heading
+      as="h4"
+      size="sm"
+      color="blue.main"
+      textTransform="uppercase"
+      fontWeight="bold"
+    >
       {title}
     </Heading>
   </Stack>
@@ -39,43 +39,26 @@ interface Props extends WithUserAgentProps {
 const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
     <Body isMobile={ua.isMobile}>
+      {/* Cover */}
       <Hero
-        Title={
-          <Heading
-            as="h1"
-            fontSize={["3xl", "6xl"]}
-            color="white"
-            textAlign="center"
-          >
-            {t("content:covers.home.title")}
-          </Heading>
-        }
-        // bgImage="/static/media/bg-example.png"
-        videoUrl="/static/media/video-example.mp4"
+        title={t("content:covers.home.title")}
+        videoUrl="/static/media/covers/home.mov"
       />
       <Section
+        justifyContent={["flex-start", "center"]}
         alignItems={["flex-start", "center"]}
         direction={["column", "row"]}
-        px={["60px", "300px"]}
         py={["30px", "130px"]}
-        spacing={[30, 60]}
+        spacing={["30px", "60px"]}
       >
         <Image
           maxW={[155, 250]}
           src="/static/media/s3/etudonossas.png"
           alt={t("content:images.home.etudonossas")}
         />
-        <Stack spacing={6} direction="column">
-          <Text fontSize={["xl", "2xl"]} color="nossas.darkgrey">
-            {t("content:blocks.home.etudonossas")}
-          </Text>
-          <Link
-            href="#"
-            title={t("content:links.knowmore")}
-            color="nossas.pink"
-            fontWeight={700}
-            fontSize={["xl", "2xl"]}
-          >
+        <Stack spacing={6} direction="column" maxW="500px">
+          <Text>{t("content:blocks.home.etudonossas")}</Text>
+          <Link href="#" title={t("content:links.knowmore")} color="pink.main">
             {t("content:links.knowmore")} +
           </Link>
         </Stack>
@@ -117,14 +100,8 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           title={t("content:blocks.home.grid.tech")}
         />
       </Section>
-      <Section px={["20px"]}>
-        <Heading
-          px={[0, "70px"]}
-          as="h2"
-          color="nossas.pink"
-          size="2xl"
-          fontWeight="normal"
-        >
+      <Section direction="column" spacing={8}>
+        <Heading as="h2" size="lg" color="pink.main">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.home.actionnow", {
@@ -134,24 +111,21 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Heading>
         <SliderPanel
-          height={50}
           isMobile={ua.isMobile}
           items={[
             {
               alt: "teste",
-              src: "/static/media/s3/programademobilizadores.png",
-              title: t("sliders:home.actionnow.rendabasica.title"),
-              description: t("sliders:home.actionnow.rendabasica.description"),
+              src: "/static/media/s3/rendabasica.png",
+              title: t("sliders:home.actionnow.1.title"),
+              description: t("sliders:home.actionnow.1.description"),
               link: t("content:links.actionnow"),
               href: "#",
             },
             {
               alt: "teste",
-              src: "/static/media/s3/rendabasica.png",
-              title: t("sliders:home.actionnow.programamobilizadores.title"),
-              description: t(
-                "sliders:home.actionnow.programamobilizadores.description"
-              ),
+              src: "/static/media/s3/programademobilizadores.png",
+              title: t("sliders:home.actionnow.2.title"),
+              description: t("sliders:home.actionnow.2.description"),
               link: t("content:links.actionnow"),
               href: "#",
             },
@@ -173,8 +147,8 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1} spacing={8} alignItems="center">
-          <Heading as="h2" color="nossas.green" size="2xl" fontWeight="normal">
+        <Stack flex={1.5} spacing={8} alignItems={["center", "flex-start"]}>
+          <Heading as="h2" size="lg" color="green">
             <div
               dangerouslySetInnerHTML={{
                 __html: t("content:blocks.home.doacao.title", {
@@ -183,26 +157,24 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               }}
             />
           </Heading>
-          <Text fontSize={["xl", "2xl"]} textAlign={["center", "left"]}>
+          <Text textAlign={["center", "left"]}>
             {t("content:blocks.home.doacao.description")}
           </Text>
-          <Button color="white" maxW={190} backgroundColor="nossas.blue">
+          <Donation maxW={190}>
             {t("content:blocks.home.doacao.button")}
-          </Button>
+          </Donation>
         </Stack>
       </Section>
       <Media
-        title="NA MÍDIA"
-        logos={[
-          "/static/media/s3/dias.png",
-          "/static/media/s3/reuters.png",
-          "/static/media/s3/nyt.png",
-          "/static/media/s3/piaui.png",
-          "/static/media/s3/elpais.png",
-          "/static/media/s3/forbes.png",
-          "/static/media/s3/ted.png",
-          "/static/media/s3/zeitgeist.png",
-        ]}
+        title={
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.home.media.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        }
       />
     </Body>
   );

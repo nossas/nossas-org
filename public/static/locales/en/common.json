@@ -1,28 +1,91 @@
 {
-  "about": "about nossas",
-  "projects": "our projects",
-  "work": "our work",
-  "actvist": "be an actvist",
-  "donate": "donate now",
-  "social": {
-    "title": "FOLLOW US",
-    "icons": {
-      "instagram": "Instagram's Logo",
-      "twitter": "Twitter's Logo",
-      "facebook": "Facebook's Logo",
-      "linkedin": "Linkedin's Logo"
+  "donate": {
+    "button": "Doar",
+    "title": "<b>APOIE</b> O NOSSAS",
+    "description": "Nossas atividades são sustentadas exclusivamente por doações de pessoas e fundações que acreditam no que fazemos. Faça sua doação:",
+    "padlock": "doação segura",
+    "tabs": {
+      "yourdata": "Seus dados",
+      "payments": "Pagamentos"
+    },
+    "form": {
+      "fields": {
+        "cardholderName": {
+          "label": "Nome",
+          "placeholder": "Nome no cartão",
+          "required": "Preencha seu nome como no cartão"
+        },
+        "customDonation": {
+          "label": "Valor {{currency}}",
+          "required": "Informe um valor de doação",
+          "min": "Informe ao menos 1 para doação"
+        },
+        "name": {
+          "label": "Nome",
+          "placeholder": "Seu nome",
+          "required": "Informe seu nome"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Seu e-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "Informe um e-mail válido"
+        },
+        "phone": {
+          "label": "Whatsapp",
+          "placeholder": "(000) 00000-0000",
+          "required": "Informe seu whatsapp"
+        }
+      },
+      "buttons": {
+        "continue": "Continuar",
+        "donate": "Doar {{currency}}{{value}}",
+        "finish": "Finalizar"
+      }
+    },
+    "finish": {
+      "imageAlt": "Doação bem sucedida!",
+      "title": "<b>Valeu,</b> {{name}}!",
+      "thanks": "Sua doação faz toda a diferença!",
+      "message": "Mensagem de agradecimento etc etc."
     }
   },
-  "newsletter": {
-    "title": "SUBSCRIBE TO OUR NEWSLETTER",
-    "placeholder": "Your e-mail",
-    "button": "Save"
+  "social": {
+    "title": "SIGA NAS REDES SOCIAIS",
+    "icons": {
+      "instagram": "Logo do Instagram",
+      "twitter": "Logo do Twitter",
+      "facebook": "Logo do Facebook",
+      "linkedin": "Logo do Linkedin"
+    }
   },
   "slider": {
     "defaults": {
-      "more": "More about +"
+      "more": "Saiba mais +"
     }
   },
-  "Hero": "NOSSAS is an organization that promotes democratic and solidary activism in Brazil",
-  "HeroSubtitle": "Há 10 anos desenvolvemos projetos, táticas e estratégias de mobilização - tudo isso resultou em projetos de impacto."
+  "newsletter": {
+    "title": "FIQUE POR DENTRO",
+    "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
+    "email": {
+      "placeholder": "Seu e-mail",
+      "required": "Informe seu e-mail",
+      "invalid": "Informe um e-mail válido"
+    },
+    "firstname": {
+      "placeholder": "Nome",
+      "required": "Informe seu nome"
+    },
+    "lastname": {
+      "placeholder": "Sobrenome"
+    },
+    "button": "Salvar"
+  },
+  "footer": {
+    "about": "conheça o nossas",
+    "projects": "nossos projetos",
+    "work": "acontecendo agora",
+    "actvist": "seja um ativista",
+    "donate": "faça uma doação"
+  }
 }

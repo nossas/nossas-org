@@ -14,18 +14,21 @@ interface FieldsProps {
 export const Fields: React.FC<FieldsProps> = ({ t }) => (
   <Stack spacing={4}>
     <InputField
+      inline
       name="name"
       type="text"
       label={t("donate.form.fields.name.label")}
       placeholder={t("donate.form.fields.name.placeholder")}
     />
     <InputField
+      inline
       name="email"
       type="email"
       label={t("donate.form.fields.email.label")}
       placeholder={t("donate.form.fields.email.placeholder")}
     />
     <InputField
+      inline
       name="phone"
       type="tel"
       label={t("donate.form.fields.phone.label")}
@@ -46,11 +49,11 @@ export const schema = ({ t }: { t: any }) =>
 export interface YourDataValues {
   name?: string;
   email?: string;
-  whatsapp?: string;
+  phone?: string;
 }
 
 export const initialValues: YourDataValues = {
   name: "",
   email: "",
-  whatsapp: "",
+  phone: "",
 };

@@ -10,7 +10,25 @@ interface BodyProps {
 
 const Body: React.FC<BodyProps> = ({ children, isMobile }) => (
   <Flex minH="100vh" direction="column">
-    <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bebas+Neue:400,700" />
+    <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:100,400,700" />
+    <link
+      rel="preload"
+      href="/fonts/BebasNeue/BebasNeue-Light.ttf"
+      as="font"
+      crossOrigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/BebasNeue/BebasNeue-Regular.ttf"
+      as="font"
+      crossOrigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/BebasNeue/BebasNeue-Bold.ttf"
+      as="font"
+      crossOrigin=""
+    />
     <Head>
       <title>NOSSAS</title>
       <link rel="icon" href="/favicon.ico" />

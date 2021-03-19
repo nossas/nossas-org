@@ -21,6 +21,8 @@ interface DonationProps {
   btnText: string;
   isDisabled: boolean;
   onSubmit?: any;
+  btnChildren: any;
+  disclosureOpts: any;
 }
 
 const Donation: React.FC<DonationProps> = ({
@@ -29,14 +31,17 @@ const Donation: React.FC<DonationProps> = ({
   onSubmit,
   btnText,
   isDisabled,
+  btnChildren,
+  disclosureOpts,
+  ...props
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = disclosureOpts;
   const btnRef = React.useRef();
 
   return (
     <Form>
-      <Button ref={btnRef} size="md" onClick={onOpen}>
-        {t("donate.button")}
+      <Button size="md" {...props} onClick={onOpen} ref={btnRef}>
+        {btnChildren}
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -58,14 +63,7 @@ const Donation: React.FC<DonationProps> = ({
             </DrawerHeader>
             <DrawerBody>{children}</DrawerBody>
             <DrawerFooter>
-              <Button
-                onClick={onSubmit || onClose}
-                flex={1}
-                size="md"
-                isDisabled={isDisabled}
-                color={isDisabled ? "nossa.darkgray" : "white"}
-                bgColor={isDisabled ? "nossas.gray" : "nossas.blue"}
-              >
+              <Button flex={1} onClick={onSubmit} isDisabled={isDisabled}>
                 {btnText}
               </Button>
             </DrawerFooter>

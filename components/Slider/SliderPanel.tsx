@@ -1,5 +1,6 @@
 import React from "react";
-import Slider, { SliderProps } from "./Slider";
+import styled from "@emotion/styled";
+import Carousel from "./Carousel";
 import { Group, Panel } from "./Panel";
 
 type Item = {
@@ -11,27 +12,29 @@ type Item = {
   link: string;
 };
 
-export interface Props extends SliderProps {
+export interface Props {
   items: Item[];
   isMobile: boolean;
+  minH?: string;
 }
-
-const renderItems = (items: any[], Content: React.ElementType) =>
-  items.map((values: any, index: number) => (
-    <div key={index}>
-      <Content items={values} />
-    </div>
-  ));
-const SliderPanel: React.FC<Props> = ({ items, isMobile, ...props }) => {
+const SliderPanel: React.FC<Props> = ({ items, isMobile, minH }) => {
   const Content = isMobile ? Panel : Group;
-  let newItems = isMobile
+  let newItems: any[] = isMobile
     ? items
     : Array.from(new Array(items.length / 2)).map((_v: any, index: number) => {
         const keys = { 0: [0, 2], 1: [2, 4], 2: [4, 6] };
         return items.splice(keys[index][0], keys[index][1]);
       });
 
-  return <Slider {...props}>{renderItems(newItems, Content)}</Slider>;
+  return (
+    <Carousel
+      infiniteLoop
+      isMobile={isMobile}
+      items={newItems.map((values: any) => (
+        <Content items={values} />
+      ))}
+    />
+  );
 };
 
 export default SliderPanel;

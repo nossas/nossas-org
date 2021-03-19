@@ -1,0 +1,257 @@
+{
+  "forms": {
+    "buttons": {
+      "download": "Baixar"
+    }
+  },
+  "links": {
+    "knowmore": "Saiba mais",
+    "actionnow": "Entrar em ação"
+  },
+  "images": {
+    "home": {
+      "etudonossas": "É tudo nossas",
+      "doacao": "Sustentabilidade"
+    }
+  },
+  "covers": {
+    "home": {
+      "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
+    },
+    "incubations": {
+      "title": "Incube seu projeto com a gente!"
+    },
+    "materials": {
+      "title": "Faça você mesmo sua própria campanha de impacto!"
+    },
+    "mobilizations": {
+      "title": "Junte-se agora a uma de nossas campanhas!"
+    },
+    "technologies": {
+      "title": "Conheça nossas ferramentas de tecnologia"
+    }
+  },
+  "blocks": {
+    "home": {
+      "actionnow": "O que estamos <b>fazendo</b>",
+      "doacao": {
+        "title": "Faça uma <b>doação</b>",
+        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Para manter nossa independência, não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas públicas. Por isso, precisamos de você.",
+        "button": "Faça uma doação"
+      },
+      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
+      "grid": {
+        "mobilization": "Participe de uma mobilização",
+        "books": "Acesse nossos materiais educativos",
+        "learning": "Seja treinado em metodologias de mobilização",
+        "support": "Receba apoio para seu projeto",
+        "tech": "Use as melhores tecnologias para ativismo"
+      },
+      "media": {
+        "title": "NA <b>MÍDIA</b>"
+      }
+    },
+    "about": {
+      "numbers": {
+        "title": "Números<br/><b>de impacto<b>"
+      },
+      "history": {
+        "title": "História",
+        "description": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos projetos, fizemos inúmeras campanhas de impacto, conseguimos a implementação de políticas públicas importantes e avançamos na construção de redes de solidariedade."
+      },
+      "timeline": {
+        "title": "Linha do tempo",
+        "2011": {
+          "meurio": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local"
+        },
+        "2014": {
+          "minhasampa": "O Meu Rio faz sua primeira experiência de republicação de seu modelo, exportando metodologia e tecnologia para São Paulo",
+          "rnc": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
+        },
+        "2016": {
+          "defezap": "Criamos o primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, direto do whatsapp",
+          "mapadoacolhimento": "O Mapa do Acolhimento é uma plataforma que permite a conexão entre mulheres que sofreram violência e uma rede de pessoas dispostas a ajudar"
+        },
+        "2017": {
+          "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
+          "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
+        }
+      },
+      "impact": {
+        "donations": {
+          "number": "+3 milhões",
+          "text": "de reais arrecadados em financiamento coletivo"
+        },
+        "volunteers": {
+          "number": "+5.400",
+          "text": "voluntárias e voluntários cadastrados"
+        },
+        "politicalChange": {
+          "number": "+120",
+          "text": "mudanças de política pública"
+        },
+        "mobilizations": {
+          "number": "+200",
+          "text": "campanhas lançadas"
+        },
+        "peopleDonations": {
+          "number": "+26 mil",
+          "text": "pessoas já fizeram doações"
+        },
+        "peopleMobilizations": {
+          "number": "+1 milhão",
+          "text": "de pessoas mobilizadas"
+        }
+      },
+      "financiers": {
+        "title": "Quem financia o <b>NOSSAS</b>",
+        "description": "Nossos projetos são financiados por organizações filantrópicas nacionais e internacionais, como Open Society Foundation, OAK Foundation e Fundo Malala. Também recebemos apoio de pessoas físicas no país inteiro que acreditam em nosso trabalho e fazem doações mensais para manter nossas engrenagens funcionando. Prezando pela transparência e honestidade, anualmente fazemos uma auditoria de contas independente e divulgamos os resultados em nossos canais públicos.",
+        "button": "Você pode baixar esse documento aqui",
+        "imageText": "Quem financia o NOSSAS"
+      },
+      "team": {
+        "title": "Equipe",
+        "directorship": "Valorizamos a equidade de gênero, por isso a diretoria do NOSSAS é composta apenas por mulheres:",
+        "board": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:"
+      },
+      "contact": "Entre em <b>contato</b>"
+    },
+    "incubations": {
+      "about": {
+        "title": "Incubar:<br/><b>o que é isso?</b>",
+        "description": "Você pode receber capacitação e apoio para desenvolver ou acelerar seu projeto de mobilização ou solidariedade utilizando as metodologias desenvolvidas pelo NOSSAS."
+      },
+      "offer": {
+        "title": "A gente oferece",
+        "mobilization": "Formação nas principais ferramentas de mobilização",
+        "peoples": "Formação em gestão de pessoas e voluntários",
+        "communication": "Formação em comunicação em larga escala"
+      },
+      "projects": {
+        "title": "O que já <b>incubamos</b>",
+        "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
+        "defezap": {
+          "title": "Defezap",
+          "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
+        },
+        "acolhe": {
+          "title": "Acolhe LGBT+",
+          "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
+        },
+        "representa": {
+          "title": "Me Representa",
+          "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
+        }
+      },
+      "current_projects": {
+        "title": "Projetos <b>Atuais</b>",
+        "mapa": {
+          "title": "Mapa do acolhimento",
+          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+        },
+        "manaus": {
+          "title": "Minha manaus",
+          "description": "Inserir descrição. Ex: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+        }
+      },
+      "incubate": {
+        "title": "Incube seu <b>projeto</b>",
+        "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
+        "form": {
+          "title": "Inscreva-se",
+          "submit": "Enviar"
+        }
+      }
+    },
+    "materials": {
+      "manual": {
+        "title": "A gente preparou um manual incrível <b>pra você :)</b>",
+        "description": "Há uma década a gente vem se dedicando a fazer mobilizações que já reuniram milhares de pessoas e conseguiram inúmeras vitórias. Documentamos todos esses aprendizados para te ajudar a tirar sua campanha do papel. Vem!",
+        "link": "Baixar manual"
+      },
+      "learning": {
+        "title": "O que você pode aprender com o manual?",
+        "strategy": "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
+        "target": "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
+        "create": "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência"
+      },
+      "manualform": {
+        "title": "Manual de <b>mobilização</b>",
+        "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto.",
+        "form": {
+          "title": "Baixar manual",
+          "submit": "Baixar"
+        }
+      }
+    },
+    "mobilizations": {
+      "done": {
+        "title": "O que já fizemos",
+        "description": "Ao longo dos anos, conseguimos incontáveis vitórias e avanços em políticas públicas, que beneficiaram milhares de pessoas em todo o país. Chega mais e vem com a gente fazer parte da mudança!"
+      },
+      "doing": {
+        "title": "O que estamos <b>fazendo</b>",
+        "carousel": {
+          "action": "Entrar em ação",
+          "1": {
+            "title": "Auxílio até o fim da pandemia",
+            "description": "A suspensão do Auxílio Emergencial levou milhares de brasileiros para baixo da linha da pobreza. Pressione a Câmara dos Deputados para retomar o auxílio até o final da pandemia."
+          },
+          "2": {
+            "title": "Respira Manaus",
+            "description": "A crise de saúde em Manaus continua muito grave! Os hospitais estão em colapso e a tendência é que o problema se espalhe pelo país. Pressione o Ministério da Saúde a cuidar dessa pauta."
+          }
+        }
+      },
+      "victories": {
+        "title": "Nossas <b>vitórias</b>",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "RESTINGA E MANGUE FICAM",
+            "description": "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. Nossa mobilização, que reuniu mais de 180 mil assinaturas, conseguiu  frear a boiada e garantir a preservação do litoral brasileiro e seus ecossistemas."
+          },
+          "2": {
+            "title": "4G para estudar",
+            "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
+          }
+        }
+      }
+    },
+    "technologies": {
+      "emergence": {
+        "title": "Assim surgiu <b>o BONDE</b>",
+        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma incrível de mobilização que agora está disponível para outras organizações causarem também.",
+        "more": "Saiba mais"
+      },
+      "functionalities": {
+        "title": "Funcionalidades",
+        "mobilizations": "Crie páginas para suas campanhas de mobilização",
+        "pressure": "Pressione tomadores de decisão por email, telefone ou petição",
+        "donation": "Faça um financiamento coletivo para o seu projeto",
+        "form": "Receba inscrições de voluntários para a sua causa",
+        "redes": "Crie uma rede de solidariedade e aumente o seu impacto"
+      },
+      "partners": "Quem já causou <b>com o BONDE</b>",
+      "campaingStories": {
+        "title": "Campanhas que fizeram história",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "Saldão da Amazônia",
+            "description": "Um projeto de lei que facilitaria a grilagem foi posto em pauta na Câmara dos Deputados, mas graças à campanha mais de 30 mil pessoas se mobilizaram e conseguiram barrar o PL."
+          },
+          "2": {
+            "title": "Amazônia Contra a Covid",
+            "description": "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas."
+          }
+        }
+      },
+      "bonde": {
+        "title": "Use o BONDE para <b>causar</b>",
+        "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, levantar recursos para sua organização, criar redes de solidariedade sem precisar sacar nadinha de programação.",
+        "button": "Saiba mais"
+      }
+    }
+  }
+}

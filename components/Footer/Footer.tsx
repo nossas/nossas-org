@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import {
   Text,
   Heading,
@@ -8,10 +7,12 @@ import {
   Grid,
   UnorderedList,
   ListItem,
+  Link,
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
-import Newsletter from '../Newsletter';
-import SocialMedia from '../SocialMedia';
+import Donation from "../Donation";
+import Newsletter from "../Newsletter";
+import SocialMedia from "../SocialMedia";
 
 const Footer = ({ t }) => {
   return (
@@ -29,60 +30,25 @@ const Footer = ({ t }) => {
           <img src="/static/media/logo.svg" alt="Logo do Nossas" />
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Text
-                fontSize="xl"
-                color="nossas.blue"
-                fontWeight="bold"
-                lineHeight="tall"
-              >
-                <Link href="">{t("about")}</Link>
-              </Text>
+              <Link href="">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
-              <Text
-                fontSize="xl"
-                color="nossas.blue"
-                fontWeight="bold"
-                lineHeight="tall"
-              >
-                <Link href="">{t("projects")}</Link>
-              </Text>
+              <Link href="">{t("footer.projects")}</Link>
             </ListItem>
             <ListItem>
-              <Text
-                fontSize="xl"
-                color="nossas.blue"
-                fontWeight="bold"
-                lineHeight="tall"
-              >
-                <Link href="">{t("work")}</Link>
-              </Text>
+              <Link href="">{t("footer.work")}</Link>
             </ListItem>
             <ListItem>
-              <Text
-                fontSize="xl"
-                color="nossas.blue"
-                fontWeight="bold"
-                lineHeight="tall"
-              >
-                <Link href="">{t("actvist")}</Link>
-              </Text>
+              <Link href="">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
-              <Text
-                fontSize="xl"
-                color="nossas.blue"
-                fontWeight="bold"
-                lineHeight="tall"
-              >
-                <Link href="">{t("donate")}</Link>
-              </Text>
+              <Donation variant="link">{t("footer.donate")}</Donation>
             </ListItem>
           </UnorderedList>
         </div>
         <Newsletter />
         <div>
-          <Heading as="h5" size="xl" color="nossas.blue" mb={5}>
+          <Heading as="h5" color="blue.main" mb={5} fontWeight="bold">
             {t("social.title")}
           </Heading>
           <SocialMedia />

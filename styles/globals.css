@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Local Fonts */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue/BebasNeue-Light.ttf");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue/BebasNeue-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue/BebasNeue-Bold.ttf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
