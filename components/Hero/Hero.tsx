@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Heading, StyleProps } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading } from "@chakra-ui/react";
 import Video from "../Video";
 
 interface HeroProps {
