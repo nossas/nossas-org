@@ -128,6 +128,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
       <Carousel
         infiniteLoop
+        showStatus
         items={[
           <ImageText
             src="/static/media/s3/defezap.png"
@@ -139,7 +140,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="/static/media/s3/exemplo@1.png"
+            src="/static/media/s3/meacolhelgbt.png"
             title={t("content:blocks.incubations.projects.acolhe.title")}
             description={t(
               "content:blocks.incubations.projects.acolhe.description"
@@ -148,7 +149,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="/static/media/s3/exemplo@1.png"
+            src="/static/media/s3/merepresenta.png"
             title={t("content:blocks.incubations.projects.representa.title")}
             description={t(
               "content:blocks.incubations.projects.representa.description"

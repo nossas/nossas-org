@@ -9,6 +9,7 @@ interface CarouselProps {
   items: React.ReactNode[];
   infiniteLoop?: boolean;
   isMobile?: boolean;
+  showStatus?: boolean;
 }
 
 interface ArrowProps {
@@ -49,14 +50,17 @@ const Arrow: React.FC<ArrowProps> = ({
 };
 
 const CarouselStyled: React.FC<CarouselProps> = styled(
-  ({ className, items, infiniteLoop }) => (
+  ({ className, items, infiniteLoop, showStatus }) => (
     <Carousel
       className={className}
       showThumbs={false}
       showIndicators={false}
       dynamicHeight={true}
-      showStatus={false}
+      showStatus={showStatus}
       infiniteLoop={infiniteLoop}
+      statusFormatter={(currentItem: nuber, total: number) =>
+        `${currentItem} / ${total}`
+      }
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <Arrow
           direction="previous"
@@ -85,6 +89,15 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
   .slide {
     background: none;
   }
+
+  .carousel-status {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 700;
+    color: #bcbec0;
+    text-shadow: none;
+  }
+
   .carousel-slider {
     display: flex;
     flex-direction: row;
@@ -101,6 +114,7 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
 
 CarouselStyled.defaultProps = {
   infiniteLoop: false,
+  showStatus: false,
 };
 
 export default CarouselStyled;
