@@ -19,11 +19,7 @@ export const ImageText = ({ src, text, alt }: any) => (
       direction="column"
       marginBottom="10px"
     >
-      <Image
-        transform={["scale(0.5, 0.5)", null, "scale(1, 1)"]}
-        src={src}
-        alt={alt}
-      />
+      <Image width="auto !important" height="auto" src={src} alt={alt} />
     </Flex>
     <Text size="xs" minH={["145px"]}>
       {text}
@@ -35,7 +31,7 @@ const Timeline = ({ title, children }: any) => (
   <Stack direction="column" spacing="20px">
     <Box
       borderBottomWidth="1px"
-      borderBottomColor="nossas.lightgray"
+      borderBottomColor="gray.light"
       position="relative"
       paddingBottom="5px"
       margin={["0 30%", null, "0"]}
@@ -43,7 +39,7 @@ const Timeline = ({ title, children }: any) => (
       <Heading
         as="h3"
         size="sm"
-        color="nossas.darkgray"
+        color="gray.main"
         fontWeight="700"
         textAlign="center"
       >
@@ -53,7 +49,7 @@ const Timeline = ({ title, children }: any) => (
         width="11px"
         height="11px"
         borderRadius="full"
-        backgroundColor="nossas.lightgray"
+        backgroundColor="gray.light"
         position="absolute"
         bottom="-5px"
         left={["45%", null, "49%"]}
@@ -84,7 +80,7 @@ export const TimelineController: React.FC<ControllerProps> = ({
   items,
   isMobile,
 }) => {
-  const timeline: React.ReactNode[] = Object.keys(items).map(
+  let timelineItems: React.ReactNode[] = Object.keys(items).map(
     (year, index: number) => (
       <Timeline key={`timeline-${index}`} title={year}>
         {items[year].map((item, index) => (
@@ -98,13 +94,31 @@ export const TimelineController: React.FC<ControllerProps> = ({
       </Timeline>
     )
   );
-  if (!isMobile) {
-    return (
-      <SimpleGrid columns={Object.keys(items).length}>{timeline}</SimpleGrid>
-    );
-  } else {
-    return <Carousel isMobile={isMobile} items={timeline} />;
-  }
+
+  if (isMobile) return <Carousel isMobile items={timelineItems} />;
+
+  let timeline = [];
+  // Fix lists not multiple
+  let arrayLength = Number((Object.keys(items).length / 4).toFixed());
+  // Mount new list with ideal columns
+  Array.from(new Array(arrayLength)).forEach(() => {
+    let items = timelineItems.splice(0, 4);
+    const lastItemsCount = 4 - items.length;
+    if (lastItemsCount > 0) {
+      const part = timeline[timeline.length - 1];
+      items.unshift(part.slice(4 - lastItemsCount, 4));
+    }
+
+    timeline.push(items);
+  });
+
+  return (
+    <Carousel
+      items={timeline.map((items) => (
+        <SimpleGrid columns={items.length}>{items}</SimpleGrid>
+      ))}
+    />
+  );
 };
 
 TimelineController.defaultProps = {

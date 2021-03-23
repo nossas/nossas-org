@@ -47,6 +47,28 @@ const Timeline = ({ isMobile, t }: any) => (
             text: t("content:blocks.about.timeline.2017.beta"),
           },
         ],
+        2018: [
+          {
+            src: "/static/media/timeline/bonde.png",
+            text: t("content:blocks.about.timeline.2018.bonde"),
+          },
+        ],
+        2019: [
+          {
+            src: "/static/media/timeline/maraton.png",
+            text: t("content:blocks.about.timeline.2019.maraton"),
+          },
+          {
+            src: "/static/media/timeline/programamobilizadores.png",
+            text: t("content:blocks.about.timeline.2019.programamobilizadores"),
+          },
+        ],
+        2020: [
+          {
+            src: "/static/media/timeline/periferiaquefaz.png",
+            text: t("content:blocks.about.timeline.2020.periferiaquefaz"),
+          },
+        ],
       }}
     />
   </Section>

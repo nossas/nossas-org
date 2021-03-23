@@ -58,7 +58,7 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
       dynamicHeight={true}
       showStatus={showStatus}
       infiniteLoop={infiniteLoop}
-      statusFormatter={(currentItem: nuber, total: number) =>
+      statusFormatter={(currentItem: number, total: number) =>
         `${currentItem} / ${total}`
       }
       renderArrowPrev={(onClickHandler, hasPrev, label) => (

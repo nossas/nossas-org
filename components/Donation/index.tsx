@@ -251,7 +251,7 @@ const CREATE_DONATION_GQL = gql`
 type ActivistInput = {
   name: string;
   email: string;
-  phone: string;
+  phone?: string;
 };
 
 type DonationInput = {
