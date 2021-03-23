@@ -58,7 +58,7 @@ const Newsletter: React.FC<Props> = ({ t, inverted }) => {
                   type="email"
                   placeholder={t("newsletter.email.placeholder")}
                 />
-                <Button variant="pink" type="submit">
+                <Button variant="pink" type="submit" size="sm">
                   {t("newsletter.button")}
                 </Button>
               </Stack>

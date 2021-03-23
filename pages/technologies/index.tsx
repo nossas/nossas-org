@@ -6,8 +6,15 @@ import { WithUserAgentProps, withUserAgent } from "next-useragent";
 // import styled from "@emotion/styled";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import Media from "../../components/Media";
-import { Button, Heading, Text, Link, Stack, Image } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Text,
+  Link,
+  Stack,
+  Image,
+  SimpleGrid,
+} from "@chakra-ui/react";
 // import { SliderPanel } from "../../components/Slider";
 import { ImageTextListBox } from "../../content";
 import { SliderPanel } from "../../components/Slider";
@@ -28,11 +35,11 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     />
     <Section
       columns={[1, null, null, 2]}
-      templateColumns={["auto", null, null, "270px 1fr"]}
+      templateColumns={["auto", null, null, "260px 1fr"]}
       columnGap="225px"
       rowGap="25px"
     >
-      <Heading as="h2" color="blue.main" size="lg">
+      <Heading as="h2" color="blue.main">
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.technologies.emergence.title", {
@@ -41,7 +48,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <Stack>
+      <Stack spacing={6}>
         <Text>{t("content:blocks.technologies.emergence.description")}</Text>
         <Link
           href="#"
@@ -56,40 +63,43 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       title={t("content:blocks.technologies.functionalities.title")}
       items={[
         {
-          src: "/static/media/assets/icon-eyelash.png",
-          alt: "Icone Eyelash",
+          src: "/static/media/assets/icon-computer.png",
+          alt: "Icone Mobiização",
           description: t(
             "content:blocks.technologies.functionalities.mobilizations"
           ),
         },
         {
-          src: "/static/media/assets/icon-launch.png",
-          alt: "Icone Launch",
+          src: "/static/media/assets/icon-mail.png",
+          alt: "Icone Pressão",
           description: t(
             "content:blocks.technologies.functionalities.pressure"
           ),
         },
         {
-          src: "/static/media/assets/icon-question.png",
-          alt: "Icone Question",
+          src: "/static/media/assets/icon-money.png",
+          alt: "Icone Doação",
           description: t(
             "content:blocks.technologies.functionalities.donation"
           ),
         },
         {
-          src: "/static/media/assets/icon-launch.png",
-          alt: "Icone Launch",
+          src: "/static/media/assets/icon-hand.png",
+          alt: "Icone Formulário",
           description: t("content:blocks.technologies.functionalities.form"),
         },
         {
-          src: "/static/media/assets/icon-question.png",
-          alt: "Icone Question",
+          src: "/static/media/assets/icon-megaphone.png",
+          alt: "Icone Rede Solidariedade",
           description: t("content:blocks.technologies.functionalities.redes"),
         },
       ]}
     />
-    <Media
-      title={
+    <Section
+      direction={["column", null, null, "row"]}
+      spacing={["30px", null, null, "140px"]}
+    >
+      <Heading as="h2" color="blue.main" maxW={["100%", null, null, "350px"]}>
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.technologies.partners", {
@@ -97,18 +107,18 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             }),
           }}
         />
-      }
-      logos={[
-        "/static/media/s3/dias.png",
-        "/static/media/s3/reuters.png",
-        "/static/media/s3/nyt.png",
-        "/static/media/s3/piaui.png",
-        "/static/media/s3/elpais.png",
-        "/static/media/s3/forbes.png",
-        "/static/media/s3/ted.png",
-        "/static/media/s3/zeitgeist.png",
-      ]}
-    />
+      </Heading>
+      <SimpleGrid
+        columns={[1, null, null, 3]}
+        rowGap="30px"
+        alignItems="center"
+        justifyItems="center"
+      >
+        <Image src="/static/media/s3/mariellefranco.png" />
+        <Image src="/static/media/s3/allout.png" />
+        <Image src="/static/media/s3/criola.png" />
+      </SimpleGrid>
+    </Section>
     <Section direction="column" spacing="30px">
       <Heading as="h2" color="pink.main">
         <div
@@ -120,10 +130,11 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </Heading>
       <SliderPanel
+        infiniteLoop
         isMobile={ua.isMobile}
         items={[
           {
-            src: "/static/media/s3/doing-carousel/x1.png",
+            src: "/static/media/s3/saldaoamazonia.png",
             alt: t(
               "content:blocks.technologies.campaingStories.carousel.1.title"
             ),
@@ -139,7 +150,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             href: "#",
           },
           {
-            src: "/static/media/s3/doing-carousel/x2.png",
+            src: "/static/media/s3/amazoniacontracovid.png",
             alt: t(
               "content:blocks.technologies.campaingStories.carousel.2.title"
             ),

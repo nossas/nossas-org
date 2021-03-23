@@ -15,6 +15,7 @@ const ImageTitle = ({
   title,
   alt,
   w = ["40%", 300],
+  titleProps,
   ...props
 }: any) => (
   <Link href={href} target="_self">
@@ -34,6 +35,7 @@ const ImageTitle = ({
         color="blue.main"
         textTransform="uppercase"
         fontWeight="bold"
+        {...(titleProps || {})}
       >
         {title}
       </Heading>
@@ -104,6 +106,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           src="/static/media/s3/apoioprojetohome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.support")}
+          titleProps={{ maxW: "180px" }}
         />
         <ImageTitle
           href="/technologies"

@@ -40,7 +40,7 @@ const Donation: React.FC<DonationProps> = ({
 
   return (
     <Form>
-      <Button size="md" {...props} onClick={onOpen} ref={btnRef}>
+      <Button size="sm" {...props} onClick={onOpen} ref={btnRef}>
         {btnChildren}
       </Button>
       <Drawer
