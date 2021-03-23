@@ -30,16 +30,16 @@ const Footer = ({ t }) => {
           <img src="/static/media/logo.svg" alt="Logo do Nossas" />
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="">{t("footer.about")}</Link>
+              <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
               <Link href="">{t("footer.projects")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.work")}</Link>
+              <Link href="/#we-are-doing">{t("footer.work")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.actvist")}</Link>
+              <Link href="/mobilizations">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
               <Donation variant="link">{t("footer.donate")}</Donation>
