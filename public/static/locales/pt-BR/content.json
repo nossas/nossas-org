@@ -157,11 +157,8 @@
         "title": "Projetos <b>Atuais</b>",
         "mapa": {
           "title": "Mapa do acolhimento",
-          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
-        },
-        "manaus": {
-          "title": "Minha manaus",
-          "description": "Inserir descrição. Ex: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
+          "action": "Saiba mais"
         }
       },
       "incubate": {

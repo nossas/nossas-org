@@ -33,7 +33,7 @@ const Footer = ({ t }) => {
               <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.projects")}</Link>
+              <Link href="/incubations#projects">{t("footer.projects")}</Link>
             </ListItem>
             <ListItem>
               <Link href="/#we-are-doing">{t("footer.work")}</Link>

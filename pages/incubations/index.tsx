@@ -40,7 +40,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
     >
       <Image src={src} alt={alt} {...imageSizes} />
       <Stack spacing="10px" textAlign="left">
-        <Heading as="h3" color="blue.main" fontWeight="bold">
+        <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
           {title}
         </Heading>
         <Text>{description}</Text>
@@ -108,7 +108,12 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         },
       ]}
     />
-    <Section direction="column" spacing="110px" bgColor="gray.light">
+    <Section
+      id="projects"
+      direction="column"
+      spacing="110px"
+      bgColor="gray.light"
+    >
       <Stack
         direction={["column", null, null, "row"]}
         justifyContent="space-between"
@@ -136,7 +141,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description={t(
               "content:blocks.incubations.projects.defezap.description"
             )}
-            href="#"
+            href="http://www.saibamais.defezap.org.br/"
             linkText="Saiba mais +"
           />,
           <ImageText
@@ -145,7 +150,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description={t(
               "content:blocks.incubations.projects.acolhe.description"
             )}
-            href="#"
+            href="https://www.acolhelgbt.org/"
             linkText="Saiba mais +"
           />,
           <ImageText
@@ -154,7 +159,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description={t(
               "content:blocks.incubations.projects.representa.description"
             )}
-            href="#"
+            href="https://merepresenta.org.br/"
             linkText="Saiba mais +"
           />,
         ]}
@@ -170,31 +175,20 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <SliderPanel
+      <Carousel
         isMobile={ua.isMobile}
         items={[
-          {
-            src: "/static/media/s3/mapadoacolhimento.png",
-            alt: t("content:blocks.incubations.current_projects.mapa.title"),
-            title: t("content:blocks.incubations.current_projects.mapa.title"),
-            description: t(
+          <ImageText
+            src="/static/media/s3/mapadoacolhimento.png"
+            title={t("content:blocks.incubations.current_projects.mapa.title")}
+            description={t(
               "content:blocks.incubations.current_projects.mapa.description"
-            ),
-            href: "#",
-            link: "Saiba mais",
-          },
-          {
-            src: "/static/media/s3/minhamanaus.png",
-            alt: t("content:blocks.incubations.current_projects.manaus.title"),
-            title: t(
-              "content:blocks.incubations.current_projects.manaus.title"
-            ),
-            description: t(
-              "content:blocks.incubations.current_projects.manaus.description"
-            ),
-            href: "#",
-            link: "Saiba mais",
-          },
+            )}
+            href="https://www.mapadoacolhimento.org/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.mapa.action"
+            )}
+          />,
         ]}
       />
     </Section>
