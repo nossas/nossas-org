@@ -64,9 +64,10 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const tabProps: any = {
     fontSize: "18px",
     fontFamily: "Bebas Neue",
-    color: "nossas.gray",
-    _selected: { color: "nossas.blue" },
+    color: "gray.main",
+    _selected: { color: "blue.main" },
     textTransform: "uppercase",
+    fontWeight: "bold",
     p: "0 35px 0 0",
   };
   const tagPanelProps: any = {

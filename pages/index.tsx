@@ -126,6 +126,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           />
         </Heading>
         <SliderPanel
+          infiniteLoop
           isMobile={ua.isMobile}
           items={[
             {
@@ -134,7 +135,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               title: t("sliders:home.rendabasica.title"),
               description: t("sliders:home.rendabasica.description"),
               link: t("sliders:home.rendabasica.action"),
-              href: "#",
+              href: "https://www.auxilioateofimdapandemia.org/",
             },
             {
               alt: t("sliders:home.programademobilizadores.title"),
@@ -144,7 +145,15 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
                 "sliders:home.programademobilizadores.description"
               ),
               link: t("sliders:home.programademobilizadores.action"),
-              href: "#",
+              href: "https://www.mobilizadores.nossas.org/",
+            },
+            {
+              alt: t("sliders:home.temgentecomfome.title"),
+              src: "/static/media/s3/temgentecomfome.png",
+              title: t("sliders:home.temgentecomfome.title"),
+              description: t("sliders:home.temgentecomfome.description"),
+              link: t("sliders:home.temgentecomfome.action"),
+              href: "https://www.temgentecomfome.com.br/",
             },
           ]}
         />

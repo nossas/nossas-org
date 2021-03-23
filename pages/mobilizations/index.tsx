@@ -56,7 +56,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description: t(
               "content:blocks.mobilizations.doing.carousel.1.description"
             ),
-            href: "#",
+            href: "https://www.auxilioateofimdapandemia.org/",
             link: t("content:blocks.mobilizations.doing.carousel.action"),
           },
           {
@@ -66,7 +66,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description: t(
               "content:blocks.mobilizations.doing.carousel.2.description"
             ),
-            href: "#",
+            href: "https://www.respiramanaus.nossas.org/",
             link: t("content:blocks.mobilizations.doing.carousel.action"),
           },
         ]}
@@ -93,7 +93,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description: t(
               "content:blocks.mobilizations.victories.carousel.1.description"
             ),
-            href: "#",
+            href: "https://www.restingaemangueficam.org.br/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
           {
@@ -103,7 +103,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description: t(
               "content:blocks.mobilizations.victories.carousel.2.description"
             ),
-            href: "#",
+            href: "https://www.4gparaestudar.org.br/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
         ]}
