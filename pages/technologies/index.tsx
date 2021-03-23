@@ -29,7 +29,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Section
       columns={[1, null, null, 2]}
       templateColumns={["auto", null, null, "270px 1fr"]}
-      columnGap="245px"
+      columnGap="225px"
       rowGap="25px"
     >
       <Heading as="h2" color="blue.main" size="lg">
@@ -164,7 +164,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         transform="scale(0.8)"
       />
       <Stack spacing="30px">
-        <Heading as="h2" color="green" maxW="230px">
+        <Heading as="h2" color="green" maxW="300px" size="lg">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.technologies.bonde.title", {

@@ -18,13 +18,6 @@ function Icon() {
   );
 }
 
-const styles = {
-  display: "flex",
-  position: "absolute",
-  right: 0,
-  top: "60px",
-};
-
 const Lock = ({ t }: any) => (
   <Stack
     position="absolute"
@@ -35,7 +28,7 @@ const Lock = ({ t }: any) => (
     alignItems="center"
   >
     <Icon />
-    <Text color="nossas.green" fontSize="12px" w="40px">
+    <Text color="green" fontSize="12px" w="40px">
       {t("donate.padlock")}
     </Text>
   </Stack>

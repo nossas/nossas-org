@@ -131,7 +131,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         showStatus
         items={[
           <ImageText
-            src="/static/media/s3/defezap.png"
+            src="/static/media/s3/defezap.jpg"
             title={t("content:blocks.incubations.projects.defezap.title")}
             description={t(
               "content:blocks.incubations.projects.defezap.description"

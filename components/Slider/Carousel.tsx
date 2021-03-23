@@ -64,7 +64,7 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <Arrow
           direction="previous"
-          disabled={!hasPrev}
+          disabled={!infiniteLoop && !hasPrev}
           label={label}
           onClick={onClickHandler}
         />
@@ -72,14 +72,14 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
       renderArrowNext={(onClickHandler, hasNext, label) => (
         <Arrow
           direction="next"
-          disabled={!hasNext}
+          disabled={!infiniteLoop && !hasNext}
           label={label}
           onClick={onClickHandler}
         />
       )}
     >
       {items.map((content: React.ReactNode, index: number) => (
-        <div key={index} style={{ padding: "10px 0" }}>
+        <div key={index} style={{ padding: "10px 5px" }}>
           {content}
         </div>
       ))}

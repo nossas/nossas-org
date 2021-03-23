@@ -10,6 +10,10 @@ interface SocialMediaProps {
 }
 
 const MediaLink = styled(Link)`
+  :focus {
+    box-shadow: none;
+  }
+
   svg {
     path {
       fill: ${(props) => props.color};
@@ -57,7 +61,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
 };
 
 SocialMedia.defaultProps = {
-  color: "nossas.pink",
+  color: "pink.main",
 };
 
 export default withTranslation("common")(SocialMedia);

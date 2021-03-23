@@ -25,6 +25,7 @@ const Newsletter: React.FC<Props> = ({ t, inverted }) => {
         as="h4"
         color={inverted ? "white" : "blue.main"}
         fontWeight="bold"
+        size="md"
       >
         {t("newsletter.title")}
       </Heading>

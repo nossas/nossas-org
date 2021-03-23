@@ -18,10 +18,10 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
   <Box flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
     <Image src={item.src} alt={item.alt} width="100%" height={[229, 380]} />
     <Stack p={8} spacing={4} textAlign="left">
-      <Heading as="h3" fontWeight="bold">
+      <Heading as="h3" fontWeight="bold" size="md">
         {item.title}
       </Heading>
-      <Text>{item.description}</Text>
+      <Text size="sm">{item.description}</Text>
       <Link
         href={item.href}
         variant="pink"

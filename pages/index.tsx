@@ -9,27 +9,36 @@ import Donation from "../components/Donation";
 import Media from "../content/Media";
 import { withTranslation, I18nInitialProps } from "../i18n";
 
-const ImageTitle = ({ src, title, alt, w = ["40%", 300], ...props }: any) => (
-  <Stack
-    direction="column"
-    spacing={6}
-    w={w}
-    h={[250, 345]}
-    alignItems="center"
-    justifyContent="flex-end"
-    textAlign="center"
-  >
-    <Image src={src} alt={alt} {...props} />
-    <Heading
-      as="h4"
-      size="sm"
-      color="blue.main"
-      textTransform="uppercase"
-      fontWeight="bold"
+const ImageTitle = ({
+  href,
+  src,
+  title,
+  alt,
+  w = ["40%", 300],
+  ...props
+}: any) => (
+  <Link href={href} target="_self">
+    <Stack
+      direction="column"
+      spacing={6}
+      w={w}
+      h={[250, 345]}
+      alignItems="center"
+      justifyContent="flex-end"
+      textAlign="center"
     >
-      {title}
-    </Heading>
-  </Stack>
+      <Image src={src} alt={alt} {...props} />
+      <Heading
+        as="h4"
+        size="sm"
+        color="blue.main"
+        textTransform="uppercase"
+        fontWeight="bold"
+      >
+        {title}
+      </Heading>
+    </Stack>
+  </Link>
 );
 
 interface Props extends WithUserAgentProps {
@@ -48,7 +57,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         justifyContent={["flex-start", "center"]}
         alignItems={["flex-start", "center"]}
         direction={["column", "row"]}
-        py={["30px", "130px"]}
         spacing={["30px", "60px"]}
       >
         <Image
@@ -70,9 +78,9 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         flexWrap="wrap"
         spacing={[4, 16]}
         px={["10px", "90px"]}
-        py={0}
       >
         <ImageTitle
+          href="/mobilizations"
           src="/static/media/s3/mobilizacaohome.png"
           alt={t("content:images.home.etudonossas")}
           transform="rotate(10deg)"
@@ -80,27 +88,31 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           title={t("content:blocks.home.grid.mobilization")}
         />
         <ImageTitle
+          href="/materials"
           src="/static/media/s3/materiaiseducativoshome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.books")}
         />
         <ImageTitle
+          href="#"
           src="/static/media/s3/treinamentohome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.learning")}
         />
         <ImageTitle
+          href="/incubations"
           src="/static/media/s3/apoioprojetohome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.support")}
         />
         <ImageTitle
+          href="/technologies"
           src="/static/media/s3/tecnologiashome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.tech")}
         />
       </Section>
-      <Section direction="column" spacing={8}>
+      <Section id="we-are-doing" direction="column" spacing={8}>
         <Heading as="h2" size="lg" color="pink.main">
           <div
             dangerouslySetInnerHTML={{
@@ -114,19 +126,21 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           isMobile={ua.isMobile}
           items={[
             {
-              alt: "teste",
+              alt: t("sliders:home.rendabasica.title"),
               src: "/static/media/s3/rendabasica.png",
-              title: t("sliders:home.actionnow.1.title"),
-              description: t("sliders:home.actionnow.1.description"),
-              link: t("content:links.actionnow"),
+              title: t("sliders:home.rendabasica.title"),
+              description: t("sliders:home.rendabasica.description"),
+              link: t("sliders:home.rendabasica.action"),
               href: "#",
             },
             {
-              alt: "teste",
+              alt: t("sliders:home.programademobilizadores.title"),
               src: "/static/media/s3/programademobilizadores.png",
-              title: t("sliders:home.actionnow.2.title"),
-              description: t("sliders:home.actionnow.2.description"),
-              link: t("content:links.actionnow"),
+              title: t("sliders:home.programademobilizadores.title"),
+              description: t(
+                "sliders:home.programademobilizadores.description"
+              ),
+              link: t("sliders:home.programademobilizadores.action"),
               href: "#",
             },
           ]}

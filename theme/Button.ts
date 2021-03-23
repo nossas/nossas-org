@@ -15,8 +15,8 @@ export default {
   },
   sizes: {
     md: {
-      fontSize: "15px",
-      padding: "12px 16px",
+      fontSize: "18px",
+      padding: "18px 24px",
     },
     lg: {
       fontSize: "18px",

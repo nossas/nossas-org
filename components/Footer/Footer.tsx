@@ -48,7 +48,14 @@ const Footer = ({ t }) => {
         </div>
         <Newsletter />
         <div>
-          <Heading as="h5" color="blue.main" mb={5} fontWeight="bold">
+          <Heading
+            as="h5"
+            color="blue.main"
+            mb={5}
+            fontWeight="bold"
+            size="md"
+            maxW="190px"
+          >
             {t("social.title")}
           </Heading>
           <SocialMedia />

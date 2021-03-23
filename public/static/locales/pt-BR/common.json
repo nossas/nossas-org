@@ -1,7 +1,7 @@
 {
   "donate": {
     "button": "Doar",
-    "title": "<b>APOIE</b> O NOSSAS",
+    "title": "APOIE O <b>NOSSAS</b>",
     "description": "Nossas atividades são sustentadas exclusivamente por doações de pessoas e fundações que acreditam no que fazemos. Faça sua doação:",
     "padlock": "doação segura",
     "tabs": {
@@ -82,10 +82,10 @@
     "button": "Salvar"
   },
   "footer": {
-    "about": "quem somos",
-    "projects": "nossos projetos",
-    "work": "acontecendo agora",
-    "actvist": "seja um ativista",
-    "donate": "faça uma doação"
+    "about": "Quem somos",
+    "projects": "Nossos projetos",
+    "work": "Acontecendo agora",
+    "actvist": "Seja um ativista",
+    "donate": "Faça uma doação"
   }
 }

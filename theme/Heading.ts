@@ -1,6 +1,6 @@
 export default {
   baseStyle: {
-    fontWeight: 400,
+    fontWeight: 200,
   },
   sizes: {
     sm: {
@@ -25,6 +25,6 @@ export default {
     },
   },
   defaultProps: {
-    size: "md",
+    size: "lg",
   },
 };

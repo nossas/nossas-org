@@ -55,7 +55,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavSide = ({ children }) => (
-  <Stack spacing={[6, 8]} direction="row" alignItems="center">
+  <Stack spacing={[6, 8]} direction="row" alignItems="flex-end">
     {children}
   </Stack>
 );

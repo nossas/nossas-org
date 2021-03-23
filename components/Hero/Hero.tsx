@@ -29,6 +29,13 @@ const Hero: React.FC<HeroProps> = ({
   videoUrl,
   maxWidth,
 }) => {
+  const boxProps = {
+    background:
+      "linear-gradient(0deg, rgba(45, 0, 161, 0.22), rgba(45, 0, 161, 0.1)),linear-gradient(180deg, #3a3737 0%, rgb(58 58 58 / 26%) 100%),linear-gradient(180deg, rgba(14, 14, 14, 0.2) 0%, rgba(0, 0, 0, 0.77) 100%)",
+    mixBlendMode: "multiply",
+    opacity: 0.7,
+  };
+
   return (
     <section>
       <Flex
@@ -38,6 +45,9 @@ const Hero: React.FC<HeroProps> = ({
         bgColor={bgColor}
         position="relative"
       >
+        {bgImage || videoUrl ? (
+          <Box {...boxProps} position="absolute" width="100%" height="100%" />
+        ) : null}
         {bgImage && !videoUrl && (
           <Image
             src={bgImage}

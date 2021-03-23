@@ -47,9 +47,10 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Heading>
       <SliderPanel
         isMobile={ua.isMobile}
+        infiniteLoop
         items={[
           {
-            src: "/static/media/s3/doing-carousel/x1.png",
+            src: "/static/media/s3/auxilioemergencial.png",
             alt: t("content:blocks.mobilizations.doing.carousel.1.title"),
             title: t("content:blocks.mobilizations.doing.carousel.1.title"),
             description: t(
@@ -59,7 +60,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t("content:blocks.mobilizations.doing.carousel.action"),
           },
           {
-            src: "/static/media/s3/doing-carousel/x2.png",
+            src: "/static/media/s3/respiramanaus.png",
             alt: t("content:blocks.mobilizations.doing.carousel.2.title"),
             title: t("content:blocks.mobilizations.doing.carousel.2.title"),
             description: t(
@@ -82,10 +83,11 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </Heading>
       <SliderPanel
+        infiniteLoop
         isMobile={ua.isMobile}
         items={[
           {
-            src: "/static/media/s3/victories-carousel/x1.png",
+            src: "/static/media/s3/restingaemangue.png",
             alt: t("content:blocks.mobilizations.victories.carousel.1.title"),
             title: t("content:blocks.mobilizations.victories.carousel.1.title"),
             description: t(
@@ -95,7 +97,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
           {
-            src: "/static/media/s3/victories-carousel/x2.png",
+            src: "/static/media/s3/4gpraestudar.png",
             alt: t("content:blocks.mobilizations.victories.carousel.2.title"),
             title: t("content:blocks.mobilizations.victories.carousel.2.title"),
             description: t(

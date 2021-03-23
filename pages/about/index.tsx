@@ -121,9 +121,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             }}
           />
         </Heading>
-        <Text textAlign={["center", "left"]}>
-          {t("content:blocks.about.financiers.description")}
-        </Text>
+        <Text>{t("content:blocks.about.financiers.description")}</Text>
         <Button padding="14px 37.5px">
           {t("content:blocks.about.financiers.button")}
         </Button>

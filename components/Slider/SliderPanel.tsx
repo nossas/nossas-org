@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "@emotion/styled";
 import Carousel from "./Carousel";
 import { Group, Panel } from "./Panel";
 
@@ -15,9 +14,9 @@ type Item = {
 export interface Props {
   items: Item[];
   isMobile: boolean;
-  minH?: string;
+  infiniteLoop?: boolean;
 }
-const SliderPanel: React.FC<Props> = ({ items, isMobile, minH }) => {
+const SliderPanel: React.FC<Props> = ({ items, isMobile, infiniteLoop }) => {
   const Content = isMobile ? Panel : Group;
   let newItems: any[] = isMobile
     ? items
@@ -28,7 +27,7 @@ const SliderPanel: React.FC<Props> = ({ items, isMobile, minH }) => {
 
   return (
     <Carousel
-      infiniteLoop
+      infiniteLoop={infiniteLoop}
       isMobile={isMobile}
       items={newItems.map((values: any) => (
         <Content items={values} />

@@ -33,19 +33,19 @@
   },
   "blocks": {
     "home": {
+      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "actionnow": "O que estamos <b>fazendo</b>",
       "doacao": {
         "title": "Faça uma <b>doação</b>",
         "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho e no impaco que queremos ver no mundo. Não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas privadas. Contribua você também para nossas causas.",
-        "button": "Faça uma doação"
+        "button": "Quero doar"
       },
-      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "grid": {
-        "mobilization": "Participe de uma mobilização",
+        "mobilization": "Junte-se a uma de nossas campanhas",
         "books": "Acesse nossos materiais educativos",
-        "learning": "Seja treinado em metodologias de mobilização",
-        "support": "Receba apoio para seu projeto",
-        "tech": "Use as melhores tecnologias para ativismo"
+        "learning": "Seja treinado em metodologias de ativismo",
+        "support": "Incube seu projeto conosco",
+        "tech": "Use as melhores tecnologias de ativismo"
       },
       "media": {
         "title": "NA <b>MÍDIA</b>"

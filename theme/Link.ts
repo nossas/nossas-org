@@ -1,6 +1,9 @@
 export default {
   baseStyle: {
     fontWeight: "bold",
+    _focus: {
+      boxShadow: "none",
+    },
   },
   sizes: {
     md: {
@@ -28,11 +31,13 @@ export default {
     mobile: {
       fontFamily: "Bebas Neue",
       fontSize: "2xl",
-      fontWeight: "normal",
+      fontWeight: "bold",
       textTransform: "uppercase",
       color: "white",
+      lineHeight: "50px",
       _hover: {
         color: "pink.main",
+        textDecoration: "none",
       },
     },
   },
