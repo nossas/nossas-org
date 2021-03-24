@@ -28,6 +28,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
         flexDirection="row"
         display="flex"
         alignItems="center"
+        target="_blank"
       >
         <span>{`${item.link}`}</span>
         <Image

@@ -7,7 +7,7 @@ import styled from "@emotion/styled";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Carousel, SliderPanel } from "../../components/Slider";
+import { Carousel } from "../../components/Slider";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 
 interface ImageTextProps {
@@ -29,7 +29,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
 }) => {
   const imageSizes = {
     maxW: ["510px", null, null, null, "610px"],
-    height: "auto",
+    height: "357px",
   };
 
   return (
@@ -44,7 +44,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
           {title}
         </Heading>
         <Text>{description}</Text>
-        <Link href={href} target="_self" variant="pink">
+        <Link href={href} target="_blank" variant="pink">
           {linkText}
         </Link>
       </Stack>
