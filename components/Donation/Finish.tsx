@@ -15,7 +15,7 @@ const Finish: React.FC<FinishProps> = ({ t, name }) => (
       alt={t("donate.finish.imageAlt")}
     />
     <Stack alignItems="center" spacing={4}>
-      <Heading as="h3" size="3xl" color="nossas.pink" fontWeight="normal">
+      <Heading as="h3" size="3xl" color="pink.main">
         <div
           dangerouslySetInnerHTML={{
             __html: t("donate.finish.title", {
