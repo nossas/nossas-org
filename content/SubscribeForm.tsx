@@ -5,10 +5,6 @@ import InputField from "../components/Form/InputField";
 import SelectField from "../components/Form/SelectField";
 import SubmitFormEntry from "../components/Form/SubmitFormEntry";
 
-const onSubmit = (formData: any) => {
-  console.log("formData", { formData });
-};
-
 interface Values {
   name: string;
   email: string;
@@ -18,14 +14,23 @@ interface Values {
 }
 
 interface SubscribeFormProps {
+  t: any;
   title: string;
   submitText: string;
+  textSuccess: string;
+  widgetId: number;
 }
 
-const SubscribeForm: React.FC<SubscribeFormProps> = ({ title, submitText }) => {
+const SubscribeForm: React.FC<SubscribeFormProps> = ({
+  t,
+  title,
+  submitText,
+  textSuccess,
+  widgetId,
+}) => {
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
-      <SubmitFormEntry widgetId={66730}>
+      <SubmitFormEntry t={t} widgetId={widgetId} textSuccess={textSuccess}>
         {({ submit }) => (
           <Formik
             initialValues={{
@@ -63,6 +68,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({ title, submitText }) => {
                     />
                     <InputField
                       inline
+                      type="tel"
                       name="whatsapp"
                       label="Whatsapp"
                       placeholder="Seu whatsapp"

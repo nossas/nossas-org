@@ -50,6 +50,12 @@
       "message": "Mensagem de agradecimento etc etc."
     }
   },
+  "form": {
+    "finish": {
+      "title": "Pronto, <b>{{name}}</b>!",
+      "thanks": "Formulário salvo! Mensagem de agradecimento etc etc."
+    }
+  },
   "social": {
     "title": "SIGA NAS REDES SOCIAIS",
     "icons": {

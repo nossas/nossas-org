@@ -106,6 +106,16 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             href: "https://www.4gparaestudar.org.br/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
+          {
+            src: "/static/media/s3/auxiliosaude.png",
+            alt: t("content:blocks.mobilizations.victories.carousel.3.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.3.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.3.description"
+            ),
+            href: "#",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
         ]}
       />
     </Section>

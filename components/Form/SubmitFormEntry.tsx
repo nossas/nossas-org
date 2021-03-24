@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { gql, useMutation } from "@apollo/client";
+import { Text } from "@chakra-ui/react";
+import SuccessPanel from "./SuccessPanel";
 
 const CREATE_FORM_ENTRY_GQL = gql`
   mutation(
@@ -54,6 +56,8 @@ interface Result {
 interface Props {
   widgetId: number;
   children: any;
+  t: any;
+  textSuccess: string;
 }
 
 const getKindByName = (
@@ -73,46 +77,70 @@ const getKindByName = (
   }
 };
 
-const SubmitFormEntry: React.FC<Props> = ({ children, widgetId }) => {
+const SubmitFormEntry: React.FC<Props> = ({
+  children,
+  widgetId,
+  t,
+  textSuccess,
+}) => {
+  const [data, setData] = useState(undefined);
   const [createFormEntry] = useMutation<Result, Variables>(
     CREATE_FORM_ENTRY_GQL
   );
 
   // render children with submit(values: any)
-  return children({
-    submit: async (formData: any) => {
-      const fields: FormEntry[] = Object.keys(formData).map(
-        (keyName: string) => {
-          return {
-            kind: getKindByName(keyName),
-            label: "",
-            required: false,
-            value: formData[keyName],
-            uid: `${keyName}-${widgetId}`,
-          };
-        }
-      );
-
-      const { data, errors } = await createFormEntry({
-        variables: {
-          widget_id: widgetId,
-          activist: {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.whatsapp || formData.phone,
-          },
-          input: { fields },
-        },
-      });
-
-      if (errors) {
-        console.log("SubmitFormEntry failed!", { errors });
-        throw new Error("SubmitFormEntry failed!");
+  return data ? (
+    <SuccessPanel
+      color="green"
+      title={
+        <div
+          dangerouslySetInnerHTML={{
+            __html: t("form.finish.title", {
+              interpolation: { escapeValue: false },
+              name: data.formData.name.split(" ")[0],
+            }),
+          }}
+        />
       }
+    >
+      <Text>{textSuccess}</Text>
+    </SuccessPanel>
+  ) : (
+    children({
+      submit: async (formData: any) => {
+        const fields: FormEntry[] = Object.keys(formData).map(
+          (keyName: string) => {
+            return {
+              kind: getKindByName(keyName),
+              label: keyName,
+              required: false,
+              value: formData[keyName],
+              uid: `${keyName}-${widgetId}`,
+            };
+          }
+        );
 
-      return data;
-    },
-  });
+        const { data, errors } = await createFormEntry({
+          variables: {
+            widget_id: widgetId,
+            activist: {
+              name: formData.name,
+              email: formData.email,
+              phone: formData.whatsapp || formData.phone,
+            },
+            input: { fields },
+          },
+        });
+
+        if (errors) {
+          console.log("SubmitFormEntry failed!", { errors });
+          throw new Error("SubmitFormEntry failed!");
+        }
+
+        setData({ data, formData });
+      },
+    })
+  );
 };
 
 export default SubmitFormEntry;
