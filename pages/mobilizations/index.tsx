@@ -69,6 +69,14 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             href: "https://www.respiramanaus.nossas.org/",
             link: t("content:blocks.mobilizations.doing.carousel.action"),
           },
+          {
+            alt: t("sliders:home.temgentecomfome.title"),
+            src: "/static/media/s3/temgentecomfome.png",
+            title: t("sliders:home.temgentecomfome.title"),
+            description: t("sliders:home.temgentecomfome.description"),
+            link: t("sliders:home.temgentecomfome.action"),
+            href: "https://www.temgentecomfome.com.br/",
+          },
         ]}
       />
     </Section>

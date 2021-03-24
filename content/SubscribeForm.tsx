@@ -63,6 +63,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                     color="blue.main"
                     fontWeight="bold"
                     textAlign="center"
+                    size="md"
                   >
                     {title}
                   </Heading>
