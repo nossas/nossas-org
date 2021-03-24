@@ -27,18 +27,13 @@ export const ImageText: React.FC<ImageTextProps> = ({
   href,
   linkText,
 }) => {
-  const imageSizes = {
-    maxW: ["510px", null, null, null, "610px"],
-    height: "auto",
-  };
-
   return (
     <Stack
       direction={["column", null, null, "row"]}
       spacing="70px"
       alignItems="center"
     >
-      <Image src={src} alt={alt} {...imageSizes} />
+      <Image src={src} alt={alt} boxSize="510" />
       <Stack spacing="10px" textAlign="left">
         <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
           {title}
@@ -136,7 +131,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         showStatus
         items={[
           <ImageText
-            src="/static/media/s3/defezap.jpg"
+            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/defezap.jpg"
             title={t("content:blocks.incubations.projects.defezap.title")}
             description={t(
               "content:blocks.incubations.projects.defezap.description"
@@ -145,7 +140,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="/static/media/s3/meacolhelgbt.png"
+            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/meacolhelgbt.png"
             title={t("content:blocks.incubations.projects.acolhe.title")}
             description={t(
               "content:blocks.incubations.projects.acolhe.description"
@@ -154,7 +149,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="/static/media/s3/merepresenta.png"
+            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/merepresenta.png"
             title={t("content:blocks.incubations.projects.representa.title")}
             description={t(
               "content:blocks.incubations.projects.representa.description"
