@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Heading, Box, Stack } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
+import * as Yup from "yup";
+
 import InputField from "../components/Form/InputField";
 import SelectField from "../components/Form/SelectField";
 import SubmitFormEntry from "../components/Form/SubmitFormEntry";
@@ -40,6 +42,17 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
               state: "",
               city: "",
             }}
+            validationSchema={Yup.object().shape({
+              name: Yup.string().required(
+                t("common:form.fields.name.required")
+              ),
+              whatsapp: Yup.string().required(
+                t("common:form.fields.whatsapp.required")
+              ),
+              email: Yup.string()
+                .email(t("common:form.fields.email.invalid"))
+                .required(t("common:form.fields.email.required")),
+            })}
             onSubmit={submit}
           >
             {({ handleSubmit, dirty, isSubmitting }: FormikProps<Values>) => (
@@ -57,34 +70,34 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                     <InputField
                       inline
                       name="name"
-                      label="Nome"
-                      placeholder="Seu nome"
+                      label={t("common:form.fields.name.label")}
+                      placeholder={t("common:form.fields.name.placeholder")}
                     />
                     <InputField
                       inline
                       name="email"
-                      label="E-mail"
-                      placeholder="Seu e-mail"
+                      label={t("common:form.fields.email.label")}
+                      placeholder={t("common:form.fields.email.placeholder")}
                     />
                     <InputField
                       inline
                       type="tel"
                       name="whatsapp"
-                      label="Whatsapp"
-                      placeholder="Seu whatsapp"
+                      label={t("common:form.fields.whatsapp.label")}
+                      placeholder={t("common:form.fields.whatsapp.placeholder")}
                     />
                     <SelectField
                       inline
                       name="state"
-                      label="Estado"
-                      placeholder="Seu estado"
+                      label={t("common:form.fields.state.label")}
+                      placeholder={t("common:form.fields.state.placeholder")}
                       options={{ type: "array", items: STATES }}
                     />
                     <InputField
                       inline
                       name="city"
-                      label="Cidade"
-                      placeholder="Sua cidade"
+                      label={t("common:form.fields.city.label")}
+                      placeholder={t("common:form.fields.city.placeholder")}
                     />
                   </Stack>
                   <Button
@@ -107,33 +120,33 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
 };
 
 const STATES = [
-  "Acre(AC)",
-  "Alagoas(AL)",
-  "Amapá(AP)",
-  "Amazonas(AM)",
-  "Bahia(BA)",
-  "Ceará(CE)",
-  "Distrito Federal(DF)",
-  "Espírito Santo(ES)",
-  "Goiás(GO)",
-  "Maranhão(MA)",
-  "Mato Grosso(MT)",
-  "Mato Grosso do Sul(MS)",
-  "Minas Gerais(MG)",
-  "Pará(PA)",
-  "Paraíba(PB)",
-  "Paraná(PR)",
-  "Pernambuco(PE)",
-  "Piauí(PI)",
-  "Rio de Janeiro(RJ)",
-  "Rio Grande do Norte(RN)",
-  "Rio Grande do Sul(RS)",
-  "Rondônia(RO)",
-  "Roraima(RR)",
-  "Santa Catarina(SC)",
-  "São Paulo(SP)",
-  "Sergipe(SE)",
-  "Tocantins(TO)",
+  "Acre (AC)",
+  "Alagoas (AL)",
+  "Amapá (AP)",
+  "Amazonas (AM)",
+  "Bahia (BA)",
+  "Ceará (CE)",
+  "Distrito Federal (DF)",
+  "Espírito Santo (ES)",
+  "Goiás (GO)",
+  "Maranhão (MA)",
+  "Mato Grosso (MT)",
+  "Mato Grosso do Sul (MS)",
+  "Minas Gerais (MG)",
+  "Pará (PA)",
+  "Paraíba (PB)",
+  "Paraná (PR)",
+  "Pernambuco (PE)",
+  "Piauí (PI)",
+  "Rio de Janeiro (RJ)",
+  "Rio Grande do Norte (RN)",
+  "Rio Grande do Sul (RS)",
+  "Rondônia (RO)",
+  "Roraima (RR)",
+  "Santa Catarina (SC)",
+  "São Paulo (SP)",
+  "Sergipe (SE)",
+  "Tocantins (TO)",
 ];
 
 export default SubscribeForm;

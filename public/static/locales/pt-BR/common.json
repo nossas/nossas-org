@@ -51,6 +51,32 @@
     }
   },
   "form": {
+    "fields": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome",
+        "required": "Preencha seu nome"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Seu e-mail",
+        "required": "Preencha seu e-mail",
+        "invalid": "Informe um e-mail válido"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "placeholder": "Seu whatsapp",
+        "required": "Informe seu whatsapp"
+      },
+      "state": {
+        "label": "Estado",
+        "placeholder": "Seu estado"
+      },
+      "city": {
+        "label": "Cidade",
+        "placeholder": "Sua cidade"
+      }
+    },
     "finish": {
       "title": "Pronto, <b>{{name}}</b>!",
       "thanks": "Formulário salvo! Mensagem de agradecimento etc etc."
