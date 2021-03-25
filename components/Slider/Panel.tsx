@@ -15,7 +15,13 @@ export interface Props {
 }
 
 export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
-  <Box flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
+  <Box
+    flex={1}
+    boxShadow={["base"]}
+    rounded="base"
+    bgColor="white"
+    minHeight="700px"
+  >
     <Image src={item.src} alt={item.alt} width="100%" height={[229, 380]} />
     <Stack p={8} spacing={4} textAlign="left">
       <Heading as="h3" fontWeight="bold" size="md">

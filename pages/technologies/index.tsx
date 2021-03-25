@@ -114,9 +114,15 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         alignItems="center"
         justifyItems="center"
       >
-        <Image src="/static/media/s3/mariellefranco.png" />
-        <Image src="/static/media/s3/allout.png" />
-        <Image src="/static/media/s3/criola.png" />
+        <Link href="https://www.institutomariellefranco.org/" target="_blank">
+          <Image src="/static/media/s3/mariellefranco.png" />
+        </Link>
+        <Link href="https://allout.org/pt" target="_blank">
+          <Image src="/static/media/s3/allout.png" />
+        </Link>
+        <Link href="https://criola.org.br/" target="_blank">
+          <Image src="/static/media/s3/criola.png" />
+        </Link>
       </SimpleGrid>
     </Section>
     <Section direction="column" spacing="30px">
