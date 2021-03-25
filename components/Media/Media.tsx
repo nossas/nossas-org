@@ -27,15 +27,9 @@ const Media = ({ title, logos }) => {
         p={["30px", "30px", "100px"]}
         justifyContent={["initial", "initial", "space-between"]}
       >
-        <Heading
-          display="flex"
-          alignItems="center"
-          color="blue.main"
-          size="lg"
-          fontWeight="normal"
-        >
+        <Heading display="flex" alignItems="center" color="blue.main" size="lg">
           {title}{" "}
-          <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span>
+          {/* <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span> */}
         </Heading>
         <Grid
           templateColumns={[

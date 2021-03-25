@@ -1,4 +1,7 @@
 export default {
+  defaultStyles: {
+    fontWeight: "normal",
+  },
   sizes: {
     xs: {
       fontSize: ["xs"],

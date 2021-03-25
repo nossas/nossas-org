@@ -36,7 +36,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   <Body isMobile={ua.isMobile}>
     {/* Cover */}
     <Hero
+      maxWidth="520px"
       bgColor="white"
+      left="30%"
       title={t("content:covers.home.title")}
       titleColor="blue.main"
       titleAlign="left"
