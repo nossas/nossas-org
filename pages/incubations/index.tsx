@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Heading, Stack, Text, Image, Link } from "@chakra-ui/react";
+import { Heading, Stack, Text, Img, Link } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
@@ -27,10 +27,10 @@ export const ImageText: React.FC<ImageTextProps> = ({
   href,
   linkText,
 }) => {
-  const imageSizes = {
-    maxW: ["510px", null, "550px", null, "610px"],
-    height: ["257px", null, "297px", null, "357px"],
-  };
+  // const imageSizes = {
+  //   maxW: ["510px", null, "550px", null, "610px"],
+  //   height: ["257px", null, "297px", null, "357px"],
+  // };
 
   return (
     <Stack
@@ -38,7 +38,12 @@ export const ImageText: React.FC<ImageTextProps> = ({
       spacing="70px"
       alignItems="center"
     >
-      <Image src={src} alt={alt} {...imageSizes} />
+      <Img
+        objectFit="cover"
+        boxSize={["357px", null, null, null, "357px", "427px"]}
+        src={src}
+        alt={alt}
+      />
       <Stack spacing="10px" textAlign="left">
         <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
           {title}
@@ -56,7 +61,7 @@ interface PageProps extends WithUserAgentProps {
   t: any;
 }
 
-const ImageIcon = styled(Image)`
+const ImageIcon = styled(Img)`
   transform: scale(${(props) => props.scale});
 `;
 
@@ -136,7 +141,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         showStatus
         items={[
           <ImageText
-            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/defezap.jpg"
+            src="/static/media/s3/defezap.jpg"
             title={t("content:blocks.incubations.projects.defezap.title")}
             description={t(
               "content:blocks.incubations.projects.defezap.description"
@@ -145,7 +150,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/meacolhelgbt.png"
+            src="/static/media/s3/meacolhelgbt.png"
             title={t("content:blocks.incubations.projects.acolhe.title")}
             description={t(
               "content:blocks.incubations.projects.acolhe.description"
@@ -154,7 +159,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText="Saiba mais +"
           />,
           <ImageText
-            src="https://img.bonde.org/crop?height=510&gravity=smart&url=http://next.nossas.org/static/media/s3/merepresenta.png"
+            src="/static/media/s3/merepresenta.png"
             title={t("content:blocks.incubations.projects.representa.title")}
             description={t(
               "content:blocks.incubations.projects.representa.description"
