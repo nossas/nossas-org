@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Text, Stack, Image, StyleProps } from "@chakra-ui/react";
+import { Heading, Text, Stack, Img as Image } from "@chakra-ui/react";
 import { Section } from "../components/Page";
 
 interface ImageTextListProps {

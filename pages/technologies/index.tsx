@@ -12,7 +12,7 @@ import {
   Text,
   Link,
   Stack,
-  Image,
+  Img as Image,
   SimpleGrid,
 } from "@chakra-ui/react";
 // import { SliderPanel } from "../../components/Slider";

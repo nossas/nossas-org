@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Image, Grid } from "@chakra-ui/react";
+import { Heading, Img as Image, Grid } from "@chakra-ui/react";
 
 const ImageLogo = ({ logo }: any) => {
   const image = (

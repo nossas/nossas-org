@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Heading } from "@chakra-ui/react";
+import { Box, Flex, Img, Heading } from "@chakra-ui/react";
 import Video from "../Video";
 
 interface HeroProps {
@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({
           <Box {...boxProps} position="absolute" width="100%" height="100%" />
         ) : null}
         {bgImage && !videoUrl && (
-          <Image
+          <Img
             src={bgImage}
             alt={imageDesc}
             objectPosition="center"
