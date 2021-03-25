@@ -7,6 +7,7 @@ import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
+  Box,
   Button,
   Heading,
   Text,
@@ -14,6 +15,7 @@ import {
   Stack,
   Img as Image,
   SimpleGrid,
+  AspectRatio,
 } from "@chakra-ui/react";
 // import { SliderPanel } from "../../components/Slider";
 import { ImageTextListBox } from "../../content";
@@ -95,6 +97,22 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         },
       ]}
     />
+    <Section
+      direction={["column", null, null, "row"]}
+      justifyContent="space-between"
+      spacing={8}
+    >
+      <Heading as="h2" variant="tag">
+        {t("content:blocks.technologies.video.title")}
+      </Heading>
+      <AspectRatio
+        maxH={["315px", null, null, null, "460px"]}
+        width={["auto", null, "560px", null, "820px"]}
+        ratio={16 / 9}
+      >
+        <iframe title="BONDE" src="https://www.youtube.com/embed/I946ueDvVmI" />
+      </AspectRatio>
+    </Section>
     <Section
       direction={["column", null, null, "row"]}
       spacing={["30px", null, null, "140px"]}

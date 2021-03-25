@@ -33,19 +33,19 @@
   },
   "blocks": {
     "home": {
+      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "actionnow": "O que estamos <b>fazendo</b>",
       "doacao": {
         "title": "Faça uma <b>doação</b>",
-        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Para manter nossa independência, não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas públicas. Por isso, precisamos de você.",
-        "button": "Faça uma doação"
+        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho e no impaco que queremos ver no mundo. Não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas privadas. Contribua você também para nossas causas.",
+        "button": "Quero doar"
       },
-      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "grid": {
-        "mobilization": "Participe de uma mobilização",
+        "mobilization": "Junte-se a uma de nossas campanhas",
         "books": "Acesse nossos materiais educativos",
-        "learning": "Seja treinado em metodologias de mobilização",
-        "support": "Receba apoio para seu projeto",
-        "tech": "Use as melhores tecnologias para ativismo"
+        "learning": "Seja treinado em metodologias de ativismo",
+        "support": "Incube seu projeto conosco",
+        "tech": "Use as melhores tecnologias de ativismo"
       },
       "media": {
         "title": "NA <b>MÍDIA</b>"
@@ -75,6 +75,16 @@
         "2017": {
           "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
           "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
+        },
+        "2018": {
+          "bonde": "Começamos a testar o BONDE, uma plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas"
+        },
+        "2019": {
+          "maraton": "Nuestros hermanos pediram e nós atendemos! Em 2019 fizemos um ciclo de treinamento para ativistas da Colômbia, Guatemala e México em nossas metodologias e tecnologias de mobilização",
+          "programamobilizadores": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
+        },
+        "2020": {
+          "periferiaquefaz": "Jovens de periferias do Brasil puderam concorrer a um edital que concedeu recursos de até R$20 mil para que ideias que só precisavam de um empurrãozinho fossem tiradas do papel."
         }
       },
       "impact": {
@@ -147,11 +157,8 @@
         "title": "Projetos <b>Atuais</b>",
         "mapa": {
           "title": "Mapa do acolhimento",
-          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
-        },
-        "manaus": {
-          "title": "Minha manaus",
-          "description": "Inserir descrição. Ex: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
+          "action": "Saiba mais"
         }
       },
       "incubate": {
@@ -214,11 +221,18 @@
           "2": {
             "title": "4G para estudar",
             "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
+          },
+          "3": {
+            "title": "Auxílio pra saúde",
+            "description": "Aprovamos o projeto de lei que garante uma indenização para os dependentes de profissionais de saúde mortos por coronavírus. Reunimos mais de 160 mil assinaturas e enviamos mais de 90 mil e-mails de pressão. Nossa campanha durou 1 ano até chegar na vitória, mas conseguimos!"
           }
         }
       }
     },
     "technologies": {
+      "video": {
+        "title": "Feito pra causar"
+      },
       "emergence": {
         "title": "Assim surgiu <b>o BONDE</b>",
         "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma incrível de mobilização que agora está disponível para outras organizações causarem também.",
@@ -234,7 +248,7 @@
       },
       "partners": "Quem já causou <b>com o BONDE</b>",
       "campaingStories": {
-        "title": "Campanhas que fizeram história",
+        "title": "Campanhas que <b>fizeram história</b>",
         "carousel": {
           "action": "Saber mais",
           "1": {
