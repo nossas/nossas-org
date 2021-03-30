@@ -80,7 +80,7 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     >
       <SubscribeForm
         t={t}
-        widgetId={20293}
+        widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
         title={t("content:blocks.incubations.incubate.form.title")}
         submitText={t("content:blocks.incubations.incubate.form.submit")}
         textSuccess={t("common:form.finish.thanks")}

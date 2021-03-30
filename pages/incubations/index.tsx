@@ -27,11 +27,6 @@ export const ImageText: React.FC<ImageTextProps> = ({
   href,
   linkText,
 }) => {
-  // const imageSizes = {
-  //   maxW: ["510px", null, "550px", null, "610px"],
-  //   height: ["257px", null, "297px", null, "357px"],
-  // };
-
   return (
     <Stack
       direction={["column", "column", null, null, "row"]}
@@ -211,7 +206,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     >
       <SubscribeForm
         t={t}
-        widgetId={20292}
+        widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
         title={t("content:blocks.incubations.incubate.form.title")}
         submitText={t("content:blocks.incubations.incubate.form.submit")}
         textSuccess={t("common:form.finish.thanks")}

@@ -11,7 +11,8 @@ import {
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
-import Newsletter from "../Newsletter";
+// import Newsletter from "../Newsletter";
+import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
 const Footer = ({ t }) => {
@@ -46,7 +47,7 @@ const Footer = ({ t }) => {
             </ListItem>
           </UnorderedList>
         </div>
-        <Newsletter />
+        <NewsletterForm />
         <div>
           <Heading
             as="h5"

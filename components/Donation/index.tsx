@@ -108,7 +108,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
       initialValues={{
         ...yourDataInitialValues,
         ...cardInitialValues,
-        widget_id: parseInt(process.env.NEXT_PUBLIC_WIDGET_ID),
+        widget_id: parseInt(process.env.NEXT_PUBLIC_DONATION_WIDGET_ID),
         currency: i18n.language === "pt-BR" ? "brl" : "usd",
       }}
       validationSchema={isYourData ? YourDataSchema({ t }) : CardSchema({ t })}

@@ -38,14 +38,19 @@ const InputField: React.FC<InputFieldProps> = ({
   ...props
 }) => {
   const [field, meta, helpers] = useField({ name, validate });
+  const borderStyles = {
+    border: "1px solid",
+    borderRadius: 4,
+    borderColor: meta.touched && !!meta.error ? "red" : "gray.light",
+  };
+  let boxStyles = {};
+  let inputStyles = {};
+  if (inline) boxStyles = borderStyles;
+  else inputStyles = borderStyles;
 
   return (
     <FormControl flexDirection="column" flex={flex}>
-      <Box
-        border="1px solid"
-        borderRadius={4}
-        borderColor={meta.touched && !!meta.error ? "red" : "gray.light"}
-      >
+      <Box {...boxStyles}>
         {inline ? (
           <InputGroup border="0">
             <InputLeftAddon
@@ -73,10 +78,17 @@ const InputField: React.FC<InputFieldProps> = ({
               <InputFormatField
                 format="(##) #####-####"
                 placeholder={props.placeholder}
+                {...inputStyles}
                 {...field}
               />
             ) : (
-              <Input fontSize="xs" border="0" {...field} {...props} />
+              <Input
+                fontSize="xs"
+                border="0"
+                {...inputStyles}
+                {...field}
+                {...props}
+              />
             )}
           </>
         )}

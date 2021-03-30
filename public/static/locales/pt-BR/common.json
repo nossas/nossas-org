@@ -102,7 +102,7 @@
     "email": {
       "placeholder": "Seu e-mail",
       "required": "Informe seu e-mail",
-      "invalid": "Informe um e-mail válido"
+      "invalid": "OPS! Confira o e-mail"
     },
     "firstname": {
       "placeholder": "Nome",
@@ -111,7 +111,11 @@
     "lastname": {
       "placeholder": "Sobrenome"
     },
-    "button": "Salvar"
+    "button": "Salvar",
+    "success": {
+      "title": "Valeu",
+      "description": "Mensagem de agradecimento. Lorem ipsum dolor sit amet, consectetur adipis elit, sed do eiusmod tempor incididt ut labore."
+    }
   },
   "footer": {
     "about": "Quem somos",

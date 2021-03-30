@@ -20,7 +20,9 @@ const CREATE_FORM_ENTRY_GQL = gql`
 `;
 
 type ActivistInput = {
-  name: string;
+  name?: string;
+  first_name?: string;
+  last_name?: string;
   email: string;
   phone?: string;
 };
@@ -56,8 +58,7 @@ interface Result {
 interface Props {
   widgetId: number;
   children: any;
-  t: any;
-  textSuccess: string;
+  successComponent: any;
 }
 
 const getKindByName = (
@@ -80,8 +81,7 @@ const getKindByName = (
 const SubmitFormEntry: React.FC<Props> = ({
   children,
   widgetId,
-  t,
-  textSuccess,
+  successComponent: SuccessComponent,
 }) => {
   const [data, setData] = useState(undefined);
   const [createFormEntry] = useMutation<Result, Variables>(
@@ -90,21 +90,7 @@ const SubmitFormEntry: React.FC<Props> = ({
 
   // render children with submit(values: any)
   return data ? (
-    <SuccessPanel
-      color="green"
-      title={
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("form.finish.title", {
-              interpolation: { escapeValue: false },
-              name: data.formData.name.split(" ")[0],
-            }),
-          }}
-        />
-      }
-    >
-      <Text>{textSuccess}</Text>
-    </SuccessPanel>
+    <SuccessComponent data={data} />
   ) : (
     children({
       submit: async (formData: any) => {
@@ -124,7 +110,11 @@ const SubmitFormEntry: React.FC<Props> = ({
           variables: {
             widget_id: widgetId,
             activist: {
-              name: formData.name,
+              name:
+                formData.name ||
+                `${formData.first_name} ${formData.last_name}`.trim(),
+              first_name: formData.first_name,
+              last_name: formData.last_name,
               email: formData.email,
               phone: formData.whatsapp || formData.phone,
             },

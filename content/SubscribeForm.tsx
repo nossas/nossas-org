@@ -1,11 +1,12 @@
 import React from "react";
-import { Button, Heading, Box, Stack } from "@chakra-ui/react";
+import { Button, Heading, Box, Stack, Text } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
 import * as Yup from "yup";
 
 import InputField from "../components/Form/InputField";
 import SelectField from "../components/Form/SelectField";
 import SubmitFormEntry from "../components/Form/SubmitFormEntry";
+import SuccessPanel from "../components/Form/SuccessPanel";
 
 interface Values {
   name: string;
@@ -32,7 +33,26 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
 }) => {
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
-      <SubmitFormEntry t={t} widgetId={widgetId} textSuccess={textSuccess}>
+      <SubmitFormEntry
+        widgetId={widgetId}
+        successComponent={({ data }) => (
+          <SuccessPanel
+            color="green"
+            title={
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: t("form.finish.title", {
+                    interpolation: { escapeValue: false },
+                    name: data.formData.name.split(" ")[0],
+                  }),
+                }}
+              />
+            }
+          >
+            <Text>{textSuccess}</Text>
+          </SuccessPanel>
+        )}
+      >
         {({ submit }) => (
           <Formik
             initialValues={{
