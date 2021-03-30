@@ -25,15 +25,21 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleAlign="center"
     />
     <Section
-      columns={[1, null, null, 2]}
-      templateColumns={["auto", null, null, "100px 1fr"]}
-      columnGap="100px"
-      rowGap="25px"
+      direction={["column", null, null, "row"]}
+      spacing={["30px", null, null, "195px"]}
     >
-      <Heading as="h2" variant="tag">
-        {t("content:blocks.mobilizations.done.title")}
+      <Heading as="h2" color="blue.main" maxW="400px">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: t("content:blocks.mobilizations.done.title", {
+              interpolation: { escapeValue: false },
+            }),
+          }}
+        />
       </Heading>
-      <Text>{t("content:blocks.mobilizations.done.description")}</Text>
+      <Text maxW="668px">
+        {t("content:blocks.mobilizations.done.description")}
+      </Text>
     </Section>
     <Section direction={["column"]} spacing="30px">
       <Heading as="h2" color="pink.main">
@@ -70,11 +76,13 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t("content:blocks.mobilizations.doing.carousel.action"),
           },
           {
-            alt: t("sliders:home.temgentecomfome.title"),
+            alt: t("content:blocks.mobilizations.doing.carousel.3.title"),
             src: "/static/media/s3/temgentecomfome.png",
-            title: t("sliders:home.temgentecomfome.title"),
-            description: t("sliders:home.temgentecomfome.description"),
-            link: t("sliders:home.temgentecomfome.action"),
+            title: t("content:blocks.mobilizations.doing.carousel.3.title"),
+            description: t(
+              "content:blocks.mobilizations.doing.carousel.3.description"
+            ),
+            link: t("content:blocks.mobilizations.doing.carousel.3.action"),
             href: "https://www.temgentecomfome.com.br/",
           },
         ]}
@@ -121,7 +129,17 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description: t(
               "content:blocks.mobilizations.victories.carousel.3.description"
             ),
-            href: "#",
+            href: "https://www.auxilioparasaude.org.br/",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
+          {
+            src: "/static/media/s3/tocomelas.png",
+            alt: t("content:blocks.mobilizations.victories.carousel.4.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.4.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.4.description"
+            ),
+            href: "https://www.tocomelas.mapadoacolhimento.org/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
         ]}

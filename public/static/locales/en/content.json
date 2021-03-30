@@ -115,8 +115,8 @@
       },
       "financiers": {
         "title": "Quem financia o <b>NOSSAS</b>",
-        "description": "Nossos projetos são financiados por organizações filantrópicas nacionais e internacionais, como Open Society Foundation, OAK Foundation e Fundo Malala. Também recebemos apoio de pessoas físicas no país inteiro que acreditam em nosso trabalho e fazem doações mensais para manter nossas engrenagens funcionando. Prezando pela transparência e honestidade, anualmente fazemos uma auditoria de contas independente e divulgamos os resultados em nossos canais públicos.",
-        "button": "Você pode baixar esse documento aqui",
+        "description": "Somos financiados por algumas organizações internacionais e também recebemos apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela transparência, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
+        "button": "Baixar aqui",
         "imageText": "Quem financia o NOSSAS"
       },
       "team": {
@@ -172,8 +172,8 @@
     },
     "materials": {
       "manual": {
-        "title": "A gente preparou um manual incrível <b>pra você :)</b>",
-        "description": "Há uma década a gente vem se dedicando a fazer mobilizações que já reuniram milhares de pessoas e conseguiram inúmeras vitórias. Documentamos todos esses aprendizados para te ajudar a tirar sua campanha do papel. Vem!",
+        "title": "Baixe agora <b>seu manual</b>",
+        "description": "Fizemos um manual incrível com várias dicas para te ajudar a fazer sua própria campanha!",
         "link": "Baixar manual"
       },
       "learning": {
@@ -187,14 +187,15 @@
         "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto.",
         "form": {
           "title": "Baixar manual",
-          "submit": "Baixar"
+          "submit": "Baixar",
+          "success": "Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
         }
       }
     },
     "mobilizations": {
       "done": {
-        "title": "O que já fizemos",
-        "description": "Ao longo dos anos, conseguimos incontáveis vitórias e avanços em políticas públicas, que beneficiaram milhares de pessoas em todo o país. Chega mais e vem com a gente fazer parte da mudança!"
+        "title": "Vem com a <b>gente</b>",
+        "description": "Se você está procurando alguma forma de contribuir com uma causa, participe agora de uma de nossas campanhas. Chega mais e vem fazer parte da mudança!"
       },
       "doing": {
         "title": "O que estamos <b>fazendo</b>",
@@ -207,6 +208,11 @@
           "2": {
             "title": "Respira Manaus",
             "description": "A crise de saúde em Manaus continua muito grave! Os hospitais estão em colapso e a tendência é que o problema se espalhe pelo país. Pressione o Ministério da Saúde a cuidar dessa pauta."
+          },
+          "3": {
+            "title": "Tem gente com fome",
+            "description": "Após 1 ano de pandemia alcançamos a marca de mais de 275 mil vidas perdidas e outras milhares de famílias estão passando fome. Precisamos comprar comida, a fome não pode esperar.",
+            "action": "Participe da campanha"
           }
         }
       },
@@ -224,7 +230,11 @@
           },
           "3": {
             "title": "Auxílio pra saúde",
-            "description": "Aprovamos o projeto de lei que garante uma indenização para os dependentes de profissionais de saúde mortos por coronavírus. Reunimos mais de 160 mil assinaturas e enviamos mais de 90 mil e-mails de pressão. Nossa campanha durou 1 ano até chegar na vitória, mas conseguimos!"
+            "description": "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais durante a pandemia ficaram muito expostas ao vírus. Conseguimos aprovar uma lei que garante indenização aos familiares desses profissionais que perderem a vida durante a crise da Covid19."
+          },
+          "4": {
+            "title": "Tô com elas",
+            "description": "Os casos de violência contra a mulher cresceram significativamente durante a pandemia. Com a ajuda de mais de 500 voluntárias, mapeamos os serviços públicos de atendimento emergencial para essas mulheres e agora temos mapeados os serviços especializados no Brasil inteiro."
           }
         }
       }
@@ -258,13 +268,21 @@
           "2": {
             "title": "Amazônia Contra a Covid",
             "description": "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas."
+          },
+          "3": {
+            "title": "Mais do que palmas",
+            "description": "Foi uma campanha para que um pacote de emergência que daria melhores condições de trabalho aos médicos, enfermeiros, fisioterapeutas intensivistas, técnicos e auxiliares de enfermagem na linha de frente na guerra para combater a COVID-19 virasse lei."
+          },
+          "4": {
+            "title": "A hora é agora",
+            "description": "A All Out realizou uma campanha de pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!"
           }
         }
       },
       "bonde": {
         "title": "Use o BONDE para <b>causar</b>",
         "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, levantar recursos para sua organização, criar redes de solidariedade sem precisar sacar nadinha de programação.",
-        "button": "Saiba mais"
+        "button": "Contrate agora"
       }
     }
   }

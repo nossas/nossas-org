@@ -31,8 +31,11 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="green"
       titleAlign="left"
     />
-    <Section direction={["column", null, null, "row"]} spacing="145px">
-      <Heading as="h2" color="blue.main" maxW="400px">
+    <Section
+      direction={["column", null, null, "row"]}
+      spacing={["30px", null, null, "145px"]}
+    >
+      <Heading as="h2" color="blue.main" maxW={["auto", null, null, "300px"]}>
         <div
           dangerouslySetInnerHTML={{
             __html: t("content:blocks.materials.manual.title", {
@@ -81,9 +84,9 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <SubscribeForm
         t={t}
         widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
-        title={t("content:blocks.incubations.incubate.form.title")}
-        submitText={t("content:blocks.incubations.incubate.form.submit")}
-        textSuccess={t("common:form.finish.thanks")}
+        title={t("content:blocks.materials.manualform.form.title")}
+        submitText={t("content:blocks.materials.manualform.form.submit")}
+        textSuccess={t("content:blocks.materials.manualform.form.success")}
       />
     </DescriptionBox>
   </Body>

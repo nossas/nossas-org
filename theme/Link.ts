@@ -40,6 +40,13 @@ export default {
         textDecoration: "none",
       },
     },
+    inherit: {
+      fontWeight: "bold",
+      color: "inherit",
+      _hover: {
+        color: "inherit",
+      },
+    },
   },
   defaultProps: {
     variant: "blue",

@@ -47,7 +47,7 @@
       "imageAlt": "Doação bem sucedida!",
       "title": "Valeu, <b>{{name}}</b>!",
       "thanks": "Sua doação faz toda a diferença!",
-      "message": "Mensagem de agradecimento etc etc."
+      "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"
     }
   },
   "form": {
@@ -102,7 +102,7 @@
     "email": {
       "placeholder": "Seu e-mail",
       "required": "Informe seu e-mail",
-      "invalid": "Informe um e-mail válido"
+      "invalid": "OPS! Confira o e-mail"
     },
     "firstname": {
       "placeholder": "Nome",
@@ -111,7 +111,11 @@
     "lastname": {
       "placeholder": "Sobrenome"
     },
-    "button": "Salvar"
+    "button": "Salvar",
+    "success": {
+      "title": "Valeu",
+      "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
+    }
   },
   "footer": {
     "about": "Quem somos",

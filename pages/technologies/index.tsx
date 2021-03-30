@@ -171,7 +171,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t(
               "content:blocks.technologies.campaingStories.carousel.action"
             ),
-            href: "#",
+            href: "https://www.saldaodaamazonia.org.br/",
           },
           {
             src: "/static/media/s3/amazoniacontracovid.png",
@@ -182,12 +182,44 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               "content:blocks.technologies.campaingStories.carousel.2.title"
             ),
             description: t(
-              "content:blocks.technologies.campaingStories.carousel.1.description"
+              "content:blocks.technologies.campaingStories.carousel.2.description"
             ),
             link: t(
               "content:blocks.technologies.campaingStories.carousel.action"
             ),
-            href: "#",
+            href: "https://www.amazoniacontracovid.org.br/",
+          },
+          {
+            src: "/static/media/s3/maisquepalmas.jpg",
+            alt: t(
+              "content:blocks.technologies.campaingStories.carousel.3.title"
+            ),
+            title: t(
+              "content:blocks.technologies.campaingStories.carousel.3.title"
+            ),
+            description: t(
+              "content:blocks.technologies.campaingStories.carousel.3.description"
+            ),
+            link: t(
+              "content:blocks.technologies.campaingStories.carousel.action"
+            ),
+            href: "https://www.maisdoquepalmas.com.br/",
+          },
+          {
+            src: "/static/media/s3/ahoraeagora.jpg",
+            alt: t(
+              "content:blocks.technologies.campaingStories.carousel.4.title"
+            ),
+            title: t(
+              "content:blocks.technologies.campaingStories.carousel.4.title"
+            ),
+            description: t(
+              "content:blocks.technologies.campaingStories.carousel.4.description"
+            ),
+            link: t(
+              "content:blocks.technologies.campaingStories.carousel.action"
+            ),
+            href: "https://www.stf.alloutbrasil.org/",
           },
         ]}
       />

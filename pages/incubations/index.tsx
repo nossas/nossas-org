@@ -209,7 +209,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
         title={t("content:blocks.incubations.incubate.form.title")}
         submitText={t("content:blocks.incubations.incubate.form.submit")}
-        textSuccess={t("common:form.finish.thanks")}
+        textSuccess={t("content:blocks.incubations.incubate.form.success")}
       />
     </DescriptionBox>
   </Body>

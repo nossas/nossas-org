@@ -24,7 +24,12 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
   >
     <Img src={item.src} alt={item.alt} objectFit="fill" boxSize="380px" />
     <Stack p={8} spacing={4} textAlign="left">
-      <Link href={item.href} target="_blank" title={item.title}>
+      <Link
+        href={item.href}
+        target="_blank"
+        title={item.title}
+        variant="inherit"
+      >
         <Heading as="h3" fontWeight="bold" size="md">
           {item.title}
         </Heading>
