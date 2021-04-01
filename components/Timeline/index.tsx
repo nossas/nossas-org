@@ -8,10 +8,28 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 import { Carousel } from "../../components/Slider";
 
+const BoxStyled = styled(Box)`
+  position: relative;
+  text-align: center;
+  border-top-width: 1px;
+
+  &:first-child {
+    border: none;
+  }
+`;
+
 export const ImageText = ({ src, text, alt }: any) => (
-  <Box textAlign="center">
+  <BoxStyled borderColor="gray.light" mb="10px">
+    <Box
+      width="2px"
+      height="40px"
+      backgroundColor="gray.light"
+      // left={["45%", null, "48%"]}
+      margin={["0 calc(45% + 5px)", null, "0 calc(48% + 3.5px)"]}
+    />
     <Flex
       height={["130px", "100px"]}
       alignItems="center"
@@ -24,17 +42,17 @@ export const ImageText = ({ src, text, alt }: any) => (
     <Text size="xs" minH={["145px"]}>
       {text}
     </Text>
-  </Box>
+  </BoxStyled>
 );
 
 const Timeline = ({ title, children }: any) => (
-  <Stack direction="column" spacing="20px">
+  <Stack direction="column" spacing="0">
     <Box
       borderBottomWidth="1px"
       borderBottomColor="gray.light"
       position="relative"
       paddingBottom="5px"
-      margin={["0 30%", null, "0"]}
+      margin={["0 30px", null, "0"]}
     >
       <Heading
         as="h3"
@@ -52,10 +70,10 @@ const Timeline = ({ title, children }: any) => (
         backgroundColor="gray.light"
         position="absolute"
         bottom="-5px"
-        left={["45%", null, "49%"]}
+        left={["45%", null, "48%"]}
       />
     </Box>
-    <Stack flex="1" px="30px">
+    <Stack flex="1" px="30px" spacing="0">
       {children}
     </Stack>
   </Stack>
