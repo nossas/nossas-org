@@ -29,6 +29,9 @@
     },
     "technologies": {
       "title": "Conheça nossas ferramentas de tecnologia"
+    },
+    "training": {
+      "title": "Receba treinamento em tecnologias de ativismo"
     }
   },
   "blocks": {
@@ -284,6 +287,51 @@
         "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, levantar recursos para sua organização, criar redes de solidariedade sem precisar sacar nadinha de programação.",
         "button": "Contrate agora"
       }
+    },
+    "training": {
+      "done": {
+        "title": "VEM APRENDER <b>COM A GENTE!</b>",
+        "description": "Temos um programa de treinamentos e mentoria gratuitos em ativismo para jovens do Brasil inteiro!"
+      },
+      "doing": {
+        "title": "Rolando <b>agora</b>",
+        "carousel": {
+          "1": {
+            "title": "Muvuca",
+            "description": "Nosso programa de ativismo climático está com inscrições abertas! Iremos treinar 30 jovens da região amazônica em pautas relacionadas às mudanças climáticas e meio ambiente.",
+            "action": "Saiba mais"
+          },
+          "2": {
+            "title": "Programa de mobilizadores",
+            "description": "As turmas deste programa recebem gratuitamente treinamento em mobilizações, comunicação de campanhas e tecnologias de ativismo.",
+            "action": "Inscreva-se para a próxima turma"
+          },
+          "3": {
+            "title": "Programa de jovens mobilizadoras",
+            "description": "É um programa voltado para jovens estudantes do Ensino Médio. No momento, em parceria com a Girl Up! estamos treinando 100 jovens meninas no tema pobreza menstrual.",
+            "action": "Saiba mais"
+          }
+        }
+      },
+      "victories": {
+        "title": "Vitórias do <b>programa</b>",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "B.O Online para elas - Minas Gerais",
+            "description": "O Coletivo Abertha conseguiu implementar a Delegacia Virtual do Estado de Minas Gerais depois de uma campanha que recebeu nossa mentoria. Agora, mulheres podem fazer seus boletins de ocorrência sem sair de casa."
+          },
+          "2": {
+            "title": "Revitalização do Farol - Maranhão",
+            "description": "Os ex-estudantes do Centro São José Operário, em São Luiz, participaram de nossa primeira turma e conseguiram através de uma campanha de pressão, a revitalização do Farol, onde acontecem atividades educacionais para a comunidade."
+          }
+        }
+      },
+      "program": {
+        "title": "Participe do <b>programa de mobilizadores</b>",
+        "description": "Temos treinamentos temáticos acontecendo durante o ano inteiro. Clique para saber os cronogramas e temas para 2021.",
+        "button": "Quero saber"
+      }
     }
-  }
+  }  
 }
