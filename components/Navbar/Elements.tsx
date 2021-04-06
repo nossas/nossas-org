@@ -38,6 +38,7 @@ NavLink.defaultProps = {
 export const Bars = styled(FaBars)`
   color: #fff;
   font-size: 1.5rem;
+  transform: translate(15%, -30%);
 `;
 
 export const NavMenu = styled.div`
