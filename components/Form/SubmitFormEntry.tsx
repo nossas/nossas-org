@@ -93,41 +93,44 @@ const SubmitFormEntry: React.FC<Props> = ({
     <SuccessComponent data={data} />
   ) : (
     children({
-      submit: async (formData: any) => {
-        const fields: FormEntry[] = Object.keys(formData).map(
-          (keyName: string) => {
-            return {
-              kind: getKindByName(keyName),
-              label: keyName,
-              required: false,
-              value: formData[keyName],
-              uid: `${keyName}-${widgetId}`,
-            };
-          }
-        );
+      submit: async (formData: any, formActions: any) => {
+        try {
+          const fields: FormEntry[] = Object.keys(formData).map(
+            (keyName: string) => {
+              return {
+                kind: getKindByName(keyName),
+                label: keyName,
+                required: false,
+                value: formData[keyName],
+                uid: `${keyName}-${widgetId}`,
+              };
+            }
+          );
 
-        const { data, errors } = await createFormEntry({
-          variables: {
-            widget_id: widgetId,
-            activist: {
-              name:
-                formData.name ||
-                `${formData.first_name} ${formData.last_name}`.trim(),
-              first_name: formData.first_name,
-              last_name: formData.last_name,
-              email: formData.email,
-              phone: formData.whatsapp || formData.phone,
+          const { data } = await createFormEntry({
+            variables: {
+              widget_id: widgetId,
+              activist: {
+                name:
+                  formData.name ||
+                  `${formData.first_name} ${formData.last_name}`.trim(),
+                first_name: formData.first_name,
+                last_name: formData.last_name,
+                email: formData.email,
+                phone: formData.whatsapp || formData.phone,
+              },
+              input: { fields },
             },
-            input: { fields },
-          },
-        });
+          });
 
-        if (errors) {
-          console.log("SubmitFormEntry failed!", { errors });
+          setData({ data, formData });
+        } catch (err) {
+          console.log("SubmitFormEntry failed!", { err });
+          formActions.setErrors({
+            form: "OPS! Houve um problema, tente novamente mais tarde.",
+          });
           throw new Error("SubmitFormEntry failed!");
         }
-
-        setData({ data, formData });
       },
     })
   );
