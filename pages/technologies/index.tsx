@@ -50,16 +50,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <Stack spacing={6}>
-        <Text>{t("content:blocks.technologies.emergence.description")}</Text>
-        <Link
-          href="#"
-          variant="pink"
-          title={t("content:blocks.technologies.emergence.more")}
-        >
-          {t("content:blocks.technologies.emergence.more")}
-        </Link>
-      </Stack>
+      <Text>{t("content:blocks.technologies.emergence.description")}</Text>
     </Section>
     <ImageTextListBox
       title={t("content:blocks.technologies.functionalities.title")}
