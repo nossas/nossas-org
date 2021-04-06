@@ -1,5 +1,6 @@
 import React from "react";
 import { SimpleGrid } from "@chakra-ui/react";
+import { useWindowSize } from "../../components/Page";
 import Carousel from "./Carousel";
 import { Panel } from "./Panel";
 
@@ -14,17 +15,15 @@ type Item = {
 
 export interface Props {
   items: Item[];
-  isMobile: boolean;
+  isMobile?: boolean;
   infiniteLoop?: boolean;
   columns?: number;
 }
 
-const SliderPanel: React.FC<Props> = ({
-  items,
-  isMobile,
-  infiniteLoop,
-  columns = 2,
-}) => {
+const SliderPanel: React.FC<Props> = ({ items, infiniteLoop, columns = 2 }) => {
+  const { width } = useWindowSize();
+  const isMobile = width < 960;
+
   // const Content = isMobile ? Panel : Group;
   let renderItems: React.ReactNode[] = items.map((item: any, index: number) => (
     <Panel key={`panel-${index}`} items={item} />
