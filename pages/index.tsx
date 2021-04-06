@@ -68,7 +68,12 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         />
         <Stack spacing={6} direction="column" maxW="500px">
           <Text>{t("content:blocks.home.etudonossas")}</Text>
-          <Link href="#" title={t("content:links.knowmore")} color="pink.main">
+          <Link
+            href="/about"
+            target="_blank"
+            title={t("content:links.knowmore")}
+            color="pink.main"
+          >
             {t("content:links.knowmore")} +
           </Link>
         </Stack>
