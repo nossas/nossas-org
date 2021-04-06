@@ -8,6 +8,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Heading, Text, Image, Stack, Button, Box } from "@chakra-ui/react";
 import { SliderPanel } from "../../components/Slider";
+import Link from "next/link";
 // import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 
 interface PageProps extends WithUserAgentProps {
@@ -139,7 +140,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         textAlign={["center", null, null, "left"]}
         spacing={["20px"]}
         flex="1"
-        alignItems={["center", null, null, "flex-start"]}
       >
         <Heading as="h2" maxW="510px" color="green">
           <div
@@ -151,8 +151,13 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           />
         </Heading>
         <Text>{t("content:blocks.training.program.description")}</Text>
-        <Button maxW="190px">
-          {t("content:blocks.training.program.button")}
+        <Button maxW="190px" marginX={["auto", null, null, "0"]}>
+          <a
+            href="https://www.mobilizadores.nossas.org/#block-35353"
+            target="_blank"
+          >
+            {t("content:blocks.training.program.button")}
+          </a>
         </Button>
       </Stack>
     </Section>
