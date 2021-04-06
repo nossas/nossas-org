@@ -139,6 +139,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         textAlign={["center", null, null, "left"]}
         spacing={["20px"]}
         flex="1"
+        alignItems={["center", null, null, "flex-start"]}
       >
         <Heading as="h2" maxW="510px" color="green">
           <div
@@ -150,7 +151,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           />
         </Heading>
         <Text>{t("content:blocks.training.program.description")}</Text>
-        <Button maxW="190px" marginX={["auto", null, null, "0"]}>
+        <Button maxW="190px">
           {t("content:blocks.training.program.button")}
         </Button>
       </Stack>
