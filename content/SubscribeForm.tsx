@@ -75,7 +75,12 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
             })}
             onSubmit={submit}
           >
-            {({ handleSubmit, dirty, isSubmitting }: FormikProps<Values>) => (
+            {({
+              handleSubmit,
+              dirty,
+              isSubmitting,
+              errors,
+            }: FormikProps<Values>) => (
               <Form>
                 <Stack spacing={6}>
                   <Heading
@@ -130,6 +135,11 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                   >
                     {submitText}
                   </Button>
+                  {errors && (
+                    <Text color="red" size="xs">
+                      {(errors as any).form}
+                    </Text>
+                  )}
                 </Stack>
               </Form>
             )}
