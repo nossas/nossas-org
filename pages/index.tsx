@@ -159,21 +159,24 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         />
       </Section>
       <Section
-        alignItems={["center"]}
-        direction={["column", "row"]}
-        px={["30px", "90px"]}
-        py={["60px", "60px"]}
-        spacing={[30, 0]}
+        alignItems="center"
+        direction={["column", null, null, "row"]}
+        spacing={["30px"]}
       >
-        <Flex flex={1} justifyContent="space-around">
+        <Flex flex={1}>
           <Image
             maxW={[226, 339]}
             maxH={[232, 347]}
+            margin="0 auto"
             src="/static/media/s3/sustentabilidade.png"
             alt={t("content:images.home.doacao")}
           />
         </Flex>
-        <Stack flex={1.5} spacing={8} alignItems={["center", "flex-start"]}>
+        <Stack
+          flex={1.5}
+          spacing={8}
+          alignItems={["center", null, null, "flex-start"]}
+        >
           <Heading as="h2" size="lg" color="green">
             <div
               dangerouslySetInnerHTML={{
