@@ -45,7 +45,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
         </Heading>
         <Text>{description}</Text>
         <Link href={href} target="_blank" variant="pink">
-          {linkText}
+          {`${linkText} +`}
         </Link>
       </Stack>
     </Stack>
@@ -142,7 +142,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               "content:blocks.incubations.projects.defezap.description"
             )}
             href="http://www.saibamais.defezap.org.br/"
-            linkText="Saiba mais +"
+            linkText={t("content:links.knowmore")}
           />,
           <ImageText
             src="/static/media/s3/meacolhelgbt.png"
@@ -151,7 +151,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               "content:blocks.incubations.projects.acolhe.description"
             )}
             href="https://www.acolhelgbt.org/"
-            linkText="Saiba mais +"
+            linkText={t("content:links.knowmore")}
           />,
           <ImageText
             src="/static/media/s3/merepresenta.png"
@@ -160,7 +160,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               "content:blocks.incubations.projects.representa.description"
             )}
             href="https://merepresenta.org.br/"
-            linkText="Saiba mais +"
+            linkText={t("content:links.knowmore")}
           />,
         ]}
       />
