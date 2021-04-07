@@ -70,7 +70,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           <Text>{t("content:blocks.home.etudonossas")}</Text>
           <Link
             href="/about"
-            target="_blank"
+            target="_self"
             title={t("content:links.knowmore")}
             color="pink.main"
           >
