@@ -61,12 +61,12 @@ const Donation: React.FC<DonationProps> = ({
                 h="32px"
               />
             </DrawerHeader>
-            <DrawerBody>{children}</DrawerBody>
-            <DrawerFooter>
-              <Button flex={1} onClick={onSubmit} isDisabled={isDisabled}>
+            <DrawerBody>
+              {children}
+              <Button isFullWidth onClick={onSubmit} isDisabled={isDisabled}>
                 {btnText}
               </Button>
-            </DrawerFooter>
+            </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
