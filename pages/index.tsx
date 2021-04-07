@@ -101,7 +101,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           title={t("content:blocks.home.grid.books")}
         />
         <ImageTitle
-          href="#"
+          href="/trainings"
           src="/static/media/s3/treinamentohome.png"
           alt={t("content:images.home.etudonossas")}
           title={t("content:blocks.home.grid.learning")}
