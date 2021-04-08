@@ -8,6 +8,7 @@ import {
   UnorderedList,
   ListItem,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
@@ -28,7 +29,9 @@ const Footer = ({ t }) => {
         alignItems="baseline"
       >
         <div>
-          <img src="/static/media/logo.svg" alt="Logo do Nossas" />
+          <Link href="/">
+            <Image src="/static/media/logo.svg" alt="Logo do Nossas" />
+          </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
               <Link href="/about">{t("footer.about")}</Link>
