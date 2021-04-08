@@ -169,7 +169,8 @@
         "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
         "form": {
           "title": "Inscreva-se",
-          "submit": "Enviar"
+          "submit": "Enviar",
+          "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
         }
       }
     },
@@ -248,7 +249,7 @@
       },
       "emergence": {
         "title": "Assim surgiu <b>o BONDE</b>",
-        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma incrível de mobilização que agora está disponível para outras organizações causarem também."
+        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma de mobilização que agora está disponível para outras organizações causarem também."
       },
       "functionalities": {
         "title": "Funcionalidades",
@@ -332,5 +333,5 @@
         "button": "Quero saber"
       }
     }
-  }  
+  }
 }
