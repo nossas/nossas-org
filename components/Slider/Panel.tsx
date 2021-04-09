@@ -15,7 +15,7 @@ export interface Props {
 }
 
 export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
-  <Box
+  <Stack
     flex={1}
     boxShadow={["base"]}
     rounded="base"
@@ -59,5 +59,5 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
         />
       </Link>
     </Stack>
-  </Box>
+  </Stack>
 );

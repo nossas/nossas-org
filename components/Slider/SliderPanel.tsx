@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid, Stack } from "@chakra-ui/react";
 import { useWindowSize } from "../../components/Page";
 import Carousel from "./Carousel";
 import { Panel } from "./Panel";
@@ -21,8 +21,12 @@ export interface Props {
 }
 
 const SliderPanel: React.FC<Props> = ({ items, infiniteLoop, columns = 2 }) => {
-  const { width } = useWindowSize();
-  const isMobile = width < 960;
+  const { width, isSSR } = useWindowSize();
+  const isMobile = width < 991;
+
+  if (isSSR) {
+    return <p>Loading...</p>;
+  }
 
   // const Content = isMobile ? Panel : Group;
   let renderItems: React.ReactNode[] = items.map((item: any, index: number) => (

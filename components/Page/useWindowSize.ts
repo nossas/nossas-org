@@ -3,12 +3,10 @@ import { useState, useEffect } from "react";
 interface WindowSize {
   width: number;
   height: number;
+  isSSR?: boolean;
 }
 
 const useWindowSize = (): WindowSize => {
-  // if (typeof window !== "undefined") {
-  //   return { width: 1200, height: 800 };
-  // }
   const isSSR = typeof window === "undefined";
 
   const [windowSize, setWindowSize] = useState<WindowSize>({
@@ -28,7 +26,7 @@ const useWindowSize = (): WindowSize => {
     };
   }, []);
 
-  return windowSize;
+  return { ...windowSize, isSSR };
 };
 
 export default useWindowSize;
