@@ -14,7 +14,7 @@ const ImageTitle = ({
   src,
   title,
   alt,
-  w = ["40%", 300],
+  w = ["80%", null, null, null, 300],
   titleProps,
   ...props
 }: any) => (
@@ -27,6 +27,7 @@ const ImageTitle = ({
       alignItems="center"
       justifyContent="flex-end"
       textAlign="center"
+      margin="0 auto"
     >
       <Image src={src} alt={alt} {...props} />
       <Heading
@@ -81,9 +82,9 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       <Section
         alignItems="center"
         justifyContent="center"
-        direction="row"
+        direction={["column", null, null, "row"]}
         flexWrap="wrap"
-        spacing={[4, 16]}
+        spacing={16}
         px={["10px", "90px"]}
       >
         <ImageTitle
@@ -91,7 +92,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           src="/static/media/s3/mobilizacaohome.png"
           alt={t("content:images.home.etudonossas")}
           transform="rotate(10deg)"
-          w={["40%", 280]}
           title={t("content:blocks.home.grid.mobilization")}
         />
         <ImageTitle
