@@ -47,6 +47,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
         flexDirection="row"
         display="flex"
         alignItems="center"
+        fontSize={["16px", null, null, "21px"]}
         title={item.link}
       >
         <span>{`${item.link}`}</span>
