@@ -123,9 +123,10 @@
         "imageText": "Quem financia o NOSSAS"
       },
       "team": {
-        "title": "Equipe",
-        "directorship": "Valorizamos a equidade de gênero, por isso a diretoria do NOSSAS é composta apenas por mulheres:",
-        "board": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:"
+        "board": "Conselho",
+        "board_description": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:",
+        "leaders": "Lideranças",
+        "team": "Equipe"
       },
       "contact": "Entre em <b>contato</b>"
     },

@@ -15,7 +15,8 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import Team from "./_team";
+import { EmployeeTeam } from "../../components/Employee";
+import { board, leaders, team } from "./_team";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -131,10 +132,18 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
     {/* Equipe */}
     <Section direction="column" spacing="20px">
-      <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
-        {t("content:blocks.about.team.title")}
-      </Heading>
-      <Team />
+      <EmployeeTeam
+        title={t("content:blocks.about.team.board")}
+        members={board}
+      />
+      <EmployeeTeam
+        title={t("content:blocks.about.team.leaders")}
+        members={leaders}
+      />
+      <EmployeeTeam
+        title={t("content:blocks.about.team.team")}
+        members={team}
+      />
     </Section>
     {/* Na midia */}
     <Media
