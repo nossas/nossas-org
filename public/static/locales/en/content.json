@@ -29,23 +29,26 @@
     },
     "technologies": {
       "title": "Conheça nossas ferramentas de tecnologia"
+    },
+    "training": {
+      "title": "Receba treinamento em tecnologias de ativismo"
     }
   },
   "blocks": {
     "home": {
+      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "actionnow": "O que estamos <b>fazendo</b>",
       "doacao": {
         "title": "Faça uma <b>doação</b>",
-        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Para manter nossa independência, não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas públicas. Por isso, precisamos de você.",
-        "button": "Faça uma doação"
+        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho e no impaco que queremos ver no mundo. Não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas privadas. Contribua você também para nossas causas.",
+        "button": "Quero doar"
       },
-      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
       "grid": {
-        "mobilization": "Participe de uma mobilização",
+        "mobilization": "Junte-se a uma de nossas campanhas",
         "books": "Acesse nossos materiais educativos",
-        "learning": "Seja treinado em metodologias de mobilização",
-        "support": "Receba apoio para seu projeto",
-        "tech": "Use as melhores tecnologias para ativismo"
+        "learning": "Seja treinado em metodologias de ativismo",
+        "support": "Incube seu projeto conosco",
+        "tech": "Use as melhores tecnologias de ativismo"
       },
       "media": {
         "title": "NA <b>MÍDIA</b>"
@@ -75,6 +78,16 @@
         "2017": {
           "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
           "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
+        },
+        "2018": {
+          "bonde": "Começamos a testar o BONDE, uma plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas"
+        },
+        "2019": {
+          "maraton": "Nuestros hermanos pediram e nós atendemos! Em 2019 fizemos um ciclo de treinamento para ativistas da Colômbia, Guatemala e México em nossas metodologias e tecnologias de mobilização",
+          "programamobilizadores": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
+        },
+        "2020": {
+          "periferiaquefaz": "Jovens de periferias do Brasil puderam concorrer a um edital que concedeu recursos de até R$20 mil para que ideiasque só precisavam de um empurrãozinho fossemtiradas do papel."
         }
       },
       "impact": {
@@ -105,8 +118,8 @@
       },
       "financiers": {
         "title": "Quem financia o <b>NOSSAS</b>",
-        "description": "Nossos projetos são financiados por organizações filantrópicas nacionais e internacionais, como Open Society Foundation, OAK Foundation e Fundo Malala. Também recebemos apoio de pessoas físicas no país inteiro que acreditam em nosso trabalho e fazem doações mensais para manter nossas engrenagens funcionando. Prezando pela transparência e honestidade, anualmente fazemos uma auditoria de contas independente e divulgamos os resultados em nossos canais públicos.",
-        "button": "Você pode baixar esse documento aqui",
+        "description": "Somos financiados por algumas organizações internacionais e também recebemos apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela transparência, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
+        "button": "Baixar aqui",
         "imageText": "Quem financia o NOSSAS"
       },
       "team": {
@@ -147,11 +160,8 @@
         "title": "Projetos <b>Atuais</b>",
         "mapa": {
           "title": "Mapa do acolhimento",
-          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
-        },
-        "manaus": {
-          "title": "Minha manaus",
-          "description": "Inserir descrição. Ex: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
+          "action": "Saiba mais"
         }
       },
       "incubate": {
@@ -159,14 +169,15 @@
         "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
         "form": {
           "title": "Inscreva-se",
-          "submit": "Enviar"
+          "submit": "Enviar",
+          "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
         }
       }
     },
     "materials": {
       "manual": {
-        "title": "A gente preparou um manual incrível <b>pra você :)</b>",
-        "description": "Há uma década a gente vem se dedicando a fazer mobilizações que já reuniram milhares de pessoas e conseguiram inúmeras vitórias. Documentamos todos esses aprendizados para te ajudar a tirar sua campanha do papel. Vem!",
+        "title": "Baixe agora <b>seu manual</b>",
+        "description": "Fizemos um manual incrível com várias dicas para te ajudar a fazer sua própria campanha!",
         "link": "Baixar manual"
       },
       "learning": {
@@ -180,14 +191,15 @@
         "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto.",
         "form": {
           "title": "Baixar manual",
-          "submit": "Baixar"
+          "submit": "Baixar",
+          "success": "Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
         }
       }
     },
     "mobilizations": {
       "done": {
-        "title": "O que já fizemos",
-        "description": "Ao longo dos anos, conseguimos incontáveis vitórias e avanços em políticas públicas, que beneficiaram milhares de pessoas em todo o país. Chega mais e vem com a gente fazer parte da mudança!"
+        "title": "Vem com a <b>gente</b>",
+        "description": "Se você está procurando alguma forma de contribuir com uma causa, participe agora de uma de nossas campanhas. Chega mais e vem fazer parte da mudança!"
       },
       "doing": {
         "title": "O que estamos <b>fazendo</b>",
@@ -200,6 +212,11 @@
           "2": {
             "title": "Respira Manaus",
             "description": "A crise de saúde em Manaus continua muito grave! Os hospitais estão em colapso e a tendência é que o problema se espalhe pelo país. Pressione o Ministério da Saúde a cuidar dessa pauta."
+          },
+          "3": {
+            "title": "Tem gente com fome",
+            "description": "Após 1 ano de pandemia alcançamos a marca de mais de 275 mil vidas perdidas e outras milhares de famílias estão passando fome. Precisamos comprar comida, a fome não pode esperar.",
+            "action": "Participe da campanha"
           }
         }
       },
@@ -214,15 +231,25 @@
           "2": {
             "title": "4G para estudar",
             "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
+          },
+          "3": {
+            "title": "Auxílio pra saúde",
+            "description": "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais durante a pandemia ficaram muito expostas ao vírus. Conseguimos aprovar uma lei que garante indenização aos familiares desses profissionais que perderem a vida durante a crise da Covid19."
+          },
+          "4": {
+            "title": "Tô com elas",
+            "description": "Os casos de violência contra a mulher cresceram significativamente durante a pandemia. Com a ajuda de mais de 500 voluntárias, mapeamos os serviços públicos de atendimento emergencial para essas mulheres e agora temos mapeados os serviços especializados no Brasil inteiro."
           }
         }
       }
     },
     "technologies": {
+      "video": {
+        "title": "Feito pra causar"
+      },
       "emergence": {
         "title": "Assim surgiu <b>o BONDE</b>",
-        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma incrível de mobilização que agora está disponível para outras organizações causarem também.",
-        "more": "Saiba mais"
+        "description": "Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com um time incrível de tecnologia, desenvolvemos uma plataforma de mobilização que agora está disponível para outras organizações causarem também."
       },
       "functionalities": {
         "title": "Funcionalidades",
@@ -234,7 +261,7 @@
       },
       "partners": "Quem já causou <b>com o BONDE</b>",
       "campaingStories": {
-        "title": "Campanhas que fizeram história",
+        "title": "Campanhas que <b>fizeram história</b>",
         "carousel": {
           "action": "Saber mais",
           "1": {
@@ -244,13 +271,66 @@
           "2": {
             "title": "Amazônia Contra a Covid",
             "description": "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas."
+          },
+          "3": {
+            "title": "Mais do que palmas",
+            "description": "Foi uma campanha para que um pacote de emergência que daria melhores condições de trabalho aos médicos, enfermeiros, fisioterapeutas intensivistas, técnicos e auxiliares de enfermagem na linha de frente na guerra para combater a COVID-19 virasse lei."
+          },
+          "4": {
+            "title": "A hora é agora",
+            "description": "A All Out realizou uma campanha de pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!"
           }
         }
       },
       "bonde": {
         "title": "Use o BONDE para <b>causar</b>",
         "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, levantar recursos para sua organização, criar redes de solidariedade sem precisar sacar nadinha de programação.",
-        "button": "Saiba mais"
+        "button": "Contrate agora"
+      }
+    },
+    "training": {
+      "done": {
+        "title": "VEM APRENDER <b>COM A GENTE!</b>",
+        "description": "Temos um programa de treinamentos e mentoria gratuitos em ativismo para jovens do Brasil inteiro!"
+      },
+      "doing": {
+        "title": "Rolando <b>agora</b>",
+        "carousel": {
+          "1": {
+            "title": "Muvuca",
+            "description": "Nosso programa de ativismo climático está com inscrições abertas! Iremos treinar 30 jovens da região amazônica em pautas relacionadas às mudanças climáticas e meio ambiente.",
+            "action": "Saiba mais"
+          },
+          "2": {
+            "title": "Programa de mobilizadores",
+            "description": "As turmas deste programa recebem gratuitamente treinamento em mobilizações, comunicação de campanhas e tecnologias de ativismo.",
+            "action": "Inscreva-se para a próxima turma"
+          },
+          "3": {
+            "title": "Programa de jovens mobilizadoras",
+            "description": "É um programa voltado para jovens estudantes do Ensino Médio. No momento, em parceria com a Girl Up! estamos treinando 100 jovens meninas no tema pobreza menstrual.",
+            "action": "Saiba mais"
+          }
+        }
+      },
+      "victories": {
+        "title": "Vitórias do <b>programa</b>",
+        "carousel": {
+          "action": "Saber mais",
+          "1": {
+            "title": "B.O Online para elas - Minas Gerais",
+            "description": "O Coletivo Abertha conseguiu implementar a Delegacia Virtual do Estado de Minas Gerais depois de uma campanha que recebeu nossa mentoria. Agora, mulheres podem fazer seus boletins de ocorrência sem sair de casa."
+          },
+          "2": {
+            "title": "Revitalização do Farol - Maranhão",
+            "description": "Os ex-estudantes do Centro São José Operário, em São Luiz, participaram de nossa primeira turma e conseguiram através de uma campanha de pressão, a revitalização do Farol, onde acontecem atividades educacionais para a comunidade."
+          }
+        }
+      },
+      "program": {
+        "title": "Participe do <b>programa de mobilizadores</b>",
+        "description": "Temos treinamentos temáticos acontecendo durante o ano inteiro. Clique para saber os cronogramas e temas para 2021.",
+        "button": "Quero saber"
       }
     }
   }

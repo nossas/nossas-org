@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Button, Image } from "@chakra-ui/react";
+import { Button, Img as Image } from "@chakra-ui/react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -9,6 +9,7 @@ interface CarouselProps {
   items: React.ReactNode[];
   infiniteLoop?: boolean;
   isMobile?: boolean;
+  showStatus?: boolean;
 }
 
 interface ArrowProps {
@@ -49,18 +50,21 @@ const Arrow: React.FC<ArrowProps> = ({
 };
 
 const CarouselStyled: React.FC<CarouselProps> = styled(
-  ({ className, items, infiniteLoop }) => (
+  ({ className, items, infiniteLoop, showStatus }) => (
     <Carousel
       className={className}
       showThumbs={false}
       showIndicators={false}
       dynamicHeight={true}
-      showStatus={false}
+      showStatus={showStatus}
       infiniteLoop={infiniteLoop}
+      statusFormatter={(currentItem: number, total: number) =>
+        `${currentItem} / ${total}`
+      }
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <Arrow
           direction="previous"
-          disabled={!hasPrev}
+          disabled={!infiniteLoop && !hasPrev}
           label={label}
           onClick={onClickHandler}
         />
@@ -68,14 +72,14 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
       renderArrowNext={(onClickHandler, hasNext, label) => (
         <Arrow
           direction="next"
-          disabled={!hasNext}
+          disabled={!infiniteLoop && !hasNext}
           label={label}
           onClick={onClickHandler}
         />
       )}
     >
       {items.map((content: React.ReactNode, index: number) => (
-        <div key={index} style={{ padding: "10px 0" }}>
+        <div key={index} style={{ padding: "10px 5px" }}>
           {content}
         </div>
       ))}
@@ -85,6 +89,15 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
   .slide {
     background: none;
   }
+
+  .carousel-status {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 700;
+    color: #bcbec0;
+    text-shadow: none;
+  }
+
   .carousel-slider {
     display: flex;
     flex-direction: row;
@@ -101,6 +114,7 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
 
 CarouselStyled.defaultProps = {
   infiniteLoop: false,
+  showStatus: false,
 };
 
 export default CarouselStyled;

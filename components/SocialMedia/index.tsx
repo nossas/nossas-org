@@ -10,6 +10,10 @@ interface SocialMediaProps {
 }
 
 const MediaLink = styled(Link)`
+  :focus {
+    box-shadow: none;
+  }
+
   svg {
     path {
       fill: ${(props) => props.color};
@@ -22,6 +26,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
     <Stack direction="row" spacing={3}>
       <MediaLink
         href="https://instagram.com/_nossas"
+        target="_blank"
         title={t("social.icons.instagram")}
         color={color}
       >
@@ -29,6 +34,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
       </MediaLink>
       <MediaLink
         href="https://www.facebook.com/nossasorg/"
+        target="_blank"
         title={t("social.icons.facebook")}
         color={color}
       >
@@ -36,6 +42,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
       </MediaLink>
       <MediaLink
         href="https://www.twitter.com/_nossas"
+        target="_blank"
         title={t("social.icons.twitter")}
         color={color}
       >
@@ -43,6 +50,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
       </MediaLink>
       <MediaLink
         href="https://www.linkedin.com/company/nossas/"
+        target="_blank"
         title={t("social.icons.linkedin")}
         color={color}
       >
@@ -53,7 +61,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
 };
 
 SocialMedia.defaultProps = {
-  color: "nossas.pink",
+  color: "pink.main",
 };
 
 export default withTranslation("common")(SocialMedia);

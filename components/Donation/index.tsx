@@ -64,9 +64,10 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
   const tabProps: any = {
     fontSize: "18px",
     fontFamily: "Bebas Neue",
-    color: "nossas.gray",
-    _selected: { color: "nossas.blue" },
+    color: "gray.main",
+    _selected: { color: "blue.main" },
     textTransform: "uppercase",
+    fontWeight: "bold",
     p: "0 35px 0 0",
   };
   const tagPanelProps: any = {
@@ -107,7 +108,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
       initialValues={{
         ...yourDataInitialValues,
         ...cardInitialValues,
-        widget_id: parseInt(process.env.NEXT_PUBLIC_WIDGET_ID),
+        widget_id: parseInt(process.env.NEXT_PUBLIC_DONATION_WIDGET_ID),
         currency: i18n.language === "pt-BR" ? "brl" : "usd",
       }}
       validationSchema={isYourData ? YourDataSchema({ t }) : CardSchema({ t })}
@@ -187,7 +188,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
             ) : (
               <Stack spacing={6} mt="45px">
                 <Stack position="relative">
-                  <Heading as="h2" size="lg" color="green" fontWeight="normal">
+                  <Heading as="h2" color="green">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: t("donate.title", {
@@ -196,6 +197,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
                       }}
                     />
                   </Heading>
+                  {/* quebrar linha Faça sua doação */}
                   <Text size="sm">{t("donate.description")}</Text>
                   <Lock t={t} />
                 </Stack>
@@ -251,7 +253,7 @@ const CREATE_DONATION_GQL = gql`
 type ActivistInput = {
   name: string;
   email: string;
-  phone: string;
+  phone?: string;
 };
 
 type DonationInput = {

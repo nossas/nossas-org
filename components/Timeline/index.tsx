@@ -8,10 +8,28 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 import { Carousel } from "../../components/Slider";
 
+const BoxStyled = styled(Box)`
+  position: relative;
+  text-align: center;
+  border-top-width: 1px;
+
+  &:first-child {
+    border: none;
+  }
+`;
+
 export const ImageText = ({ src, text, alt }: any) => (
-  <Box textAlign="center">
+  <BoxStyled borderColor="gray.light" mb="10px">
+    <Box
+      width="2px"
+      height="40px"
+      backgroundColor="gray.light"
+      // left={["45%", null, "48%"]}
+      margin={["0 calc(45% + 5px)", null, "0 calc(48% + 3.5px)"]}
+    />
     <Flex
       height={["130px", "100px"]}
       alignItems="center"
@@ -19,31 +37,27 @@ export const ImageText = ({ src, text, alt }: any) => (
       direction="column"
       marginBottom="10px"
     >
-      <Image
-        transform={["scale(0.5, 0.5)", null, "scale(1, 1)"]}
-        src={src}
-        alt={alt}
-      />
+      <Image width="auto !important" height="auto" src={src} alt={alt} />
     </Flex>
     <Text size="xs" minH={["145px"]}>
       {text}
     </Text>
-  </Box>
+  </BoxStyled>
 );
 
 const Timeline = ({ title, children }: any) => (
-  <Stack direction="column" spacing="20px">
+  <Stack direction="column" spacing="0">
     <Box
       borderBottomWidth="1px"
-      borderBottomColor="nossas.lightgray"
+      borderBottomColor="gray.light"
       position="relative"
       paddingBottom="5px"
-      margin={["0 30%", null, "0"]}
+      margin={["0 30px", null, "0"]}
     >
       <Heading
         as="h3"
         size="sm"
-        color="nossas.darkgray"
+        color="gray.main"
         fontWeight="700"
         textAlign="center"
       >
@@ -53,13 +67,13 @@ const Timeline = ({ title, children }: any) => (
         width="11px"
         height="11px"
         borderRadius="full"
-        backgroundColor="nossas.lightgray"
+        backgroundColor="gray.light"
         position="absolute"
         bottom="-5px"
-        left={["45%", null, "49%"]}
+        left={["45%", null, "48%"]}
       />
     </Box>
-    <Stack flex="1" px="30px">
+    <Stack flex="1" px="30px" spacing="0">
       {children}
     </Stack>
   </Stack>
@@ -84,7 +98,7 @@ export const TimelineController: React.FC<ControllerProps> = ({
   items,
   isMobile,
 }) => {
-  const timeline: React.ReactNode[] = Object.keys(items).map(
+  let timelineItems: React.ReactNode[] = Object.keys(items).map(
     (year, index: number) => (
       <Timeline key={`timeline-${index}`} title={year}>
         {items[year].map((item, index) => (
@@ -98,13 +112,31 @@ export const TimelineController: React.FC<ControllerProps> = ({
       </Timeline>
     )
   );
-  if (!isMobile) {
-    return (
-      <SimpleGrid columns={Object.keys(items).length}>{timeline}</SimpleGrid>
-    );
-  } else {
-    return <Carousel isMobile={isMobile} items={timeline} />;
-  }
+
+  if (isMobile) return <Carousel isMobile items={timelineItems} />;
+
+  let timeline = [];
+  // Fix lists not multiple
+  let arrayLength = Number((Object.keys(items).length / 4).toFixed());
+  // Mount new list with ideal columns
+  Array.from(new Array(arrayLength)).forEach(() => {
+    let items = timelineItems.splice(0, 4);
+    const lastItemsCount = 4 - items.length;
+    if (lastItemsCount > 0) {
+      const part = timeline[timeline.length - 1];
+      items.unshift(part.slice(4 - lastItemsCount, 4));
+    }
+
+    timeline.push(items);
+  });
+
+  return (
+    <Carousel
+      items={timeline.map((items) => (
+        <SimpleGrid columns={items.length}>{items}</SimpleGrid>
+      ))}
+    />
+  );
 };
 
 TimelineController.defaultProps = {

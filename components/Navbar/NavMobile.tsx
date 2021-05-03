@@ -8,7 +8,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerHeader,
-  DrawerFooter,
+  Flex,
   useDisclosure,
 } from "@chakra-ui/react";
 import { FaTimes } from "react-icons/fa";
@@ -51,9 +51,14 @@ const NavMobile = ({ t, children }) => {
               alignItems="center"
               justifyContent="space-between"
             >
-              <Stack direction="row" spacing={6}>
-                <Button onClick={onClose}>
-                  <FaTimes />
+              <Stack
+                direction="row"
+                alignItems="center"
+                spacing={2}
+                marginLeft="-15px"
+              >
+                <Button onClick={onClose} size="lg" padding="0">
+                  <FaTimes width={13} height={11} />
                 </Button>
                 <NavLink href="/">
                   <Logo />
@@ -62,14 +67,18 @@ const NavMobile = ({ t, children }) => {
               <Donation variant="outline">{t("donate.button")}</Donation>
             </DrawerHeader>
 
-            <DrawerBody>
+            <DrawerBody display="flex" flexDirection="column">
               <Stack direction="column">{children}</Stack>
+              <Flex justifyContent="space-between" mt={16}>
+                <I18n />
+                <SocialMedia />
+              </Flex>
             </DrawerBody>
 
-            <DrawerFooter justifyContent="space-between">
+            {/* <DrawerFooter justifyContent="space-between">
               <I18n />
               <SocialMedia />
-            </DrawerFooter>
+            </DrawerFooter> */}
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>

@@ -62,7 +62,7 @@ const Team = () => (
         <Heading as="h3" size="md" fontWeight="bold">
           Alessandra Orofino
         </Heading>
-        <Text>Co-fundadora e Diretora Executiva</Text>
+        <Text size="sm">Co-fundadora e Diretora Executiva</Text>
       </Box>
       <Text>
         Formada em Economia e Direitos Humanos pela Columbia University, fellow
@@ -89,7 +89,7 @@ const Team = () => (
               <Heading as="h3" size="sm" fontWeight="bold">
                 {member.name}
               </Heading>
-              <Text>{member.role}</Text>
+              <Text size="sm">{member.role}</Text>
             </Box>
           </Stack>
         ))}

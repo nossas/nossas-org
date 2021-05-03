@@ -39,5 +39,15 @@ export const nossas = {
         },
       },
     },
+    FormLabel: {
+      sizes: {
+        xs: {
+          fontSize: ["xs"],
+        },
+      },
+      defaultProps: {
+        size: "xs",
+      },
+    },
   },
 };

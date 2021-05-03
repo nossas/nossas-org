@@ -2,7 +2,7 @@ export default {
   black: "#000000",
   white: "#FFFFFF",
   red: "#FF2B4E",
-  green: "#50E3C2",
+  green: "#00C3B0",
   yellow: "#FFAE00",
   gray: {
     dark: "#424242",

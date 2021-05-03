@@ -26,10 +26,9 @@ const DescriptionBox: React.FC<Props> = ({
     <Stack spacing={6}>
       <Heading
         as="h3"
-        size="3xl"
+        size="lg"
         color="pink.main"
-        fontWeight="normal"
-        maxW="360px"
+        maxW="340px"
         {...headingStyles}
       >
         {title}

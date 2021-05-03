@@ -8,10 +8,12 @@ import {
   UnorderedList,
   ListItem,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
-import Newsletter from "../Newsletter";
+// import Newsletter from "../Newsletter";
+import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
 const Footer = ({ t }) => {
@@ -27,28 +29,37 @@ const Footer = ({ t }) => {
         alignItems="baseline"
       >
         <div>
-          <img src="/static/media/logo.svg" alt="Logo do Nossas" />
+          <Link href="/">
+            <Image src="/static/media/logo.svg" alt="Logo do Nossas" />
+          </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="">{t("footer.about")}</Link>
+              <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.projects")}</Link>
+              <Link href="/incubations#projects">{t("footer.projects")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.work")}</Link>
+              <Link href="/#we-are-doing">{t("footer.work")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="">{t("footer.actvist")}</Link>
+              <Link href="/mobilizations">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
               <Donation variant="link">{t("footer.donate")}</Donation>
             </ListItem>
           </UnorderedList>
         </div>
-        <Newsletter />
+        <NewsletterForm />
         <div>
-          <Heading as="h5" color="blue.main" mb={5} fontWeight="bold">
+          <Heading
+            as="h5"
+            color="blue.main"
+            mb={5}
+            fontWeight="bold"
+            size="md"
+            maxW="190px"
+          >
             {t("social.title")}
           </Heading>
           <SocialMedia />

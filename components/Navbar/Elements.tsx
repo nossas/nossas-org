@@ -38,6 +38,7 @@ NavLink.defaultProps = {
 export const Bars = styled(FaBars)`
   color: #fff;
   font-size: 1.5rem;
+  transform: translate(15%, -30%);
 `;
 
 export const NavMenu = styled.div`
@@ -55,7 +56,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavSide = ({ children }) => (
-  <Stack spacing={[6, 8]} direction="row" alignItems="center">
+  <Stack spacing={[6, 8]} direction="row" alignItems="flex-end">
     {children}
   </Stack>
 );

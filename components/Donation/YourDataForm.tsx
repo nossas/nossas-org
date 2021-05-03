@@ -32,7 +32,7 @@ export const Fields: React.FC<FieldsProps> = ({ t }) => (
       name="phone"
       type="tel"
       label={t("donate.form.fields.phone.label")}
-      placeholder={t("donate.form.fields.phone.placeholder")}
+      placeholder="(99) 99999-9999"
     />
   </Stack>
 );

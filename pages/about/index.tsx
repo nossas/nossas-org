@@ -36,7 +36,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   <Body isMobile={ua.isMobile}>
     {/* Cover */}
     <Hero
+      maxWidth="520px"
       bgColor="white"
+      left="30%"
       title={t("content:covers.home.title")}
       titleColor="blue.main"
       titleAlign="left"
@@ -121,9 +123,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             }}
           />
         </Heading>
-        <Text textAlign={["center", "left"]}>
-          {t("content:blocks.about.financiers.description")}
-        </Text>
+        <Text>{t("content:blocks.about.financiers.description")}</Text>
         <Button padding="14px 37.5px">
           {t("content:blocks.about.financiers.button")}
         </Button>

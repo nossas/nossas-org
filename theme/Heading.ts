@@ -1,6 +1,6 @@
 export default {
   baseStyle: {
-    fontWeight: 400,
+    fontWeight: 200,
   },
   sizes: {
     sm: {
@@ -19,12 +19,13 @@ export default {
       color: "blue.main",
       fontSize: ["md", null, "lg"],
       fontWeight: "700",
-      paddingLeft: "15px",
-      borderLeftWidth: "3px",
-      borderLeftColor: "blue.main",
+      ":before": {
+        content: "url('/static/media/line.png')",
+        marginRight: "15px",
+      },
     },
   },
   defaultProps: {
-    size: "md",
+    size: "lg",
   },
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Img, Link, Stack, Text } from "@chakra-ui/react";
 
 type Item = {
   src: string;
@@ -15,22 +15,43 @@ export interface Props {
 }
 
 export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
-  <Box flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
-    <Image src={item.src} alt={item.alt} width="100%" height={[229, 380]} />
+  <Stack
+    flex={1}
+    boxShadow={["base"]}
+    rounded="base"
+    bgColor="white"
+    minHeight={["512px", null, "612px", null, "712px"]}
+  >
+    <Img
+      src={item.src}
+      alt={item.alt}
+      objectFit="fill"
+      boxSize={["230px", null, "305px", null, "380px"]}
+    />
     <Stack p={8} spacing={4} textAlign="left">
-      <Heading as="h3" fontWeight="bold">
-        {item.title}
-      </Heading>
-      <Text>{item.description}</Text>
       <Link
         href={item.href}
+        target="_blank"
+        title={item.title}
+        variant="inherit"
+      >
+        <Heading as="h3" fontWeight="bold" size="md">
+          {item.title}
+        </Heading>
+      </Link>
+      <Text size="sm">{item.description}</Text>
+      <Link
+        href={item.href}
+        target="_blank"
         variant="pink"
         flexDirection="row"
         display="flex"
         alignItems="center"
+        fontSize={["16px", null, null, "21px"]}
+        title={item.link}
       >
         <span>{`${item.link}`}</span>
-        <Image
+        <Img
           src="/static/media/icon-right-arrow-pink.png"
           width="10px !important"
           height="17px"
@@ -38,13 +59,5 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
         />
       </Link>
     </Stack>
-  </Box>
-);
-
-export const Group: React.FC<Props> = ({ items }) => (
-  <Stack direction="row" spacing={4}>
-    {items.map((item: Item, index: number) => (
-      <Panel key={index} items={item} />
-    ))}
   </Stack>
 );
