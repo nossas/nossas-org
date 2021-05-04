@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import {
   Box,
+  Button,
   Stack,
   Heading,
   Image,
@@ -31,13 +32,13 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
   return (
     <BoxStyled
       ref={ref}
-      cursor="pointer"
+      cursor={!isOpen ? "pointer" : "normal"}
       h={!isOpen ? "185px" : "auto"}
-      onClick={onOpen}
+      onClick={!isOpen ? onOpen : null}
       overflow="hidden"
       borderColor="gray.main"
     >
-      <Stack direction="row">
+      <Stack direction="row" position="relative">
         <Stack direction="column" paddingY="55px" spacing="25px" maxW="650px">
           {typeof data.title === "string" ? (
             <Heading as="h2" color="blue.main" size="md" maxW="265px">
@@ -53,10 +54,12 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
             </Link>
           )}
         </Stack>
-        <Box paddingY="15px">
+        <Box flex="1" paddingY="15px">
           <Image objectFit="cover" maxW="465px" src={data.image} />
         </Box>
-        <IconPlus transform={!isOpen} />
+        <Box onClick={onClose} cursor="pointer">
+          <IconPlus transform={!isOpen} />
+        </Box>
       </Stack>
     </BoxStyled>
   );

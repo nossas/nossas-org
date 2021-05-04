@@ -45,27 +45,27 @@
       },
       "grid": {
         "mobilization": {
-          "title": "Junte-se a uma de nossas campanhas",
+          "title": "Junte-se a uma de <b>nossas campanhas</b>",
           "about": "Conheça as causas nas quais estamos engajados no momento e participe de nossa luta pela defesa de direitos e fortalecimento da democracia.",
           "link": "Veja as campanhas ativas"
         },
         "books": {
-          "title": "Acesse nossos materiais educativos",
+          "title": "Acesse nossos <b>materiais educativos</b>",
           "about": "Disponibilizamos um material super completo e com várias dicas para ajudar seu coletivo ou organização a aumentar o seu impacto.",
           "link": "Acesse a página"
         },
         "learning": {
-          "title": "Seja treinado em metodologias de ativismo",
+          "title": "Seja treinado em <b>metodologias de ativismo</b>",
           "about": "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
           "link": "Confira nosso cronograma"
         },
         "support": {
-          "title": "Incube seu projeto conosco",
+          "title": "Incube seu <b>projeto conosco</b>",
           "about": "Receba capacitação, apoio e mentoria através do programa de incubação. Nós aceleramos projetos de mobilização e solidariedade que querem causar impacto no mundo.",
           "link": "Acesse a página"
         },
         "tech": {
-          "title": "Use as melhores tecnologias de ativismo",
+          "title": "Use as melhores <b>tecnologias de ativismo</b>",
           "about": "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
           "link": "Conheça o BONDE"
         }

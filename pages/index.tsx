@@ -10,41 +10,6 @@ import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
 import { withTranslation, I18nInitialProps } from "../i18n";
 
-const ImageTitle = ({
-  href,
-  src,
-  title,
-  alt,
-  w = ["80%", null, null, null, 300],
-  titleProps,
-  ...props
-}: any) => (
-  <Link href={href} target="_self">
-    <Stack
-      direction="column"
-      spacing={6}
-      w={w}
-      h={[250, 345]}
-      alignItems="center"
-      justifyContent="flex-end"
-      textAlign="center"
-      margin="0 auto"
-    >
-      <Image src={src} alt={alt} {...props} />
-      <Heading
-        as="h4"
-        size="sm"
-        color="blue.main"
-        textTransform="uppercase"
-        fontWeight="bold"
-        {...(titleProps || {})}
-      >
-        {title}
-      </Heading>
-    </Stack>
-  </Link>
-);
-
 interface Props extends WithUserAgentProps {
   t: any;
 }
@@ -93,7 +58,13 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             {
               title: (
                 <Heading as="h2" color="blue.main" size="md" maxW="265px">
-                  {t("content:blocks.home.grid.mobilization.title")}
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("content:blocks.home.grid.mobilization.title", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/mobilizacaohome.png",
@@ -105,8 +76,14 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="285px">
-                  {t("content:blocks.home.grid.books.title")}
+                <Heading as="h2" color="blue.main" size="md" maxW="295px">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("content:blocks.home.grid.books.title", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/materiaiseducativoshome.png",
@@ -118,8 +95,14 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="345px">
-                  {t("content:blocks.home.grid.learning.title")}
+                <Heading as="h2" color="blue.main" size="md" maxW="365px">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("content:blocks.home.grid.learning.title", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/treinamentohome.png",
@@ -131,8 +114,14 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="225px">
-                  {t("content:blocks.home.grid.support.title")}
+                <Heading as="h2" color="blue.main" size="md" maxW="235px">
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("content:blocks.home.grid.support.title", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/apoioprojetohome.png",
@@ -145,7 +134,13 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             {
               title: (
                 <Heading as="h2" color="blue.main" size="md" maxW="345px">
-                  {t("content:blocks.home.grid.tech.title")}
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("content:blocks.home.grid.tech.title", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/tecnologiashome.png",
