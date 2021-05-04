@@ -131,7 +131,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
     {/* Equipe */}
-    <Section direction="column" spacing="20px">
+    <Section direction="column" spacing="100px">
       <EmployeeTeam
         title={t("content:blocks.about.team.board")}
         members={board}

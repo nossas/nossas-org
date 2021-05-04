@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
 import Donation from "../components/Donation";
+import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
 import { withTranslation, I18nInitialProps } from "../i18n";
 
@@ -87,37 +88,74 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         spacing={16}
         px={["10px", "90px"]}
       >
-        <ImageTitle
-          href="/mobilizations"
-          src="/static/media/s3/mobilizacaohome.png"
-          alt={t("content:images.home.etudonossas")}
-          transform="rotate(10deg)"
-          title={t("content:blocks.home.grid.mobilization")}
-        />
-        <ImageTitle
-          href="/materials"
-          src="/static/media/s3/materiaiseducativoshome.png"
-          alt={t("content:images.home.etudonossas")}
-          title={t("content:blocks.home.grid.books")}
-        />
-        <ImageTitle
-          href="/trainings"
-          src="/static/media/s3/treinamentohome.png"
-          alt={t("content:images.home.etudonossas")}
-          title={t("content:blocks.home.grid.learning")}
-        />
-        <ImageTitle
-          href="/incubations"
-          src="/static/media/s3/apoioprojetohome.png"
-          alt={t("content:images.home.etudonossas")}
-          title={t("content:blocks.home.grid.support")}
-          titleProps={{ maxW: "180px" }}
-        />
-        <ImageTitle
-          href="/technologies"
-          src="/static/media/s3/tecnologiashome.png"
-          alt={t("content:images.home.etudonossas")}
-          title={t("content:blocks.home.grid.tech")}
+        <Navigation
+          items={[
+            {
+              title: (
+                <Heading as="h2" color="blue.main" size="md" maxW="265px">
+                  {t("content:blocks.home.grid.mobilization.title")}
+                </Heading>
+              ),
+              image: "/static/media/s3/mobilizacaohome.png",
+              about: t("content:blocks.home.grid.mobilization.about"),
+              navigation: {
+                href: "/mobilizations",
+                title: t("content:blocks.home.grid.mobilization.link"),
+              },
+            },
+            {
+              title: (
+                <Heading as="h2" color="blue.main" size="md" maxW="285px">
+                  {t("content:blocks.home.grid.books.title")}
+                </Heading>
+              ),
+              image: "/static/media/s3/materiaiseducativoshome.png",
+              about: t("content:blocks.home.grid.books.about"),
+              navigation: {
+                href: "/materials",
+                title: t("content:blocks.home.grid.books.link"),
+              },
+            },
+            {
+              title: (
+                <Heading as="h2" color="blue.main" size="md" maxW="345px">
+                  {t("content:blocks.home.grid.learning.title")}
+                </Heading>
+              ),
+              image: "/static/media/s3/treinamentohome.png",
+              about: t("content:blocks.home.grid.learning.about"),
+              navigation: {
+                href: "/materials",
+                title: t("content:blocks.home.grid.learning.link"),
+              },
+            },
+            {
+              title: (
+                <Heading as="h2" color="blue.main" size="md" maxW="225px">
+                  {t("content:blocks.home.grid.support.title")}
+                </Heading>
+              ),
+              image: "/static/media/s3/apoioprojetohome.png",
+              about: t("content:blocks.home.grid.support.about"),
+              navigation: {
+                href: "/incubations",
+                title: t("content:blocks.home.grid.support.link"),
+              },
+            },
+            {
+              title: (
+                <Heading as="h2" color="blue.main" size="md" maxW="345px">
+                  {t("content:blocks.home.grid.tech.title")}
+                </Heading>
+              ),
+              image: "/static/media/s3/tecnologiashome.png",
+              about: t("content:blocks.home.grid.tech.about"),
+              navigation: {
+                href: "/technologies",
+                title: t("content:blocks.home.grid.tech.link"),
+              },
+            },
+          ]}
         />
       </Section>
       <Section id="we-are-doing" direction="column" spacing={8}>
