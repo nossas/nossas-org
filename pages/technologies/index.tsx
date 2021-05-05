@@ -16,6 +16,7 @@ import {
   Img as Image,
   SimpleGrid,
   AspectRatio,
+  color,
 } from "@chakra-ui/react";
 // import { SliderPanel } from "../../components/Slider";
 import { ImageTextListBox } from "../../content";
@@ -117,22 +118,57 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <SimpleGrid
-        columns={[1, null, null, 3]}
-        rowGap="30px"
-        alignItems="center"
-        justifyItems="center"
-      >
-        <Link href="https://www.institutomariellefranco.org/" target="_blank">
-          <Image src="/static/media/s3/mariellefranco.png" />
-        </Link>
-        <Link href="https://allout.org/pt" target="_blank">
-          <Image src="/static/media/s3/allout.png" />
-        </Link>
-        <Link href="https://criola.org.br/" target="_blank">
-          <Image src="/static/media/s3/criola.png" />
-        </Link>
-      </SimpleGrid>
+
+      <Box>
+        <SimpleGrid
+          columns={[1, null, null, 3]}
+          gap="30px"
+          alignItems="center"
+          justifyItems="center"
+          marginBottom="30px"
+        >
+          <Link href="https://igarape.org.br/" target="_blank">
+            <Image src="/static/media/s3/institutoigarape.png" />
+          </Link>
+          <Link href="http://www.global.org.br/" target="_blank">
+            <Image src="/static/media/s3/justicaglobal.png" />
+          </Link>
+          <Link
+            href="https://transparenciainternacional.org.br/"
+            target="_blank"
+          >
+            <Image src="/static/media/s3/transparenciainternacional.png" />
+          </Link>
+          <Link href="https://www.techo.org/" target="_blank">
+            <Image src="/static/media/s3/teto.png" />
+          </Link>
+          <Link href="https://www.conectas.org/" target="_blank">
+            <Image src="/static/media/s3/conectas.png" />
+          </Link>
+          <Link href="https://www.institutomariellefranco.org/" target="_blank">
+            <Image src="/static/media/s3/mariellefranco.png" />
+          </Link>
+        </SimpleGrid>
+        <SimpleGrid
+          columns={[1, null, null, 4]}
+          rowGap="30px"
+          alignItems="center"
+          justifyItems="center"
+        >
+          <Link href="https://abong.org.br/" target="_blank">
+            <Image src="/static/media/s3/abong.png" />
+          </Link>
+          <Link href="https://www.wwf.org.br/" target="_blank">
+            <Image src="/static/media/s3/wwf.png" />
+          </Link>
+          <Link href="https://allout.org/pt" target="_blank">
+            <Image src="/static/media/s3/allout.png" />
+          </Link>
+          <Link href="https://soudapaz.org/" target="_blank">
+            <Image src="/static/media/s3/institutosoudapaz.png" />
+          </Link>
+        </SimpleGrid>
+      </Box>
     </Section>
     <Section direction="column" spacing="30px">
       <Heading as="h2" color="pink.main">
@@ -215,14 +251,17 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         ]}
       />
     </Section>
-    <Section direction={["column", null, null, "row"]} spacing="120px">
+    <Section
+      direction={["column", null, null, "row"]}
+      spacing={["40px", null, "109px"]}
+      justifyContent="center"
+    >
       <Image
-        src="/static/media/s3/technologies-computer.png"
+        src="/static/media/s3/technologies-teste.png"
         alt="Computer Image"
-        transform="scale(0.8)"
       />
-      <Stack spacing="30px">
-        <Heading as="h2" color="green" maxW="300px" size="lg">
+      <Box>
+        <Heading as="h2" color="green" maxW="249px" size="lg">
           <div
             dangerouslySetInnerHTML={{
               __html: t("content:blocks.technologies.bonde.title", {
@@ -231,11 +270,13 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             }}
           />
         </Heading>
-        <Text>{t("content:blocks.technologies.bonde.description")}</Text>
+        <Text maxW="569px" marginBottom="25px">
+          {t("content:blocks.technologies.bonde.description")}
+        </Text>
         <Button maxW="190px">
           {t("content:blocks.technologies.bonde.button")}
         </Button>
-      </Stack>
+      </Box>
     </Section>
   </Body>
 );
