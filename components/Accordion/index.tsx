@@ -55,7 +55,12 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           )}
         </Stack>
         <Box flex="1" paddingY="15px">
-          <Image objectFit="cover" maxW="465px" src={data.image} />
+          <Image
+            margin="0 auto"
+            objectFit="cover"
+            maxW="465px"
+            src={data.image}
+          />
         </Box>
         <Box onClick={onClose} cursor="pointer">
           <IconPlus transform={!isOpen} />
@@ -76,7 +81,7 @@ export type Item = {
 };
 
 export const Navigation: React.FC<{ items: Item[] }> = ({ items }) => (
-  <Stack>
+  <Stack flex="1">
     {items.map((data, index: number) => (
       <NavigationItem key={`navigation-${index}`} data={data} />
     ))}

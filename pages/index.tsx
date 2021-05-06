@@ -23,26 +23,30 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         videoUrl="/static/media/covers/home.mov"
       />
       <Section
-        justifyContent={["flex-start", "center"]}
-        alignItems={["flex-start", "center"]}
-        direction={["column", "row"]}
-        spacing={["30px", "60px"]}
+        justifyContent={["flex-start"]}
+        alignItems={["flex-start", "flex-start"]}
+        direction={["column", null, null, null, "row"]}
+        spacing={["30px", null, null, null, "245px"]}
       >
-        <Image
-          maxW={[155, 250]}
-          src="/static/media/s3/etudonossas.png"
-          alt={t("content:images.home.etudonossas")}
-        />
-        <Stack spacing={6} direction="column" maxW="500px">
-          <Text>{t("content:blocks.home.etudonossas")}</Text>
-          <Link
+        <Heading as="h2" color="pink.main" size="md" minW="245px">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.home.etudonossas.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        </Heading>
+        <Stack spacing={6} direction="column">
+          <Text>{t("content:blocks.home.etudonossas.description")}</Text>
+          {/* <Link
             href="/about"
             target="_self"
             title={t("content:links.knowmore")}
             color="pink.main"
           >
             {t("content:links.knowmore")} +
-          </Link>
+          </Link> */}
         </Stack>
       </Section>
       <Section
