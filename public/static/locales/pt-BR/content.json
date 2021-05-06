@@ -28,7 +28,7 @@
       "title": "Junte-se agora a uma de nossas campanhas!"
     },
     "technologies": {
-      "title": "Conheça nossas ferramentas de tecnologia"
+      "title": "Conheça o BONDE, nossa ferramenta de tecnologia"
     },
     "training": {
       "title": "Receba treinamento em tecnologias de ativismo"
@@ -157,9 +157,10 @@
       },
       "offer": {
         "title": "A gente oferece",
-        "mobilization": "Formação nas principais ferramentas de mobilização",
-        "peoples": "Formação em gestão de pessoas e voluntários",
-        "communication": "Formação em comunicação em larga escala"
+        "communication": "Formação em ferramentas e estratégias de comunicação",
+        "mobilization": "Transferência de metodologias e tecnologias de mobilização",
+        "branding": "Criação e posicionamento de marca",
+        "training": "Soluções em organização de pessoas, treinamentos e gestão de voluntários"
       },
       "projects": {
         "title": "O que já <b>incubamos</b>",
