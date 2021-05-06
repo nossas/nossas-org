@@ -37,16 +37,19 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   <Body isMobile={ua.isMobile}>
     {/* Cover */}
     <Hero
-      maxWidth="520px"
-      bgColor="white"
-      left="30%"
-      title={t("content:covers.home.title")}
-      titleColor="blue.main"
+      maxWidth="860px"
+      bgColor="blue.main"
+      left="50%"
+      title={t("content:covers.about.title")}
+      titleColor="white"
       titleAlign="left"
     />
     {/* History */}
-    <Section direction={["column", "row"]} spacing={["40px", "115px"]}>
-      <Heading as="h2" variant="tag">
+    <Section
+      direction={["column", null, null, "row"]}
+      spacing={["40px", null, null, "115px"]}
+    >
+      <Heading as="h2" variant="tag" minW="110px">
         {t("content:blocks.about.history.title")}
       </Heading>
       <Text maxW={["925px"]}>

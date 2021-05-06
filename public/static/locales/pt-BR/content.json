@@ -18,6 +18,9 @@
     "home": {
       "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
     },
+    "about": {
+      "title": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário"
+    },
     "incubations": {
       "title": "Incube seu projeto com a gente!"
     },
@@ -36,7 +39,10 @@
   },
   "blocks": {
     "home": {
-      "etudonossas": "Há uma década desenvolvemos projetos, táticas e estratégias de mobilização no Brasil inteiro.",
+      "etudonossas": {
+        "title": "Junte-se <b>a nós</b>",
+        "description": "O NOSSAS apoia indivíduos, coletivos e organizações em sua luta por direitos e melhores políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a criação de mobilizações de impacto. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
+      },
       "actionnow": "O que estamos <b>fazendo</b>",
       "doacao": {
         "title": "Faça uma <b>doação</b>",
