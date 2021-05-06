@@ -23,6 +23,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         videoUrl="/static/media/covers/home.mp4"
       />
       <Section
+        id="join-us"
         justifyContent={["flex-start"]}
         alignItems={["flex-start", "flex-start"]}
         direction={["column", null, null, null, "row"]}
@@ -39,14 +40,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         </Heading>
         <Stack spacing={6} direction="column">
           <Text>{t("content:blocks.home.etudonossas.description")}</Text>
-          {/* <Link
-            href="/about"
-            target="_self"
-            title={t("content:links.knowmore")}
-            color="pink.main"
-          >
-            {t("content:links.knowmore")} +
-          </Link> */}
         </Stack>
       </Section>
       <Section

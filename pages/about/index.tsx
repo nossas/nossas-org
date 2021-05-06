@@ -44,6 +44,22 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="left"
     />
+    {/* Tudo Nossas */}
+    <Section
+      justifyContent={["flex-start", null, null, "center"]}
+      alignItems={["flex-start", null, null, "center"]}
+      direction={["column", null, null, "row"]}
+      spacing={["30px", "115px"]}
+    >
+      <Image
+        maxW={[155, 165]}
+        src="/static/media/s3/etudonossas.png"
+        alt={t("content:images.about.etudonossas")}
+      />
+      <Stack spacing={6} direction="column" maxW="500px">
+        <Text>{t("content:blocks.about.etudonossas")}</Text>
+      </Stack>
+    </Section>
     {/* History */}
     <Section
       direction={["column", null, null, "row"]}
