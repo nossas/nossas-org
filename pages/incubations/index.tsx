@@ -89,22 +89,28 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Text>
     </Section>
     <ImageTextListBox
+      width="335px"
       title={t("content:blocks.incubations.offer.title")}
       items={[
-        {
-          src: "/static/media/assets/icon-mobilizations.png",
-          alt: "Mobilizações",
-          description: t("content:blocks.incubations.offer.mobilization"),
-        },
-        {
-          src: "/static/media/assets/icon-network.png",
-          alt: "Network",
-          description: t("content:blocks.incubations.offer.peoples"),
-        },
         {
           src: "/static/media/assets/icon-communication.png",
           alt: "Comunicação",
           description: t("content:blocks.incubations.offer.communication"),
+        },
+        {
+          src: "/static/media/assets/icon-mobilization-technology.png",
+          alt: "Tecnologia de mobilização",
+          description: t("content:blocks.incubations.offer.mobilization"),
+        },
+        {
+          src: "/static/media/assets/icon-branding.png",
+          alt: "Posicionamento de marca",
+          description: t("content:blocks.incubations.offer.branding"),
+        },
+        {
+          src: "/static/media/assets/icon-training.png",
+          alt: "Treinamento",
+          description: t("content:blocks.incubations.offer.training"),
         },
       ]}
     />

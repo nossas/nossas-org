@@ -30,7 +30,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   <Body isMobile={ua.isMobile}>
     {/* Cover */}
     <Hero
-      maxWidth="470px"
+      maxWidth="380px"
       videoUrl="/static/media/covers/technologies.mp4"
       title={t("content:covers.technologies.title")}
       titleColor="white"
@@ -91,23 +91,33 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     />
     <Section
       direction={["column", null, null, "row"]}
-      justifyContent="space-between"
-      spacing={8}
+      spacing={["40px", null, "109px"]}
+      justifyContent="center"
     >
-      <Heading as="h2" variant="tag">
-        {t("content:blocks.technologies.video.title")}
-      </Heading>
-      <AspectRatio
-        maxH={["315px", null, null, null, "460px"]}
-        width={["auto", null, "560px", null, "820px"]}
-        ratio={16 / 9}
-      >
-        <iframe title="BONDE" src="https://www.youtube.com/embed/I946ueDvVmI" />
-      </AspectRatio>
+      <Image src="/static/media/s3/computer.png" alt="Computer Image" />
+      <Box>
+        <Heading as="h2" color="green" maxW="249px" size="lg">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.technologies.bonde.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        </Heading>
+        <Text maxW="569px" marginBottom="25px">
+          {t("content:blocks.technologies.bonde.description")}
+        </Text>
+        <Button maxW="190px">
+          {t("content:blocks.technologies.bonde.button")}
+        </Button>
+      </Box>
     </Section>
     <Section
       direction={["column", null, null, "row"]}
-      spacing={["30px", null, null, "140px"]}
+      justifyContent="space-between"
+      spacing={8}
+      backgroundColor="#F7F7F7"
     >
       <Heading as="h2" color="blue.main" maxW={["100%", null, null, "350px"]}>
         <div
@@ -250,33 +260,6 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           },
         ]}
       />
-    </Section>
-    <Section
-      direction={["column", null, null, "row"]}
-      spacing={["40px", null, "109px"]}
-      justifyContent="center"
-    >
-      <Image
-        src="/static/media/s3/technologies-teste.png"
-        alt="Computer Image"
-      />
-      <Box>
-        <Heading as="h2" color="green" maxW="249px" size="lg">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.technologies.bonde.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
-        </Heading>
-        <Text maxW="569px" marginBottom="25px">
-          {t("content:blocks.technologies.bonde.description")}
-        </Text>
-        <Button maxW="190px">
-          {t("content:blocks.technologies.bonde.button")}
-        </Button>
-      </Box>
     </Section>
   </Body>
 );

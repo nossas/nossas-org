@@ -58,12 +58,12 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           description: t("content:blocks.materials.learning.strategy"),
         },
         {
-          src: "/static/media/assets/icon-launch-color.png",
-          alt: "Icone Launch",
+          src: "/static/media/assets/icon-target.png",
+          alt: "Icone Target",
           description: t("content:blocks.materials.learning.target"),
         },
         {
-          src: "/static/media/assets/icon-question-color.png",
+          src: "/static/media/assets/icon-question-pink.png",
           alt: "Icone Question",
           description: t("content:blocks.materials.learning.create"),
         },
