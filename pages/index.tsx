@@ -20,7 +20,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       {/* Cover */}
       <Hero
         title={t("content:covers.home.title")}
-        videoUrl="/static/media/covers/home.mov"
+        videoUrl="/static/media/covers/home.mp4"
       />
       <Section
         justifyContent={["flex-start"]}
