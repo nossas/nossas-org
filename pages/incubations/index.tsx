@@ -89,7 +89,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Text>
     </Section>
     <ImageTextListBox
-      width="335px"
+      width="330px"
       title={t("content:blocks.incubations.offer.title")}
       items={[
         {

@@ -40,7 +40,7 @@
       "actionnow": "O que estamos <b>fazendo</b>",
       "doacao": {
         "title": "Faça uma <b>doação</b>",
-        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho e no impaco que queremos ver no mundo. Não recebemos dinheiro de partidos políticos, concessionárias de serviços públicos ou empresas privadas. Contribua você também para nossas causas.",
+        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho. Não recebemos dinheiro de concessionárias de serviços públicos, empresas privadas ou partidos políticos, e auditamos anualmente nossas contas com profissionais independentes. Contribua você também!",
         "button": "Quero doar"
       },
       "grid": {

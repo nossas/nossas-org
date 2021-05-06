@@ -7,19 +7,24 @@
     }
   },
   "home": {
+      "liberaotablet": {
+      "title": "Libera o tablet",
+      "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+      "action": "Pressione para liberar o tablet"
+    },
+    "metroaumentonao": {
+      "title": "Metrô, Aumento Não!",
+      "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
+      "action": "Pressione para barrar o aumento"
+    },
     "rendabasica": {
       "title": "Auxílio até o fim da pandemia",
-      "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. Nossa campanha é para lutar pela continuação da distribuição de recursos enquanto durar a crise.",
+      "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
       "action": "Participe da campanha"
-    },
-    "programademobilizadores": {
-      "title": "Programa de Mobilizadores",
-      "description": "Oferecemos treinamento em ativismo para quem quer fazer mobilizações de impacto em suas cidades. A primeira turma de 2021 começa em março.",
-      "action": "Inscreva-se"
     },
     "temgentecomfome": {
       "title": "Tem gente com fome",
-      "description": "Após 1 ano de pandemia alcançamos a marca de mais de 275 mil vidas perdidas e outras milhares de famílias estão passando fome. Precisamos comprar comida, a fome não pode esperar.",
+      "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
       "action": "Participe da campanha"
     }
   }

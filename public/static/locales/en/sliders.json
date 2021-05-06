@@ -7,15 +7,25 @@
     }
   },
   "home": {
-    "actionnow": {
-      "1": {
-        "title": "Auxílio até o fim da pandemia",
-        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. Nossa campanha é para lutar pela continuação da distribuição de recursos enquanto durar a crise."
-      },
-      "2": {
-        "title": "Programa de Mobilizadores",
-        "description": "Inscreva-se para as turmas para aprender a fazer mobilizações de impacto na sua cidade. As inscrições estarão abertas a partir de fevereiro."
-      }
-    }
+    "liberaotablet": {
+    "title": "Libera o tablet",
+    "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+    "action": "Pressione para liberar o tablet"
+  },
+  "metroaumentonao": {
+    "title": "Metrô, Aumento Não!",
+    "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
+    "action": "Pressione para barrar o aumento"
+  },
+  "rendabasica": {
+    "title": "Auxílio até o fim da pandemia",
+    "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+    "action": "Participe da campanha"
+  },
+  "temgentecomfome": {
+    "title": "Tem gente com fome",
+    "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+    "action": "Participe da campanha"
   }
+}
 }

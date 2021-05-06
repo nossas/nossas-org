@@ -153,7 +153,13 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           ]}
         />
       </Section>
-      <Section id="we-are-doing" direction="column" spacing={8}>
+      <Section
+        id="we-are-doing"
+        direction="column"
+        spacing={8}
+        backgroundColor="#F7F7F7;
+"
+      >
         <Heading as="h2" size="lg" color="pink.main">
           <div
             dangerouslySetInnerHTML={{
@@ -168,22 +174,28 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           isMobile={ua.isMobile}
           items={[
             {
+              alt: t("sliders:home.liberaotablet.title"),
+              src: "/static/media/s3/liberaotablet.png",
+              title: t("sliders:home.liberaotablet.title"),
+              description: t("sliders:home.liberaotablet.description"),
+              link: t("sliders:home.liberaotablet.action"),
+              href: "https://www.liberaotablet.minhasampa.org.br/",
+            },
+            {
+              alt: t("sliders:home.metroaumentonao.title"),
+              src: "/static/media/s3/metroaumentonao.png",
+              title: t("sliders:home.metroaumentonao.title"),
+              description: t("sliders:home.metroaumentonao.description"),
+              link: t("sliders:home.metroaumentonao.action"),
+              href: "https://www.metroaumentonao.meurio.org.br/",
+            },
+            {
               alt: t("sliders:home.rendabasica.title"),
               src: "/static/media/s3/rendabasica.png",
               title: t("sliders:home.rendabasica.title"),
               description: t("sliders:home.rendabasica.description"),
               link: t("sliders:home.rendabasica.action"),
               href: "https://www.auxilioateofimdapandemia.org/",
-            },
-            {
-              alt: t("sliders:home.programademobilizadores.title"),
-              src: "/static/media/s3/programademobilizadores.png",
-              title: t("sliders:home.programademobilizadores.title"),
-              description: t(
-                "sliders:home.programademobilizadores.description"
-              ),
-              link: t("sliders:home.programademobilizadores.action"),
-              href: "https://www.mobilizadores.nossas.org/",
             },
             {
               alt: t("sliders:home.temgentecomfome.title"),
@@ -224,7 +236,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               }}
             />
           </Heading>
-          <Text textAlign={["center", "left"]}>
+          <Text textAlign={["center", "left"]} maxW="711px">
             {t("content:blocks.home.doacao.description")}
           </Text>
           <Donation maxW={190}>
