@@ -25,8 +25,6 @@ export type Employee = {
   networks?: Record<string, string>;
 };
 
-const EmployeeDetails = () => <h2>Employee Details</h2>;
-
 const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
   handleClose,
   data,

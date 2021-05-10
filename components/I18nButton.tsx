@@ -1,15 +1,18 @@
 import React from "react";
 import styled from "@emotion/styled";
-import NextI18n from "../i18n";
+import { useTranslation } from "next-i18next";
+// import NextI18n from "../i18n";
 
-const { withTranslation, i18n } = NextI18n;
+// const { withTranslation, i18n } = NextI18n;
 
 const ButtonStyled = styled.button`
   border: none;
   outline: none;
 `;
 
-const I18nButton = ({ t }) => {
+const I18nButton = () => {
+  const { t } = useTranslation("common");
+
   const changeLanguage = () => {
     // i18n.changeLanguage(i18n.language === "pt-BR" ? "en" : "pt-BR");
     window.open("https://www.en.nossas.org/", "_self");
@@ -22,4 +25,4 @@ const I18nButton = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(I18nButton);
+export default I18nButton;

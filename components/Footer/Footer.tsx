@@ -10,13 +10,16 @@ import {
   Link,
   Image,
 } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
+import { useTranslation } from "next-i18next";
 import Donation from "../Donation";
 // import Newsletter from "../Newsletter";
 import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
-const Footer = ({ t }) => {
+const Footer = () => {
+  const { t } = useTranslation("common");
+
   return (
     <footer>
       <Grid
@@ -69,4 +72,4 @@ const Footer = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(Footer);
+export default Footer;

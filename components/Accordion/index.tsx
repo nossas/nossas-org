@@ -16,7 +16,7 @@ import IconPlus from "./IconPlus";
 const BoxStyled = styled(Box)`
   border-bottom-width: 1px;
 
-  &:first-child {
+  &:first-of-type {
     border-top-width: 1px;
   }
 `;

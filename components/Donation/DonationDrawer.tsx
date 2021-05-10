@@ -5,19 +5,13 @@ import {
   DrawerBody,
   DrawerContent,
   DrawerCloseButton,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Image,
-  useDisclosure,
 } from "@chakra-ui/react";
 import { Form } from "formik";
 
-import { withTranslation } from "../../i18n";
-
 interface DonationProps {
-  t: any;
-  onClick: any;
   btnText: string;
   isDisabled: boolean;
   onSubmit?: any;
@@ -26,7 +20,6 @@ interface DonationProps {
 }
 
 const Donation: React.FC<DonationProps> = ({
-  t,
   children,
   onSubmit,
   btnText,
@@ -74,4 +67,4 @@ const Donation: React.FC<DonationProps> = ({
   );
 };
 
-export default withTranslation("common")(Donation);
+export default Donation;

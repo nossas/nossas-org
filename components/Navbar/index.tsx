@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
+import { useTranslation } from "next-i18next";
 import Donation from "../Donation";
 import I18n from "../I18nButton";
 import Logo from "./Brand";
@@ -21,7 +22,9 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => (
   </>
 );
 
-const Navbar: React.FC<{ t: any }> = ({ t }) => {
+const Navbar: React.FC = () => {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Nav>
@@ -47,6 +50,6 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(Navbar);
+export default Navbar;
 
 export { default as Brand } from "./Brand";

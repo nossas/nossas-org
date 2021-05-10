@@ -245,9 +245,9 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
 };
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "sliders", "content"],
+  namespacesRequired: ["common", "sliders", "content", "team"],
 });
 
 export default withUserAgent(
-  withTranslation(["common", "sliders", "content"])(Home)
+  withTranslation(["common", "sliders", "content", "team"])(Home)
 );

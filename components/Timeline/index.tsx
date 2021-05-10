@@ -16,7 +16,7 @@ const BoxStyled = styled(Box)`
   text-align: center;
   border-top-width: 1px;
 
-  &:first-child {
+  &:first-of-type {
     border: none;
   }
 `;

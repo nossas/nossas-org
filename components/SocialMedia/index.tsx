@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link, Stack } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
+import { t, useTranslation } from "next-i18next";
 import { Facebook, Instagram, Twitter, Linkedin } from "./IconsSVG";
 
 interface SocialMediaProps {
-  t: any;
+  // t: any;
   color: string;
 }
 
@@ -21,7 +22,9 @@ const MediaLink = styled(Link)`
   }
 `;
 
-const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({ color }) => {
+  const { t } = useTranslation("common");
+
   return (
     <Stack direction="row" spacing={3}>
       <MediaLink
@@ -64,4 +67,4 @@ SocialMedia.defaultProps = {
   color: "pink.main",
 };
 
-export default withTranslation("common")(SocialMedia);
+export default SocialMedia;

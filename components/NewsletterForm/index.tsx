@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Text, Stack, Heading } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
-
+import { useTranslation } from "next-i18next";
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 
 interface Values {
   first_name: string;
@@ -30,7 +30,9 @@ const Header = ({ inverted, title, description }) => (
   </>
 );
 
-const NewsletterForm = ({ t, inverted }: any) => {
+const NewsletterForm = ({ inverted }: any) => {
+  const { t } = useTranslation("common");
+
   return (
     <Stack spacing={4} maxW="430px">
       <SubmitFormEntry
@@ -98,4 +100,4 @@ const NewsletterForm = ({ t, inverted }: any) => {
   );
 };
 
-export default withTranslation("common")(NewsletterForm);
+export default NewsletterForm;
