@@ -22,7 +22,15 @@ interface SubscribeFormProps {
   submitText: string;
   textSuccess: string;
   widgetId: number;
+  color: "blue" | "pink" | "green";
+  fieldsComponent?: React.FC<DefaultFieldsProps>;
 }
+
+const colors = {
+  blue: "blue.main",
+  pink: "pink.main",
+  green: "green",
+};
 
 const SubscribeForm: React.FC<SubscribeFormProps> = ({
   t,
@@ -30,6 +38,8 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   submitText,
   textSuccess,
   widgetId,
+  color,
+  fieldsComponent: FieldsComponent,
 }) => {
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
@@ -85,47 +95,14 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                 <Stack spacing={6}>
                   <Heading
                     as="h3"
-                    color="blue.main"
+                    color={colors[color]}
                     fontWeight="bold"
                     textAlign="center"
                     size="md"
                   >
                     {title}
                   </Heading>
-                  <Stack spacing={4}>
-                    <InputField
-                      inline
-                      name="name"
-                      label={t("common:form.fields.name.label")}
-                      placeholder={t("common:form.fields.name.placeholder")}
-                    />
-                    <InputField
-                      inline
-                      name="email"
-                      label={t("common:form.fields.email.label")}
-                      placeholder={t("common:form.fields.email.placeholder")}
-                    />
-                    <InputField
-                      inline
-                      type="tel"
-                      name="whatsapp"
-                      label={t("common:form.fields.whatsapp.label")}
-                      placeholder={t("common:form.fields.whatsapp.placeholder")}
-                    />
-                    <SelectField
-                      inline
-                      name="state"
-                      label={t("common:form.fields.state.label")}
-                      placeholder={t("common:form.fields.state.placeholder")}
-                      options={{ type: "array", items: STATES }}
-                    />
-                    <InputField
-                      inline
-                      name="city"
-                      label={t("common:form.fields.city.label")}
-                      placeholder={t("common:form.fields.city.placeholder")}
-                    />
-                  </Stack>
+                  <FieldsComponent t={t} />
                   <Button
                     isFullWidth
                     bgColor="blue.main"
@@ -179,5 +156,47 @@ const STATES = [
   "Sergipe (SE)",
   "Tocantins (TO)",
 ];
+
+type DefaultFieldsProps = {
+  t: any;
+};
+const DefaultFields: React.FC<DefaultFieldsProps> = ({ t }) => (
+  <Stack spacing={4}>
+    <InputField
+      inline
+      name="name"
+      label={t("common:form.fields.name.label")}
+      placeholder={t("common:form.fields.name.placeholder")}
+    />
+    <InputField
+      inline
+      name="email"
+      label={t("common:form.fields.email.label")}
+      placeholder={t("common:form.fields.email.placeholder")}
+    />
+    <InputField
+      inline
+      type="tel"
+      name="whatsapp"
+      label={t("common:form.fields.whatsapp.label")}
+      placeholder={t("common:form.fields.whatsapp.placeholder")}
+    />
+    <SelectField
+      inline
+      name="state"
+      label={t("common:form.fields.state.label")}
+      placeholder={t("common:form.fields.state.placeholder")}
+      options={{ type: "array", items: STATES }}
+    />
+    <InputField
+      inline
+      name="city"
+      label={t("common:form.fields.city.label")}
+      placeholder={t("common:form.fields.city.placeholder")}
+    />
+  </Stack>
+);
+
+SubscribeForm.defaultProps = { fieldsComponent: DefaultFields };
 
 export default SubscribeForm;
