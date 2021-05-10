@@ -134,149 +134,182 @@ export const LeadersMembers = () => {
   );
 };
 
-export const team: Employee[] = [
-  {
-    avatar: "/static/media/team/adriele-alvarenga.png",
-    name: "Adriele Alvarenga",
-    role: "Programadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/alexandra-maier.png",
-    name: "Alexandra Maier",
-    role: "Coordenadora de Operações",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/aline-taboada.png",
-    name: "Aline Taboada",
-    role: "Coordenadora Financeira",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/ana-beatriz.png",
-    name: "Ana Beatriz El-Kadri",
-    role: "Coordenadora de Voluntárias do Mapa do Acolhimento",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/ana-claudia.png",
-    name: "Ana Claudia Medeiros",
-    role: "Designer e Mobilizadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/anderson-bento.png",
-    name: "Anderson Bento",
-    role: "Coordenador de Dados",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/bela-avelar.png",
-    name: "Bela Avelar",
-    role: "Coordenadora de Design e Mobilização",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/flavia-rocha.png",
-    name: "Flavia Rocha",
-    role: "Analista de Dados",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/gabriela-silva.png",
-    name: "Gabriela Silva",
-    role: "Coordenadora de Atendimento do Mapa do Acolhimento",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/gloria-teodoro.png",
-    name: "Glória Teodoro",
-    role: "Programadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/igor-santos.png",
-    name: "Igor Santos",
-    role: "Programador",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/isabel-pessanha.png",
-    name: "Isabel Pessanha",
-    role: "Assistente pessoal de Alessandra Orofino",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/izamir-barbosa.png",
-    name: "Izamir Barbosa",
-    role: "Mobilizador",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/karina-penha.png",
-    name: "Karina Penha",
-    role: "Mobilizadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/larissa.png",
-    name: "Larissa Schmillevitch",
-    role: "Gestora do Mapa do Acolhimento",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/leca.png",
-    name: "Leca Cunha",
-    role: "Coordenadora de Sustentabilidade",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/leticia-castro.png",
-    name: "Leticia Castro",
-    role: "Mobilizadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/livia-merlin.png",
-    name: "Livia Merlin",
-    role: "Coordenadora de Mobilização",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/luciana-travassos.png",
-    name: "Luciana Travassos",
-    role: "Mobilizadora",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/maira-baracho.png",
-    name: "Maira Baracho",
-    role: "Gestora de Treinamento",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/sany-cristina.png",
-    name: "Sany Cristina",
-    role: "Coordenadora de Comunicação",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/tayna-araujo.png",
-    name: "Tayná Araújo",
-    role: "Analista de Sustentabilidade",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/thalita-queiroz.png",
-    name: "Thalita Queiroz dos Santos",
-    role: "Articuladora do Mapa do Acolhimento",
-    team: "Equipe",
-  },
-  {
-    avatar: "/static/media/team/gomes-barbosa.png",
-    name: "Gomes Barbosa",
-    role: "Articuladora do Mapa do Acolhimento",
-    team: "Equipe",
-  },
-];
+export const TeamMembers = () => {
+  const { t } = useTranslation("team");
+
+  return (
+    <EmployeeTeam
+      title={t("content:blocks.about.team.team")}
+      members={[
+        {
+          avatar: "/static/media/team/adriele-alvarenga.png",
+          name: "Adriele Alvarenga",
+          role: t("team.adrielealvarenga.role"),
+          about: t("team.adrielealvarenga.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/alexandra-maier.png",
+          name: "Alexandra Maier",
+          role: t("team.alexandramaier.role"),
+          about: t("team.alexandramaier.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/aline-taboada.png",
+          name: "Aline Taboada",
+          role: t("team.alinetaboada.role"),
+          about: t("team.alinetaboada.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/ana-beatriz.png",
+          name: "Ana Beatriz El-Kadri",
+          role: t("team.anabeatrizelkadri.role"),
+          about: t("team.anabeatrizelkadri.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/ana-claudia.png",
+          name: "Ana Claudia Medeiros",
+          role: t("team.anaclaudiamedeiros.role"),
+          about: t("team.anaclaudiamedeiros.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/anderson-bento.png",
+          name: "Anderson Bento",
+          role: t("team.andersonbento.role"),
+          about: t("team.andersonbento.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/bela-avelar.png",
+          name: "Bela Avelar",
+          role: t("team.belaavelar.role"),
+          about: t("team.belaavelar.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/flavia-rocha.png",
+          name: "Flavia Rocha",
+          role: t("team.flaviarocha.role"),
+          about: t("team.flaviarocha.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/gabriela-silva.png",
+          name: "Gabriela Silva",
+          role: t("team.gabrielasilva.role"),
+          about: t("team.gabrielasilva.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/gloria-teodoro.png",
+          name: "Glória Teodoro",
+          role: t("team.gloriateodoro.role"),
+          about: t("team.gloriateodoro.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/igor-santos.png",
+          name: "Igor Santos",
+          role: t("team.igorsantos.role"),
+          about: t("team.igorsantos.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/isabel-pessanha.png",
+          name: "Isabel Pessanha",
+          role: t("team.isabelpessanha.role"),
+          about: t("team.isabelpessanha.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/izamir-barbosa.png",
+          name: "Izamir Barbosa",
+          role: t("team.izamirbarbosa.role"),
+          about: t("team.izamirbarbosa.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/karina-penha.png",
+          name: "Karina Penha",
+          role: t("team.karinapenha.role"),
+          about: t("team.karinapenha.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/larissa.png",
+          name: "Larissa Schmillevitch",
+          role: t("team.larissaschmillevitch.role"),
+          about: t("team.larissaschmillevitch.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/leca.png",
+          name: "Leca Cunha",
+          role: t("team.lecacunha.role"),
+          about: t("team.lecacunha.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/leticia-castro.png",
+          name: "Leticia Castro",
+          role: t("team.leticiacastro.role"),
+          about: t("team.leticiacastro.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/livia-merlin.png",
+          name: "Livia Merlin",
+          role: t("team.liviamerlin.role"),
+          about: t("team.liviamerlin.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/luciana-travassos.png",
+          name: "Luciana Travassos",
+          role: t("team.lucianatavassos.role"),
+          about: t("team.lucianatavassos.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/maira-baracho.png",
+          name: "Maira Baracho",
+          role: t("team.mairabaracho.role"),
+          about: t("team.mairabaracho.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/sany-cristina.png",
+          name: "Sany Cristina",
+          role: t("team.sanycristina.role"),
+          about: t("team.sanycristina.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/tayna-araujo.png",
+          name: "Tayná Araújo",
+          role: t("team.taynaaraujo.role"),
+          about: t("team.taynaaraujo.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/thalita-queiroz.png",
+          name: "Thalita Queiroz dos Santos",
+          role: t("team.thalitaqueiroz.role"),
+          about: t("team.thalitaqueiroz.about"),
+          team: "Equipe",
+        },
+        {
+          avatar: "/static/media/team/gomes-barbosa.png",
+          name: "Gomes Barbosa",
+          role: t("team.gomesbarbosa.role"),
+          about: t("team.gomesbarbosa.about"),
+          team: "Equipe",
+        },
+      ]}
+    />
+  );
+};

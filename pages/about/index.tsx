@@ -18,7 +18,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import { BoardMembers, LeadersMembers } from "./_team";
+import { BoardMembers, LeadersMembers, TeamMembers } from "./_team";
 
 const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
@@ -154,6 +154,7 @@ const QuemSomos = ({ ua }) => {
       <Section direction="column" spacing="100px">
         <BoardMembers />
         <LeadersMembers />
+        <TeamMembers />
       </Section>
       {/* Na midia */}
       <Media
