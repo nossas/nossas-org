@@ -160,6 +160,7 @@ const STATES = [
 type DefaultFieldsProps = {
   t: any;
 };
+
 const DefaultFields: React.FC<DefaultFieldsProps> = ({ t }) => (
   <Stack spacing={4}>
     <InputField

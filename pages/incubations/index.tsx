@@ -181,6 +181,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
+
       <Carousel
         isMobile={ua.isMobile}
         items={[
@@ -198,7 +199,9 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         ]}
       />
     </Section>
+
     <DescriptionBox
+      color="pink"
       title={
         <div
           dangerouslySetInnerHTML={{
@@ -211,6 +214,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       description={t("content:blocks.incubations.incubate.description")}
     >
       <SubscribeForm
+        color="blue"
         t={t}
         widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
         title={t("content:blocks.incubations.incubate.form.title")}

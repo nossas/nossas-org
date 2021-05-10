@@ -70,6 +70,7 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       ]}
     />
     <DescriptionBox
+      color="pink"
       title={
         <div
           dangerouslySetInnerHTML={{
@@ -82,6 +83,7 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       description={t("content:blocks.materials.manualform.description")}
     >
       <SubscribeForm
+        color="blue"
         t={t}
         widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
         title={t("content:blocks.materials.manualform.form.title")}

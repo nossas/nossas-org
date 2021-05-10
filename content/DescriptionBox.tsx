@@ -5,10 +5,17 @@ import { Section } from "../components/Page";
 interface Props {
   title: React.ReactNode | string;
   description: React.ReactNode | string;
+  color: "blue" | "pink" | "green";
   maxW?: string | number;
   bgColor?: string;
   headingStyles?: any;
 }
+
+const colors = {
+  blue: "blue.main",
+  pink: "pink.main",
+  green: "green",
+};
 
 const DescriptionBox: React.FC<Props> = ({
   children,
@@ -16,6 +23,7 @@ const DescriptionBox: React.FC<Props> = ({
   description,
   title,
   headingStyles,
+  color,
 }) => (
   <Section
     columns={[1, null, null, 2]}
@@ -27,12 +35,13 @@ const DescriptionBox: React.FC<Props> = ({
       <Heading
         as="h3"
         size="lg"
-        color="pink.main"
+        color={colors[color]}
         maxW="340px"
         {...headingStyles}
       >
         {title}
       </Heading>
+
       <Text>{description}</Text>
     </Stack>
     {children}
