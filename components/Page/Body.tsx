@@ -13,15 +13,19 @@ interface BodyProps {
 const Body: React.FC<BodyProps> = ({ children, isMobile }) => (
   <Flex minH="100vh" direction="column">
     <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:100,400,700" />
+
     <Head>
       <title>NOSSAS</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+
     <Flex id="page-container" direction="column" flex="1">
       <Navbar isMobile={isMobile} />
+
       <Container as="main" id="page-wrap" flex="1" maxW="none" padding="0">
         {children}
       </Container>
+
       <Footer />
     </Flex>
   </Flex>
