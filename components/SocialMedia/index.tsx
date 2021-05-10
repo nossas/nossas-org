@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link, Stack } from "@chakra-ui/react";
-// import { withTranslation } from "../../i18n";
-import { t, useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { Facebook, Instagram, Twitter, Linkedin } from "./IconsSVG";
 
 interface SocialMediaProps {
-  // t: any;
-  color: string;
+  color?: string;
 }
 
 const MediaLink = styled(Link)`

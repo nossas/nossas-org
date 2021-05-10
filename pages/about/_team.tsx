@@ -1,9 +1,8 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
-import type { Employee } from "../../components/Employee";
 import { EmployeeTeam } from "../../components/Employee";
 
-export const BoardMembers = () => {
+export const BoardMembers: React.FC = () => {
   const { t } = useTranslation("team");
 
   return (
@@ -57,9 +56,7 @@ export const BoardMembers = () => {
   );
 };
 
-// export default TeamMembers;
-
-export const LeadersMembers = () => {
+export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("team");
 
   return (
@@ -134,7 +131,7 @@ export const LeadersMembers = () => {
   );
 };
 
-export const TeamMembers = () => {
+export const TeamMembers: React.FC = () => {
   const { t } = useTranslation("team");
 
   return (
@@ -313,3 +310,5 @@ export const TeamMembers = () => {
     />
   );
 };
+
+export default TeamMembers;

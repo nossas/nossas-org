@@ -1,6 +1,8 @@
-import { NextPage } from "next";
-import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
-import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import React from "react";
+import { Flex, Heading, Image, Text, Stack } from "@chakra-ui/react";
+import { withUserAgent } from "next-useragent";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
@@ -8,15 +10,12 @@ import { SliderPanel } from "../components/Slider";
 import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
-import { withTranslation, I18nInitialProps } from "../i18n";
 
-interface Props extends WithUserAgentProps {
-  t: any;
-}
+const Home = ({ ua }) => {
+  const { t } = useTranslation("common");
 
-const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
-    <Body isMobile={ua.isMobile}>
+    <Body>
       {/* Cover */}
       <Hero
         title={t("content:covers.home.title")}
@@ -162,7 +161,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         </Heading>
         <SliderPanel
           infiniteLoop
-          isMobile={ua.isMobile}
+          isMobile={ua ? ua.isMobile : false}
           items={[
             {
               alt: t("sliders:home.rendabasica.title"),
@@ -244,10 +243,15 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   );
 };
 
-Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "sliders", "content", "team"],
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, [
+      "common",
+      "sliders",
+      "content",
+      "team",
+    ])),
+  },
 });
 
-export default withUserAgent(
-  withTranslation(["common", "sliders", "content", "team"])(Home)
-);
+export default withUserAgent(Home);
