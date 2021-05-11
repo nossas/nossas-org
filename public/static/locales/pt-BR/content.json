@@ -35,6 +35,9 @@
     },
     "training": {
       "title": "Receba treinamento em tecnologias de ativismo"
+    },
+    "workwithus": {
+      "title": "Trabalhe conosco"
     }
   },
   "blocks": {
@@ -360,6 +363,25 @@
         "description": "Temos treinamentos temáticos acontecendo durante o ano inteiro. Clique para saber os cronogramas e temas para 2021.",
         "button": "Quero saber"
       }
+    },
+    "workWithUs": {
+      "about": {
+        "title": "O que é o <b>nossas?</b>",
+        "description": "O NOSSAS é uma organização que impulsiona o ativismo democrático e solidário no Brasil. Juntos, nossos membros defendem a democracia e fazem pressão pública por um país mais justo e solidário.  Somos uma organização sem fins lucrativos e por trás de tudo isso estão pessoas: mobilizadores, programadores, psicólogas, advogadas, comunicadores, cientistas de dados, designers."
+      },
+      "vacancies": {
+        "title": "Nossas <b>vagas</b>",
+        "description": "No momento, não há vagas abertas, mas você pode se inscrever no nosso banco de talentos! Assim que outras oportunidades surgirem, te enviaremos um e-mail contando das vagas e te convidando a construir junto da nossa equipe de ativistas novas formas de participação política, mobilização e organização de pessoas."      
+      },
+      "form": {
+        "title": "Inscreva-se para saber de nossas vagas",
+        "submit": "Enviar",
+        "success": "Obrigada por se inscrever! Quando lançarmos uma vaga, você saberá em primeira mão! Agora é só ficar de olho no seu e-mail :)"
+      },
+      "equity": {
+        "title": "Somos uma equipe comprometida com justiça e equidade, mas sua composição ainda não reflete de forma adequada a diversidade do país onde vivemos. Por isso, em nossos processos seletivos priorizamos a candidatura de pessoas não-brancas (pretas, pardas e indígenas), pessoas trans e moradoras de periferias do Brasil."
+      }
+      
     }
   }  
 }
