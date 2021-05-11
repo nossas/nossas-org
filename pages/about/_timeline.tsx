@@ -17,27 +17,27 @@ const Timeline = ({ isMobile, t }: any) => (
             text: t("content:blocks.about.timeline.2011.meurio"),
           },
         ],
+        2013: [
+          {
+            src: "/static/media/timeline/vitoria.png",
+            text: t("content:blocks.about.timeline.2013.vitoria"),
+          },
+        ],
         2014: [
           {
             src: "/static/media/timeline/minhasampa.png",
             text: t("content:blocks.about.timeline.2014.minhasampa"),
           },
           {
-            src: "/static/media/timeline/rnc.png",
-            text: t("content:blocks.about.timeline.2014.rnc"),
+            src: "/static/media/timeline/amarildosepriscilas.png",
+            text: t("content:blocks.about.timeline.2014.amarildosepriscilas"),
+          },
+          {
+            src: "/static/media/timeline/paulistaaberta.png",
+            text: t("content:blocks.about.timeline.2014.paulistaaberta"),
           },
         ],
         2016: [
-          {
-            src: "/static/media/timeline/defezap.png",
-            text: t("content:blocks.about.timeline.2016.defezap"),
-          },
-          {
-            src: "/static/media/timeline/mapadoacolhimento.png",
-            text: t("content:blocks.about.timeline.2016.mapadoacolhimento"),
-          },
-        ],
-        2017: [
           {
             src: "/static/media/timeline/instintodevida.png",
             text: t("content:blocks.about.timeline.2017.instintodevida"),
@@ -47,13 +47,13 @@ const Timeline = ({ isMobile, t }: any) => (
             text: t("content:blocks.about.timeline.2017.beta"),
           },
         ],
-        2018: [
+        2017: [
           {
             src: "/static/media/timeline/bonde.png",
             text: t("content:blocks.about.timeline.2018.bonde"),
           },
         ],
-        2019: [
+        2018: [
           {
             src: "/static/media/timeline/maraton.png",
             text: t("content:blocks.about.timeline.2019.maraton"),
@@ -61,6 +61,12 @@ const Timeline = ({ isMobile, t }: any) => (
           {
             src: "/static/media/timeline/programamobilizadores.png",
             text: t("content:blocks.about.timeline.2019.programamobilizadores"),
+          },
+        ],
+        2019: [
+          {
+            src: "/static/media/timeline/periferiaquefaz.png",
+            text: t("content:blocks.about.timeline.2020.periferiaquefaz"),
           },
         ],
         2020: [
