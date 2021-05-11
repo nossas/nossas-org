@@ -124,9 +124,9 @@
   },
   "footer": {
     "about": "Conheça o NOSSAS",
-    "projects": "Nossos projetos",
-    "work": "Participe de uma campanha",
     "actvist": "Junte-se a nós",
-    "donate": "Faça uma doação"
+    "mobilizations": "Participe de uma campanha",
+    "donate": "Faça uma doação",
+    "workwithus": "Trabalhe conosco"    
   }
 }

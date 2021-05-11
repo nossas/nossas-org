@@ -37,16 +37,16 @@ const Footer = ({ t }) => {
               <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="/incubations#projects">{t("footer.projects")}</Link>
+              <Link href="/">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="/#we-are-doing">{t("footer.work")}</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/mobilizations">{t("footer.actvist")}</Link>
+              <Link href="/mobilizations">{t("footer.mobilizations")}</Link>
             </ListItem>
             <ListItem>
               <Donation variant="link">{t("footer.donate")}</Donation>
+            </ListItem>
+            <ListItem>
+              <Link href="/workwithus">{t("footer.workwithus")}</Link>
             </ListItem>
           </UnorderedList>
         </div>
