@@ -57,6 +57,11 @@
         "placeholder": "Seu nome",
         "required": "Preencha seu nome"
       },
+      "lastName": {
+        "label": "Sobrenome",
+        "placeholder": "Sobrenome",
+        "required": "Preencha seu sobrenome"
+      },
       "email": {
         "label": "E-mail",
         "placeholder": "Seu e-mail",

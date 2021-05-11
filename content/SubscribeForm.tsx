@@ -94,6 +94,8 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
               <Form>
                 <Stack spacing={6}>
                   <Heading
+                    margin="auto"
+                    width="53%"
                     as="h3"
                     color={colors[color]}
                     fontWeight="bold"
@@ -194,6 +196,36 @@ const DefaultFields: React.FC<DefaultFieldsProps> = ({ t }) => (
       name="city"
       label={t("common:form.fields.city.label")}
       placeholder={t("common:form.fields.city.placeholder")}
+    />
+  </Stack>
+);
+
+export const SimpleFields: React.FC<DefaultFieldsProps> = ({ t }) => (
+  <Stack spacing={4}>
+    <InputField
+      inline
+      name="name"
+      label={t("common:form.fields.name.label")}
+      placeholder={t("common:form.fields.name.placeholder")}
+    />
+    <InputField
+      inline
+      name="lastName"
+      label={t("common:form.fields.lastName.label")}
+      placeholder={t("common:form.fields.lastName.placeholder")}
+    />
+    <InputField
+      inline
+      name="email"
+      label={t("common:form.fields.email.label")}
+      placeholder={t("common:form.fields.email.placeholder")}
+    />
+    <InputField
+      inline
+      type="tel"
+      name="whatsapp"
+      label={t("common:form.fields.whatsapp.label")}
+      placeholder={t("common:form.fields.whatsapp.placeholder")}
     />
   </Stack>
 );
