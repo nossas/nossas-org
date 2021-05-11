@@ -95,7 +95,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                 <Stack spacing={6}>
                   <Heading
                     margin="auto"
-                    width="53%"
+                    width={["auto", "auto", "auto", "auto", "auto", "53%"]}
                     as="h3"
                     color={colors[color]}
                     fontWeight="bold"

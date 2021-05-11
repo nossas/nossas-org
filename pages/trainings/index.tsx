@@ -154,7 +154,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <Button maxW="190px" marginX={["auto", null, null, "0"]}>
           <a
             href="https://www.mobilizadores.nossas.org/#block-35353"
-            target="_blank"
+            target="blank"
           >
             {t("content:blocks.training.program.button")}
           </a>
