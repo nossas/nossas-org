@@ -23,7 +23,7 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleAlign="center"
     />
 
-    <Section direction="column" spacing={["30px", null, null, null, "245px"]}>
+    <Section spacing={["30px", null, null, null, "245px"]}>
       <Stack
         direction={["column", null, null, "row"]}
         justifyContent="space-between"
