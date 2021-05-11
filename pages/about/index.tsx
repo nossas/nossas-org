@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Stack,
   Image,
+  Box,
 } from "@chakra-ui/react";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
@@ -44,6 +45,19 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="left"
     />
+    {/* About */}
+    <Section
+      direction={["column", null, null, "row"]}
+      spacing={["30px", null, null, null, "245px"]}
+      alignItems="center"
+    >
+      <Box flex="1">
+        <Image src="/static/media/s3/incubations-tudonossas.png" />
+      </Box>
+      <Text maxW={["600px"]}>
+        {t("content:blocks.about.description.title")}
+      </Text>
+    </Section>
     {/* History */}
     <Section
       direction={["column", null, null, "row"]}
@@ -160,31 +174,6 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       }
     />
-    <Section
-      direction={["column", "row"]}
-      backgroundColor="blue.main"
-      spacing={["20px", "280px"]}
-    >
-      <Heading as="h2" color="white">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.about.contact", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
-      </Heading>
-      <Text
-        display="inline-table"
-        color="white"
-        borderLeftWidth="6px"
-        borderLeftColor="pink.main"
-        paddingLeft="30px"
-        marginLeft={["30px", "0"]}
-      >
-        contato@nossas.org
-      </Text>
-    </Section>
   </Body>
 );
 

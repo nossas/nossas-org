@@ -32,10 +32,6 @@ const Timeline = ({ isMobile, t }: any) => (
             src: "/static/media/timeline/amarildosepriscilas.png",
             text: t("content:blocks.about.timeline.2014.amarildosepriscilas"),
           },
-          {
-            src: "/static/media/timeline/paulistaaberta.png",
-            text: t("content:blocks.about.timeline.2014.paulistaaberta"),
-          },
         ],
         2016: [
           {
