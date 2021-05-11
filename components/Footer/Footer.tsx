@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Text,
-  Heading,
-  Flex,
-  Box,
-  Grid,
-  UnorderedList,
-  ListItem,
-  Link,
-  Image,
-} from "@chakra-ui/react";
+import { Grid, UnorderedList, ListItem, Link, Image } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
 // import Newsletter from "../Newsletter";
@@ -51,19 +41,7 @@ const Footer = ({ t }) => {
           </UnorderedList>
         </div>
         <NewsletterForm />
-        <div>
-          <Heading
-            as="h5"
-            color="blue.main"
-            mb={5}
-            fontWeight="bold"
-            size="md"
-            maxW="190px"
-          >
-            {t("social.title")}
-          </Heading>
-          <SocialMedia />
-        </div>
+        <SocialMedia />
       </Grid>
     </footer>
   );
