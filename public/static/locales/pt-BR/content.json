@@ -177,18 +177,26 @@
       "projects": {
         "title": "O que já <b>incubamos</b>",
         "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
-        "defezap": {
-          "title": "Defezap",
-          "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
-        },
         "acolhe": {
           "title": "Acolhe LGBT+",
-          "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
+          "description": "Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários."
+        },
+        "paneladepressao": {
+          "title": "Panela de pressão",
+          "description": "Uma tecnologia inovadora à serviço da participação popular: com o Panela de Pressão, qualquer pessoa monta sua própria campanha, em poucos cliques."
         },
         "representa": {
           "title": "Me Representa",
           "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
-        }
+        },
+        "meurecife": {
+          "title": "Meu recife",
+          "description": "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável."
+        },
+        "defezap": {
+          "title": "Defezap",
+          "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
+        }       
       },
       "current_projects": {
         "title": "Projetos <b>Atuais</b>",
@@ -196,11 +204,36 @@
           "title": "Mapa do acolhimento",
           "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
           "action": "Saiba mais"
+        },
+        "meurio": {
+          "title": "Meu rio",
+          "description": "A primeira experiência em incubação foi com o Meu Rio, uma rede de ação que mobiliza pessoas para participarem ativamente dos processos de decisão da cidade.",
+          "action": "Saiba mais"
+        },
+        "minhasampa": {
+          "title": "Minha sampa",
+          "description": "A rede paulistana de ação Minha Sampa faz mobilizações locais que aproximam os cidadãos da política.",
+          "action": "Saiba mais"
+        },
+        "redenossascidades": {
+          "title": "Rede nossas cidades",
+          "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
+          "action": "Saiba mais"
+        },
+        "bonde": {
+          "title": "Bonde",
+          "description": "Feita por ativistas para ativistas, a ferramenta de tecnologia do NOSSAS pode ser usada por qualquer pessoa ou organização que queira colocar sua campanha na rua!",
+          "action": "Saiba mais"
+        },
+        "beta": {
+          "title": "Beta",
+          "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
+          "action": "Saiba mais"
         }
       },
       "incubate": {
         "title": "Incube seu <b>projeto</b>",
-        "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
+        "description": "Sua organização tem um projeto incrível que pode gerar impacto em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado, entraremos em contato em breve para que vocês nos contem um pouco mais :)",
         "form": {
           "title": "Inscreva-se",
           "submit": "Enviar",

@@ -143,15 +143,6 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         showStatus
         items={[
           <ImageText
-            src="/static/media/s3/defezap.jpg"
-            title={t("content:blocks.incubations.projects.defezap.title")}
-            description={t(
-              "content:blocks.incubations.projects.defezap.description"
-            )}
-            href="http://www.saibamais.defezap.org.br/"
-            linkText={t("content:links.knowmore")}
-          />,
-          <ImageText
             src="/static/media/s3/meacolhelgbt.png"
             title={t("content:blocks.incubations.projects.acolhe.title")}
             description={t(
@@ -161,12 +152,41 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             linkText={t("content:links.knowmore")}
           />,
           <ImageText
+            src="/static/media/s3/paneladepressao.png"
+            title={t(
+              "content:blocks.incubations.projects.paneladepressao.title"
+            )}
+            description={t(
+              "content:blocks.incubations.projects.paneladepressao.description"
+            )}
+            href="http://paneladepressao.nossascidades.org/"
+            linkText={t("content:links.knowmore")}
+          />,
+          <ImageText
             src="/static/media/s3/merepresenta.png"
             title={t("content:blocks.incubations.projects.representa.title")}
             description={t(
               "content:blocks.incubations.projects.representa.description"
             )}
             href="https://merepresenta.org.br/"
+            linkText={t("content:links.knowmore")}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-meurecife.jpg"
+            title={t("content:blocks.incubations.projects.meurecife.title")}
+            description={t(
+              "content:blocks.incubations.projects.meurecife.description"
+            )}
+            href="https://www.meurecife.org.br/"
+            linkText={t("content:links.knowmore")}
+          />,
+          <ImageText
+            src="/static/media/s3/defezap.jpg"
+            title={t("content:blocks.incubations.projects.defezap.title")}
+            description={t(
+              "content:blocks.incubations.projects.defezap.description"
+            )}
+            href="http://www.saibamais.defezap.org.br/"
             linkText={t("content:links.knowmore")}
           />,
         ]}
@@ -195,6 +215,67 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             href="https://www.mapadoacolhimento.org/"
             linkText={t(
               "content:blocks.incubations.current_projects.mapa.action"
+            )}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-meurio.jpg"
+            title={t(
+              "content:blocks.incubations.current_projects.meurio.title"
+            )}
+            description={t(
+              "content:blocks.incubations.current_projects.meurio.description"
+            )}
+            href="https://www.meurio.org.br/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.meurio.action"
+            )}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-msp.jpg"
+            title={t(
+              "content:blocks.incubations.current_projects.minhasampa.title"
+            )}
+            description={t(
+              "content:blocks.incubations.current_projects.minhasampa.description"
+            )}
+            href="https://www.minhasampa.org.br/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.minhasampa.action"
+            )}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-rnc.jpg"
+            title={t(
+              "content:blocks.incubations.current_projects.redenossascidades.title"
+            )}
+            description={t(
+              "content:blocks.incubations.current_projects.redenossascidades.description"
+            )}
+            href="https://www.redenossascidades.org/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.redenossascidades.action"
+            )}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-bonde.jpg"
+            title={t("content:blocks.incubations.current_projects.bonde.title")}
+            description={t(
+              "content:blocks.incubations.current_projects.bonde.description"
+            )}
+            href="https://www.bonde.org/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.bonde.action"
+            )}
+          />,
+          <ImageText
+            src="/static/media/s3/incubacoes-beta.jpg"
+            title={t("content:blocks.incubations.current_projects.beta.title")}
+            description={t(
+              "content:blocks.incubations.current_projects.beta.description"
+            )}
+            href="https://www.beta.org.br/"
+            linkText={t(
+              "content:blocks.incubations.current_projects.beta.action"
             )}
           />,
         ]}

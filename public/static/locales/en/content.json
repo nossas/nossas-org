@@ -174,18 +174,26 @@
       "projects": {
         "title": "O que já <b>incubamos</b>",
         "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
-        "defezap": {
-          "title": "Defezap",
-          "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
-        },
         "acolhe": {
           "title": "Acolhe LGBT+",
-          "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
+          "description": "Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários."
+        },
+        "paneladepressao": {
+          "title": "Panela de pressão",
+          "description": "Uma tecnologia inovadora à serviço da participação popular: com o Panela de Pressão, qualquer pessoa monta sua própria campanha, em poucos cliques."
         },
         "representa": {
           "title": "Me Representa",
           "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
-        }
+        },
+        "meurecife": {
+          "title": "Meu recife",
+          "description": "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável."
+        },
+        "defezap": {
+          "title": "Defezap",
+          "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
+        }       
       },
       "current_projects": {
         "title": "Projetos <b>Atuais</b>",
