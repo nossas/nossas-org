@@ -56,33 +56,43 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         infiniteLoop
         items={[
           {
-            src: "/static/media/s3/auxilioemergencial.png",
+            src: "/static/media/s3/liberaotablet.jpg",
             alt: t("content:blocks.mobilizations.doing.carousel.1.title"),
             title: t("content:blocks.mobilizations.doing.carousel.1.title"),
             description: t(
               "content:blocks.mobilizations.doing.carousel.1.description"
             ),
-            href: "https://www.auxilioateofimdapandemia.org/",
-            link: t("content:blocks.mobilizations.doing.carousel.action"),
+            href: "https://www.liberaotablet.minhasampa.org.br/",
+            link: t("content:blocks.mobilizations.doing.carousel.1.action"),
           },
           {
-            src: "/static/media/s3/respiramanaus.png",
+            src: "/static/media/s3/metroaumentonao.jpg",
             alt: t("content:blocks.mobilizations.doing.carousel.2.title"),
             title: t("content:blocks.mobilizations.doing.carousel.2.title"),
             description: t(
               "content:blocks.mobilizations.doing.carousel.2.description"
             ),
-            href: "https://www.respiramanaus.nossas.org/",
-            link: t("content:blocks.mobilizations.doing.carousel.action"),
+            href: "https://www.auxilioateofimdapandemia.org/",
+            link: t("content:blocks.mobilizations.doing.carousel.2.action"),
           },
           {
+            src: "/static/media/s3/auxilioemergencial.png",
             alt: t("content:blocks.mobilizations.doing.carousel.3.title"),
-            src: "/static/media/s3/temgentecomfome.png",
             title: t("content:blocks.mobilizations.doing.carousel.3.title"),
             description: t(
               "content:blocks.mobilizations.doing.carousel.3.description"
             ),
+            href: "https://www.auxilioateofimdapandemia.org/",
             link: t("content:blocks.mobilizations.doing.carousel.3.action"),
+          },
+          {
+            alt: t("content:blocks.mobilizations.doing.carousel.4.title"),
+            src: "/static/media/s3/temgentecomfome.png",
+            title: t("content:blocks.mobilizations.doing.carousel.4.title"),
+            description: t(
+              "content:blocks.mobilizations.doing.carousel.4.description"
+            ),
+            link: t("content:blocks.mobilizations.doing.carousel.4.action"),
             href: "https://www.temgentecomfome.com.br/",
           },
         ]}
@@ -103,7 +113,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         isMobile={ua.isMobile}
         items={[
           {
-            src: "/static/media/s3/restingaemangue.png",
+            src: "/static/media/s3/camarotedavacina.jpg",
             alt: t("content:blocks.mobilizations.victories.carousel.1.title"),
             title: t("content:blocks.mobilizations.victories.carousel.1.title"),
             description: t(
@@ -113,17 +123,17 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
           {
-            src: "/static/media/s3/4gpraestudar.png",
+            src: "/static/media/s3/restingaemangue.png",
             alt: t("content:blocks.mobilizations.victories.carousel.2.title"),
             title: t("content:blocks.mobilizations.victories.carousel.2.title"),
             description: t(
               "content:blocks.mobilizations.victories.carousel.2.description"
             ),
-            href: "https://www.4gparaestudar.org.br/",
+            href: "https://www.restingaemangueficam.org.br/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
           {
-            src: "/static/media/s3/auxiliosaude.png",
+            src: "/static/media/s3/rededeprotecao.jpg",
             alt: t("content:blocks.mobilizations.victories.carousel.3.title"),
             title: t("content:blocks.mobilizations.victories.carousel.3.title"),
             description: t(
@@ -133,11 +143,51 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: t("content:blocks.mobilizations.victories.carousel.action"),
           },
           {
-            src: "/static/media/s3/tocomelas.png",
+            src: "/static/media/s3/semaulasemenem.jpg",
             alt: t("content:blocks.mobilizations.victories.carousel.4.title"),
             title: t("content:blocks.mobilizations.victories.carousel.4.title"),
             description: t(
               "content:blocks.mobilizations.victories.carousel.4.description"
+            ),
+            href: "https://www.4gparaestudar.org.br/",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
+          {
+            src: "/static/media/s3/renda-basica.jpg",
+            alt: t("content:blocks.mobilizations.victories.carousel.5.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.5.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.5.description"
+            ),
+            href: "https://www.4gparaestudar.org.br/",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
+          {
+            src: "/static/media/s3/paulista.jpg",
+            alt: t("content:blocks.mobilizations.victories.carousel.6.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.6.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.6.description"
+            ),
+            href: "https://www.tocomelas.mapadoacolhimento.org/",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
+          {
+            src: "/static/media/s3/escola.jpg",
+            alt: t("content:blocks.mobilizations.victories.carousel.7.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.7.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.7.description"
+            ),
+            href: "https://www.tocomelas.mapadoacolhimento.org/",
+            link: t("content:blocks.mobilizations.victories.carousel.action"),
+          },
+          {
+            src: "/static/media/s3/rio-sem-canudo.jpg",
+            alt: t("content:blocks.mobilizations.victories.carousel.8.title"),
+            title: t("content:blocks.mobilizations.victories.carousel.8.title"),
+            description: t(
+              "content:blocks.mobilizations.victories.carousel.8.description"
             ),
             href: "https://www.tocomelas.mapadoacolhimento.org/",
             link: t("content:blocks.mobilizations.victories.carousel.action"),

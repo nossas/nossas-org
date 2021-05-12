@@ -28,7 +28,7 @@
       "title": "Faça você mesmo sua própria campanha de impacto!"
     },
     "mobilizations": {
-      "title": "Junte-se agora a uma de nossas campanhas!"
+      "title": "Participe de uma de nossas campanhas!"
     },
     "technologies": {
       "title": "Conheça o BONDE, nossa ferramenta de tecnologia"
@@ -244,7 +244,7 @@
     "materials": {
       "manual": {
         "title": "Baixe agora <b>seu manual</b>",
-        "description": "Fizemos um manual incrível com várias dicas para te ajudar a fazer sua própria campanha!",
+        "description": "Nosso manual de mobilização resume muito do que aprendemos em uma década de experiência com ativismo no Brasil. Saiba também como mobilizar pessoas em torno de causas e organizá-las em redes de solidariedade.",
         "link": "Baixar manual"
       },
       "learning": {
@@ -265,24 +265,31 @@
     },
     "mobilizations": {
       "done": {
-        "title": "Vem com a <b>gente</b>",
-        "description": "Se você está procurando alguma forma de contribuir com uma causa, participe agora de uma de nossas campanhas. Chega mais e vem fazer parte da mudança!"
+        "title": "Vem com <b>a gente!</b>",
+        "description": "Ajude nossas campanhas a fazer barulho e a conquistar vitórias que consolidam políticas públicas e protegem nossos direitos. Chega mais, e vem fazer parte da mudança!"
       },
       "doing": {
-        "title": "O que estamos <b>fazendo</b>",
+        "title": "Campanhas que <b>estão rolando</b>",
         "carousel": {
           "action": "Entrar em ação",
           "1": {
-            "title": "Auxílio até o fim da pandemia",
-            "description": "A suspensão do Auxílio Emergencial levou milhares de brasileiros para baixo da linha da pobreza. Pressione a Câmara dos Deputados para retomar o auxílio até o final da pandemia."
+            "title": "Libera o tablet",
+            "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+            "action": "Pressione para liberar o tablet"
           },
           "2": {
-            "title": "Respira Manaus",
-            "description": "A crise de saúde em Manaus continua muito grave! Os hospitais estão em colapso e a tendência é que o problema se espalhe pelo país. Pressione o Ministério da Saúde a cuidar dessa pauta."
+            "title": "Metrô, Aumento Não!",
+            "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
+            "action": "Pressione para barrar o aumento"
           },
           "3": {
+            "title": "Auxílio até o fim da pandemia",
+            "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+            "action": "Participe da campanha"
+          },
+          "4": {
             "title": "Tem gente com fome",
-            "description": "Após 1 ano de pandemia alcançamos a marca de mais de 275 mil vidas perdidas e outras milhares de famílias estão passando fome. Precisamos comprar comida, a fome não pode esperar.",
+            "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
             "action": "Participe da campanha"
           }
         }
@@ -290,22 +297,38 @@
       "victories": {
         "title": "Nossas <b>vitórias</b>",
         "carousel": {
-          "action": "Saber mais",
+          "action": "Saiba mais",
           "1": {
-            "title": "RESTINGA E MANGUE FICAM",
-            "description": "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. Nossa mobilização, que reuniu mais de 180 mil assinaturas, conseguiu  frear a boiada e garantir a preservação do litoral brasileiro e seus ecossistemas."
+            "title": "Camarote da vacina não",
+            "description": "Empresários conseguiram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto."
           },
           "2": {
-            "title": "4G para estudar",
-            "description": "Os alunos de pré-vestibulares comunitários foram muito afetados durante a pandemia, pois sem acesso à internet ficava impossível acompanhar os conteúdos. Graças à nossa mobilização, conseguimos garantir chips de 4g para 300 cursinhos do Brasil inteiro."
+            "title": "Restinga e mangue ficam",
+            "description": "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. A mobilização reuniu mais de 180 mil assinaturas e conseguiu frear a boiada, garantindo a preservação do litoral brasileiro e seus ecossistemas."
           },
           "3": {
-            "title": "Auxílio pra saúde",
-            "description": "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais durante a pandemia ficaram muito expostas ao vírus. Conseguimos aprovar uma lei que garante indenização aos familiares desses profissionais que perderem a vida durante a crise da Covid19."
+            "title": "Auxílio para saúde",
+            "description": "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais ficaram muito expostas ao vírus durante a pandemia. Graças à pressão, foi aprovada uma lei que garante indenização aos familiares dos profissionais que faleceram por conta da Covid19."
           },
           "4": {
-            "title": "Tô com elas",
-            "description": "Os casos de violência contra a mulher cresceram significativamente durante a pandemia. Com a ajuda de mais de 500 voluntárias, mapeamos os serviços públicos de atendimento emergencial para essas mulheres e agora temos mapeados os serviços especializados no Brasil inteiro."
+            "title": "Sem aula sem enem",
+            "description": "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada."
+          },
+          "5": {
+            "title": "Renda básica",
+            "description": "Junto com outras 200 organizações, conseguimos aprovar o auxílio emergencial de R$600 para 68 milhões de brasileiros em 2020. Em 2021, a luta  continua para a criação de um projeto de lei que garanta uma renda básica permanente para toda a população."
+          },
+          "6": {
+            "title": "Paulista aberta",
+            "description": "Depois de mais de dois anos de intensa mobilização com organizações e coletivos da sociedade civil paulista, o então prefeito Fernando Haddad publicou o decreto que criou a Paulista aberta e o projeto Ruas Abertas, e mudou a rotina de lazer de São Paulo."
+          },
+          "7": {
+            "title": "Escola não se destrói",
+            "description": "A Escola Friedenreich ocupa até hoje um dos primeiros lugares no IDEB do Rio de Janeiro, mas em 2014 ela corria o risco de ser derrubada para dar lugar a um estacionamento para a Copa do Mundo. Depois de uma campanha que teve várias etapas, a escola continuou de pé!"
+          },
+          "8": {
+            "title": "Rio sem canudo",
+            "description": "O Rio de Janeiro foi a primeira cidade a proibir a distribuição de canudos de plástico em bares, restaurantes e estabelecimentos comerciais. Depois dela, várias outras cidades no país seguiram o mesmo exemplo. Agora, a luta segue pelo fim de todos os plásticos de uso único!"
           }
         }
       }
