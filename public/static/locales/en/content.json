@@ -258,9 +258,6 @@
   "about": {
     "cover": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário",
     "description": "Somos uma organização sem fins lucrativos comprometida com o fortalecimento da democracia, da justiça social e da igualdade. Há mais de dez anos desenvolvemos projetos, táticas e estratégias de mobilização e solidariedade pelo Brasil inteiro.",
-    "numbers": {
-      "title": "Números<br/><b>de impacto<b>"
-    },
     "history": {
       "title": "História",
       "description": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos dezenas de projetos, fizemos centenas de campanhas de impacto, conseguimos a implementação de políticas públicas importantes e contribuímos na construção de redes de solidariedade."
@@ -294,6 +291,7 @@
       }
     },
     "impact": {
+      "title": "Números<br/><b>de impacto<b>",
       "donations": {
         "number": "+4 milhões",
         "text": "de reais arrecadados em financiamento coletivo"
