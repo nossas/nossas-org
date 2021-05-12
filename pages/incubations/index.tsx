@@ -69,9 +69,10 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     {/* Cover */}
     <Hero
       maxWidth="380px"
-      bgImage="/static/media/covers/incube-seu-projeto.png"
-      imageDesc={t("content:covers.incubations.title")}
+      videoUrl="/static/media/covers/incubations.mp4"
       title={t("content:covers.incubations.title")}
+      titleColor="white"
+      titleAlign="center"
     />
     {/* Content */}
     <Section direction={["column", null, "row"]} spacing="20px">
@@ -84,7 +85,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           }}
         />
       </Heading>
-      <Text flex={[1, null, 2, null, null]}>
+      <Text flex={[1, null, 2, null, null]} maxW="679px">
         {t("content:blocks.incubations.about.description")}
       </Text>
     </Section>
@@ -133,7 +134,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             }}
           />
         </Heading>
-        <Text maxW="610px">
+        <Text maxW="800px">
           {t("content:blocks.incubations.projects.description")}
         </Text>
       </Stack>
