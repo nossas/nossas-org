@@ -9,7 +9,7 @@ import {
   SimpleGrid,
   Stack,
   Image,
-  Box,
+  Link,
 } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
@@ -210,72 +210,96 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           </Text>
         </Stack>
         <SimpleGrid columns={4} rowGap="45px" pt="75px">
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/opensociety.png"
-            alt="Open Society Foundations"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/luminate.png"
-            alt="Luminate"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/oak.png"
-            alt="OAK Foundation"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/skoll.png"
-            alt="Skoll Foundation"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/urban.png"
-            alt="Urban Movement"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/tinker.png"
-            alt="Tinker Foundation"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/sigrid.png"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/svri.png"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/avon.png"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/ics.png"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/tides.png"
-          />
-          <Image
-            m="0 auto"
-            objectFit="cover"
-            src="/static/media/foundations/malala.png"
-          />
+          <Link href="https://www.opensocietyfoundations.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/opensociety.png"
+              alt="Open Society Foundations"
+            />
+          </Link>
+          <Link href="https://luminategroup.com/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/luminate.png"
+              alt="Luminate"
+            />
+          </Link>
+          <Link href="https://oakfnd.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/oak.png"
+              alt="OAK Foundation"
+            />
+          </Link>
+          <Link href="https://skoll.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/skoll.png"
+              alt="Skoll Foundation"
+            />
+          </Link>
+          <Link href="#" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/urban.png"
+              alt="Urban Movement"
+            />
+          </Link>
+          <Link href="https://tinker.org/pt/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/tinker.png"
+              alt="Tinker Foundation"
+            />
+          </Link>
+          <Link href="https://www.sigrid-rausing-trust.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/sigrid.png"
+            />
+          </Link>
+          <Link href="https://www.svri.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/svri.png"
+            />
+          </Link>
+          <Link href="https://institutoavon.org.br/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/avon.png"
+            />
+          </Link>
+          <Link href="https://www.climaesociedade.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/ics.png"
+            />
+          </Link>
+          <Link href="https://www.tides.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/tides.png"
+            />
+          </Link>
+          <Link href="https://malala.org/" target="_blank">
+            <Image
+              m="0 auto"
+              objectFit="cover"
+              src="/static/media/foundations/malala.png"
+            />
+          </Link>
         </SimpleGrid>
       </Stack>
     </Section>
