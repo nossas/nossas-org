@@ -1,6 +1,5 @@
 import React from "react";
 import { NextPage } from "next";
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import {
   Button,
@@ -12,6 +11,8 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
+
+import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
@@ -35,13 +36,13 @@ const ImpactNumber = ({ numberText, description }) => (
 );
 
 const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     {/* Cover */}
     <Hero
       maxWidth="860px"
       bgColor="blue.main"
       left="50%"
-      title={t("content:covers.about.title")}
+      title={t("content:about.cover")}
       titleColor="white"
       titleAlign="left"
     />
@@ -54,9 +55,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Box flex="1">
         <Image src="/static/media/s3/incubations-tudonossas.png" />
       </Box>
-      <Text maxW={["600px"]}>
-        {t("content:blocks.about.description.title")}
-      </Text>
+      <Text maxW={["600px"]}>{t("content:about.description")}</Text>
     </Section>
     {/* History */}
     <Section
@@ -64,11 +63,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       spacing={["40px", null, null, "115px"]}
     >
       <Heading as="h2" variant="tag" minW="110px">
-        {t("content:blocks.about.history.title")}
+        {t("content:about.history.title")}
       </Heading>
-      <Text maxW={["925px"]}>
-        {t("content:blocks.about.history.description")}
-      </Text>
+      <Text maxW={["925px"]}>{t("content:about.history.description")}</Text>
     </Section>
     {/* Timeline */}
     <Timeline t={t} isMobile={ua.isMobile} />
@@ -77,7 +74,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Heading as="h2" size="lg" color="pink.main">
         <div
           dangerouslySetInnerHTML={{
-            __html: t("content:blocks.about.numbers.title", {
+            __html: t("content:about.numbers.title", {
               interpolation: { escapeValue: false },
             }),
           }}
@@ -85,31 +82,31 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Heading>
       <SimpleGrid columns={2} gridColumnGap="95px" gridRowGap="45px">
         <ImpactNumber
-          numberText={t("content:blocks.about.impact.donations.number")}
-          description={t("content:blocks.about.impact.donations.text")}
+          numberText={t("content:about.numbers.impact.donations.number")}
+          description={t("content:about.numbers.impact.donations.text")}
         />
         <ImpactNumber
-          numberText={t("content:blocks.about.impact.volunteers.number")}
-          description={t("content:blocks.about.impact.volunteers.text")}
+          numberText={t("content:about.numbers.impact.volunteers.number")}
+          description={t("content:about.numbers.impact.volunteers.text")}
         />
         <ImpactNumber
-          numberText={t("content:blocks.about.impact.politicalChange.number")}
-          description={t("content:blocks.about.impact.politicalChange.text")}
+          numberText={t("content:about.numbers.impact.politicalChange.number")}
+          description={t("content:about.numbers.impact.politicalChange.text")}
         />
         <ImpactNumber
-          numberText={t("content:blocks.about.impact.mobilizations.number")}
-          description={t("content:blocks.about.impact.mobilizations.text")}
+          numberText={t("content:about.numbers.impact.mobilizations.number")}
+          description={t("content:about.numbers.impact.mobilizations.text")}
         />
         <ImpactNumber
-          numberText={t("content:blocks.about.impact.peopleDonations.number")}
-          description={t("content:blocks.about.impact.peopleDonations.text")}
+          numberText={t("content:about.numbers.impact.peopleDonations.number")}
+          description={t("content:about.numbers.impact.peopleDonations.text")}
         />
         <ImpactNumber
           numberText={t(
-            "content:blocks.about.impact.peopleMobilizations.number"
+            "content:about.numbers.impact.peopleMobilizations.number"
           )}
           description={t(
-            "content:blocks.about.impact.peopleMobilizations.text"
+            "content:about.numbers.impact.peopleMobilizations.text"
           )}
         />
       </SimpleGrid>
@@ -128,46 +125,37 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           maxW={[226, 282]}
           maxH={[232, 374]}
           src="/static/media/s3/sustentabilidade2.png"
-          alt={t("content:blocks.about.financiers.imageText")}
+          alt={t("content:about.financiers.imageText")}
         />
       </Flex>
       <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
         <Heading as="h2" size="lg" color="green">
           <div
             dangerouslySetInnerHTML={{
-              __html: t("content:blocks.about.financiers.title", {
+              __html: t("content:about.financiers.title", {
                 interpolation: { escapeValue: false },
               }),
             }}
           />
         </Heading>
-        <Text>{t("content:blocks.about.financiers.description")}</Text>
+        <Text>{t("content:about.financiers.description")}</Text>
         <Button padding="14px 37.5px">
-          {t("content:blocks.about.financiers.button")}
+          {t("content:about.financiers.button")}
         </Button>
       </Stack>
     </Section>
     {/* Equipe */}
     <Section direction="column" spacing="100px">
-      <EmployeeTeam
-        title={t("content:blocks.about.team.board")}
-        members={board}
-      />
-      <EmployeeTeam
-        title={t("content:blocks.about.team.leaders")}
-        members={leaders}
-      />
-      <EmployeeTeam
-        title={t("content:blocks.about.team.team")}
-        members={team}
-      />
+      <EmployeeTeam title={t("content:about.team.board")} members={board} />
+      <EmployeeTeam title={t("content:about.team.leaders")} members={leaders} />
+      <EmployeeTeam title={t("content:about.team.team")} members={team} />
     </Section>
     {/* Na midia */}
     <Media
       title={
         <div
           dangerouslySetInnerHTML={{
-            __html: t("content:blocks.home.media.title", {
+            __html: t("common:media.title", {
               interpolation: { escapeValue: false },
             }),
           }}

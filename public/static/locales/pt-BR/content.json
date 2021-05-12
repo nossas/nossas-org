@@ -18,9 +18,6 @@
     "home": {
       "title": "O NOSSAS impulsiona o ativismo solidário e democrático no Brasil"
     },
-    "about": {
-      "title": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário"
-    },
     "incubations": {
       "title": "Incube seu projeto com a gente!"
     },
@@ -77,134 +74,6 @@
           "title": "Use as melhores <b>tecnologias de ativismo</b>",
           "about": "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
           "link": "Conheça o BONDE"
-        }
-      },
-      "media": {
-        "title": "NA <b>MÍDIA</b>"
-      }
-    },
-    "about": {
-      "description": {
-        "title": "Somos uma organização sem fins lucrativos comprometida com o fortalecimento da democracia, da justiça social e da igualdade. Há mais de dez anos desenvolvemos projetos, táticas e estratégias de mobilização e solidariedade pelo Brasil inteiro."
-      },
-      "numbers": {
-        "title": "Números<br/><b>de impacto<b>"
-      },
-      "history": {
-        "title": "História",
-        "description": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos dezenas de projetos, fizemos centenas de campanhas de impacto, conseguimos a implementação de políticas públicas importantes e contribuímos na construção de redes de solidariedade."
-      },
-      "timeline": {
-        "title": "Linha do tempo",
-        "2011": {
-          "meurio": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local"
-        },
-        "2013": {
-          "vitoria": "O Meu Rio salva da demolição uma das melhores escolas públicas da cidade. A campanha envolveu várias táticas de mobilização e foi a primeira expressiva vitória da organização."
-        },
-        "2014": {
-          "minhasampa": "O Meu Rio faz sua primeira experiência de replicação, exportando metodologia e tecnologia para São Paulo. Nasce a Minha Sampa.",
-          "amarildosepriscilas": "O Meu Rio lidera campanha pela criação da primeira Delegacia de Descoberta de Paradeiros. Após sua implementação, 80% dos casos de desaparecimento no Rio passam a ser solucionados.",
-          "paulistaaberta": "A principal avenida de São Paulo passa a ser inteiramente para pedestres aos domingos graças a uma campanha da Minha Sampa e parceiros, que fez história na cidade."
-        },
-        "2017": {
-          "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
-          "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
-        },
-        "2018": {
-          "bonde": "Começamos a testar o BONDE, uma plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas"
-        },
-        "2019": {
-          "maraton": "Nuestros hermanos pediram e nós atendemos! Em 2019 fizemos um ciclo de treinamento para ativistas da Colômbia, Guatemala e México em nossas metodologias e tecnologias de mobilização",
-          "programamobilizadores": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
-        },
-        "2020": {
-          "periferiaquefaz": "Jovens de periferias do Brasil puderam concorrer a um edital que concedeu recursos de até R$20 mil para que ideiasque só precisavam de um empurrãozinho fossemtiradas do papel."
-        }
-      },
-      "impact": {
-        "donations": {
-          "number": "+3 milhões",
-          "text": "de reais arrecadados em financiamento coletivo"
-        },
-        "volunteers": {
-          "number": "+5.400",
-          "text": "voluntárias e voluntários cadastrados"
-        },
-        "politicalChange": {
-          "number": "+120",
-          "text": "mudanças de política pública"
-        },
-        "mobilizations": {
-          "number": "+200",
-          "text": "campanhas lançadas"
-        },
-        "peopleDonations": {
-          "number": "+26 mil",
-          "text": "pessoas já fizeram doações"
-        },
-        "peopleMobilizations": {
-          "number": "+1 milhão",
-          "text": "de pessoas mobilizadas"
-        }
-      },
-      "financiers": {
-        "title": "Quem financia o <b>NOSSAS</b>",
-        "description": "Somos financiados por algumas organizações internacionais e também recebemos apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela transparência, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
-        "button": "Baixar aqui",
-        "imageText": "Quem financia o NOSSAS"
-      },
-      "team": {
-        "board": "Conselho",
-        "board_description": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:",
-        "leaders": "Lideranças",
-        "team": "Equipe"
-      },
-      "contact": "Entre em <b>contato</b>"
-    },
-    "incubations": {
-      "about": {
-        "title": "Incubar:<br/><b>o que é isso?</b>",
-        "description": "Você pode receber capacitação e apoio para desenvolver ou acelerar seu projeto de mobilização ou solidariedade utilizando as metodologias desenvolvidas pelo NOSSAS."
-      },
-      "offer": {
-        "title": "A gente oferece",
-        "communication": "Formação em ferramentas e estratégias de comunicação",
-        "mobilization": "Transferência de metodologias e tecnologias de mobilização",
-        "branding": "Criação e posicionamento de marca",
-        "training": "Soluções em organização de pessoas, treinamentos e gestão de voluntários"
-      },
-      "projects": {
-        "title": "O que já <b>incubamos</b>",
-        "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
-        "defezap": {
-          "title": "Defezap",
-          "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
-        },
-        "acolhe": {
-          "title": "Acolhe LGBT+",
-          "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
-        },
-        "representa": {
-          "title": "Me Representa",
-          "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
-        }
-      },
-      "current_projects": {
-        "title": "Projetos <b>Atuais</b>",
-        "mapa": {
-          "title": "Mapa do acolhimento",
-          "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
-          "action": "Saiba mais"
-        }
-      },
-      "incubate": {
-        "title": "Incube seu <b>projeto</b>",
-        "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
-        "form": {
-          "title": "Inscreva-se",
-          "submit": "Enviar",
-          "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
         }
       }
     },
@@ -374,7 +243,7 @@
       },
       "vacancies": {
         "title": "Nossas <b>vagas</b>",
-        "description": "No momento, não há vagas abertas, mas você pode se inscrever no nosso banco de talentos! Assim que outras oportunidades surgirem, te enviaremos um e-mail contando das vagas e te convidando a construir junto da nossa equipe de ativistas novas formas de participação política, mobilização e organização de pessoas."      
+        "description": "No momento, não há vagas abertas, mas você pode se inscrever no nosso banco de talentos! Assim que outras oportunidades surgirem, te enviaremos um e-mail contando das vagas e te convidando a construir junto da nossa equipe de ativistas novas formas de participação política, mobilização e organização de pessoas."
       },
       "form": {
         "title": "Inscreva-se para saber de nossas vagas",
@@ -384,7 +253,135 @@
       "equity": {
         "title": "Somos uma equipe comprometida com justiça e equidade, mas sua composição ainda não reflete de forma adequada a diversidade do país onde vivemos. Por isso, em nossos processos seletivos priorizamos a candidatura de pessoas não-brancas (pretas, pardas e indígenas), pessoas trans e moradoras de periferias do Brasil."
       }
-      
     }
-  }  
+  },
+  "about": {
+    "cover": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário",
+    "description": "Somos uma organização sem fins lucrativos comprometida com o fortalecimento da democracia, da justiça social e da igualdade. Há mais de dez anos desenvolvemos projetos, táticas e estratégias de mobilização e solidariedade pelo Brasil inteiro.",
+    "numbers": {
+      "title": "Números<br/><b>de impacto<b>"
+    },
+    "history": {
+      "title": "História",
+      "description": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos dezenas de projetos, fizemos centenas de campanhas de impacto, conseguimos a implementação de políticas públicas importantes e contribuímos na construção de redes de solidariedade."
+    },
+    "timeline": {
+      "title": "Linha do tempo",
+      "2011": {
+        "meurio": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local"
+      },
+      "2013": {
+        "vitoria": "O Meu Rio salva da demolição uma das melhores escolas públicas da cidade. A campanha envolveu várias táticas de mobilização e foi a primeira expressiva vitória da organização."
+      },
+      "2014": {
+        "minhasampa": "O Meu Rio faz sua primeira experiência de replicação, exportando metodologia e tecnologia para São Paulo. Nasce a Minha Sampa.",
+        "amarildosepriscilas": "O Meu Rio lidera campanha pela criação da primeira Delegacia de Descoberta de Paradeiros. Após sua implementação, 80% dos casos de desaparecimento no Rio passam a ser solucionados.",
+        "paulistaaberta": "A principal avenida de São Paulo passa a ser inteiramente para pedestres aos domingos graças a uma campanha da Minha Sampa e parceiros, que fez história na cidade."
+      },
+      "2017": {
+        "instintodevida": "Aliança latino-americana para reduzir o número de homicídios pela metade em 10 anos, através de políticas públicas inovadoras e baseadas em evidências",
+        "beta": "Desenvolvemos a primeira chatbot feminista do Facebook. Programada para dar visibilidade à luta feminista no Brasil e oferecer oportunidades de agir pelos direitos das mulheres"
+      },
+      "2018": {
+        "bonde": "Começamos a testar o BONDE, uma plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas"
+      },
+      "2019": {
+        "maraton": "Nuestros hermanos pediram e nós atendemos! Em 2019 fizemos um ciclo de treinamento para ativistas da Colômbia, Guatemala e México em nossas metodologias e tecnologias de mobilização",
+        "programamobilizadores": "Lançamos o Programa de Fundadores com o objetivo de selecionar e treinar pessoas de várias cidades do Brasil para fundar redes de mobilização local"
+      },
+      "2020": {
+        "periferiaquefaz": "Jovens de periferias do Brasil puderam concorrer a um edital que concedeu recursos de até R$20 mil para que ideiasque só precisavam de um empurrãozinho fossemtiradas do papel."
+      }
+    },
+    "impact": {
+      "donations": {
+        "number": "+4 milhões",
+        "text": "de reais arrecadados em financiamento coletivo"
+      },
+      "volunteers": {
+        "number": "+5,4 mil",
+        "text": "voluntárias e voluntários cadastrados"
+      },
+      "politicalChange": {
+        "number": "+120",
+        "text": "mudanças de política pública"
+      },
+      "mobilizations": {
+        "number": "+230",
+        "text": "campanhas lançadas"
+      },
+      "peopleDonations": {
+        "number": "+29 mil",
+        "text": "pessoas já fizeram doações"
+      },
+      "peopleMobilizations": {
+        "number": "+2,5 milhões",
+        "text": "de pessoas mobilizadas"
+      }
+    },
+    "financiers": {
+      "title": "Quem financia o <b>NOSSAS</b>",
+      "imageText": "Quem financia o NOSSAS",
+      "description": "Somos financiados por organizações brasileiras e internacionais e contamos também com o apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela boa gestão desses recursos, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
+      "audit": "Baixar auditoria",
+      "donate": "Fazer uma doação",
+      "foundations": {
+        "title": "Fundações",
+        "description": "Em 2020, o NOSSAS executou atividades financiadas pelas seguintes fundações:"
+      }
+    },
+    "team": {
+      "board": "Conselho",
+      "board_description": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de dois anos:",
+      "leaders": "Lideranças",
+      "team": "Equipe"
+    },
+    "contact": "Entre em <b>contato</b>"
+  },
+  "incubations": {
+    "about": {
+      "title": "Incubar:<br/><b>o que é isso?</b>",
+      "description": "Você pode receber capacitação e apoio para desenvolver ou acelerar seu projeto de mobilização ou solidariedade utilizando as metodologias desenvolvidas pelo NOSSAS."
+    },
+    "offer": {
+      "title": "A gente oferece",
+      "communication": "Formação em ferramentas e estratégias de comunicação",
+      "mobilization": "Transferência de metodologias e tecnologias de mobilização",
+      "branding": "Criação e posicionamento de marca",
+      "training": "Soluções em organização de pessoas, treinamentos e gestão de voluntários"
+    },
+    "projects": {
+      "title": "O que já <b>incubamos</b>",
+      "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
+      "defezap": {
+        "title": "Defezap",
+        "description": "Criamos um sistema de denúncias contra a violência de estado no Rio de Janeiro, tudo pelo whatsapp."
+      },
+      "acolhe": {
+        "title": "Acolhe LGBT+",
+        "description": "Uma rede de solidariedade para a comunidade LGBTQIA+ que conecta pessoas que precisam de apoio psicológico a uma rede voluntária"
+      },
+      "representa": {
+        "title": "Me Representa",
+        "description": "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
+      }
+    },
+    "current_projects": {
+      "title": "Projetos <b>Atuais</b>",
+      "mapa": {
+        "title": "Mapa do acolhimento",
+        "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
+        "action": "Saiba mais"
+      }
+    },
+    "incubate": {
+      "title": "Incube seu <b>projeto</b>",
+      "description": "Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)",
+      "form": {
+        "title": "Inscreva-se",
+        "submit": "Enviar",
+        "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
+      }
+    }
+  }
 }
