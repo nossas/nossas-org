@@ -25,11 +25,10 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     {/* Cover */}
     <Hero
       maxWidth="520px"
-      bgColor="white"
-      left="30%"
+      videoUrl="/static/media/covers/materials.mp4"
       title={t("content:covers.materials.title")}
-      titleColor="green"
-      titleAlign="left"
+      titleColor="white"
+      titleAlign="center"
     />
     <Section
       direction={["column", null, null, "row"]}
@@ -45,7 +44,9 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </Heading>
       <Stack direction="column" spacing="30px">
-        <Text>{t("content:blocks.materials.manual.description")}</Text>
+        <Text maxW="670px">
+          {t("content:blocks.materials.manual.description")}
+        </Text>
         <Link variant="pink">{t("content:blocks.materials.manual.link")}</Link>
       </Stack>
     </Section>
