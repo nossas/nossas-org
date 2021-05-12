@@ -16,7 +16,7 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => (
       {t("footer.actvist")}
     </NavLink>
     <NavLink href="/#we-are-doing" variant={variant}>
-      {t("footer.work")}
+      {t("footer.mobilizations")}
     </NavLink>
   </>
 );
