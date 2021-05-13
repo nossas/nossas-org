@@ -32,7 +32,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Hero
       maxWidth="380px"
       videoUrl="/static/media/covers/technologies.mp4"
-      title={t("content:covers.technologies.title")}
+      title="Conheça o BONDE, nossa ferramenta de tecnologia"
       titleColor="white"
       titleAlign="center"
     />
@@ -43,49 +43,43 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       rowGap="25px"
     >
       <Heading as="h2" color="blue.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.technologies.emergence.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Assim surgiu <b>o BONDE</b>
       </Heading>
-      <Text>{t("content:blocks.technologies.emergence.description")}</Text>
+      <Text>
+        Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com
+        um time incrível de tecnologia, desenvolvemos uma plataforma de
+        mobilização que agora está disponível para outras organizações causarem
+        também.
+      </Text>
     </Section>
     <ImageTextListBox
-      title={t("content:blocks.technologies.functionalities.title")}
+      title="Funcionalidades"
       items={[
         {
           src: "/static/media/assets/icon-computer.png",
-          alt: "Icone Mobiização",
-          description: t(
-            "content:blocks.technologies.functionalities.mobilizations"
-          ),
+          alt: "Icone Mobilização",
+          description: "Crie páginas para suas campanhas de mobilização",
         },
         {
           src: "/static/media/assets/icon-mail.png",
           alt: "Icone Pressão",
-          description: t(
-            "content:blocks.technologies.functionalities.pressure"
-          ),
+          description:
+            "Pressione tomadores de decisão por email, telefone ou petição",
         },
         {
           src: "/static/media/assets/icon-money.png",
           alt: "Icone Doação",
-          description: t(
-            "content:blocks.technologies.functionalities.donation"
-          ),
+          description: "Faça um financiamento coletivo para o seu projeto",
         },
         {
           src: "/static/media/assets/icon-hand.png",
           alt: "Icone Formulário",
-          description: t("content:blocks.technologies.functionalities.form"),
+          description: "Receba inscrições de voluntários para a sua causa",
         },
         {
           src: "/static/media/assets/icon-megaphone.png",
           alt: "Icone Rede Solidariedade",
-          description: t("content:blocks.technologies.functionalities.redes"),
+          description: "Crie uma rede de solidariedade e aumente o seu impacto",
         },
       ]}
     />
@@ -97,20 +91,14 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Image src="/static/media/s3/computer.png" alt="Computer Image" />
       <Box>
         <Heading as="h2" color="green" maxW="249px" size="lg">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.technologies.bonde.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
+          Use o BONDE para <b>causar</b>
         </Heading>
         <Text maxW="569px" marginBottom="25px">
-          {t("content:blocks.technologies.bonde.description")}
+          Com nossa tecnologia você pode fazer campanhas de pressão,
+          financiamento coletivo, petições, ou ainda criar redes de
+          solidariedade sem precisar sacar nadinha de programação.
         </Text>
-        <Button maxW="190px">
-          {t("content:blocks.technologies.bonde.button")}
-        </Button>
+        <Button maxW="190px">Contrate agora</Button>
       </Box>
     </Section>
     <Section
@@ -120,13 +108,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       backgroundColor="#F7F7F7"
     >
       <Heading as="h2" color="blue.main" maxW={["100%", null, null, "350px"]}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.technologies.partners", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Quem já causou <b>com o BONDE</b>
       </Heading>
 
       <Box>
@@ -182,13 +164,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
     <Section direction="column" spacing="30px">
       <Heading as="h2" color="pink.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.technologies.campaingStories.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Campanhas que <b>fizeram história</b>
       </Heading>
       <SliderPanel
         infiniteLoop
@@ -196,66 +172,38 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         items={[
           {
             src: "/static/media/s3/saldaoamazonia.png",
-            alt: t(
-              "content:blocks.technologies.campaingStories.carousel.1.title"
-            ),
-            title: t(
-              "content:blocks.technologies.campaingStories.carousel.1.title"
-            ),
-            description: t(
-              "content:blocks.technologies.campaingStories.carousel.1.description"
-            ),
-            link: t(
-              "content:blocks.technologies.campaingStories.carousel.action"
-            ),
+            alt: "Saldão da Amazônia",
+            title: "Saldão da Amazônia",
+            description:
+              "Um projeto de lei que facilitaria a grilagem foi posto em pauta na Câmara dos Deputados, mas graças à campanha mais de 30 mil pessoas se mobilizaram e conseguiram barrar o PL.",
+            link: "Saber mais",
             href: "https://www.saldaodaamazonia.org.br/",
           },
           {
             src: "/static/media/s3/amazoniacontracovid.png",
-            alt: t(
-              "content:blocks.technologies.campaingStories.carousel.2.title"
-            ),
-            title: t(
-              "content:blocks.technologies.campaingStories.carousel.2.title"
-            ),
-            description: t(
-              "content:blocks.technologies.campaingStories.carousel.2.description"
-            ),
-            link: t(
-              "content:blocks.technologies.campaingStories.carousel.action"
-            ),
+            alt: "Amazônia Contra a Covid",
+            title: "Amazônia Contra a Covid",
+            description:
+              "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas.",
+            link: "Saber mais",
             href: "https://www.amazoniacontracovid.org.br/",
           },
           {
             src: "/static/media/s3/maisquepalmas.jpg",
-            alt: t(
-              "content:blocks.technologies.campaingStories.carousel.3.title"
-            ),
-            title: t(
-              "content:blocks.technologies.campaingStories.carousel.3.title"
-            ),
-            description: t(
-              "content:blocks.technologies.campaingStories.carousel.3.description"
-            ),
-            link: t(
-              "content:blocks.technologies.campaingStories.carousel.action"
-            ),
+            alt: "Mais do que palmas",
+            title: "Mais do que palmas",
+            description:
+              "Foi uma campanha para que um pacote de emergência que daria melhores condições de trabalho aos médicos, enfermeiros, fisioterapeutas intensivistas, técnicos e auxiliares de enfermagem na linha de frente na guerra para combater a COVID-19 virasse lei.",
+            link: "Saber mais",
             href: "https://www.maisdoquepalmas.com.br/",
           },
           {
             src: "/static/media/s3/ahoraeagora.jpg",
-            alt: t(
-              "content:blocks.technologies.campaingStories.carousel.4.title"
-            ),
-            title: t(
-              "content:blocks.technologies.campaingStories.carousel.4.title"
-            ),
-            description: t(
-              "content:blocks.technologies.campaingStories.carousel.4.description"
-            ),
-            link: t(
-              "content:blocks.technologies.campaingStories.carousel.action"
-            ),
+            alt: "A hora é agora",
+            title: "A hora é agora",
+            description:
+              "A All Out realizou uma campanha de pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!",
+            link: "Saber mais",
             href: "https://www.stf.alloutbrasil.org/",
           },
         ]}

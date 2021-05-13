@@ -70,48 +70,47 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Hero
       maxWidth="380px"
       videoUrl="/static/media/covers/incubations.mp4"
-      title={t("content:covers.incubations.title")}
+      title="Incube seu projeto com a gente!"
       titleColor="white"
       titleAlign="center"
     />
     {/* Content */}
     <Section direction={["column", null, "row"]} spacing="20px">
       <Heading as="h2" flex={1} size="lg" textColor="blue.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.incubations.about.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Incubar:
+        <br /> <b>o que é isso?</b>
       </Heading>
       <Text flex={[1, null, 2, null, null]} maxW="679px">
-        {t("content:blocks.incubations.about.description")}
+        Você pode receber capacitação e apoio para desenvolver ou acelerar seu
+        projeto de mobilização ou solidariedade utilizando as metodologias
+        desenvolvidas pelo NOSSAS.
       </Text>
     </Section>
     <ImageTextListBox
       width="330px"
-      title={t("content:blocks.incubations.offer.title")}
+      title="A gente oferece"
       items={[
         {
           src: "/static/media/assets/icon-communication.png",
           alt: "Comunicação",
-          description: t("content:blocks.incubations.offer.communication"),
+          description: "Formação em ferramentas e estratégias de comunicação",
         },
         {
           src: "/static/media/assets/icon-mobilization-technology.png",
           alt: "Tecnologia de mobilização",
-          description: t("content:blocks.incubations.offer.mobilization"),
+          description:
+            "Transferência de metodologias e tecnologias de mobilização",
         },
         {
           src: "/static/media/assets/icon-branding.png",
           alt: "Posicionamento de marca",
-          description: t("content:blocks.incubations.offer.branding"),
+          description: "Criação e posicionamento de marca",
         },
         {
           src: "/static/media/assets/icon-training.png",
           alt: "Treinamento",
-          description: t("content:blocks.incubations.offer.training"),
+          description:
+            "Soluções em organização de pessoas, treinamentos e gestão de voluntários",
         },
       ]}
     />
@@ -126,16 +125,11 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         justifyContent="space-between"
       >
         <Heading as="h2" color="blue.main" maxW="215px" size="lg">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.incubations.projects.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
+          O que já <b>incubamos</b>
         </Heading>
         <Text maxW="800px">
-          {t("content:blocks.incubations.projects.description")}
+          Conheça alguns dos projetos que já passaram por nosso processo de
+          incubação e hoje são referência em suas áreas de atuação.
         </Text>
       </Stack>
       <Carousel
@@ -144,63 +138,53 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         items={[
           <ImageText
             src="/static/media/s3/meacolhelgbt.png"
-            title={t("content:blocks.incubations.projects.acolhe.title")}
-            description={t(
-              "content:blocks.incubations.projects.acolhe.description"
-            )}
+            title="Acolhe LGBT+"
+            description="Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários."
             href="https://www.acolhelgbt.org/"
-            linkText={t("content:links.knowmore")}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/paneladepressao.png"
-            title={t(
-              "content:blocks.incubations.projects.paneladepressao.title"
-            )}
+            title={t("Panela de pressão")}
             description={t(
-              "content:blocks.incubations.projects.paneladepressao.description"
+              "Uma tecnologia inovadora à serviço da participação popular: com o Panela de Pressão, qualquer pessoa monta sua própria campanha, em poucos cliques."
             )}
             href="http://paneladepressao.nossascidades.org/"
-            linkText={t("content:links.knowmore")}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/merepresenta.png"
-            title={t("content:blocks.incubations.projects.representa.title")}
+            title="Me Representa"
             description={t(
-              "content:blocks.incubations.projects.representa.description"
+              "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
             )}
             href="https://merepresenta.org.br/"
-            linkText={t("content:links.knowmore")}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-meurecife.jpg"
-            title={t("content:blocks.incubations.projects.meurecife.title")}
+            title="Meu recife"
             description={t(
-              "content:blocks.incubations.projects.meurecife.description"
+              "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável."
             )}
             href="https://www.meurecife.org.br/"
-            linkText={t("content:links.knowmore")}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/defezap.jpg"
-            title={t("content:blocks.incubations.projects.defezap.title")}
+            title="Defezap"
             description={t(
-              "content:blocks.incubations.projects.defezap.description"
+              "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
             )}
             href="http://www.saibamais.defezap.org.br/"
-            linkText={t("content:links.knowmore")}
+            linkText="Saiba mais"
           />,
         ]}
       />
     </Section>
     <Section direction="column" spacing="30px">
       <Heading as="h2" color="green" size="lg">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.incubations.current_projects.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Projetos <b>Atuais</b>
       </Heading>
 
       <Carousel
@@ -208,75 +192,45 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         items={[
           <ImageText
             src="/static/media/s3/mapadoacolhimento.png"
-            title={t("content:blocks.incubations.current_projects.mapa.title")}
-            description={t(
-              "content:blocks.incubations.current_projects.mapa.description"
-            )}
+            title="Mapa do acolhimento"
+            description="O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
             href="https://www.mapadoacolhimento.org/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.mapa.action"
-            )}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-meurio.jpg"
-            title={t(
-              "content:blocks.incubations.current_projects.meurio.title"
-            )}
-            description={t(
-              "content:blocks.incubations.current_projects.meurio.description"
-            )}
+            title="Meu rio"
+            description="A primeira experiência em incubação foi com o Meu Rio, uma rede de ação que mobiliza pessoas para participarem ativamente dos processos de decisão da cidade."
             href="https://www.meurio.org.br/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.meurio.action"
-            )}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-msp.jpg"
-            title={t(
-              "content:blocks.incubations.current_projects.minhasampa.title"
-            )}
-            description={t(
-              "content:blocks.incubations.current_projects.minhasampa.description"
-            )}
+            title="Minha sampa"
+            description="A rede paulistana de ação Minha Sampa faz mobilizações locais que aproximam os cidadãos da política."
             href="https://www.minhasampa.org.br/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.minhasampa.action"
-            )}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-rnc.jpg"
-            title={t(
-              "content:blocks.incubations.current_projects.redenossascidades.title"
-            )}
-            description={t(
-              "content:blocks.incubations.current_projects.redenossascidades.description"
-            )}
+            title="Rede nossas cidades"
+            description="Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação."
             href="https://www.redenossascidades.org/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.redenossascidades.action"
-            )}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-bonde.jpg"
-            title={t("content:blocks.incubations.current_projects.bonde.title")}
-            description={t(
-              "content:blocks.incubations.current_projects.bonde.description"
-            )}
+            title="Bonde"
+            description="Feita por ativistas para ativistas, a ferramenta de tecnologia do NOSSAS pode ser usada por qualquer pessoa ou organização que queira colocar sua campanha na rua!"
             href="https://www.bonde.org/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.bonde.action"
-            )}
+            linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/incubacoes-beta.jpg"
-            title={t("content:blocks.incubations.current_projects.beta.title")}
-            description={t(
-              "content:blocks.incubations.current_projects.beta.description"
-            )}
+            title="Beta"
+            description="A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!"
             href="https://www.beta.org.br/"
-            linkText={t(
-              "content:blocks.incubations.current_projects.beta.action"
-            )}
+            linkText="Saiba mais"
           />,
         ]}
       />
@@ -284,24 +238,16 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <DescriptionBox
       color="pink"
-      title={
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.incubations.incubate.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
-      }
-      description={t("content:blocks.incubations.incubate.description")}
+      title="Incube seu projeto"
+      description="Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)"
     >
       <SubscribeForm
         color="blue"
         t={t}
         widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
-        title={t("content:blocks.incubations.incubate.form.title")}
-        submitText={t("content:blocks.incubations.incubate.form.submit")}
-        textSuccess={t("content:blocks.incubations.incubate.form.success")}
+        title="Inscreva-se"
+        submitText="Enviar"
+        textSuccess="Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
       />
     </DescriptionBox>
   </Body>
