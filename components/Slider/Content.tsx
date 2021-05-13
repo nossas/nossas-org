@@ -54,30 +54,48 @@ const SliderContent: React.FC<SliderContentProps> = ({
 
 export default withTranslation("common")(SliderContent);
 
-{
-  /* <SimpleGrid columns={[1, 2]} gap={["45px", 12]}>
-  <Image
-    src="/static/media/leftcontent.png"
-    alt="Mobilizadores Região Amazônica"
-    width={[315, 615]}
-    height={[194, 357]}
-  />
-  <Stack flex="1" direction="column" spacing="8">
-    <Heading as="h3" size="lg" color="nossas.blue">
-      | TREINAMENTOS REALIZADOS
-      </Heading>
-    <Stack spacing="4">
-      <Heading as="h2" size="2xl" color="nossas.blue">
-        PROGRAMA DE MOBILIZADORES REGIÃO AMAZÔNICA
-        </Heading>
-      <Text fontSize={["xl", "2xl"]}>
-        É uma rede composta por organizações locais que atuam em diversas
-        regiões do Brasil por cidades mais participativas.
-        </Text>
-      <Link href="#" fontSize={["xl", "2xl"]} fontWeight="700" color="nossas.pink">
-        Saiba mais +
-        </Link>
-    </Stack>
-  </Stack>
-</SimpleGrid> */
+interface ImageTextProps {
+  src: string;
+  alt?: string;
+  title?: string;
+  description: string;
+  href?: string;
+  linkText?: string;
 }
+
+export const ImageText: React.FC<ImageTextProps> = ({
+  alt,
+  src,
+  title,
+  description,
+  href,
+  linkText,
+}) => {
+  return (
+    <Stack
+      direction={["column", "column", null, null, "row"]}
+      spacing="70px"
+      alignItems="center"
+    >
+      <Image
+        objectFit="cover"
+        boxSize={["357px", null, null, null, "357px", "427px"]}
+        src={src}
+        alt={alt}
+      />
+      <Stack spacing="10px" textAlign="left">
+        {title && (
+          <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
+            {title}
+          </Heading>
+        )}
+        <Text>{description}</Text>
+        {linkText || href ? (
+          <Link href={href} target="_blank" variant="pink">
+            {`${linkText} +`}
+          </Link>
+        ) : null}
+      </Stack>
+    </Stack>
+  );
+};
