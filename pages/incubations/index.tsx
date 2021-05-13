@@ -65,7 +65,7 @@ ImageIcon.defaultProps = {
 };
 
 const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     {/* Cover */}
     <Hero
       maxWidth="380px"

@@ -6,11 +6,7 @@ import GoogleFonts from "next-google-fonts";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-interface BodyProps {
-  isMobile: boolean;
-}
-
-const Body: React.FC<BodyProps> = ({ children, isMobile }) => (
+const Body: React.FC = ({ children }) => (
   <Flex minH="100vh" direction="column">
     <GoogleFonts href="https://fonts.googleapis.com/css?family=Droid+Sans:100,400,700" />
 
@@ -20,7 +16,7 @@ const Body: React.FC<BodyProps> = ({ children, isMobile }) => (
     </Head>
 
     <Flex id="page-container" direction="column" flex="1">
-      <Navbar isMobile={isMobile} />
+      <Navbar />
 
       <Container as="main" id="page-wrap" flex="1" maxW="none" padding="0">
         {children}

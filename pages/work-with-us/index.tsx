@@ -14,7 +14,7 @@ interface PageProps extends WithUserAgentProps {
 }
 
 const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     <Hero
       maxWidth="1440px"
       videoUrl="/static/media/covers/trabalheconosco.mp4"

@@ -21,7 +21,7 @@ interface PageProps extends WithUserAgentProps {
 }
 
 const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     {/* Cover */}
     <Hero
       maxWidth="520px"

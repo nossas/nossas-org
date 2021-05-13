@@ -16,17 +16,36 @@ interface PageProps extends WithUserAgentProps {
 }
 
 const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     {/* Cover */}
     <Hero
       maxWidth="1440px"
-      bgImage="/static/media/covers/capa-treinamento.png"
+      videoUrl="/static/media/covers/trainings.mp4"
       title={t("content:covers.training.title")}
       titleColor="white"
       titleAlign="center"
     />
 
-    <Section
+    <Section spacing={["30px", null, null, null, "245px"]}>
+      <Stack
+        direction={["column", null, null, "row"]}
+        justifyContent="space-between"
+      >
+        <Heading as="h2" color="blue.main">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("content:blocks.training.done.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        </Heading>
+        <Text maxW="702px">
+          {t("content:blocks.training.done.description")}
+        </Text>
+      </Stack>
+    </Section>
+    {/* <Section
       direction={["column", null, null, "row"]}
       spacing={["30px", null, null, "254px"]}
     >
@@ -40,7 +59,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </Heading>
       <Text maxW="668px">{t("content:blocks.training.done.description")}</Text>
-    </Section>
+    </Section> */}
 
     <Section direction={["column"]} spacing={["30px"]}>
       <Heading as="h2" color="pink.main">

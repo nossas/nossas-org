@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const Svg = styled.svg<{ transform: boolean }>`
+const Svg = styled.svg`
   margin-top: 50px !important;
 
-  ${(props) =>
+  ${(props: any) =>
     props.transform &&
     `
     transform: rotate(-45deg);

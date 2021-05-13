@@ -3,7 +3,6 @@ import { NextPage } from "next";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 // import { Heading, Link, Text, Stack, Image } from "@chakra-ui/react";
-import styled from "@emotion/styled";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Heading, Text } from "@chakra-ui/react";
@@ -15,7 +14,7 @@ interface PageProps extends WithUserAgentProps {
 }
 
 const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
-  <Body isMobile={ua.isMobile}>
+  <Body>
     {/* Cover */}
     <Hero
       maxWidth="470px"
