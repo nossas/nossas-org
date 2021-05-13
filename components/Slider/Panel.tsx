@@ -22,12 +22,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
     bgColor="white"
     minHeight={["512px", null, "612px", null, "712px"]}
   >
-    <Img
-      src={item.src}
-      alt={item.alt}
-      objectFit="fill"
-      boxSize={["230px", null, "305px", null, "380px"]}
-    />
+    <Img src={item.src} alt={item.alt} objectFit="fill" />
     <Stack p={8} spacing={4} textAlign="left">
       <Link
         href={item.href}
