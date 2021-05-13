@@ -208,7 +208,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           isMobile={ua.isMobile}
           items={[
             {
-              src: "/static/media/s3/liberaotablet.png",
+              src: "/static/media/s3/liberaotablet.jpg",
               href: "https://www.liberaotablet.minhasampa.org.br/",
               alt: t("sliders:home.liberaotablet.title"),
               title: t("sliders:home.liberaotablet.title"),

@@ -131,14 +131,18 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
   );
 };
 
-export const EmployeeTeam: React.FC<{ title: string; members: Employee[] }> = ({
-  title,
-  members,
-}) => (
-  <Stack direction="column">
-    <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
-      {title}
-    </Heading>
+export const EmployeeTeam: React.FC<{
+  title: string;
+  description?: string;
+  members: Employee[];
+}> = ({ title, description, members }) => (
+  <Stack direction="column" spacing="30px">
+    <Box>
+      <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
+        {title}
+      </Heading>
+      {description && <Text>{description}</Text>}
+    </Box>
     <SimpleGrid columns={6} columnGap="15px" rowGap="30px">
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
