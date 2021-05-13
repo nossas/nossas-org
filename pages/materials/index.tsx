@@ -26,7 +26,7 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Hero
       maxWidth="520px"
       videoUrl="/static/media/covers/materials.mp4"
-      title={t("content:covers.materials.title")}
+      title="Faça você mesmo sua própria campanha de impacto!"
       titleColor="white"
       titleAlign="center"
     />
@@ -35,61 +35,53 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       spacing={["30px", null, null, "145px"]}
     >
       <Heading as="h2" color="blue.main" maxW={["auto", null, null, "300px"]}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.materials.manual.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Baixe agora <b>seu manual</b>
       </Heading>
       <Stack direction="column" spacing="30px">
         <Text maxW="670px">
-          {t("content:blocks.materials.manual.description")}
+          Nosso manual de mobilização resume muito do que aprendemos em uma
+          década de experiência com ativismo no Brasil. Saiba também como
+          mobilizar pessoas em torno de causas e organizá-las em redes de
+          solidariedade.
         </Text>
-        <Link variant="pink">{t("content:blocks.materials.manual.link")}</Link>
+        <Link variant="pink">Baixar manual</Link>
       </Stack>
     </Section>
     <ImageTextListBox
-      title={t("content:blocks.materials.learning.title")}
+      title="O que você pode aprender com o manual?"
       items={[
         {
           src: "/static/media/assets/icon-eyelash-color.png",
           alt: "Icone Eyelash",
-          description: t("content:blocks.materials.learning.strategy"),
+          description:
+            "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
         },
         {
           src: "/static/media/assets/icon-target.png",
           alt: "Icone Target",
-          description: t("content:blocks.materials.learning.target"),
+          description:
+            "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
         },
         {
           src: "/static/media/assets/icon-question-pink.png",
           alt: "Icone Question",
-          description: t("content:blocks.materials.learning.create"),
+          description:
+            "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência",
         },
       ]}
     />
     <DescriptionBox
       color="pink"
-      title={
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.materials.manualform.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
-      }
-      description={t("content:blocks.materials.manualform.description")}
+      title="Manual de mobilização"
+      description="Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto."
     >
       <SubscribeForm
         color="blue"
         t={t}
         widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
-        title={t("content:blocks.materials.manualform.form.title")}
-        submitText={t("content:blocks.materials.manualform.form.submit")}
-        textSuccess={t("content:blocks.materials.manualform.form.success")}
+        title="Baixar manual"
+        submitText="Baixar"
+        textSuccess="Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
       />
     </DescriptionBox>
   </Body>
