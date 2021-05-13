@@ -19,7 +19,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Hero
       maxWidth="470px"
       bgImage="/static/media/covers/mobilizations.png"
-      title={t("content:covers.mobilizations.title")}
+      title="Participe de uma de nossas campanhas!"
       titleColor="white"
       titleAlign="center"
     />
@@ -28,27 +28,17 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       spacing={["30px", null, null, "195px"]}
     >
       <Heading as="h2" color="blue.main" maxW="400px">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.mobilizations.done.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Vem com <b>a gente!</b>
       </Heading>
       <Text maxW="668px">
-        {t("content:blocks.mobilizations.done.description")}
+        Ajude nossas campanhas a fazer barulho e a conquistar vitórias que
+        consolidam políticas públicas e protegem nossos direitos. Chega mais, e
+        vem fazer parte da mudança!
       </Text>
     </Section>
     <Section direction={["column"]} spacing="30px">
       <Heading as="h2" color="pink.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.mobilizations.doing.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Campanhas que <b>estão rolando</b>
       </Heading>
       <SliderPanel
         isMobile={ua.isMobile}
@@ -56,42 +46,38 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         items={[
           {
             src: "/static/media/s3/liberaotablet.jpg",
-            alt: t("content:blocks.mobilizations.doing.carousel.1.title"),
-            title: t("content:blocks.mobilizations.doing.carousel.1.title"),
-            description: t(
-              "content:blocks.mobilizations.doing.carousel.1.description"
-            ),
+            alt: "Libera o tablet",
+            title: "Libera o tablet",
+            description:
+              "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
             href: "https://www.liberaotablet.minhasampa.org.br/",
-            link: t("content:blocks.mobilizations.doing.carousel.1.action"),
+            link: "Pressione para liberar o tablet",
           },
           {
             src: "/static/media/s3/metroaumentonao.jpg",
-            alt: t("content:blocks.mobilizations.doing.carousel.2.title"),
-            title: t("content:blocks.mobilizations.doing.carousel.2.title"),
-            description: t(
-              "content:blocks.mobilizations.doing.carousel.2.description"
-            ),
+            alt: "Metrô, Aumento Não!",
+            title: "Metrô, Aumento Não!",
+            description:
+              "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
             href: "https://www.auxilioateofimdapandemia.org/",
-            link: t("content:blocks.mobilizations.doing.carousel.2.action"),
+            link: "Pressione para barrar o aumento",
           },
           {
             src: "/static/media/s3/auxilioemergencial.png",
-            alt: t("content:blocks.mobilizations.doing.carousel.3.title"),
-            title: t("content:blocks.mobilizations.doing.carousel.3.title"),
-            description: t(
-              "content:blocks.mobilizations.doing.carousel.3.description"
-            ),
+            alt: "Auxílio até o fim da pandemia",
+            title: "Auxílio até o fim da pandemia",
+            description:
+              "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
             href: "https://www.auxilioateofimdapandemia.org/",
-            link: t("content:blocks.mobilizations.doing.carousel.3.action"),
+            link: "Participe da campanha",
           },
           {
-            alt: t("content:blocks.mobilizations.doing.carousel.4.title"),
+            alt: "Tem gente com fome",
             src: "/static/media/s3/temgentecomfome.png",
-            title: t("content:blocks.mobilizations.doing.carousel.4.title"),
-            description: t(
-              "content:blocks.mobilizations.doing.carousel.4.description"
-            ),
-            link: t("content:blocks.mobilizations.doing.carousel.4.action"),
+            title: "Tem gente com fome",
+            description:
+              "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+            link: "Participe da campanha",
             href: "https://www.temgentecomfome.com.br/",
           },
         ]}
@@ -99,13 +85,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
     <Section direction={["column"]} spacing="30px" bgColor="gray.light">
       <Heading as="h2" color="blue.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:blocks.mobilizations.victories.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
+        Nossas <b>vitórias</b>
       </Heading>
       <SliderPanel
         infiniteLoop
@@ -113,83 +93,75 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         items={[
           {
             src: "/static/media/s3/camarotedavacina.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.1.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.1.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.1.description"
-            ),
+            alt: "Camarote da vacina não",
+            title: "Camarote da vacina não",
+            description:
+              "Empresários conseguiram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto.",
             href: "https://www.restingaemangueficam.org.br/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/restingaemangue.png",
-            alt: t("content:blocks.mobilizations.victories.carousel.2.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.2.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.2.description"
-            ),
+            alt: "Restinga e mangue ficam",
+            title: "Restinga e mangue ficam",
+            description:
+              "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. A mobilização reuniu mais de 180 mil assinaturas e conseguiu frear a boiada, garantindo a preservação do litoral brasileiro e seus ecossistemas.",
             href: "https://www.restingaemangueficam.org.br/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/rededeprotecao.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.3.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.3.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.3.description"
-            ),
+            alt: "Auxílio para saúde",
+            title: "Auxílio para saúde",
+            description:
+              "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais ficaram muito expostas ao vírus durante a pandemia. Graças à pressão, foi aprovada uma lei que garante indenização aos familiares dos profissionais que faleceram por conta da Covid19.",
             href: "https://www.auxilioparasaude.org.br/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/semaulasemenem.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.4.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.4.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.4.description"
-            ),
-            href: "https://www.4gparaestudar.org.br/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            alt: "Sem aula sem enem",
+            title: "Sem aula sem enem",
+            description:
+              "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada.",
+            href: "https://www.senado.semaulasemenem.org.br/",
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/renda-basica.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.5.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.5.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.5.description"
-            ),
-            href: "https://www.4gparaestudar.org.br/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            alt: "Renda básica",
+            title: "Renda básica",
+            description:
+              "Junto com outras 200 organizações, conseguimos aprovar o auxílio emergencial de R$600 para 68 milhões de brasileiros em 2020. Em 2021, a luta  continua para a criação de um projeto de lei que garanta uma renda básica permanente para toda a população.",
+            href: "https://www.rendabasica.org.br/",
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/paulista.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.6.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.6.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.6.description"
-            ),
-            href: "https://www.tocomelas.mapadoacolhimento.org/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            alt: "Paulista aberta",
+            title: "Paulista aberta",
+            description:
+              "Depois de mais de dois anos de intensa mobilização com organizações e coletivos da sociedade civil paulista, o então prefeito Fernando Haddad publicou o decreto que criou a Paulista aberta e o projeto Ruas Abertas, e mudou a rotina de lazer de São Paulo.",
+            href: "https://www.paulistaaberta.minhasampa.org.br/",
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/escola.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.7.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.7.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.7.description"
-            ),
-            href: "https://www.tocomelas.mapadoacolhimento.org/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            alt: "Escola não se destrói",
+            title: "Escola não se destrói",
+            description:
+              "A Escola Friedenreich ocupa até hoje um dos primeiros lugares no IDEB do Rio de Janeiro, mas em 2014 ela corria o risco de ser derrubada para dar lugar a um estacionamento para a Copa do Mundo. Depois de uma campanha que teve várias etapas, a escola continuou de pé!",
+            href: "https://www.escolanaosedestroi.meurio.org.br/",
+            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/rio-sem-canudo.jpg",
-            alt: t("content:blocks.mobilizations.victories.carousel.8.title"),
-            title: t("content:blocks.mobilizations.victories.carousel.8.title"),
-            description: t(
-              "content:blocks.mobilizations.victories.carousel.8.description"
-            ),
-            href: "https://www.tocomelas.mapadoacolhimento.org/",
-            link: t("content:blocks.mobilizations.victories.carousel.action"),
+            alt: "Rio sem canudo",
+            title: "Rio sem canudo",
+            description:
+              "O Rio de Janeiro foi a primeira cidade a proibir a distribuição de canudos de plástico em bares, restaurantes e estabelecimentos comerciais. Depois dela, várias outras cidades no país seguiram o mesmo exemplo. Agora, a luta segue pelo fim de todos os plásticos de uso único!",
+            href: "https://www.riosemcanudo.meurio.org.br/",
+            link: "Saiba mais",
           },
         ]}
       />
