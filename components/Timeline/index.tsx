@@ -45,7 +45,7 @@ export const ImageText = ({ src, text, alt }: any) => (
   </BoxStyled>
 );
 
-const Timeline = ({ title, children }: any) => (
+export const Timeline = ({ title, children }: any) => (
   <Stack direction="column" spacing="0">
     <Box
       borderBottomWidth="1px"
