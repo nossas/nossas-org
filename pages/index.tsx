@@ -25,10 +25,10 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       />
       <Section
         id="join-us"
-        justifyContent={["flex-start", null, null, "space-between"]}
+        justifyContent={["flex-start", null, null, "center"]}
         alignItems={["flex-start", "flex-start"]}
         direction={["column", null, null, null, "row"]}
-        spacing="30px"
+        spacing={["30px", null, null, null, "100px"]}
       >
         <Heading as="h2" color="pink.main" size="lg" minW="245px">
           {/* <div

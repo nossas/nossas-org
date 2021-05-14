@@ -1,9 +1,7 @@
-// https://youtu.be/I946ueDvVmI
 import React from "react";
 import { NextPage } from "next";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-// import styled from "@emotion/styled";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
@@ -12,13 +10,9 @@ import {
   Heading,
   Text,
   Link,
-  Stack,
   Img as Image,
   SimpleGrid,
-  AspectRatio,
-  color,
 } from "@chakra-ui/react";
-// import { SliderPanel } from "../../components/Slider";
 import { ImageTextListBox } from "../../content";
 import { SliderPanel } from "../../components/Slider";
 
@@ -46,10 +40,10 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         Assim surgiu <b>o BONDE</b>
       </Heading>
       <Text>
-        Temos a ferramenta perfeita para espalhar a sua causa por aí! Junto com
-        um time incrível de tecnologia, desenvolvemos uma plataforma de
-        mobilização que agora está disponível para outras organizações causarem
-        também.
+        Temos a ferramenta perfeita para espalhar sua causa por aí :) O BONDE é
+        a plataforma criada pelo nosso time de tecnologia para movimentar nossas
+        mobilizações: ela agora está disponível para outras organizações
+        causarem também.
       </Text>
     </Section>
     <ImageTextListBox
@@ -98,7 +92,12 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           financiamento coletivo, petições, ou ainda criar redes de
           solidariedade sem precisar sacar nadinha de programação.
         </Text>
-        <Button maxW="190px">Contrate agora</Button>
+        <Button
+          onClick={() => window.open("https://www.bonde.org/", "_target")}
+          maxW="190px"
+        >
+          Contrate agora
+        </Button>
       </Box>
     </Section>
     <Section

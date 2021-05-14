@@ -150,7 +150,7 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       />
     </Section>
 
-    <Section direction="column" spacing="110px">
+    <Section direction="column" spacing="30px">
       <Heading as="h2" color="pink.main" size="lg">
         {/* <div
           dangerouslySetInnerHTML={{
