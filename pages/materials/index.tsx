@@ -7,6 +7,12 @@ import styled from "@emotion/styled";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
+import {
+  Computer,
+  Eye,
+  Pressure,
+  Question,
+} from "../../components/IconsSVG/Functionalities";
 
 const ImageIcon = styled(Image)`
   transform: scale(${(props) => props.scale});
@@ -53,20 +59,17 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       title="O que você pode aprender com o manual?"
       items={[
         {
-          src: "/static/media/assets/icon-eyelash-color.png",
-          alt: "Icone Eyelash",
+          icon: <Eye />,
           description:
             "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
         },
         {
-          src: "/static/media/assets/icon-target.png",
-          alt: "Icone Target",
+          icon: <Pressure />,
           description:
             "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
         },
         {
-          src: "/static/media/assets/icon-question-pink.png",
-          alt: "Icone Question",
+          icon: <Question />,
           description:
             "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência",
         },
