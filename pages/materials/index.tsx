@@ -44,7 +44,9 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           mobilizar pessoas em torno de causas e organizá-las em redes de
           solidariedade.
         </Text>
-        <Link variant="pink">Baixar manual</Link>
+        <Link href="/materials#manual" variant="pink">
+          Baixar manual
+        </Link>
       </Stack>
     </Section>
     <ImageTextListBox
@@ -70,20 +72,26 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         },
       ]}
     />
-    <DescriptionBox
-      color="pink"
-      title="Manual de mobilização"
-      description="Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto."
-    >
-      <SubscribeForm
-        color="blue"
-        t={t}
-        widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
-        title="Baixar manual"
-        submitText="Baixar"
-        textSuccess="Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
-      />
-    </DescriptionBox>
+    <div id="manual">
+      <DescriptionBox
+        color="pink"
+        title={
+          <span>
+            Manual de <b>mobilização</b>
+          </span>
+        }
+        description="Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto."
+      >
+        <SubscribeForm
+          color="blue"
+          t={t}
+          widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
+          title="Baixar manual"
+          submitText="Baixar"
+          textSuccess="Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
+        />
+      </DescriptionBox>
+    </div>
   </Body>
 );
 

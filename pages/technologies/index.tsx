@@ -188,29 +188,20 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             href: "https://www.saldaodaamazonia.org.br/",
           },
           {
-            src: "/static/media/s3/amazoniacontracovid.png",
-            alt: "Amazônia Contra a Covid",
-            title: "Amazônia Contra a Covid",
-            description:
-              "Os povos da floresta foram muito afetados durante a pandemia. Uma campanha de financiamento coletivo arrecadou mais de R$1 milhão para distribuir alimentos e outros suplementos para mais de 10 etnias indígenas.",
-            link: "Saber mais",
-            href: "https://www.amazoniacontracovid.org.br/",
-          },
-          {
-            src: "/static/media/s3/maisquepalmas.jpg",
+            src: "/static/media/s3/maisquepalmas.png",
             alt: "Mais do que palmas",
             title: "Mais do que palmas",
             description:
-              "Foi uma campanha para que um pacote de emergência que daria melhores condições de trabalho aos médicos, enfermeiros, fisioterapeutas intensivistas, técnicos e auxiliares de enfermagem na linha de frente na guerra para combater a COVID-19 virasse lei.",
+              "Um pacote de emergência para oferecer melhores condições a trabalhadores da saúde na linha de frente do combate à Covid19 foi aprovado depois de uma enorme pressão na Câmara dos Deputados.",
             link: "Saber mais",
             href: "https://www.maisdoquepalmas.com.br/",
           },
           {
-            src: "/static/media/s3/ahoraeagora.jpg",
+            src: "/static/media/s3/ahoraeagora.png",
             alt: "A hora é agora",
             title: "A hora é agora",
             description:
-              "A All Out realizou uma campanha de pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!",
+              "A campanha fez pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!",
             link: "Saber mais",
             href: "https://www.stf.alloutbrasil.org/",
           },
