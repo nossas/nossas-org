@@ -9,6 +9,13 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Carousel } from "../../components/Slider";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
+import {
+  Computer,
+  MegaphoneGreen,
+  People,
+  ThumbsUp,
+  Transfer,
+} from "../../components/IconsSVG/Functionalities";
 
 interface ImageTextProps {
   src: string;
@@ -91,24 +98,20 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       title="A gente oferece"
       items={[
         {
-          src: "/static/media/assets/icon-communication.png",
-          alt: "Comunicação",
+          icon: <MegaphoneGreen />,
           description: "Formação em ferramentas e estratégias de comunicação",
         },
         {
-          src: "/static/media/assets/icon-mobilization-technology.png",
-          alt: "Tecnologia de mobilização",
+          icon: <Transfer />,
           description:
             "Transferência de metodologias e tecnologias de mobilização",
         },
         {
-          src: "/static/media/assets/icon-branding.png",
-          alt: "Posicionamento de marca",
+          icon: <ThumbsUp />,
           description: "Criação e posicionamento de marca",
         },
         {
-          src: "/static/media/assets/icon-training.png",
-          alt: "Treinamento",
+          icon: <People />,
           description:
             "Soluções em organização de pessoas, treinamentos e gestão de voluntários",
         },
@@ -238,7 +241,11 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <DescriptionBox
       color="pink"
-      title="Incube seu projeto"
+      title={
+        <>
+          Incube seu <b>projeto</b>
+        </>
+      }
       description="Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)"
     >
       <SubscribeForm

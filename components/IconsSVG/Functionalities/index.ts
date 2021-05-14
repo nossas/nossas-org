@@ -6,3 +6,7 @@ export { default as Money } from "./Money";
 export { default as Eye } from "./Eye";
 export { default as Pressure } from "./Pressure";
 export { default as Question } from "./Question";
+export { default as MegaphoneGreen } from "./MegaphoneGreen";
+export { default as Transfer } from "./Transfer";
+export { default as ThumbsUp } from "./ThumbsUp";
+export { default as People } from "./People";
