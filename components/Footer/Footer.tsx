@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, UnorderedList, ListItem, Link, Image } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
-// import Newsletter from "../Newsletter";
 import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
@@ -27,7 +26,7 @@ const Footer = ({ t }) => {
               <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="/">{t("footer.actvist")}</Link>
+              <Link href="/#join-us">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
               <Link href="/mobilizations">{t("footer.mobilizations")}</Link>
@@ -36,7 +35,7 @@ const Footer = ({ t }) => {
               <Donation variant="link">{t("footer.donate")}</Donation>
             </ListItem>
             <ListItem>
-              <Link href="/workwithus">{t("footer.workwithus")}</Link>
+              <Link href="/work-with-us">{t("footer.workwithus")}</Link>
             </ListItem>
           </UnorderedList>
         </div>

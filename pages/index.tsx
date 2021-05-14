@@ -24,6 +24,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         videoUrl="/static/media/covers/home.mp4"
       />
       <Section
+        id="join-us"
         justifyContent={["flex-start", null, null, "space-between"]}
         alignItems={["flex-start", "flex-start"]}
         direction={["column", null, null, null, "row"]}

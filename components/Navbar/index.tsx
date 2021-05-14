@@ -12,10 +12,10 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => (
     <NavLink href="/about" variant={variant}>
       {t("footer.about")}
     </NavLink>
-    <NavLink href="/mobilizations" variant={variant}>
+    <NavLink href="/#join-us" variant={variant}>
       {t("footer.actvist")}
     </NavLink>
-    <NavLink href="/#we-are-doing" variant={variant}>
+    <NavLink href="/mobilizations" variant={variant}>
       {t("footer.mobilizations")}
     </NavLink>
   </>
