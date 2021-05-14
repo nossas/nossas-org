@@ -57,11 +57,11 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       flexDirection="column"
       alignItems="flex-start"
       justifyContent="center"
-      spacing="215px"
+      spacing={["60px", null, null, "215px"]}
     >
       <Stack
-        direction="row"
-        spacing="115px"
+        direction={["column", null, null, "row"]}
+        spacing={["40px", null, null, "115px"]}
         alignItems="center"
         margin="0 auto"
       >
@@ -74,7 +74,10 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           mobilização e solidariedade pelo Brasil inteiro.
         </Text>
       </Stack>
-      <Stack direction="row" spacing="115px">
+      <Stack
+        direction={["column", null, null, "row"]}
+        spacing={["30px", null, null, "115px"]}
+      >
         <Heading as="h2" variant="tag" minW="110px">
           {/* {t("content:about.history.title")} */}
           História
