@@ -71,7 +71,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           items={[
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="265px">
+                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="265px">
                   {/* <div
                     dangerouslySetInnerHTML={{
                       __html: t("content:blocks.home.grid.mobilization.title", {
@@ -94,7 +94,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="295px">
+                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="295px">
                   {/* <div
                     dangerouslySetInnerHTML={{
                       __html: t("content:blocks.home.grid.books.title", {
@@ -117,7 +117,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="365px">
+                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="365px">
                   {/* <div
                     dangerouslySetInnerHTML={{
                       __html: t("content:blocks.home.grid.learning.title", {
@@ -140,7 +140,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="235px">
+                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="235px">
                   {/* <div
                     dangerouslySetInnerHTML={{
                       __html: t("content:blocks.home.grid.support.title", {
@@ -163,7 +163,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" size="md" maxW="345px">
+                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="345px">
                   {/* <div
                     dangerouslySetInnerHTML={{
                       __html: t("content:blocks.home.grid.tech.title", {
