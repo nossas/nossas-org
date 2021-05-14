@@ -67,7 +67,6 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
     color: "gray.main",
     _selected: { color: "blue.main" },
     textTransform: "uppercase",
-    fontWeight: "bold",
     p: "0 35px 0 0",
   };
   const tagPanelProps: any = {
