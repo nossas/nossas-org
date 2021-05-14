@@ -8,7 +8,6 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 import {
-  Computer,
   Eye,
   Pressure,
   Question,
