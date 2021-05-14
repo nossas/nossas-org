@@ -44,7 +44,11 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <DescriptionBox
       color="green"
-      title="Nossas <b>vagas</b>"
+      title={
+        <>
+          Nossas <b>vagas</b>
+        </>
+      }
       description="O NOSSAS é uma organização que impulsiona o ativismo democrático e solidário no Brasil. Juntos, nossos membros defendem a democracia e fazem pressão pública por um país mais justo e solidário.  Somos uma organização sem fins lucrativos e por trás de tudo isso estão pessoas: mobilizadores, programadores, psicólogas, advogadas, comunicadores, cientistas de dados, designers."
     >
       <SubscribeForm
