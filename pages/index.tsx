@@ -133,7 +133,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               about:
                 "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
               navigation: {
-                href: "/materials",
+                href: "/trainings",
                 // title: t("content:blocks.home.grid.learning.link"),
                 title: "Confira nosso cronograma",
               },
