@@ -25,12 +25,11 @@ export type Employee = {
   networks?: Record<string, string>;
 };
 
-const EmployeeDetails = () => <h2>Employee Details</h2>;
-
-const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
-  handleClose,
-  data,
-}) => {
+const EmployeeDetails: React.FC<{
+  handleOpen: any;
+  handleClose: any;
+  data: Employee;
+}> = ({ handleOpen, handleClose, data }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -41,7 +40,10 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
         size="sm"
         cursor="pointer"
         ref={btnRef}
-        onClick={onOpen}
+        onClick={() => {
+          onOpen();
+          handleOpen();
+        }}
       >
         Saiba +
       </Text>
@@ -49,7 +51,7 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
         closeOnOverlayClick={false}
         isOpen={isOpen}
         placement="right"
-        size="md"
+        size="lg"
         onClose={() => {
           onClose();
           handleClose();
@@ -57,16 +59,20 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
         finalFocusRef={btnRef}
       >
         <DrawerOverlay>
-          <DrawerContent>
+          <DrawerContent padding="55px 70px 0 45px">
             <DrawerHeader
               color="pink.main"
               textTransform="uppercase"
-              fontSize="md"
+              fontSize="lg"
+              fontFamily="Bebas Neue"
             >
               {data.team}
             </DrawerHeader>
-            <DrawerCloseButton />
-
+            <DrawerCloseButton
+              _focus={{ border: "none" }}
+              top="70px"
+              right="70px"
+            />
             <DrawerBody>
               <Stack direction="row" spacing="30px" mb="25px">
                 <Image src={data.avatar} boxSize="140px" objectFit="cover" />
@@ -78,15 +84,7 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
                 </Stack>
               </Stack>
               <Text size="sm">{data.about}</Text>
-              {/* <Input placeholder="Type here..." /> */}
             </DrawerBody>
-
-            {/* <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="blue">Save</Button>
-            </DrawerFooter> */}
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
@@ -96,16 +94,15 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
 
 export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
   const [open, setOpen] = useState(false);
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
   return (
-    <Stack maxW="190px">
-      <Box
-        position="relative"
-        width="190px"
-        height="190px"
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
-      >
+    <Stack
+      maxW="190px"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => !drawerIsOpen && setOpen(false)}
+    >
+      <Box position="relative" width="190px" height="190px">
         {open && (
           <Box position="absolute" bgColor="rgba(238, 0, 144, 0.4)" top="0">
             <Stack
@@ -117,7 +114,14 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
               padding="12px"
             >
               <IconEyeSlash />
-              <BtnDetails data={data} handleClose={() => setOpen(false)} />
+              <EmployeeDetails
+                data={data}
+                handleOpen={() => setDrawerIsOpen(true)}
+                handleClose={() => {
+                  setOpen(false);
+                  setDrawerIsOpen(false);
+                }}
+              />
             </Stack>
           </Box>
         )}
@@ -126,7 +130,9 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
       <Heading as="h3" fontWeight="bold" size="sm">
         {data.name}
       </Heading>
-      <Text size="sm">{data.role}</Text>
+      <Text size="sm" mt="0!important">
+        {data.role}
+      </Text>
     </Stack>
   );
 };
