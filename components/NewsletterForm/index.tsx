@@ -31,6 +31,9 @@ const Header = ({ inverted, title, description }) => (
 );
 
 const NewsletterForm = ({ t, inverted }: any) => {
+  if (!process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID)
+    return <Text color="red">Você deve configurar o Widget da Newsletter</Text>;
+
   return (
     <Stack spacing={4} maxW="430px">
       <SubmitFormEntry
