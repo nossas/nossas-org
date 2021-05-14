@@ -1,9 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Body, Section } from "../../components/Page";
-import Hero from "../../components/Hero";
 import {
   Box,
   Button,
@@ -13,8 +10,20 @@ import {
   Img as Image,
   SimpleGrid,
 } from "@chakra-ui/react";
+
+import { I18nInitialProps, withTranslation } from "../../i18n";
+import { Body, Section } from "../../components/Page";
+import Hero from "../../components/Hero";
 import { ImageTextListBox } from "../../content";
 import { SliderPanel } from "../../components/Slider";
+
+import {
+  Computer,
+  Communication,
+  Email,
+  Subscription,
+  Money,
+} from "../../components/IconsSVG/Functionalities";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -30,6 +39,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="center"
     />
+
     <Section
       columns={[1, null, null, 2]}
       templateColumns={["auto", null, null, "260px 1fr"]}
@@ -46,37 +56,34 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         causarem também.
       </Text>
     </Section>
+
     <ImageTextListBox
       title="Funcionalidades"
       items={[
         {
-          src: "/static/media/assets/icon-computer.png",
-          alt: "Icone Mobilização",
+          icon: <Computer />,
           description: "Crie páginas para suas campanhas de mobilização",
         },
         {
-          src: "/static/media/assets/icon-mail.png",
-          alt: "Icone Pressão",
+          icon: <Email />,
           description:
             "Pressione tomadores de decisão por email, telefone ou petição",
         },
         {
-          src: "/static/media/assets/icon-money.png",
-          alt: "Icone Doação",
+          icon: <Money />,
           description: "Faça um financiamento coletivo para o seu projeto",
         },
         {
-          src: "/static/media/assets/icon-hand.png",
-          alt: "Icone Formulário",
+          icon: <Subscription />,
           description: "Receba inscrições de voluntários para a sua causa",
         },
         {
-          src: "/static/media/assets/icon-megaphone.png",
-          alt: "Icone Rede Solidariedade",
+          icon: <Communication />,
           description: "Crie uma rede de solidariedade e aumente o seu impacto",
         },
       ]}
     />
+
     <Section
       direction={["column", null, null, "row"]}
       spacing={["40px", null, "109px"]}
@@ -100,6 +107,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </Button>
       </Box>
     </Section>
+
     <Section
       direction={["column", null, null, "row"]}
       justifyContent="space-between"
@@ -161,6 +169,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </SimpleGrid>
       </Box>
     </Section>
+
     <Section direction="column" spacing="30px">
       <Heading as="h2" color="pink.main">
         Campanhas que <b>fizeram história</b>

@@ -1,13 +1,12 @@
-import React from "react";
-import { Heading, Text, Stack, Img as Image } from "@chakra-ui/react";
+import React, { ReactNode } from "react";
+import { Heading, Text, Stack } from "@chakra-ui/react";
 import { Section } from "../components/Page";
 
 interface ImageTextListProps {
   imgScale?: number;
-  title: React.ReactNode | string;
+  title: ReactNode | string;
   items: {
-    src: string;
-    alt?: string;
+    icon: ReactNode;
     description: string;
   }[];
   width?: string;
@@ -23,6 +22,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
     <Heading as="h2" variant="tag">
       {title}
     </Heading>
+
     <Stack
       direction={["column", null, "row"]}
       spacing="55px"
@@ -32,7 +32,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
       alignItems="baseline"
       flexWrap="wrap"
     >
-      {items.map((item, i) => (
+      {items.map(({ icon, description }, i) => (
         <Stack
           key={`item_${i}`}
           alignItems="center"
@@ -40,12 +40,8 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
           maxW={width}
           mb="55px"
         >
-          <Image
-            transform={`scale(${imgScale})`}
-            src={item.src}
-            alt={item.alt}
-          />
-          <Text>{item.description}</Text>
+          {icon}
+          <Text>{description}</Text>
         </Stack>
       ))}
     </Stack>
