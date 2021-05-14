@@ -69,7 +69,7 @@ export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
   return (
     <EmployeeTeam
       // title={t("content:about.team.leaders")}
-      title="Lideranças"
+      title="Liderança"
       members={[
         {
           avatar: "/static/media/team/alessandra-orofino.png",

@@ -25,7 +25,13 @@ interface PageProps extends WithUserAgentProps {
 
 const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
-    <Heading as="span" size="lg" color="pink.main" fontWeight="bold">
+    <Heading
+      as="span"
+      size="lg"
+      color="pink.main"
+      fontWeight="bold"
+      lineHeight=".8"
+    >
       {numberText}
     </Heading>
     <Text as="span" size="sm">
@@ -87,7 +93,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Timeline t={t} isMobile={ua.isMobile} />
     </Section>
     {/* Impacto */}
-    <Section direction={["column", "row"]} spacing={["50px", "150px"]}>
+    <Section
+      direction={["column", "row"]}
+      spacing={["50px", "150px"]}
+      bgColor="gray.light"
+      justifyContent="space-between"
+    >
       <Heading as="h2" size="lg" color="pink.main">
         {/* <div
           dangerouslySetInnerHTML={{
@@ -100,7 +111,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <br />
         <b>de impacto</b>
       </Heading>
-      <SimpleGrid columns={2} gridColumnGap="95px" gridRowGap="45px">
+      <SimpleGrid
+        columns={2}
+        gridColumnGap="95px"
+        gridRowGap="45px"
+        gridTemplateColumns="324px 324px"
+      >
         {/* <ImpactNumber
           numberText={t("content:about.impact.donations.number")}
           description={t("content:about.impact.donations.text")}
