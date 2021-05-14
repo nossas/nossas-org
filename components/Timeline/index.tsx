@@ -45,7 +45,7 @@ export const ImageText = ({ src, text, alt }: any) => (
   </BoxStyled>
 );
 
-export const Timeline = ({ title, children }: any) => (
+export const Timeline = ({ title, titleVisibility, children }: any) => (
   <Stack direction="column" spacing="0">
     <Box
       borderBottomWidth="1px"
@@ -60,6 +60,7 @@ export const Timeline = ({ title, children }: any) => (
         color="gray.main"
         fontWeight="700"
         textAlign="center"
+        visibility={titleVisibility}
       >
         {title}
       </Heading>

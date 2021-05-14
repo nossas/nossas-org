@@ -34,7 +34,7 @@ const TimelineView = ({ isMobile, t }: any) => (
               text="O Meu Rio lidera campanha pela criação da primeira Delegacia de Descoberta de Paradeiros. Após sua implementação, 80% dos casos de desaparecimento no Rio passam a ser solucionados."
             />
           </Timeline>
-          <Timeline title="2014">
+          <Timeline title="2014" titleVisibility="hidden">
             <ImageText
               src="/static/media/timeline/paulistaaberta.png"
               text="A principal avenida de São Paulo passa a ser inteiramente para pedestres aos domingos graças a uma campanha da Minha Sampa e parceiros, que fez história na cidade."
@@ -76,7 +76,7 @@ const TimelineView = ({ isMobile, t }: any) => (
               text="Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio"
             />
           </Timeline>
-          <Timeline title="2018">
+          <Timeline title="2018" titleVisibility="hidden">
             <ImageText
               src="/static/media/timeline/canudos.png"
               text="O Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos de plástico em estabelecimentos comerciais, após uma mobilização histórica"
@@ -102,7 +102,7 @@ const TimelineView = ({ isMobile, t }: any) => (
               text="No rastro da mobilização carioca, a Minha Sampa lidera campanha de pressão que leva a maior cidade do país a proibir a distribuição de canudos de plástico"
             />
           </Timeline>
-          <Timeline title="2019">
+          <Timeline title="2019" titleVisibility="hidden">
             <ImageText
               src="/static/media/timeline/pec29.png"
               text="Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão"
@@ -126,7 +126,7 @@ const TimelineView = ({ isMobile, t }: any) => (
               text="Através da mobilização Sem Aula Sem Enem, estudantes lançam mais de 4 mil campanhas locais em seus estados e conseguem o adiamento do ENEM para 2021"
             />
           </Timeline>
-          <Timeline title="2020">
+          <Timeline title="2020" titleVisibility="hidden">
             <ImageText
               src="/static/media/timeline/4gpraestudantes.png"
               text="33 pré-vestibulares comunitários recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em 10 estados do país"
