@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+    spec:
+      containers:
+        - name: node-app
+          image: docker.io/nossas/nossas-org
+          ports:
+            - containerPort: 3003
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app
+  labels:
+    app: node-app
+spec:
+  selector:
+    app: node-app
+  ports:
+    - port: 3003
+      protocol: TCP
+      nodePort: 30030
+  type: LoadBalancer
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nossas-website
+  namespace: default
+  selfLink: /apis/networking.k8s.io/v1/namespaces/default/ingresses/nossas-website
+  uid: bb80258d-74ba-48db-8737-4ad62b1af136
+  resourceVersion: '108695764'
+  generation: 1
+  creationTimestamp: '2021-01-29T03:13:15Z'
+  labels:
+    cattle.io/creator: norman
+  annotations:
+    field.cattle.io/creatorId: user-7pzng
+    field.cattle.io/ingressState: >-
+      {"bm9zc2FzLXdlYnNpdGUvZGVmYXVsdC9uZXh0Lm5vc3Nhcy5vcmcvLzMwMDM=":"deployment:default:nossas-org-01f5kqr90fm1egx7ya0a0q26fz"}
+    field.cattle.io/publicEndpoints: >-
+      [{"addresses":["34.200.242.12"],"port":80,"protocol":"HTTP","serviceName":"default:ingress-5b1aba4bd21e049bc898bbe89c86374b","ingressName":"default:nossas-website","hostname":"next.nossas.org","allNodes":true}]
+  managedFields:
+    - manager: nginx-ingress-controller
+      operation: Update
+      apiVersion: networking.k8s.io/v1beta1
+      time: '2021-01-29T03:13:33Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:loadBalancer':
+            'f:ingress': {}
+    - manager: rancher
+      operation: Update
+      apiVersion: extensions/v1beta1
+      time: '2021-05-13T20:49:23Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:field.cattle.io/creatorId': {}
+            'f:field.cattle.io/ingressState': {}
+            'f:field.cattle.io/publicEndpoints': {}
+          'f:labels':
+            .: {}
+            'f:cattle.io/creator': {}
+        'f:spec':
+          'f:rules': {}
+spec:
+  rules:
+    - host: next.nossas.org
+      http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: ingress-5b1aba4bd21e049bc898bbe89c86374b
+                port:
+                  number: 3003
+status:
+  loadBalancer:
+    ingress:
+      - ip: 34.200.242.12
