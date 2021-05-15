@@ -11,6 +11,7 @@
     "format": "prettier '**/*.{ts,tsx}' --write"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.18",
     "@apollo/react-hooks": "^4.0.0",
     "@apollo/react-ssr": "^4.0.0",
     "@chakra-ui/react": "^1.1.5",
@@ -29,8 +30,8 @@
     "next-google-fonts": "^1.2.1",
     "next-i18next": "^7.0.1",
     "next-useragent": "^2.4.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^16",
+    "react-dom": "^16",
     "react-icons": "^4.2.0",
     "react-number-format": "^4.5.1",
     "react-responsive-carousel": "^3.2.11",
