@@ -17,7 +17,12 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
+import {
+  BoardMembers,
+  TeamMembers,
+  LeadersMembers,
+  LeadersMembersMobile,
+} from "./_team";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -92,7 +97,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </Text>
       </Stack>
     </Section>
-    <Section>
+    <Section padding={["50px 0", null, null, null, ""]}>
       <Timeline t={t} isMobile={ua.isMobile} />
     </Section>
     {/* Impacto */}
@@ -116,9 +121,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Heading>
       <SimpleGrid
         columns={2}
-        gridColumnGap="95px"
+        gridColumnGap={["0", null, null, null, "95px"]}
         gridRowGap="45px"
-        gridTemplateColumns="324px 324px"
+        gridTemplateColumns={["50% 50%", null, null, null, "324px 324px"]}
       >
         {/* <ImpactNumber
           numberText={t("content:about.impact.donations.number")}
@@ -172,11 +177,11 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </SimpleGrid>
     </Section>
     {/* Quem financia */}
-    <Section spacing={[30, "170px"]}>
+    <Section spacing={["30px", "170px"]}>
       <Stack
-        display={["none", "flex"]}
         alignItems={["center"]}
         direction={["column", "row"]}
+        padding={["50px 30px", null, null, null, null]}
       >
         <Flex flex={1} justifyContent="space-around">
           <Image
@@ -211,7 +216,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               {/* {t("content:about.financiers.button")} */}
               Baixar auditoria
             </Button>
-            <Button size="sm" variant="pink">
+            <Button size="sm" variant="pink" display={["none", "block"]}>
               {/* {t("content:about.financiers.donate")} */}
               Fazer uma doação
             </Button>
@@ -219,7 +224,10 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </Stack>
       </Stack>
       <Stack direction="column">
-        <Stack direction="row" justifyContent="space-between">
+        <Stack
+          direction={["column", null, null, null, "row"]}
+          justifyContent="space-between"
+        >
           <Heading as="h2" variant="tag">
             Fundações
           </Heading>
@@ -228,7 +236,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             fundações:
           </Text>
         </Stack>
-        <SimpleGrid columns={4} rowGap="45px" pt="75px">
+        <SimpleGrid
+          columns={[2, null, null, null, 4]}
+          rowGap={["20px", null, null, null, "45px"]}
+          columnGap="20px"
+          pt="75px"
+        >
           <Link href="https://www.opensocietyfoundations.org/" target="_blank">
             <Image
               m="0 auto"
@@ -323,10 +336,19 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
     {/* Equipe */}
-    <Section direction="column" spacing="100px">
-      <BoardMembers t={t} />
-      <LeadersMembers t={t} />
-      <TeamMembers t={t} />
+    <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
+      {ua && ua.isMobile ? (
+        <>
+          <LeadersMembersMobile t={t} />
+          <BoardMembers t={t} />
+        </>
+      ) : (
+        <>
+          <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
+        </>
+      )}
     </Section>
     {/* Na midia */}
     <Media

@@ -257,7 +257,7 @@ const renderMobile = [
 
 const TimelineView = ({ isMobile }: any) => (
   <Stack direction="column">
-    <Heading as="h2" variant="tag">
+    <Heading as="h2" variant="tag" padding={["0 30px", null, null, null, "0"]}>
       {/* {t("content:blocks.about.timeline.title")} */}
       Linha do tempo
     </Heading>
