@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
+import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
@@ -79,16 +80,13 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           mobilização e solidariedade pelo Brasil inteiro.
         </Text>
       </Stack>
-      <Stack
-        direction={["column", null, null, "row"]}
-        spacing={["30px", null, null, "115px"]}
-      >
-        <Heading as="h2" variant="tag" minW="110px">
+      <Stack direction={["column", null, null, "row"]}>
+        <Heading as="h2" variant="tag">
           {/* {t("content:about.history.title")} */}
           História
         </Heading>
         {/* <Text maxW={["925px"]}>{t("content:about.history.description")}</Text> */}
-        <Text maxW={["925px"]}>
+        <Text>
           O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas
           em torno de causas, desenvolvemos dezenas de projetos, fizemos
           centenas de campanhas de impacto, conseguimos a implementação de
@@ -102,7 +100,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
     {/* Impacto */}
     <Section
-      direction={["column", "row"]}
+      direction={["column", null, null, "row", null]}
       spacing={["50px", "150px"]}
       bgColor="gray.light"
       justifyContent="space-between"
@@ -120,10 +118,16 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <b>de impacto</b>
       </Heading>
       <SimpleGrid
-        columns={2}
-        gridColumnGap={["0", null, null, null, "95px"]}
+        columns={[2, null, null, 2, 3]}
+        gridColumnGap={["0", null, null, "95px", "0"]}
         gridRowGap="45px"
-        gridTemplateColumns={["50% 50%", null, null, null, "324px 324px"]}
+        gridTemplateColumns={[
+          "50% 50%",
+          null,
+          null,
+          "324px 324px",
+          "300px 300px 300px",
+        ]}
       >
         {/* <ImpactNumber
           numberText={t("content:about.impact.donations.number")}
@@ -216,10 +220,10 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               {/* {t("content:about.financiers.button")} */}
               Baixar auditoria
             </Button>
-            <Button size="sm" variant="pink" display={["none", "block"]}>
+            <Donation size="sm" variant="pink" display={["none", "block"]}>
               {/* {t("content:about.financiers.donate")} */}
               Fazer uma doação
-            </Button>
+            </Donation>
           </Stack>
         </Stack>
       </Stack>

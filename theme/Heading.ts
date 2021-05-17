@@ -18,6 +18,7 @@ export default {
       display: "inline-table",
       color: "blue.main",
       fontSize: ["md", null, "lg"],
+      minWidth: "210px",
       fontWeight: "700",
       ":before": {
         content: "url('/static/media/line.png')",

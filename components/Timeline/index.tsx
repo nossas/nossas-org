@@ -72,6 +72,7 @@ export const Timeline = ({ title, titleVisibility, children }: any) => (
         position="absolute"
         bottom="-5px"
         left={["45%", null, "48%"]}
+        visibility={titleVisibility}
       />
     </Box>
     <Stack flex="1" px="30px" spacing="0">
