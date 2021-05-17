@@ -45,6 +45,7 @@ const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
       >
         Saiba +
       </Text>
+
       <Drawer
         closeOnOverlayClick={false}
         isOpen={isOpen}
@@ -106,6 +107,8 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
+        <Image src={data.avatar} boxSize="190px" objectFit="cover" />
+
         {open && (
           <Box position="absolute" bgColor="rgba(238, 0, 144, 0.4)" top="0">
             <Stack
@@ -121,11 +124,17 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
             </Stack>
           </Box>
         )}
-        <Image src={data.avatar} boxSize="190px" objectFit="cover" />
       </Box>
-      <Heading as="h3" fontWeight="bold" size="sm">
+
+      <Heading
+        as="h3"
+        fontWeight="bold"
+        size="sm"
+        textDecoration={open ? "underline" : "none"}
+      >
         {data.name}
       </Heading>
+
       <Text size="sm">{data.role}</Text>
     </Stack>
   );
