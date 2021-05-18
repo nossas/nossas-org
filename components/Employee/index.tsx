@@ -8,6 +8,7 @@ import {
   SimpleGrid,
   useDisclosure,
   Drawer,
+  Fade,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -96,34 +97,43 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
         position="relative"
         width="190px"
         height="190px"
+        overflow="hidden"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <Image src={data.avatar} boxSize="190px" objectFit="cover" />
+        <Image
+          src={data.avatar}
+          boxSize="190px"
+          objectFit="cover"
+          transition="all 0.2s ease-out"
+          transform={open ? "scale(1.1)" : "scale(1.0)"}
+        />
 
         {open && (
-          <Box
-            position="absolute"
-            bgColor="rgba(238, 0, 144, 0.4)"
-            top="0"
-            cursor="pointer"
-            onClick={onOpenDrawerInfo}
-          >
-            <Stack
-              width="190px"
-              height="190px"
-              flexDirection="row"
-              justifyContent="space-between"
-              alignItems="flex-end"
-              padding="12px"
+          <Fade in={open} unmountOnExit={true}>
+            <Box
+              position="absolute"
+              bgColor="rgba(238, 0, 144, 0.2)"
+              top="0"
+              cursor="pointer"
+              onClick={onOpenDrawerInfo}
             >
-              <IconEyeSlash />
+              <Stack
+                width="190px"
+                height="190px"
+                flexDirection="row"
+                justifyContent="space-between"
+                alignItems="flex-end"
+                padding="12px"
+              >
+                <IconEyeSlash />
 
-              <Text id="btnRef" color="white" size="sm">
-                Saiba +
-              </Text>
-            </Stack>
-          </Box>
+                <Text id="btnRef" color="white" size="sm">
+                  Saiba +
+                </Text>
+              </Stack>
+            </Box>
+          </Fade>
         )}
 
         <DrawerInfo
