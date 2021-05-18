@@ -238,7 +238,11 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <DescriptionBox
       color="pink"
-      title="Incube seu projeto"
+      title={
+        <>
+          Incube seu <b>projeto</b>
+        </>
+      }
       description="Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)"
     >
       <SubscribeForm
