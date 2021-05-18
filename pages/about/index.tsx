@@ -242,12 +242,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               alt="Skoll Foundation"
             />
           </Link>
-          <Link href="#" target="_blank">
+          <Link href="http://umifund.org/" target="_blank">
             <Image
               m="0 auto"
               objectFit="cover"
-              src="/static/media/foundations/urban.png"
-              alt="Urban Movement"
+              src="/static/media/foundations/umi.png"
+              alt="UMI fund"
             />
           </Link>
           <Link href="https://tinker.org/pt/" target="_blank">
