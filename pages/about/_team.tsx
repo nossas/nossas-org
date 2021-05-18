@@ -158,7 +158,8 @@ export const TeamMembers: React.FC<TranslateProps> = ({ t }) => {
           avatar: "/static/media/team/adriele-alvarenga.png",
           name: "Adriele Alvarenga",
           role: "Programadora",
-          about: "",
+          about:
+            "Adriele, preta, mineira, entrou recentemente para a equipe de tecnologia do Nossas. É graduada em Ciência da Computação pela UFJF e começou a trabalhar como programadora em 2014 e, desde então, vem questionando a importância da diversidade nesse meio, assim como as responsabilidades e poderes que profissionais da tecnologia têm na sociedade contemporânea. Nas horas vagas, gosta de música, viajar, cozinhar, boas companhias e boas histórias.",
           team: "Equipe",
         },
         {
