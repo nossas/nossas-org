@@ -73,8 +73,12 @@ const EmployeeDetails: React.FC<{
               top="70px"
               right="70px"
             />
-            <DrawerBody>
-              <Stack direction="row" spacing="30px" mb="25px">
+            <DrawerBody alignItems="center">
+              <Stack
+                direction={["column", null, null, null, "row"]}
+                spacing="30px"
+                mb="25px"
+              >
                 <Image src={data.avatar} boxSize="140px" objectFit="cover" />
                 <Stack direction="column" spacing="0">
                   <Heading as="h2" fontWeight="bold" size="md">
@@ -102,12 +106,16 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => !drawerIsOpen && setOpen(false)}
     >
-      <Box position="relative" width="190px" height="190px">
+      <Box
+        position="relative"
+        width={["150px", null, null, null, "190px"]}
+        height={["150px", null, null, null, "190px"]}
+      >
         {open && (
           <Box position="absolute" bgColor="rgba(238, 0, 144, 0.4)" top="0">
             <Stack
-              width="190px"
-              height="190px"
+              width={["150px", null, null, null, "190px"]}
+              height={["150px", null, null, null, "190px"]}
               flexDirection="row"
               justifyContent="space-between"
               alignItems="flex-end"
@@ -125,7 +133,11 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
             </Stack>
           </Box>
         )}
-        <Image src={data.avatar} boxSize="190px" objectFit="cover" />
+        <Image
+          src={data.avatar}
+          boxSize={["150px", null, null, null, "190px"]}
+          objectFit="cover"
+        />
       </Box>
       <Heading as="h3" fontWeight="bold" size="sm">
         {data.name}
@@ -144,12 +156,22 @@ export const EmployeeTeam: React.FC<{
 }> = ({ title, description, members }) => (
   <Stack direction="column" spacing="30px">
     <Box>
-      <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
+      <Heading
+        as="h2"
+        color="pink.main"
+        fontWeight="700"
+        size="lg"
+        display={["none", null, null, null, "block"]}
+      >
         {title}
       </Heading>
       {description && <Text>{description}</Text>}
     </Box>
-    <SimpleGrid columns={6} columnGap="15px" rowGap="30px">
+    <SimpleGrid
+      columns={[2, null, null, null, 6]}
+      columnGap="15px"
+      rowGap="30px"
+    >
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
       ))}

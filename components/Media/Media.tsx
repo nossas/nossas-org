@@ -27,8 +27,14 @@ const Media = ({ title, logos }) => {
         p={["30px", "30px", "100px"]}
         justifyContent={["initial", "initial", "space-between"]}
       >
-        <Heading display="flex" alignItems="center" color="blue.main" size="lg">
-          {title}{" "}
+        <Heading
+          display="flex"
+          alignItems="center"
+          color="blue.main"
+          size="lg"
+          mb={["20px", null, null, null, null]}
+        >
+          {title}
           {/* <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span> */}
         </Heading>
         <Grid

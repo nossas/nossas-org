@@ -13,11 +13,17 @@ import {
 } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
+import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
+import {
+  BoardMembers,
+  TeamMembers,
+  LeadersMembers,
+  LeadersMembersMobile,
+} from "./_team";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -74,16 +80,13 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           mobilização e solidariedade pelo Brasil inteiro.
         </Text>
       </Stack>
-      <Stack
-        direction={["column", null, null, "row"]}
-        spacing={["30px", null, null, "115px"]}
-      >
-        <Heading as="h2" variant="tag" minW="110px">
+      <Stack direction={["column", null, null, "row"]}>
+        <Heading as="h2" variant="tag">
           {/* {t("content:about.history.title")} */}
           História
         </Heading>
         {/* <Text maxW={["925px"]}>{t("content:about.history.description")}</Text> */}
-        <Text maxW={["925px"]}>
+        <Text>
           O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas
           em torno de causas, desenvolvemos dezenas de projetos, fizemos
           centenas de campanhas de impacto, conseguimos a implementação de
@@ -92,12 +95,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </Text>
       </Stack>
     </Section>
-    <Section>
+    <Section padding={["50px 0", null, null, null, ""]}>
       <Timeline t={t} isMobile={ua.isMobile} />
     </Section>
     {/* Impacto */}
     <Section
-      direction={["column", "row"]}
+      direction={["column", null, null, "row", null]}
       spacing={["50px", "150px"]}
       bgColor="gray.light"
       justifyContent="space-between"
@@ -115,10 +118,16 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <b>de impacto</b>
       </Heading>
       <SimpleGrid
-        columns={2}
-        gridColumnGap="95px"
+        columns={[2, null, null, 2, 3]}
+        gridColumnGap={["0", null, null, "95px", "0"]}
         gridRowGap="45px"
-        gridTemplateColumns="324px 324px"
+        gridTemplateColumns={[
+          "50% 50%",
+          null,
+          null,
+          "324px 324px",
+          "300px 300px 300px",
+        ]}
       >
         {/* <ImpactNumber
           numberText={t("content:about.impact.donations.number")}
@@ -172,11 +181,11 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </SimpleGrid>
     </Section>
     {/* Quem financia */}
-    <Section spacing={[30, "170px"]}>
+    <Section spacing={["30px", "170px"]}>
       <Stack
-        display={["none", "flex"]}
         alignItems={["center"]}
         direction={["column", "row"]}
+        padding={["50px 30px", null, null, null, null]}
       >
         <Flex flex={1} justifyContent="space-around">
           <Image
@@ -211,15 +220,18 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               {/* {t("content:about.financiers.button")} */}
               Baixar auditoria
             </Button>
-            <Button size="sm" variant="pink">
+            <Donation size="sm" variant="pink" display={["none", "block"]}>
               {/* {t("content:about.financiers.donate")} */}
               Fazer uma doação
-            </Button>
+            </Donation>
           </Stack>
         </Stack>
       </Stack>
       <Stack direction="column">
-        <Stack direction="row" justifyContent="space-between">
+        <Stack
+          direction={["column", null, null, null, "row"]}
+          justifyContent="space-between"
+        >
           <Heading as="h2" variant="tag">
             Fundações
           </Heading>
@@ -228,7 +240,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             fundações:
           </Text>
         </Stack>
-        <SimpleGrid columns={4} rowGap="45px" pt="75px">
+        <SimpleGrid
+          columns={[2, null, null, null, 4]}
+          rowGap={["20px", null, null, null, "45px"]}
+          columnGap="20px"
+          pt="75px"
+        >
           <Link href="https://www.opensocietyfoundations.org/" target="_blank">
             <Image
               m="0 auto"
@@ -323,10 +340,19 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
     {/* Equipe */}
-    <Section direction="column" spacing="100px">
-      <BoardMembers t={t} />
-      <LeadersMembers t={t} />
-      <TeamMembers t={t} />
+    <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
+      {ua && ua.isMobile ? (
+        <>
+          <LeadersMembersMobile t={t} />
+          <BoardMembers t={t} />
+        </>
+      ) : (
+        <>
+          <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
+        </>
+      )}
     </Section>
     {/* Na midia */}
     <Media
