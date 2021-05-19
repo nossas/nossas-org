@@ -48,7 +48,7 @@
     },
     "finish": {
       "imageAlt": "Doação bem sucedida!",
-      "title": "Valeu, <b>{{name}}</b>!",
+      "title": "Valeu, <b>{{name}}!</b>",
       "thanks": "Sua doação faz toda a diferença!",
       "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"
     }

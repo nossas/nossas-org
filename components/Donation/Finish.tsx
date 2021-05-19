@@ -22,7 +22,9 @@ const Finish: React.FC<FinishProps> = ({ t, name }) => (
     }
   >
     <Text as="p">{t("donate.finish.thanks")}</Text>
-    <Text as="p">{t("donate.finish.message")}</Text>
+    <Text as="p" mb="30px">
+      {t("donate.finish.message")}
+    </Text>
   </SuccessPanel>
 );
 

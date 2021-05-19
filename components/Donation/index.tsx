@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { gql, useMutation } from "@apollo/client";
 import {
-  Box,
   Heading,
   Image,
   Text,
@@ -36,7 +35,6 @@ import {
   initialValues as cardInitialValues,
   CardFormValues,
 } from "./CardForm";
-// import ElementsForm from './ElementsForm';
 import DonationDrawer from "./DonationDrawer";
 import Finish from "./Finish";
 
