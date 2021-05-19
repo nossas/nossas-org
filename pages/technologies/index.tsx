@@ -16,6 +16,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { ImageTextListBox } from "../../content";
 import { SliderPanel } from "../../components/Slider";
+import Header from "../../content/Header";
 
 import {
   Computer,
@@ -40,21 +41,20 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleAlign="center"
     />
 
-    <Section
-      columns={[1, null, null, 2]}
-      templateColumns={["auto", null, null, "260px 1fr"]}
-      columnGap="225px"
-      rowGap="25px"
-    >
-      <Heading as="h2" color="blue.main">
-        Assim surgiu <b>o BONDE</b>
-      </Heading>
-      <Text>
-        Temos a ferramenta perfeita para espalhar sua causa por aí :) O BONDE é
-        a plataforma criada pelo nosso time de tecnologia para movimentar nossas
-        mobilizações: ela agora está disponível para outras organizações
-        causarem também.
-      </Text>
+    <Section>
+      <Header
+        title={
+          <>
+            Assim surgiu <b>o BONDE</b>
+          </>
+        }
+        description={`
+          Temos a ferramenta perfeita para espalhar sua causa por aí :) O BONDE é
+          a plataforma criada pelo nosso time de tecnologia para movimentar nossas
+          mobilizações: ela agora está disponível para outras organizações
+          causarem também.
+        `}
+      />
     </Section>
 
     <ImageTextListBox
@@ -184,7 +184,6 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Saldão da Amazônia",
             description:
               "Um projeto de lei que facilitaria a grilagem foi posto em pauta na Câmara dos Deputados, mas graças à campanha mais de 30 mil pessoas se mobilizaram e conseguiram barrar o PL.",
-            link: "Saber mais",
             href: "https://www.saldaodaamazonia.org.br/",
           },
           {
@@ -193,7 +192,6 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Mais do que palmas",
             description:
               "Um pacote de emergência para oferecer melhores condições a trabalhadores da saúde na linha de frente do combate à Covid19 foi aprovado depois de uma enorme pressão na Câmara dos Deputados.",
-            link: "Saber mais",
             href: "https://www.maisdoquepalmas.com.br/",
           },
           {
@@ -202,7 +200,6 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "A hora é agora",
             description:
               "A campanha fez pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!",
-            link: "Saber mais",
             href: "https://www.stf.alloutbrasil.org/",
           },
         ]}

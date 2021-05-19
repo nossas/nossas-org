@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Stack } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import { useWindowSize } from "../../components/Page";
 import Carousel from "./Carousel";
 import { Panel } from "./Panel";
@@ -10,7 +10,7 @@ type Item = {
   title: string;
   description: string;
   href: string;
-  link: string;
+  link?: string;
 };
 
 export interface Props {

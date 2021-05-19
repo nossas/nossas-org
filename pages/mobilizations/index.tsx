@@ -2,12 +2,12 @@ import React from "react";
 import { NextPage } from "next";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-// import { Heading, Link, Text, Stack, Image } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
+
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Heading, Text } from "@chakra-ui/react";
+import Header from "../../content/Header";
 import { SliderPanel } from "../../components/Slider";
-// import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -23,18 +23,20 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="center"
     />
-    <Section
-      direction={["column", null, null, "row"]}
-      spacing={["30px", null, null, "195px"]}
-    >
-      <Heading as="h2" color="blue.main" maxW="400px">
-        Vem com <b>a gente!</b>
-      </Heading>
-      <Text maxW="668px">
-        Ajude nossas campanhas a fazer barulho e a conquistar vitórias que
-        consolidam políticas públicas e protegem nossos direitos. Chega mais, e
-        vem fazer parte da mudança!
-      </Text>
+    <Section>
+      <Header
+        title={
+          <>
+            Vem com <br />
+            <b>a gente!</b>
+          </>
+        }
+        description={`
+          Ajude nossas campanhas a fazer barulho e a conquistar vitórias que
+          consolidam políticas públicas e protegem nossos direitos. Chega mais, e
+          vem fazer parte da mudança!
+        `}
+      />
     </Section>
     <Section direction={["column"]} spacing="30px">
       <Heading as="h2" color="pink.main">
@@ -98,7 +100,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Empresários conseguiram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto.",
             href: "https://www.restingaemangueficam.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/restingaemangue.png",
@@ -107,7 +108,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. A mobilização reuniu mais de 180 mil assinaturas e conseguiu frear a boiada, garantindo a preservação do litoral brasileiro e seus ecossistemas.",
             href: "https://www.restingaemangueficam.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/rededeprotecao.jpg",
@@ -116,7 +116,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais ficaram muito expostas ao vírus durante a pandemia. Graças à pressão, foi aprovada uma lei que garante indenização aos familiares dos profissionais que faleceram por conta da Covid19.",
             href: "https://www.auxilioparasaude.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/semaulasemenem.jpg",
@@ -125,7 +124,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada.",
             href: "https://www.senado.semaulasemenem.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/renda-basica.jpg",
@@ -134,7 +132,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Junto com outras 200 organizações, conseguimos aprovar o auxílio emergencial de R$600 para 68 milhões de brasileiros em 2020. Em 2021, a luta  continua para a criação de um projeto de lei que garanta uma renda básica permanente para toda a população.",
             href: "https://www.rendabasica.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/paulista.jpg",
@@ -143,7 +140,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "Depois de mais de dois anos de intensa mobilização com organizações e coletivos da sociedade civil paulista, o então prefeito Fernando Haddad publicou o decreto que criou a Paulista aberta e o projeto Ruas Abertas, e mudou a rotina de lazer de São Paulo.",
             href: "https://www.paulistaaberta.minhasampa.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/escola.jpg",
@@ -152,7 +148,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "A Escola Friedenreich ocupa até hoje um dos primeiros lugares no IDEB do Rio de Janeiro, mas em 2014 ela corria o risco de ser derrubada para dar lugar a um estacionamento para a Copa do Mundo. Depois de uma campanha que teve várias etapas, a escola continuou de pé!",
             href: "https://www.escolanaosedestroi.meurio.org.br/",
-            link: "Saiba mais",
           },
           {
             src: "/static/media/s3/rio-sem-canudo.jpg",
@@ -161,7 +156,6 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             description:
               "O Rio de Janeiro foi a primeira cidade a proibir a distribuição de canudos de plástico em bares, restaurantes e estabelecimentos comerciais. Depois dela, várias outras cidades no país seguiram o mesmo exemplo. Agora, a luta segue pelo fim de todos os plásticos de uso único!",
             href: "https://www.riosemcanudo.meurio.org.br/",
-            link: "Saiba mais",
           },
         ]}
       />
