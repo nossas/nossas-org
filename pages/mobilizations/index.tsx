@@ -115,7 +115,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Auxílio para saúde",
             description:
               "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais ficaram muito expostas ao vírus durante a pandemia. Graças à pressão, foi aprovada uma lei que garante indenização aos familiares dos profissionais que faleceram por conta da Covid19.",
-            href: "https://www.auxilioparasaude.org.br/",
+            href: "https://www.auxilioparasaude.nossas.org.br/",
           },
           {
             src: "/static/media/s3/semaulasemenem.jpg",
@@ -123,7 +123,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Sem aula sem enem",
             description:
               "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada.",
-            href: "https://www.senado.semaulasemenem.org.br/",
+            href: "https://www.nordeste.semaulasemenem.org.br/",
           },
           {
             src: "/static/media/s3/renda-basica.jpg",
