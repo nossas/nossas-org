@@ -71,7 +71,7 @@ const NavMobile = ({ t, children }) => {
               <Stack direction="column">{children}</Stack>
               <Flex justifyContent="space-between" mt={16}>
                 <I18n />
-                <SocialMedia />
+                <SocialMedia flat />
               </Flex>
             </DrawerBody>
 
