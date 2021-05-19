@@ -50,7 +50,7 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <Section direction="column" spacing="60px" bgColor="gray.light">
       <Heading as="h2" color="green">
-        Nossas <b>vagas</b>
+        NOSSAS <b>VAGAS</b>
       </Heading>
 
       <Stack
