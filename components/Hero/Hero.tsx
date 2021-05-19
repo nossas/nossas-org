@@ -45,13 +45,20 @@ const Hero: React.FC<HeroProps> = ({
         bgColor={bgColor}
         position="relative"
       >
-        {bgImage || videoUrl ? (
-          <Box {...boxProps} position="absolute" width="100%" height="100%">
-            <Box position="absolute" bottom="80px" left="50%">
-              <DownArrow />
-            </Box>
+        {(bgImage || videoUrl) && (
+          <Box
+            {...boxProps}
+            position="absolute"
+            width="100%"
+            height="100%"
+            display="flex"
+            alignItems="flex-end"
+            justifyContent="center"
+            paddingBottom={["40px", "80px"]}
+          >
+            <DownArrow />
           </Box>
-        ) : null}
+        )}
 
         {bgImage && !videoUrl && (
           <Img
