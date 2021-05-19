@@ -1,17 +1,14 @@
+import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { Box, Heading, Link, Stack } from "@chakra-ui/layout";
+import { Button, Image, Text } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Box, Heading, Link, Stack } from "@chakra-ui/layout";
-import { Button, Image, Text } from "@chakra-ui/react";
-import { DescriptionBox, SubscribeForm } from "../../content";
-import { SimpleFields } from "../../content/SubscribeForm";
-import React from "react";
 import {
   MegaphoneYellow,
-  Pressure,
   TransferPink,
 } from "../../components/IconsSVG/Functionalities";
 
@@ -37,6 +34,7 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <Heading as="h2" color="blue.main">
           O que é o <b>nossas?</b>
         </Heading>
+
         <Text maxW="702px">
           O NOSSAS é uma organização que impulsiona o ativismo democrático e
           solidário no Brasil. Juntos, nossos membros defendem a democracia e
@@ -56,16 +54,18 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Stack
         direction={["column", null, "row"]}
         spacing={["50px", "100px", "300px"]}
-        alignItems="center"
+        alignItems={["center", null, "flex-end"]}
         justifyContent="center"
         mb="50px"
         textAlign="center"
       >
         <Stack alignItems="center" spacing={4}>
           <MegaphoneYellow />
+
           <Text fontFamily="Bebas Neue" color="black" fontSize="30px">
             <b>DIRETOR(A) DE CAMPANHAS</b>
           </Text>
+
           <Link
             href="https://nossas.recruitee.com/o/diretora-de-campanhas"
             target="blank"
@@ -75,16 +75,21 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             </Button>
           </Link>
         </Stack>
+
         <Stack alignItems="center" spacing={4}>
           <TransferPink />
+
           <Text fontFamily="Bebas Neue" fontSize="30px" color="black">
             <b>MOBILIZADOR(A) EM SÃO PAULO</b>
           </Text>
+
           <Link
             href="https://nossas.recruitee.com/o/mobilizadora-i-sao-paulo"
             target="blank"
           >
-            <Button size="sm">Saiba mais</Button>
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
           </Link>
         </Stack>
       </Stack>
@@ -99,6 +104,7 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         <Box flex="1">
           <Image src="/static/media/s3/workwithus.png" margin="0 auto" />
         </Box>
+
         <Text
           textAlign={["center", null, null, "left"]}
           spacing={["20px"]}
