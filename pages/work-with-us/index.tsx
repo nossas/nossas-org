@@ -4,10 +4,16 @@ import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Box, Heading, Stack } from "@chakra-ui/layout";
-import { Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Stack } from "@chakra-ui/layout";
+import { Button, Image, Text } from "@chakra-ui/react";
 import { DescriptionBox, SubscribeForm } from "../../content";
 import { SimpleFields } from "../../content/SubscribeForm";
+import React from "react";
+import {
+  MegaphoneYellow,
+  Pressure,
+  TransferPink,
+} from "../../components/IconsSVG/Functionalities";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -42,26 +48,47 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Stack>
     </Section>
 
-    <DescriptionBox
-      color="green"
-      title={
-        <>
-          Nossas <b>vagas</b>
-        </>
-      }
-      description="No momento, não há vagas abertas, mas você pode se inscrever no nosso banco de talentos!
-      Assim que outras oportunidades surgirem, te enviaremos um e-mail contando das vagas e te convidando a construir junto da nossa equipe de ativistas novas formas de participação política, mobilização e organização de pessoas."
-    >
-      <SubscribeForm
-        color="blue"
-        t={t}
-        widgetId={parseInt(process.env.NEXT_PUBLIC_WORKWITHUS_WIDGET_ID)}
-        title="Inscreva-se para saber de nossas vagas"
-        submitText="Enviar"
-        textSuccess="Obrigada por se inscrever! Quando lançarmos uma vaga, você saberá em primeira mão! Agora é só ficar de olho no seu e-mail :)"
-        fieldsComponent={SimpleFields}
-      />
-    </DescriptionBox>
+    <Section direction="column" spacing="60px" bgColor="gray.light">
+      <Heading as="h2" color="green">
+        Nossas <b>vagas</b>
+      </Heading>
+
+      <Stack
+        direction={["column", null, "row"]}
+        spacing={["50px", "100px", "300px"]}
+        alignItems="center"
+        justifyContent="center"
+        mb="50px"
+        textAlign="center"
+      >
+        <Stack alignItems="center" spacing={4}>
+          <MegaphoneYellow />
+          <Text fontFamily="Bebas Neue" color="black" fontSize="30px">
+            <b>DIRETOR(A) DE CAMPANHAS</b>
+          </Text>
+          <Link
+            href="https://nossas.recruitee.com/o/diretora-de-campanhas"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+        <Stack alignItems="center" spacing={4}>
+          <TransferPink />
+          <Text fontFamily="Bebas Neue" fontSize="30px" color="black">
+            <b>MOBILIZADOR(A) EM SÃO PAULO</b>
+          </Text>
+          <Link
+            href="https://nossas.recruitee.com/o/mobilizadora-i-sao-paulo"
+            target="blank"
+          >
+            <Button size="sm">Saiba mais</Button>
+          </Link>
+        </Stack>
+      </Stack>
+    </Section>
 
     <Section display="flex">
       <Stack
