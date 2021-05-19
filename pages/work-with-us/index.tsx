@@ -17,7 +17,7 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   <Body>
     <Hero
       maxWidth="1440px"
-      videoUrl="/static/media/covers/trabalheconosco.mp4"
+      videoUrl="/static/media/covers/trabalhe-conosco.mp4"
       title="Trabalhe conosco"
       titleColor="white"
       titleAlign="center"
@@ -49,7 +49,8 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           Nossas <b>vagas</b>
         </>
       }
-      description="O NOSSAS é uma organização que impulsiona o ativismo democrático e solidário no Brasil. Juntos, nossos membros defendem a democracia e fazem pressão pública por um país mais justo e solidário.  Somos uma organização sem fins lucrativos e por trás de tudo isso estão pessoas: mobilizadores, programadores, psicólogas, advogadas, comunicadores, cientistas de dados, designers."
+      description="No momento, não há vagas abertas, mas você pode se inscrever no nosso banco de talentos!
+      Assim que outras oportunidades surgirem, te enviaremos um e-mail contando das vagas e te convidando a construir junto da nossa equipe de ativistas novas formas de participação política, mobilização e organização de pessoas."
     >
       <SubscribeForm
         color="blue"

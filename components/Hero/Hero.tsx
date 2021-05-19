@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Img, Heading } from "@chakra-ui/react";
 import Video from "../Video";
-
+import DownArrow from "./DownArrow";
 interface HeroProps {
   bgImage?: string;
   bgColor?: string;
@@ -45,9 +45,22 @@ const Hero: React.FC<HeroProps> = ({
         bgColor={bgColor}
         position="relative"
       >
-        {bgImage || videoUrl ? (
-          <Box {...boxProps} position="absolute" width="100%" height="100%" />
-        ) : null}
+        {bgImage ||
+          (videoUrl && (
+            <Box
+              {...boxProps}
+              position="absolute"
+              width="100%"
+              height="100%"
+              display="flex"
+              alignItems="flex-end"
+              justifyContent="center"
+              paddingBottom={["40px", "80px"]}
+            >
+              <DownArrow />
+            </Box>
+          ))}
+
         {bgImage && !videoUrl && (
           <Img
             src={bgImage}
@@ -57,7 +70,9 @@ const Hero: React.FC<HeroProps> = ({
             width="100%"
           />
         )}
+
         {videoUrl && !bgImage && <Video videoUrl={videoUrl} />}
+
         <Box
           maxWidth={maxWidth}
           text-align={"center"}
@@ -80,7 +95,9 @@ const Hero: React.FC<HeroProps> = ({
               {title}
             </Heading>
           )}
+
           {Title && Title}
+
           {Subtitle && Subtitle}
         </Box>
       </Flex>
