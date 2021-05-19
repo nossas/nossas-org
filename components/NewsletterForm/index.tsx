@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Text, Stack, Heading } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
+import * as Yup from "yup";
 
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
@@ -59,6 +60,14 @@ const NewsletterForm = ({ t, inverted }: any) => {
                 last_name: "",
                 email: "",
               }}
+              validationSchema={Yup.object().shape({
+                first_name: Yup.string().required(
+                  t("common:form.fields.name.required")
+                ),
+                email: Yup.string()
+                  .email(t("common:form.fields.email.invalid"))
+                  .required(t("common:form.fields.email.required")),
+              })}
               onSubmit={submit}
             >
               {({ handleSubmit }: FormikProps<Values>) => (

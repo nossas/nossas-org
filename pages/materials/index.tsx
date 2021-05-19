@@ -1,9 +1,10 @@
 import React from "react";
 import { NextPage } from "next";
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { Heading, Link, Text, Stack, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+
+import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
@@ -37,7 +38,9 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     />
     <Section
       direction={["column", null, null, "row"]}
-      spacing={["30px", null, null, "145px"]}
+      spacing={["40px", null, null, "115px"]}
+      alignItems="center"
+      justifyContent="center"
     >
       <Heading as="h2" color="blue.main" maxW={["auto", null, null, "300px"]}>
         Baixe agora <b>seu manual</b>
