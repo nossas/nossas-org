@@ -7,6 +7,7 @@ import Link from "./Link";
 import Heading from "./Heading";
 import Input from "./Input";
 import Select from "./Select";
+import Menu from "./Menu";
 
 export const nossas = {
   fonts: {
@@ -31,6 +32,7 @@ export const nossas = {
     Link,
     Input,
     Select,
+    Menu,
     FormControl: {
       variants: {
         inline: {

@@ -73,6 +73,16 @@ export default {
         color: "blue.light",
       },
     },
+    menu: {
+      fontFamily: "Bebas Neue",
+      bg: "transparent",
+      color: "white",
+      fontSize: ["xs", "sm"],
+      fontWeight: "bold",
+      _hover: {
+        textDecoration: "underline",
+      },
+    },
   },
   defaultProps: {
     size: "md",
