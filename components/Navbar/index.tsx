@@ -9,6 +9,8 @@ import {
   MenuItem,
 } from "@chakra-ui/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import ButtonIcon from "./ButtonIcon";
+import styled from "@emotion/styled";
 
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
@@ -17,15 +19,51 @@ import Logo from "./Brand";
 import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
 import NavMobile from "./NavMobile";
 
-const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => {
-  const openIcon = <FaChevronDown transform="scale(0.7)" />;
-  const closeIcon = <FaChevronUp transform="scale(0.7)" />;
+const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
+  display: flex;
+  flex-direction: row;
 
+  ${(props) =>
+    props.variant === "mobile"
+      ? `
+    flex-direction: column;
+
+    .chakra-menu__menu-button {
+      font-size: 40px;
+      text-align: left;
+      padding: 20px 0;
+
+      .chakra-button__icon {
+        transform: scale(0.5);
+      }
+    }
+
+    .chakra-menu__menu-button + div {
+      position: ${!props.isOpen ? "absolute" : "relative"}!important;
+      transform: none !important;
+    }
+  `
+      : null}
+`;
+
+const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
+  const openIcon =
+    variant !== "mobile" ? (
+      <FaChevronDown transform="scale(0.7)" />
+    ) : (
+      <ButtonIcon />
+    );
+  const closeIcon =
+    variant !== "mobile" ? (
+      <FaChevronUp transform="scale(0.7)" />
+    ) : (
+      <ButtonIcon isOpen />
+    );
   return (
     <>
       <Menu>
         {({ isOpen }) => (
-          <>
+          <MenuStyled variant={variant} isOpen={isOpen}>
             <MenuButton
               as={Button}
               variant="menu"
@@ -33,7 +71,7 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => {
             >
               Conheça
             </MenuButton>
-            <MenuList>
+            <MenuList className="menuList">
               <MenuItem as={Link} href="/about">
                 Sobre o Nossas
               </MenuItem>
@@ -41,12 +79,12 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => {
                 Trabalhe conosco
               </MenuItem>
             </MenuList>
-          </>
+          </MenuStyled>
         )}
       </Menu>
       <Menu>
         {({ isOpen }) => (
-          <>
+          <MenuStyled variant={variant} isOpen={isOpen}>
             <MenuButton
               as={Button}
               variant="menu"
@@ -71,7 +109,7 @@ const MenuItems: React.FC<{ variant?: string; t: any }> = ({ t, variant }) => {
                 Tecnologias
               </MenuItem>
             </MenuList>
-          </>
+          </MenuStyled>
         )}
       </Menu>
     </>
@@ -83,16 +121,16 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
     <>
       <Nav>
         <NavSide>
-          {/* <NavMobile>
+          <NavMobile>
             <MenuItems t={t} variant="mobile" />
-          </NavMobile> */}
+          </NavMobile>
           <NavLink href="/">
             <Logo />
           </NavLink>
         </NavSide>
         <NavSide>
           <NavMenu>
-            <MenuItems t={t} />
+            <MenuItems t={t} variant="desktop" />
           </NavMenu>
           <Box display={["none", null, "block"]}>
             <I18n />

@@ -16,7 +16,7 @@ export default {
       px: "20px !important",
       color: "white",
       fontWeight: "normal",
-      fontSize: "18px !important",
+      fontSize: ["21px", null, "18px"],
       _focus: itemStyle,
       _hover: itemStyle,
       _active: itemStyle,
