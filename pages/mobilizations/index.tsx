@@ -61,7 +61,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Metrô, Aumento Não!",
             description:
               "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
-            href: "https://www.auxilioateofimdapandemia.org/",
+            href: "https://www.metroaumentonao.meurio.org.br/",
             link: "Pressione para barrar o aumento",
           },
           {
@@ -98,8 +98,8 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             alt: "Camarote da vacina não",
             title: "Camarote da vacina não",
             description:
-              "Empresários conseguiram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto.",
-            href: "https://www.restingaemangueficam.org.br/",
+              "Empresários fizeram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto no Senado.",
+            href: "https://www.camarotedavacinanao.nossas.org.br/",
           },
           {
             src: "/static/media/s3/restingaemangue.png",
@@ -123,7 +123,7 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Sem aula sem enem",
             description:
               "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada.",
-            href: "https://www.nordeste.semaulasemenem.org.br/",
+            href: "https://www.semaulasemenem.nossas.org.br/",
           },
           {
             src: "/static/media/s3/renda-basica.jpg",
