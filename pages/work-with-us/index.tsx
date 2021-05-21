@@ -5,6 +5,7 @@ import { Box, Heading, Link, Stack } from "@chakra-ui/layout";
 import { Button, Image, Text } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
+import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
@@ -25,25 +26,22 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="center"
     />
-
-    <Section spacing={["30px", null, null, null, "245px"]}>
-      <Stack
-        direction={["column", null, null, "row"]}
-        justifyContent="space-between"
-      >
-        <Heading as="h2" color="blue.main">
-          O que é o <b>nossas?</b>
-        </Heading>
-
-        <Text maxW="702px">
+    <Section>
+      <Header
+        title={
+          <>
+            O que é o <b>nossas?</b>
+          </>
+        }
+        description={`
           O NOSSAS é uma organização que impulsiona o ativismo democrático e
           solidário no Brasil. Juntos, nossos membros defendem a democracia e
           fazem pressão pública por um país mais justo e solidário. Somos uma
           organização sem fins lucrativos e por trás de tudo isso estão pessoas:
           mobilizadores, programadores, psicólogas, advogadas, comunicadores,
           cientistas de dados, designers.
-        </Text>
-      </Stack>
+        `}
+      />
     </Section>
 
     <Section direction="column" spacing="60px" bgColor="gray.light">
