@@ -32,7 +32,6 @@ const Hero: React.FC<HeroProps> = ({
   const boxProps = {
     background:
       "linear-gradient(0deg, rgba(45, 0, 161, 0.22), rgba(45, 0, 161, 0.1)),linear-gradient(180deg, #3a3737 0%, rgb(58 58 58 / 26%) 100%),linear-gradient(180deg, rgba(14, 14, 14, 0.2) 0%, rgba(0, 0, 0, 0.77) 100%)",
-    mixBlendMode: "multiply",
     opacity: 0.7,
   };
 
