@@ -122,7 +122,7 @@ const renderDesktop = [
     <Timeline title="2020" titleVisibility="hidden">
       <ImageText
         src="/static/media/timeline/4gpraestudantes.png"
-        text="33 pré-vestibulares comunitários recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em 10 estados do país."
+        text="33 pré-vestibulares comunitários recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em dez estados do país."
       />
       <ImageText
         src="/static/media/timeline/amazoniacontracovid.png"
@@ -246,7 +246,7 @@ const renderMobile = [
   <Timeline title="2020" titleVisibility="hidden">
     <ImageText
       src="/static/media/timeline/4gpraestudantes.png"
-      text="33 pré-vestibulares comunitários recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em 10 estados do país."
+      text="33 pré-vestibulares comunitários recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em dez estados do país."
     />
     <ImageText
       src="/static/media/timeline/amazoniacontracovid.png"
