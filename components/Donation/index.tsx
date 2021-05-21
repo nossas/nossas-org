@@ -183,7 +183,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
             {index === 2 ? (
               <Finish t={t} name={values.name} />
             ) : (
-              <Stack spacing={6} mt="45px">
+              <Stack spacing={6} mt="10px">
                 <Stack position="relative">
                   <Heading as="h2" color="green">
                     <div
