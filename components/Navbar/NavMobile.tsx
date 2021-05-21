@@ -76,11 +76,6 @@ const NavMobile = ({ t, children }) => {
                 <SocialMedia flat />
               </Flex>
             </DrawerBody>
-
-            {/* <DrawerFooter justifyContent="space-between">
-              <I18n />
-              <SocialMedia />
-            </DrawerFooter> */}
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
