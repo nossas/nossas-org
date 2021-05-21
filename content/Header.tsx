@@ -12,6 +12,7 @@ const Header: React.FC<HeaderProps> = ({ title, titleColor, description }) => (
     columns={[1, null, null, 2]}
     templateColumns={["auto", null, null, "582px auto"]}
     rowGap="30px"
+    alignItems="flex-start"
   >
     <Box>
       <Heading as="h2" size="lg" textColor={titleColor}>

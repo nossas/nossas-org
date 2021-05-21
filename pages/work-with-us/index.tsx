@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Box, Heading, Link, Stack } from "@chakra-ui/layout";
+import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
 import { Button, Image, Text } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
@@ -94,27 +94,28 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
 
     <Section display="flex">
-      <Stack
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
         alignItems="center"
-        direction={["column", null, null, "row"]}
-        spacing={["30px"]}
       >
-        <Box flex="1">
-          <Image src="/static/media/s3/workwithus.png" margin="0 auto" />
+        <Box>
+          <Image
+            transform="scale(0.8)"
+            objectFit="cover"
+            src="/static/media/s3/workwithus.png"
+            margin="0 auto"
+          />
         </Box>
-
-        <Text
-          textAlign={["center", null, null, "left"]}
-          spacing={["20px"]}
-          flex="1"
-        >
+        <Text textAlign={["center", null, null, "left"]}>
           Somos uma equipe comprometida com justiça e equidade, mas sua
           composição ainda não reflete de forma adequada a diversidade do país
           onde vivemos. Por isso, em nossos processos seletivos priorizamos a
           candidatura de pessoas não-brancas (pretas, pardas e indígenas),
           pessoas trans e moradoras de periferias do Brasil.
         </Text>
-      </Stack>
+      </SimpleGrid>
     </Section>
   </Body>
 );

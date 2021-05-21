@@ -45,7 +45,8 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Header
         title={
           <>
-            Assim surgiu <b>o BONDE</b>
+            Assim surgiu <br />
+            <b>o BONDE</b>
           </>
         }
         description={`
@@ -84,28 +85,37 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       ]}
     />
 
-    <Section
-      direction={["column", null, null, "row"]}
-      spacing={["40px", null, "109px"]}
-      justifyContent="center"
-    >
-      <Image src="/static/media/s3/computer.png" alt="Computer Image" />
-      <Box>
-        <Heading as="h2" color="green" maxW="249px" size="lg">
-          Use o BONDE para <b>causar</b>
-        </Heading>
-        <Text maxW="569px" marginBottom="25px">
-          Com nossa tecnologia você pode fazer campanhas de pressão,
-          financiamento coletivo, petições, ou ainda criar redes de
-          solidariedade sem precisar sacar nadinha de programação.
-        </Text>
-        <Button
-          onClick={() => window.open("https://www.bonde.org/", "_target")}
-          maxW="190px"
-        >
-          Contrate agora
-        </Button>
-      </Box>
+    <Section>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
+        alignItems="flex-start"
+      >
+        <Box>
+          <Image
+            src="/static/media/s3/computer.png"
+            alt="Computer Image"
+            transform="scale(0.8)"
+          />
+        </Box>
+        <Box>
+          <Heading as="h2" color="green" maxW="249px" size="lg">
+            Use o BONDE para <b>causar</b>
+          </Heading>
+          <Text marginBottom="25px">
+            Com nossa tecnologia você pode fazer campanhas de pressão,
+            financiamento coletivo, petições, ou ainda criar redes de
+            solidariedade sem precisar sacar nadinha de programação.
+          </Text>
+          <Button
+            onClick={() => window.open("https://www.bonde.org/", "_target")}
+            maxW="190px"
+          >
+            Contrate agora
+          </Button>
+        </Box>
+      </SimpleGrid>
     </Section>
 
     <Section
