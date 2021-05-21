@@ -135,7 +135,8 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       <Header
         title={
           <>
-            O que já <b>incubamos</b>
+            O que já <br />
+            <b>incubamos</b>
           </>
         }
         description={`
