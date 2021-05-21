@@ -180,53 +180,71 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         />
       </SimpleGrid>
     </Section>
+    {/* Equipe */}
+    <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
+      {ua && ua.isMobile ? (
+        <>
+          <LeadersMembersMobile t={t} />
+          <BoardMembers t={t} />
+        </>
+      ) : (
+        <>
+          <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
+        </>
+      )}
+    </Section>
     {/* Quem financia */}
-    <Section spacing={["30px", "170px"]}>
-      <Stack
-        alignItems={["center"]}
-        direction={["column", "row"]}
-        padding={["50px 30px", null, null, null, null]}
-      >
-        <Flex flex={1} justifyContent="space-around">
-          <Image
-            maxW={[226, 282]}
-            maxH={[232, 374]}
-            src="/static/media/s3/sustentabilidade2.png"
-            // alt={t("content:about.financiers.imageText")}
-            alt="Quem financia o NOSSAS"
-          />
-        </Flex>
-        <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
-          <Heading as="h2" size="lg" color="green">
-            {/* <div
+    <Stack
+      alignItems={["center"]}
+      direction={["column", "row"]}
+      padding={["50px 30px", null, null, null, null]}
+      bgColor="gray.light"
+    >
+      <Flex flex={1} justifyContent="space-around">
+        <Image
+          maxW={[226, 282]}
+          maxH={[232, 374]}
+          src="/static/media/s3/sustentabilidade2.png"
+          // alt={t("content:about.financiers.imageText")}
+          alt="Quem financia o NOSSAS"
+        />
+      </Flex>
+      <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
+        <Heading as="h2" size="lg" color="green">
+          {/* <div
               dangerouslySetInnerHTML={{
                 __html: t("content:about.financiers.title", {
                   interpolation: { escapeValue: false },
                 }),
               }}
             /> */}
-            Quem financia o <b>NOSSAS</b>
-          </Heading>
-          <Text>
-            {/* {t("content:about.financiers.description")} */}
-            Somos financiados por organizações brasileiras e internacionais e
-            contamos também com o apoio de pessoas físicas que doam mensalmente
-            para nossos projetos. Prezando pela boa gestão desses recursos,
-            anualmente realizamos uma auditoria independente que verifica nossa
-            contabilidade.
-          </Text>
-          <Stack direction="row" spacing="20px">
-            <Button size="sm">
-              {/* {t("content:about.financiers.button")} */}
-              Baixar auditoria
-            </Button>
-            <Donation size="sm" variant="pink" display={["none", "block"]}>
-              {/* {t("content:about.financiers.donate")} */}
-              Fazer uma doação
-            </Donation>
-          </Stack>
+          Quem financia o <b>NOSSAS</b>
+        </Heading>
+        <Text>
+          {/* {t("content:about.financiers.description")} */}
+          Somos financiados por organizações brasileiras e internacionais e
+          contamos também com o apoio de pessoas físicas que doam mensalmente
+          para nossos projetos. Prezando pela boa gestão desses recursos,
+          anualmente realizamos uma auditoria independente que verifica nossa
+          contabilidade.
+        </Text>
+        <Stack direction="row" spacing="20px">
+          <Button size="sm">
+            {/* {t("content:about.financiers.button")} */}
+            Baixar auditoria
+          </Button>
+          <Donation size="sm" variant="pink" display={["none", "block"]}>
+            {/* {t("content:about.financiers.donate")} */}
+            Fazer uma doação
+          </Donation>
         </Stack>
       </Stack>
+    </Stack>
+
+    {/* Fundações */}
+    <Section spacing={["30px", "170px"]}>
       <Stack direction="column">
         <Stack
           direction={["column", null, null, null, "row"]}
@@ -339,21 +357,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </SimpleGrid>
       </Stack>
     </Section>
-    {/* Equipe */}
-    <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
-      {ua && ua.isMobile ? (
-        <>
-          <LeadersMembersMobile t={t} />
-          <BoardMembers t={t} />
-        </>
-      ) : (
-        <>
-          <BoardMembers t={t} />
-          <LeadersMembers t={t} />
-          <TeamMembers t={t} />
-        </>
-      )}
-    </Section>
+
     {/* Na midia */}
     <Media
       title={

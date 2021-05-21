@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Heading, Img, Link, Stack } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
-import { Facebook, Instagram, Twitter, Linkedin } from "./IconsSVG";
+import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "./IconsSVG";
 
 interface SocialMediaProps {
   t: any;
@@ -70,6 +70,14 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
           color={color}
         >
           <Linkedin />
+        </MediaLink>
+        <MediaLink
+          href="https://www.youtube.com/nossas"
+          target="_blank"
+          title={t("social.icons.youtube")}
+          color={color}
+        >
+          <Youtube />
         </MediaLink>
       </Stack>
       {!flat && (

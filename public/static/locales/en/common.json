@@ -96,7 +96,8 @@
       "instagram": "Logo do Instagram",
       "twitter": "Logo do Twitter",
       "facebook": "Logo do Facebook",
-      "linkedin": "Logo do Linkedin"
+      "linkedin": "Logo do Linkedin",
+      "youtube": "Logo do youtube"
     }
   },
   "slider": {
@@ -130,6 +131,6 @@
     "actvist": "Junte-se a nós",
     "mobilizations": "Participe de uma campanha",
     "donate": "Faça uma doação",
-    "workwithus": "Trabalhe conosco"    
+    "workwithus": "Trabalhe conosco"
   }
 }
