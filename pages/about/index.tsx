@@ -230,11 +230,18 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           anualmente realizamos uma auditoria independente que verifica nossa
           contabilidade.
         </Text>
+
         <Stack direction="row" spacing="20px">
-          <Button size="sm">
-            {/* {t("content:about.financiers.button")} */}
-            Baixar auditoria
-          </Button>
+          <Link
+            href="https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view"
+            target="_blank"
+          >
+            <Button size="sm">
+              {/* {t("content:about.financiers.button")} */}
+              Baixar auditoria
+            </Button>
+          </Link>
+
           <Donation size="sm" variant="pink" display={["none", "block"]}>
             {/* {t("content:about.financiers.donate")} */}
             Fazer uma doação
