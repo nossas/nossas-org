@@ -50,6 +50,7 @@ const DrawerInfo: React.FC<DrawerInfoProps> = ({
           <DrawerHeader
             color="pink.main"
             textTransform="uppercase"
+            fontFamily="Bebas Neue"
             fontSize="md"
           >
             {data.team}
