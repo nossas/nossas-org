@@ -181,11 +181,7 @@ export const EmployeeTeam: React.FC<{
       </Heading>
       {description && <Text>{description}</Text>}
     </Box>
-    <SimpleGrid
-      columns={[2, null, null, null, 6]}
-      columnGap="15px"
-      rowGap="30px"
-    >
+    <SimpleGrid minChildWidth="218px">
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
       ))}
