@@ -2,6 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import {
+  Box,
   Button,
   Heading,
   Text,
@@ -65,27 +66,31 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       justifyContent="center"
       spacing={["60px", null, null, "215px"]}
     >
-      <Stack
-        direction={["column", null, null, "row"]}
-        spacing={["40px", null, null, "115px"]}
-        alignItems="center"
-        margin="0 auto"
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
       >
-        <Image src="/static/media/s3/incubations-tudonossas.png" />
-        {/* <Text maxW={["600px"]}>{t("content:about.description")}</Text> */}
-        <Text maxW={["600px"]}>
+        <Box margin="0 auto">
+          <Image src="/static/media/s3/incubations-tudonossas.png" />
+        </Box>
+        <Text>
           Somos uma organização sem fins lucrativos comprometida com o
           fortalecimento da democracia, da justiça social e da igualdade. Há
           mais de dez anos desenvolvemos projetos, táticas e estratégias de
           mobilização e solidariedade pelo Brasil inteiro.
         </Text>
-      </Stack>
-      <Stack direction={["column", null, null, "row"]}>
-        <Heading as="h2" variant="tag">
-          {/* {t("content:about.history.title")} */}
-          História
-        </Heading>
-        {/* <Text maxW={["925px"]}>{t("content:about.history.description")}</Text> */}
+      </SimpleGrid>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
+      >
+        <Box>
+          <Heading as="h2" variant="tag">
+            História
+          </Heading>
+        </Box>
         <Text>
           O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas
           em torno de causas, desenvolvemos dezenas de projetos, fizemos
@@ -93,91 +98,53 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           políticas públicas importantes e contribuímos na construção de redes
           de solidariedade.
         </Text>
-      </Stack>
+      </SimpleGrid>
     </Section>
     <Section padding={["50px 0", null, null, null, ""]}>
       <Timeline t={t} isMobile={ua.isMobile} />
     </Section>
     {/* Impacto */}
-    <Section
-      direction={["column", null, null, "row", null]}
-      spacing={["50px", "150px"]}
-      bgColor="gray.light"
-      justifyContent="space-between"
-    >
-      <Heading as="h2" size="lg" color="pink.main">
-        {/* <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:about.impact.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        /> */}
-        Números
-        <br />
-        <b>de impacto</b>
-      </Heading>
+    <Section bgColor="gray.light">
       <SimpleGrid
-        columns={[2, null, null, 2, 3]}
-        gridColumnGap={["0", null, null, "95px", "0"]}
-        gridRowGap="45px"
-        gridTemplateColumns={[
-          "50% 50%",
-          null,
-          null,
-          "324px 324px",
-          "300px 300px 300px",
-        ]}
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="50px"
       >
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.donations.number")}
-          description={t("content:about.impact.donations.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+4 milhões"
-          description="de reais arrecadados em financiamento coletivo"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.volunteers.number")}
-          description={t("content:about.impact.volunteers.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+5,4 mil"
-          description="voluntárias e voluntários cadastrados"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.politicalChange.number")}
-          description={t("content:about.impact.politicalChange.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+120"
-          description="mudanças de política pública"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.mobilizations.number")}
-          description={t("content:about.impact.mobilizations.text")}
-        /> */}
-        <ImpactNumber numberText="+230" description="campanhas lançadas" />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.peopleDonations.number")}
-          description={t("content:about.impact.peopleDonations.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+29 mil"
-          description="pessoas já fizeram doações"
-        />
-        {/* <ImpactNumber
-          numberText={t(
-            "content:about.impact.peopleMobilizations.number"
-          )}
-          description={t(
-            "content:about.impact.peopleMobilizations.text"
-          )}
-        /> */}
-        <ImpactNumber
-          numberText="+2,5 milhões"
-          description="de pessoas mobilizadas"
-        />
+        <Box>
+          <Heading as="h2" size="lg" color="pink.main">
+            Números
+            <br />
+            <b>de impacto</b>
+          </Heading>
+        </Box>
+        <SimpleGrid
+          columns={[2, null, null, 2, 3]}
+          gridColumnGap="20px"
+          gridRowGap="45px"
+          gridTemplateColumns={["auto auto"]}
+        >
+          <ImpactNumber
+            numberText="+4 milhões"
+            description="de reais arrecadados em financiamento coletivo"
+          />
+          <ImpactNumber
+            numberText="+5,4 mil"
+            description="voluntárias e voluntários cadastrados"
+          />
+          <ImpactNumber
+            numberText="+120"
+            description="mudanças de política pública"
+          />
+          <ImpactNumber numberText="+230" description="campanhas lançadas" />
+          <ImpactNumber
+            numberText="+29 mil"
+            description="pessoas já fizeram doações"
+          />
+          <ImpactNumber
+            numberText="+2,5 milhões"
+            description="de pessoas mobilizadas"
+          />
+        </SimpleGrid>
       </SimpleGrid>
     </Section>
     {/* Equipe */}
@@ -196,24 +163,24 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       )}
     </Section>
     {/* Quem financia */}
-    <Stack
-      alignItems={["center"]}
-      direction={["column", "row"]}
-      padding={["50px 30px", null, null, null, null]}
-      bgColor="gray.light"
-    >
-      <Flex flex={1} justifyContent="space-around">
-        <Image
-          maxW={[226, 282]}
-          maxH={[232, 374]}
-          src="/static/media/s3/sustentabilidade2.png"
-          // alt={t("content:about.financiers.imageText")}
-          alt="Quem financia o NOSSAS"
-        />
-      </Flex>
-      <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
-        <Heading as="h2" size="lg" color="green">
-          {/* <div
+    <Section spacing={["30px", "170px"]}>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
+      >
+        <Box>
+          <Image
+            margin="0 auto"
+            maxW={[226, 282]}
+            maxH={[232, 374]}
+            src="/static/media/s3/sustentabilidade2.png"
+            alt="Quem financia o NOSSAS"
+          />
+        </Box>
+        <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
+          <Heading as="h2" size="lg" color="green">
+            {/* <div
               dangerouslySetInnerHTML={{
                 __html: t("content:about.financiers.title", {
                   interpolation: { escapeValue: false },
@@ -221,9 +188,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               }}
             /> */}
           Quem financia o <b>NOSSAS</b>
-        </Heading>
-        <Text>
-          {/* {t("content:about.financiers.description")} */}
+          </Heading>
+          <Text>
+            {/* {t("content:about.financiers.description")} */}
           Somos financiados por organizações brasileiras e internacionais e
           contamos também com o apoio de pessoas físicas que doam mensalmente
           para nossos projetos. Prezando pela boa gestão desses recursos,
@@ -231,40 +198,37 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           contabilidade.
         </Text>
 
-        <Stack direction="row" spacing="20px">
-          <Link
-            href="https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view"
-            target="_blank"
-          >
-            <Button size="sm">
-              {/* {t("content:about.financiers.button")} */}
+          <Stack direction="row" spacing="20px">
+            <Button
+              size="sm"
+              onClick={() => {
+                window.open("https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view", "_blank");
+              }}
+            >
               Baixar auditoria
             </Button>
-          </Link>
-
-          <Donation size="sm" variant="pink" display={["none", "block"]}>
-            {/* {t("content:about.financiers.donate")} */}
-            Fazer uma doação
-          </Donation>
+            <Donation size="sm" variant="pink" display={["none", "block"]}>
+              Fazer uma doação
+            </Donation>
+          </Stack>
         </Stack>
-      </Stack>
-    </Stack>
-
-    {/* Fundações */}
-    <Section spacing={["30px", "170px"]}>
+      </SimpleGrid>
       <Stack direction="column">
-        <Stack
-          direction={["column", null, null, null, "row"]}
-          justifyContent="space-between"
+        <SimpleGrid
+          columns={[1, null, null, 2]}
+          templateColumns={["auto", null, null, "582px auto"]}
+          rowGap="30px"
         >
-          <Heading as="h2" variant="tag">
-            Fundações
-          </Heading>
-          <Text maxW="680px">
+          <Box>
+            <Heading as="h2" variant="tag">
+              Fundações
+            </Heading>
+          </Box>
+          <Text>
             Em 2020, o NOSSAS executou atividades financiadas pelas seguintes
             fundações:
           </Text>
-        </Stack>
+        </SimpleGrid>
         <SimpleGrid
           columns={[2, null, null, null, 4]}
           rowGap={["20px", null, null, null, "45px"]}

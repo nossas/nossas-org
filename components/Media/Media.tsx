@@ -1,5 +1,6 @@
 import React from "react";
-import { Heading, Img as Image, Grid } from "@chakra-ui/react";
+import { Heading, Box, Image, SimpleGrid } from "@chakra-ui/react";
+import { Section } from "../../components/Page";
 
 const ImageLogo = ({ logo }: any) => {
   const image = (
@@ -19,25 +20,25 @@ const ImageLogo = ({ logo }: any) => {
 
 const Media = ({ title, logos }) => {
   return (
-    <section>
-      <Grid
+    <Section backgroundColor="gray.light">
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
         backgroundColor="gray.light"
-        templateColumns={["auto", "auto", "300px 50%"]}
-        templateRows={["auto auto", "auto auto", "auto"]}
-        p={["30px", "30px", "100px"]}
-        justifyContent={["initial", "initial", "space-between"]}
+        rowGap="30px"
       >
-        <Heading
-          display="flex"
-          alignItems="center"
-          color="blue.main"
-          size="lg"
-          mb={["20px", null, null, null, null]}
-        >
-          {title}
-          {/* <span style={{ marginLeft: "60px", fontSize: "2rem" }}>|</span> */}
-        </Heading>
-        <Grid
+        <Box>
+          <Heading
+            display="flex"
+            alignItems="center"
+            color="blue.main"
+            size="lg"
+            mb={["20px", null, null, null, null]}
+          >
+            {title}
+          </Heading>
+        </Box>
+        <SimpleGrid
           templateColumns={[
             "repeat(2, auto)",
             "repeat(2, auto)",
@@ -50,9 +51,9 @@ const Media = ({ title, logos }) => {
           {logos.map((logo: any, i: number) => (
             <ImageLogo key={`media-${i}`} logo={logo} />
           ))}
-        </Grid>
-      </Grid>
-    </section>
+        </SimpleGrid>
+      </SimpleGrid>
+    </Section>
   );
 };
 

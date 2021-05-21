@@ -1,7 +1,15 @@
 import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Heading, Text, Image, Stack, Button, Box } from "@chakra-ui/react";
+import {
+  Heading,
+  Text,
+  Image,
+  Stack,
+  SimpleGrid,
+  Button,
+  Box,
+} from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import Header from "../../content/Header";
@@ -174,44 +182,45 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       />
     </Section>
 
-    <Section
-      alignItems="center"
-      direction={["column", null, null, "row"]}
-      spacing={["30px"]}
-    >
-      <Box flex="1">
-        <Image src="/static/media/s3/man.png" margin="0 auto" />
-      </Box>
-      <Stack
-        textAlign={["center", null, null, "left"]}
-        spacing={["20px"]}
-        flex="1"
+    <Section>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
       >
-        <Heading as="h2" maxW="510px" color="green">
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.training.program.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          /> */}
-          Participe do <b>programa de treinamento</b>
-        </Heading>
-        <Text>
-          {/* {t("content:blocks.training.program.description")} */}
-          Temos treinamentos temáticos acontecendo durante o ano inteiro. Clique
-          para saber os cronogramas e temas para 2021.
-        </Text>
-        <Button maxW="190px" marginX={["auto", null, null, "0"]}>
-          <a
-            href="https://www.mobilizadores.nossas.org/#block-35353"
-            target="blank"
+        <Box>
+          <Image src="/static/media/s3/man.png" margin="0 auto" />
+        </Box>
+        <Stack textAlign={["center", null, null, "left"]} spacing={["20px"]}>
+          <Heading as="h2" color="green">
+            {/* <div
+              dangerouslySetInnerHTML={{
+                __html: t("content:blocks.training.program.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            /> */}
+            Participe do <b>programa de treinamento</b>
+          </Heading>
+          <Text>
+            {/* {t("content:blocks.training.program.description")} */}
+            Temos treinamentos temáticos acontecendo durante o ano inteiro.
+            Clique para saber os cronogramas e temas para 2021.
+          </Text>
+          <Button
+            maxW="190px"
+            marginX={["auto !important", null, null, "0 !important"]}
           >
-            {/* {t("content:blocks.training.program.button")} */}
-            Quero saber
-          </a>
-        </Button>
-      </Stack>
+            <a
+              href="https://www.mobilizadores.nossas.org/#block-35353"
+              target="blank"
+            >
+              {/* {t("content:blocks.training.program.button")} */}
+              Quero saber
+            </a>
+          </Button>
+        </Stack>
+      </SimpleGrid>
     </Section>
   </Body>
 );

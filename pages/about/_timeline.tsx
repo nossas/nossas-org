@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Stack, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Heading, Stack, SimpleGrid, Text } from "@chakra-ui/react";
 import { Carousel } from "../../components/Slider";
 import { Timeline, ImageText } from "../../components/Timeline";
 
@@ -257,13 +257,19 @@ const renderMobile = [
 
 const TimelineView = ({ isMobile }: any) => (
   <Stack direction="column">
-    <Stack direction={["column", null, null, "row"]} mb="60px">
-      <Heading as="h2" variant="tag">
-        {/* {t("content:blocks.about.timeline.title")} */}
-        Linha do tempo
-      </Heading>
+    <SimpleGrid
+      columns={[1, null, null, 2]}
+      templateColumns={["auto", null, null, "582px auto"]}
+      rowGap="30px"
+      mb="50px"
+    >
+      <Box>
+        <Heading as="h2" variant="tag">
+          Linha do tempo
+        </Heading>
+      </Box>
       <Text>Conheça alguns dos momentos marcantes de nossa trajetória:</Text>
-    </Stack>
+    </SimpleGrid>
     <Carousel items={isMobile ? renderMobile : renderDesktop} />
   </Stack>
 );
