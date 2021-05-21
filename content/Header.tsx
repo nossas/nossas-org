@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text, SimpleGrid } from "@chakra-ui/react";
 
 type HeaderProps = {
   title: any;
@@ -14,12 +14,15 @@ const Header: React.FC<HeaderProps> = ({ title, titleColor, description }) => (
     alignItems="center"
     justifyContent="center"
   >
+    {/* <SimpleGrid columns={[2]} templateColumns={["auto 1fr"]} columnGap="100px"> */}
     <Heading as="h2" size="lg" textColor={titleColor} width="250px">
       {title}
       {/* Incubar:
         <br /> <b>o que é isso?</b> */}
     </Heading>
+    {/* <Text>{description}</Text> */}
     <Text maxW="680px">{description}</Text>
+    {/* </SimpleGrid> */}
   </Stack>
 );
 

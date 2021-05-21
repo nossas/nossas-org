@@ -1,10 +1,12 @@
 import React from "react";
 import { NextPage } from "next";
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { Heading, Text, Image, Stack, Button, Box } from "@chakra-ui/react";
+
+import { I18nInitialProps, withTranslation } from "../../i18n";
+import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Heading, Text, Image, Stack, Button, Box } from "@chakra-ui/react";
 import { SliderPanel, Carousel, ImageText } from "../../components/Slider";
 
 interface PageProps extends WithUserAgentProps {
@@ -23,28 +25,19 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleAlign="center"
     />
 
-    <Section spacing={["30px", null, null, null, "245px"]}>
-      <Stack
-        direction={["column", null, null, "row"]}
-        justifyContent="space-between"
-      >
-        <Heading as="h2" color="blue.main">
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.training.done.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          /> */}
-          Vem <b>aprender!</b>
-        </Heading>
-        <Text maxW="702px">
-          {/* {t("content:blocks.training.done.description")} */}
+    <Section>
+      <Header
+        title={
+          <>
+            Vem <b>aprender!</b>
+          </>
+        }
+        description={`
           Temos um programa de treinamento e mentoria para ativistas iniciantes
           e experientes do Brasil inteiro! Confira nossa agenda para não perder
           sua inscrição.
-        </Text>
-      </Stack>
+        `}
+      />
     </Section>
 
     <Section direction={["column"]} spacing={["30px"]}>
