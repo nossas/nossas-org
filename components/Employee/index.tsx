@@ -170,13 +170,7 @@ export const EmployeeTeam: React.FC<{
 }> = ({ title, description, members }) => (
   <Stack direction="column" spacing="30px">
     <Box>
-      <Heading
-        as="h2"
-        color="pink.main"
-        fontWeight="700"
-        size="lg"
-        display={["none", null, null, null, "block"]}
-      >
+      <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
         {title}
       </Heading>
       {description && <Text>{description}</Text>}
