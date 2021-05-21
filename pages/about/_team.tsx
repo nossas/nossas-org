@@ -131,7 +131,7 @@ export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
         {
           avatar: "/static/media/team/daniela-orofino.png",
           name: "Daniela Orofino",
-          role: "Diretora de Mobilização",
+          role: "Diretora Interina de Mobilização",
           about:
             "Daniela atua em campanhas de mobilização, campanhas eleitorais, advocacy e assessoria legislativa há quase uma década. Trabalhou por quatro anos com o presidente da Comissão de Direitos Humanos da Assembleia Legislativa do Rio de Janeiro, ao lado de Marielle Franco. Atualmente é Diretora de Mobilização no NOSSAS e lidera nossa equipe de campanhas e treinamentos. Daniela é socióloga pela UFRJ e mestranda em Ciência da Informação, também pela UFRJ.",
           team: "Liderança",
