@@ -158,10 +158,7 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           <ImageText
             src="/static/media/s3/paneladepressao.png"
             title={t("Panela de pressão")}
-            description={t(
-              "Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua própria campanha, em poucos cliques."
-            )}
-            href="http://paneladepressao.nossascidades.org/"
+            description="Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques."
             linkText="Saiba mais"
           />,
           <ImageText
