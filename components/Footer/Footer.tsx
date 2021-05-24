@@ -23,13 +23,10 @@ const Footer = ({ t }) => {
           </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="/about">{t("footer.about")}</Link>
-            </ListItem>
-            <ListItem>
               <Link href="/#join-us">{t("footer.actvist")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="/mobilizations">{t("footer.mobilizations")}</Link>
+              <Link href="/about">{t("footer.about")}</Link>
             </ListItem>
             <ListItem>
               <Donation variant="link">{t("footer.donate")}</Donation>
