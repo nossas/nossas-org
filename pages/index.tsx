@@ -8,6 +8,7 @@ import { SliderPanel } from "../components/Slider";
 import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
+import Header from "../content/Header";
 import { withTranslation, I18nInitialProps } from "../i18n";
 
 interface Props extends WithUserAgentProps {
@@ -23,41 +24,22 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         title="O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL"
         videoUrl="/static/media/covers/home.mp4"
       />
-      <Section
-        id="join-us"
-        justifyContent={["flex-start", null, null, "center"]}
-        alignItems={["flex-start", "flex-start"]}
-        direction={["column", null, null, null, "row"]}
-        spacing={["30px", null, null, null, "100px"]}
-      >
-        <Heading as="h2" color="pink.main" size="lg" minW="245px">
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.home.etudonossas.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          /> */}
-          Junte-se <b>a nós</b>
-        </Heading>
-        <Stack maxW="700px">
-          <Text>
-            {/* {t("content:blocks.home.etudonossas.description")} */}O NOSSAS
-            apoia indivíduos, coletivos e organizações em sua luta por direitos
+      <Section id="join-us">
+        <Header
+          title={
+            <>
+              Junte-se <b>a nós</b>
+            </>
+          }
+          titleColor="pink.main"
+          description={`
+            O NOSSAS apoia indivíduos, coletivos e organizações em sua luta por direitos
             e melhores políticas públicas. Compartilhamos oportunidades de ação,
             metodologias e ferramentas para a criação de mobilizações de
             impacto. Explore nosso espaço de ativismo e impulsione seu movimento
             com a gente!
-          </Text>
-          {/* <Link
-            href="/about"
-            target="_self"
-            title={t("content:links.knowmore")}
-            color="pink.main"
-          >
-            {t("content:links.knowmore")} +
-          </Link> */}
-        </Stack>
+          `}
+        />
       </Section>
       <Section
         alignItems="center"

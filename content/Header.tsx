@@ -4,7 +4,7 @@ import { Box, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 type HeaderProps = {
   title: any;
   titleColor?: "blue.main" | "pink.main" | "green.main";
-  description: string;
+  description: string | any;
 };
 
 const Header: React.FC<HeaderProps> = ({ title, titleColor, description }) => (
@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ title, titleColor, description }) => (
         {title}
       </Heading>
     </Box>
-    <Text>{description}</Text>
+    {typeof description === "string" ? <Text>{description}</Text> : description}
   </SimpleGrid>
 );
 

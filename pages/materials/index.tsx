@@ -7,7 +7,12 @@ import styled from "@emotion/styled";
 import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
+import {
+  DescriptionBox,
+  SubscribeForm,
+  ImageTextListBox,
+  Header,
+} from "../../content";
 import {
   Eye,
   Pressure,
@@ -36,26 +41,28 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleColor="white"
       titleAlign="center"
     />
-    <Section
-      direction={["column", null, null, "row"]}
-      spacing={["40px", null, null, "115px"]}
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Heading as="h2" color="blue.main" maxW={["auto", null, null, "300px"]}>
-        Baixe agora <b>seu manual</b>
-      </Heading>
-      <Stack direction="column" spacing="30px">
-        <Text maxW="670px">
-          Nosso manual de mobilização resume muito do que aprendemos em uma
-          década de experiência com ativismo no Brasil. Saiba também como
-          mobilizar pessoas em torno de causas e organizá-las em redes de
-          solidariedade.
-        </Text>
-        <Link href="/materials#manual" variant="pink">
-          Baixar manual
-        </Link>
-      </Stack>
+    <Section>
+      <Header
+        title={
+          <>
+            Baixe agora <br />
+            <b>seu manual</b>
+          </>
+        }
+        description={
+          <Stack direction="column" spacing="30px">
+            <Text maxW="670px">
+              Nosso manual de mobilização resume muito do que aprendemos em uma
+              década de experiência com ativismo no Brasil. Saiba também como
+              mobilizar pessoas em torno de causas e organizá-las em redes de
+              solidariedade.
+            </Text>
+            <Link href="/materials#manual" variant="pink">
+              Baixar manual
+            </Link>
+          </Stack>
+        }
+      />
     </Section>
     <ImageTextListBox
       title="O que você pode aprender com o manual?"
