@@ -175,7 +175,7 @@ export const EmployeeTeam: React.FC<{
       </Heading>
       {description && <Text>{description}</Text>}
     </Box>
-    <SimpleGrid minChildWidth="218px">
+    <SimpleGrid minChildWidth="218px" rowGap="30px">
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
       ))}
