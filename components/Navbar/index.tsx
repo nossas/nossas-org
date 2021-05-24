@@ -17,6 +17,7 @@ import Donation from "../Donation";
 import I18n from "../I18nButton";
 import Logo from "./Brand";
 import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
+import { MenuItem as MenuItemMobile, MenuItemGroup } from "./MenuItemsMobile";
 import NavMobile from "./NavMobile";
 
 const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
@@ -122,7 +123,26 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
       <Nav>
         <NavSide>
           <NavMobile>
-            <MenuItems t={t} variant="mobile" />
+            {/* <MenuItems t={t} variant="mobile" /> */}
+            <MenuItemGroup>
+              <MenuItemMobile
+                name="Conheça"
+                submenus={[
+                  { label: "Sobre o Nossas", href: "/about" },
+                  { label: "Trabalhe conosco", href: "/work-with-us" },
+                ]}
+              />
+              <MenuItemMobile
+                name="Participe"
+                submenus={[
+                  { label: "Campanhas", href: "/mobilizations" },
+                  { label: "Materiais", href: "/materials" },
+                  { label: "Treinamentos", href: "/trainings" },
+                  { label: "Incubações", href: "/incubations" },
+                  { label: "Tecnologias", href: "/technologies" },
+                ]}
+              />
+            </MenuItemGroup>
           </NavMobile>
           <NavLink href="/">
             <Logo />

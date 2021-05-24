@@ -2,10 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Styles = styled.span<{ isOpen?: boolean }>`
-  svg {
-    transform: scale(1.8);
-  }
-
   ${(props) =>
     props.isOpen &&
     `
