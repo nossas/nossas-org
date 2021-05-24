@@ -203,7 +203,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             title: "Mais do que palmas",
             description:
               "Um pacote de emergência para oferecer melhores condições a trabalhadores da saúde na linha de frente do combate à Covid19 foi aprovado depois de uma enorme pressão na Câmara dos Deputados.",
-            href: "https://www.maisdoquepalmas.com.br/",
+            href: "http://www.mais-que-palmas.bonde.org/",
           },
           {
             src: "/static/media/s3/ahoraeagora.png",
