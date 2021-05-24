@@ -9,6 +9,9 @@ import {
   Link,
   Img as Image,
   SimpleGrid,
+  Stack,
+  HStack,
+  VStack,
 } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
@@ -59,6 +62,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     </Section>
 
     <ImageTextListBox
+      maxWidth="1400px"
       title="Funcionalidades"
       items={[
         {
@@ -84,6 +88,39 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         },
       ]}
     />
+
+    {/* <Section textAlign="center">
+      <VStack >
+        <HStack>
+          <Box>
+            <Computer />
+            <Text>Crie páginas para suas campanhas de mobilização</Text>
+          </Box>
+
+          <Box>
+            <Email />
+            <Text>Pressione tomadores de decisão por email, telefone ou petição</Text>
+          </Box>
+
+          <Box>
+            <Money />
+            <Text>Faça um financiamento coletivo para o seu projeto</Text>
+          </Box>
+        </HStack>
+
+        <HStack>
+          <Box>
+            <Subscription />
+            <Text>Receba inscrições de voluntários para a sua causa</Text>
+          </Box>
+
+          <Box>
+            <Communication />
+            <Text>Crie uma rede de solidariedade e aumente o seu impacto</Text>
+          </Box>
+        </HStack>
+      </VStack>
+    </Section> */}
 
     <Section>
       <SimpleGrid
