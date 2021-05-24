@@ -104,6 +104,7 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
         width="190px"
         height="190px"
         overflow="hidden"
+        marginBottom="10px"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
@@ -153,6 +154,7 @@ export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
         as="h3"
         fontWeight="bold"
         size="sm"
+        mb="-15px"
         textDecoration={open ? "underline" : "none"}
       >
         {data.name}
