@@ -20,7 +20,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
       {/* Cover */}
       <Hero
         // title={t("content:covers.home.title")}
-        title="O NOSSAS IMPULSIONA O ATIVISMO DEMOCRÁTICO E SOLIDÁRIO NO BRASIL"
+        title="O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL"
         videoUrl="/static/media/covers/home.mp4"
       />
       <Section
