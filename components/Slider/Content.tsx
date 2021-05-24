@@ -59,6 +59,7 @@ interface ImageTextProps {
   alt?: string;
   title?: string;
   description: string;
+  userName?: string;
   href?: string;
   linkText?: string;
 }
@@ -68,6 +69,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
   src,
   title,
   description,
+  userName,
   href,
   linkText,
 }) => {
@@ -83,18 +85,24 @@ export const ImageText: React.FC<ImageTextProps> = ({
         src={src}
         alt={alt}
       />
+
       <Stack spacing="10px" textAlign="left">
         {title && (
           <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
             {title}
           </Heading>
         )}
+
         <Text>{description}</Text>
-        {linkText || href ? (
-          <Link href={href} target="_blank" variant="pink">
-            {`${linkText} +`}
-          </Link>
-        ) : null}
+
+        {userName && <Text>{userName}</Text>}
+
+        {linkText ||
+          (href && (
+            <Link href={href} target="_blank" variant="pink">
+              {`${linkText} +`}
+            </Link>
+          ))}
       </Stack>
     </Stack>
   );
