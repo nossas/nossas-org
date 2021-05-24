@@ -13,7 +13,7 @@ const Footer = ({ t }) => {
         templateColumns={["auto", "repeat(3, auto)"]}
         rowGap={["60px", 0]}
         columnGap={[0, "90px"]}
-        px={[30, 90]}
+        px={[30, "10%"]}
         py={[20, 90]}
         alignItems="baseline"
       >

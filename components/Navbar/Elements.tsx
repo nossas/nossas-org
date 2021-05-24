@@ -10,7 +10,7 @@ export const Nav = ({ children }) => (
     height="70px"
     alignItems="center"
     justifyContent="space-between"
-    paddingX={["30px", "40px", null, "60px"]}
+    paddingX={["30px", "10%"]}
   >
     {children}
   </Flex>
