@@ -151,8 +151,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
     <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
       {ua && ua.isMobile ? (
         <>
-          <LeadersMembersMobile t={t} />
           <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
         </>
       ) : (
         <>
@@ -187,22 +188,25 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
                 }),
               }}
             /> */}
-          Quem financia o <b>NOSSAS</b>
+            Quem financia o <b>NOSSAS</b>
           </Heading>
           <Text>
             {/* {t("content:about.financiers.description")} */}
-          Somos financiados por organizações brasileiras e internacionais e
-          contamos também com o apoio de pessoas físicas que doam mensalmente
-          para nossos projetos. Prezando pela boa gestão desses recursos,
-          anualmente realizamos uma auditoria independente que verifica nossa
-          contabilidade.
-        </Text>
+            Somos financiados por organizações brasileiras e internacionais e
+            contamos também com o apoio de pessoas físicas que doam mensalmente
+            para nossos projetos. Prezando pela boa gestão desses recursos,
+            anualmente realizamos uma auditoria independente que verifica nossa
+            contabilidade.
+          </Text>
 
           <Stack direction="row" spacing="20px">
             <Button
               size="sm"
               onClick={() => {
-                window.open("https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view", "_blank");
+                window.open(
+                  "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
+                  "_blank"
+                );
               }}
             >
               Baixar auditoria
