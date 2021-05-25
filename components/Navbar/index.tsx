@@ -7,6 +7,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Image,
 } from "@chakra-ui/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ButtonIcon from "./ButtonIcon";
@@ -145,7 +146,7 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
             </MenuItemGroup>
           </NavMobile>
           <NavLink href="/">
-            <Logo />
+            <Image src="../../static/media/logo.png" />
           </NavLink>
         </NavSide>
         <NavSide>
