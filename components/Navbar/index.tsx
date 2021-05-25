@@ -20,6 +20,7 @@ import Logo from "./Brand";
 import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
 import { MenuItem as MenuItemMobile, MenuItemGroup } from "./MenuItemsMobile";
 import NavMobile from "./NavMobile";
+import { NossasLogo } from "../IconsSVG/Navbar";
 
 const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
   display: flex;
@@ -146,7 +147,7 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
             </MenuItemGroup>
           </NavMobile>
           <NavLink href="/">
-            <Image src="../../static/media/logo.png" />
+            <NossasLogo />
           </NavLink>
         </NavSide>
         <NavSide>
