@@ -8,7 +8,18 @@ import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Carousel } from "../../components/Slider";
-import { DescriptionBox, SubscribeForm, ImageTextListBox } from "../../content";
+import {
+  Header,
+  DescriptionBox,
+  SubscribeForm,
+  ImageTextListBox,
+} from "../../content";
+import {
+  MegaphoneGreen,
+  People,
+  ThumbsUp,
+  Transfer,
+} from "../../components/IconsSVG/Functionalities";
 
 interface ImageTextProps {
   src: string;
@@ -40,9 +51,11 @@ export const ImageText: React.FC<ImageTextProps> = ({
         alt={alt}
       />
       <Stack spacing="10px" textAlign="left">
-        <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
-          {title}
-        </Heading>
+        <Link href={href} target="_blank">
+          <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
+            {title}
+          </Heading>
+        </Link>
         <Text>{description}</Text>
         <Link href={href} target="_blank" variant="pink">
           {`${linkText} +`}
@@ -75,40 +88,39 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       titleAlign="center"
     />
     {/* Content */}
-    <Section direction={["column", null, "row"]} spacing="20px">
-      <Heading as="h2" flex={1} size="lg" textColor="blue.main">
-        Incubar:
-        <br /> <b>o que é isso?</b>
-      </Heading>
-      <Text flex={[1, null, 2, null, null]} maxW="679px">
-        Você pode receber capacitação e apoio para desenvolver ou acelerar seu
-        projeto de mobilização ou solidariedade utilizando as metodologias
-        desenvolvidas pelo NOSSAS.
-      </Text>
+    <Section>
+      <Header
+        title={
+          <>
+            Incubar: <br /> <b>o que é isso?</b>
+          </>
+        }
+        description={`
+          Você pode receber capacitação e apoio para desenvolver ou acelerar seu
+          projeto de mobilização ou solidariedade utilizando as metodologias
+          desenvolvidas pelo NOSSAS.
+        `}
+      />
     </Section>
     <ImageTextListBox
       width="330px"
       title="A gente oferece"
       items={[
         {
-          src: "/static/media/assets/icon-communication.png",
-          alt: "Comunicação",
+          icon: <MegaphoneGreen />,
           description: "Formação em ferramentas e estratégias de comunicação",
         },
         {
-          src: "/static/media/assets/icon-mobilization-technology.png",
-          alt: "Tecnologia de mobilização",
+          icon: <Transfer />,
           description:
             "Transferência de metodologias e tecnologias de mobilização",
         },
         {
-          src: "/static/media/assets/icon-branding.png",
-          alt: "Posicionamento de marca",
+          icon: <ThumbsUp />,
           description: "Criação e posicionamento de marca",
         },
         {
-          src: "/static/media/assets/icon-training.png",
-          alt: "Treinamento",
+          icon: <People />,
           description:
             "Soluções em organização de pessoas, treinamentos e gestão de voluntários",
         },
@@ -120,18 +132,18 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       spacing="110px"
       bgColor="gray.light"
     >
-      <Stack
-        direction={["column", null, null, "row"]}
-        justifyContent="space-between"
-      >
-        <Heading as="h2" color="blue.main" maxW="215px" size="lg">
-          O que já <b>incubamos</b>
-        </Heading>
-        <Text maxW="800px">
+      <Header
+        title={
+          <>
+            O que já <br />
+            <b>incubamos</b>
+          </>
+        }
+        description={`
           Conheça alguns dos projetos que já passaram por nosso processo de
           incubação e hoje são referência em suas áreas de atuação.
-        </Text>
-      </Stack>
+        `}
+      />
       <Carousel
         infiniteLoop
         showStatus
@@ -146,17 +158,14 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           <ImageText
             src="/static/media/s3/paneladepressao.png"
             title={t("Panela de pressão")}
-            description={t(
-              "Uma tecnologia inovadora à serviço da participação popular: com o Panela de Pressão, qualquer pessoa monta sua própria campanha, em poucos cliques."
-            )}
-            href="http://paneladepressao.nossascidades.org/"
+            description="Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques."
             linkText="Saiba mais"
           />,
           <ImageText
             src="/static/media/s3/merepresenta.png"
             title="Me Representa"
             description={t(
-              "Criamos uma plataforma para promover o encontro digital entre candidatos (as) e eleitores (as) que priorizem as mesmas pautas."
+              "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas."
             )}
             href="https://merepresenta.org.br/"
             linkText="Saiba mais"
@@ -188,6 +197,8 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       </Heading>
 
       <Carousel
+        infiniteLoop
+        showStatus
         isMobile={ua.isMobile}
         items={[
           <ImageText
@@ -238,8 +249,12 @@ const Incubations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
 
     <DescriptionBox
       color="pink"
-      title="Incube seu projeto"
-      description="Tem um projeto incrível que pode gerar impactos em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado e entraremos em contato em breve :)"
+      title={
+        <>
+          Incube seu <b>projeto</b>
+        </>
+      }
+      description="Sua organização tem um projeto incrível que pode gerar impacto em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado, entraremos em contato em breve para que vocês nos contem um pouco mais :)"
     >
       <SubscribeForm
         color="blue"

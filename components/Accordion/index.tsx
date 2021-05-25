@@ -38,10 +38,16 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
       overflow="hidden"
       borderColor="gray.main"
     >
-      <Stack direction="row" position="relative">
-        <Stack direction="column" paddingY="55px" spacing="25px" maxW="650px">
+      <Stack direction={["column", "column", null, "row"]} position="relative">
+        <Stack
+          direction="column"
+          paddingY="55px"
+          paddingX={["15px", null]}
+          spacing="25px"
+          maxW="650px"
+        >
           {typeof data.title === "string" ? (
-            <Heading as="h2" color="blue.main" size="md" maxW="265px">
+            <Heading as="h2" color="blue.main" fontSize="lg" maxW="265px">
               {data.title}
             </Heading>
           ) : (
@@ -54,15 +60,21 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
             </Link>
           )}
         </Stack>
-        <Box flex="1" paddingY="15px">
+        <Box flex={[null, null, null, "1"]} paddingY="15px">
           <Image
             margin="0 auto"
             objectFit="cover"
-            maxW="465px"
+            maxW={["265px", null, null, null, "465px"]}
             src={data.image}
           />
         </Box>
-        <Box onClick={onClose} cursor="pointer">
+        <Box
+          position={["absolute", "absolute", null, "relative"]}
+          right="30px"
+          onClick={onClose}
+          cursor="pointer"
+          transform={["scale(0.6)", "scale(0.6)", null, null, null]}
+        >
           <IconPlus transform={!isOpen} />
         </Box>
       </Stack>

@@ -21,8 +21,7 @@ export default {
     },
     md: {
       fontSize: "18px",
-      padding: "18px 24px",
-      height: "49px",
+      padding: "12px 24px",
     },
     lg: {
       fontSize: "18px",
@@ -72,6 +71,16 @@ export default {
       borderRadius: 0,
       _hover: {
         color: "blue.light",
+      },
+    },
+    menu: {
+      fontFamily: "Bebas Neue",
+      bg: "transparent",
+      color: "white",
+      fontSize: ["xs", "sm"],
+      fontWeight: "bold",
+      _hover: {
+        textDecoration: "underline",
       },
     },
   },

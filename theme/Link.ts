@@ -29,16 +29,10 @@ export default {
       color: "white",
     },
     mobile: {
-      fontFamily: "Bebas Neue",
-      fontSize: "2xl",
-      fontWeight: "bold",
-      textTransform: "uppercase",
+      fontSize: "21px",
       color: "white",
-      lineHeight: "50px",
-      _hover: {
-        color: "pink.main",
-        textDecoration: "none",
-      },
+      fontFamily: "Droid Sans",
+      fontWeight: "normal",
     },
     inherit: {
       fontWeight: "bold",

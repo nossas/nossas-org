@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Img, Heading } from "@chakra-ui/react";
 import Video from "../Video";
-
+import DownArrow from "./DownArrow";
 interface HeroProps {
   bgImage?: string;
   bgColor?: string;
@@ -32,7 +32,6 @@ const Hero: React.FC<HeroProps> = ({
   const boxProps = {
     background:
       "linear-gradient(0deg, rgba(45, 0, 161, 0.22), rgba(45, 0, 161, 0.1)),linear-gradient(180deg, #3a3737 0%, rgb(58 58 58 / 26%) 100%),linear-gradient(180deg, rgba(14, 14, 14, 0.2) 0%, rgba(0, 0, 0, 0.77) 100%)",
-    mixBlendMode: "multiply",
     opacity: 0.7,
   };
 
@@ -45,9 +44,21 @@ const Hero: React.FC<HeroProps> = ({
         bgColor={bgColor}
         position="relative"
       >
-        {bgImage || videoUrl ? (
-          <Box {...boxProps} position="absolute" width="100%" height="100%" />
-        ) : null}
+        {(bgImage || videoUrl) && (
+          <Box
+            {...boxProps}
+            position="absolute"
+            width="100%"
+            height="100%"
+            display="flex"
+            alignItems="flex-end"
+            justifyContent="center"
+            paddingBottom={["40px", "80px"]}
+          >
+            <DownArrow />
+          </Box>
+        )}
+
         {bgImage && !videoUrl && (
           <Img
             src={bgImage}
@@ -57,7 +68,9 @@ const Hero: React.FC<HeroProps> = ({
             width="100%"
           />
         )}
+
         {videoUrl && !bgImage && <Video videoUrl={videoUrl} />}
+
         <Box
           maxWidth={maxWidth}
           text-align={"center"}
@@ -80,7 +93,9 @@ const Hero: React.FC<HeroProps> = ({
               {title}
             </Heading>
           )}
+
           {Title && Title}
+
           {Subtitle && Subtitle}
         </Box>
       </Flex>

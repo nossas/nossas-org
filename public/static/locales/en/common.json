@@ -4,8 +4,8 @@
   },
   "donate": {
     "button": "Doar",
-    "title": "APOIE O <b>NOSSAS</b>",
-    "description": "Nossas atividades são sustentadas exclusivamente por doações de pessoas e fundações que acreditam no que fazemos. Faça sua doação:",
+    "title": "DOE PARA O <b>NOSSAS</b>",
+    "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
     "padlock": "doação segura",
     "tabs": {
       "yourdata": "Seus dados",
@@ -48,7 +48,7 @@
     },
     "finish": {
       "imageAlt": "Doação bem sucedida!",
-      "title": "Valeu, <b>{{name}}</b>!",
+      "title": "Valeu, <b>{{name}}!</b>",
       "thanks": "Sua doação faz toda a diferença!",
       "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"
     }
@@ -96,7 +96,8 @@
       "instagram": "Logo do Instagram",
       "twitter": "Logo do Twitter",
       "facebook": "Logo do Facebook",
-      "linkedin": "Logo do Linkedin"
+      "linkedin": "Logo do Linkedin",
+      "youtube": "Logo do youtube"
     }
   },
   "slider": {
@@ -128,8 +129,7 @@
   "footer": {
     "about": "Conheça o NOSSAS",
     "actvist": "Junte-se a nós",
-    "mobilizations": "Participe de uma campanha",
     "donate": "Faça uma doação",
-    "workwithus": "Trabalhe conosco"    
+    "workwithus": "Trabalhe conosco"
   }
 }

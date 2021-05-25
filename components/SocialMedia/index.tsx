@@ -2,11 +2,12 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Heading, Img, Link, Stack } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
-import { Facebook, Instagram, Twitter, Linkedin } from "./IconsSVG";
+import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "./IconsSVG";
 
 interface SocialMediaProps {
   t: any;
   color: string;
+  flat?: boolean;
 }
 
 const MediaLink = styled(Link)`
@@ -21,19 +22,21 @@ const MediaLink = styled(Link)`
   }
 `;
 
-const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
   return (
     <Stack alignItems="center" display="block" spacing={4}>
-      <Heading
-        as="h5"
-        color="blue.main"
-        mb={5}
-        fontWeight="bold"
-        size="md"
-        maxW="190px"
-      >
-        {t("social.title")}
-      </Heading>
+      {!flat && (
+        <Heading
+          as="h5"
+          color="blue.main"
+          mb={5}
+          fontWeight="bold"
+          size="md"
+          maxW="190px"
+        >
+          {t("social.title")}
+        </Heading>
+      )}
 
       <Stack direction="row" spacing={5}>
         <MediaLink
@@ -48,8 +51,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
           href="https://www.facebook.com/nossasorg/"
           target="_blank"
           title={t("social.icons.facebook")}
-          c
-          olor={color}
+          color={color}
         >
           <Facebook />
         </MediaLink>
@@ -69,19 +71,29 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color }) => {
         >
           <Linkedin />
         </MediaLink>
+        <MediaLink
+          href="https://www.youtube.com/nossas"
+          target="_blank"
+          title={t("social.icons.youtube")}
+          color={color}
+        >
+          <Youtube />
+        </MediaLink>
       </Stack>
-
-      <Img
-        maxWidth="200px"
-        src="static/media/footer/email.png"
-        alt="Email do Nossas"
-      />
+      {!flat && (
+        <Img
+          maxWidth="200px"
+          src="static/media/footer/email.png"
+          alt="Email do Nossas"
+        />
+      )}
     </Stack>
   );
 };
 
 SocialMedia.defaultProps = {
   color: "pink.main",
+  flat: false,
 };
 
 export default withTranslation("common")(SocialMedia);

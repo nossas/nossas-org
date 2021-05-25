@@ -2,6 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import {
+  Box,
   Button,
   Heading,
   Text,
@@ -13,11 +14,17 @@ import {
 } from "@chakra-ui/react";
 
 import { I18nInitialProps, withTranslation } from "../../i18n";
+import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
+import {
+  BoardMembers,
+  TeamMembers,
+  LeadersMembers,
+  LeadersMembersMobile,
+} from "./_team";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -25,7 +32,13 @@ interface PageProps extends WithUserAgentProps {
 
 const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
-    <Heading as="span" size="lg" color="pink.main" fontWeight="bold">
+    <Heading
+      as="span"
+      size="lg"
+      color="pink.main"
+      fontWeight="bold"
+      lineHeight=".8"
+    >
       {numberText}
     </Heading>
     <Text as="span" size="sm">
@@ -51,123 +64,121 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       flexDirection="column"
       alignItems="flex-start"
       justifyContent="center"
-      spacing="215px"
+      spacing={["60px", null, null, "215px"]}
     >
-      <Stack
-        direction="row"
-        spacing="115px"
-        alignItems="center"
-        margin="0 auto"
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
       >
-        <Image src="/static/media/s3/incubations-tudonossas.png" />
-        {/* <Text maxW={["600px"]}>{t("content:about.description")}</Text> */}
-        <Text maxW={["600px"]}>
+        <Box margin="0 auto">
+          <Image src="/static/media/s3/incubations-tudonossas.png" />
+        </Box>
+        <Text>
           Somos uma organização sem fins lucrativos comprometida com o
           fortalecimento da democracia, da justiça social e da igualdade. Há
           mais de dez anos desenvolvemos projetos, táticas e estratégias de
           mobilização e solidariedade pelo Brasil inteiro.
         </Text>
-      </Stack>
-      <Stack direction="row" spacing="115px">
-        <Heading as="h2" variant="tag" minW="110px">
-          {/* {t("content:about.history.title")} */}
-          História
-        </Heading>
-        {/* <Text maxW={["925px"]}>{t("content:about.history.description")}</Text> */}
-        <Text maxW={["925px"]}>
+      </SimpleGrid>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
+      >
+        <Box>
+          <Heading as="h2" variant="tag">
+            História
+          </Heading>
+        </Box>
+        <Text>
           O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas
           em torno de causas, desenvolvemos dezenas de projetos, fizemos
           centenas de campanhas de impacto, conseguimos a implementação de
           políticas públicas importantes e contribuímos na construção de redes
           de solidariedade.
         </Text>
-      </Stack>
+      </SimpleGrid>
     </Section>
-    <Section>
+    <Section padding={["50px 0", null, null, null, ""]}>
       <Timeline t={t} isMobile={ua.isMobile} />
     </Section>
     {/* Impacto */}
-    <Section direction={["column", "row"]} spacing={["50px", "150px"]}>
-      <Heading as="h2" size="lg" color="pink.main">
-        {/* <div
-          dangerouslySetInnerHTML={{
-            __html: t("content:about.impact.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        /> */}
-        Números
-        <br />
-        <b>de impacto</b>
-      </Heading>
-      <SimpleGrid columns={2} gridColumnGap="95px" gridRowGap="45px">
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.donations.number")}
-          description={t("content:about.impact.donations.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+4 milhões"
-          description="de reais arrecadados em financiamento coletivo"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.volunteers.number")}
-          description={t("content:about.impact.volunteers.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+5,4 mil"
-          description="voluntárias e voluntários cadastrados"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.politicalChange.number")}
-          description={t("content:about.impact.politicalChange.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+120"
-          description="mudanças de política pública"
-        />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.mobilizations.number")}
-          description={t("content:about.impact.mobilizations.text")}
-        /> */}
-        <ImpactNumber numberText="+230" description="campanhas lançadas" />
-        {/* <ImpactNumber
-          numberText={t("content:about.impact.peopleDonations.number")}
-          description={t("content:about.impact.peopleDonations.text")}
-        /> */}
-        <ImpactNumber
-          numberText="+29 mil"
-          description="pessoas já fizeram doações"
-        />
-        {/* <ImpactNumber
-          numberText={t(
-            "content:about.impact.peopleMobilizations.number"
-          )}
-          description={t(
-            "content:about.impact.peopleMobilizations.text"
-          )}
-        /> */}
-        <ImpactNumber
-          numberText="+2,5 milhões"
-          description="de pessoas mobilizadas"
-        />
+    <Section bgColor="gray.light">
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="50px"
+      >
+        <Box>
+          <Heading as="h2" size="lg" color="pink.main">
+            Números
+            <br />
+            <b>de impacto</b>
+          </Heading>
+        </Box>
+        <SimpleGrid
+          columns={[2, null, null, 2, 3]}
+          gridColumnGap="20px"
+          gridRowGap="45px"
+          gridTemplateColumns={["auto auto"]}
+        >
+          <ImpactNumber
+            numberText="+4 milhões"
+            description="de reais arrecadados em financiamento coletivo"
+          />
+          <ImpactNumber
+            numberText="+5,4 mil"
+            description="voluntárias e voluntários cadastrados"
+          />
+          <ImpactNumber
+            numberText="+120"
+            description="mudanças de política pública"
+          />
+          <ImpactNumber numberText="+230" description="campanhas lançadas" />
+          <ImpactNumber
+            numberText="+29 mil"
+            description="pessoas já fizeram doações"
+          />
+          <ImpactNumber
+            numberText="+2,5 milhões"
+            description="de pessoas mobilizadas"
+          />
+        </SimpleGrid>
       </SimpleGrid>
     </Section>
+    {/* Equipe */}
+    <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
+      {ua && ua.isMobile ? (
+        <>
+          <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
+        </>
+      ) : (
+        <>
+          <BoardMembers t={t} />
+          <LeadersMembers t={t} />
+          <TeamMembers t={t} />
+        </>
+      )}
+    </Section>
     {/* Quem financia */}
-    <Section spacing={[30, "170px"]}>
-      <Stack
-        display={["none", "flex"]}
-        alignItems={["center"]}
-        direction={["column", "row"]}
+    <Section spacing={["30px", "170px"]}>
+      <SimpleGrid
+        columns={[1, null, null, 2]}
+        templateColumns={["auto", null, null, "582px auto"]}
+        rowGap="30px"
       >
-        <Flex flex={1} justifyContent="space-around">
+        <Box>
           <Image
+            margin="0 auto"
             maxW={[226, 282]}
             maxH={[232, 374]}
             src="/static/media/s3/sustentabilidade2.png"
-            // alt={t("content:about.financiers.imageText")}
             alt="Quem financia o NOSSAS"
           />
-        </Flex>
+        </Box>
         <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
           <Heading as="h2" size="lg" color="green">
             {/* <div
@@ -187,29 +198,47 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             anualmente realizamos uma auditoria independente que verifica nossa
             contabilidade.
           </Text>
+
           <Stack direction="row" spacing="20px">
-            <Button size="sm">
-              {/* {t("content:about.financiers.button")} */}
+            <Button
+              size="sm"
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
+                  "_blank"
+                );
+              }}
+            >
               Baixar auditoria
             </Button>
-            <Button size="sm" variant="pink">
-              {/* {t("content:about.financiers.donate")} */}
+            <Donation size="sm" variant="pink" display={["none", "block"]}>
               Fazer uma doação
-            </Button>
+            </Donation>
           </Stack>
         </Stack>
-      </Stack>
+      </SimpleGrid>
       <Stack direction="column">
-        <Stack direction="row" justifyContent="space-between">
-          <Heading as="h2" variant="tag">
-            Fundações
-          </Heading>
-          <Text maxW="680px">
+        <SimpleGrid
+          columns={[1, null, null, 2]}
+          templateColumns={["auto", null, null, "582px auto"]}
+          rowGap="30px"
+        >
+          <Box>
+            <Heading as="h2" variant="tag">
+              Fundações
+            </Heading>
+          </Box>
+          <Text>
             Em 2020, o NOSSAS executou atividades financiadas pelas seguintes
             fundações:
           </Text>
-        </Stack>
-        <SimpleGrid columns={4} rowGap="45px" pt="75px">
+        </SimpleGrid>
+        <SimpleGrid
+          columns={[2, null, null, null, 4]}
+          rowGap={["20px", null, null, null, "45px"]}
+          columnGap="20px"
+          pt="75px"
+        >
           <Link href="https://www.opensocietyfoundations.org/" target="_blank">
             <Image
               m="0 auto"
@@ -242,12 +271,12 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               alt="Skoll Foundation"
             />
           </Link>
-          <Link href="#" target="_blank">
+          <Link href="http://umifund.org/" target="_blank">
             <Image
               m="0 auto"
               objectFit="cover"
-              src="/static/media/foundations/urban.png"
-              alt="Urban Movement"
+              src="/static/media/foundations/umi.png"
+              alt="UMI fund"
             />
           </Link>
           <Link href="https://tinker.org/pt/" target="_blank">
@@ -303,12 +332,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
         </SimpleGrid>
       </Stack>
     </Section>
-    {/* Equipe */}
-    <Section direction="column" spacing="100px">
-      <BoardMembers t={t} />
-      <LeadersMembers t={t} />
-      <TeamMembers t={t} />
-    </Section>
+
     {/* Na midia */}
     <Media
       title={

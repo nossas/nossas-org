@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { gql, useMutation } from "@apollo/client";
 import {
-  Box,
   Heading,
   Image,
+  FormHelperText,
   Text,
   // Tab,
   Tabs,
@@ -36,7 +36,6 @@ import {
   initialValues as cardInitialValues,
   CardFormValues,
 } from "./CardForm";
-// import ElementsForm from './ElementsForm';
 import DonationDrawer from "./DonationDrawer";
 import Finish from "./Finish";
 
@@ -67,7 +66,6 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
     color: "gray.main",
     _selected: { color: "blue.main" },
     textTransform: "uppercase",
-    fontWeight: "bold",
     p: "0 35px 0 0",
   };
   const tagPanelProps: any = {
@@ -186,7 +184,7 @@ const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
             {index === 2 ? (
               <Finish t={t} name={values.name} />
             ) : (
-              <Stack spacing={6} mt="45px">
+              <Stack spacing={6} mt="10px">
                 <Stack position="relative">
                   <Heading as="h2" color="green">
                     <div

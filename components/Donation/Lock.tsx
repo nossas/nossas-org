@@ -21,7 +21,7 @@ function Icon() {
 const Lock = ({ t }: any) => (
   <Stack
     position="absolute"
-    bottom="-45px"
+    bottom="-49px"
     right="5px"
     direction="row"
     spacing={2}

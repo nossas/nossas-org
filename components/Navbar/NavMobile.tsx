@@ -67,18 +67,15 @@ const NavMobile = ({ t, children }) => {
               <Donation variant="outline">{t("donate.button")}</Donation>
             </DrawerHeader>
 
-            <DrawerBody display="flex" flexDirection="column">
+            <DrawerBody display="flex" flexDirection="column" pt="40px">
               <Stack direction="column">{children}</Stack>
-              <Flex justifyContent="space-between" mt={16}>
-                <I18n />
-                <SocialMedia />
+              <Flex justifyContent="space-between" mt={16} alignItems="center">
+                <I18n
+                  extraProps={{ fontSize: "21px", paddingX: "0 !important" }}
+                />
+                <SocialMedia flat />
               </Flex>
             </DrawerBody>
-
-            {/* <DrawerFooter justifyContent="space-between">
-              <I18n />
-              <SocialMedia />
-            </DrawerFooter> */}
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>

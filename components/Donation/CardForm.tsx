@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Stack, FormHelperText } from "@chakra-ui/react";
+import { Stack, Text } from "@chakra-ui/react";
 import { CardElement } from "@stripe/react-stripe-js";
 import * as Yup from "yup";
 
@@ -74,7 +74,11 @@ const PaymentStatus = ({
       return <h2>Payment Succeeded 🥳</h2>;
 
     case "error":
-      return <FormHelperText color="red">{errors.form}</FormHelperText>;
+      return (
+        <Text color="red" size="xs">
+          {errors.form}
+        </Text>
+      );
 
     default:
       return null;
@@ -119,7 +123,6 @@ export const Fields: React.FC<FieldsProps> = ({
           options={CARD_OPTIONS}
           onChange={(e) => {
             if (e.error) {
-              console.log("e", e.error.message ?? "An unknown error occured");
               setStatus("error");
               setErrors({
                 form: e.error.message ?? "An unknown error occured",
@@ -156,6 +159,9 @@ export const Fields: React.FC<FieldsProps> = ({
           })}
         />
       </Stack>
+      {/* <FormHelperText color="red" fontSize="xs" textAlign="left">
+        {(errors as any).form}
+      </FormHelperText> */}
       <PaymentStatus status={status} errors={errors} />
     </Stack>
   );
@@ -171,6 +177,7 @@ export const handleSubmit = async (
   actions: any,
   { stripe, elements }: StripeHooks
 ) => {
+  // try {
   // setPayment({ status: "processing" });
 
   // Create a PaymentIntent with the specified amount.
@@ -178,6 +185,11 @@ export const handleSubmit = async (
     amount: formData.customDonation,
     currency: formData.currency,
   });
+
+  if (response.statusCode === 500) {
+    actions.setErrors({ customDonation: response.message });
+    throw new Error(response.message);
+  }
   // setPayment(response);
 
   // Get a reference to a mounted CardElement. Elements knows how
@@ -197,13 +209,18 @@ export const handleSubmit = async (
   );
 
   if (error) {
+    actions.setStatus("error");
     actions.setErrors({
       form: error.message ?? "An unknown error occured",
     });
+    throw new Error(error.message);
     // setPayment({ status: "error" });
     // setErrorMessage(error.message ?? "An unknown error occured");
   } else if (paymentIntent) {
     // setPayment(paymentIntent);
     return paymentIntent;
   }
+  // } catch (err) {
+  //   console.log('CardForm err', { err: err.message });
+  // }
 };

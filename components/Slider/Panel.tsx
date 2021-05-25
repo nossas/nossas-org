@@ -7,7 +7,7 @@ type Item = {
   title: string;
   description: string;
   href: string;
-  link: string;
+  link?: string;
 };
 
 export interface Props {
@@ -45,13 +45,19 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => (
         fontSize={["16px", null, null, "21px"]}
         title={item.link}
       >
-        <span>{`${item.link}`}</span>
-        <Img
-          src="/static/media/icon-right-arrow-pink.png"
-          width="10px !important"
-          height="17px"
-          ml="19px"
-        />
+        {item.link ? (
+          <>
+            <span>{`${item.link}`}</span>
+            <Img
+              src="/static/media/icon-right-arrow-pink.png"
+              width="10px !important"
+              height="17px"
+              ml="19px"
+            />
+          </>
+        ) : (
+          "Saiba mais +"
+        )}
       </Link>
     </Stack>
   </Stack>

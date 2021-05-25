@@ -5,11 +5,9 @@ import {
   DrawerBody,
   DrawerContent,
   DrawerCloseButton,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Image,
-  useDisclosure,
 } from "@chakra-ui/react";
 import { Form } from "formik";
 
@@ -48,11 +46,15 @@ const Donation: React.FC<DonationProps> = ({
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-        size="md"
+        size="lg"
       >
         <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
+          <DrawerContent padding={["10px 20px 0", "50px 40px 0"]}>
+            <DrawerCloseButton
+              _focus={{ border: "none" }}
+              top={["20px", "60px"]}
+              right={["20px", "45px"]}
+            />
             <DrawerHeader>
               <Image
                 src="/static/media/brand.png"

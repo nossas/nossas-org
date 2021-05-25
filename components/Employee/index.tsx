@@ -8,6 +8,7 @@ import {
   SimpleGrid,
   useDisclosure,
   Drawer,
+  Fade,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -25,107 +26,140 @@ export type Employee = {
   networks?: Record<string, string>;
 };
 
-const EmployeeDetails = () => <h2>Employee Details</h2>;
+type DrawerInfoProps = {
+  isOpen: boolean;
+  handleClose: () => void;
+  data: Employee;
+};
 
-const BtnDetails: React.FC<{ handleClose: any; data: Employee }> = ({
+const DrawerInfo: React.FC<DrawerInfoProps> = ({
+  isOpen,
   handleClose,
   data,
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
-
   return (
-    <>
-      <Text
-        color="white"
-        size="sm"
-        cursor="pointer"
-        ref={btnRef}
-        onClick={onOpen}
-      >
-        Saiba +
-      </Text>
-      <Drawer
-        closeOnOverlayClick={false}
-        isOpen={isOpen}
-        placement="right"
-        size="md"
-        onClose={() => {
-          onClose();
-          handleClose();
-        }}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay>
-          <DrawerContent>
-            <DrawerHeader
-              color="pink.main"
-              textTransform="uppercase"
-              fontSize="md"
-            >
-              {data.team}
-            </DrawerHeader>
-            <DrawerCloseButton />
+    <Drawer
+      closeOnOverlayClick={false}
+      isOpen={isOpen}
+      placement="right"
+      size="md"
+      onClose={handleClose}
+    >
+      <DrawerOverlay>
+        <DrawerContent>
+          <DrawerHeader
+            color="pink.main"
+            textTransform="uppercase"
+            fontFamily="Bebas Neue"
+            fontSize="md"
+          >
+            {data.team}
+          </DrawerHeader>
+          <DrawerCloseButton />
 
-            <DrawerBody>
-              <Stack direction="row" spacing="30px" mb="25px">
-                <Image src={data.avatar} boxSize="140px" objectFit="cover" />
-                <Stack direction="column" spacing="0">
-                  <Heading as="h2" fontWeight="bold" size="md">
-                    {data.name}
-                  </Heading>
-                  <Text size="sm">{data.role}</Text>
-                </Stack>
+          <DrawerBody>
+            <Stack direction="row" spacing="30px" mb="25px">
+              <Image src={data.avatar} boxSize="140px" objectFit="cover" />
+
+              <Stack direction="column" spacing="0">
+                <Heading as="h2" fontWeight="bold" size="md">
+                  {data.name}
+                </Heading>
+
+                <Text size="sm">{data.role}</Text>
               </Stack>
-              <Text size="sm">{data.about}</Text>
-              {/* <Input placeholder="Type here..." /> */}
-            </DrawerBody>
+            </Stack>
 
-            {/* <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="blue">Save</Button>
-            </DrawerFooter> */}
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
-    </>
+            <Text size="sm">{data.about}</Text>
+          </DrawerBody>
+        </DrawerContent>
+      </DrawerOverlay>
+    </Drawer>
   );
 };
 
 export const EmployeeItem: React.FC<{ data: Employee }> = ({ data }) => {
   const [open, setOpen] = useState(false);
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+
+  const {
+    isOpen: isOpenDrawerInfo,
+    onOpen: onOpenDrawerInfo,
+    onClose: onCloseDrawerInfo,
+  } = useDisclosure();
+
+  const handleCloseDrawerInfo = () => {
+    setOpen(false);
+    onCloseDrawerInfo();
+  };
 
   return (
-    <Stack maxW="190px">
+    <Stack
+      maxW="190px"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => !drawerIsOpen && setOpen(false)}
+    >
       <Box
         position="relative"
         width="190px"
         height="190px"
+        overflow="hidden"
+        marginBottom="10px"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
+        <Image
+          src={data.avatar}
+          boxSize="190px"
+          objectFit="cover"
+          transition="all 0.2s ease-out"
+          transform={open ? "scale(1.1)" : "scale(1.0)"}
+        />
+
         {open && (
-          <Box position="absolute" bgColor="rgba(238, 0, 144, 0.4)" top="0">
-            <Stack
-              width="190px"
-              height="190px"
-              flexDirection="row"
-              justifyContent="space-between"
-              alignItems="flex-end"
-              padding="12px"
+          <Fade in={open} unmountOnExit={true}>
+            <Box
+              position="absolute"
+              bgColor="rgba(238, 0, 144, 0.2)"
+              top="0"
+              cursor="pointer"
+              onClick={onOpenDrawerInfo}
             >
-              <IconEyeSlash />
-              <BtnDetails data={data} handleClose={() => setOpen(false)} />
-            </Stack>
-          </Box>
+              <Stack
+                width="190px"
+                height="190px"
+                flexDirection="row"
+                justifyContent="space-between"
+                alignItems="flex-end"
+                padding="12px"
+              >
+                <IconEyeSlash />
+
+                <Text id="btnRef" color="white" size="sm">
+                  Saiba +
+                </Text>
+              </Stack>
+            </Box>
+          </Fade>
         )}
-        <Image src={data.avatar} boxSize="190px" objectFit="cover" />
+
+        <DrawerInfo
+          isOpen={isOpenDrawerInfo}
+          handleClose={handleCloseDrawerInfo}
+          data={data}
+        />
       </Box>
-      <Heading as="h3" fontWeight="bold" size="sm">
+
+      <Heading
+        as="h3"
+        fontWeight="bold"
+        size="sm"
+        mb="-15px"
+        textDecoration={open ? "underline" : "none"}
+      >
         {data.name}
       </Heading>
+
       <Text size="sm">{data.role}</Text>
     </Stack>
   );
@@ -143,7 +177,7 @@ export const EmployeeTeam: React.FC<{
       </Heading>
       {description && <Text>{description}</Text>}
     </Box>
-    <SimpleGrid columns={6} columnGap="15px" rowGap="30px">
+    <SimpleGrid minChildWidth="218px" rowGap="30px">
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
       ))}

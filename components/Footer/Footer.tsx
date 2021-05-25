@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, UnorderedList, ListItem, Link, Image } from "@chakra-ui/react";
 import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
-// import Newsletter from "../Newsletter";
 import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
@@ -14,7 +13,7 @@ const Footer = ({ t }) => {
         templateColumns={["auto", "repeat(3, auto)"]}
         rowGap={["60px", 0]}
         columnGap={[0, "90px"]}
-        px={[30, 90]}
+        px={[30, "10%"]}
         py={[20, 90]}
         alignItems="baseline"
       >
@@ -24,19 +23,16 @@ const Footer = ({ t }) => {
           </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
+              <Link href="/#join-us">{t("footer.actvist")}</Link>
+            </ListItem>
+            <ListItem>
               <Link href="/about">{t("footer.about")}</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/">{t("footer.actvist")}</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/mobilizations">{t("footer.mobilizations")}</Link>
             </ListItem>
             <ListItem>
               <Donation variant="link">{t("footer.donate")}</Donation>
             </ListItem>
             <ListItem>
-              <Link href="/workwithus">{t("footer.workwithus")}</Link>
+              <Link href="/work-with-us">{t("footer.workwithus")}</Link>
             </ListItem>
           </UnorderedList>
         </div>
