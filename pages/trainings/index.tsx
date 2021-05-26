@@ -28,7 +28,12 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       maxWidth="1440px"
       videoUrl="/static/media/covers/trainings.mp4"
       // title={t("content:covers.training.title")}
-      title={<>Receba treinamento em metodologias de ativismo</>}
+      title={
+        <>
+          Receba treinamento em <br />
+          metodologias de ativismo
+        </>
+      }
       titleColor="white"
       titleAlign="center"
     />
