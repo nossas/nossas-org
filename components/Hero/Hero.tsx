@@ -5,7 +5,7 @@ import DownArrow from "./DownArrow";
 interface HeroProps {
   bgImage?: string;
   bgColor?: string;
-  title?: string;
+  title?: string | React.ReactElement;
   titleColor?: string;
   titleAlign?: "left" | "center" | "right";
   left?: string;
