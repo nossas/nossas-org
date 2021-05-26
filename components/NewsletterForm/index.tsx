@@ -5,7 +5,7 @@ import * as Yup from "yup";
 
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 
 interface Values {
   first_name: string;
@@ -31,9 +31,11 @@ const Header = ({ inverted, title, description }) => (
   </>
 );
 
-const NewsletterForm = ({ t, inverted }: any) => {
+const NewsletterForm = ({ inverted }: any) => {
   if (!process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID)
     return <Text color="red">Você deve configurar o Widget da Newsletter</Text>;
+
+  const t = (i18nKey: string, _?: any) => i18nKey;
 
   return (
     <Stack spacing={4} maxW="430px">
@@ -110,4 +112,5 @@ const NewsletterForm = ({ t, inverted }: any) => {
   );
 };
 
-export default withTranslation("common")(NewsletterForm);
+export default NewsletterForm;
+// export default withTranslation("common")(NewsletterForm);

@@ -11,11 +11,9 @@ import {
 } from "@chakra-ui/react";
 import { Form } from "formik";
 
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 
 interface DonationProps {
-  t: any;
-  onClick: any;
   btnText: string;
   isDisabled: boolean;
   onSubmit?: any;
@@ -24,7 +22,6 @@ interface DonationProps {
 }
 
 const Donation: React.FC<DonationProps> = ({
-  t,
   children,
   onSubmit,
   btnText,
@@ -35,6 +32,7 @@ const Donation: React.FC<DonationProps> = ({
 }) => {
   const { isOpen, onOpen, onClose } = disclosureOpts;
   const btnRef = React.useRef();
+  const t = (i18nKey: string, _?: any) => i18nKey;
 
   return (
     <Form>
@@ -76,4 +74,5 @@ const Donation: React.FC<DonationProps> = ({
   );
 };
 
-export default withTranslation("common")(Donation);
+export default Donation;
+// export default withTranslation("common")(Donation);

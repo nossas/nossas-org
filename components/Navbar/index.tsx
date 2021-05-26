@@ -13,7 +13,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ButtonIcon from "./ButtonIcon";
 import styled from "@emotion/styled";
 
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
 import I18n from "../I18nButton";
 import Logo from "./Brand";
@@ -119,7 +119,9 @@ const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
   );
 };
 
-const Navbar: React.FC<{ t: any }> = ({ t }) => {
+const Navbar: React.FC = () => {
+  const t = (keyI18n: string) => keyI18n;
+
   return (
     <>
       <Nav>
@@ -164,6 +166,7 @@ const Navbar: React.FC<{ t: any }> = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(Navbar);
+export default Navbar;
+// export default withTranslation("common")(Navbar);
 
 export { default as Brand } from "./Brand";

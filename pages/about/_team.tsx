@@ -2,11 +2,7 @@ import React from "react";
 import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { EmployeeTeam } from "../../components/Employee";
 
-type TranslateProps = {
-  t: (path: string) => any;
-};
-
-export const BoardMembers: React.FC<TranslateProps> = ({ t }) => {
+export const BoardMembers: React.FC = () => {
   return (
     <EmployeeTeam
       // title={t("content:about.team.board")}
@@ -66,7 +62,7 @@ export const BoardMembers: React.FC<TranslateProps> = ({ t }) => {
   );
 };
 
-export const LeadersMembersMobile: React.FC<TranslateProps> = () => (
+export const LeadersMembersMobile: React.FC = () => (
   <Stack direction="column" spacing="35px">
     <Heading as="h2" fontWeight="bold" color="pink.main">
       Equipe
@@ -98,7 +94,7 @@ export const LeadersMembersMobile: React.FC<TranslateProps> = () => (
   </Stack>
 );
 
-export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
+export const LeadersMembers: React.FC = () => {
   return (
     <EmployeeTeam
       // title={t("content:about.team.leaders")}
@@ -181,7 +177,7 @@ export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
   );
 };
 
-export const TeamMembers: React.FC<TranslateProps> = ({ t }) => {
+export const TeamMembers: React.FC = () => {
   return (
     <EmployeeTeam
       // title= {t("content:about.team.team")}

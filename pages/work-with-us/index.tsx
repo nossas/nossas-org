@@ -1,10 +1,7 @@
 import React from "react";
-import { NextPage } from "next";
-import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
 import { Button, Image, Text } from "@chakra-ui/react";
 
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
@@ -13,11 +10,7 @@ import {
   TransferPink,
 } from "../../components/IconsSVG/Functionalities";
 
-interface PageProps extends WithUserAgentProps {
-  t: any;
-}
-
-const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
+const WorkWithUs: React.FC = () => (
   <Body>
     <Hero
       maxWidth="1440px"
@@ -120,10 +113,4 @@ const WorkWithUs: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   </Body>
 );
 
-WorkWithUs.getInitialProps = async () => ({
-  namespacesRequired: ["common", "content"],
-});
-
-export default withUserAgent(
-  withTranslation(["common", "content"])(WorkWithUs)
-);
+export default WorkWithUs;

@@ -19,7 +19,7 @@ import {
 import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
 
-import { withTranslation, i18n } from "../../i18n";
+// import { withTranslation, i18n } from "../../i18n";
 import getStripe from "../../lib/getStripe";
 import Lock from "./Lock";
 import {
@@ -40,7 +40,6 @@ import DonationDrawer from "./DonationDrawer";
 import Finish from "./Finish";
 
 interface DonationProps {
-  t: any;
   registerDonate: (args: SubmitArgs) => Promise<Result>;
 }
 
@@ -49,10 +48,13 @@ interface Values extends YourDataValues, CardFormValues {
   widget_id: number;
 }
 
-const Donation: React.FC<DonationProps> = ({ t, registerDonate, ...props }) => {
+const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
   const [index, setIndex] = useState(0);
   const [donation, setDonation] = useState({});
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const t = (i18nKey: string, _?: any) => i18nKey;
+  const i18n = { language: "pt-BR" };
   // use stripe in 2-step, see ./CardForm handleSubmit
   const stripe = useStripe();
   const elements = useElements();
@@ -274,7 +276,8 @@ interface Result {
   };
 }
 
-const StripeDonation = ({ t, ...props }) => {
+const StripeDonation = (props) => {
+  const t = (keyI18n: string) => keyI18n;
   const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
 
   const registerDonate = async (args: SubmitArgs): Promise<Result> => {
@@ -295,4 +298,4 @@ const StripeDonation = ({ t, ...props }) => {
   );
 };
 
-export default withTranslation("common")(StripeDonation);
+export default StripeDonation;

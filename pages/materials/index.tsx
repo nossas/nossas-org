@@ -4,7 +4,6 @@ import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { Heading, Link, Text, Stack, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
@@ -27,11 +26,7 @@ ImageIcon.defaultProps = {
   scale: 0.7,
 };
 
-interface PageProps extends WithUserAgentProps {
-  t: any;
-}
-
-const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
+const Materials: React.FC = () => (
   <Body>
     {/* Cover */}
     <Hero
@@ -96,7 +91,6 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       >
         <SubscribeForm
           color="blue"
-          t={t}
           widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
           title="Baixar manual"
           submitText="Baixar"
@@ -107,8 +101,4 @@ const Materials: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   </Body>
 );
 
-Materials.getInitialProps = async () => ({
-  namespacesRequired: ["common", "content"],
-});
-
-export default withUserAgent(withTranslation(["common", "content"])(Materials));
+export default Materials;

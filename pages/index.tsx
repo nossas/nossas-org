@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import React from "react";
 import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 
@@ -9,13 +9,11 @@ import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
 import Header from "../content/Header";
-import { withTranslation, I18nInitialProps } from "../i18n";
+// import { withTranslation, I18nInitialProps } from "../i18n";
 
-interface Props extends WithUserAgentProps {
-  t: any;
-}
+const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
+  const t = (i18nKey: string, _?: any) => i18nKey;
 
-const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
     <Body>
       {/* Cover */}
@@ -173,8 +171,7 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
         id="we-are-doing"
         direction="column"
         spacing={8}
-        backgroundColor="#F7F7F7;
-"
+        backgroundColor="#F7F7F7"
       >
         <Heading as="h2" size="lg" color="pink.main">
           {/* <div
@@ -284,10 +281,11 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   );
 };
 
-Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "sliders", "content"],
-});
+// Home.getInitialProps = async () => ({
+//   namespacesRequired: ["common", "sliders", "content"],
+// });
 
-export default withUserAgent(
-  withTranslation(["common", "sliders", "content"])(Home)
-);
+// export default withUserAgent(
+//   withTranslation(["common", "sliders", "content"])(Home)
+// );
+export default withUserAgent(Home);

@@ -17,7 +17,6 @@ interface Values {
 }
 
 interface SubscribeFormProps {
-  t: any;
   title: string;
   submitText: string;
   textSuccess: string;
@@ -33,7 +32,6 @@ const colors = {
 };
 
 const SubscribeForm: React.FC<SubscribeFormProps> = ({
-  t,
   title,
   submitText,
   textSuccess,
@@ -41,6 +39,8 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   color,
   fieldsComponent: FieldsComponent,
 }) => {
+  const t = (keyI18n: string, _?: any) => keyI18n;
+
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
       <SubmitFormEntry

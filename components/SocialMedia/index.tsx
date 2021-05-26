@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Heading, Img, Link, Stack } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "./IconsSVG";
 
 interface SocialMediaProps {
-  t: any;
-  color: string;
+  color?: string;
   flat?: boolean;
 }
 
@@ -22,7 +21,9 @@ const MediaLink = styled(Link)`
   }
 `;
 
-const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
+  const t = (keyI18n: string) => keyI18n;
+
   return (
     <Stack alignItems="center" display="block" spacing={4}>
       {!flat && (
@@ -96,4 +97,5 @@ SocialMedia.defaultProps = {
   flat: false,
 };
 
-export default withTranslation("common")(SocialMedia);
+export default SocialMedia;
+// export default withTranslation("common")(SocialMedia);

@@ -11,7 +11,6 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 
-import { I18nInitialProps, withTranslation } from "../../i18n";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { ImageTextListBox } from "../../content";
@@ -26,11 +25,7 @@ import {
   Money,
 } from "../../components/IconsSVG/Functionalities";
 
-interface PageProps extends WithUserAgentProps {
-  t: any;
-}
-
-const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
+const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => (
   <Body>
     {/* Cover */}
     <Hero
@@ -219,13 +214,7 @@ const Technologies: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
   </Body>
 );
 
-Technologies.getInitialProps = async () => ({
-  namespacesRequired: ["common", "content"],
-});
-
-export default withUserAgent(
-  withTranslation(["common", "content"])(Technologies)
-);
+export default withUserAgent(Technologies);
 
 // mobilizations
 // pressure
