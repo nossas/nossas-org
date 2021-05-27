@@ -1,3 +1,64 @@
 {
-    "cover": "OUR DRIVES SOLIDARY AND DEMOCRATIC ACTIVISM IN BRAZIL"
+    "cover": "OUR DRIVES SOLIDARY AND DEMOCRATIC ACTIVISM IN BRAZIL",
+    "header": {
+        "title": "Join <strong>us</strong>",
+        "description": "NOSSAS supports individuals, collectives and organizations in their struggle for rights and better public policies. We share opportunities for action, methodologies and tools for creating impact mobilizations. Explore our activism space and boost your movement with us!"
+    },
+    "navigation": {
+        "join-us": {
+            "title": "Join one of <strong>our campaigns</strong>",
+            "about": "Find out about the causes in which we are currently engaged and participate in our fight for the defense of rights and strengthening of democracy.",
+            "navigate": "See active campaigns"
+        },
+        "materials": {
+            "title": "Access our <strong>educational materials</strong>",
+            "about": "We offer a super complete material and with several tips to help your collective or organization to increase its impact.",
+            "navigate": "Access the page"
+        },
+        "trainings": {
+            "title": "Be trained in <strong>activism methodologies</strong>",
+            "about": "Throughout the year, we carry out free and themed activism training programs for people from all over Brazil. See which classes are open now.",
+            "navigate": "Check our schedule"
+        },
+        "incubations": {
+            "title": "Incubate your <strong>project with us</strong>",
+            "about": "Receive training, support and mentoring through the incubation program. We accelerate mobilization and solidarity projects that want to impact the world.",
+            "navigate": "Access the page"
+        },
+        "technologies": {
+            "title": "Use the best <strong>activism technologies</strong>",
+            "about": "Discover BONDE, our technology platform, specially developed for amateur or experienced activists to create their campaigns tailored to your needs.",
+            "navigate": "Get to know BONDE"
+        }
+    },
+    "we-are-doing": {
+        "title": "What we are <strong>doing</strong>",
+        "sliders": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "The São Paulo government purchased tablets for public school students last year, but so far it has not released the equipment to assist in the remote education of young people!",
+                "navigate": "Press to release the tablet"
+            },
+            "2": {
+                "title": "Metrô, Aumento Não!",
+                "description": "The Rio de Janeiro subway ticket can increase to R $ 6.30. Meu Rio is fighting this cowardice with the pocket of the worker, who already pays dearly for a bad service.",
+                "navigate": "Press to stop the increase"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "The end of emergency aid in 2021 could leave thousands of people destitute. The distribution of resources must continue as long as the crisis lasts!",
+                "navigate": "Join the campaign"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "A national mobilization is raising funds to fight hunger and misery in the pandemic. You have to buy food, hunger cannot wait!",
+                "navigate": "Join the campaign"
+            }
+        }
+    },
+    "sustainability": {
+        "donate": "Make a <strong> donation </strong>",
+        "description": "NOSSAS lives on donations from people and foundations that believe in our work. We do not receive money from utilities, private companies or political parties, and we audit our accounts annually with independent professionals. Contribute yourself too!",
+        "navigate": "I want to donate"
+    }
 }

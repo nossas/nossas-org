@@ -1,0 +1,51 @@
+{
+    "navbar": {
+        "navigation": {
+            "see-more": "See more",
+            "about": "About Nossas",
+            "work-with-us": "Work with us",
+            "participate": "Participate",
+            "campaigns": "Campaigns",
+            "materials": "Materials",
+            "trainings": "Trainings",
+            "incubations": "Incubations",
+            "technologies": "Technologies"
+        },
+        "donate": "Donate"
+    },
+    "media": "In the media",
+    "footer": {
+        "navigation": {
+            "join-us": "Join us",
+            "about": "Meet Nossas",
+            "donate": "Donate",
+            "work-with-us": "Work with us"
+        },
+        "social": {
+            "title": "Follow on social media"
+        },
+        "newsletter": {
+            "title": "Stay in",
+            "description": "Sign up to receive notifications about our campaigns, news about projects and other opportunities for action:",
+            "success": {
+                "title": "It cost!",
+                "description": "Glad you are here :) We will send news about projects, reports and campaigns from NOSSAS through this e-mail."
+            },
+            "form": {
+                "email": {
+                    "placeholder": "Your email",
+                    "required": "Enter your email",
+                    "invalid": "OPS! Check email"
+                },
+                "firstname": {
+                    "placeholder": "Name",
+                    "required": "Enter your name"
+                },
+                "lastname": {
+                    "placeholder": "Lastname"
+                },
+                "submit": "Save"
+            }
+        }
+    }
+}

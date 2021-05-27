@@ -7,16 +7,14 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Image,
 } from "@chakra-ui/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ButtonIcon from "./ButtonIcon";
 import styled from "@emotion/styled";
+import { useTranslation } from "next-i18next";
 
-// import { withTranslation } from "../../i18n";
 import Donation from "../Donation";
 import I18n from "../I18nButton";
-import Logo from "./Brand";
 import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
 import { MenuItem as MenuItemMobile, MenuItemGroup } from "./MenuItemsMobile";
 import NavMobile from "./NavMobile";
@@ -49,7 +47,9 @@ const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
       : null}
 `;
 
-const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
+const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
+  const { t } = useTranslation("common");
+
   const openIcon =
     variant !== "mobile" ? (
       <FaChevronDown transform="scale(0.7)" />
@@ -62,6 +62,7 @@ const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
     ) : (
       <ButtonIcon isOpen />
     );
+
   return (
     <>
       <Menu>
@@ -72,14 +73,14 @@ const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
               variant="menu"
               rightIcon={isOpen ? closeIcon : openIcon}
             >
-              Conheça
+              {t("navbar.navigation.see-more")}
             </MenuButton>
             <MenuList className="menuList">
               <MenuItem as={Link} href="/about">
-                Sobre o Nossas
+                {t("navbar.navigation.about")}
               </MenuItem>
               <MenuItem as={Link} href="/work-with-us">
-                Trabalhe conosco
+                {t("navbar.navigation.work-with-us")}
               </MenuItem>
             </MenuList>
           </MenuStyled>
@@ -93,23 +94,23 @@ const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
               variant="menu"
               rightIcon={isOpen ? closeIcon : openIcon}
             >
-              Participe
+              {t("navbar.navigation.participate")}
             </MenuButton>
             <MenuList>
               <MenuItem as={Link} href="/mobilizations">
-                Campanhas
+                {t("navbar.navigation.campaigns")}
               </MenuItem>
               <MenuItem as={Link} href="/materials">
-                Materiais
+                {t("navbar.navigation.materials")}
               </MenuItem>
               <MenuItem as={Link} href="/trainings">
-                Treinamentos
+                {t("navbar.navigation.trainings")}
               </MenuItem>
               <MenuItem as={Link} href="/incubations">
-                Incubações
+                {t("navbar.navigation.incubations")}
               </MenuItem>
               <MenuItem as={Link} href="/technologies">
-                Tecnologias
+                {t("navbar.navigation.technologies")}
               </MenuItem>
             </MenuList>
           </MenuStyled>
@@ -120,30 +121,47 @@ const MenuItems: React.FC<{ t: any; variant: string }> = ({ t, variant }) => {
 };
 
 const Navbar: React.FC = () => {
-  const t = (keyI18n: string) => keyI18n;
+  const { t } = useTranslation("common");
 
   return (
     <>
       <Nav>
         <NavSide>
           <NavMobile>
-            {/* <MenuItems t={t} variant="mobile" /> */}
             <MenuItemGroup>
               <MenuItemMobile
-                name="Conheça"
+                name={t("navbar.navigation.see-more")}
                 submenus={[
-                  { label: "Sobre o Nossas", href: "/about" },
-                  { label: "Trabalhe conosco", href: "/work-with-us" },
+                  { label: t("navbar.navigation.about"), href: "/about" },
+                  {
+                    label: t("navbar.navigation.work-with-us"),
+                    href: "/work-with-us",
+                  },
                 ]}
               />
               <MenuItemMobile
-                name="Participe"
+                name={t("navbar.navigation.participate")}
                 submenus={[
-                  { label: "Campanhas", href: "/mobilizations" },
-                  { label: "Materiais", href: "/materials" },
-                  { label: "Treinamentos", href: "/trainings" },
-                  { label: "Incubações", href: "/incubations" },
-                  { label: "Tecnologias", href: "/technologies" },
+                  {
+                    label: t("navbar.navigation.campaigns"),
+                    href: "/mobilizations",
+                  },
+                  {
+                    label: t("navbar.navigation.materials"),
+                    href: "/materials",
+                  },
+                  {
+                    label: t("navbar.navigation.trainings"),
+                    href: "/trainings",
+                  },
+                  {
+                    label: t("navbar.navigation.incubations"),
+                    href: "/incubations",
+                  },
+                  {
+                    label: t("navbar.navigation.technologies"),
+                    href: "/technologies",
+                  },
                 ]}
               />
             </MenuItemGroup>
@@ -154,12 +172,12 @@ const Navbar: React.FC = () => {
         </NavSide>
         <NavSide>
           <NavMenu>
-            <MenuItems t={t} variant="desktop" />
+            <MenuItems variant="desktop" />
           </NavMenu>
           <Box display={["none", null, "block"]}>
             <I18n />
           </Box>
-          <Donation variant="outline">{t("donate.button")}</Donation>
+          <Donation variant="outline">{t("navbar.donate")}</Donation>
         </NavSide>
       </Nav>
     </>
@@ -167,6 +185,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-// export default withTranslation("common")(Navbar);
-
-export { default as Brand } from "./Brand";

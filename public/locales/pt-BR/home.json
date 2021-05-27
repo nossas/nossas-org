@@ -1,3 +1,64 @@
 {
-    "cover": "O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL"
+    "cover": "O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL",
+    "header": {
+        "title": "Junte-se <strong>a nós</strong>",
+        "description": "O NOSSAS apoia indivíduos, coletivos e organizações em sua luta por direitos e melhores políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a criação de mobilizações de impacto. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
+    },
+    "navigation": {
+        "join-us": {
+            "title": "Junte-se a uma de <strong>nossas campanhas</strong>",
+            "about": "Conheça as causas nas quais estamos engajados no momento e participe de nossa luta pela defesa de direitos e fortalecimento da democracia.",
+            "navigate": "Veja as campanhas ativas"
+        },
+        "materials": {
+            "title": "Acesse nossos <strong>materiais educativos</strong>",
+            "about": "Disponibilizamos um material super completo e com várias dicas para ajudar seu coletivo ou organização a aumentar o seu impacto.",
+            "navigate": "Acesse a página"
+        },
+        "trainings": {
+            "title": "Seja treinado em <strong>metodologias de ativismo</strong>",
+            "about": "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
+            "navigate": "Confira nosso cronograma"
+        },
+        "incubations": {
+            "title": "Incube seu <strong>projeto conosco</strong>",
+            "about": "Receba capacitação, apoio e mentoria através do programa de incubação. Nós aceleramos projetos de mobilização e solidariedade que querem causar impacto no mundo.",
+            "navigate": "Acesse a página"
+        },
+        "technologies": {
+            "title": "Use as melhores <strong>tecnologias de ativismo</strong>",
+            "about": "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
+            "navigate": "Conheça o BONDE"
+        }
+    },
+    "we-are-doing": {
+        "title": "O que estamos <strong>fazendo</strong>",
+        "sliders": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+                "navigate": "Pressione para liberar o tablet"
+            },
+            "2": {
+                "title": "Metrô, Aumento Não!",
+                "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
+                "navigate": "Pressione para barrar o aumento"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+                "navigate": "Participe da campanha"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "navigate": "Participe da campanha"
+            }
+        }
+    },
+    "sustainability": {
+        "donate": "Faça uma <strong>doação</strong>",
+        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho. Não recebemos dinheiro de concessionárias de serviços públicos, empresas privadas ou partidos políticos, e auditamos anualmente nossas contas com profissionais independentes. Contribua você também!",
+        "navigate": "Quero doar"
+    }
 }

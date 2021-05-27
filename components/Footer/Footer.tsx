@@ -1,12 +1,13 @@
 import React from "react";
 import { Grid, UnorderedList, ListItem, Link, Image } from "@chakra-ui/react";
-// import { withTranslation } from "../../i18n";
+import { useTranslation } from "next-i18next";
+
 import Donation from "../Donation";
 import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
 const Footer = () => {
-  const t = (keyI18n: string) => keyI18n;
+  const { t } = useTranslation("common");
 
   return (
     <footer>
@@ -25,16 +26,20 @@ const Footer = () => {
           </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="/#join-us">{t("footer.actvist")}</Link>
+              <Link href="/#join-us">{t("footer.navigation.join-us")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="/about">{t("footer.about")}</Link>
+              <Link href="/about">{t("footer.navigation.about")}</Link>
             </ListItem>
             <ListItem>
-              <Donation variant="link">{t("footer.donate")}</Donation>
+              <Donation variant="link">
+                {t("footer.navigation.donate")}
+              </Donation>
             </ListItem>
             <ListItem>
-              <Link href="/work-with-us">{t("footer.workwithus")}</Link>
+              <Link href="/work-with-us">
+                {t("footer.navigation.work-with-us")}
+              </Link>
             </ListItem>
           </UnorderedList>
         </div>
@@ -46,4 +51,3 @@ const Footer = () => {
 };
 
 export default Footer;
-// export default withTranslation("common")(Footer);
