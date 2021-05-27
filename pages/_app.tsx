@@ -2,6 +2,8 @@ import React from "react";
 import NextApp from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { ApolloProvider } from "@apollo/client";
+import { appWithTranslation } from "next-i18next";
+
 // import NextI18n from "../i18n";
 import { nossas } from "../theme";
 import { createApolloClient } from "../lib";
@@ -28,6 +30,4 @@ App.getInitialProps = async (appContext) => ({
   ...(await NextApp.getInitialProps(appContext)),
 });
 
-export default App;
-
-// export default NextI18n.appWithTranslation(App);
+export default appWithTranslation(App);

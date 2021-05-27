@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
@@ -9,7 +10,6 @@ import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
 import Media from "../content/Media";
 import Header from "../content/Header";
-// import { withTranslation, I18nInitialProps } from "../i18n";
 
 const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
   const t = (i18nKey: string, _?: any) => i18nKey;
@@ -185,7 +185,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
         </Heading>
         <SliderPanel
           infiniteLoop
-          isMobile={ua.isMobile}
+          isMobile={ua?.isMobile || false}
           items={[
             {
               src: "/static/media/s3/liberaotablet.jpg",
@@ -281,11 +281,12 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
   );
 };
 
-// Home.getInitialProps = async () => ({
-//   namespacesRequired: ["common", "sliders", "content"],
-// });
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "footer", "home"])),
+    },
+  };
+};
 
-// export default withUserAgent(
-//   withTranslation(["common", "sliders", "content"])(Home)
-// );
 export default withUserAgent(Home);

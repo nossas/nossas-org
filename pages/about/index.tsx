@@ -95,7 +95,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         </SimpleGrid>
       </Section>
       <Section padding={["50px 0", null, null, null, ""]}>
-        <Timeline t={t} isMobile={ua.isMobile} />
+        <Timeline t={t} isMobile={ua?.isMobile || false} />
       </Section>
       {/* Impacto */}
       <Section bgColor="gray.light">

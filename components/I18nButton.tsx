@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 // import NextI18n from "../i18n";
 
 // const { withTranslation, i18n } = NextI18n;
@@ -7,15 +9,16 @@ import { Button } from "@chakra-ui/react";
 const I18nButton: React.FC<{ extraProps?: { [key: string]: any } }> = ({
   extraProps,
 }) => {
-  const changeLanguage = () => {
-    // i18n.changeLanguage(i18n.language === "pt-BR" ? "en" : "pt-BR");
-    window.open("https://www.en.nossas.org/", "_self");
-  };
+  const { locale, pathname } = useRouter();
+  const toggleLocale = locale === "pt-BR" ? "en" : "pt-BR";
+  const labelLocale = locale === "pt-BR" ? "EN" : "BR";
 
   return (
-    <Button variant="menu" onClick={changeLanguage} {...(extraProps || {})}>
-      EN
-    </Button>
+    <Link href={pathname} locale={toggleLocale}>
+      <Button variant="menu" {...(extraProps || {})}>
+        {labelLocale}
+      </Button>
+    </Link>
   );
 };
 
