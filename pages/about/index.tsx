@@ -203,10 +203,10 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             <Button
               size="sm"
               onClick={() => {
-                window.open(
-                  "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
-                  "_blank"
-                );
+                // window.open(
+                //   "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
+                //   "_blank"
+                // );
               }}
             >
               Baixar auditoria
