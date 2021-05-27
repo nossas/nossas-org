@@ -128,6 +128,10 @@ const renderDesktop = [
         src="/static/media/timeline/amazoniacontracovid.png"
         text="A primeira campanha de arrecadação a bater o milhão de reais permitiu a distribuição de cestas básicas e kits de higiene para comunidades indígenas da Amazônia por seis meses."
       />
+      <ImageText
+        src="/static/media/timeline/periferia-que-faz.png"
+        text="O primeiro programa de repasses do NOSSAS contemplou 12 coletivos periféricos nas cinco regiões do país."
+      />
     </Timeline>
   </SimpleGrid>,
 ];
@@ -251,6 +255,10 @@ const renderMobile = [
     <ImageText
       src="/static/media/timeline/amazoniacontracovid.png"
       text="A primeira campanha de arrecadação a bater o milhão de reais permitiu a distribuição de cestas básicas e kits de higiene para comunidades indígenas da Amazônia por seis meses."
+    />
+    <ImageText
+      src="/static/media/timeline/periferia-que-faz.png"
+      text="O primeiro programa de repasses do NOSSAS contemplou 12 coletivos periféricos nas cinco regiões do país."
     />
   </Timeline>,
 ];
