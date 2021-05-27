@@ -28,7 +28,11 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
       maxWidth="1440px"
       videoUrl="/static/media/covers/trainings.mp4"
       // title={t("content:covers.training.title")}
-      title="Receba treinamento em metodologias de ativismo"
+      title={
+        <>
+          Receba treinamento em <br /> metodologias de ativismo
+        </>
+      }
       titleColor="white"
       titleAlign="center"
     />
@@ -174,14 +178,14 @@ const Trainings: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           <ImageText
             src="/static/media/s3/depoimento2.png"
             description={
-              "Queria agradecer ao NOSSAS. Vocês são maravilhosas, o treinamento é incrível, a metodologia, é tudo muito organizado! Vocês arrasam demais! Parabéns!!"
+              '"Queria agradecer ao NOSSAS. Vocês são maravilhosas, o treinamento é incrível, a metodologia, é tudo muito organizado! Vocês arrasam demais! Parabéns!!"'
             }
             userName="Bruna B. - Programa de Jovens Mobilizadoras (Nov 2020)"
           />,
           <ImageText
             src="/static/media/s3/depoimento3.png"
             description={
-              "Gente, eu to me arrepiando a cada módulo. É tão potente nosso poder de transformação coletiva. Tô sentindo uma conexão tão potente, uma vibração tão forte. Estou muito feliz e grata por esta oportunidade de formação"
+              '"Gente, eu to me arrepiando a cada módulo. É tão potente nosso poder de transformação coletiva. Tô sentindo uma conexão tão potente, uma vibração tão forte. Estou muito feliz e grata por esta oportunidade de formação"'
             }
             userName="Bruna M. - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
           />,
