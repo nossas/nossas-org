@@ -217,17 +217,16 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           </Stack>
         </Stack>
       </SimpleGrid>
-      <Stack direction="column">
+      <Stack direction="column" pt={["70px", 0]}>
         <SimpleGrid
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
         >
-          <Box>
-            <Heading as="h2" variant="tag">
-              Fundações
-            </Heading>
-          </Box>
+          <Heading as="h2" variant="tag">
+            Fundações
+          </Heading>
+
           <Text>
             Em 2020, o NOSSAS executou atividades financiadas pelas seguintes
             fundações:
