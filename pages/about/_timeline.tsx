@@ -262,6 +262,7 @@ const TimelineView = ({ isMobile }: any) => (
       templateColumns={["auto", null, null, "582px auto"]}
       rowGap="30px"
       mb="50px"
+      ml={["32px", "0"]}
     >
       <Box>
         <Heading as="h2" variant="tag">
