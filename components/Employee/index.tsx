@@ -39,7 +39,7 @@ const DrawerInfo: React.FC<DrawerInfoProps> = ({
 }) => {
   return (
     <Drawer
-      closeOnOverlayClick={false}
+      closeOnOverlayClick={true}
       isOpen={isOpen}
       placement="right"
       size="md"
