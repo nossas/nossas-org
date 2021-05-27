@@ -109,7 +109,7 @@ export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
           name: "Alessandra Orofino",
           role: "Co-fundadora e Diretora Executiva",
           about:
-            "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO e é fellow da Obama Foundation. Alessandra é formada em Economia e Direitos Humanos pela Columbia University.",
+            "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation. Alessandra é formada em Economia e Direitos Humanos pela Columbia University.",
           team: "Liderança",
         },
         {
@@ -147,7 +147,7 @@ export const LeadersMembers: React.FC<TranslateProps> = ({ t }) => {
         {
           avatar: "/static/media/team/cledisson-junior.png",
           name: "Cledisson Junior",
-          role: "Head de Advocacy",
+          role: "Estrategista de Advocacy",
           about:
             "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ.",
           team: "Liderança",
@@ -325,7 +325,7 @@ export const TeamMembers: React.FC<TranslateProps> = ({ t }) => {
         },
         {
           avatar: "/static/media/team/livia-merlin.png",
-          name: "Livia Merlin",
+          name: "Livia Merlim",
           role: "Coordenadora de Mobilização",
           about:
             "Campaigner no Nossas, Lívia atuou previamente em projetos nas áreas de gênero, sustentabilidade e direitos humanos em organizações como a Actionaid e a Anistia Internacional. Ela possui graduação em Relações Internacionais pela Universidade Federal do Rio de Janeiro e especialização em Ecoliteracia pela Universidade de Coimbra e UNESCO.",
