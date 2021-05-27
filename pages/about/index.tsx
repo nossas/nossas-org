@@ -211,7 +211,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             >
               Baixar auditoria
             </Button>
-            <Donation size="sm" variant="pink" display={["none", "block"]}>
+            <Donation size="sm" variant="pink" display="block">
               Fazer uma doação
             </Donation>
           </Stack>
