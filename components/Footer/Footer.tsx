@@ -10,10 +10,10 @@ const Footer = ({ t }) => {
     <footer>
       <Grid
         templateRows={["repeat(3, auto)", "auto"]}
-        templateColumns={["auto", "repeat(3, auto)"]}
+        templateColumns={["auto", "auto", "repeat(3, auto)"]}
         rowGap={["60px", 0]}
         columnGap={[0, "90px"]}
-        px={[30, "10%"]}
+        paddingX={["30px", "30px", "30px", "30px", "10%"]}
         py={[20, 90]}
         alignItems="baseline"
       >

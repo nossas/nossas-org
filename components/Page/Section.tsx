@@ -6,7 +6,7 @@ import {
   StackProps,
 } from "@chakra-ui/react";
 
-const PX = ["30px", "10%"];
+const PX = ["30px", "30px", "30px", "30px", "10%"];
 const PY = ["50px", "80px"];
 
 export interface Props extends Omit<SimpleGridProps, "spacing">, StackProps {

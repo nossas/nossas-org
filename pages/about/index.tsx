@@ -19,12 +19,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Media from "../../content/Media";
 import Timeline from "./_timeline";
-import {
-  BoardMembers,
-  TeamMembers,
-  LeadersMembers,
-  LeadersMembersMobile,
-} from "./_team";
+import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
 
 interface PageProps extends WithUserAgentProps {
   t: any;
@@ -199,8 +194,9 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             contabilidade.
           </Text>
 
-          <Stack direction="row" spacing="20px">
+          <Stack direction="row" spacing={["8px", "20px"]}>
             <Button
+              // p={["8px", "20px"]}
               size="sm"
               onClick={() => {
                 // window.open(
@@ -211,7 +207,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             >
               Baixar auditoria
             </Button>
-            <Donation size="sm" variant="pink" display="block">
+            <Donation size="md" variant="pink" display="block">
               Fazer uma doação
             </Donation>
           </Stack>
