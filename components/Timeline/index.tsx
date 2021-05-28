@@ -7,6 +7,7 @@ import {
   Box,
   Stack,
   Image,
+  Link,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { Carousel } from "../../components/Slider";
@@ -21,7 +22,14 @@ const BoxStyled = styled(Box)`
   }
 `;
 
-export const ImageText = ({ src, text, alt }: any) => (
+interface ImageTextProps {
+  src: string;
+  href?: string;
+  text: string;
+  alt?: string;
+}
+
+export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
   <BoxStyled borderColor="gray.light" mb="10px">
     <Box
       width="2px"
@@ -37,7 +45,9 @@ export const ImageText = ({ src, text, alt }: any) => (
       direction="column"
       marginBottom="10px"
     >
-      <Image width="auto !important" height="auto" src={src} alt={alt} />
+      <Link href={href} isExternal>
+        <Image width="auto !important" height="auto" src={src} alt={alt} />
+      </Link>
     </Flex>
     <Text size="xs" minH={["145px"]}>
       {text}
