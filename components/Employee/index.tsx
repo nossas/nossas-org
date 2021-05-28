@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Heading, Text, SimpleGrid } from "@chakra-ui/react";
+import { Box, Stack, Heading, Text, SimpleGrid, Grid } from "@chakra-ui/react";
 
 import { EmployeeItem } from "./EmployeeItem";
 
@@ -31,10 +31,13 @@ export const EmployeeTeam = ({
       {description && <Text>{description}</Text>}
     </Box>
 
-    <SimpleGrid minChildWidth={["150px", "150px", "218px"]} rowGap="30px">
+    <Grid
+      templateColumns={["repeat(2, 1fr)", "repeat(auto-fit, 190px)"]}
+      gap="16px"
+    >
       {members.map((employee, index: number) => (
         <EmployeeItem key={`employee-${index}`} data={employee} />
       ))}
-    </SimpleGrid>
+    </Grid>
   </Stack>
 );

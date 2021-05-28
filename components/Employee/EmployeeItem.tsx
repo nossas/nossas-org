@@ -42,14 +42,12 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
 
   return (
     <Stack
-      maxW={["150px", "150px", "190px"]}
+      maxW="190px"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
       <Box
         position="relative"
-        width={["150px", "150px", "190px"]}
-        height={["150px", "150px", "190px"]}
         overflow="hidden"
         marginBottom="10px"
         onMouseEnter={() => setOpen(true)}
@@ -86,13 +84,13 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
             </Stack>
           </Fade>
         )}
-
-        <DrawerInfo
-          isOpen={isOpenDrawerInfo}
-          handleClose={handleCloseDrawerInfo}
-          data={data}
-        />
       </Box>
+
+      <DrawerInfo
+        isOpen={isOpenDrawerInfo}
+        handleClose={handleCloseDrawerInfo}
+        data={data}
+      />
 
       <Heading
         as="h3"
