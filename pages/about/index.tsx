@@ -1,6 +1,7 @@
 import React from "react";
-import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
   Box,
   Button,
@@ -13,7 +14,6 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-// import { I18nInitialProps, withTranslation } from "../../i18n";
 import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
@@ -39,7 +39,7 @@ const ImpactNumber = ({ numberText, description }) => (
 );
 
 const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
-  const t = (i18nKey: string, _?: any) => i18nKey;
+  const { t } = useTranslation("about");
 
   return (
     <Body>
@@ -48,8 +48,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         maxWidth="860px"
         bgColor="blue.main"
         left="50%"
-        // title={t("content:about.cover")}
-        title="Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário"
+        title={t("cover")}
         titleColor="white"
         titleAlign="left"
       />
@@ -68,12 +67,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
           <Box margin="0 auto">
             <Image src="/static/media/s3/incubations-tudonossas.png" />
           </Box>
-          <Text>
-            Somos uma organização sem fins lucrativos comprometida com o
-            fortalecimento da democracia, da justiça social e da igualdade. Há
-            mais de dez anos desenvolvemos projetos, táticas e estratégias de
-            mobilização e solidariedade pelo Brasil inteiro.
-          </Text>
+          <Text>{t("history.description")}</Text>
         </SimpleGrid>
         <SimpleGrid
           columns={[1, null, null, 2]}
@@ -82,16 +76,10 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         >
           <Box>
             <Heading as="h2" variant="tag">
-              História
+              {t("history.title")}
             </Heading>
           </Box>
-          <Text>
-            O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas
-            em torno de causas, desenvolvemos dezenas de projetos, fizemos
-            centenas de campanhas de impacto, conseguimos a implementação de
-            políticas públicas importantes e contribuímos na construção de redes
-            de solidariedade.
-          </Text>
+          <Text>{t("history.about")}</Text>
         </SimpleGrid>
       </Section>
       <Section padding={["50px 0", null, null, null, ""]}>
@@ -106,9 +94,13 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         >
           <Box>
             <Heading as="h2" size="lg" color="pink.main">
-              Números
-              <br />
-              <b>de impacto</b>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: t("impact.title", {
+                    interpolation: { escapeValue: false },
+                  }),
+                }}
+              />
             </Heading>
           </Box>
           <SimpleGrid
@@ -118,25 +110,28 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
             gridTemplateColumns={["auto auto"]}
           >
             <ImpactNumber
-              numberText="+4 milhões"
-              description="de reais arrecadados em financiamento coletivo"
+              numberText={t("impact.financial.number")}
+              description={t("impact.financial.description")}
             />
             <ImpactNumber
-              numberText="+5,4 mil"
-              description="voluntárias e voluntários cadastrados"
+              numberText={t("impact.volunteers.number")}
+              description={t("impact.volunteers.description")}
             />
             <ImpactNumber
-              numberText="+120"
-              description="mudanças de política pública"
-            />
-            <ImpactNumber numberText="+230" description="campanhas lançadas" />
-            <ImpactNumber
-              numberText="+29 mil"
-              description="pessoas já fizeram doações"
+              numberText={t("impact.political.number")}
+              description={t("impact.political.description")}
             />
             <ImpactNumber
-              numberText="+2,5 milhões"
-              description="de pessoas mobilizadas"
+              numberText={t("impact.campaigns.number")}
+              description={t("impact.campaigns.description")}
+            />
+            <ImpactNumber
+              numberText={t("impact.donations.number")}
+              description={t("impact.donations.description")}
+            />
+            <ImpactNumber
+              numberText={t("impact.activists.number")}
+              description={t("impact.activists.description")}
             />
           </SimpleGrid>
         </SimpleGrid>
@@ -170,29 +165,20 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
               maxW={[226, 282]}
               maxH={[232, 374]}
               src="/static/media/s3/sustentabilidade2.png"
-              alt="Quem financia o NOSSAS"
+              alt={t("who-finances.alt")}
             />
           </Box>
           <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
             <Heading as="h2" size="lg" color="green">
-              {/* <div
+              <div
                 dangerouslySetInnerHTML={{
-                  __html: t("content:about.financiers.title", {
+                  __html: t("who-finances.title", {
                     interpolation: { escapeValue: false },
                   }),
                 }}
-              /> */}
-              Quem financia o <b>NOSSAS</b>
+              />
             </Heading>
-            <Text>
-              {/* {t("content:about.financiers.description")} */}
-              Somos financiados por organizações brasileiras e internacionais e
-              contamos também com o apoio de pessoas físicas que doam
-              mensalmente para nossos projetos. Prezando pela boa gestão desses
-              recursos, anualmente realizamos uma auditoria independente que
-              verifica nossa contabilidade.
-            </Text>
-
+            <Text>{t("who-finances.description")}</Text>
             <Stack direction="row" spacing="20px">
               <Button
                 size="sm"
@@ -203,10 +189,10 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
                   );
                 }}
               >
-                Baixar auditoria
+                {t("who-finances.audit_action")}
               </Button>
               <Donation size="sm" variant="pink" display={["none", "block"]}>
-                Fazer uma doação
+                {t("who-finances.donate_action")}
               </Donation>
             </Stack>
           </Stack>
@@ -219,13 +205,10 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
           >
             <Box>
               <Heading as="h2" variant="tag">
-                Fundações
+                {t("who-finances.foundations.title")}
               </Heading>
             </Box>
-            <Text>
-              Em 2020, o NOSSAS executou atividades financiadas pelas seguintes
-              fundações:
-            </Text>
+            <Text>{t("who-finances.foundations.description")}</Text>
           </SimpleGrid>
           <SimpleGrid
             columns={[2, null, null, null, 4]}
@@ -346,8 +329,12 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
   );
 };
 
-// QuemSomos.getInitialProps = async () => ({
-//   namespacesRequired: ["common", "content"],
-// });
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "about"])),
+    },
+  };
+};
 
 export default withUserAgent(QuemSomos);
