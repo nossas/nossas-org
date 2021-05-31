@@ -6,27 +6,27 @@
     },
     "navigation": {
         "join-us": {
-            "title": "Junte-se a uma de <strong>nossas campanhas</strong>",
+            "title": "Participe de uma de <br/><strong>nossas campanhas</strong>",
             "about": "Conheça as causas nas quais estamos engajados no momento e participe de nossa luta pela defesa de direitos e fortalecimento da democracia.",
             "navigate": "Veja as campanhas ativas"
         },
         "materials": {
-            "title": "Acesse nossos <strong>materiais educativos</strong>",
+            "title": "Acesse nossos <br/><strong>materiais educativos</strong>",
             "about": "Disponibilizamos um material super completo e com várias dicas para ajudar seu coletivo ou organização a aumentar o seu impacto.",
             "navigate": "Acesse a página"
         },
         "trainings": {
-            "title": "Seja treinado em <strong>metodologias de ativismo</strong>",
+            "title": "Seja treinado em <br/><strong>metodologias de ativismo</strong>",
             "about": "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
             "navigate": "Confira nosso cronograma"
         },
         "incubations": {
-            "title": "Incube seu <strong>projeto conosco</strong>",
+            "title": "Incube seu <br/><strong>projeto conosco</strong>",
             "about": "Receba capacitação, apoio e mentoria através do programa de incubação. Nós aceleramos projetos de mobilização e solidariedade que querem causar impacto no mundo.",
             "navigate": "Acesse a página"
         },
         "technologies": {
-            "title": "Use as melhores <strong>tecnologias de ativismo</strong>",
+            "title": "Use as melhores <br/><strong>tecnologias de ativismo</strong>",
             "about": "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
             "navigate": "Conheça o BONDE"
         }

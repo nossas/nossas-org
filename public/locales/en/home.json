@@ -1,42 +1,42 @@
 {
-    "cover": "OUR DRIVES SOLIDARY AND DEMOCRATIC ACTIVISM IN BRAZIL",
+    "cover": "NOSSAS STIMULATES DEMOCRATIC AND SOLIDARITY ACTIVISM IN BRAZIL",
     "header": {
         "title": "Join <strong>us</strong>",
-        "description": "NOSSAS supports individuals, collectives and organizations in their struggle for rights and better public policies. We share opportunities for action, methodologies and tools for creating impact mobilizations. Explore our activism space and boost your movement with us!"
+        "description": "NOSSAS helps individuals, collectives and organizations in their struggle for rights and better public policies. We share opportunities for action, methodologies and tools for creating impactful mobilizations. Explore our platform for activists and push your movement with us!"
     },
     "navigation": {
         "join-us": {
-            "title": "Join one of <strong>our campaigns</strong>",
-            "about": "Find out about the causes in which we are currently engaged and participate in our fight for the defense of rights and strengthening of democracy.",
-            "navigate": "See active campaigns"
+            "title": "Participate in a <br/><strong>campaign</strong>",
+            "about": "Find out the causes in which NOSSAS is currently engaged and participate in the organization's fight to defend rights and strengthen democracy.",
+            "navigate": "See the active campaigns"
         },
         "materials": {
-            "title": "Access our <strong>educational materials</strong>",
-            "about": "We offer a super complete material and with several tips to help your collective or organization to increase its impact.",
-            "navigate": "Access the page"
+            "title": "Access our <br/><strong>educational materials</strong>",
+            "about": "NOSSAS offers really complete material with several tips to help collectives or organizations increase their impact.",
+            "navigate": "Visit the webpage"
         },
         "trainings": {
-            "title": "Be trained in <strong>activism methodologies</strong>",
-            "about": "Throughout the year, we carry out free and themed activism training programs for people from all over Brazil. See which classes are open now.",
+            "title": "Get training in <br/><strong>methodologies of activism</strong>",
+            "about": "Throughout the year, NOSSAS carries out free activism training programs on different themes for people all over Brazil.  See how the program works.",
             "navigate": "Check our schedule"
         },
         "incubations": {
-            "title": "Incubate your <strong>project with us</strong>",
-            "about": "Receive training, support and mentoring through the incubation program. We accelerate mobilization and solidarity projects that want to impact the world.",
-            "navigate": "Access the page"
+            "title": "Incubate your <br/><strong>project with us</strong>",
+            "about": "Receive training, support and mentoring through NOSSAS’s incubation program. We accelerate mobilization and solidarity projects that want to impact the world.",
+            "navigate": "Visit the webpage"
         },
         "technologies": {
-            "title": "Use the best <strong>activism technologies</strong>",
-            "about": "Discover BONDE, our technology platform, specially developed for amateur or experienced activists to create their campaigns tailored to your needs.",
-            "navigate": "Get to know BONDE"
+            "title": "Use the best <br/><strong>technologies for activism</strong>",
+            "about": "Discover BONDE, NOSSAS's technology platform, specially developed for amateur or experienced activists to create their custom-made campaigns.",
+            "navigate": "Discover BONDE"
         }
     },
     "we-are-doing": {
         "title": "What we are <strong>doing</strong>",
         "sliders": {
             "1": {
-                "title": "Libera o tablet",
-                "description": "The São Paulo government purchased tablets for public school students last year, but so far it has not released the equipment to assist in the remote education of young people!",
+                "title": "Release the Tablet",
+                "description": "Sao Paulo's government purchased electronic tablets for public school students in 2020, but so far it has not provided the equipment to assist young people in their remote education.",
                 "navigate": "Press to release the tablet"
             },
             "2": {
@@ -45,20 +45,20 @@
                 "navigate": "Press to stop the increase"
             },
             "3": {
-                "title": "Auxílio até o fim da pandemia",
-                "description": "The end of emergency aid in 2021 could leave thousands of people destitute. The distribution of resources must continue as long as the crisis lasts!",
-                "navigate": "Join the campaign"
+                "title": "Emergency aid until the end of the pandemic",
+                "description": "The end of the emergency aid payments in 2021 could leave thousands of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
+                "navigate": "Take part in the campaign"
             },
             "4": {
-                "title": "Tem gente com fome",
-                "description": "A national mobilization is raising funds to fight hunger and misery in the pandemic. You have to buy food, hunger cannot wait!",
-                "navigate": "Join the campaign"
+                "title": "There are people going hungry",
+                "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
+                "navigate": "Take part in the campaign"
             }
         }
     },
     "sustainability": {
-        "donate": "Make a <strong> donation </strong>",
-        "description": "NOSSAS lives on donations from people and foundations that believe in our work. We do not receive money from utilities, private companies or political parties, and we audit our accounts annually with independent professionals. Contribute yourself too!",
-        "navigate": "I want to donate"
+        "donate": "Make a <strong>donation</strong>",
+        "description": "NOSSAS is funded by donations from individuals and foundations which believe in our work and the impact we wish to have on the world. The organization does not accept money from political parties, public utilities or private companies, and our accounts are audited every year by independent professionals. Here's how to donate!",
+        "navigate": "I wish to make a donation"
     }
 }

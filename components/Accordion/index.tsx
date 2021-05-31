@@ -47,7 +47,7 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           maxW="650px"
         >
           {typeof data.title === "string" ? (
-            <Heading as="h2" color="blue.main" fontSize="lg" maxW="265px">
+            <Heading as="h2" color="blue.main" fontSize="lg">
               {data.title}
             </Heading>
           ) : (

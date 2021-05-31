@@ -1,8 +1,8 @@
 {
     "navbar": {
         "navigation": {
-            "see-more": "See more",
-            "about": "About Nossas",
+            "see-more": "Get to know",
+            "about": "About NOSSAS",
             "work-with-us": "Work with us",
             "participate": "Participate",
             "campaigns": "Campaigns",
@@ -17,16 +17,16 @@
     "footer": {
         "navigation": {
             "join-us": "Join us",
-            "about": "Meet Nossas",
-            "donate": "Donate",
+            "about": "About NOSSAS",
+            "donate": "Make a donation",
             "work-with-us": "Work with us"
         },
         "social": {
-            "title": "Follow on social media"
+            "title": "Follow NOSSAS on social media"
         },
         "newsletter": {
-            "title": "Stay in",
-            "description": "Sign up to receive notifications about our campaigns, news about projects and other opportunities for action:",
+            "title": "Stay in touch",
+            "description": "Sign up to receive notifications about NOSSAS's campaigns, news about projects and other opportunities:",
             "success": {
                 "title": "It cost!",
                 "description": "Glad you are here :) We will send news about projects, reports and campaigns from NOSSAS through this e-mail."

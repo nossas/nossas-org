@@ -46,7 +46,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
           items={[
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="265px">
+                <Heading as="h2" color="blue.main" fontSize="3xl">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: t("navigation.join-us.title", {
@@ -65,7 +65,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="295px">
+                <Heading as="h2" color="blue.main" fontSize="3xl">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: t("navigation.materials.title", {
@@ -84,7 +84,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="365px">
+                <Heading as="h2" color="blue.main" fontSize="3xl">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: t("navigation.trainings.title", {
@@ -103,7 +103,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="235px">
+                <Heading as="h2" color="blue.main" fontSize="3xl">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: t("navigation.incubations.title", {
@@ -122,7 +122,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="345px">
+                <Heading as="h2" color="blue.main" fontSize="3xl">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: t("navigation.technologies.title", {
