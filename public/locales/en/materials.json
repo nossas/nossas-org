@@ -1,0 +1,23 @@
+{
+    "cover": "Create your own impact campaign!",
+    "manual": {
+        "title": "Download your <br/><strong>manual now!</strong>",
+        "description": "NOSSAS's mobilization manual summarizes much of what we have learned from a decade of experience with activism in Brazil. Also learn how to mobilize people around causes and organize them in solidarity networks.",
+        "action": "Download manual",
+        "explain": {
+            "title": "What can you learn from the manual?",
+            "1": "Identify the change you want to make in the world and trace strategies to reach your goal.",
+            "2": "Understand who to put pressure on and how, and discover the public you could mobilize.",
+            "3": "Create interesting narratives to mobilize your public on social media and in other shared spaces."
+        }
+    },
+    "mobilization": {
+        "title": "Mobilization <strong>manual</strong>",
+        "description": "Throughout the 10 chapters you will find references, successful cases, practical exercises and all the information you need to construct impact campaigns.",
+        "form": {
+            "title": "Download manual",
+            "submit": "Download",
+            "success": "Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
+        }
+    }
+}

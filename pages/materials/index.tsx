@@ -1,7 +1,7 @@
 import React from "react";
-import { NextPage } from "next";
-import { WithUserAgentProps, withUserAgent } from "next-useragent";
-import { Heading, Link, Text, Stack, Image } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { Link, Text, Stack, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { Body, Section } from "../../components/Page";
@@ -26,79 +26,92 @@ ImageIcon.defaultProps = {
   scale: 0.7,
 };
 
-const Materials: React.FC = () => (
-  <Body>
-    {/* Cover */}
-    <Hero
-      maxWidth="520px"
-      videoUrl="/static/media/covers/materials.mp4"
-      title="Faça você mesmo sua própria campanha de impacto!"
-      titleColor="white"
-      titleAlign="center"
-    />
-    <Section>
-      <Header
-        title={
-          <>
-            Baixe agora <br />
-            <b>seu manual</b>
-          </>
-        }
-        description={
-          <Stack direction="column" spacing="30px">
-            <Text maxW="670px">
-              Nosso manual de mobilização resume muito do que aprendemos em uma
-              década de experiência com ativismo no Brasil. Saiba também como
-              mobilizar pessoas em torno de causas e organizá-las em redes de
-              solidariedade.
-            </Text>
-            <Link href="/materials#manual" variant="pink">
-              Baixar manual
-            </Link>
-          </Stack>
-        }
+const Materials: React.FC = () => {
+  const { t } = useTranslation("materials");
+
+  return (
+    <Body>
+      {/* Cover */}
+      <Hero
+        maxWidth="520px"
+        videoUrl="/static/media/covers/materials.mp4"
+        title={t("cover")}
+        titleColor="white"
+        titleAlign="center"
       />
-    </Section>
-    <ImageTextListBox
-      title="O que você pode aprender com o manual?"
-      items={[
-        {
-          icon: <Eye />,
-          description:
-            "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
-        },
-        {
-          icon: <Pressure />,
-          description:
-            "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
-        },
-        {
-          icon: <Question />,
-          description:
-            "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência",
-        },
-      ]}
-    />
-    <div id="manual">
-      <DescriptionBox
-        color="pink"
-        title={
-          <span>
-            Manual de <b>mobilização</b>
-          </span>
-        }
-        description="Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto."
-      >
-        <SubscribeForm
-          color="blue"
-          widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
-          title="Baixar manual"
-          submitText="Baixar"
-          textSuccess="Super! Agora verifique seu e-mail (inclusive a caixa de spam) que já já o manual que vai te ajudar a colocar sua mobilização na rua chega para você :)"
+      <Section>
+        <Header
+          title={
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("manual.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
+          }
+          description={
+            <Stack direction="column" spacing="30px">
+              <Text maxW="670px">{t("manual.description")}</Text>
+              <Link href="/materials#manual" variant="pink">
+                {t("manual.action")}
+              </Link>
+            </Stack>
+          }
         />
-      </DescriptionBox>
-    </div>
-  </Body>
-);
+      </Section>
+      <ImageTextListBox
+        title={t("manual.explain.title")}
+        items={[
+          {
+            icon: <Eye />,
+            description: t("manual.explain.1"),
+          },
+          {
+            icon: <Pressure />,
+            description: t("manual.explain.2"),
+          },
+          {
+            icon: <Question />,
+            description: t("manual.explain.3"),
+          },
+        ]}
+      />
+      <div id="manual">
+        <DescriptionBox
+          color="pink"
+          title={
+            <span>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: t("mobilization.title", {
+                    interpolation: { escapeValue: false },
+                  }),
+                }}
+              />
+            </span>
+          }
+          description={t("mobilization.description")}
+        >
+          <SubscribeForm
+            color="blue"
+            widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
+            title={t("mobilization.form.title")}
+            submitText={t("mobilization.form.submit")}
+            textSuccess={t("mobilization.form.success")}
+          />
+        </DescriptionBox>
+      </div>
+    </Body>
+  );
+};
+
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "materials"])),
+    },
+  };
+};
 
 export default Materials;
