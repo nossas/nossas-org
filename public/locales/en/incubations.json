@@ -1,0 +1,89 @@
+{
+    "cover": "INCUBATE YOUR PROJECT WITH US!",
+    "whats-is": {
+        "title": "What is <strong>incubation</strong>?",
+        "description": "You can receive capacity building and support, or accelerate your mobilization or solidarity project using methodologies developed by NOSSAS."
+    },
+    "we-offer": {
+        "title": "We offer:",
+        "1": "Training in communication tools and strategies",
+        "2": "Transfer of mobilization methodologies and technologies",
+        "3": "Branding and strategic positioning",
+        "4": "Solutions for organizing people, team training and volunteer management"
+    },
+    "projects": {
+        "title": "What we have already <strong>incubated</strong>:",
+        "description": "See some of the projects that have already gone through  NOSSAS's incubation process and are now works of reference in their areas of expertise.",
+        "carousel": {
+            "1": {
+                "title": "Acolhe LGBT+",
+                "description": "A solidarity network for the LGBTQIA+ community to connect people needing psychological support to a network of volunteers.",
+                "action": "Find out more"
+            },
+            "2": {
+                "title": "Panela de pressão",
+                "description": "Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques.",
+                "action": "Saiba mais"
+            },
+            "3": {
+                "title": "Me Representa",
+                "description": "During each election the platform promotes digital meetings between candidates and electors who prioritize the same agendas.",
+                "action": "Find out more"
+            },
+            "4": {
+                "title": "Meu recife",
+                "description": "Founded in 2015, this mobilization network fights for a more transparent, fair and sustainable Recife.",
+                "action": "Find out more"
+            },
+            "5": {
+                "title": "Defezap",
+                "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, via Whatsapp, guaranteeing anonymity for the  victims.",
+                "action": "Find out more"
+            }
+        }
+    },
+    "current-projects": {
+        "title": "Current <strong>projects</strong>",
+        "carousel": {
+            "1": {
+                "title": "Mapa do acolhimento",
+                "description": "Mapa do Acolhimento connects women who have suffered violence to lawyers and psychologists who have volunteered their services to help them.",
+                "action": "Find out more"
+            },
+            "2": {
+                "title": "Meu rio",
+                "description": "The first incubation experience was with Meu Rio, a network of activity that mobilizes people to actively participate in the city's decision-making processes.",
+                "action": "Find out more"
+            },
+            "3": {
+                "title": "Minha sampa",
+                "description": "Sao Paulo's network of activity, Minha Sampa, carries out local mobilizations that bring citizens closer to politics.",
+                "action": "Find out more"
+            },
+            "4": {
+                "title": "Rede nossas cidades",
+                "description": "Groups of activists from four cities spread across three regions of the country are now part of the Nossas Cidades Network, after an incubation process.",
+                "action": "Find out more"
+            },
+            "5": {
+                "title": "Bonde",
+                "description": "Made by activists for activists, NOSSAS's technology tool can be used by any person or organization that wants to put their campaign out into the world!",
+                "action": "Find out more"
+            },
+            "6": {
+                "title": "Beta",
+                "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
+                "action": "Find out more"
+            }
+        }
+    },
+    "incubate": {
+        "title": "Incubate your <strong>project</strong>",
+        "description": "Do you have an amazing project which could have a positive impact on your community but need a bit of help to get it out into the world? Our incubator was made for you! Sign up and we'll be in touch with you very soon!",
+        "form": {
+            "title": "Sign up",
+            "submit": "Send",
+            "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
+        }
+    }
+}

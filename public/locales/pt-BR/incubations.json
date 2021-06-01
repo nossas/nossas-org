@@ -1,0 +1,89 @@
+{
+    "cover": "Incube seu projeto com a gente!",
+    "whats-is": {
+        "title": "Incubar: <br/><strong>o que é isso?</strong>",
+        "description": "Você pode receber capacitação e apoio para desenvolver ou acelerar seu projeto de mobilização ou solidariedade utilizando as metodologias desenvolvidas pelo NOSSAS."
+    },
+    "we-offer": {
+        "title": "A gente oferece",
+        "1": "Formação em ferramentas e estratégias de comunicação",
+        "2": "Transferência de metodologias e tecnologias de mobilização",
+        "3": "Criação e posicionamento de marca",
+        "4": "Soluções em organização de pessoas, treinamentos e gestão de voluntários"
+    },
+    "projects": {
+        "title": "O que já <br/><strong>incubamos</strong>",
+        "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
+        "carousel": {
+            "1": {
+                "title": "Acolhe LGBT+",
+                "description": "Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários.",
+                "action": "Saiba mais"
+            },
+            "2": {
+                "title": "Panela de pressão",
+                "description": "Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques.",
+                "action": "Saiba mais"
+            },
+            "3": {
+                "title": "Me Representa",
+                "description": "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas.",
+                "action": "Saiba mais"
+            },
+            "4": {
+                "title": "Meu recife",
+                "description": "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável.",
+                "action": "Saiba mais"
+            },
+            "5": {
+                "title": "Defezap",
+                "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
+                "action": "Saiba mais"
+            }
+        }
+    },
+    "current-projects": {
+        "title": "Projetos <strong>Atuais</strong>",
+        "carousel": {
+            "1": {
+                "title": "Mapa do acolhimento",
+                "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
+                "action": "Saiba mais"
+            },
+            "2": {
+                "title": "Meu rio",
+                "description": "A primeira experiência em incubação foi com o Meu Rio, uma rede de ação que mobiliza pessoas para participarem ativamente dos processos de decisão da cidade.",
+                "action": "Saiba mais"
+            },
+            "3": {
+                "title": "Minha sampa",
+                "description": "A rede paulistana de ação Minha Sampa faz mobilizações locais que aproximam os cidadãos da política.",
+                "action": "Saiba mais"
+            },
+            "4": {
+                "title": "Rede nossas cidades",
+                "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
+                "action": "Saiba mais"
+            },
+            "5": {
+                "title": "Bonde",
+                "description": "Feita por ativistas para ativistas, a ferramenta de tecnologia do NOSSAS pode ser usada por qualquer pessoa ou organização que queira colocar sua campanha na rua!",
+                "action": "Saiba mais"
+            },
+            "6": {
+                "title": "Beta",
+                "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
+                "action": "Saiba mais"
+            }
+        }
+    },
+    "incubate": {
+        "title": "Incube seu <strong>projeto</strong>",
+        "description": "Sua organização tem um projeto incrível que pode gerar impacto em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado, entraremos em contato em breve para que vocês nos contem um pouco mais :)",
+        "form": {
+            "title": "Inscreva-se",
+            "submit": "Enviar",
+            "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
+        }
+    }
+}

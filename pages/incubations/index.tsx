@@ -1,6 +1,7 @@
 import React from "react";
-import { NextPage } from "next";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Heading, Stack, Text, Img, Link } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
@@ -73,7 +74,7 @@ ImageIcon.defaultProps = {
 };
 
 const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
-  const t = (i18nKey: string, _?: any) => i18nKey;
+  const { t } = useTranslation("incubations");
 
   return (
     <Body>
@@ -81,7 +82,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
       <Hero
         maxWidth="380px"
         videoUrl="/static/media/covers/incubations.mp4"
-        title="Incube seu projeto com a gente!"
+        title={t("cover")}
         titleColor="white"
         titleAlign="center"
       />
@@ -89,38 +90,36 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
       <Section>
         <Header
           title={
-            <>
-              Incubar: <br /> <b>o que é isso?</b>
-            </>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("whats-is.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           }
-          description={`
-            Você pode receber capacitação e apoio para desenvolver ou acelerar seu
-            projeto de mobilização ou solidariedade utilizando as metodologias
-            desenvolvidas pelo NOSSAS.
-          `}
+          description={t("whats-is.description")}
         />
       </Section>
       <ImageTextListBox
         width="330px"
-        title="A gente oferece"
+        title={t("we-offer.title")}
         items={[
           {
             icon: <MegaphoneGreen />,
-            description: "Formação em ferramentas e estratégias de comunicação",
+            description: t("we-offer.1"),
           },
           {
             icon: <Transfer />,
-            description:
-              "Transferência de metodologias e tecnologias de mobilização",
+            description: t("we-offer.2"),
           },
           {
             icon: <ThumbsUp />,
-            description: "Criação e posicionamento de marca",
+            description: t("we-offer.3"),
           },
           {
             icon: <People />,
-            description:
-              "Soluções em organização de pessoas, treinamentos e gestão de voluntários",
+            description: t("we-offer.4"),
           },
         ]}
       />
@@ -132,15 +131,15 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
       >
         <Header
           title={
-            <>
-              O que já <br />
-              <b>incubamos</b>
-            </>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("projects.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           }
-          description={`
-            Conheça alguns dos projetos que já passaram por nosso processo de
-            incubação e hoje são referência em suas áreas de atuação.
-          `}
+          description={t("projects.description")}
         />
         <Carousel
           infiniteLoop
@@ -148,98 +147,98 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           items={[
             <ImageText
               src="/static/media/s3/meacolhelgbt.png"
-              title="Acolhe LGBT+"
-              description="Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários."
+              title={t("projects.carousel.1.title")}
+              description={t("projects.carousel.1.description")}
               href="https://www.acolhelgbt.org/"
-              linkText="Saiba mais"
+              linkText={t("projects.carousel.1.action")}
             />,
             <ImageText
               src="/static/media/s3/paneladepressao.png"
-              title={t("Panela de pressão")}
-              description="Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques."
-              linkText="Saiba mais"
+              title={t("projects.carousel.2.title")}
+              description={t("projects.carousel.2.description")}
+              linkText={t("projects.carousel.2.action")}
             />,
             <ImageText
               src="/static/media/s3/merepresenta.png"
-              title="Me Representa"
-              description={t(
-                "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas."
-              )}
+              title={t("projects.carousel.3.title")}
+              description={t("projects.carousel.3.description")}
               href="https://merepresenta.org.br/"
-              linkText="Saiba mais"
+              linkText={t("projects.carousel.3.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-meurecife.jpg"
-              title="Meu recife"
-              description={t(
-                "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável."
-              )}
+              title={t("projects.carousel.4.title")}
+              description={t("projects.carousel.4.description")}
               href="https://www.meurecife.org.br/"
-              linkText="Saiba mais"
+              linkText={t("projects.carousel.4.action")}
             />,
             <ImageText
               src="/static/media/s3/defezap.jpg"
-              title="Defezap"
-              description={t(
-                "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
-              )}
+              title={t("projects.carousel.5.title")}
+              description={t("projects.carousel.5.description")}
               href="http://www.saibamais.defezap.org.br/"
-              linkText="Saiba mais"
+              linkText={t("projects.carousel.5.action")}
             />,
           ]}
         />
       </Section>
       <Section direction="column" spacing="30px">
         <Heading as="h2" color="green" size="lg">
-          Projetos <b>Atuais</b>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("current-projects.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
         </Heading>
 
         <Carousel
           infiniteLoop
           showStatus
-          isMobile={ua.isMobile}
+          isMobile={ua?.isMobile || false}
           items={[
             <ImageText
               src="/static/media/s3/mapadoacolhimento.png"
-              title="Mapa do acolhimento"
-              description="O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária."
+              title={t("current-projects.carousel.1.title")}
+              description={t("current-projects.carousel.1.description")}
               href="https://www.mapadoacolhimento.org/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.1.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-meurio.jpg"
-              title="Meu rio"
-              description="A primeira experiência em incubação foi com o Meu Rio, uma rede de ação que mobiliza pessoas para participarem ativamente dos processos de decisão da cidade."
+              title={t("current-projects.carousel.2.title")}
+              description={t("current-projects.carousel.2.description")}
               href="https://www.meurio.org.br/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.2.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-msp.jpg"
-              title="Minha sampa"
-              description="A rede paulistana de ação Minha Sampa faz mobilizações locais que aproximam os cidadãos da política."
+              title={t("current-projects.carousel.3.title")}
+              description={t("current-projects.carousel.3.description")}
               href="https://www.minhasampa.org.br/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.3.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-rnc.jpg"
-              title="Rede nossas cidades"
-              description="Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação."
+              title={t("current-projects.carousel.4.title")}
+              description={t("current-projects.carousel.4.description")}
               href="https://www.redenossascidades.org/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.4.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-bonde.jpg"
-              title="Bonde"
-              description="Feita por ativistas para ativistas, a ferramenta de tecnologia do NOSSAS pode ser usada por qualquer pessoa ou organização que queira colocar sua campanha na rua!"
+              title={t("current-projects.carousel.5.title")}
+              description={t("current-projects.carousel.5.description")}
               href="https://www.bonde.org/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.5.action")}
             />,
             <ImageText
               src="/static/media/s3/incubacoes-beta.jpg"
-              title="Beta"
-              description="A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!"
+              title={t("current-projects.carousel.6.title")}
+              description={t("current-projects.carousel.6.description")}
               href="https://www.beta.org.br/"
-              linkText="Saiba mais"
+              linkText={t("current-projects.carousel.6.action")}
             />,
           ]}
         />
@@ -248,26 +247,34 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
       <DescriptionBox
         color="pink"
         title={
-          <>
-            Incube seu <b>projeto</b>
-          </>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("incubate.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
         }
-        description="Sua organização tem um projeto incrível que pode gerar impacto em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado, entraremos em contato em breve para que vocês nos contem um pouco mais :)"
+        description={t("incubate.description")}
       >
         <SubscribeForm
           color="blue"
           widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
-          title="Inscreva-se"
-          submitText="Enviar"
-          textSuccess="Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
+          title={t("incubate.form.title")}
+          submitText={t("incubate.form.submit")}
+          textSuccess={t("incubate.form.success")}
         />
       </DescriptionBox>
     </Body>
   );
 };
 
-// Incubations.getInitialProps = async () => ({
-//   namespacesRequired: ["common", "content"],
-// });
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "incubations"])),
+    },
+  };
+};
 
 export default withUserAgent(Incubations);
