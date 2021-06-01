@@ -1,0 +1,69 @@
+{
+    "cover": "JOIN ONE OF NOSSAS'S MOBILIZATIONS RIGHT NOW",
+    "action-now": {
+        "title": "Come with <br /><strong>us!</strong>",
+        "description": "Help our campaigns to be heard and conquer achievements that consolidate public policies and protect our rights. Come and be part of the change!"
+    },
+    "campaigns-now": {
+        "title": "What we're <strong>doing",
+        "carousel": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+                "action": "Pressione para liberar o tablet"
+            },
+            "2": {
+                "title": "No metro price hike!",
+                "description": "The cost of a single metro journey in Rio could increase to R$6.30. It is unfair for workers to have to pay such a high price for such a poor service.",
+                "action": "Put pressure on them to stop the increase"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "The end of the emergency aid payments in 2021 could leave thousands of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
+                "action": "Take part in the campaign"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "action": "Participe da campanha"
+            }
+        }
+    },
+    "our-victories": {
+        "title": "Our <strong>successes</strong>",
+        "carousel": {
+            "1": {
+                "title": "No to VIP Vaccines",
+                "description": "Businessmen were able to pass a bill in the Chamber that allowed them to buy vaccines to apply to their employees and their families, ignoring SUS' priority list. With a campaign that had more than 100 thousand objections, we have managed to stop the project."
+            },
+            "2": {
+                "title": "Restinga e mangue ficam",
+                "description": "A CONAMA resolution could leave our main biomes -  restingas and mangrove swamps - even more vulnerable. Our mobilization, which gathered more than 180,000 signatures, managed to slow down the damage and guarantee the conservation of Brazil's ecosystems and coastline."
+            },
+            "3": {
+                "title": "Auxílio para saúde",
+                "description": "Health professionals such as nursing, cleaning and general service assistants have been very exposed to the virus during the pandemic. We managed to get a law passed which guarantees compensation for the families of professionals who lost their lives during the Covid-19 health crisis"
+            },
+            "4": {
+                "title": "No Classes No ENEM",
+                "description": "To go ahead with Brazil's National High School Exam (ENEM) in the middle of the pandemic would be a catastrophe, especially for the poorest students who haven't had any classes. More than four thousand students created regional campaigns putting pressure on senators, and with more than 150 thousand objections in total the exam was postponed."
+            },
+            "5": {
+                "title": "Basic Income",
+                "description": "Together with another 200 organizations, we managed to get approval for emergency aid payments of R$600 to be made to 68 million Brazilians in 2020. In 2021, the fight continues to create a bill guaranteeing a permanent basic income for the whole population."
+            },
+            "6": {
+                "title": "Open Avenue",
+                "description": "After more than two years of intense mobilizations with civil society organizations and collectives in São Paulo, the then mayor, Fernando Haddad, published the decree opening Avenida Paulista to pedestrians at certain times and creating the project 'Ruas Abertas', changing leisure in São Paulo."
+            },
+            "7": {
+                "title": "Schools shouldn't be Destroyed",
+                "description": "Today, the Friedenreich School is among the highest ranked in Rio de Janeiro according to IDEB indicators, but in 2014 it was under threat of demolition to make way for World Cup facilities. After a multi-stage campaign, it is still up and running!"
+            },
+            "8": {
+                "title": "Strawless Rio",
+                "description": "Rio de Janeiro was the first city to ban bars, restaurants and commercial establishments from using plastic straws. Several other cities around the country then followed its example. Now, the fight continues to ban all single-use plastics!"
+            }
+        }
+    }
+}

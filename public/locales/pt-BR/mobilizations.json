@@ -1,0 +1,41 @@
+{
+    "cover": "Participe de uma de nossas campanhas!",
+    "action-now": {
+        "title": "Vem com <br /><strong>a gente!</strong>",
+        "description": "Ajude nossas campanhas a fazer barulho e a conquistar vitórias que consolidam políticas públicas e protegem nossos direitos. Chega mais, e vem fazer parte da mudança!"
+    },
+    "campaigns-now": {
+        "title": "Campanhas que <strong>estão rolando</strong>",
+        "carousel": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+                "action": "Pressione para liberar o tablet"
+            },
+            "2": {
+                "title": "Metrô, Aumento Não!",
+                "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
+                "action": "Pressione para barrar o aumento"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+                "action": "Participe da campanha"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "action": "Participe da campanha"
+            }
+        }
+    },
+    "our-victories": {
+        "title": "Nossas <strong>vitórias</strong>",
+        "carousel": {
+            "1": {
+                "title": "Camarote da vacina não",
+                "description": "Empresários fizeram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto no Senado."
+            }
+        }
+    }
+}
