@@ -1,0 +1,64 @@
+{
+    "cover": "Receba treinamento em metodologias de ativismo",
+    "learning": {
+        "title": "Vem <strong>aprender!</strong>",
+        "description": "Temos um programa de treinamento e mentoria para ativistas iniciantes e experientes do Brasil inteiro! Confira nossa agenda para não perder sua inscrição."
+    },
+    "now": {
+        "title": "Rolando <strong>agora</strong>",
+        "carousel": {
+            "1": {
+                "title": "MUVUCA",
+                "description": "O primeiro programa de ativismo climático do NOSSAS vai oferecer treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
+                "action": "Saiba mais"
+            },
+            "2": {
+                "title": "PROGRAMA DE MOBILIZADORES",
+                "description": "As turmas deste programa recebem gratuitamente treinamento em mobilizações, comunicação de campanhas e tecnologias de ativismo.",
+                "action": "Inscreva-se para a próxima turma"
+            },
+            "3": {
+                "title": "PROGRAMA DE JOVENS MOBILIZADORAS",
+                "description": "O programa é voltado para jovens estudantes do Ensino Médio. Esta edição realizada em parceria com a Girl Up! está treinando 100 jovens meninas no tema pobreza menstrual.",
+                "action": "Saiba mais"
+            }
+        }
+    },
+    "victories": {
+        "title": "Vitórias dos <strong>mobilizadores</strong>",
+        "carousel": {
+            "1": {
+                "title": "B.O Online para elas - Minas Gerais",
+                "description": "O Coletivo Abertha conseguiu implementar a Delegacia Virtual do Estado de Minas Gerais depois de uma campanha que recebeu nossa mentoria. Agora, mulheres podem fazer seus boletins de ocorrência sem sair de casa.",
+                "action": "Saiba mais"
+            },
+            "2": {
+                "title": "Revitalização do Farol - Maranhão",
+                "description": "Os ex-estudantes do Centro São José Operário, em São Luiz, participaram de nossa primeira turma e conseguiram através de uma campanha de pressão, a revitalização do Farol, onde acontecem atividades educacionais para a comunidade.",
+                "action": "Saiba mais"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Depoimentos",
+        "carousel": {
+            "1": {
+                "description": "Ai, gente! Muito lindo e muito potente participar disso e ver tanta gente junto fazendo acontecer. Muito histórico.",
+                "people": "Ana Clara - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+            },
+            "2": {
+                "description": "Queria agradecer ao NOSSAS. Vocês são maravilhosas, o treinamento é incrível, a metodologia, é tudo muito organizado! Vocês arrasam demais! Parabéns!!",
+                "people": "Bruna B. - Programa de Jovens Mobilizadoras (Nov 2020)"
+            },
+            "3": {
+                "description": "Gente, eu to me arrepiando a cada módulo. É tão potente nosso poder de transformação coletiva. Tô sentindo uma conexão tão potente, uma vibração tão forte. Estou muito feliz e grata por esta oportunidade de formação",
+                "people": "Bruna M. - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+            }
+        }
+    },
+    "participate": {
+        "title": "Participe do <strong>programa de treinamento</strong>",
+        "description": "Temos treinamentos temáticos acontecendo durante o ano inteiro. Clique para saber os cronogramas e temas para 2021.",
+        "action": "Quero saber"
+    }
+}
