@@ -2,12 +2,13 @@ import React from "react";
 import {
   Box,
   Button,
-  Link,
+  Link as LinkStyled,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ButtonIcon from "./ButtonIcon";
 import styled from "@emotion/styled";
@@ -47,6 +48,12 @@ const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
       : null}
 `;
 
+const LinkMenuItem = ({ children, href }) => (
+  <Link href={href}>
+    <MenuItem as={LinkStyled}>{children}</MenuItem>
+  </Link>
+);
+
 const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
   const { t } = useTranslation("common");
 
@@ -76,12 +83,12 @@ const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
               {t("navbar.navigation.see-more")}
             </MenuButton>
             <MenuList className="menuList">
-              <MenuItem as={Link} href="/about">
+              <LinkMenuItem href="/about">
                 {t("navbar.navigation.about")}
-              </MenuItem>
-              <MenuItem as={Link} href="/work-with-us">
+              </LinkMenuItem>
+              <LinkMenuItem href="/work-with-us">
                 {t("navbar.navigation.work-with-us")}
-              </MenuItem>
+              </LinkMenuItem>
             </MenuList>
           </MenuStyled>
         )}
@@ -97,21 +104,21 @@ const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
               {t("navbar.navigation.participate")}
             </MenuButton>
             <MenuList>
-              <MenuItem as={Link} href="/mobilizations">
+              <LinkMenuItem href="/mobilizations">
                 {t("navbar.navigation.campaigns")}
-              </MenuItem>
-              <MenuItem as={Link} href="/materials">
+              </LinkMenuItem>
+              <LinkMenuItem href="/materials">
                 {t("navbar.navigation.materials")}
-              </MenuItem>
-              <MenuItem as={Link} href="/trainings">
+              </LinkMenuItem>
+              <LinkMenuItem href="/trainings">
                 {t("navbar.navigation.trainings")}
-              </MenuItem>
-              <MenuItem as={Link} href="/incubations">
+              </LinkMenuItem>
+              <LinkMenuItem href="/incubations">
                 {t("navbar.navigation.incubations")}
-              </MenuItem>
-              <MenuItem as={Link} href="/technologies">
+              </LinkMenuItem>
+              <LinkMenuItem href="/technologies">
                 {t("navbar.navigation.technologies")}
-              </MenuItem>
+              </LinkMenuItem>
             </MenuList>
           </MenuStyled>
         )}

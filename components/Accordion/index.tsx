@@ -1,16 +1,17 @@
 import React from "react";
+import Link from "next/link";
 import styled from "@emotion/styled";
 import {
   Box,
-  Button,
   Stack,
   Heading,
   Image,
   Text,
-  Link,
+  Link as LinkStyled,
   useDisclosure,
   useOutsideClick,
 } from "@chakra-ui/react";
+
 import IconPlus from "./IconPlus";
 
 const BoxStyled = styled(Box)`
@@ -55,8 +56,8 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           )}
           <Text>{data.about}</Text>
           {data.navigation && (
-            <Link variant="pink" href={data.navigation.href}>
-              {data.navigation.title}
+            <Link href={data.navigation.href}>
+              <LinkStyled variant="pink">{data.navigation.title}</LinkStyled>
             </Link>
           )}
         </Stack>
