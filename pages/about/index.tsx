@@ -203,31 +203,30 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             <Button
               size="sm"
               onClick={() => {
-                window.open(
-                  "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
-                  "_blank"
-                );
+                // window.open(
+                //   "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
+                //   "_blank"
+                // );
               }}
             >
               Baixar auditoria
             </Button>
-            <Donation size="sm" variant="pink" display={["none", "block"]}>
+            <Donation size="sm" variant="pink" display="block">
               Fazer uma doação
             </Donation>
           </Stack>
         </Stack>
       </SimpleGrid>
-      <Stack direction="column">
+      <Stack direction="column" pt={["70px", 0]}>
         <SimpleGrid
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
         >
-          <Box>
-            <Heading as="h2" variant="tag">
-              Fundações
-            </Heading>
-          </Box>
+          <Heading as="h2" variant="tag">
+            Fundações
+          </Heading>
+
           <Text>
             Em 2020, o NOSSAS executou atividades financiadas pelas seguintes
             fundações:
