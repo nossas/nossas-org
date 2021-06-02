@@ -13,6 +13,57 @@
         },
         "donate": "Doar"
     },
+    "donation": {
+        "title": "Doe para o <strong>NOSSAS</strong>",
+        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+        "form": {
+            "continue": "Continuar",
+            "donate": "Doar",
+            "done": "Finalizar",
+            "security": "doação segura",
+            "tabs": {
+                "activist": "Seus dados",
+                "payment": "Pagamento"
+            },
+            "fields": {
+                "name": {
+                    "label": "Nome",
+                    "placeholder": "Nome",
+                    "required": "Informe seu nome"
+                },
+                "email": {
+                    "label": "E-mail",
+                    "placeholder": "E-mail",
+                    "required": "Informe seu e-mail",
+                    "invalid": "Informe um e-mail válido"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Informe seu whatsapp",
+                    "invalid": "Informe um número válido"
+                },
+                "cardholderName": {
+                    "label": "Nome",
+                    "placeholder": "Nome no cartão",
+                    "required": "Informe o nome no cartão"
+                },
+                "currency": {
+                    "label": "Moeda"
+                },
+                "customDonation": {
+                    "label": "Valor",
+                    "required": "Informe um valor de doação",
+                    "min": "Informe ao menos 5 para doação"
+                }
+            },
+            "success": {
+                "imageAlt": "Doação bem sucedida!",
+                "title": "Valeu, <strong>{{name}}!</strong>",
+                "thanks": "Sua doação faz toda a diferença!",
+                "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"   
+            }
+        }
+    },
     "media": "Na mídia",
     "footer": {
         "navigation": {

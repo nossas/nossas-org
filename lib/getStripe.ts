@@ -5,9 +5,15 @@ import { Stripe, loadStripe } from "@stripe/stripe-js";
 
 let stripePromise: Promise<Stripe | null>;
 
-const getStripe = () => {
-  if (!stripePromise) {
-    stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+const getStripe = (locale?: "en" | "pt-BR", forceUpdate?: boolean) => {
+  if (!stripePromise || forceUpdate) {
+    // console.log('new stripe promise');
+    stripePromise = loadStripe(
+      process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!,
+      {
+        locale: locale || "auto",
+      }
+    );
   }
   return stripePromise;
 };

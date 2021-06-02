@@ -13,6 +13,57 @@
         },
         "donate": "Donate"
     },
+    "donation": {
+        "title": "Donate to <strong>NOSSAS</strong>",
+        "description": "NOSSAS is supported exclusively by people and foundations who believe in our work and in the impact we want to see in the world. Make your donation!",
+        "form": {
+            "continue": "Continue",
+            "donate": "Donate",
+            "done": "Done",
+            "security": "safe giving",
+            "tabs": {
+                "activist": "Your data",
+                "payment": "Payments"
+            },
+            "fields": {
+                "name": {
+                    "label": "Name",
+                    "placeholder": "Name",
+                    "required": "Enter your name"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "Email",
+                    "required": "Enter your email",
+                    "invalid": "Enter a valid email address"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Enter your whatsapp",
+                    "invalid": "Enter a valid number"
+                },
+                "cardholderName": {
+                    "label": "Name",
+                    "placeholder": "Cardholder name",
+                    "required": "Enter the cardholder name"
+                },
+                "currency": {
+                    "label": "Currency"
+                },
+                "customDonation": {
+                    "label": "Amount",
+                    "required": "Enter a donation amount",
+                    "min": "Inform at least 5 for donation"
+                }
+            },
+            "success": {
+                "imageAlt": "Successful donation!",
+                "title": "Thanks, <strong>{{name}}!</strong>",
+                "thanks": "Your donation makes all the difference!",
+                "message": "Thank you so much for your donation - it will help us continue our work :)"
+            }
+        }
+    },
     "media": "In the media",
     "footer": {
         "navigation": {

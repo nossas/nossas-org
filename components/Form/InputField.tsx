@@ -63,7 +63,7 @@ const InputField: React.FC<InputFieldProps> = ({
             />
             {props.type === "tel" ? (
               <InputFormatField
-                format="(##) #####-####"
+                format="+## (##) #####-####"
                 placeholder={props.placeholder}
                 {...field}
               />
@@ -76,7 +76,7 @@ const InputField: React.FC<InputFieldProps> = ({
             {label && <FormLabel>{label}</FormLabel>}
             {props.type === "tel" ? (
               <InputFormatField
-                format="(##) #####-####"
+                format="+## (##) #####-####"
                 placeholder={props.placeholder}
                 {...inputStyles}
                 {...field}

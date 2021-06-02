@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, Stack } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
 
 function Icon() {
   return (
@@ -18,20 +19,24 @@ function Icon() {
   );
 }
 
-const Lock = ({ t }: any) => (
-  <Stack
-    position="absolute"
-    bottom="-49px"
-    right="5px"
-    direction="row"
-    spacing={2}
-    alignItems="center"
-  >
-    <Icon />
-    <Text color="green" fontSize="12px" w="40px">
-      {t("donate.padlock")}
-    </Text>
-  </Stack>
-);
+const Lock = () => {
+  const { t } = useTranslation("common");
+
+  return (
+    <Stack
+      position="absolute"
+      bottom="-49px"
+      right="5px"
+      direction="row"
+      spacing={2}
+      alignItems="center"
+    >
+      <Icon />
+      <Text color="green" fontSize="12px" w="40px">
+        {t("donation.form.security")}
+      </Text>
+    </Stack>
+  );
+};
 
 export default Lock;

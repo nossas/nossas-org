@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 import styled from "@emotion/styled";
 import { Stack, Text } from "@chakra-ui/react";
 import { CardElement } from "@stripe/react-stripe-js";
@@ -11,11 +12,11 @@ import SelectField from "../Form/SelectField";
 export const schema = ({ t }) =>
   Yup.object().shape({
     cardholderName: Yup.string().required(
-      t("donate.form.fields.cardholderName.required")
+      t("donation.form.fields.cardholderName.required")
     ),
     customDonation: Yup.number()
-      .min(1, t("donate.form.fields.customDonation.min"))
-      .required(t("donate.form.fields.customDonation.required")),
+      .min(5, t("donation.form.fields.customDonation.min"))
+      .required(t("donation.form.fields.customDonation.required")),
   });
 
 export interface CardFormValues {
@@ -100,7 +101,6 @@ const InputCardField = styled.div`
 `;
 
 interface FieldsProps {
-  t: any;
   status?: string;
   setStatus: any;
   errors?: any;
@@ -109,13 +109,14 @@ interface FieldsProps {
 }
 
 export const Fields: React.FC<FieldsProps> = ({
-  t,
   status,
   setStatus,
   errors,
   setErrors,
   values,
 }) => {
+  const { t } = useTranslation("common");
+
   return (
     <Stack spacing={4}>
       <InputCardField>
@@ -135,15 +136,15 @@ export const Fields: React.FC<FieldsProps> = ({
         inline
         name="cardholderName"
         type="text"
-        label={t("donate.form.fields.cardholderName.label")}
-        placeholder={t("donate.form.fields.cardholderName.placeholder")}
+        label={t("donation.form.fields.cardholderName.label")}
+        placeholder={t("donation.form.fields.cardholderName.placeholder")}
       />
       <Stack direction="row" spacing={4}>
         <SelectField
           flex={1.5}
           inline
           name="currency"
-          label="Moeda"
+          label={t("donation.form.fields.currency.label")}
           options={{
             items: { brl: "BRL", usd: "USD" },
             type: "object",
@@ -154,14 +155,11 @@ export const Fields: React.FC<FieldsProps> = ({
           inline
           name="customDonation"
           type="number"
-          label={t("donate.form.fields.customDonation.label", {
+          label={t("donation.form.fields.customDonation.label", {
             currency: values.currency === "brl" ? "R$" : "$",
           })}
         />
       </Stack>
-      {/* <FormHelperText color="red" fontSize="xs" textAlign="left">
-        {(errors as any).form}
-      </FormHelperText> */}
       <PaymentStatus status={status} errors={errors} />
     </Stack>
   );
@@ -177,9 +175,6 @@ export const handleSubmit = async (
   actions: any,
   { stripe, elements }: StripeHooks
 ) => {
-  // try {
-  // setPayment({ status: "processing" });
-
   // Create a PaymentIntent with the specified amount.
   const response = await fetchPostJSON("/api/paymentIntents", {
     amount: formData.customDonation,
@@ -190,7 +185,6 @@ export const handleSubmit = async (
     actions.setErrors({ customDonation: response.message });
     throw new Error(response.message);
   }
-  // setPayment(response);
 
   // Get a reference to a mounted CardElement. Elements knows how
   // to find your CardElement because there can only ever be one of
@@ -214,13 +208,7 @@ export const handleSubmit = async (
       form: error.message ?? "An unknown error occured",
     });
     throw new Error(error.message);
-    // setPayment({ status: "error" });
-    // setErrorMessage(error.message ?? "An unknown error occured");
   } else if (paymentIntent) {
-    // setPayment(paymentIntent);
     return paymentIntent;
   }
-  // } catch (err) {
-  //   console.log('CardForm err', { err: err.message });
-  // }
 };

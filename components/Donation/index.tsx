@@ -3,9 +3,7 @@ import { gql, useMutation } from "@apollo/client";
 import {
   Heading,
   Image,
-  FormHelperText,
   Text,
-  // Tab,
   Tabs,
   TabList,
   TabPanels,
@@ -18,8 +16,8 @@ import {
 } from "@chakra-ui/react";
 import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
+import { useTranslation } from "next-i18next";
 
-// import { withTranslation, i18n } from "../../i18n";
 import getStripe from "../../lib/getStripe";
 import Lock from "./Lock";
 import {
@@ -53,8 +51,8 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
   const [donation, setDonation] = useState({});
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const t = (i18nKey: string, _?: any) => i18nKey;
-  const i18n = { language: "pt-BR" };
+  const { t, i18n } = useTranslation("common");
+  // const i18n = { language: i18n.locale };
   // use stripe in 2-step, see ./CardForm handleSubmit
   const stripe = useStripe();
   const elements = useElements();
@@ -166,13 +164,13 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
         setStatus,
       }: FormikProps<Values>) => {
         const btnText: string = isYourData
-          ? t("donate.form.buttons.continue")
+          ? t("donation.form.continue")
           : isPayment
-          ? t("donate.form.buttons.donate", {
+          ? t("donation.form.donate", {
               value: values.customDonation,
               currency: values.currency === "brl" ? "R$" : "$",
             })
-          : t("donate.form.buttons.finish");
+          : t("donation.form.done");
 
         return (
           <DonationDrawer
@@ -184,39 +182,39 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
             {...props}
           >
             {index === 2 ? (
-              <Finish t={t} name={values.name} />
+              <Finish name={values.name} />
             ) : (
               <Stack spacing={6} mt="10px">
                 <Stack position="relative">
                   <Heading as="h2" color="green">
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: t("donate.title", {
+                        __html: t("donation.title", {
                           interpolation: { escapeValue: false },
                         }),
                       }}
                     />
                   </Heading>
                   {/* quebrar linha Faça sua doação */}
-                  <Text size="sm">{t("donate.description")}</Text>
-                  <Lock t={t} />
+                  <Text size="sm">{t("donation.description")}</Text>
+                  <Lock />
                 </Stack>
                 <Tabs index={index} onChange={(i: number) => setIndex(i)}>
                   <TabList border="0">
                     <CustomTab {...tabProps}>
-                      {t("donate.tabs.yourdata")}
+                      {t("donation.form.tabs.activist")}
                     </CustomTab>
                     <CustomTab {...tabProps} last isDisabled={isYourData}>
-                      {t("donate.tabs.payments")}
+                      {t("donation.form.tabs.payment")}
                     </CustomTab>
                   </TabList>
                   <TabPanels>
                     <TabPanel {...tagPanelProps}>
-                      <YourDataFields t={t} />
+                      <YourDataFields />
                     </TabPanel>
                     <TabPanel {...tagPanelProps}>
                       <CardFields
-                        {...{ t, errors, setErrors, status, setStatus, values }}
+                        {...{ errors, setErrors, status, setStatus, values }}
                       />
                     </TabPanel>
                   </TabPanels>
@@ -277,8 +275,13 @@ interface Result {
 }
 
 const StripeDonation = (props) => {
-  const t = (keyI18n: string) => keyI18n;
+  const { i18n } = useTranslation("common");
   const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
+  let stripeInstance = getStripe(i18n.language as any);
+
+  // React.useEffect(() => {
+  //   stripeInstance = getStripe(i18n.language as any, true);
+  // }, [i18n.language]);
 
   const registerDonate = async (args: SubmitArgs): Promise<Result> => {
     const { data, errors } = await donate({ variables: args });
@@ -292,8 +295,8 @@ const StripeDonation = (props) => {
   };
 
   return (
-    <Elements stripe={getStripe()} options={ELEMENTS_OPTIONS}>
-      <Donation t={t} registerDonate={registerDonate} {...props} />
+    <Elements stripe={stripeInstance} options={ELEMENTS_OPTIONS}>
+      <Donation registerDonate={registerDonate} {...props} />
     </Elements>
   );
 };
