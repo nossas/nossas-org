@@ -114,12 +114,10 @@ const renderDesktop = [
     </Timeline>
     <Timeline title="2019" titleVisibility="hidden">
       <ImageText
-        href=""
         src="/static/media/timeline/pec29.png"
         text="Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão."
       />
       <ImageText
-        href=""
         src="/static/media/timeline/nossas.png"
         text="A marca NOSSAS nasce para o mundo, e representa a superação do modelo de atuação por cidades ou projetos, em prol de amplas mobilizações nacionais."
       />

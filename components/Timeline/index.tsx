@@ -29,7 +29,7 @@ interface ImageTextProps {
   alt?: string;
 }
 
-export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
+export const ImageText = ({ src, href = "#", text, alt }: ImageTextProps) => (
   <BoxStyled borderColor="gray.light" mb="10px">
     <Box
       width="2px"
@@ -38,6 +38,7 @@ export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
       // left={["45%", null, "48%"]}
       margin={["0 calc(45% + 5px)", null, "0 calc(48% + 3.5px)"]}
     />
+
     <Flex
       height={["130px", "100px"]}
       alignItems="center"
@@ -45,10 +46,15 @@ export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
       direction="column"
       marginBottom="10px"
     >
-      <Link href={href} isExternal>
+      {href ? (
+        <Link href={href} isExternal>
+          <Image width="auto !important" height="auto" src={src} alt={alt} />
+        </Link>
+      ) : (
         <Image width="auto !important" height="auto" src={src} alt={alt} />
-      </Link>
+      )}
     </Flex>
+
     <Text size="xs" minH={["145px"]}>
       {text}
     </Text>
