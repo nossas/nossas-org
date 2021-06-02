@@ -29,7 +29,7 @@ interface ImageTextProps {
   alt?: string;
 }
 
-export const ImageText = ({ src, href = "#", text, alt }: ImageTextProps) => (
+export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
   <BoxStyled borderColor="gray.light" mb="10px">
     <Box
       width="2px"
