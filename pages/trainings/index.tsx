@@ -174,17 +174,16 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               />
             </Heading>
             <Text>{t("participate.description")}</Text>
-            <Button
-              maxW="190px"
-              marginX={["auto !important", null, null, "0 !important"]}
-            >
-              <a
-                href="https://www.mobilizadores.nossas.org/#block-35353"
-                target="blank"
-              >
-                {t("participate.action")}
-              </a>
-            </Button>
+            <Box>
+              <Button marginX={["auto !important", null, null, "0 !important"]}>
+                <a
+                  href="https://www.mobilizadores.nossas.org/#block-35353"
+                  target="blank"
+                >
+                  {t("participate.action")}
+                </a>
+              </Button>
+            </Box>
           </Stack>
         </SimpleGrid>
       </Section>
