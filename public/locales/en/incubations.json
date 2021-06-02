@@ -1,7 +1,7 @@
 {
     "cover": "INCUBATE YOUR PROJECT WITH US!",
     "whats-is": {
-        "title": "What is <strong>incubation</strong>?",
+        "title": "What is <strong>incubation?</strong>",
         "description": "You can receive capacity building and support, or accelerate your mobilization or solidarity project using methodologies developed by NOSSAS."
     },
     "we-offer": {
@@ -12,7 +12,7 @@
         "4": "Solutions for organizing people, team training and volunteer management"
     },
     "projects": {
-        "title": "What we have already <strong>incubated</strong>:",
+        "title": "What we have <br/><strong>already incubated:</strong>",
         "description": "See some of the projects that have already gone through  NOSSAS's incubation process and are now works of reference in their areas of expertise.",
         "carousel": {
             "1": {
@@ -22,8 +22,7 @@
             },
             "2": {
                 "title": "Panela de pressão",
-                "description": "Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques.",
-                "action": "Saiba mais"
+                "description": "Our first technology at the service of popular participation: with Pressure Panel, anyone could set up their campaign, in a few clicks."
             },
             "3": {
                 "title": "Me Representa",

@@ -57,9 +57,11 @@ export const ImageText: React.FC<ImageTextProps> = ({
           </Heading>
         </Link>
         <Text>{description}</Text>
-        <Link href={href} target="_blank" variant="pink">
-          {`${linkText} +`}
-        </Link>
+        {href && linkText ? (
+          <Link href={href} target="_blank" variant="pink">
+            {`${linkText} +`}
+          </Link>
+        ) : null}
       </Stack>
     </Stack>
   );
@@ -156,7 +158,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               src="/static/media/s3/paneladepressao.png"
               title={t("projects.carousel.2.title")}
               description={t("projects.carousel.2.description")}
-              linkText={t("projects.carousel.2.action")}
             />,
             <ImageText
               src="/static/media/s3/merepresenta.png"
