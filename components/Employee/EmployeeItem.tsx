@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "next-i18next";
 import {
   Box,
   Stack,
@@ -28,6 +29,7 @@ interface EmployeeItemProps {
 
 export const EmployeeItem = ({ data }: EmployeeItemProps) => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation("common");
 
   const {
     isOpen: isOpenDrawerInfo,
@@ -79,7 +81,7 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
               <IconEyeSlash />
 
               <Text id="btnRef" color="white" size="sm">
-                Saiba +
+                {t("see")}
               </Text>
             </Stack>
           </Fade>
