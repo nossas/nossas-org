@@ -64,6 +64,43 @@
             }
         }
     },
+    "subscribe": {
+        "form": {
+            "fields": {
+                "name": {
+                    "label": "Name",
+                    "placeholder": "Name",
+                    "required": "Enter your name"
+                },
+                "lastName": {
+                    "label": "Lastname",
+                    "placeholder": "Lastname"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Enter your number",
+                    "invalid": "Enter a valid number"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "Email",
+                    "required": "Enter your email",
+                    "invalid": "Enter a valid email"
+                },
+                "state": {
+                    "label": "State",
+                    "placeholder": "State"
+                },
+                "city": {
+                    "label": "City",
+                    "placeholder": "City"
+                }
+            },
+            "success": {
+                "title": "Thanks, <strong>{{name}}!</strong>"
+            }
+        }
+    },
     "media": "In the media",
     "footer": {
         "navigation": {

@@ -64,6 +64,43 @@
             }
         }
     },
+    "subscribe": {
+        "form": {
+            "fields": {
+                "name": {
+                    "label": "Nome",
+                    "placeholder": "Nome",
+                    "required": "Informe seu nome"
+                },
+                "lastName": {
+                    "label": "Sobrenome",
+                    "placeholder": "Sobrenome"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Informe seu whatsapp",
+                    "invalid": "Informe um número válido"
+                },
+                "email": {
+                    "label": "E-mail",
+                    "placeholder": "E-mail",
+                    "required": "Informe seu e-mail",
+                    "invalid": "Informe um e-mail válido"
+                },
+                "state": {
+                    "label": "Estado",
+                    "placeholder": "Estado"
+                },
+                "city": {
+                    "label": "Cidade",
+                    "placeholder": "Cidade"
+                }
+            },
+            "success": {
+                "title": "Valeu, <strong>{{name}}!</strong>"
+            }
+        }
+    },
     "media": "Na mídia",
     "footer": {
         "navigation": {

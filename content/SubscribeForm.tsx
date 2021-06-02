@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 import { Button, Heading, Box, Stack, Text } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
 import * as Yup from "yup";
@@ -22,7 +23,7 @@ interface SubscribeFormProps {
   textSuccess: string;
   widgetId: number;
   color: "blue" | "pink" | "green";
-  fieldsComponent?: React.FC<DefaultFieldsProps>;
+  fieldsComponent?: React.FC;
 }
 
 const colors = {
@@ -30,6 +31,8 @@ const colors = {
   pink: "pink.main",
   green: "green",
 };
+
+const phoneRegExp = /^\+\d{2}\s\(\d{2}\)\s\d{4,5}-?\d{4}$/;
 
 const SubscribeForm: React.FC<SubscribeFormProps> = ({
   title,
@@ -39,7 +42,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   color,
   fieldsComponent: FieldsComponent,
 }) => {
-  const t = (keyI18n: string, _?: any) => keyI18n;
+  const { t } = useTranslation("common");
 
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">
@@ -51,7 +54,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
             title={
               <div
                 dangerouslySetInnerHTML={{
-                  __html: t("form.finish.title", {
+                  __html: t("subscribe.form.success.title", {
                     interpolation: { escapeValue: false },
                     name: data.formData.name.split(" ")[0],
                   }),
@@ -74,14 +77,14 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
             }}
             validationSchema={Yup.object().shape({
               name: Yup.string().required(
-                t("common:form.fields.name.required")
+                t("subscribe.form.fields.name.required")
               ),
-              whatsapp: Yup.string().required(
-                t("common:form.fields.whatsapp.required")
-              ),
+              whatsapp: Yup.string()
+                .required(t("subscribe.form.fields.phone.required"))
+                .matches(phoneRegExp, t("subscribe.form.fields.phone.invalid")),
               email: Yup.string()
-                .email(t("common:form.fields.email.invalid"))
-                .required(t("common:form.fields.email.required")),
+                .email(t("subscribe.form.fields.email.invalid"))
+                .required(t("subscribe.form.fields.email.required")),
             })}
             onSubmit={submit}
           >
@@ -104,7 +107,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
                   >
                     {title}
                   </Heading>
-                  <FieldsComponent t={t} />
+                  <FieldsComponent />
                   <Button
                     isFullWidth
                     bgColor="blue.main"
@@ -159,76 +162,80 @@ const STATES = [
   "Tocantins (TO)",
 ];
 
-type DefaultFieldsProps = {
-  t: any;
+const DefaultFields = () => {
+  const { t } = useTranslation("common");
+
+  return (
+    <Stack spacing={4}>
+      <InputField
+        inline
+        name="name"
+        label={t("subscribe.form.fields.name.label")}
+        placeholder={t("subscribe.form.fields.name.placeholder")}
+      />
+      <InputField
+        inline
+        name="email"
+        label={t("subscribe.form.fields.email.label")}
+        placeholder={t("subscribe.form.fields.email.placeholder")}
+      />
+      <InputField
+        inline
+        type="tel"
+        name="whatsapp"
+        label={t("subscribe.form.fields.phone.label")}
+        placeholder="+55 (99) 99999-9999"
+      />
+      <SelectField
+        inline
+        name="state"
+        label={t("subscribe.form.fields.state.label")}
+        placeholder={t("subscribe.form.fields.state.placeholder")}
+        options={{ type: "array", items: STATES }}
+      />
+      <InputField
+        inline
+        name="city"
+        label={t("subscribe.form.fields.city.label")}
+        placeholder={t("subscribe.form.fields.city.placeholder")}
+      />
+    </Stack>
+  );
 };
 
-const DefaultFields: React.FC<DefaultFieldsProps> = ({ t }) => (
-  <Stack spacing={4}>
-    <InputField
-      inline
-      name="name"
-      label={t("common:form.fields.name.label")}
-      placeholder={t("common:form.fields.name.placeholder")}
-    />
-    <InputField
-      inline
-      name="email"
-      label={t("common:form.fields.email.label")}
-      placeholder={t("common:form.fields.email.placeholder")}
-    />
-    <InputField
-      inline
-      type="tel"
-      name="whatsapp"
-      label={t("common:form.fields.whatsapp.label")}
-      placeholder={t("common:form.fields.whatsapp.placeholder")}
-    />
-    <SelectField
-      inline
-      name="state"
-      label={t("common:form.fields.state.label")}
-      placeholder={t("common:form.fields.state.placeholder")}
-      options={{ type: "array", items: STATES }}
-    />
-    <InputField
-      inline
-      name="city"
-      label={t("common:form.fields.city.label")}
-      placeholder={t("common:form.fields.city.placeholder")}
-    />
-  </Stack>
-);
+export const SimpleFields = () => {
+  const { t } = useTranslation("common");
 
-export const SimpleFields: React.FC<DefaultFieldsProps> = ({ t }) => (
-  <Stack spacing={4}>
-    <InputField
-      inline
-      name="name"
-      label={t("common:form.fields.name.label")}
-      placeholder={t("common:form.fields.name.placeholder")}
-    />
-    <InputField
-      inline
-      name="lastName"
-      label={t("common:form.fields.lastName.label")}
-      placeholder={t("common:form.fields.lastName.placeholder")}
-    />
-    <InputField
-      inline
-      name="email"
-      label={t("common:form.fields.email.label")}
-      placeholder={t("common:form.fields.email.placeholder")}
-    />
-    <InputField
-      inline
-      type="tel"
-      name="whatsapp"
-      label={t("common:form.fields.whatsapp.label")}
-      placeholder={t("common:form.fields.whatsapp.placeholder")}
-    />
-  </Stack>
-);
+  return (
+    <Stack spacing={4}>
+      <InputField
+        inline
+        name="name"
+        label={t("subscribe.form.fields.name.label")}
+        placeholder={t("subscribe.form.fields.name.placeholder")}
+      />
+      <InputField
+        inline
+        name="lastName"
+        label={t("subscribe.form.fields.lastName.label")}
+        placeholder={t("subscribe.form.fields.lastName.placeholder")}
+      />
+      <InputField
+        inline
+        name="email"
+        label={t("subscribe.form.fields.email.label")}
+        placeholder={t("subscribe.form.fields.email.placeholder")}
+      />
+      <InputField
+        inline
+        type="tel"
+        name="whatsapp"
+        label={t("subscribe.form.fields.whatsapp.label")}
+        placeholder="+55 (99) 99999-9999"
+      />
+    </Stack>
+  );
+};
 
 SubscribeForm.defaultProps = { fieldsComponent: DefaultFields };
 
