@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 import {
   Image,
   Text,
@@ -7,7 +8,6 @@ import {
   Stack,
   SimpleGrid,
 } from "@chakra-ui/react";
-// import { withTranslation } from "../../i18n";
 
 export interface SliderContentProps {
   imageUrl: string;
@@ -24,7 +24,7 @@ const SliderContent: React.FC<SliderContentProps> = ({
   description,
   url,
 }) => {
-  const t = (keyI18n: string) => keyI18n;
+  const { t } = useTranslation("common");
 
   return (
     <SimpleGrid columns={[1, 2]} gap={["45px", 12]}>
@@ -51,7 +51,7 @@ const SliderContent: React.FC<SliderContentProps> = ({
             fontWeight="700"
             color="nossas.pink"
           >
-            {t("slider.defaults.more")}
+            {t("know-more")}
           </Link>
         </Stack>
       </Stack>

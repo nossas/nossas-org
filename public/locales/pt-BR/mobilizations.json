@@ -4,37 +4,40 @@
         "title": "Vem com <br /><strong>a gente!</strong>",
         "description": "Ajude nossas campanhas a fazer barulho e a conquistar vitórias que consolidam políticas públicas e protegem nossos direitos. Chega mais, e vem fazer parte da mudança!"
     },
-    "campaigns-now": {
-        "title": "Campanhas que <strong>estão rolando</strong>",
-        "carousel": {
-            "1": {
-                "title": "Libera o tablet",
-                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
-                "action": "Pressione para liberar o tablet"
-            },
-            "2": {
-                "title": "Metrô, Aumento Não!",
-                "description": "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
-                "action": "Pressione para barrar o aumento"
-            },
-            "3": {
-                "title": "Auxílio até o fim da pandemia",
-                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
-                "action": "Participe da campanha"
-            },
-            "4": {
-                "title": "Tem gente com fome",
-                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
-                "action": "Participe da campanha"
-            }
-        }
-    },
     "our-victories": {
         "title": "Nossas <strong>vitórias</strong>",
         "carousel": {
             "1": {
                 "title": "Camarote da vacina não",
                 "description": "Empresários fizeram aprovar na Câmara um projeto de lei que permitia que eles comprassem vacinas para aplicar em seus funcionários e familiares, furando a fila de prioridades do SUS. Com uma campanha que teve mais de 100 mil pressões, conseguimos barrar o projeto no Senado."
+            },
+            "2": {
+                "title": "Restinga e mangue ficam",
+                "description": "Uma resolução do CONAMA poderia deixar ainda mais vulneráveis nossos principais biomas: as restingas e os mangues. A mobilização reuniu mais de 180 mil assinaturas e conseguiu frear a boiada, garantindo a preservação do litoral brasileiro e seus ecossistemas."
+            },
+            "3": {
+                "title": "Auxílio para saúde",
+                "description": "Profissionais da área da saúde, como técnicas de enfermagem, auxiliares de limpeza e serviços gerais ficaram muito expostas ao vírus durante a pandemia. Graças à pressão, foi aprovada uma lei que garante indenização aos familiares dos profissionais que faleceram por conta da Covid19."
+            },
+            "4": {
+                "title": "Sem Aula Sem ENEM",
+                "description": "Realizar a prova do ENEM normalmente no meio da pandemia seria uma catástrofe, principalmente para os estudantes mais pobres que ficaram sem aula. Mais de 4 mil alunos fizeram campanhas regionais pressionando os senadores e, com mais de 150 mil pressões no total, a prova foi adiada."
+            },
+            "5": {
+                "title": "Renda Básica",
+                "description": "Junto com outras 200 organizações, conseguimos aprovar o auxílio emergencial de R$600 para 68 milhões de brasileiros em 2020. Em 2021, a luta  continua para a criação de um projeto de lei que garanta uma renda básica permanente para toda a população."
+            },
+            "6": {
+                "title": "Paulista Aberta",
+                "description": "Depois de mais de dois anos de intensa mobilização com organizações e coletivos da sociedade civil paulista, o então prefeito Fernando Haddad publicou o decreto que criou a Paulista aberta e o projeto Ruas Abertas, e mudou a rotina de lazer de São Paulo."
+            },
+            "7": {
+                "title": "Escola Não se Destrói",
+                "description": "A Escola Friedenreich ocupa até hoje um dos primeiros lugares no IDEB do Rio de Janeiro, mas em 2014 ela corria o risco de ser derrubada para dar lugar a um estacionamento para a Copa do Mundo. Depois de uma campanha que teve várias etapas, a escola continuou de pé!"
+            },
+            "8": {
+                "title": "Rio sem Canudo",
+                "description": "O Rio de Janeiro foi a primeira cidade a proibir a distribuição de canudos de plástico em bares, restaurantes e estabelecimentos comerciais. Depois dela, várias outras cidades no país seguiram o mesmo exemplo. Agora, a luta segue pelo fim de todos os plásticos de uso único!"
             }
         }
     }

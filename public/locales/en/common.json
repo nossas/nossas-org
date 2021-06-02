@@ -102,10 +102,10 @@
         }
     },
     "we-are-doing": {
-        "title": "What we are <strong>doing</strong>",
+        "title": "What <strong>we're doing</strong>",
         "sliders": {
             "1": {
-                "title": "Release the Tablet",
+                "title": "Libera o tablet",
                 "description": "Sao Paulo's government purchased electronic tablets for public school students in 2020, but so far it has not provided the equipment to assist young people in their remote education.",
                 "navigate": "Press to release the tablet"
             },
@@ -115,12 +115,12 @@
                 "navigate": "Press to block this project"
             },
             "3": {
-                "title": "Emergency aid until the end of the pandemic",
+                "title": "Auxílio até o fim da pandemia",
                 "description": "The end of the emergency aid payments in 2021 could leave thousands of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
                 "navigate": "Take part in the campaign"
             },
             "4": {
-                "title": "There are people going hungry",
+                "title": "Tem gente com fome",
                 "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
                 "navigate": "Take part in the campaign"
             }
@@ -128,6 +128,7 @@
     },
     "media": "In the <strong>media</strong>",
     "see": "See +",
+    "know-more": "Find out more +",
     "footer": {
         "navigation": {
             "join-us": "Join us",
