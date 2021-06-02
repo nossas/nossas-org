@@ -126,7 +126,7 @@
             }
         }
     },
-    "media": "In the media",
+    "media": "In the <strong>media</strong>",
     "footer": {
         "navigation": {
             "join-us": "Join us",

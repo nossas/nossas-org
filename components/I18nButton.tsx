@@ -2,9 +2,6 @@ import React from "react";
 import { Button } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-// import NextI18n from "../i18n";
-
-// const { withTranslation, i18n } = NextI18n;
 
 const I18nButton: React.FC<{ extraProps?: { [key: string]: any } }> = ({
   extraProps,

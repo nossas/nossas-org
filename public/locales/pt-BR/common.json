@@ -126,7 +126,7 @@
             }
         }
     },
-    "media": "Na mídia",
+    "media": "Na <strong>mídia</strong>",
     "footer": {
         "navigation": {
             "join-us": "Junte-se a nós",
