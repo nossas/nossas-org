@@ -176,7 +176,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
           <Text textAlign={["center", "left"]} maxW="711px">
             {t("sustainability.description")}
           </Text>
-          <Donation maxW={190}>{t("sustainability.navigate")}</Donation>
+          <Donation>{t("sustainability.navigate")}</Donation>
         </Stack>
       </Section>
       <Media
