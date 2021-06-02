@@ -6,6 +6,10 @@ const ContentMedia = ({ title }: any) => (
     title={title}
     logos={[
       {
+        href: "https://www.obama.org/fellowship/alessandra-orofino/",
+        src: "/static/media/s3/obama-foundation.png",
+      },
+      {
         href:
           "https://www.7dias.co/2020/05/25/no-hay-tiempo-habitantes-de-zonas-pobres-de-america-latina-lideran-batalla-contra-el-virus-y946o4Bl?infinite_scroll=true",
         src: "/static/media/s3/dias.png",
@@ -23,6 +27,11 @@ const ContentMedia = ({ title }: any) => (
       {
         href: "https://piaui.folha.uol.com.br/materia/o-levante/",
         src: "/static/media/s3/piaui.png",
+      },
+      {
+        href:
+          "https://ssir.org/articles/entry/civic_mobilization_infrastructure_in_an_age_of_existential_threats",
+        src: "/static/media/s3/stanford.png",
       },
       {
         href:

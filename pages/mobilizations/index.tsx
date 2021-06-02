@@ -56,13 +56,13 @@ const Mobilizations: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
             link: "Pressione para liberar o tablet",
           },
           {
-            src: "/static/media/s3/metroaumentonao.jpg",
-            alt: "Metrô, Aumento Não!",
-            title: "Metrô, Aumento Não!",
+            src: "/static/media/s3/licenciamento-ambiental.png",
+            href: "https://www.licenciamentoambientalfica.org/",
+            alt: "Licenciamento ambiental fica",
+            title: "Licenciamento ambiental fica",
             description:
-              "A passagem do metrô do Rio de Janeiro pode aumentar para R$6,30. O Meu Rio está lutando contra essa covardia com o bolso do trabalhador, que já paga caro por um serviço ruim.",
-            href: "https://www.metroaumentonao.meurio.org.br/",
-            link: "Pressione para barrar o aumento",
+              "A qualquer momento o Senado pode votar o Projeto de Lei que flexibiliza o licenciamento ambiental no país, colocando em risco nossos biomas brasileiros e populações tradicionais.",
+            link: "Pressione para barrar o projeto",
           },
           {
             src: "/static/media/s3/auxilioemergencial.png",

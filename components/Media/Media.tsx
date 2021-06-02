@@ -23,7 +23,7 @@ const Media = ({ title, logos }) => {
     <Section backgroundColor="gray.light">
       <SimpleGrid
         columns={[1, null, null, 2]}
-        templateColumns={["auto", null, null, "582px auto"]}
+        templateColumns={["auto", null, null, "482px auto"]}
         backgroundColor="gray.light"
         rowGap="30px"
       >
@@ -43,10 +43,11 @@ const Media = ({ title, logos }) => {
             "repeat(2, auto)",
             "repeat(2, auto)",
             "repeat(4, auto)",
+            "repeat(5, auto)",
           ]}
           justifyItems="center"
           gridRowGap={["25px"]}
-          gridColumnGap={["25px"]}
+          gridColumnGap={["15px"]}
         >
           {logos.map((logo: any, i: number) => (
             <ImageLogo key={`media-${i}`} logo={logo} />
