@@ -248,7 +248,7 @@
     },
     "who-finances": {
         "alt": "Who finances NOSSAS?",
-        "title": "Who finances <strong>NOSSAS</strong>?",
+        "title": "Who finances <strong>NOSSAS?</strong>",
         "description": "NOSSAS is financed by Brazilian and international organizations and we also receive support from individuals who make monthly donations to the organization's projects. Since NOSSAS values transparency, our accounts are independently audited every year.",
         "audit_action": "Download audit",
         "donate_action": "Make a donation",
