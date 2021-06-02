@@ -172,14 +172,6 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             {
               src: "/static/media/s3/licenciamento-ambiental.png",
               href: "https://www.licenciamentoambientalfica.org/",
-              alt: t("sliders:home.licenciamentoambiental.title"),
-              title: t("sliders:home.licenciamentoambiental.title"),
-              description: t("sliders:home.licenciamentoambiental.description"),
-              link: t("sliders:home.licenciamentoambiental.action"),
-            },
-            {
-              src: "/static/media/s3/metroaumentonao.png",
-              href: "https://www.metroaumentonao.meurio.org.br/",
               alt: t("we-are-doing.sliders.2.title"),
               title: t("we-are-doing.sliders.2.title"),
               description: t("we-are-doing.sliders.2.description"),
