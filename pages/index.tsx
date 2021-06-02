@@ -199,12 +199,12 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
               link: t("sliders:home.liberaotablet.action"),
             },
             {
-              src: "/static/media/s3/metroaumentonao.png",
-              href: "https://www.metroaumentonao.meurio.org.br/",
-              alt: t("sliders:home.metroaumentonao.title"),
-              title: t("sliders:home.metroaumentonao.title"),
-              description: t("sliders:home.metroaumentonao.description"),
-              link: t("sliders:home.metroaumentonao.action"),
+              src: "/static/media/s3/licenciamento-ambiental.png",
+              href: "https://www.licenciamentoambientalfica.org/",
+              alt: t("sliders:home.licenciamentoambiental.title"),
+              title: t("sliders:home.licenciamentoambiental.title"),
+              description: t("sliders:home.licenciamentoambiental.description"),
+              link: t("sliders:home.licenciamentoambiental.action"),
             },
             {
               src: "/static/media/s3/rendabasica.png",
