@@ -14,7 +14,7 @@ import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
 const Footer = () => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
 
   return (
     <footer>
@@ -47,11 +47,13 @@ const Footer = () => {
                 {t("footer.navigation.donate")}
               </Donation>
             </ListItem>
-            <ListItem>
-              <Link href="/work-with-us">
-                <LinkStyled>{t("footer.navigation.work-with-us")}</LinkStyled>
-              </Link>
-            </ListItem>
+            {i18n.language !== "en" && (
+              <ListItem>
+                <Link href="/work-with-us">
+                  <LinkStyled>{t("footer.navigation.work-with-us")}</LinkStyled>
+                </Link>
+              </ListItem>
+            )}
           </UnorderedList>
         </div>
         <NewsletterForm />

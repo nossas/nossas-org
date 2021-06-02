@@ -55,7 +55,7 @@ const LinkMenuItem = ({ children, href }) => (
 );
 
 const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
 
   const openIcon =
     variant !== "mobile" ? (
@@ -86,9 +86,11 @@ const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
               <LinkMenuItem href="/about">
                 {t("navbar.navigation.about")}
               </LinkMenuItem>
-              <LinkMenuItem href="/work-with-us">
-                {t("navbar.navigation.work-with-us")}
-              </LinkMenuItem>
+              {i18n.language !== "en" && (
+                <LinkMenuItem href="/work-with-us">
+                  {t("navbar.navigation.work-with-us")}
+                </LinkMenuItem>
+              )}
             </MenuList>
           </MenuStyled>
         )}
@@ -128,7 +130,20 @@ const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
 };
 
 const Navbar: React.FC = () => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+
+  let submenuMobile = [];
+  if (i18n.language === "en") {
+    submenuMobile = [{ label: t("navbar.navigation.about"), href: "/about" }];
+  } else {
+    submenuMobile = [
+      { label: t("navbar.navigation.about"), href: "/about" },
+      {
+        label: t("navbar.navigation.work-with-us"),
+        href: "/work-with-us",
+      },
+    ];
+  }
 
   return (
     <>
@@ -138,13 +153,7 @@ const Navbar: React.FC = () => {
             <MenuItemGroup>
               <MenuItemMobile
                 name={t("navbar.navigation.see-more")}
-                submenus={[
-                  { label: t("navbar.navigation.about"), href: "/about" },
-                  {
-                    label: t("navbar.navigation.work-with-us"),
-                    href: "/work-with-us",
-                  },
-                ]}
+                submenus={submenuMobile}
               />
               <MenuItemMobile
                 name={t("navbar.navigation.participate")}
