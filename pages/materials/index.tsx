@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Link, Text, Stack, Image } from "@chakra-ui/react";
+import Link from "next/link";
+import { Link as LinkStyled, Text, Stack, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { Body, Section } from "../../components/Page";
@@ -53,8 +54,8 @@ const Materials: React.FC = () => {
           description={
             <Stack direction="column" spacing="30px">
               <Text maxW="670px">{t("manual.description")}</Text>
-              <Link href="/materials#manual" variant="pink">
-                {t("manual.action")}
+              <Link href="/materials#manual">
+                <LinkStyled variant="pink">{t("manual.action")}</LinkStyled>
               </Link>
             </Stack>
           }
