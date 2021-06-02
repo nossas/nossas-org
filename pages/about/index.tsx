@@ -195,7 +195,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
           </Text>
 
           <Stack direction="row" spacing={["8px", "20px"]}>
-            <Button
+            {/* <Button
               // p={["8px", "20px"]}
               size="sm"
               onClick={() => {
@@ -206,7 +206,7 @@ const QuemSomos: NextPage<PageProps, I18nInitialProps> = ({ ua, t }) => (
               }}
             >
               Baixar auditoria
-            </Button>
+            </Button> */}
             <Donation size="md" variant="pink" display="block">
               Fazer uma doação
             </Donation>
