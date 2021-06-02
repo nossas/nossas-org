@@ -7,6 +7,7 @@ import { Heading } from "@chakra-ui/react";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import Header from "../../content/Header";
+import WeAreDoing from "../../content/WeAreDoing";
 import { SliderPanel } from "../../components/Slider";
 
 const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
@@ -36,55 +37,9 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           description={t("action-now.description")}
         />
       </Section>
-      <Section direction={["column"]} spacing="30px">
-        <Heading as="h2" color="pink.main">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("campaigns-now.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
-        </Heading>
-        <SliderPanel
-          isMobile={ua?.isMobile || false}
-          infiniteLoop
-          items={[
-            {
-              src: "/static/media/s3/liberaotablet.jpg",
-              alt: t("campaigns-now.carousel.1.title"),
-              title: t("campaigns-now.carousel.1.title"),
-              description: t("campaigns-now.carousel.1.description"),
-              href: "https://www.liberaotablet.minhasampa.org.br/",
-              link: t("campaigns-now.carousel.1.action"),
-            },
-            {
-              src: "/static/media/s3/metroaumentonao.jpg",
-              alt: t("campaigns-now.carousel.2.title"),
-              title: t("campaigns-now.carousel.2.title"),
-              description: t("campaigns-now.carousel.2.description"),
-              href: "https://www.metroaumentonao.meurio.org.br/",
-              link: t("campaigns-now.carousel.2.action"),
-            },
-            {
-              src: "/static/media/s3/auxilioemergencial.png",
-              alt: t("campaigns-now.carousel.3.title"),
-              title: t("campaigns-now.carousel.3.title"),
-              description: t("campaigns-now.carousel.3.description"),
-              href: "https://www.auxilioateofimdapandemia.org/",
-              link: t("campaigns-now.carousel.3.action"),
-            },
-            {
-              src: "/static/media/s3/temgentecomfome.png",
-              alt: t("campaigns-now.carousel.4.title"),
-              title: t("campaigns-now.carousel.4.title"),
-              description: t("campaigns-now.carousel.4.description"),
-              link: t("campaigns-now.carousel.4.action"),
-              href: "https://www.temgentecomfome.com.br/",
-            },
-          ]}
-        />
-      </Section>
+
+      <WeAreDoing ua={ua} />
+
       <Section direction={["column"]} spacing="30px" bgColor="gray.light">
         <Heading as="h2" color="blue.main">
           <div

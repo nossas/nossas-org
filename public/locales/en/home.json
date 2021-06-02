@@ -31,31 +31,6 @@
             "navigate": "Discover BONDE"
         }
     },
-    "we-are-doing": {
-        "title": "What we are <strong>doing</strong>",
-        "sliders": {
-            "1": {
-                "title": "Release the Tablet",
-                "description": "Sao Paulo's government purchased electronic tablets for public school students in 2020, but so far it has not provided the equipment to assist young people in their remote education.",
-                "navigate": "Press to release the tablet"
-            },
-            "2": {
-                "title": "Licenciamento ambiental fica",
-                "description": "At any time, the Brazilian Senate can vote on the Bill that makes environmental licensing in the country more flexible, putting national biomes and traditional populations at risk.",
-                "navigate": "Press to block this project"
-            },
-            "3": {
-                "title": "Emergency aid until the end of the pandemic",
-                "description": "The end of the emergency aid payments in 2021 could leave thousands of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
-                "navigate": "Take part in the campaign"
-            },
-            "4": {
-                "title": "There are people going hungry",
-                "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
-                "navigate": "Take part in the campaign"
-            }
-        }
-    },
     "sustainability": {
         "donate": "Make a <strong>donation</strong>",
         "description": "NOSSAS is funded by donations from individuals and foundations which believe in our work and the impact we wish to have on the world. The organization does not accept money from political parties, public utilities or private companies, and our accounts are audited every year by independent professionals. Here's how to donate!",

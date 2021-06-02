@@ -101,6 +101,31 @@
             }
         }
     },
+    "we-are-doing": {
+        "title": "O que estamos <strong>fazendo</strong>",
+        "sliders": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+                "navigate": "Pressione para liberar o tablet"
+            },
+            "2": {
+                "title": "Licenciamento ambiental fica",
+                "description": "A qualquer momento o Senado pode votar o Projeto de Lei que flexibiliza o licenciamento ambiental no país, colocando em risco nossos biomas brasileiros e populações tradicionais.",
+                "navigate": "Pressione para barrar o projeto"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+                "navigate": "Participe da campanha"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "navigate": "Participe da campanha"
+            }
+        }
+    },
     "media": "Na mídia",
     "footer": {
         "navigation": {

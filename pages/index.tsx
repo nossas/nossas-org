@@ -6,9 +6,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
-import { SliderPanel } from "../components/Slider";
 import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
+import WeAreDoing from "../content/WeAreDoing";
 import Media from "../content/Media";
 import Header from "../content/Header";
 
@@ -142,60 +142,9 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
           ]}
         />
       </Section>
-      <Section
-        id="we-are-doing"
-        direction="column"
-        spacing={8}
-        backgroundColor="#F7F7F7"
-      >
-        <Heading as="h2" size="lg" color="pink.main">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("we-are-doing.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
-        </Heading>
-        <SliderPanel
-          infiniteLoop
-          isMobile={ua?.isMobile || false}
-          items={[
-            {
-              src: "/static/media/s3/liberaotablet.jpg",
-              href: "https://www.liberaotablet.minhasampa.org.br/",
-              alt: t("we-are-doing.sliders.1.title"),
-              title: t("we-are-doing.sliders.1.title"),
-              description: t("we-are-doing.sliders.1.description"),
-              link: t("we-are-doing.sliders.1.navigate"),
-            },
-            {
-              src: "/static/media/s3/licenciamento-ambiental.png",
-              href: "https://www.licenciamentoambientalfica.org/",
-              alt: t("we-are-doing.sliders.2.title"),
-              title: t("we-are-doing.sliders.2.title"),
-              description: t("we-are-doing.sliders.2.description"),
-              link: t("we-are-doing.sliders.2.navigate"),
-            },
-            {
-              src: "/static/media/s3/rendabasica.png",
-              href: "https://www.auxilioateofimdapandemia.org/",
-              alt: t("we-are-doing.sliders.3.title"),
-              title: t("we-are-doing.sliders.3.title"),
-              description: t("we-are-doing.sliders.3.description"),
-              link: t("we-are-doing.sliders.3.navigate"),
-            },
-            {
-              src: "/static/media/s3/temgentecomfome.png",
-              href: "https://www.temgentecomfome.com.br/",
-              alt: t("we-are-doing.sliders.4.title"),
-              title: t("we-are-doing.sliders.4.title"),
-              description: t("we-are-doing.sliders.4.description"),
-              link: t("we-are-doing.sliders.4.navigate"),
-            },
-          ]}
-        />
-      </Section>
+
+      <WeAreDoing ua={ua} backgroundColor="#F7F7F7" />
+
       <Section
         alignItems="center"
         direction={["column", null, null, "row"]}
