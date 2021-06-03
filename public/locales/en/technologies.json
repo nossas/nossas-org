@@ -1,0 +1,33 @@
+{
+    "cover": "Get to know BONDE, our technology tool",
+    "begin": {
+        "title": "How BONDE <br/><strong>emerged</strong>",
+        "description": "We have the perfect tool for disseminating your cause. Together with an incredible technology team, we have developed a mobilization platform which is now available for other organizations to promote their causes too."
+    },
+    "functionalities": {
+        "title": "Features",
+        "items": {
+            "computer": "Create pages for your mobilization campaigns",
+            "email": "Pressurize decision-makers by email, phone or with a petition",
+            "money": "Create a crowdfunding campaign for your project",
+            "subscription": "Sign up volunteers for you cause",
+            "communication": "Create a solidarity network and increase your impact"
+        }
+    },
+    "use": {
+        "title": "Use BONDE to <strong>cause</strong>",
+        "description": "With our technology you can create pressure campaigns, crowdfunding campaigns, raise funds for your organization, create solidarity networks without needing any knowledge of programming.",
+        "action": "Sign up now"
+    },
+    "who-used": {
+        "title": "Those who’ve used <br/><strong>BONDE for their causes</strong>"
+    },
+    "campaigns": {
+        "title": "Campaigns which <strong>made history</strong>",
+        "carousel": {
+            "amazonia": " A bill to make land-grabbing easier was put before the Chamber of Deputies, but thanks to the campaign more than 30,000 people were mobilized and they managed to get the bill thrown out.",
+            "palmas": "This was a campaign to enshrine in law an emergency package of measures to improve working conditions for doctors, nurses, intensive care physiotherapists and nursing auxiliaries and assistants working on the frontline against Covid-19.",
+            "agora": "All Out held a campaign to pressurize Brazil's Supreme Federal Court into making discrimination against LGBTQ+ people a crime. The mobilization lasted for more than 90 days and the campaign managed to gather more than 700 thousand signatures. The bill was passed!"
+        }
+    }
+}
