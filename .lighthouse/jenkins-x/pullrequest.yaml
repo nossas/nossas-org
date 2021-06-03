@@ -11,6 +11,27 @@ spec:
       taskSpec:
         metadata: {}
         stepTemplate:
+          env:
+          - name: PORT
+            value: "3003"
+          - name: NODE_ENV
+            value: "production"
+          - name: NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+            value: ""
+          - name: NEXT_PUBLIC_BONDE_API_GRAPHQL_URL
+            value: "ws://api-graphql.staging.bonde.org/v1/graphql"
+          - name: BONDE_API_GRAPHQL_URL
+            value: "https://api-graphql.staging.bonde.org/v1/graphql"
+          - name: STRIPE_SECRET_KEY
+            value: ""
+          - name: NEXT_PUBLIC_INCUBATIONS_WIDGET_ID
+            value: "20292"
+          - name: NEXT_PUBLIC_MATERIALS_WIDGET_ID
+            value: "20293"
+          - name: NEXT_PUBLIC_DONATION_WIDGET_ID
+            value: "24146"
+          - name: NEXT_PUBLIC_NEWSLETTER_WIDGET_ID
+            value: "24147"
           image: uses:jenkins-x/jx3-pipeline-catalog/tasks/typescript/pullrequest.yaml@versionStream
           name: ""
           resources:
@@ -30,8 +51,14 @@ spec:
           resources: {}
         - name: check-registry
           resources: {}
-        - name: build-container-build
+        - image: gcr.io/kaniko-project/executor:debug-v1.3.0
+          name: build-container-build
           resources: {}
+          script: |
+            #!/busybox/sh
+            source .jx/variables.sh
+            cp /tekton/creds-secrets/tekton-container-registry-auth/.dockerconfigjson /kaniko/.docker/config.json
+            /kaniko/executor $KANIKO_FLAGS --context=/workspace/source --dockerfile=Dockerfile --destination=$PUSH_CONTAINER_REGISTRY/$DOCKER_REGISTRY_ORG/$APP_NAME:$VERSION --build-arg=NODE_ENV --build-arg=NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY --build-arg=NEXT_PUBLIC_BONDE_API_GRAPHQL_URL --build-arg=BONDE_API_GRAPHQL_URL --build-arg=STRIPE_SECRET_KEY --build-arg=NEXT_PUBLIC_INCUBATIONS_WIDGET_ID --build-arg=NEXT_PUBLIC_MATERIALS_WIDGET_ID --build-arg=NEXT_PUBLIC_DONATION_WIDGET_ID --build-arg=NEXT_PUBLIC_NEWSLETTER_WIDGET_ID
         - name: promote-jx-preview
           resources: {}
   podTemplate: {}
