@@ -116,12 +116,10 @@ const renderDesktop = (t: any) => [
     </Timeline>
     <Timeline title="2019" titleVisibility="hidden">
       <ImageText
-        href=""
         src="/static/media/timeline/pec29.png"
         text={t("timeline.2019.4")}
       />
       <ImageText
-        href=""
         src="/static/media/timeline/nossas.png"
         text={t("timeline.2019.5")}
       />

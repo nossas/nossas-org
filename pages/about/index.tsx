@@ -138,19 +138,11 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
       </Section>
       {/* Equipe */}
       <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
-        {ua && ua.isMobile ? (
-          <>
-            <BoardMembers />
-            <LeadersMembers />
-            <TeamMembers />
-          </>
-        ) : (
-          <>
-            <BoardMembers />
-            <LeadersMembers />
-            <TeamMembers />
-          </>
-        )}
+        <>
+          <BoardMembers />
+          <LeadersMembers />
+          <TeamMembers />
+        </>
       </Section>
       {/* Quem financia */}
       <Section spacing={["30px", "170px"]}>
@@ -180,17 +172,6 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
             </Heading>
             <Text>{t("who-finances.description")}</Text>
             <Stack direction="row" spacing="20px">
-              <Button
-                size="sm"
-                onClick={() => {
-                  window.open(
-                    "https://drive.google.com/file/d/1jPAFV2TI2W7BJospo-Z6EVsjP0ItphJO/view",
-                    "_blank"
-                  );
-                }}
-              >
-                {t("who-finances.audit_action")}
-              </Button>
               <Donation size="sm" variant="pink" display={["none", "block"]}>
                 {t("who-finances.donate_action")}
               </Donation>
