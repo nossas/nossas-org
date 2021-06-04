@@ -34,8 +34,8 @@ hpa:
   minReplicas: 2
 image:
   pullPolicy: IfNotPresent
-  repository: draft
-  tag: dev
+  repository: 519061744633.dkr.ecr.us-east-1.amazonaws.com/nossas/nossas-org
+  tag: 0.1.0
 ingress:
   annotations: {}
   classAnnotation: ""
