@@ -1,0 +1,33 @@
+{
+    "cover": "Conheça o BONDE, nossa ferramenta de tecnologia",
+    "begin": {
+        "title": "Assim surgiu <br/><strong>o BONDE</strong>",
+        "description": "Temos a ferramenta perfeita para espalhar sua causa por aí :) O BONDE é a plataforma criada pelo nosso time de tecnologia para movimentar nossas mobilizações: ela agora está disponível para outras organizações causarem também."
+    },
+    "functionalities": {
+        "title": "Funcionalidades",
+        "items": {
+            "computer": "Crie páginas para suas campanhas de mobilização",
+            "email": "Pressione tomadores de decisão por email, telefone ou petição",
+            "money": "Faça um financiamento coletivo para o seu projeto",
+            "subscription": "Receba inscrições de voluntários para a sua causa",
+            "communication": "Crie uma rede de solidariedade e aumente o seu impacto"
+        }
+    },
+    "use": {
+        "title": "Use o BONDE para <strong>causar</strong>",
+        "description": "Com nossa tecnologia você pode fazer campanhas de pressão, financiamento coletivo, petições, ou ainda criar redes de solidariedade sem precisar sacar nadinha de programação.",
+        "action": "Contrate agora"
+    },
+    "who-used": {
+        "title": "Quem já causou <br/><strong>com o BONDE</strong>"
+    },
+    "campaigns": {
+        "title": "Campanhas que <strong>fizeram história</strong>",
+        "carousel": {
+            "amazonia": "Um projeto de lei que facilitaria a grilagem foi posto em pauta na Câmara dos Deputados, mas graças à campanha mais de 30 mil pessoas se mobilizaram e conseguiram barrar o PL.",
+            "palmas": "Um pacote de emergência para oferecer melhores condições a trabalhadores da saúde na linha de frente do combate à Covid19 foi aprovado depois de uma enorme pressão na Câmara dos Deputados.",
+            "agora": "A campanha fez pressão no Supremo Tribunal Federal para tornar crime a discriminação contra pessoas LGBTQ+. Foram mais de 90 dias de mobilização e a campanha conseguiu reunir mais de 700 mil assinaturas. O projeto foi aprovado!"
+        }
+    }
+}

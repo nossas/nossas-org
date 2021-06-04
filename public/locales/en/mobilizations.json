@@ -1,0 +1,44 @@
+{
+    "cover": "JOIN ONE OF NOSSAS'S MOBILIZATIONS RIGHT NOW",
+    "action-now": {
+        "title": "Come <br /><strong>with us!</strong>",
+        "description": "Help our campaigns to be heard and conquer achievements that consolidate public policies and protect our rights. Come and be part of the change!"
+    },
+    "our-victories": {
+        "title": "Our <strong>successes</strong>",
+        "carousel": {
+            "1": {
+                "title": "Camarote da vacina não",
+                "description": "Businessmen were able to pass a bill in the Chamber that allowed them to buy vaccines to apply to their employees and their families, ignoring SUS' priority list. With a campaign that had more than 100 thousand objections, we have managed to stop the project."
+            },
+            "2": {
+                "title": "Restinga e mangue ficam",
+                "description": "A CONAMA resolution could leave our main biomes -  restingas and mangrove swamps - even more vulnerable. Our mobilization, which gathered more than 180,000 signatures, managed to slow down the damage and guarantee the conservation of Brazil's ecosystems and coastline."
+            },
+            "3": {
+                "title": "Auxílio para saúde",
+                "description": "Health professionals such as nursing, cleaning and general service assistants have been very exposed to the virus during the pandemic. We managed to get a law passed which guarantees compensation for the families of professionals who lost their lives during the Covid-19 health crisis"
+            },
+            "4": {
+                "title": "Sem Aula Sem ENEM",
+                "description": "To go ahead with Brazil's National High School Exam (ENEM) in the middle of the pandemic would be a catastrophe, especially for the poorest students who haven't had any classes. More than four thousand students created regional campaigns putting pressure on senators, and with more than 150 thousand objections in total the exam was postponed."
+            },
+            "5": {
+                "title": "Renda Básica",
+                "description": "Together with another 200 organizations, we managed to get approval for emergency aid payments of R$600 to be made to 68 million Brazilians in 2020. In 2021, the fight continues to create a bill guaranteeing a permanent basic income for the whole population."
+            },
+            "6": {
+                "title": "Paulista Aberta",
+                "description": "After more than two years of intense mobilizations with civil society organizations and collectives in São Paulo, the then mayor, Fernando Haddad, published the decree opening Avenida Paulista to pedestrians at certain times and creating the project 'Ruas Abertas', changing leisure in São Paulo."
+            },
+            "7": {
+                "title": "Escola Não se Destrói",
+                "description": "Today, the Friedenreich School is among the highest ranked in Rio de Janeiro according to IDEB indicators, but in 2014 it was under threat of demolition to make way for World Cup facilities. After a multi-stage campaign, it is still up and running!"
+            },
+            "8": {
+                "title": "Rio sem Canudo",
+                "description": "Rio de Janeiro was the first city to ban bars, restaurants and commercial establishments from using plastic straws. Several other cities around the country then followed its example. Now, the fight continues to ban all single-use plastics!"
+            }
+        }
+    }
+}

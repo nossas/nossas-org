@@ -1,0 +1,166 @@
+{
+    "navbar": {
+        "navigation": {
+            "see-more": "Conheça",
+            "about": "Sobre o Nossas",
+            "work-with-us": "Trabalhe conosco",
+            "participate": "Participe",
+            "campaigns": "Campanhas",
+            "materials": "Materiais",
+            "trainings": "Treinamentos",
+            "incubations": "Incubações",
+            "technologies": "Tecnologias"
+        },
+        "donate": "Doar"
+    },
+    "donation": {
+        "title": "Doe para o <strong>NOSSAS</strong>",
+        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+        "form": {
+            "continue": "Continuar",
+            "donate": "Doar",
+            "done": "Finalizar",
+            "security": "doação segura",
+            "tabs": {
+                "activist": "Seus dados",
+                "payment": "Pagamento"
+            },
+            "fields": {
+                "name": {
+                    "label": "Nome",
+                    "placeholder": "Nome",
+                    "required": "Informe seu nome"
+                },
+                "email": {
+                    "label": "E-mail",
+                    "placeholder": "E-mail",
+                    "required": "Informe seu e-mail",
+                    "invalid": "Informe um e-mail válido"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Informe seu whatsapp",
+                    "invalid": "Informe um número válido"
+                },
+                "cardholderName": {
+                    "label": "Nome",
+                    "placeholder": "Nome no cartão",
+                    "required": "Informe o nome no cartão"
+                },
+                "currency": {
+                    "label": "Moeda"
+                },
+                "customDonation": {
+                    "label": "Valor",
+                    "required": "Informe um valor de doação",
+                    "min": "Informe ao menos 5 para doação"
+                }
+            },
+            "success": {
+                "imageAlt": "Doação bem sucedida!",
+                "title": "Valeu, <strong>{{name}}!</strong>",
+                "thanks": "Sua doação faz toda a diferença!",
+                "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"   
+            }
+        }
+    },
+    "subscribe": {
+        "form": {
+            "fields": {
+                "name": {
+                    "label": "Nome",
+                    "placeholder": "Nome",
+                    "required": "Informe seu nome"
+                },
+                "lastName": {
+                    "label": "Sobrenome",
+                    "placeholder": "Sobrenome"
+                },
+                "phone": {
+                    "label": "Whatsapp",
+                    "required": "Informe seu whatsapp",
+                    "invalid": "Informe um número válido"
+                },
+                "email": {
+                    "label": "E-mail",
+                    "placeholder": "E-mail",
+                    "required": "Informe seu e-mail",
+                    "invalid": "Informe um e-mail válido"
+                },
+                "state": {
+                    "label": "Estado",
+                    "placeholder": "Estado"
+                },
+                "city": {
+                    "label": "Cidade",
+                    "placeholder": "Cidade"
+                }
+            },
+            "success": {
+                "title": "Valeu, <strong>{{name}}!</strong>"
+            }
+        }
+    },
+    "we-are-doing": {
+        "title": "O que estamos <strong>fazendo</strong>",
+        "sliders": {
+            "1": {
+                "title": "Libera o tablet",
+                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
+                "navigate": "Pressione para liberar o tablet"
+            },
+            "2": {
+                "title": "Licenciamento ambiental fica",
+                "description": "A qualquer momento o Senado pode votar o Projeto de Lei que flexibiliza o licenciamento ambiental no país, colocando em risco nossos biomas brasileiros e populações tradicionais.",
+                "navigate": "Pressione para barrar o projeto"
+            },
+            "3": {
+                "title": "Auxílio até o fim da pandemia",
+                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+                "navigate": "Participe da campanha"
+            },
+            "4": {
+                "title": "Tem gente com fome",
+                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "navigate": "Participe da campanha"
+            }
+        }
+    },
+    "media": "Na <strong>mídia</strong>",
+    "see": "Saiba +",
+    "know-more": "Saiba mais +",
+    "footer": {
+        "navigation": {
+            "join-us": "Junte-se a nós",
+            "about": "Conheça o Nossas",
+            "donate": "Faça uma doação",
+            "work-with-us": "Trabalhe conosco"
+        },
+        "social": {
+            "title": "Siga nas redes sociais"
+        },
+        "newsletter": {
+            "title": "Fique por dentro",
+            "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
+            "success": {
+                "title": "Valeu!",
+                "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
+            },
+            "form": {
+                "email": {
+                    "placeholder": "Seu e-mail",
+                    "required": "Informe seu e-mail",
+                    "invalid": "OPS! Confira o e-mail"
+                },
+                "firstname": {
+                    "placeholder": "Nome",
+                    "required": "Informe seu nome"
+                },
+                "lastname": {
+                    "placeholder": "Sobrenome"
+                },
+                "submit": "Salvar"
+            }
+        }
+    }
+}

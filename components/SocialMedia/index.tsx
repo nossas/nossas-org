@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Heading, Img, Link, Stack } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+import { useTranslation } from "next-i18next";
+
 import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "./IconsSVG";
 
 interface SocialMediaProps {
-  t: any;
-  color: string;
+  color?: string;
   flat?: boolean;
 }
 
@@ -22,7 +22,9 @@ const MediaLink = styled(Link)`
   }
 `;
 
-const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
+  const { t } = useTranslation("common");
+
   return (
     <Stack alignItems="center" display="block" spacing={4}>
       {!flat && (
@@ -34,7 +36,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
           size="md"
           maxW="190px"
         >
-          {t("social.title")}
+          {t("footer.social.title")}
         </Heading>
       )}
 
@@ -42,7 +44,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
         <MediaLink
           href="https://instagram.com/_nossas"
           target="_blank"
-          title={t("social.icons.instagram")}
+          title="Instagram"
           color={color}
         >
           <Instagram />
@@ -50,7 +52,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
         <MediaLink
           href="https://www.facebook.com/nossasorg/"
           target="_blank"
-          title={t("social.icons.facebook")}
+          title="Facebook"
           color={color}
         >
           <Facebook />
@@ -58,7 +60,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
         <MediaLink
           href="https://www.twitter.com/_nossas"
           target="_blank"
-          title={t("social.icons.twitter")}
+          title="Twitter"
           color={color}
         >
           <Twitter />
@@ -66,7 +68,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
         <MediaLink
           href="https://www.linkedin.com/company/nossas/"
           target="_blank"
-          title={t("social.icons.linkedin")}
+          title="Linkedin"
           color={color}
         >
           <Linkedin />
@@ -74,7 +76,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ t, color, flat }) => {
         <MediaLink
           href="https://www.youtube.com/nossas"
           target="_blank"
-          title={t("social.icons.youtube")}
+          title="Youtube"
           color={color}
         >
           <Youtube />
@@ -96,4 +98,4 @@ SocialMedia.defaultProps = {
   flat: false,
 };
 
-export default withTranslation("common")(SocialMedia);
+export default SocialMedia;

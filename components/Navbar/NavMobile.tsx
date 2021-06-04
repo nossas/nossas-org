@@ -12,7 +12,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { FaTimes } from "react-icons/fa";
-import { withTranslation } from "../../i18n";
+// import { withTranslation } from "../../i18n";
 import I18n from "../I18nButton";
 import Donation from "../Donation";
 import SocialMedia from "../SocialMedia";
@@ -28,9 +28,10 @@ const MobileStyled = styled.div`
   }
 `;
 
-const NavMobile = ({ t, children }) => {
+const NavMobile = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const t = (keyI18n: string) => keyI18n;
 
   return (
     <MobileStyled>
@@ -83,4 +84,5 @@ const NavMobile = ({ t, children }) => {
   );
 };
 
-export default withTranslation("common")(NavMobile);
+export default NavMobile;
+// export default withTranslation("common")(NavMobile);

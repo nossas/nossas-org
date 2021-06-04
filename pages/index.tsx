@@ -1,44 +1,37 @@
-import { NextPage } from "next";
-import { Flex, Heading, Image, Text, Stack, Link } from "@chakra-ui/react";
+import React from "react";
+import { Flex, Heading, Image, Text, Stack } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Hero from "../components/Hero";
 import { Body, Section } from "../components/Page";
-import { SliderPanel } from "../components/Slider";
 import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
+import WeAreDoing from "../content/WeAreDoing";
 import Media from "../content/Media";
 import Header from "../content/Header";
-import { withTranslation, I18nInitialProps } from "../i18n";
 
-interface Props extends WithUserAgentProps {
-  t: any;
-}
+const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
+  const { t } = useTranslation("home");
 
-const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   return (
     <Body>
       {/* Cover */}
-      <Hero
-        // title={t("content:covers.home.title")}
-        title="O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL"
-        videoUrl="/static/media/covers/home.mp4"
-      />
+      <Hero title={t("cover")} videoUrl="/static/media/covers/home.mp4" />
       <Section id="join-us">
         <Header
           title={
-            <>
-              Junte-se <b>a nós</b>
-            </>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("header.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           }
           titleColor="pink.main"
-          description={`
-            O NOSSAS apoia indivíduos, coletivos e organizações em sua luta por direitos
-            e melhores políticas públicas. Compartilhamos oportunidades de ação,
-            metodologias e ferramentas para a criação de mobilizações de
-            impacto. Explore nosso espaço de ativismo e impulsione seu movimento
-            com a gente!
-          `}
+          description={t("header.description")}
         />
       </Section>
       <Section
@@ -53,178 +46,105 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           items={[
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="265px">
-                  {/* <div
+                <Heading as="h2" color="blue.main" fontSize="3xl">
+                  <div
                     dangerouslySetInnerHTML={{
-                      __html: t("content:blocks.home.grid.mobilization.title", {
+                      __html: t("navigation.join-us.title", {
                         interpolation: { escapeValue: false },
                       }),
                     }}
-                  /> */}
-                  Junte-se a uma de <b>nossas campanhas</b>
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/mobilizacaohome.png",
-              // about: t("content:blocks.home.grid.mobilization.about"),
-              about:
-                "Conheça as causas nas quais estamos engajados no momento e participe de nossa luta pela defesa de direitos e fortalecimento da democracia.",
+              about: t("navigation.join-us.about"),
               navigation: {
                 href: "/mobilizations",
-                // title: t("content:blocks.home.grid.mobilization.link"),
-                title: "Veja as campanhas ativas",
+                title: t("navigation.join-us.navigate"),
               },
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="295px">
-                  {/* <div
+                <Heading as="h2" color="blue.main" fontSize="3xl">
+                  <div
                     dangerouslySetInnerHTML={{
-                      __html: t("content:blocks.home.grid.books.title", {
+                      __html: t("navigation.materials.title", {
                         interpolation: { escapeValue: false },
                       }),
                     }}
-                  /> */}
-                  Acesse nossos <b>materiais educativos</b>
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/materiaiseducativoshome.png",
-              // about: t("content:blocks.home.grid.books.about"),
-              about:
-                "Disponibilizamos um material super completo e com várias dicas para ajudar seu coletivo ou organização a aumentar o seu impacto.",
+              about: t("navigation.materials.about"),
               navigation: {
                 href: "/materials",
-                // title: t("content:blocks.home.grid.books.link"),
-                title: "Acesse a página",
+                title: t("navigation.materials.navigate"),
               },
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="365px">
-                  {/* <div
+                <Heading as="h2" color="blue.main" fontSize="3xl">
+                  <div
                     dangerouslySetInnerHTML={{
-                      __html: t("content:blocks.home.grid.learning.title", {
+                      __html: t("navigation.trainings.title", {
                         interpolation: { escapeValue: false },
                       }),
                     }}
-                  /> */}
-                  Seja treinado em <b>metodologias de ativismo</b>
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/treinamentohome.png",
-              // about: t("content:blocks.home.grid.learning.about"),
-              about:
-                "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
+              about: t("navigation.trainings.about"),
               navigation: {
                 href: "/trainings",
-                // title: t("content:blocks.home.grid.learning.link"),
-                title: "Confira nosso cronograma",
+                title: t("navigation.trainings.navigate"),
               },
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="235px">
-                  {/* <div
+                <Heading as="h2" color="blue.main" fontSize="3xl">
+                  <div
                     dangerouslySetInnerHTML={{
-                      __html: t("content:blocks.home.grid.support.title", {
+                      __html: t("navigation.incubations.title", {
                         interpolation: { escapeValue: false },
                       }),
                     }}
-                  /> */}
-                  Incube seu <b>projeto conosco</b>
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/apoioprojetohome.png",
-              // about: t("content:blocks.home.grid.support.about"),
-              about:
-                "Receba capacitação, apoio e mentoria através do programa de incubação. Nós aceleramos projetos de mobilização e solidariedade que querem causar impacto no mundo.",
+              about: t("navigation.incubations.about"),
               navigation: {
                 href: "/incubations",
-                // title: t("content:blocks.home.grid.support.link"),
-                title: "Acesse a página",
+                title: t("navigation.incubations.navigate"),
               },
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl" maxW="345px">
-                  {/* <div
+                <Heading as="h2" color="blue.main" fontSize="3xl">
+                  <div
                     dangerouslySetInnerHTML={{
-                      __html: t("content:blocks.home.grid.tech.title", {
+                      __html: t("navigation.technologies.title", {
                         interpolation: { escapeValue: false },
                       }),
                     }}
-                  /> */}
-                  Use as melhores <b>tecnologias de ativismo</b>
+                  />
                 </Heading>
               ),
               image: "/static/media/s3/tecnologiashome.png",
-              // about: t("content:blocks.home.grid.tech.about"),
-              about:
-                "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
+              about: t("navigation.technologies.about"),
               navigation: {
                 href: "/technologies",
-                // title: t("content:blocks.home.grid.tech.link"),
-                title: "Conheça o BONDE",
+                title: t("navigation.technologies.navigate"),
               },
             },
           ]}
         />
       </Section>
-      <Section
-        id="we-are-doing"
-        direction="column"
-        spacing={8}
-        backgroundColor="#F7F7F7;
-"
-      >
-        <Heading as="h2" size="lg" color="pink.main">
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: t("content:blocks.home.actionnow", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          /> */}
-          O que estamos <b>fazendo</b>
-        </Heading>
-        <SliderPanel
-          infiniteLoop
-          isMobile={ua.isMobile}
-          items={[
-            {
-              src: "/static/media/s3/liberaotablet.jpg",
-              href: "https://www.liberaotablet.minhasampa.org.br/",
-              alt: t("sliders:home.liberaotablet.title"),
-              title: t("sliders:home.liberaotablet.title"),
-              description: t("sliders:home.liberaotablet.description"),
-              link: t("sliders:home.liberaotablet.action"),
-            },
-            {
-              src: "/static/media/s3/licenciamento-ambiental.png",
-              href: "https://www.licenciamentoambientalfica.org/",
-              alt: t("sliders:home.licenciamentoambiental.title"),
-              title: t("sliders:home.licenciamentoambiental.title"),
-              description: t("sliders:home.licenciamentoambiental.description"),
-              link: t("sliders:home.licenciamentoambiental.action"),
-            },
-            {
-              src: "/static/media/s3/rendabasica.png",
-              href: "https://www.auxilioateofimdapandemia.org/",
-              alt: t("sliders:home.rendabasica.title"),
-              title: t("sliders:home.rendabasica.title"),
-              description: t("sliders:home.rendabasica.description"),
-              link: t("sliders:home.rendabasica.action"),
-            },
-            {
-              src: "/static/media/s3/temgentecomfome.png",
-              href: "https://www.temgentecomfome.com.br/",
-              alt: t("sliders:home.temgentecomfome.title"),
-              title: t("sliders:home.temgentecomfome.title"),
-              description: t("sliders:home.temgentecomfome.description"),
-              link: t("sliders:home.temgentecomfome.action"),
-            },
-          ]}
-        />
-      </Section>
+
+      <WeAreDoing ua={ua} backgroundColor="#F7F7F7" />
+
       <Section
         alignItems="center"
         direction={["column", null, null, "row"]}
@@ -236,7 +156,6 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
             maxH={[232, 347]}
             margin="0 auto"
             src="/static/media/s3/sustentabilidade.png"
-            // alt={t("content:images.home.doacao")}
             alt="Sustentabilidade"
           />
         </Flex>
@@ -246,34 +165,25 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
           alignItems={["center", null, null, "flex-start"]}
         >
           <Heading as="h2" size="lg" color="green">
-            {/* <div
+            <div
               dangerouslySetInnerHTML={{
-                __html: t("content:blocks.home.doacao.title", {
+                __html: t("sustainability.donate", {
                   interpolation: { escapeValue: false },
                 }),
               }}
-            /> */}
-            Faça uma <b>doação</b>
+            />
           </Heading>
           <Text textAlign={["center", "left"]} maxW="711px">
-            {/* {t("content:blocks.home.doacao.description")} */}O NOSSAS vive
-            de doações de pessoas e fundações que acreditam em nosso trabalho.
-            Não recebemos dinheiro de concessionárias de serviços públicos,
-            empresas privadas ou partidos políticos, e auditamos anualmente
-            nossas contas com profissionais independentes. Contribua você
-            também!
+            {t("sustainability.description")}
           </Text>
-          <Donation maxW={190}>
-            {/* {t("content:blocks.home.doacao.button")} */}
-            Quero doar
-          </Donation>
+          <Donation>{t("sustainability.navigate")}</Donation>
         </Stack>
       </Section>
       <Media
         title={
           <div
             dangerouslySetInnerHTML={{
-              __html: t("common:media.title", {
+              __html: t("common:media", {
                 interpolation: { escapeValue: false },
               }),
             }}
@@ -284,10 +194,12 @@ const Home: NextPage<Props, I18nInitialProps> = ({ t, ua }) => {
   );
 };
 
-Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "sliders", "content"],
-});
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+    },
+  };
+};
 
-export default withUserAgent(
-  withTranslation(["common", "sliders", "content"])(Home)
-);
+export default withUserAgent(Home);

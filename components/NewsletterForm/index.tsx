@@ -2,10 +2,10 @@ import React from "react";
 import { Button, Text, Stack, Heading } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "next-i18next";
 
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
-import { withTranslation } from "../../i18n";
 
 interface Values {
   first_name: string;
@@ -31,7 +31,9 @@ const Header = ({ inverted, title, description }) => (
   </>
 );
 
-const NewsletterForm = ({ t, inverted }: any) => {
+const NewsletterForm = ({ inverted }: any) => {
+  const { t } = useTranslation("common");
+
   if (!process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID)
     return <Text color="red">Você deve configurar o Widget da Newsletter</Text>;
 
@@ -42,8 +44,8 @@ const NewsletterForm = ({ t, inverted }: any) => {
         successComponent={() => (
           <Header
             inverted={inverted}
-            title={t("newsletter.success.title")}
-            description={t("newsletter.success.description")}
+            title={t("footer.newsletter.success.title")}
+            description={t("footer.newsletter.success.description")}
           />
         )}
       >
@@ -51,8 +53,8 @@ const NewsletterForm = ({ t, inverted }: any) => {
           <>
             <Header
               inverted={inverted}
-              title={t("newsletter.title")}
-              description={t("newsletter.description")}
+              title={t("footer.newsletter.title")}
+              description={t("footer.newsletter.description")}
             />
             <Formik
               initialValues={{
@@ -62,11 +64,11 @@ const NewsletterForm = ({ t, inverted }: any) => {
               }}
               validationSchema={Yup.object().shape({
                 first_name: Yup.string().required(
-                  t("common:form.fields.name.required")
+                  t("footer.newsletter.form.firstname.required")
                 ),
                 email: Yup.string()
-                  .email(t("common:form.fields.email.invalid"))
-                  .required(t("common:form.fields.email.required")),
+                  .email(t("footer.newsletter.form.email.invalid"))
+                  .required(t("footer.newsletter.form.email.required")),
               })}
               onSubmit={submit}
             >
@@ -77,26 +79,32 @@ const NewsletterForm = ({ t, inverted }: any) => {
                       <InputField
                         name="first_name"
                         type="text"
-                        placeholder={t("newsletter.firstname.placeholder")}
+                        placeholder={t(
+                          "footer.newsletter.form.firstname.placeholder"
+                        )}
                       />
                       <InputField
                         name="last_name"
                         type="text"
-                        placeholder={t("newsletter.lastname.placeholder")}
+                        placeholder={t(
+                          "footer.newsletter.form.lastname.placeholder"
+                        )}
                       />
                     </Stack>
                     <Stack direction="row" spacing={2} alignItems="flex-end">
                       <InputField
                         name="email"
                         type="email"
-                        placeholder={t("newsletter.email.placeholder")}
+                        placeholder={t(
+                          "footer.newsletter.form.email.placeholder"
+                        )}
                       />
                       <Button
                         size="sm"
                         variant="pink"
                         onClick={handleSubmit as any}
                       >
-                        {t("newsletter.button")}
+                        {t("footer.newsletter.form.submit")}
                       </Button>
                     </Stack>
                   </Stack>
@@ -110,4 +118,5 @@ const NewsletterForm = ({ t, inverted }: any) => {
   );
 };
 
-export default withTranslation("common")(NewsletterForm);
+export default NewsletterForm;
+// export default withTranslation("common")(NewsletterForm);

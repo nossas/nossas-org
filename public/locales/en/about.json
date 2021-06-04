@@ -1,0 +1,260 @@
+{
+    "cover": "NOSSAS DEVELOPS TECHNOLOGIES, SHARES METHODOLOGIES, CONNECTS PEOPLE AND DEFENDS DEMOCRACY THROUGH ACTIVISM",
+    "history": {
+        "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years the organization has been developing projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
+        "title": "OUR HISTORY",
+        "about": "NOSSAS was founded in 2011. Since then, we have drawn thousands of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and made progress in building solidarity networks."
+    },
+    "timeline": {
+        "title": "Timeline",
+        "description": "Learn more about our history:",
+        "2011": {
+            "1": "NOSSAS is founded as Meu Rio, a multi-cause organization bringing Rio’s residents closer to local politics."
+        },
+        "2013": {
+            "1": "Meu Rio saves one of the best public schools in the city from demolition. The campaign involved several tactics for mobilizing people and was the organization's first significant achievement."
+        },
+        "2014": {
+            "1": "Meu Rio has its first experience replicating its model, exporting its methodology and technology to São Paulo.",
+            "2": "Meu Rio leads the campaign for the creation of the first Missing Persons Police Precinct. After its implementation, 80% of missing persons cases in Rio started to be solved.",
+            "3": "The main avenue in Sao Paulo opens exclusively for pedestrians on Sundays thanks to a campaign by Minha Sampa and partners, which has made history in the city.",
+            "4": "The Founders Program of Rede Nossas Cidades is launched, with the aim of training people from all over Brazil to found their local mobilization networks."
+        },
+        "2016": {
+            "1": "Creation of Defezap, the first collaborative complaints and investigation system against state violence in Rio de Janeiro. The tool was donated to the Human Rights Commission of ALERJ.",
+            "2": "The Mapa do Acolhimento platform is launched, allowing women who are victims of violence to connect with a network of professionals willing to help them.",
+            "3": "Meu Rio blocks a bill that would guarantee a lifetime allowance for city councilors. The campaign generated over 10 thousand supporters in less than 24 hours."
+        },
+        "2017": {
+            "1": "Beta, Facebook's first feminist chatbot, was developed to give visibility to the feminist struggle in Brazil and to share opportunities to act in defense of women's rights."
+        },
+        "2018": {
+            "1": "The BONDE  platform is launched for activists who want to create impactful websites to mobilize people and stimulate their causes.",
+            "2": "Right after the presidential elections in 2018, the campaign raised R$ 400.000,00 for organizations that assist populations vulnerable to hate speech.",
+            "3": "Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments after a historic mobilization.",
+            "4": "Launch of the first edition of Somos Cria, a campaign to support community courses helping students from marginalized neighborhoods pass their university entrance exam."
+        },
+        "2019": {
+            "1": "The mobilizers program offers free training in methodologies and mobilization tools for people from several cities in Brazil.",
+            "2": "After a lot of pressure from Minha Sampa, ten police precincts to help women who are victims of violence, start to operate 24/7 throughout Sao Paulo state.",
+            "3": "In the wake of Rio's mobilization, Minha Sampa leads a similar pressure campaign and the largest city in the country bans plastic straws.",
+            "4": "Due to a mobilization of Beta, the feminist robot, PEC 29 (a Constitutional Amendment Proposal which would prohibit abortion even in regulated cases) is turned down in the Senate. Beta's followers sent more than 50,000 campaign emails.",
+            "5": "Nossas brand is launched"
+        },
+        "2020": {
+            "1": "Together with 200 other organizations, the campaign for a Basic Income led to the approval of Emergency Aid during the pandemic.",
+            "2": "The campaign distributes 400 thousand Brazilian reals to ten favela collectives in Rio de Janeiro, benefiting more than 3,000 families that were badly affected by the pandemic.",
+            "3": "Due to the mobilization, students launched more than 4,000 local campaigns in their states and the Enem (Brazilian National High School Exam) was postponed.",
+            "4": "33 community college preparatory courses receive support for digital inclusion during the pandemic. The campaign benefited more than 4,500 students in 10 states across the country.",
+            "5": "The first fundraising campaign to hit a million reals makes it possible to distribute basic food parcels and hygiene kits to indigenous territories in the Amazon for six months."
+        }
+    },
+    "impact": {
+        "title": "Numbers<br/><strong>of impact</strong>",
+        "financial": {
+            "number": "+4 million",
+            "description": "reais raised in crowdfunding campaigns"
+        },
+        "volunteers": {
+            "number": "+5,400",
+            "description": "volunteers registered"
+        },
+        "political": {
+            "number": "+120",
+            "description": "changes to public policies"
+        },
+        "campaigns": {
+            "number": "+230",
+            "description": "campaigns launched"
+        },
+        "donations": {
+            "number": "+29 mil",
+            "description": "individual donors"
+        },
+        "activists": {
+            "number": "+2,5 million",
+            "description": "people mobilized"
+        }
+    },
+    "teams": {
+        "board": {
+            "title": "Board",
+            "description": "NOSSAS's Advisory Board has six members, elected for four-year terms:",
+            "members": {
+                "anacarolina": {
+                    "role": "Director at Iser",
+                    "about": "A political scientist and researcher, Ana Carolina is a specialist in local public policies and social participation. Ana was a program manager at Funcdacíon Avina, where she promoted experiments in urban development, local management and political innovation in Latin America, and she is currently the director of Iser, an organization that promotes studies and research on religion and social justice in Brazil. Ana has a master's degree in International Relations and is a doctoral student at CPDOC/ FGV."
+                },
+                "anapaula": {
+                    "role": "Founder of Casa Rede and O Globo columnist",
+                    "about": "Ana is a writer, producer and columnist at O Globo. Currently, she lives between Rio de Janeiro and Luanda - where she runs the production company Aláfia and the cultural venue Casa Rede. Ana was a producer and the presenter of the show \"Querendo Assunto\". She has published novels and poetry nationally and internationally, and since 2016 she has regularly contributed to the feminist magazine AzMina."
+                },
+                "roberto": {
+                    "role": "Founder of Ocupa Política and Editor of Piseagrama",
+                    "about": "Roberto is an architect, urban planner and researcher with extensive experience in architectural practice, urban development and information technology. He is the editor of the magazine Piseagrama and a professor at UFMG, having previously worked at the research laboratories Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) and Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto is also a director and co-founder of Hometeka."
+                },
+                "branca": {
+                    "role": "Founder and President of Radio Novelo",
+                    "about": "Branca is a philanthropist and President of the Administrative Council of the Insitituto Serrapilheira, the first private, non-profit institution to promote science in Brazil. Branca is also president of Radio Novelo and a member of the podcast \"Maria vai com as Outras\" - about women in the labor market. She was a professor at PUC-Rio for more than 10 years and has significant experience in communication for large audiences.Branca é filantropa e Presidente do Conselho Administrativo do Instituto Serrapilheira, primeira instituição privada, sem fins lucrativos, de fomento à ciência no Brasil. Ela também é presidente da Rádio Novelo e apresentadora do podcast \"Maria vai com as outras\", sobre mulheres no mercado de trabalho. Foi professora da PUC-Rio por mais de 10 anos e possui experiência sólida em comunicação para grandes audiências."
+                },
+                "felipe": {
+                    "role": "Investment Director at Luminate",
+                    "about": "At the forefront of Luminate's Latin American investments management, Felipe supports the organization in strengthening initiatives and public policies on digital rights, financial transparency, media independence and civic technology. Before joining Luminate, Felipe was a strategist at the World Bank promoting transparency in government bodies. He was also a founding member of Open Contracting Partnership."
+                },
+                "ines": {
+                    "role": "Director at Betty & Jacob Lafer",
+                    "about": "Ines is a specialist in philanthropic initiatives and public policies focused on children and adolescents. Ines started her career as a psychologist at SESI before becoming a consultant at Kairós Desenvolvimento Social on projects relating to children and adolescents and social work. She was a program manager at Fundação Maria Cecilia Souto Vidigal, a technical assistant for the Municipal Commission on Human Rights of Sao Paulo and Project Manager at IDIS."
+                }
+            }
+        },
+        "leaders": {
+            "title": "Leadership",
+            "alessandra": {
+                "role": "Co-founder and Executive Director",
+                "about": "Alessandra is an activist, director, producer and writer with extensive experience in mobilizing people. Alessandra was a founding member of Purpose's NY agency, which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas blog, a columnist at Folha de São Paulo and a TED Global speaker. She currently runs Greg News - a satirical journalism show on HBO and is a fellow of the Obama Foundation. Alessandra has a degree from Columbia University in Economics and Human Rights."
+            },
+            "enrica": {
+                "role": "Deputy Director and Director of Mapa do Acolhimento",
+                "about": "Enrica arrived at NOSSAS as a mobilizer before becoming Chief of Staff and Deputy Director. She has lived and worked in Belgium, South Africa and Japan until settling in her hometown - Rio de Janeiro. In Brazil, she was a producer at GloboNews covering the 2013 protests in Brazil. Currently she leads the Project Mapa do Acolhimento. She holds an degree in Political Science specializing in Global Studies from The New School."
+            },
+            "virginia": {
+                "role": "Director of Operations",
+                "about": "Virginia has worked as Editorial Project Manager at Éditions Gallimard and has led public and institutional communication projects in French agencies. In Brazil, she worked in third sector organizations focused on culture and social justice. At NOSSAS, she supervises the areas of Operations, Communications and Sustainability. Virginia has a degree in Political Philosophy from the Sorbonne and a postgraduate degree in Communication from Instituto CELSA."
+            },
+            "daniela": {
+                "role": "Mobilization Director",
+                "about": "Daniela has worked in mobilization campaigns, electoral campaigns, advocacy and legislative advice for almost a decade. She worked for four years with the chairman of the Human Rights Commission of the Legislative Assembly of Rio de Janeiro, together with Marielle Franco. Daniela is currently the Mobilization Director at NOSSAS and leads our campaigns and training team . Daniela is a sociologist from UFRJ and a master's student in Information Science, also from UFRJ."
+            },
+            "manoela": {
+                "role": "Chief Strategist",
+                "about": "Manoela is a specialist in human rights and gender studies and an activist for women's rights. She created and co-presents the Novo Normal podcast and is a columnist contributing to several media outlets, such as Folha de São Paulo, Veja, Volcánica and Mídia Ninja. Prior to NOSSAS, she was part of the Open Society Foundation’s LATAM team. Manoela holds a doctorate in citizen security from the Graduate Program in International Relations San Tiago Dantas."
+            },
+            "cledisson": {
+                "role": "Head de Advocacy",
+                "about": "Cledisson manages the advocacy area at NOSSAS, developing conjunctural and political risk analysis and developing advocacy strategies with partner organizations and decision makers. Before that, Cledisson was Executive Secretary of the National Human Rights Council of the Presidency of the Republic of Brazil from 2015 to 2016 and Parliamentary Advisor at the Legislative Assembly of Minas Gerais. Cledisson has a master's degree in Rural Development from UFRGS and  is a PhD student in Social Sciences from UFRRJ."
+            },
+            "debora": {
+                "role": "Senior Communication Manager",
+                "about": "Debora was born in Vila Kennedy, in the West Zone of Rio de Janeiro, where she is part of the collective Casa de Aya. Debora worked at TV GLOBO, she was a reporter for the newspaper O Globo and chief editor of Portal Viva Favela - a pioneering community journalism website in the sector. Debora is an advisor to Casa Fluminense, a member of the Columbia Women Fellowship cohort and a PhD student in Communication and Culture at UFRJ, where she researches technologies, communication, algorithms and favelas."
+            },
+            "pirola": {
+                "role": "Head of Technology",
+                "about": "Pirola is CTO at NOSSAS. A  leader of self-taught development from São Paulo, Pirola joined the team to work as a programmer, but with his vast technical knowledge, he quickly joined the coordination team and now he supervises all technology-related projects at NOSSAS. Before joining the organization, Pirola worked as an infographics specialist during the 2010 presidential elections in Brazil. A nature lover, in his spare time he likes to surf and spend time with his partner and son."
+            },
+            "talita": {
+                "role": "Senior Technology Manager",
+                "about": "Talita is a UX Designer and manages the technology area at NOSSAS, working at the intersection of design, technology and activism. Talita has experience with product strategy, user research, design thinking, agile methodologies, systemic thinking, UI and UX design. A graduate in Communication and Multimedia, Talita specialized in UX Design and has worked with large companies such as Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin and others."
+            }
+        },
+        "team": {
+            "title": "Team",
+            "adriele": {
+                "role": "Programmer",
+                "about": "Adriele is a black woman from Minas Gerais and is part of NOSSAS's tech team. Adriele has a degree from UFJF in Computer Science and began working as a programmer in 2014, and since then has been showing the importance of diversity in this environment, as well as the responsibilities and power that technology professionals have in contemporary society. In her spare time, she enjoys music, travelling, cooking, good company and good stories."
+            },
+            "alexandra": {
+                "role": "Logistics and HR Coordinator",
+                "about": "Alexandra is part of NOSSAS's Operations team, monitoring internal bureaucratic and administrative processes.  She has a passion for gastronomy, music and people. Before working at NOSSAS, Alexandra lived and worked in Denmark, Germany and England. In Brazil, she has worked as a manager and executive advisor for expatriates in the dredging sector. She’s a graduate in Management Processes at FGV in Rio and Hospitality at Highbury College, London."
+            },
+            "aline": {
+                "role": "Financial Coordinator",
+                "about": "Aline is the organization’s longest-serving employee. Aline has seen the entire evolutionary process since the first year of Meu Rio. During this period, she has worked at the head of the administrative structure, creating the basic operational processes. Aline is a workaholic, but in her spare time she conducts a spiritual study, teaching at a mediumistic education center. She considers her co-workers as family and has adopted all NOSSAS's kids as her own grandchildren."
+            },
+            "anabeatriz": {
+                "role": "Volunteers Coordinator at Mapa do Acolhimento",
+                "about": "Ana is a lawyer with a degree from PUC-SP, and is part of Mapa's team. From 2015 to 2016 she worked in family law at the Pinheiros Forum Family Court, closely monitoring cases of family demands without a gender perspective. After graduating, she took the specialization course in the care of women in situations of gender-based violence at IBCCRIM as a partnership with Instituto Avon and has been working for Mapa since 2018."
+            },
+            "anaclaudia": {
+                "role": "Designer and Mobilizer",
+                "about": "Ana Claudia is from Manaus and has worked for 7 years in third sector organizations in the Amazon. At NOSSAS, she works as a designer and mobilizer in the Creative and Communication teams. Ana has a degree in graphic design and is a visual arts student at the Federal University of Amazonas - UFAM."
+            },
+            "anderson": {
+                "role": "Data Coordinator",
+                "about": "Anderson has a degree in Political Science from UFPE, where he researched the production of public policies, legislative conflict and political-party polarization. It was through academic studies that Anderson came into contact with data and programming - an area in which he has been immersed ever since. At NOSSAS since 2019, he helps monitor relevant metrics and conducts observational experiments and analyses to test hypotheses on how to increase the organization's impact."
+            },
+            "bela": {
+                "role": "Design and Mobilization Coordinator",
+                "about": "Bela believes in design as a tool for problem-solving and social change.. At NOSSAS, Bela coordinates the branches of Economic Inclusion and Cities, in addition to the design activities. Bela has already worked at Fábula, and also coordinated the design of the 2018 campaign by federal deputy Alessandro Molon. Bela graduated from PUC-Rio during which time she went to the Polytechnic of Milan through the Ciencias sem Fronteiras Program."
+            },
+            "flavia": {
+                "role": "Data Analyst",
+                "about": "Flávia is a developer from Pernambuco. She is a researcher and co-founder of some projects involving education, the environment, the food chain and the promotion of technology for women. Flavia was a public servant for almost 2 years in parliamentary advice and evaluating public policies. She has a technical background in Systems Development, a degree in Political Science at UFPE with complementary training in Data Science."
+            },
+            "gabriela": {
+                "role": "Mapa do Acolhimento's Attendance Coordinator",
+                "about": "Gabriela is an anti-racist feminist and worked as an coordinator on the “Feminicidades” project, which aims to give voice to all types of women. She is a psychologist who graduated from PUC-SP, specializing in assisting women in situations of gender violence at IBCCRIM, with a focus on the Maria da Penha Law, Public Services, NGOs and domestic violence. Gabriela has a specialization in collective health from the Health Institute of the State Department of Health."
+            },
+            "gloria": {
+                "role": "Programmer",
+                "about": "Glória is from Bahia, currently living in Recife. She likes to learn about technology, information security and music. In addition, Gloria always pays attention to environments that encourage the growth of women in technology. An ex-law student, she decided to drop out of the course to dedicate herself to software development, going through Reprograma and starting her degree in Computer Science at UFPE."
+            },
+            "igor": {
+                "role": "Programmer",
+                "about": "Igor is a software developer and music producer. Igor has extensive programming experience and has been contributing to the development of new technologies at NOSSAS for years. Igor is a member of the Python Brasil Association, is passionate about music, culture and technology."
+            },
+            "isabel": {
+                "role": "Special Assistant to Alessandra Orofino",
+                "about": "Isabel has worked with production, HR and diversity management. Currently Isabel works as an editorial assistant for Greg News and is a personal assistant to NOSSAS’s Executive Director, providing support in her routine exchanges with partners and teams. Isabel has a degree in Business Administration from PUC-Rio with a specialization in Human Resources and Diversity, from ESG-UQÀM."
+            },
+            "izamir": {
+                "role": "Mobilizer",
+                "about": "Izamir is a socio-environmental activist interested in the sustainable development agenda of the Western Amazon. A native of the Amazon, Izamir worked as a communicator in some organizations and led third sector projects in Manaus. He holds a degree in Public Relations (UFAM) and journalism (FMF-Devry), an MBA in Digital Marketing from ESPM and is a specialist in Contemporary International Relations from UFRGS."
+            },
+            "karina": {
+                "role": "Mobilizer",
+                "about": "Karina is a biologist and environmentalist from Maranhão. Karina worked as coordinator of the Climate Working Group of the Engajamundo Youth Organization between 2018 and 2020, has been a leader in the USBEA Youth Protagonism community since 2015 and is part of the network of global leaders, International Exchange Alumni. Karina is passionate about education and culture, she loves dancing, walking on stilts and other circus skills. Karina is part of her local church's mission group and loves dialogues and stories."
+            },
+            "larissa": {
+                "role": "Manager at Mapa do Acolhimento",
+                "about": "Larissa is a psychologist, activist, feminist, LGBT + activist and is opposed to all forms of mental health hospitalization. Larissa has already worked in public health and social welfare services in Sao Paulo center and in the peripheries to guarantee the rights of vulnerable populations. As the manager of Mapa do Acolhimento, Larissa believes that technology can bring women together in the fight to end gender-based violence. Larissa is a graduate of PUC / SP and a specialist in mental health."
+            },
+            "leca": {
+                "role": "Sustainability Coordinator",
+                "about": "Graduated in Marketing, Leca brought her experience in the areas of commerce and relations to widen the sustainable sharing of BONDE with partner organizations and strengthen NOSSAS's micro donors network. Leca's work has helped to distribute the platform' s power to several partners, such as All Out, Pacto pela Democracia and Coletivo Papo Reto."
+            },
+            "leticia": {
+                "role": "Mobilizer",
+                "about": "Leticia has always been driven by the rights of migrants and refugees and by forms of integration in the city. At NOSSAS, she works on the training front for the Mobilizers Program. Before that, Leticia was an International Cooperation Assistant at the Center for International Health Relations at Fiocruz. Letícia has a master's degree in Management and Analysis of International Policies from PUC-Rio and a degree in International Relations from UFF."
+            },
+            "livia": {
+                "role": "Mobilization Coordinator",
+                "about": "A campaigner at Nossas, Lívia has previously worked on projects in the areas of gender, sustainability and human rights in organizations such as Actionaid and Amnesty International. She’s a graduate in International Relations from the Federal University of Rio de Janeiro with a specialization in Ecoliteracy from the University of Coimbra and UNESCO."
+            },
+            "luciana": {
+                "role": "Mobilizer",
+                "about": "Luciana is from Manaus and has been working with social projects related to education and humanization in the city for some years. In parallel to her work at NOSSAS, she coordinates a voluntary project that guides young people and adults from underprivileged communities who are interested in sitting Brazil’s National High School Exam, ENEM. She has a degree in Public Relations from UFAM and has a specialization in Business Communication and Digital Media."
+            },
+            "maira": {
+                "role": "Training Manager",
+                "about": "Maira is from Pernambuco, and she is interested in the issues of human rights, gender, sexual and reproductive Rights and drug policy. Anti-prohibition, feminist activist, Maira is a member of Nacional de Feministas Antiproibicionistas (RENFA) e the Articulação de Mulheres Brasileiras (AMB). Before NOSSAS, Maira worked as a reporter for Diario de Pernambuco and Fiocruz. Maira has a degree in Social Communication."
+            },
+            "sany": {
+                "role": "Communications Coordinator",
+                "about": "Sany has worked in communications since 2013. She has experience in content production for digital media, design, audiovisual production, consulting and education. In her spare time, Suny likes to practice circus activities, play percussion and immerse herself more and more in literature written by black women. Sany graduated in Advertising and specialized in the Production and Creation of Digital Content by ESPM."
+            },
+            "tayna": {
+                "role": "Sustainability Analyst",
+                "about": "Before joining the Sustainability team at NOSSAS, Tayná worked with customer services and customer relations, technical and functional support, active payment collection and sales, as well as working in education, as a classroom assistant in primary and secondary education. Tayná is a graduate student in Humanities with a specialization in Social Communication."
+            },
+            "thalita": {
+                "role": "Articulator at Mapa do Acolhimento",
+                "about": "Thalita is a feminist and anti-racist from Bahia. She is a defender of human rights with a special interest in topics at the intersection between race and gender that collaborate in the fight for justice and remedy of inequalities. She has a degree in Social Work from UFBA, where she discovered the areas of social welfare and socio-legal assistance, knowledge that she develops in her work in the Mapa do Acolhimento."
+            },
+            "vanessa": {
+                "role": "Coordinator at Mapa do Acolhimento",
+                "about": "Born and raised in Recife, Vanessa has teaching experience in Social Work and in political leadership training. She is an activist in the Brazilian evangelical progressive movement and facilitates the creation of training spaces for public advocacy in the areas of citizenship, racial justice and gender. Vanessa has a bachelor's degree in Social Work (UFPE), a postgraduate degree in Social Welfare Policy Management (UNICAP) and a Master's Degree in Education, Cultures and Identities (UFRPE)."
+            }
+        }
+    },
+    "who-finances": {
+        "alt": "Who finances NOSSAS?",
+        "title": "Who finances <strong>NOSSAS?</strong>",
+        "description": "NOSSAS is financed by Brazilian and international organizations and we also receive support from individuals who make monthly donations to the organization's projects. Since NOSSAS values transparency, our accounts are independently audited every year.",
+        "audit_action": "Download audit",
+        "donate_action": "Make a donation",
+        "foundations": {
+            "title": "Fundations",
+            "description": "In 2020, NOSSAS carried out activities financed by the following foundations:"
+        }
+    }
+}

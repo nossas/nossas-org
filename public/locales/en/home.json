@@ -1,0 +1,39 @@
+{
+    "cover": "NOSSAS STIMULATES DEMOCRATIC AND SOLIDARITY ACTIVISM IN BRAZIL",
+    "header": {
+        "title": "Join <strong>us</strong>",
+        "description": "NOSSAS helps individuals, collectives and organizations in their struggle for rights and better public policies. We share opportunities for action, methodologies and tools for creating impactful mobilizations. Explore our platform for activists and push your movement with us!"
+    },
+    "navigation": {
+        "join-us": {
+            "title": "Participate in a <br/><strong>campaign</strong>",
+            "about": "Find out the causes in which NOSSAS is currently engaged and participate in the organization's fight to defend rights and strengthen democracy.",
+            "navigate": "See the active campaigns"
+        },
+        "materials": {
+            "title": "Access our <br/><strong>educational materials</strong>",
+            "about": "NOSSAS offers really complete material with several tips to help collectives or organizations increase their impact.",
+            "navigate": "Visit the webpage"
+        },
+        "trainings": {
+            "title": "Get training in <br/><strong>methodologies of activism</strong>",
+            "about": "Throughout the year, NOSSAS carries out free activism training programs on different themes for people all over Brazil.  See how the program works.",
+            "navigate": "Check our schedule"
+        },
+        "incubations": {
+            "title": "Incubate your <br/><strong>project with us</strong>",
+            "about": "Receive training, support and mentoring through NOSSAS’s incubation program. We accelerate mobilization and solidarity projects that want to impact the world.",
+            "navigate": "Visit the webpage"
+        },
+        "technologies": {
+            "title": "Use the best <br/><strong>technologies for activism</strong>",
+            "about": "Discover BONDE, NOSSAS's technology platform, specially developed for amateur or experienced activists to create their custom-made campaigns.",
+            "navigate": "Discover BONDE"
+        }
+    },
+    "sustainability": {
+        "donate": "Make a <strong>donation</strong>",
+        "description": "NOSSAS is funded by donations from individuals and foundations which believe in our work and the impact we wish to have on the world. The organization does not accept money from political parties, public utilities or private companies, and our accounts are audited every year by independent professionals. Here's how to donate!",
+        "navigate": "I wish to make a donation"
+    }
+}

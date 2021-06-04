@@ -1,11 +1,21 @@
 import React from "react";
-import { Grid, UnorderedList, ListItem, Link, Image } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
+import {
+  Grid,
+  UnorderedList,
+  ListItem,
+  Link as LinkStyled,
+  Image,
+} from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
+import Link from "next/link";
+
 import Donation from "../Donation";
 import NewsletterForm from "../../components/NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
-const Footer = ({ t }) => {
+const Footer = () => {
+  const { t, i18n } = useTranslation("common");
+
   return (
     <footer>
       <Grid
@@ -23,17 +33,27 @@ const Footer = ({ t }) => {
           </Link>
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="/#join-us">{t("footer.actvist")}</Link>
+              <Link href="/#join-us">
+                <LinkStyled>{t("footer.navigation.join-us")}</LinkStyled>
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href="/about">{t("footer.about")}</Link>
+              <Link href="/about">
+                <LinkStyled>{t("footer.navigation.about")}</LinkStyled>
+              </Link>
             </ListItem>
             <ListItem>
-              <Donation variant="link">{t("footer.donate")}</Donation>
+              <Donation variant="link">
+                {t("footer.navigation.donate")}
+              </Donation>
             </ListItem>
-            <ListItem>
-              <Link href="/work-with-us">{t("footer.workwithus")}</Link>
-            </ListItem>
+            {i18n.language !== "en" && (
+              <ListItem>
+                <Link href="/work-with-us">
+                  <LinkStyled>{t("footer.navigation.work-with-us")}</LinkStyled>
+                </Link>
+              </ListItem>
+            )}
           </UnorderedList>
         </div>
         <NewsletterForm />
@@ -43,4 +63,4 @@ const Footer = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(Footer);
+export default Footer;

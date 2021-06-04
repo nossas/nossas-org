@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 import {
   Image,
   Text,
@@ -7,10 +8,8 @@ import {
   Stack,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { withTranslation } from "../../i18n";
 
 export interface SliderContentProps {
-  t: any;
   imageUrl: string;
   tag?: string;
   title: string;
@@ -19,40 +18,49 @@ export interface SliderContentProps {
 }
 
 const SliderContent: React.FC<SliderContentProps> = ({
-  t,
   imageUrl,
   tag,
   title,
   description,
   url,
-}) => (
-  <SimpleGrid columns={[1, 2]} gap={["45px", 12]}>
-    <Image src={imageUrl} alt={title} width={[315, 615]} height={[194, 357]} />
-    <Stack flex="1" direction="column" spacing="8">
-      {tag && (
-        <Heading as="h3" size="lg" color="nossas.blue">
-          | {tag}
-        </Heading>
-      )}
-      <Stack spacing="4">
-        <Heading as="h2" size="2xl" color="nossas.blue">
-          {title}
-        </Heading>
-        <Text fontSize={["xl", "2xl"]}>{description}</Text>
-        <Link
-          href={url}
-          fontSize={["xl", "2xl"]}
-          fontWeight="700"
-          color="nossas.pink"
-        >
-          {t("slider.defaults.more")}
-        </Link>
-      </Stack>
-    </Stack>
-  </SimpleGrid>
-);
+}) => {
+  const { t } = useTranslation("common");
 
-export default withTranslation("common")(SliderContent);
+  return (
+    <SimpleGrid columns={[1, 2]} gap={["45px", 12]}>
+      <Image
+        src={imageUrl}
+        alt={title}
+        width={[315, 615]}
+        height={[194, 357]}
+      />
+      <Stack flex="1" direction="column" spacing="8">
+        {tag && (
+          <Heading as="h3" size="lg" color="nossas.blue">
+            | {tag}
+          </Heading>
+        )}
+        <Stack spacing="4">
+          <Heading as="h2" size="2xl" color="nossas.blue">
+            {title}
+          </Heading>
+          <Text fontSize={["xl", "2xl"]}>{description}</Text>
+          <Link
+            href={url}
+            fontSize={["xl", "2xl"]}
+            fontWeight="700"
+            color="nossas.pink"
+          >
+            {t("know-more")}
+          </Link>
+        </Stack>
+      </Stack>
+    </SimpleGrid>
+  );
+};
+
+export default SliderContent;
+// export default withTranslation("common")(SliderContent);
 
 interface ImageTextProps {
   src: string;

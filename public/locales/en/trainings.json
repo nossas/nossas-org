@@ -1,0 +1,64 @@
+{
+    "cover": "Receive training in technologies for activism",
+    "learning": {
+        "title": "Come and <br/><strong>learn with us!</strong>",
+        "description": "We have a free training and mentoring program in activism for young people from Brazil's interior."
+    },
+    "now": {
+        "title": "Happening <strong>now</strong>",
+        "carousel": {
+            "1": {
+                "title": "MUVUCA",
+                "description": "NOSSAS’s first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
+                "action": "Find out more"
+            },
+            "2": {
+                "title": "PROGRAMA DE MOBILIZADORES",
+                "description": "People on this program will receive free training in mobilization, campaign communication and technologies for activism.",
+                "action": "Sign up for the next intake"
+            },
+            "3": {
+                "title": "PROGRAMA DE JOVENS MOBILIZADORAS",
+                "description": "This is a program aimed at young students in secondary education. In partnership with Girl Up! We're currently training 100 young girls about period poverty.",
+                "action": "Find out more"
+            }
+        }
+    },
+    "victories": {
+        "title": "Mobilizer Program <strong>Successes</strong>",
+        "carousel": {
+            "1": {
+                "title": "B.O Online para elas - Minas Gerais",
+                "description": "The Coletivo Abertha managed to get a Virtual Police Precinct installed in Minas Gerais state after a campaign mentored by NOSSAS. Now women can file police reports without leaving home.",
+                "action": "Find out more"
+            },
+            "2": {
+                "title": "Revitalização do Farol - Maranhão",
+                "description": "Former students of the Centro São José Operário, in São Luiz took part in our first training program and, through a pressure campaign, managed to get the Farol renovated, the place where community educational activities are held.",
+                "action": "Find out more"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "TESTIMONY",
+        "carousel": {
+            "1": {
+                "description": "It’s very beautiful and very powerful to participate in this and to see so many people together making it happen. Very historic.",
+                "people": "Ana Clara - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+            },
+            "2": {
+                "description": "I would like to thank NOSSAS. You are wonderful, the training is incredible, the methodology, everything is very organized! You really rock! Congratulations!",
+                "people": "Bruna B. - Programa de Jovens Mobilizadoras (Nov 2020)"
+            },
+            "3": {
+                "description": "Guys, I get goose bumps from each module. Our collective transformational power is so powerful. I'm feeling such a powerful connection, such a strong vibration. I'm very happy and grateful for this training opportunity",
+                "people": "Bruna M. - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+            }
+        }
+    },
+    "participate": {
+        "title": "Take part in our <br/><strong>Mobilizer program</strong>",
+        "description": "We have themed training happening all year round. Click to find the schedules and topics for 2021.",
+        "action": "I want to know more"
+    }
+}
