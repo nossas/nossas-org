@@ -14,17 +14,10 @@ canary:
   labels: {}
   progressDeadlineSeconds: 60
 deploymentLabels: {}
-env:
-  PORT: "3003"
-  NODE_ENV: "production"
-  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ""
-  NEXT_PUBLIC_BONDE_API_GRAPHQL_URL: "ws://api-graphql.staging.bonde.org/v1/graphql"
-  BONDE_API_GRAPHQL_URL: "https://api-graphql.staging.bonde.org/v1/graphql"
-  STRIPE_SECRET_KEY: ""
-  NEXT_PUBLIC_INCUBATIONS_WIDGET_ID: "20292"
-  NEXT_PUBLIC_MATERIALS_WIDGET_ID: "20293"
-  NEXT_PUBLIC_DONATION_WIDGET_ID: "24146"
-  NEXT_PUBLIC_NEWSLETTER_WIDGET_ID: "24147"
+env: {}
+envFrom:
+  - secretRef:
+      name: nossas-org
 hpa:
   cpuTargetAverageUtilization: 80
   enabled: false
