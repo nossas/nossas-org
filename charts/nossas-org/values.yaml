@@ -24,7 +24,7 @@ hpa:
   labels: {}
   maxReplicas: 6
   memoryTargetAverageUtilization: 80
-  minReplicas: 2
+  minReplicas: 1
 image:
   pullPolicy: IfNotPresent
   repository: draft
@@ -52,25 +52,24 @@ jxRequirements:
 knativeDeploy: false
 livenessProbe:
   initialDelaySeconds: 30
-  periodSeconds: 10
+  periodSeconds: 20
   probePath: ""
   successThreshold: 1
-  failureThreshold: 3
   timeoutSeconds: 30
 podAnnotations: {}
 podsLabels: {}
 probePath: /
 readinessProbe:
-  failureThreshold: 3
-  periodSeconds: 10
+  failureThreshold: 10
+  periodSeconds: 20
   probePath: ""
   successThreshold: 1
-  timeoutSeconds: 30
+  timeoutSeconds: 5
 replicaCount: 1
 resources:
   limits:
     cpu: 400m
-    memory: 256Mi
+    memory: 1Gi
   requests:
     cpu: 200m
     memory: 128Mi

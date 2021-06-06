@@ -16,4 +16,4 @@ COPY package*.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY . /usr/src/app
 EXPOSE 3003
-CMD ["sh","-c","yarn build && yarn start"]
+CMD ["sh","-c","./node_modules/.bin/next build && ./node_modules/.bin/next start -p $PORT"]
