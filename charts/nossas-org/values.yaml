@@ -47,7 +47,7 @@ jxRequirements:
     tls:
       email: "pirola@nossas.org"
       enabled: true
-      production: false
+      production: true
       secretName: ""
 knativeDeploy: false
 livenessProbe:
