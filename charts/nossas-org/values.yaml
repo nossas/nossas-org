@@ -51,20 +51,21 @@ jxRequirements:
       secretName: ""
 knativeDeploy: false
 livenessProbe:
-  initialDelaySeconds: 60
+  initialDelaySeconds: 30
   periodSeconds: 10
   probePath: ""
   successThreshold: 1
-  timeoutSeconds: 1
+  failureThreshold: 3
+  timeoutSeconds: 30
 podAnnotations: {}
 podsLabels: {}
 probePath: /
 readinessProbe:
-  failureThreshold: 1
+  failureThreshold: 3
   periodSeconds: 10
   probePath: ""
   successThreshold: 1
-  timeoutSeconds: 1
+  timeoutSeconds: 30
 replicaCount: 1
 resources:
   limits:
