@@ -40,15 +40,15 @@ jxRequirements:
   ingress:
     annotations: {}
     apiVersion: extensions/v1beta1
-    domain: ""
+    domain: "nossas.org"
     externalDNS: false
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: .
     serviceType: ""
     tls:
-      email: ""
-      enabled: false
+      email: "pirola@nossas.org"
+      enabled: true
       production: false
-      secretName: ""
+      # secretName: ""
 knativeDeploy: false
 livenessProbe:
   initialDelaySeconds: 60
