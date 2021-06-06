@@ -13,7 +13,7 @@ spec:
         stepTemplate:
           envFrom:
             - secretRef:
-                name: nossas-org
+                name: nossas-org-prod
           image: uses:jenkins-x/jx3-pipeline-catalog/tasks/typescript/release.yaml@versionStream
           name: ""
           resources:
