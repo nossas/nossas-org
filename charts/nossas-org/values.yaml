@@ -48,7 +48,7 @@ jxRequirements:
       email: "pirola@nossas.org"
       enabled: true
       production: false
-      # secretName: ""
+      secretName: ""
 knativeDeploy: false
 livenessProbe:
   initialDelaySeconds: 60

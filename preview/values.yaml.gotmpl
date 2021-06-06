@@ -1,6 +1,16 @@
 jxRequirements:
   ingress:
+    annotations: {}
+    apiVersion: extensions/v1beta1
+    domain: "nossas.org"
+    externalDNS: false
     namespaceSubDomain: "-pr{{ requiredEnv "PULL_NUMBER" }}."
+    serviceType: ""
+    tls:
+      email: "pirola@nossas.org"
+      enabled: true
+      production: false
+      secretName: ""
 
 image:
   repository: "{{ requiredEnv "DOCKER_REGISTRY" }}/{{ requiredEnv "DOCKER_REGISTRY_ORG" }}/{{ requiredEnv "APP_NAME" }}"
