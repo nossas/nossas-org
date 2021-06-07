@@ -17,7 +17,7 @@ const Finish: React.FC<FinishProps> = ({ name }) => {
       title={
         <div
           dangerouslySetInnerHTML={{
-            __html: t("donation.success.title", {
+            __html: t("donation.form.success.title", {
               interpolation: { escapeValue: false },
               name: name.split(" ")[0],
             }),
@@ -25,9 +25,9 @@ const Finish: React.FC<FinishProps> = ({ name }) => {
         />
       }
     >
-      <Text as="p">{t("donation.success.thanks")}</Text>
+      <Text as="p">{t("donation.form.success.thanks")}</Text>
       <Text as="p" mb="30px">
-        {t("donation.success.message")}
+        {t("donation.form.success.message")}
       </Text>
     </SuccessPanel>
   );
