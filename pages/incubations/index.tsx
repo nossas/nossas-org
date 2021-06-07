@@ -20,7 +20,7 @@ import {
   ThumbsUp,
   Transfer,
 } from "../../components/IconsSVG/Functionalities";
-import { ImageTextIncubations } from "./ImageTextIncubations";
+import { ImageTextIncubations } from "../../components/Slider/ImageTextIncubations";
 
 const ImageIcon = styled(Img)`
   transform: scale(${(props) => props.scale});
