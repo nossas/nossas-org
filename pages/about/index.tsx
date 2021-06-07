@@ -299,7 +299,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         title={
           <div
             dangerouslySetInnerHTML={{
-              __html: t("common:media.title", {
+              __html: t("common:media", {
                 interpolation: { escapeValue: false },
               }),
             }}
