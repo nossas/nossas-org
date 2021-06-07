@@ -21,8 +21,7 @@ export interface Props {
 }
 
 const SliderPanel: React.FC<Props> = ({ items, infiniteLoop, columns = 2 }) => {
-  const { width, isSSR } = useWindowSize();
-  const isMobile = width < 991;
+  const { isMobile, isSSR } = useWindowSize();
 
   if (isSSR) {
     return <p>Loading...</p>;
