@@ -63,7 +63,7 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
             as="h2"
             color="blue.main"
             fontSize={["xl", null, "3xl"]}
-            minH="185px"
+            minH={["185px", null, "auto"]}
           >
             {data.title}
           </CustomHeading>
