@@ -27,8 +27,8 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
 
     <Flex justify="center">
       <Stack
-        direction={["column", null, "row"]}
-        spacing={["0", "0", "0", "55px"]}
+        direction={["column", "column", "column", "row"]}
+        spacing="55px"
         maxWidth={maxWidth}
         justifyItems="center"
         justifyContent="center"
@@ -42,7 +42,6 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
             justifyContent="center"
             textAlign="center"
             maxW={width}
-            mb="55px"
           >
             {icon}
             <Text>{description}</Text>
