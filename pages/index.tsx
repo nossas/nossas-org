@@ -46,15 +46,13 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
           items={[
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: t("navigation.join-us.title", {
-                        interpolation: { escapeValue: false },
-                      }),
-                    }}
-                  />
-                </Heading>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("navigation.join-us.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               ),
               image: "/static/media/s3/mobilizacaohome.png",
               about: t("navigation.join-us.about"),
@@ -65,15 +63,13 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: t("navigation.materials.title", {
-                        interpolation: { escapeValue: false },
-                      }),
-                    }}
-                  />
-                </Heading>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("navigation.materials.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               ),
               image: "/static/media/s3/materiaiseducativoshome.png",
               about: t("navigation.materials.about"),
@@ -84,15 +80,13 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: t("navigation.trainings.title", {
-                        interpolation: { escapeValue: false },
-                      }),
-                    }}
-                  />
-                </Heading>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("navigation.trainings.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               ),
               image: "/static/media/s3/treinamentohome.png",
               about: t("navigation.trainings.about"),
@@ -103,15 +97,13 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: t("navigation.incubations.title", {
-                        interpolation: { escapeValue: false },
-                      }),
-                    }}
-                  />
-                </Heading>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("navigation.incubations.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               ),
               image: "/static/media/s3/apoioprojetohome.png",
               about: t("navigation.incubations.about"),
@@ -122,15 +114,13 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               title: (
-                <Heading as="h2" color="blue.main" fontSize="3xl">
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: t("navigation.technologies.title", {
-                        interpolation: { escapeValue: false },
-                      }),
-                    }}
-                  />
-                </Heading>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("navigation.technologies.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               ),
               image: "/static/media/s3/tecnologiashome.png",
               about: t("navigation.technologies.about"),
