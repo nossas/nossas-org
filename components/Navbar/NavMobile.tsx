@@ -12,7 +12,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { FaTimes } from "react-icons/fa";
-// import { withTranslation } from "../../i18n";
+import { useTranslation } from "next-i18next";
+
 import I18n from "../I18nButton";
 import Donation from "../Donation";
 import SocialMedia from "../SocialMedia";
@@ -31,7 +32,7 @@ const MobileStyled = styled.div`
 const NavMobile = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-  const t = (keyI18n: string) => keyI18n;
+  const { t } = useTranslation("common");
 
   return (
     <MobileStyled>
@@ -65,7 +66,7 @@ const NavMobile = ({ children }) => {
                   <Logo />
                 </NavLink>
               </Stack>
-              <Donation variant="outline">{t("donate.button")}</Donation>
+              <Donation variant="outline">{t("navbar.donate")}</Donation>
             </DrawerHeader>
 
             <DrawerBody display="flex" flexDirection="column" pt="40px">
@@ -85,4 +86,3 @@ const NavMobile = ({ children }) => {
 };
 
 export default NavMobile;
-// export default withTranslation("common")(NavMobile);
