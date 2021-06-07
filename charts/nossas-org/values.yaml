@@ -40,9 +40,9 @@ jxRequirements:
   ingress:
     annotations: {}
     apiVersion: extensions/v1beta1
-    domain: "nossas.org"
+    # domain: "nossas.org"
     externalDNS: false
-    namespaceSubDomain: .
+    # namespaceSubDomain: .
     serviceType: ""
     tls:
       email: "pirola@nossas.org"
