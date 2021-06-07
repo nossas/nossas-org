@@ -22,6 +22,17 @@ const BoxStyled = styled(Box)`
   }
 `;
 
+const CustomHeading = styled(Heading)`
+  @media screen and (max-width: 48em) {
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+`;
+
 export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
   const ref = React.useRef();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,18 +53,20 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
       <Stack direction={["column", "column", null, "row"]} position="relative">
         <Stack
           direction="column"
-          paddingY="55px"
+          paddingTop={["0", null, "55px"]}
+          paddingBottom="55px"
           paddingX={["15px", null]}
-          spacing="25px"
+          spacing={["40px", "25px"]}
           maxW="650px"
         >
-          {typeof data.title === "string" ? (
-            <Heading as="h2" color="blue.main" fontSize="lg">
-              {data.title}
-            </Heading>
-          ) : (
-            data.title
-          )}
+          <CustomHeading
+            as="h2"
+            color="blue.main"
+            fontSize={["xl", null, "3xl"]}
+            minH={["185px", null, "auto"]}
+          >
+            {data.title}
+          </CustomHeading>
           <Text>{data.about}</Text>
           {data.navigation && (
             <Link href={data.navigation.href}>

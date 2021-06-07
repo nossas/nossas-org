@@ -97,7 +97,7 @@ export const LeadersMembers: React.FC = () => {
           name: "Alessandra Orofino",
           role: t("teams.leaders.alessandra.role"),
           about: t("teams.leaders.alessandra.about"),
-          team: t("teams.leaders.title")
+          team: t("teams.leaders.title"),
         },
         {
           avatar: "/static/media/team/enrica-duncan.png",
@@ -288,7 +288,7 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/livia-merlin.png",
-          name: "Livia Merlin",
+          name: "Lívia Merlim",
           role: t("teams.team.livia.role"),
           about: t("teams.team.livia.about"),
           team: t("teams.team.title"),

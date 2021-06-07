@@ -1,10 +1,8 @@
 import React from "react";
-import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
   Box,
-  Button,
   Heading,
   Text,
   Flex,
@@ -38,7 +36,7 @@ const ImpactNumber = ({ numberText, description }) => (
   </Flex>
 );
 
-const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
+const QuemSomos: React.FC = () => {
   const { t } = useTranslation("about");
 
   return (
@@ -83,7 +81,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         </SimpleGrid>
       </Section>
       <Section padding={["50px 0", null, null, null, ""]}>
-        <Timeline t={t} isMobile={ua?.isMobile || false} />
+        <Timeline />
       </Section>
       {/* Impacto */}
       <Section bgColor="gray.light">
@@ -299,7 +297,7 @@ const QuemSomos: React.FC<WithUserAgentProps> = ({ ua }) => {
         title={
           <div
             dangerouslySetInnerHTML={{
-              __html: t("common:media.title", {
+              __html: t("common:media", {
                 interpolation: { escapeValue: false },
               }),
             }}
@@ -318,4 +316,4 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-export default withUserAgent(QuemSomos);
+export default QuemSomos;

@@ -4,6 +4,7 @@ import { Box, Heading, Stack, SimpleGrid, Text } from "@chakra-ui/react";
 
 import { Carousel } from "../../components/Slider";
 import { Timeline, ImageText } from "../../components/Timeline";
+import { useWindowSize } from "../../components/Page";
 
 const renderDesktop = (t: any) => [
   <SimpleGrid columns={4}>
@@ -188,7 +189,7 @@ const renderMobile = (t: any) => [
       text={t("timeline.2014.2")}
     />
   </Timeline>,
-  <Timeline title="2014" titleVisibility="hidden">
+  <Timeline title="2014">
     <ImageText
       href="https://www.paulistaaberta.minhasampa.org.br/"
       src="/static/media/timeline/paulistaaberta.png"
@@ -236,7 +237,7 @@ const renderMobile = (t: any) => [
       text={t("timeline.2018.2")}
     />
   </Timeline>,
-  <Timeline title="2018" titleVisibility="hidden">
+  <Timeline title="2018">
     <ImageText
       href="https://www.riosemcanudo.meurio.org.br/"
       src="/static/media/timeline/canudos.png"
@@ -265,7 +266,7 @@ const renderMobile = (t: any) => [
       text={t("timeline.2019.3")}
     />
   </Timeline>,
-  <Timeline title="2019" titleVisibility="hidden">
+  <Timeline title="2019">
     <ImageText
       src="/static/media/timeline/pec29.png"
       text={t("timeline.2019.4")}
@@ -292,7 +293,7 @@ const renderMobile = (t: any) => [
       text={t("timeline.2020.3")}
     />
   </Timeline>,
-  <Timeline title="2020" titleVisibility="hidden">
+  <Timeline title="2020">
     <ImageText
       href="https://www.4gparaestudar.nossas.org.br/"
       src="/static/media/timeline/4gpraestudantes.png"
@@ -311,8 +312,13 @@ const renderMobile = (t: any) => [
   </Timeline>,
 ];
 
-const TimelineView = ({ isMobile }: any) => {
+const TimelineView = () => {
   const { t } = useTranslation("about");
+  const { isMobile, isSSR } = useWindowSize();
+
+  if (isSSR) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <Stack direction="column">
@@ -330,7 +336,11 @@ const TimelineView = ({ isMobile }: any) => {
         </Box>
         <Text>{t("timeline.description")}</Text>
       </SimpleGrid>
-      <Carousel items={isMobile ? renderMobile(t) : renderDesktop(t)} />
+      {!isSSR ? (
+        <Carousel items={isMobile ? renderMobile(t) : renderDesktop(t)} />
+      ) : (
+        <p>Loading...</p>
+      )}
     </Stack>
   );
 };

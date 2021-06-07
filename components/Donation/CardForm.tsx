@@ -139,7 +139,7 @@ export const Fields: React.FC<FieldsProps> = ({
         label={t("donation.form.fields.cardholderName.label")}
         placeholder={t("donation.form.fields.cardholderName.placeholder")}
       />
-      <Stack direction="row" spacing={4}>
+      <Stack direction={["column", "row"]} spacing={4}>
         <SelectField
           flex={1.5}
           inline
