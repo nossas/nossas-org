@@ -104,7 +104,7 @@ const WorkWithUs: React.FC = () => (
           />
         </Box>
         <Text textAlign={["center", null, null, "left"]}>
-          Somos uma equipe comprometida com justiça e equidade, mas sua
+          Somos uma equipe comprometida com justiça e equidade, mas nossa
           composição ainda não reflete de forma adequada a diversidade do país
           onde vivemos. Por isso, em nossos processos seletivos priorizamos a
           candidatura de pessoas não-brancas (pretas, pardas e indígenas),

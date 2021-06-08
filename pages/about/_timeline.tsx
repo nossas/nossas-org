@@ -156,7 +156,7 @@ const renderDesktop = (t: any) => [
       <ImageText
         href="https://www.editalperiferiaquefaz.nossas.org/"
         src="/static/media/timeline/periferia-que-faz.png"
-        text="O primeiro programa de repasses do NOSSAS contemplou 12 coletivos periféricos nas cinco regiões do país."
+        text={t("timeline.2020.6")}
       />
     </Timeline>
   </SimpleGrid>,
@@ -307,7 +307,7 @@ const renderMobile = (t: any) => [
     <ImageText
       href="https://www.editalperiferiaquefaz.nossas.org/"
       src="/static/media/timeline/periferia-que-faz.png"
-      text="O primeiro programa de repasses do NOSSAS contemplou 12 coletivos periféricos nas cinco regiões do país."
+      text={t("timeline.2020.6")}
     />
   </Timeline>,
 ];
