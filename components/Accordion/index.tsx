@@ -44,9 +44,9 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
   return (
     <BoxStyled
       ref={ref}
-      cursor={!isOpen ? "pointer" : "normal"}
+      cursor={"pointer"}
       h={!isOpen ? "185px" : "auto"}
-      onClick={!isOpen ? onOpen : null}
+      onClick={!isOpen ? onOpen : onClose}
       overflow="hidden"
       borderColor="gray.main"
     >
