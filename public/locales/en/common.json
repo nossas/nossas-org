@@ -60,7 +60,7 @@
                 "imageAlt": "Successful donation!",
                 "title": "Thanks, <strong>{{name}}!</strong>",
                 "thanks": "Your donation makes all the difference!",
-                "message": "Thank you so much for your donation - it will help us continue our work :)"
+                "message": "Thank you for your donation - it will help us continue our work :)"
             }
         }
     },
@@ -144,7 +144,7 @@
             "description": "Sign up to receive notifications about NOSSAS's campaigns, news about projects and other opportunities:",
             "success": {
                 "title": "It cost!",
-                "description": "Glad you are here :) We will send news about projects, reports and campaigns from NOSSAS through this e-mail."
+                "description": "Glad you're here :) We'll send you news about NOSSAS' projects, reports and campaigns through this email."
             },
             "form": {
                 "email": {

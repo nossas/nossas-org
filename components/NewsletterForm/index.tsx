@@ -22,12 +22,8 @@ const Header = ({ inverted, title, description }) => (
       size="md"
     >
       {title}
-      {/* {t("newsletter.title")} */}
     </Heading>
-    <Text size="xs">
-      {description}
-      {/* {t("newsletter.description")} */}
-    </Text>
+    <Text size="xs">{description}</Text>
   </>
 );
 
@@ -119,4 +115,3 @@ const NewsletterForm = ({ inverted }: any) => {
 };
 
 export default NewsletterForm;
-// export default withTranslation("common")(NewsletterForm);
