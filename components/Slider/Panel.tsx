@@ -19,13 +19,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => {
   const { t } = useTranslation("common");
 
   return (
-    <Stack
-      flex={1}
-      boxShadow={["base"]}
-      rounded="base"
-      bgColor="white"
-      minHeight={["512px", null, "612px", null, "712px"]}
-    >
+    <Stack flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
       <Img src={item.src} alt={item.alt} objectFit="fill" />
       <Stack p={8} spacing={4} textAlign="left">
         <Link
