@@ -20,52 +20,7 @@ import {
   ThumbsUp,
   Transfer,
 } from "../../components/IconsSVG/Functionalities";
-
-interface ImageTextProps {
-  src: string;
-  alt?: string;
-  title: string;
-  description: string;
-  href?: string;
-  linkText?: string;
-}
-
-export const ImageText: React.FC<ImageTextProps> = ({
-  alt,
-  src,
-  title,
-  description,
-  href,
-  linkText,
-}) => {
-  return (
-    <Stack
-      direction={["column", "column", null, null, "row"]}
-      spacing="70px"
-      alignItems="center"
-    >
-      <Img
-        objectFit="cover"
-        boxSize={["357px", null, null, null, "357px", "427px"]}
-        src={src}
-        alt={alt}
-      />
-      <Stack spacing="10px" textAlign="left">
-        <Link href={href} target="_blank">
-          <Heading as="h3" color="blue.main" fontWeight="bold" size="md">
-            {title}
-          </Heading>
-        </Link>
-        <Text>{description}</Text>
-        {href && linkText ? (
-          <Link href={href} target="_blank" variant="pink">
-            {`${linkText} +`}
-          </Link>
-        ) : null}
-      </Stack>
-    </Stack>
-  );
-};
+import { ImageTextIncubations } from "../../components/Slider/ImageTextIncubations";
 
 const ImageIcon = styled(Img)`
   transform: scale(${(props) => props.scale});
@@ -147,33 +102,33 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           infiniteLoop
           showStatus
           items={[
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/meacolhelgbt.png"
               title={t("projects.carousel.1.title")}
               description={t("projects.carousel.1.description")}
               href="https://www.acolhelgbt.org/"
               linkText={t("projects.carousel.1.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/paneladepressao.png"
               title={t("projects.carousel.2.title")}
               description={t("projects.carousel.2.description")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/merepresenta.png"
               title={t("projects.carousel.3.title")}
               description={t("projects.carousel.3.description")}
               href="https://merepresenta.org.br/"
               linkText={t("projects.carousel.3.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-meurecife.jpg"
               title={t("projects.carousel.4.title")}
               description={t("projects.carousel.4.description")}
               href="https://www.meurecife.org.br/"
               linkText={t("projects.carousel.4.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/defezap.jpg"
               title={t("projects.carousel.5.title")}
               description={t("projects.carousel.5.description")}
@@ -199,42 +154,42 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           showStatus
           isMobile={ua?.isMobile || false}
           items={[
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/mapadoacolhimento.png"
               title={t("current-projects.carousel.1.title")}
               description={t("current-projects.carousel.1.description")}
               href="https://www.mapadoacolhimento.org/"
               linkText={t("current-projects.carousel.1.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-meurio.jpg"
               title={t("current-projects.carousel.2.title")}
               description={t("current-projects.carousel.2.description")}
               href="https://www.meurio.org.br/"
               linkText={t("current-projects.carousel.2.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-msp.jpg"
               title={t("current-projects.carousel.3.title")}
               description={t("current-projects.carousel.3.description")}
               href="https://www.minhasampa.org.br/"
               linkText={t("current-projects.carousel.3.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-rnc.jpg"
               title={t("current-projects.carousel.4.title")}
               description={t("current-projects.carousel.4.description")}
               href="https://www.redenossascidades.org/"
               linkText={t("current-projects.carousel.4.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-bonde.jpg"
               title={t("current-projects.carousel.5.title")}
               description={t("current-projects.carousel.5.description")}
               href="https://www.bonde.org/"
               linkText={t("current-projects.carousel.5.action")}
             />,
-            <ImageText
+            <ImageTextIncubations
               src="/static/media/s3/incubacoes-beta.jpg"
               title={t("current-projects.carousel.6.title")}
               description={t("current-projects.carousel.6.description")}
