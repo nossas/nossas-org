@@ -96,7 +96,7 @@ const Materials: React.FC = () => {
         >
           <SubscribeForm
             color="blue"
-            widgetId={parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID)}
+            kind="materials"
             title={t("mobilization.form.title")}
             submitText={t("mobilization.form.submit")}
             textSuccess={t("mobilization.form.success")}

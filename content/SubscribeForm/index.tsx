@@ -3,11 +3,12 @@ import { useTranslation } from "next-i18next";
 import { Button, Heading, Box, Stack, Text } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
 import * as Yup from "yup";
+import { getWidgetId, SubscribeKind } from "./settings";
 
-import InputField from "../components/Form/InputField";
-import SelectField from "../components/Form/SelectField";
-import SubmitFormEntry from "../components/Form/SubmitFormEntry";
-import SuccessPanel from "../components/Form/SuccessPanel";
+import InputField from "../../components/Form/InputField";
+import SelectField from "../../components/Form/SelectField";
+import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
+import SuccessPanel from "../../components/Form/SuccessPanel";
 
 interface Values {
   name: string;
@@ -21,7 +22,7 @@ interface SubscribeFormProps {
   title: string;
   submitText: string;
   textSuccess: string;
-  widgetId: number;
+  kind: SubscribeKind;
   color: "blue" | "pink" | "green";
   fieldsComponent?: React.FC;
 }
@@ -38,11 +39,12 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   title,
   submitText,
   textSuccess,
-  widgetId,
+  kind,
   color,
   fieldsComponent: FieldsComponent,
 }) => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+  const widgetId: number = getWidgetId(kind, i18n.language as any);
 
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">

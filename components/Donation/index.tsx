@@ -18,6 +18,7 @@ import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
 import { useTranslation } from "next-i18next";
 
+import { getWidgetId } from "../../content/SubscribeForm/settings";
 import getStripe from "../../lib/getStripe";
 import Lock from "./Lock";
 import {
@@ -52,7 +53,7 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const { t, i18n } = useTranslation("common");
-  // const i18n = { language: i18n.locale };
+  const widgetId = getWidgetId("donation", i18n.language as any);
   // use stripe in 2-step, see ./CardForm handleSubmit
   const stripe = useStripe();
   const elements = useElements();
@@ -106,7 +107,7 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
       initialValues={{
         ...yourDataInitialValues,
         ...cardInitialValues,
-        widget_id: parseInt(process.env.NEXT_PUBLIC_DONATION_WIDGET_ID),
+        widget_id: widgetId,
         currency: i18n.language === "pt-BR" ? "brl" : "usd",
       }}
       validationSchema={isYourData ? YourDataSchema({ t }) : CardSchema({ t })}
