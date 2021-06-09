@@ -14,9 +14,6 @@ export const Nav = ({ children }) => {
         const currentOffset = window.pageYOffset;
         setScrollUp(currentOffset < oldOffset ? true : false);
 
-        console.log("currentOffset: ", currentOffset);
-        console.log("oldOffset: ", oldOffset);
-
         return currentOffset;
       });
     };
