@@ -97,7 +97,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
             />
           </Box>
           <Box>
-            <Heading as="h2" color="green" maxW="249px" size="lg">
+            <Heading as="h2" color="green" maxW="300px" size="lg">
               <div
                 dangerouslySetInnerHTML={{
                   __html: t("use.title", {
