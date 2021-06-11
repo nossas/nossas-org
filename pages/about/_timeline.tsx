@@ -109,13 +109,13 @@ const renderDesktop = (t: any) => [
         src="/static/media/timeline/violencianaotemhora.png"
         text={t("timeline.2019.2")}
       />
+    </Timeline>
+    <Timeline title="2019" titleVisibility="hidden">
       <ImageText
         href="https://www.spsemcanudo.minhasampa.org.br/"
         src="/static/media/timeline/canudos-sp.png"
         text={t("timeline.2019.3")}
       />
-    </Timeline>
-    <Timeline title="2019" titleVisibility="hidden">
       <ImageText
         src="/static/media/timeline/pec29.png"
         text={t("timeline.2019.4")}
@@ -251,13 +251,13 @@ const renderMobile = (t: any) => [
       src="/static/media/timeline/violencianaotemhora.png"
       text={t("timeline.2019.2")}
     />
+  </Timeline>,
+  <Timeline title="2019">
     <ImageText
       href="https://www.spsemcanudo.minhasampa.org.br/"
       src="/static/media/timeline/canudos-sp.png"
       text={t("timeline.2019.3")}
     />
-  </Timeline>,
-  <Timeline title="2019">
     <ImageText
       src="/static/media/timeline/pec29.png"
       text={t("timeline.2019.4")}
