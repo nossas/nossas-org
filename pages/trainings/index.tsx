@@ -137,17 +137,17 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
           showStatus
           items={[
             <ImageText
-              src="/static/media/s3/depoimento.png"
+              src="/static/media/s3/depoimento.jpg"
               description={t("testimonials.carousel.1.description")}
               userName={t("testimonials.carousel.1.people")}
             />,
             <ImageText
-              src="/static/media/s3/depoimento2.png"
+              src="/static/media/s3/depoimento2.jpg"
               description={t("testimonials.carousel.2.description")}
               userName={t("testimonials.carousel.2.people")}
             />,
             <ImageText
-              src="/static/media/s3/depoimento3.png"
+              src="/static/media/s3/depoimento3.jpg"
               description={t("testimonials.carousel.3.description")}
               userName={t("testimonials.carousel.3.people")}
             />,
