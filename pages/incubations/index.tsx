@@ -110,11 +110,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               linkText={t("projects.carousel.1.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/paneladepressao.png"
-              title={t("projects.carousel.2.title")}
-              description={t("projects.carousel.2.description")}
-            />,
-            <ImageTextIncubations
               src="/static/media/s3/merepresenta.png"
               title={t("projects.carousel.3.title")}
               description={t("projects.carousel.3.description")}
@@ -127,6 +122,25 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               description={t("projects.carousel.4.description")}
               href="http://www.saibamais.defezap.org.br/"
               linkText={t("projects.carousel.4.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/incubacoes-rnc.jpg"
+              title={t("current-projects.carousel.2.title")}
+              description={t("current-projects.carousel.2.description")}
+              href="https://www.redenossascidades.org/"
+              linkText={t("current-projects.carousel.2.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/incubacoes-beta.jpg"
+              title={t("current-projects.carousel.3.title")}
+              description={t("current-projects.carousel.3.description")}
+              href="https://www.beta.org.br/"
+              linkText={t("current-projects.carousel.3.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/paneladepressao.png"
+              title={t("projects.carousel.2.title")}
+              description={t("projects.carousel.2.description")}
             />,
           ]}
         />
@@ -153,20 +167,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               description={t("current-projects.carousel.1.description")}
               href="https://www.mapadoacolhimento.org/"
               linkText={t("current-projects.carousel.1.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-rnc.jpg"
-              title={t("current-projects.carousel.2.title")}
-              description={t("current-projects.carousel.2.description")}
-              href="https://www.redenossascidades.org/"
-              linkText={t("current-projects.carousel.2.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-beta.jpg"
-              title={t("current-projects.carousel.3.title")}
-              description={t("current-projects.carousel.3.description")}
-              href="https://www.beta.org.br/"
-              linkText={t("current-projects.carousel.3.action")}
             />,
           ]}
         />
