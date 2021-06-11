@@ -29,6 +29,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
       <Stack
         direction={["column", "column", "column", "row"]}
         spacing="55px"
+        gridRowGap={[null, null, null, "40px"]}
         maxWidth={maxWidth}
         justifyItems="center"
         justifyContent="center"
