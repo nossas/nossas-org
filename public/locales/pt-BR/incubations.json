@@ -30,11 +30,6 @@
                 "description": "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas.",
                 "action": "Saiba mais"
             },
-            "4": {
-                "title": "Meu recife",
-                "description": "Fundada em 2015, essa rede ativista de mobilização social luta por uma Recife mais justa, transparente e sustentável.",
-                "action": "Saiba mais"
-            },
             "5": {
                 "title": "Defezap",
                 "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
@@ -50,24 +45,9 @@
                 "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
                 "action": "Saiba mais"
             },
-            "2": {
-                "title": "Meu rio",
-                "description": "A primeira experiência em incubação foi com o Meu Rio, uma rede de ação que mobiliza pessoas para participarem ativamente dos processos de decisão da cidade.",
-                "action": "Saiba mais"
-            },
-            "3": {
-                "title": "Minha sampa",
-                "description": "A rede paulistana de ação Minha Sampa faz mobilizações locais que aproximam os cidadãos da política.",
-                "action": "Saiba mais"
-            },
             "4": {
                 "title": "Rede nossas cidades",
                 "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
-                "action": "Saiba mais"
-            },
-            "5": {
-                "title": "Bonde",
-                "description": "Feita por ativistas para ativistas, a ferramenta de tecnologia do NOSSAS pode ser usada por qualquer pessoa ou organização que queira colocar sua campanha na rua!",
                 "action": "Saiba mais"
             },
             "6": {

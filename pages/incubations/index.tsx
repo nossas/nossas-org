@@ -2,7 +2,7 @@ import React from "react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Heading, Stack, Text, Img, Link } from "@chakra-ui/react";
+import { Heading, Img } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { Body, Section } from "../../components/Page";
@@ -122,13 +122,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               linkText={t("projects.carousel.3.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/incubacoes-meurecife.jpg"
-              title={t("projects.carousel.4.title")}
-              description={t("projects.carousel.4.description")}
-              href="https://www.meurecife.org.br/"
-              linkText={t("projects.carousel.4.action")}
-            />,
-            <ImageTextIncubations
               src="/static/media/s3/defezap.jpg"
               title={t("projects.carousel.5.title")}
               description={t("projects.carousel.5.description")}
@@ -162,32 +155,11 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               linkText={t("current-projects.carousel.1.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/incubacoes-meurio.jpg"
-              title={t("current-projects.carousel.2.title")}
-              description={t("current-projects.carousel.2.description")}
-              href="https://www.meurio.org.br/"
-              linkText={t("current-projects.carousel.2.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-msp.jpg"
-              title={t("current-projects.carousel.3.title")}
-              description={t("current-projects.carousel.3.description")}
-              href="https://www.minhasampa.org.br/"
-              linkText={t("current-projects.carousel.3.action")}
-            />,
-            <ImageTextIncubations
               src="/static/media/s3/incubacoes-rnc.jpg"
               title={t("current-projects.carousel.4.title")}
               description={t("current-projects.carousel.4.description")}
               href="https://www.redenossascidades.org/"
               linkText={t("current-projects.carousel.4.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-bonde.jpg"
-              title={t("current-projects.carousel.5.title")}
-              description={t("current-projects.carousel.5.description")}
-              href="https://www.bonde.org/"
-              linkText={t("current-projects.carousel.5.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/incubacoes-beta.jpg"
