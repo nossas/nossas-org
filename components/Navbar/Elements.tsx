@@ -1,20 +1,40 @@
+import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Flex, Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaBars } from "react-icons/fa";
 
-export const Nav = ({ children }) => (
-  <Flex
-    as="nav"
-    bgColor="blue.main"
-    height="70px"
-    alignItems="center"
-    justifyContent="space-between"
-    paddingX={["30px", "6%"]}
-  >
-    {children}
-  </Flex>
-);
+export const Nav = ({ children }) => {
+  const [offset, setOffset] = useState(0);
+  const [scrollUp, setScrollUp] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset((oldOffset) => {
+        const currentOffset = window.pageYOffset;
+        setScrollUp(currentOffset < oldOffset ? true : false);
+
+        return currentOffset;
+      });
+    };
+  }, []);
+
+  return (
+    <Flex
+      as="nav"
+      bgColor="blue.main"
+      height="70px"
+      position={scrollUp ? "sticky" : "relative"}
+      top="0px"
+      zIndex="999"
+      alignItems="center"
+      justifyContent="space-between"
+      paddingX={["30px", "6%"]}
+    >
+      {children}
+    </Flex>
+  );
+};
 
 interface NavLinkProps {
   href: string;
