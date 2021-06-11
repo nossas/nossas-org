@@ -21,33 +21,32 @@
             "4": "O programa de fundadores da Rede Nossas Cidades é lançado, com o objetivo de treinar pessoas de todo o Brasil para fundar suas redes de mobilização local."
         },
         "2016": {
-            "1": "O Defezap, primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, é criado. A ferramenta é doada à Comissão de Direitos Humanos da ALERJ.",
+            "1": "Defezap, primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, é criada. Posteriormente, a ferramenta é doada à Comissão de Direitos Humanos da ALERJ.",
             "2": "Nasce o Mapa do Acolhimento, uma rede de solidariedade que permite a conexão entre mulheres vítimas de violência e psicólogas ou advogadas voluntárias.",
             "3": "O Meu Rio barra um projeto de lei que garantiria mesada vitalícia a vereadores da cidade. A campanha gerou mais de 10 mil pressões em menos de 24 horas."
         },
         "2017": {
-            "1": "Beta, a primeira chatbot feminista do Facebook, é desenvolvida para dar visibilidade à luta feminista no Brasil e compartilhar oportunidades de agir pelos direitos das mulheres."
+            "1": "Beta, a primeira chatbot feminista do Facebook, é programada para dar visibilidade à luta feminista no Brasil e compartilhar oportunidades de agir pelos direitos das mulheres."
         },
         "2018": {
-            "1": "Lançamento do BONDE, a plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas.",
+            "1": "O BONDE, a plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas, é lançado.",
             "2": "Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio.",
-            "3": "O Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos de plástico em estabelecimentos comerciais, após uma mobilização histórica.",
-            "4": "Lançamento da primeira edição do Somos Cria, campanha de apoio a pré-vestibulares comunitários que ajudou na entrada de alunos periféricos nas universidades."
+            "3": "Após uma mobilização histórica, o Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos em estabelecimentos comerciais.",
+            "4": "Somos Cria, a primeira campanha de apoio a pré-vestibulares comunitários é lançada. Ela contribui para a entrada de alunos periféricos nas universidades."
         },
         "2019": {
             "1": "O Programa de Mobilizadores passa a oferecer treinamento em metodologias e ferramentas de mobilização para pessoas de várias cidades do Brasil.",
             "2": "Depois de muita pressão da Minha Sampa, dez Delegacias de Atendimento a Mulheres Vítimas de Violência passam a funcionar 24h em todo Estado de São Paulo.",
             "3": "No rastro da mobilização carioca, a Minha Sampa lidera campanha de pressão que leva a maior cidade do país a proibir a distribuição de canudos de plástico.",
-            "4": "Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão.",
-            "5": "A marca NOSSAS nasce para o mundo, e representa a superação do modelo de atuação por cidades ou projetos, em prol de amplas mobilizações nacionais."
+            "4": "Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão."
         },
         "2020": {
-            "1": "Tocada com outras 200 organizações, a campanha Renda Básica Que Queremos levou à aprovação do Auxílio Emergencial durante a pandemia.",
+            "1": "Tocada com outras 200 organizações, a campanha Renda Básica Que Queremos leva à aprovação do Auxílio Emergencial durante a pandemia.",
             "2": "A campanha distribui 400 mil reais a dez coletivos periféricos do Rio de Janeiro, beneficiando a mais de 3 mil famílias duramente atingidas pela crise sanitária.",
-            "3": "Graças à mobilização Sem Aula Sem Enem, estudantes lançaram mais de 4 mil campanhas locais em seus estados e obtiveram o adiamento do ENEM para 2021.",
-            "4": "33 cursinhos de pré-vestibular comunitário recebem apoio para inclusão digital durante a pandemia. A campanha beneficiou mais de 4,5 mil alunos em 10 estados do país, ao longo de três meses.",
+            "3": "Graças à mobilização Sem Aula Sem Enem, estudantes lançam mais de 4 mil campanhas locais em seus estados e conseguem o adiamento do ENEM para 2021.",
+            "4": "33 cursinhos de pré-vestibular comunitário recebem apoio para inclusão digital durante a pandemia. A campanha acaba beneficiando mais de 4,5 mil alunos em 10 estados do país, ao longo de três meses.",
             "5": "A primeira campanha de arrecadação a bater o milhão de reais possibilita a distribuição de cestas básicas e kits de higiene para comunidades indígenas da Amazônia por seis meses.",
-            "6": "O primeiro programa de repasses do NOSSAS contemplou 12 coletivos periféricos nas cinco regiões do país."
+            "6": "O primeiro programa de repasses do NOSSAS contempla 12 coletivos periféricos nas cinco regiões do país."
         }
     },
     "impact": {
@@ -65,7 +64,7 @@
             "description": "mudanças de política pública"
         },
         "campaigns": {
-            "number": "+230",
+            "number": "+200",
             "description": "campanhas lançadas"
         },
         "donations": {
@@ -73,7 +72,7 @@
             "description": "pessoas já fizeram doações"
         },
         "activists": {
-            "number": "+2,5 milhões",
+            "number": "+2,6 milhões",
             "description": "de pessoas mobilizadas"
         }
     },
