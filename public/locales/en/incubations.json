@@ -30,11 +30,6 @@
                 "action": "Find out more"
             },
             "4": {
-                "title": "Meu recife",
-                "description": "Founded in 2015, this mobilization network fights for a more transparent, fair and sustainable Recife.",
-                "action": "Find out more"
-            },
-            "5": {
                 "title": "Defezap",
                 "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, via Whatsapp, guaranteeing anonymity for the  victims.",
                 "action": "Find out more"
@@ -50,26 +45,11 @@
                 "action": "Find out more"
             },
             "2": {
-                "title": "Meu rio",
-                "description": "The first incubation experience was with Meu Rio, a network of activity that mobilizes people to actively participate in the city's decision-making processes.",
-                "action": "Find out more"
-            },
-            "3": {
-                "title": "Minha sampa",
-                "description": "Sao Paulo's network of activity, Minha Sampa, carries out local mobilizations that bring citizens closer to politics.",
-                "action": "Find out more"
-            },
-            "4": {
                 "title": "Rede nossas cidades",
                 "description": "A network of city-based activist communities spread across Brazil, including Meu Rio, Minha Sampa and Meu Recife.",
                 "action": "Find out more"
             },
-            "5": {
-                "title": "Bonde",
-                "description": "Made by activists for activists, NOSSAS's technology tool can be used by any person or organization that wants to put their campaign out into the world!",
-                "action": "Find out more"
-            },
-            "6": {
+            "3": {
                 "title": "Beta",
                 "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"

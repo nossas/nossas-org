@@ -120,17 +120,8 @@ const renderDesktop = (t: any) => [
         src="/static/media/timeline/pec29.png"
         text={t("timeline.2019.4")}
       />
-      <ImageText
-        src="/static/media/timeline/nossas.png"
-        text={t("timeline.2019.5")}
-      />
     </Timeline>
     <Timeline title="2020">
-      <ImageText
-        href="https://www.rendabasica.org.br/"
-        src="/static/media/timeline/rendabasica.png"
-        text={t("timeline.2020.1")}
-      />
       <ImageText
         href="https://www.covid19nasfavelas.meurio.org.br/"
         src="/static/media/timeline/covidnasfavelas.png"
@@ -141,13 +132,13 @@ const renderDesktop = (t: any) => [
         src="/static/media/timeline/semaulassemenem.png"
         text={t("timeline.2020.3")}
       />
-    </Timeline>
-    <Timeline title="2020" titleVisibility="hidden">
       <ImageText
         href="https://www.4gparaestudar.nossas.org.br/"
         src="/static/media/timeline/4gpraestudantes.png"
         text={t("timeline.2020.4")}
       />
+    </Timeline>
+    <Timeline title="2020" titleVisibility="hidden">
       <ImageText
         href="https://www.amazoniacontracovid.org.br/"
         src="/static/media/timeline/amazoniacontracovid.png"
@@ -271,17 +262,8 @@ const renderMobile = (t: any) => [
       src="/static/media/timeline/pec29.png"
       text={t("timeline.2019.4")}
     />
-    <ImageText
-      src="/static/media/timeline/nossas.png"
-      text={t("timeline.2019.5")}
-    />
   </Timeline>,
   <Timeline title="2020">
-    <ImageText
-      href="https://www.rendabasica.org.br/"
-      src="/static/media/timeline/rendabasica.png"
-      text={t("timeline.2020.1")}
-    />
     <ImageText
       href="https://www.covid19nasfavelas.meurio.org.br/"
       src="/static/media/timeline/covidnasfavelas.png"
