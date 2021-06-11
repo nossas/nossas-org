@@ -1,21 +1,21 @@
 {
-    "cover": "Create your own impact campaign!",
+    "cover": "Check out our educational materials!",
     "manual": {
         "title": "Download your <br/><strong>manual now!</strong>",
-        "description": "NOSSAS's mobilization manual summarizes much of what we have learned from a decade of experience with activism in Brazil. Also learn how to mobilize people around causes and organize them in solidarity networks.",
-        "action": "Download manual",
+        "description": "NOSSAS's mobilization manual summarizes much of what we have learned from a decade of experience with activism in Brazil. Check out how we mobilize people around causes or organize them in solidarity networks.",
+        "action": "Download manual (in portuguese)",
         "explain": {
             "title": "What can you learn from the manual?",
-            "1": "Identify the change you want to make in the world and trace strategies to reach your goal.",
-            "2": "Understand who to put pressure on and how, and discover the public you could mobilize.",
-            "3": "Create interesting narratives to mobilize your public on social media and in other shared spaces."
+            "1": "Tips for strategies to help people achieve the change they want to make in the world.",
+            "2": "Information to understand who to put pressure on and how, and discover the public to mobilize for a cause.",
+            "3": "Techniques for creating interesting narratives to mobilize the public on social media and in other shared spaces."
         }
     },
     "mobilization": {
         "title": "Mobilization <strong>manual</strong>",
-        "description": "Throughout the 10 chapters you will find references, successful cases, practical exercises and all the information you need to construct impact campaigns.",
+        "description": "Throughout the 10 chapters you will find references, successful cases, practical exercises and all the information we use to construct impact campaigns.",
         "form": {
-            "title": "Download manual",
+            "title": "Download manual in Portuguese",
             "submit": "Download",
             "success": "Super! Now verify your email (including the spam box), the manual that will help you put your campaign on the streets will arrive there soon :)"
         }

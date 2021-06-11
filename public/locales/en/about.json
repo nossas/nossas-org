@@ -1,13 +1,13 @@
 {
     "cover": "NOSSAS DEVELOPS TECHNOLOGIES, SHARES METHODOLOGIES, CONNECTS PEOPLE AND DEFENDS DEMOCRACY THROUGH ACTIVISM",
     "history": {
-        "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years the organization has been developing projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
+        "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years the organization has  projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
         "title": "OUR HISTORY",
-        "about": "NOSSAS was founded in 2011. Since then, we have drawn thousands of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and made progress in building solidarity networks."
+        "about": "NOSSAS was founded in 2011. Since then, we have drawn thousands of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and built solidarity networks at scale to address intractable problems."
     },
     "timeline": {
         "title": "Timeline",
-        "description": "Learn more about our history:",
+        "description": "Learn more about our history",
         "2011": {
             "1": "NOSSAS is founded as Meu Rio, a multi-cause organization bringing Rio’s residents closer to local politics."
         },
@@ -21,33 +21,32 @@
             "4": "The Founders Program of Rede Nossas Cidades is launched, with the aim of training people from all over Brazil to found their local mobilization networks."
         },
         "2016": {
-            "1": "Creation of Defezap, the first collaborative complaints and investigation system against state violence in Rio de Janeiro. The tool was donated to the Human Rights Commission of ALERJ.",
-            "2": "The Mapa do Acolhimento platform is launched, allowing women who are victims of violence to connect with a network of professionals willing to help them.",
+            "1": "Defezap, a Whatsapp-based system for collaborative reporting of state violence, is launched in Rio de Janeiro. The tool was later donated to the Human Rights Commission of ALERJ.",
+            "2": "Mapa do Acolhimento is deployed, allowing gender-based violence survivors to connect with a network of professionals willing to help them.",
             "3": "Meu Rio blocks a bill that would guarantee a lifetime allowance for city councilors. The campaign generated over 10 thousand supporters in less than 24 hours."
         },
         "2017": {
-            "1": "Beta, Facebook's first feminist chatbot, was developed to give visibility to the feminist struggle in Brazil and to share opportunities to act in defense of women's rights."
+            "1": "Beta, Facebook's first feminist chatbot, is launched, giving visibility to the feminist struggle in Brazil and sharing opportunities for action in defense of women's rights."
         },
         "2018": {
-            "1": "The BONDE  platform is launched for activists who want to create impactful websites to mobilize people and stimulate their causes.",
-            "2": "Right after the presidential elections in 2018, the campaign raised R$ 400.000,00 for organizations that assist populations vulnerable to hate speech.",
-            "3": "Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments after a historic mobilization.",
+            "1": "NOSSAS’ custom-made technology platform, BONDE, is made available for activists who want to create impactful websites to mobilize people and push their causes forward.",
+            "2": "Right after the presidential elections in 2018, the campaign raised BRL 400,000 for organizations that assist populations vulnerable to hate speech.",
+            "3": " After a historic mobilization, Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments.",
             "4": "Launch of the first edition of Somos Cria, a campaign to support community courses helping students from marginalized neighborhoods pass their university entrance exam."
         },
         "2019": {
             "1": "The mobilizers program offers free training in methodologies and mobilization tools for people from several cities in Brazil.",
-            "2": "After a lot of pressure from Minha Sampa, ten police precincts to help women who are victims of violence, start to operate 24/7 throughout Sao Paulo state.",
+            "2": "After a lot of pressure from Minha Sampa, ten police precincts, specialized in gender-based violence, start to operate 24/7 throughout São Paulo state.",
             "3": "In the wake of Rio's mobilization, Minha Sampa leads a similar pressure campaign and the largest city in the country bans plastic straws.",
-            "4": "Due to a mobilization of Beta, the feminist robot, PEC 29 (a Constitutional Amendment Proposal which would prohibit abortion even in regulated cases) is turned down in the Senate. Beta's followers sent more than 50,000 campaign emails.",
-            "5": "NOSSAS’ brand is born and represents the overcoming of the operating model by cities or projects, in favor of wide national mobilizations."
+            "4": "Due to a mobilization led by Beta, PEC 29 (a Constitutional Amendment Proposal which would prohibit abortion even in regulated cases) is turned down in the Senate. Beta's followers sent more than 50,000 campaign emails."
         },
         "2020": {
-            "1": "Together with 200 other organizations, the campaign for a Basic Income led to the approval of Emergency Aid during the pandemic.",
-            "2": "The campaign distributes 400 thousand Brazilian reals to ten favela collectives in Rio de Janeiro, benefiting more than 3,000 families that were badly affected by the pandemic.",
-            "3": "Due to the mobilization, students launched more than 4,000 local campaigns in their states and the Enem (Brazilian National High School Exam) was postponed.",
+            "1": "Together with 200 other organizations, the campaign for a Basic Income leads of the approval of Emergency Aid during the pandemic.",
+            "2": "The campaign distributes BRL 400,000 to ten favela collectives in Rio de Janeiro, benefiting more than 3,000 families that were badly affected by the pandemic.",
+            "3": "High-school students launch more than 4,000 local campaigns in their states and the Enem (Brazilian National High School Exam) is postponed.",
             "4": "33 community college preparatory courses receive support for digital inclusion during the pandemic. The campaign benefited more than 4,500 students in 10 states across the country.",
             "5": "The first fundraising campaign to hit a million reals makes it possible to distribute basic food parcels and hygiene kits to indigenous territories in the Amazon for six months.",
-            "6": "NOSSAS’ first Regrant Program included 12 communal groups in all five Brazilian regions."
+            "6": "NOSSAS’ Regrant Program benefits 12 grassroots groups in all five Brazilian regions."
         }
     },
     "impact": {
@@ -69,11 +68,11 @@
             "description": "campaigns launched"
         },
         "donations": {
-            "number": "+29 mil",
+            "number": "+29,000",
             "description": "individual donors"
         },
         "activists": {
-            "number": "+2,5 million",
+            "number": "+2,6 million",
             "description": "people mobilized"
         }
     },
@@ -112,7 +111,7 @@
             "title": "Leadership",
             "alessandra": {
                 "role": "Co-founder and Executive Director",
-                "about": "Alessandra is an activist, director, producer and writer with extensive experience in mobilizing people. Alessandra was a founding member of Purpose's NY agency, which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas blog, a columnist at Folha de São Paulo and a TED Global speaker. She currently runs Greg News - a satirical journalism show on HBO and is a fellow of the Obama Foundation. Alessandra has a degree from Columbia University in Economics and Human Rights."
+                "about": "Alessandra is a non-profit executive, activist, director, producer and writer with extensive experience in advocacy and campaigning. Alessandra was a very early member of Purpose PBC which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas, a columnist at Folha de São Paulo and a TED Global speaker. She is currently the showrunner at Greg News - a satirical journalism show on HBO - and a fellow at the Obama Foundation. Alessandra has a degree from Columbia University in Economics and Human Rights."
             },
             "enrica": {
                 "role": "Deputy Director and Director of Mapa do Acolhimento",

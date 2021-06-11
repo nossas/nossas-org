@@ -2,25 +2,25 @@
     "cover": "Get to know BONDE, our technology tool",
     "begin": {
         "title": "How BONDE <br/><strong>emerged</strong>",
-        "description": "We have the perfect tool for disseminating your cause. Together with an incredible technology team, we have developed a mobilization platform which is now available for other organizations to promote their causes too."
+        "description": "BONDE is a platform created by NOSSAS’ tech team to organize the campaigns. In it, you can find tools used to build impact-driven mobilizations. Today, other organizations are sharing this resource to add value and create impact to their campaigns."
     },
     "functionalities": {
         "title": "Features",
         "items": {
-            "computer": "Create pages for your mobilization campaigns",
-            "email": "Pressurize decision-makers by email, phone or with a petition",
-            "money": "Create a crowdfunding campaign for your project",
-            "subscription": "Sign up volunteers for you cause",
-            "communication": "Create a solidarity network and increase your impact"
+            "computer": "Webpage builder to create campaign pages",
+            "email": "Pressure tool to put pressure on decision makers by email, phone or with a petition",
+            "money": "Crowdfunding platform to raise money for a cause",
+            "subscription": "Application form to register and coordinate volunteers",
+            "communication": "Solidarity platform to create network between volunteers and people seeking for help"
         }
     },
     "use": {
-        "title": "Use BONDE to <strong>cause</strong>",
-        "description": "With our technology you can create pressure campaigns, crowdfunding campaigns, raise funds for your organization, create solidarity networks without needing any knowledge of programming.",
-        "action": "Sign up now"
+        "title": "DISCOVER <strong>BONDE</strong>",
+        "description": "With our technology anyone can create pressure campaigns, crowdfunding campaigns, raise funds for an organization, create solidarity networks without needing any knowledge of programming.",
+        "action": " Visit the webpage"
     },
     "who-used": {
-        "title": "Those who’ve used <br/><strong>BONDE for their causes</strong>"
+        "title": "Check out who has used <br/><strong>BONDE for their initiatives</strong>"
     },
     "campaigns": {
         "title": "Campaigns which <strong>made history</strong>",
