@@ -123,6 +123,20 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               href="http://www.saibamais.defezap.org.br/"
               linkText={t("projects.carousel.5.action")}
             />,
+            <ImageTextIncubations
+              src="/static/media/s3/incubacoes-rnc.jpg"
+              title={t("current-projects.carousel.4.title")}
+              description={t("current-projects.carousel.4.description")}
+              href="https://www.redenossascidades.org/"
+              linkText={t("current-projects.carousel.4.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/incubacoes-beta.jpg"
+              title={t("current-projects.carousel.6.title")}
+              description={t("current-projects.carousel.6.description")}
+              href="https://www.beta.org.br/"
+              linkText={t("current-projects.carousel.6.action")}
+            />,
           ]}
         />
       </Section>
@@ -148,20 +162,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               description={t("current-projects.carousel.1.description")}
               href="https://www.mapadoacolhimento.org/"
               linkText={t("current-projects.carousel.1.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-rnc.jpg"
-              title={t("current-projects.carousel.4.title")}
-              description={t("current-projects.carousel.4.description")}
-              href="https://www.redenossascidades.org/"
-              linkText={t("current-projects.carousel.4.action")}
-            />,
-            <ImageTextIncubations
-              src="/static/media/s3/incubacoes-beta.jpg"
-              title={t("current-projects.carousel.6.title")}
-              description={t("current-projects.carousel.6.description")}
-              href="https://www.beta.org.br/"
-              linkText={t("current-projects.carousel.6.action")}
             />,
           ]}
         />
