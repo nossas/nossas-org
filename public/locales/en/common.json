@@ -157,7 +157,7 @@
                     "required": "Enter your name"
                 },
                 "lastname": {
-                    "placeholder": "Lastname"
+                    "placeholder": "Surname"
                 },
                 "submit": "Save"
             }
