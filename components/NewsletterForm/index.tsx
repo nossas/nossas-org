@@ -6,6 +6,7 @@ import { useTranslation } from "next-i18next";
 
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
+import { getWidgetId } from "../../content/SubscribeForm/settings";
 
 interface Values {
   first_name: string;
@@ -28,15 +29,13 @@ const Header = ({ inverted, title, description }) => (
 );
 
 const NewsletterForm = ({ inverted }: any) => {
-  const { t } = useTranslation("common");
-
-  if (!process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID)
-    return <Text color="red">Você deve configurar o Widget da Newsletter</Text>;
+  const { t, i18n } = useTranslation("common");
+  const widgetId = getWidgetId("newsletter", i18n.language as any);
 
   return (
     <Stack spacing={4} maxW="430px">
       <SubmitFormEntry
-        widgetId={parseInt(process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID)}
+        widgetId={widgetId}
         successComponent={() => (
           <Header
             inverted={inverted}

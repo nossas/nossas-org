@@ -215,7 +215,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
       >
         <SubscribeForm
           color="blue"
-          widgetId={parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID)}
+          kind="incubations"
           title={t("incubate.form.title")}
           submitText={t("incubate.form.submit")}
           textSuccess={t("incubate.form.success")}

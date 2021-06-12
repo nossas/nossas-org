@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
 import { Button, Image, Text } from "@chakra-ui/react";
