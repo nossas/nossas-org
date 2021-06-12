@@ -31,7 +31,7 @@ ImageIcon.defaultProps = {
 };
 
 const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
-  const { t } = useTranslation("incubations");
+  const { t, i18n } = useTranslation("incubations");
 
   return (
     <Body>
@@ -166,28 +166,29 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           ]}
         />
       </Section>
-
-      <DescriptionBox
-        color="pink"
-        title={
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("incubate.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
+      {i18n.language === "pt-BR" && (
+        <DescriptionBox
+          color="pink"
+          title={
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("incubate.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
+          }
+          description={t("incubate.description")}
+        >
+          <SubscribeForm
+            color="blue"
+            kind="incubations"
+            title={t("incubate.form.title")}
+            submitText={t("incubate.form.submit")}
+            textSuccess={t("incubate.form.success")}
           />
-        }
-        description={t("incubate.description")}
-      >
-        <SubscribeForm
-          color="blue"
-          kind="incubations"
-          title={t("incubate.form.title")}
-          submitText={t("incubate.form.submit")}
-          textSuccess={t("incubate.form.success")}
-        />
-      </DescriptionBox>
+        </DescriptionBox>
+      )}
     </Body>
   );
 };
