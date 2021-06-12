@@ -107,16 +107,16 @@
             "1": {
                 "title": "Libera o tablet",
                 "description": "Sao Paulo's government purchased electronic tablets for public school students in 2020, but so far it has not provided the equipment to assist young people in their remote education.",
-                "navigate": "Press to release the tablet"
+                "navigate": "Pressure São Paulo’s government"
             },
             "2": {
                 "title": "Licenciamento ambiental fica",
-                "description": "At any time, the Brazilian Senate can vote on the Bill that makes environmental licensing in the country more flexible, putting national biomes and traditional populations at risk.",
-                "navigate": "Press to block this project"
+                "description": "At any time, the Brazilian Senate can vote on a Bill that makes environmental licensing in the country more flexible, putting national biomes and traditional populations at risk.",
+                "navigate": "Pressure Congress to block this project"
             },
             "3": {
                 "title": "Auxílio até o fim da pandemia",
-                "description": "The end of the emergency aid payments in 2021 could leave thousands of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
+                "description": "The end of the emergency aid payments in 2021 has left millions of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
                 "navigate": "Take part in the campaign"
             },
             "4": {
@@ -141,7 +141,7 @@
         },
         "newsletter": {
             "title": "Stay in touch",
-            "description": "Sign up to receive notifications about NOSSAS's campaigns, news about projects and other opportunities:",
+            "description": "Sign up to receive notifications about NOSSAS' campaigns, projects and other opportunities in portuguese:",
             "success": {
                 "title": "It cost!",
                 "description": "Glad you're here :) We'll send you news about NOSSAS' projects, reports and campaigns through this email."

@@ -1,8 +1,8 @@
 {
-    "cover": "Receive training in technologies for activism",
+    "cover": "Discover our training in technologies for activism",
     "learning": {
-        "title": "Come and <br/><strong>learn with us!</strong>",
-        "description": "We have a free training and mentoring program in activism for young people from Brazil's interior."
+        "title": "Learn more about <br/><strong>our training!</strong>",
+        "description": "We have a free training and mentoring program in activism in Portuguese for young people from Brazil's interior."
     },
     "now": {
         "title": "Happening <strong>now</strong>",
@@ -15,7 +15,7 @@
             "2": {
                 "title": "PROGRAMA DE MOBILIZADORES",
                 "description": "People on this program will receive free training in mobilization, campaign communication and technologies for activism.",
-                "action": "Sign up for the next intake"
+                "action": "Visit the webpage"
             },
             "3": {
                 "title": "PROGRAMA DE JOVENS MOBILIZADORAS",
@@ -43,16 +43,17 @@
         "title": "TESTIMONY",
         "carousel": {
             "1": {
-                "description": "It’s very beautiful and very powerful to participate in this and to see so many people together making it happen. Very historic.",
-                "people": "Ana Clara - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+                
+                "description": "\"The Programa de Jovens Mobilizadoras has been an amazing experience especially now that we released the #FreeToMenstruate campaign. The menstrual poverty, which was still very much forgotten, has now become a mobilization theme. Together we continue the fight for a fairer and more equal world for people who menstruate < 3\"",
+                "people": "Bia Diniz"
             },
             "2": {
-                "description": "I would like to thank NOSSAS. You are wonderful, the training is incredible, the methodology, everything is very organized! You really rock! Congratulations!",
-                "people": "Bruna B. - Programa de Jovens Mobilizadoras (Nov. 2020)"
+                "description": "\"I first met NOSSAS as a campaign supporter and later through the Programa de Mobilizadores. I was amazed by the methodology developed and the generosity of sharing. I am currently part of the Rede de Mobilizadores and thanks to it we created the Licenciamento Ambiental Fica campaign.\"",
+                "people": "Júlia Senra"
             },
             "3": {
-                "description": "Guys, I get goose bumps from each module. Our collective transformational power is so powerful. I'm feeling such a powerful connection, such a strong vibration. I'm very happy and grateful for this training opportunity.",
-                "people": "Bruna M. - Programa de Mobilizadores Região Amazônica (Jul. 2020)"
+                "description": "\"Being able to participate in the Programa de Jovens Mobilizadoras was one of the most remarkable experiences in my life in the activist environment. It was like taking the first step on a long road of struggle, it brought me different visions besides being able to meet several girls who share the same ideals as me about activism. Together we are stronger.\"",
+                "people": "Thalita Vitória"
             }
         }
     },

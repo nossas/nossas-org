@@ -1,8 +1,8 @@
 {
-    "cover": "INCUBATE YOUR PROJECT WITH US!",
+    "cover": "DISCOVER OUR INCUBATIONS",
     "whats-is": {
-        "title": "What is <strong>incubation?</strong>",
-        "description": "You can receive capacity building and support, or accelerate your mobilization or solidarity project using methodologies developed by NOSSAS."
+        "title": "What is an <strong>incubation?</strong>",
+        "description": "NOSSAS offers training, technology, legal counsel and support to incubate or accelerate mobilization-based projects using our methodologies."
     },
     "we-offer": {
         "title": "We offer:",
@@ -12,7 +12,7 @@
         "4": "Solutions for organizing people, team training and volunteer management"
     },
     "projects": {
-        "title": "What we have <br/><strong>already incubated:</strong>",
+        "title": "Previous  <br/><strong>incubations:</strong>",
         "description": "See some of the projects that have already gone through  NOSSAS's incubation process and are now works of reference in their areas of expertise.",
         "carousel": {
             "1": {
@@ -26,15 +26,10 @@
             },
             "3": {
                 "title": "Me Representa",
-                "description": "During each election the platform promotes digital meetings between candidates and electors who prioritize the same agendas.",
+                "description": "A matching platform  for candidates and electors who want to push for the realization of Human Rights.",
                 "action": "Find out more"
             },
             "4": {
-                "title": "Meu recife",
-                "description": "Founded in 2015, this mobilization network fights for a more transparent, fair and sustainable Recife.",
-                "action": "Find out more"
-            },
-            "5": {
                 "title": "Defezap",
                 "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, via Whatsapp, guaranteeing anonymity for the  victims.",
                 "action": "Find out more"
@@ -50,26 +45,11 @@
                 "action": "Find out more"
             },
             "2": {
-                "title": "Meu rio",
-                "description": "The first incubation experience was with Meu Rio, a network of activity that mobilizes people to actively participate in the city's decision-making processes.",
+                "title": "Rede nossas cidades",
+                "description": "A network of city-based activist communities spread across Brazil, including Meu Rio, Minha Sampa and Meu Recife.",
                 "action": "Find out more"
             },
             "3": {
-                "title": "Minha sampa",
-                "description": "Sao Paulo's network of activity, Minha Sampa, carries out local mobilizations that bring citizens closer to politics.",
-                "action": "Find out more"
-            },
-            "4": {
-                "title": "Rede nossas cidades",
-                "description": "Groups of activists from four cities spread across three regions of the country are now part of the Nossas Cidades Network, after an incubation process.",
-                "action": "Find out more"
-            },
-            "5": {
-                "title": "Bonde",
-                "description": "Made by activists for activists, NOSSAS's technology tool can be used by any person or organization that wants to put their campaign out into the world!",
-                "action": "Find out more"
-            },
-            "6": {
                 "title": "Beta",
                 "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"
