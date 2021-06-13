@@ -6,9 +6,10 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  Link,
+  Link as LinkStyled,
   Stack,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import styled from "@emotion/styled";
 import ButtonIcon from "./ButtonIcon";
 
@@ -51,8 +52,8 @@ export const MenuItem: React.FC<ItemProps> = ({ name, submenus }) => (
     <AccordionPanel>
       <Stack direction="column">
         {submenus.map((item: SubMenu) => (
-          <Link variant="mobile" href={item.href}>
-            {item.label}
+          <Link href={item.href}>
+            <LinkStyled variant="mobile">{item.label}</LinkStyled>
           </Link>
         ))}
       </Stack>
