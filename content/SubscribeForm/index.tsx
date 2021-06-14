@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { Button, Heading, Box, Stack, Text } from "@chakra-ui/react";
 import { Formik, Form, FormikProps } from "formik";
 import * as Yup from "yup";
-import { getWidgetId, SubscribeKind } from "./settings";
+import { useWidgetId, SubscribeKind } from "./settings";
 
 import InputField from "../../components/Form/InputField";
 import SelectField from "../../components/Form/SelectField";
@@ -44,7 +44,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   fieldsComponent: FieldsComponent,
 }) => {
   const { t, i18n } = useTranslation("common");
-  const widgetId: number = getWidgetId(kind, i18n.language as any);
+  const widgetId: number = useWidgetId(kind, i18n.language as any);
 
   return (
     <Box bg="white" p="12" borderRadius="12px" boxShadow="base">

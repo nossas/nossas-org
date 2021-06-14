@@ -1,4 +1,5 @@
-//
+import { useState, useEffect } from "react";
+import { fetchPostJSON } from "../../lib/apiHelpers";
 
 export type SubscribeKind =
   | "incubations"
@@ -14,29 +15,28 @@ export type Subscribe = {
 
 export type SubscribeSettings = Record<SubscribeKind, Subscribe>;
 
-export const getWidgetId = (
+export const getWidgetId = async (
   kind: SubscribeKind,
   locale: "pt-BR" | "en"
-): number =>
-  ({
-    incubations: {
-      "pt-BR": parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_WIDGET_ID),
-      en: parseInt(process.env.NEXT_PUBLIC_INCUBATIONS_EN_WIDGET_ID),
-    },
-    materials: {
-      "pt-BR": parseInt(process.env.NEXT_PUBLIC_MATERIALS_WIDGET_ID),
-      en: parseInt(process.env.NEXT_PUBLIC_MATERIALS_EN_WIDGET_ID),
-    },
-    donation: {
-      "pt-BR": parseInt(process.env.NEXT_PUBLIC_DONATION_WIDGET_ID),
-      en: parseInt(process.env.NEXT_PUBLIC_DONATION_EN_WIDGET_ID),
-    },
-    newsletter: {
-      "pt-BR": parseInt(process.env.NEXT_PUBLIC_NEWSLETTER_WIDGET_ID),
-      en: parseInt(process.env.NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID),
-    },
-    workwithus: {
-      "pt-BR": parseInt(process.env.NEXT_PUBLIC_WORKWITHUS_WIDGET_ID),
-      en: parseInt(process.env.NEXT_PUBLIC_WORKWITHUS_EN_WIDGET_ID),
-    },
-  }[kind][locale]);
+): Promise<number> => {
+  const resp: SubscribeSettings = await fetchPostJSON(
+    "http://localhost:3000/api/settings"
+  );
+
+  return resp[kind][locale];
+};
+
+export const useWidgetId = (
+  kind: SubscribeKind,
+  language: "pt-BR" | "en"
+): number => {
+  const [widgetId, setWidgetId] = useState(null);
+
+  useEffect(() => {
+    getWidgetId(kind, language).then((id: number) => {
+      setWidgetId(id);
+    });
+  }, [language]);
+
+  return widgetId;
+};
