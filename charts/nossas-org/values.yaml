@@ -46,7 +46,7 @@ jxRequirements:
     serviceType: ""
     tls:
       email: "pirola@nossas.org"
-      enabled: true
+      enabled: false
       production: false
       # secretName: ""
 knativeDeploy: false
