@@ -21,18 +21,23 @@
                 "action": "Saiba mais"
             },
             "2": {
-                "title": "Panela de pressão",
-                "description": "Nossa primeira tecnologia à serviço da participação popular: com o Panela de Pressão, qualquer pessoa montava sua campanha, em poucos cliques.",
-                "action": "Saiba mais"
-            },
-            "3": {
                 "title": "Me Representa",
                 "description": "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas.",
                 "action": "Saiba mais"
             },
-            "5": {
+            "3": {
                 "title": "Defezap",
                 "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
+                "action": "Saiba mais"
+            },
+            "4": {
+                "title": "Rede nossas cidades",
+                "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
+                "action": "Saiba mais"
+            },
+            "5": {
+                "title": "Beta",
+                "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
                 "action": "Saiba mais"
             }
         }
@@ -43,16 +48,6 @@
             "1": {
                 "title": "Mapa do acolhimento",
                 "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
-                "action": "Saiba mais"
-            },
-            "4": {
-                "title": "Rede nossas cidades",
-                "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
-                "action": "Saiba mais"
-            },
-            "6": {
-                "title": "Beta",
-                "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
                 "action": "Saiba mais"
             }
         }

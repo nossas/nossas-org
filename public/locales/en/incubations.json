@@ -21,17 +21,23 @@
                 "action": "Find out more"
             },
             "2": {
-                "title": "Panela de pressão",
-                "description": "Our first technology at the service of popular participation: with Pressure Panel, anyone could set up their campaign, in a few clicks."
-            },
-            "3": {
                 "title": "Me Representa",
                 "description": "A matching platform  for candidates and electors who want to push for the realization of Human Rights.",
                 "action": "Find out more"
             },
-            "4": {
+            "3": {
                 "title": "Defezap",
                 "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, via Whatsapp, guaranteeing anonymity for the  victims.",
+                "action": "Find out more"
+            },
+            "4": {
+                "title": "Rede nossas cidades",
+                "description": "A network of city-based activist communities spread across Brazil, including Meu Rio, Minha Sampa and Meu Recife.",
+                "action": "Find out more"
+            },
+            "5": {
+                "title": "Beta",
+                "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"
             }
         }
@@ -42,16 +48,6 @@
             "1": {
                 "title": "Mapa do acolhimento",
                 "description": "Mapa do Acolhimento connects women who have suffered violence to lawyers and psychologists who have volunteered their services to help them.",
-                "action": "Find out more"
-            },
-            "2": {
-                "title": "Rede nossas cidades",
-                "description": "A network of city-based activist communities spread across Brazil, including Meu Rio, Minha Sampa and Meu Recife.",
-                "action": "Find out more"
-            },
-            "3": {
-                "title": "Beta",
-                "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"
             }
         }

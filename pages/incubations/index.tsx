@@ -111,31 +111,31 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
             />,
             <ImageTextIncubations
               src="/static/media/s3/merepresenta.png"
-              title={t("projects.carousel.3.title")}
-              description={t("projects.carousel.3.description")}
+              title={t("projects.carousel.2.title")}
+              description={t("projects.carousel.2.description")}
               href="https://merepresenta.org.br/"
-              linkText={t("projects.carousel.3.action")}
+              linkText={t("projects.carousel.2.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/defezap.jpg"
-              title={t("projects.carousel.5.title")}
-              description={t("projects.carousel.5.description")}
+              title={t("projects.carousel.3.title")}
+              description={t("projects.carousel.3.description")}
               href="http://www.saibamais.defezap.org.br/"
-              linkText={t("projects.carousel.5.action")}
+              linkText={t("projects.carousel.3.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/incubacoes-rnc.jpg"
-              title={t("current-projects.carousel.4.title")}
-              description={t("current-projects.carousel.4.description")}
+              title={t("projects.carousel.4.title")}
+              description={t("projects.carousel.4.description")}
               href="https://www.redenossascidades.org/"
-              linkText={t("current-projects.carousel.4.action")}
+              linkText={t("projects.carousel.4.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/incubacoes-beta.jpg"
-              title={t("current-projects.carousel.6.title")}
-              description={t("current-projects.carousel.6.description")}
+              title={t("projects.carousel.5.title")}
+              description={t("projects.carousel.5.description")}
               href="https://www.beta.org.br/"
-              linkText={t("current-projects.carousel.6.action")}
+              linkText={t("projects.carousel.5.action")}
             />,
           ]}
         />
