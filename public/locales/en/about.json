@@ -9,7 +9,6 @@
         "title": "Timeline",
         "description": "Learn more about our history",
         "2011": {
-            "src": "/static/media/timeline/vitoria.png",
             "1": "NOSSAS is founded as Meu Rio, a multi-cause organization bringing Rio’s residents closer to local politics."
         },
         "2013": {
@@ -31,8 +30,11 @@
         },
         "2018": {
             "1": "NOSSAS’ custom-made technology platform, BONDE, is made available for activists who want to create impactful websites to mobilize people and push their causes forward.",
-            "2": "Right after the presidential elections in 2018, the campaign raised BRL 400,000 for organizations that assist populations vulnerable to hate speech.",
-            "3": " After a historic mobilization, Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments.",
+            "2": {
+                "src": "/static/media/timeline/EN/nfpt.png",
+                "text": "Right after the presidential elections in 2018, the campaign raised BRL 400,000 for organizations that assist populations vulnerable to hate speech."            
+            },
+            "3": "After a historic mobilization, Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments.",
             "4": "Launch of the first edition of Somos Cria, a campaign to support community courses helping students from marginalized neighborhoods pass their university entrance exam."
         },
         "2019": {

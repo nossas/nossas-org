@@ -30,7 +30,10 @@
         },
         "2018": {
             "1": "O BONDE, a plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas, é lançado.",
-            "2": "Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio.",
+            "2": {
+                "src": "/static/media/timeline/PT/nfpt.png",
+                "text": "Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio."
+            },
             "3": "Após uma mobilização histórica, o Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos em estabelecimentos comerciais.",
             "4": "Somos Cria, a primeira campanha de apoio a pré-vestibulares comunitários é lançada. Ela contribui para a entrada de alunos periféricos nas universidades."
         },
