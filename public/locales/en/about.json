@@ -9,6 +9,7 @@
         "title": "Timeline",
         "description": "Learn more about our history",
         "2011": {
+            "src": "/static/media/timeline/vitoria.png",
             "1": "NOSSAS is founded as Meu Rio, a multi-cause organization bringing Rio’s residents closer to local politics."
         },
         "2013": {
@@ -103,7 +104,7 @@
                 },
                 "ines": {
                     "role": "Director at Betty & Jacob Lafer",
-                    "about": "Ines is a specialist in philanthropic initiatives and public policies focused on children and adolescents. Ines started her career as a psychologist at SESI before becoming a consultant at Kairós Desenvolvimento Social on projects relating to children and adolescents and social work. She was a program manager at Fundação Maria Cecilia Souto Vidigal, a technical assistant for the Municipal Commission on Human Rights of Sao Paulo and Project Manager at IDIS."
+                    "about": "Inês is a specialist in philanthropic initiatives and public policies focused on children and adolescents. Ines started her career as a psychologist at SESI before becoming a consultant at Kairós Desenvolvimento Social on projects relating to children and adolescents and social work. She was a program manager at Fundação Maria Cecilia Souto Vidigal, a technical assistant for the Municipal Commission on Human Rights of Sao Paulo and Project Manager at IDIS."
                 }
             }
         },
