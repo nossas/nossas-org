@@ -6,13 +6,17 @@ import { FaBars } from "react-icons/fa";
 
 export const Nav = ({ children }) => {
   const [offset, setOffset] = useState(0);
-  const [scrollUp, setScrollUp] = useState(false);
+  const [scrollUp, setScrollUp] = useState(true);
 
   useEffect(() => {
     window.onscroll = () => {
       setOffset((oldOffset) => {
         const currentOffset = window.pageYOffset;
-        setScrollUp(currentOffset < oldOffset ? true : false);
+
+        let currentScrollUp = currentOffset < oldOffset ? true : false;
+        if (currentOffset < 100) currentScrollUp = true;
+
+        setScrollUp(currentScrollUp);
 
         return currentOffset;
       });
