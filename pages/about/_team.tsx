@@ -49,7 +49,7 @@ export const BoardMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/ines-laffer.png",
-          name: "Inês Laffer",
+          name: "Inês Lafer",
           role: t("teams.board.members.ines.role"),
           about: t("teams.board.members.ines.about"),
           team: t("teams.board.title"),

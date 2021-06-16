@@ -152,8 +152,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
         </Heading>
 
         <Carousel
-          infiniteLoop
-          showStatus
           isMobile={ua?.isMobile || false}
           items={[
             <ImageTextIncubations

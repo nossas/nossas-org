@@ -30,8 +30,11 @@
         },
         "2018": {
             "1": "NOSSAS’ custom-made technology platform, BONDE, is made available for activists who want to create impactful websites to mobilize people and push their causes forward.",
-            "2": "Right after the presidential elections in 2018, the campaign raised BRL 400,000 for organizations that assist populations vulnerable to hate speech.",
-            "3": " After a historic mobilization, Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments.",
+            "2": {
+                "src": "/static/media/timeline/EN/nfpt.png",
+                "text": "Right after the presidential elections in 2018, the campaign raised BRL 400,000 for organizations that assist populations vulnerable to hate speech."            
+            },
+            "3": "After a historic mobilization, Rio de Janeiro is the first state capital in the country to ban straws in commercial establishments.",
             "4": "Launch of the first edition of Somos Cria, a campaign to support community courses helping students from marginalized neighborhoods pass their university entrance exam."
         },
         "2019": {
@@ -103,7 +106,7 @@
                 },
                 "ines": {
                     "role": "Director at Betty & Jacob Lafer",
-                    "about": "Ines is a specialist in philanthropic initiatives and public policies focused on children and adolescents. Ines started her career as a psychologist at SESI before becoming a consultant at Kairós Desenvolvimento Social on projects relating to children and adolescents and social work. She was a program manager at Fundação Maria Cecilia Souto Vidigal, a technical assistant for the Municipal Commission on Human Rights of Sao Paulo and Project Manager at IDIS."
+                    "about": "Inês is a specialist in philanthropic initiatives and public policies focused on children and adolescents. Ines started her career as a psychologist at SESI before becoming a consultant at Kairós Desenvolvimento Social on projects relating to children and adolescents and social work. She was a program manager at Fundação Maria Cecilia Souto Vidigal, a technical assistant for the Municipal Commission on Human Rights of Sao Paulo and Project Manager at IDIS."
                 }
             }
         },
