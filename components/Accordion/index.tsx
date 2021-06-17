@@ -54,9 +54,9 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
         <Stack
           direction="column"
           paddingTop={["0", null, "55px"]}
-          paddingBottom="55px"
+          paddingBottom="30px"
           paddingX={["15px", null]}
-          spacing={["40px", "25px"]}
+          spacing={["10px", "10px", "25px"]}
           maxW="650px"
         >
           <CustomHeading
@@ -67,13 +67,16 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           >
             {data.title}
           </CustomHeading>
+
           <Text>{data.about}</Text>
+
           {data.navigation && (
             <Link href={data.navigation.href}>
               <LinkStyled variant="pink">{data.navigation.title}</LinkStyled>
             </Link>
           )}
         </Stack>
+
         <Box flex={[null, null, null, "1"]} paddingY="15px">
           <Image
             margin="0 auto"
@@ -82,6 +85,7 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
             src={data.image}
           />
         </Box>
+
         <Box
           position={["absolute", "absolute", null, "relative"]}
           right="30px"
