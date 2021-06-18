@@ -49,6 +49,7 @@ const QuemSomos: React.FC = () => {
         title={t("cover")}
         titleColor="white"
         titleAlign="left"
+        titleMarginTop={["50px", "65px", "40px", "70px", "0"]}
       />
       {/* History */}
       <Section
