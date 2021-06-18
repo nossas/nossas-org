@@ -9,6 +9,7 @@ import Hero from "../../components/Hero";
 import {
   MegaphoneYellow,
   TransferPink,
+  ComputerBlue,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -44,18 +45,25 @@ const WorkWithUs: React.FC = () => (
       </Heading>
 
       <Stack
-        direction={["column", null, "row"]}
-        spacing={["50px", "100px", "300px"]}
-        alignItems={["center", null, "flex-end"]}
-        justifyContent="center"
-        mb="50px"
+        maxW="1800px"
+        direction={["column", "column", "column", "row"]}
+        spacing={20}
+        alignItems="center"
+        justifyContent="space-between"
+        mb={12}
         textAlign="center"
       >
         <Stack alignItems="center" spacing={4}>
           <MegaphoneYellow />
 
-          <Text fontFamily="Bebas Neue" color="black" fontSize="30px">
-            <b>DIRETOR(A) DE CAMPANHAS</b>
+          <Text
+            fontFamily="Bebas Neue"
+            color="black"
+            fontSize="30px"
+            fontWeight="bold"
+            whiteSpace="nowrap"
+          >
+            DIRETOR(A) DE CAMPANHAS
           </Text>
 
           <Link
@@ -71,12 +79,41 @@ const WorkWithUs: React.FC = () => (
         <Stack alignItems="center" spacing={4}>
           <TransferPink />
 
-          <Text fontFamily="Bebas Neue" fontSize="30px" color="black">
-            <b>MOBILIZADOR(A) EM SÃO PAULO</b>
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            whiteSpace="nowrap"
+          >
+            MOBILIZADOR(A) EM SÃO PAULO
           </Text>
 
           <Link
             href="https://nossas.recruitee.com/o/mobilizadora-i-sao-paulo"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={4}>
+          <ComputerBlue />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            whiteSpace="nowrap"
+          >
+            PROGRAMADORA WEB
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/programadora-web-pleno"
             target="blank"
           >
             <Button size="sm" width="140px">

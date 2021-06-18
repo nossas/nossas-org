@@ -12,3 +12,4 @@ export { default as ThumbsUp } from "./ThumbsUp";
 export { default as People } from "./People";
 export { default as MegaphoneYellow } from "./MegaphoneYellow";
 export { default as TransferPink } from "./TransferPink";
+export { default as ComputerBlue } from "./ComputerBlue";
