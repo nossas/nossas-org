@@ -14,6 +14,7 @@ interface HeroProps {
   imageDesc?: string;
   videoUrl?: string;
   maxWidth?: string;
+  titleMarginTop?: string | Array<string>;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -23,6 +24,7 @@ const Hero: React.FC<HeroProps> = ({
   title,
   titleColor,
   titleAlign,
+  titleMarginTop,
   left,
   Subtitle,
   imageDesc,
@@ -39,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({
     <section>
       <Flex
         justifyContent="center"
-        minHeight={["600px", "670px"]}
+        minHeight={["700px", "600px", "800px", "700px", "670px"]}
         maxHeight={["600px", "670px"]}
         bgColor={bgColor}
         position="relative"
@@ -88,6 +90,7 @@ const Hero: React.FC<HeroProps> = ({
               fontWeight="bold"
               textColor={titleColor}
               textAlign={titleAlign}
+              mt={titleMarginTop}
               size="lg"
             >
               {title}
