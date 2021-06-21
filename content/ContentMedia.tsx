@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 
-import Media from "../components/Media";
+import { Media } from "../components/Media";
 
-const ContentMedia = ({ title }: any) => {
+export const ContentMedia = ({ title }: any) => {
   const { i18n } = useTranslation("common");
 
   return (
@@ -63,5 +63,3 @@ const ContentMedia = ({ title }: any) => {
     />
   );
 };
-
-export default ContentMedia;
