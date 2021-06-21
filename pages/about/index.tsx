@@ -1,47 +1,28 @@
-import React from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
   Box,
   Heading,
   Text,
-  Flex,
   SimpleGrid,
   Stack,
   Image,
   Link,
 } from "@chakra-ui/react";
 
+import { ImpactNumber } from "./_impactNumber";
 import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import Media from "../../content/Media";
+import { ContentMedia } from "../../content/ContentMedia";
 import Timeline from "./_timeline";
 import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
-
-const ImpactNumber = ({ numberText, description }) => (
-  <Flex direction="column">
-    <Heading
-      as="span"
-      size="lg"
-      color="pink.main"
-      fontWeight="bold"
-      lineHeight=".8"
-    >
-      {numberText}
-    </Heading>
-    <Text as="span" size="sm">
-      {description}
-    </Text>
-  </Flex>
-);
 
 const QuemSomos: React.FC = () => {
   const { t } = useTranslation("about");
 
   return (
     <Body>
-      {/* Cover */}
       <Hero
         maxWidth="860px"
         bgColor="blue.main"
@@ -50,7 +31,7 @@ const QuemSomos: React.FC = () => {
         titleColor="white"
         titleAlign="left"
       />
-      {/* History */}
+
       <Section
         flexDirection="column"
         alignItems="flex-start"
@@ -65,24 +46,27 @@ const QuemSomos: React.FC = () => {
           <Box margin="0 auto">
             <Image src="/static/media/s3/incubations-tudonossas.png" />
           </Box>
+
           <Text>{t("history.description")}</Text>
         </SimpleGrid>
+
         <SimpleGrid
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
         >
-          <Box>
-            <Heading as="h2" variant="tag">
-              {t("history.title")}
-            </Heading>
-          </Box>
+          <Heading as="h2" variant="tag">
+            {t("history.title")}
+          </Heading>
+
           <Text>{t("history.about")}</Text>
         </SimpleGrid>
       </Section>
+
       <Section padding={["50px 0", null, null, null, ""]}>
         <Timeline />
       </Section>
+
       {/* Impacto */}
       <Section bgColor="gray.light">
         <SimpleGrid
@@ -101,6 +85,7 @@ const QuemSomos: React.FC = () => {
               />
             </Heading>
           </Box>
+
           <SimpleGrid
             columns={[2, null, null, 2, 3]}
             gridColumnGap="20px"
@@ -134,6 +119,7 @@ const QuemSomos: React.FC = () => {
           </SimpleGrid>
         </SimpleGrid>
       </Section>
+
       {/* Equipe */}
       <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
         <>
@@ -142,6 +128,7 @@ const QuemSomos: React.FC = () => {
           <TeamMembers />
         </>
       </Section>
+
       {/* Quem financia */}
       <Section spacing={["30px", "170px"]}>
         <SimpleGrid
@@ -158,6 +145,7 @@ const QuemSomos: React.FC = () => {
               alt={t("who-finances.alt")}
             />
           </Box>
+
           <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
             <Heading as="h2" size="lg" color="green">
               <div
@@ -168,7 +156,9 @@ const QuemSomos: React.FC = () => {
                 }}
               />
             </Heading>
+
             <Text>{t("who-finances.description")}</Text>
+
             <Stack direction="row" spacing="20px">
               <Donation size="sm" variant="pink" display={["none", "block"]}>
                 {t("who-finances.donate_action")}
@@ -176,6 +166,7 @@ const QuemSomos: React.FC = () => {
             </Stack>
           </Stack>
         </SimpleGrid>
+
         <Stack direction="column">
           <SimpleGrid
             columns={[1, null, null, 2]}
@@ -187,8 +178,10 @@ const QuemSomos: React.FC = () => {
                 {t("who-finances.foundations.title")}
               </Heading>
             </Box>
+
             <Text>{t("who-finances.foundations.description")}</Text>
           </SimpleGrid>
+
           <SimpleGrid
             columns={[2, null, null, null, 4]}
             rowGap={["20px", null, null, null, "45px"]}
@@ -293,7 +286,7 @@ const QuemSomos: React.FC = () => {
       </Section>
 
       {/* Na midia */}
-      <Media
+      <ContentMedia
         title={
           <div
             dangerouslySetInnerHTML={{
