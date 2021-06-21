@@ -88,6 +88,7 @@ export const LeadersMembersMobile: React.FC = () => {
 
 export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("about");
+
   return (
     <EmployeeTeam
       title={t("teams.leaders.title")}
