@@ -16,3 +16,5 @@ export const ImpactNumber = ({ numberText, description }) => (
     </Text>
   </Flex>
 );
+
+export default ImpactNumber;
