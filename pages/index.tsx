@@ -1,24 +1,23 @@
-import React from "react";
 import { Flex, Heading, Image, Text, Stack } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Hero from "../components/Hero";
+import Header from "../content/Header";
 import { Body, Section } from "../components/Page";
 import Donation from "../components/Donation";
 import { Navigation } from "../components/Accordion";
 import WeAreDoing from "../content/WeAreDoing";
-import Media from "../content/Media";
-import Header from "../content/Header";
+import { ContentMedia } from "../content/ContentMedia";
 
 const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
   const { t } = useTranslation("home");
 
   return (
     <Body>
-      {/* Cover */}
       <Hero title={t("cover")} videoUrl="/static/media/covers/home.mp4" />
+
       <Section id="join-us">
         <Header
           title={
@@ -34,6 +33,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
           description={t("header.description")}
         />
       </Section>
+
       <Section
         alignItems="center"
         justifyContent="center"
@@ -149,27 +149,32 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             alt="Sustentabilidade"
           />
         </Flex>
+
         <Stack
           flex={1.5}
           spacing={8}
           alignItems={["center", null, null, "flex-start"]}
         >
-          <Heading as="h2" size="lg" color="green">
-            <div
-              dangerouslySetInnerHTML={{
-                __html: t("sustainability.donate", {
-                  interpolation: { escapeValue: false },
-                }),
-              }}
-            />
-          </Heading>
+          <Heading
+            as="h2"
+            size="lg"
+            color="green"
+            dangerouslySetInnerHTML={{
+              __html: t("sustainability.donate", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+
           <Text textAlign={["center", "left"]} maxW="711px">
             {t("sustainability.description")}
           </Text>
+
           <Donation>{t("sustainability.navigate")}</Donation>
         </Stack>
       </Section>
-      <Media
+
+      <ContentMedia
         title={
           <div
             dangerouslySetInnerHTML={{
