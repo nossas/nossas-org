@@ -141,15 +141,16 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
         />
       </Section>
       <Section direction="column" spacing="30px">
-        <Heading as="h2" color="green" size="lg">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: t("current-projects.title", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
-        </Heading>
+        <Heading
+          as="h2"
+          color="green"
+          size="lg"
+          dangerouslySetInnerHTML={{
+            __html: t("current-projects.title", {
+              interpolation: { escapeValue: false },
+            }),
+          }}
+        />
 
         <Carousel
           isMobile={ua?.isMobile || false}
