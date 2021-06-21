@@ -43,9 +43,10 @@ const QuemSomos: React.FC = () => {
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
         >
-          <Box margin="0 auto">
-            <Image src="/static/media/s3/incubations-tudonossas.png" />
-          </Box>
+          <Image
+            src="/static/media/s3/incubations-tudonossas.png"
+            margin="0 auto"
+          />
 
           <Text>{t("history.description")}</Text>
         </SimpleGrid>
@@ -75,15 +76,16 @@ const QuemSomos: React.FC = () => {
           rowGap="50px"
         >
           <Box>
-            <Heading as="h2" size="lg" color="pink.main">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: t("impact.title", {
-                    interpolation: { escapeValue: false },
-                  }),
-                }}
-              />
-            </Heading>
+            <Heading
+              as="h2"
+              size="lg"
+              color="pink.main"
+              dangerouslySetInnerHTML={{
+                __html: t("impact.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           </Box>
 
           <SimpleGrid
@@ -136,26 +138,25 @@ const QuemSomos: React.FC = () => {
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
         >
-          <Box>
-            <Image
-              margin="0 auto"
-              maxW={[226, 282]}
-              maxH={[232, 374]}
-              src="/static/media/s3/sustentabilidade2.png"
-              alt={t("who-finances.alt")}
-            />
-          </Box>
+          <Image
+            margin="0 auto"
+            maxW={[226, 282]}
+            maxH={[232, 374]}
+            src="/static/media/s3/sustentabilidade2.png"
+            alt={t("who-finances.alt")}
+          />
 
           <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
-            <Heading as="h2" size="lg" color="green">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: t("who-finances.title", {
-                    interpolation: { escapeValue: false },
-                  }),
-                }}
-              />
-            </Heading>
+            <Heading
+              as="h2"
+              size="lg"
+              color="green"
+              dangerouslySetInnerHTML={{
+                __html: t("who-finances.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
 
             <Text>{t("who-finances.description")}</Text>
 
@@ -188,10 +189,7 @@ const QuemSomos: React.FC = () => {
             columnGap="20px"
             pt="75px"
           >
-            <Link
-              href="https://www.opensocietyfoundations.org/"
-              target="_blank"
-            >
+            <Link href="https://www.opensocietyfoundations.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -199,7 +197,7 @@ const QuemSomos: React.FC = () => {
                 alt="Open Society Foundations"
               />
             </Link>
-            <Link href="https://luminategroup.com/" target="_blank">
+            <Link href="https://luminategroup.com/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -207,7 +205,7 @@ const QuemSomos: React.FC = () => {
                 alt="Luminate"
               />
             </Link>
-            <Link href="https://oakfnd.org/" target="_blank">
+            <Link href="https://oakfnd.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -215,7 +213,7 @@ const QuemSomos: React.FC = () => {
                 alt="OAK Foundation"
               />
             </Link>
-            <Link href="https://skoll.org/" target="_blank">
+            <Link href="https://skoll.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -223,7 +221,7 @@ const QuemSomos: React.FC = () => {
                 alt="Skoll Foundation"
               />
             </Link>
-            <Link href="http://umifund.org/" target="_blank">
+            <Link href="http://umifund.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -231,7 +229,7 @@ const QuemSomos: React.FC = () => {
                 alt="UMI fund"
               />
             </Link>
-            <Link href="https://tinker.org/pt/" target="_blank">
+            <Link href="https://tinker.org/pt/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
@@ -239,42 +237,42 @@ const QuemSomos: React.FC = () => {
                 alt="Tinker Foundation"
               />
             </Link>
-            <Link href="https://www.sigrid-rausing-trust.org/" target="_blank">
+            <Link href="https://www.sigrid-rausing-trust.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/sigrid.png"
               />
             </Link>
-            <Link href="https://www.svri.org/" target="_blank">
+            <Link href="https://www.svri.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/svri.png"
               />
             </Link>
-            <Link href="https://institutoavon.org.br/" target="_blank">
+            <Link href="https://institutoavon.org.br/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/avon.png"
               />
             </Link>
-            <Link href="https://www.climaesociedade.org/" target="_blank">
+            <Link href="https://www.climaesociedade.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/ics.png"
               />
             </Link>
-            <Link href="https://www.tides.org/" target="_blank">
+            <Link href="https://www.tides.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/tides.png"
               />
             </Link>
-            <Link href="https://malala.org/" target="_blank">
+            <Link href="https://malala.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
