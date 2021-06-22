@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Box,
   SimpleGrid,
   SimpleGridProps,
   Stack,
@@ -13,15 +14,27 @@ export interface Props extends Omit<SimpleGridProps, "spacing">, StackProps {
   columns?: any;
 }
 
-const Section: React.FC<Props> = ({ children, columns, ...props }) =>
-  !!columns ? (
-    <SimpleGrid as="section" columns={columns} px={PX} py={PY} {...props}>
+const Section: React.FC<Props> = ({
+  as = "section",
+  children,
+  columns,
+  ...props
+}) => {
+  const Container = () => (
+    <Box w="100%" maxW="1600px" margin="0 auto">
       {children}
+    </Box>
+  );
+
+  return !!columns ? (
+    <SimpleGrid as={as} px={PX} py={PY} columns={columns} {...props}>
+      <Container />
     </SimpleGrid>
   ) : (
-    <Stack as="section" px={PX} py={PY} {...props}>
-      {children}
+    <Stack as={as} px={PX} py={PY} {...props}>
+      <Container />
     </Stack>
   );
+};
 
 export default Section;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
-import { Flex, Link, Stack, Slide } from "@chakra-ui/react";
+import { Box, Flex, Link, Stack, Slide } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaBars } from "react-icons/fa";
 
@@ -25,16 +25,19 @@ export const Nav = ({ children }) => {
 
   return (
     <Slide direction="top" in={scrollUp} style={{ zIndex: 10 }}>
-      <Flex
-        as="nav"
-        bgColor="blue.main"
-        height="70px"
-        alignItems="center"
-        justifyContent="space-between"
-        paddingX={["30px", "6%"]}
-      >
-        {children}
-      </Flex>
+      <Box as="header" bgColor="blue.main" paddingX={["30px", "6%"]}>
+        <Flex
+          as="nav"
+          w="100%"
+          maxW="1600px"
+          margin="0 auto"
+          height="70px"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          {children}
+        </Flex>
+      </Box>
     </Slide>
   );
 };

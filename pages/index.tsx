@@ -140,17 +140,17 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
         direction={["column", null, null, "row"]}
         spacing={["30px"]}
       >
-        <Flex flex={1}>
-          <Image
-            maxW={[226, 339]}
-            maxH={[232, 347]}
-            margin="0 auto"
-            src="/static/media/s3/sustentabilidade.png"
-            alt="Sustentabilidade"
-          />
-        </Flex>
+        <Image
+          maxW={[226, 339]}
+          maxH={[232, 347]}
+          margin="0 auto"
+          src="/static/media/s3/sustentabilidade.png"
+          alt="Sustentabilidade"
+        />
 
         <Stack
+          maxW="710px"
+          margin="0 auto"
           flex={1.5}
           spacing={8}
           alignItems={["center", null, null, "flex-start"]}
@@ -166,7 +166,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             }}
           />
 
-          <Text textAlign={["center", "left"]} maxW="711px">
+          <Text textAlign={["center", "left"]}>
             {t("sustainability.description")}
           </Text>
 
