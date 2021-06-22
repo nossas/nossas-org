@@ -94,17 +94,20 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
         data={data}
       />
 
-      <Heading
-        as="h3"
-        fontWeight="bold"
-        size="sm"
-        mb="-15px"
-        textDecoration={open ? "underline" : "none"}
-      >
-        {data.name}
-      </Heading>
+      <Box>
+        <Heading
+          as="h3"
+          fontWeight="bold"
+          size="sm"
+          marginTop={1}
+          marginBottom={-1.5}
+          textDecoration={open ? "underline" : "none"}
+        >
+          {data.name}
+        </Heading>
 
-      <Text size="sm">{data.role}</Text>
+        <Text size="sm">{data.role}</Text>
+      </Box>
     </Stack>
   );
 };
