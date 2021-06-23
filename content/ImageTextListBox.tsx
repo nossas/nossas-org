@@ -21,7 +21,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
   maxWidth,
 }) => (
   <Section direction="column" spacing="60px">
-    <Heading as="h2" variant="tag">
+    <Heading as="h2" variant="tag" mb={16}>
       {title}
     </Heading>
 
