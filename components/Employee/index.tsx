@@ -23,7 +23,7 @@ export const EmployeeTeam = ({
   description,
   members,
 }: EmployeeTeamProps) => (
-  <Stack direction="column" spacing="30px">
+  <Stack direction="column" spacing="30px" mb="80px">
     <Box>
       <Heading as="h2" color="pink.main" fontWeight="700" size="lg">
         {title}

@@ -125,12 +125,10 @@ const QuemSomos: React.FC = () => {
       </Section>
 
       {/* Equipe */}
-      <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
-        <>
-          <BoardMembers />
-          <LeadersMembers />
-          <TeamMembers />
-        </>
+      <Section spacing={["60px", null, null, null, "100px"]}>
+        <BoardMembers />
+        <LeadersMembers />
+        <TeamMembers />
       </Section>
 
       {/* Quem financia */}
