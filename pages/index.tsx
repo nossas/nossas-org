@@ -1,12 +1,4 @@
-import {
-  Flex,
-  SimpleGrid,
-  Box,
-  Heading,
-  Image,
-  Text,
-  Stack,
-} from "@chakra-ui/react";
+import { SimpleGrid, Heading, Image, Text, Stack } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
