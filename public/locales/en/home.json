@@ -16,7 +16,7 @@
             "navigate": "Download our manuals"
         },
         "trainings": {
-            "title": "Discover our <br/><strong>trainings</strong>",
+            "title": "Find out more about our <br/><strong>trainings</strong>",
             "about": "Throughout the year, NOSSAS carries out free activism training programs on different themes for people all over Brazil. Find out how the program works.",
             "navigate": "Check our schedule"
         },
@@ -26,8 +26,8 @@
             "navigate": "Discover our incubations"
         },
         "technologies": {
-            "title": "Understand our <br/><strong>activism-driven tech-solutions</strong>",
-            "about": "Discover BONDE, NOSSAS's technology platform, specially developed for amateur or experienced activists to create their custom-made campaigns.",
+            "title": "Understand our <br/><strong>tech solutions</strong>",
+            "about": "Our technology platform, BONDE, is custom developed for activists beyond NOSSAS to create their campaigns.",
             "navigate": "Discover BONDE"
         }
     },
