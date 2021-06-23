@@ -146,7 +146,12 @@ const QuemSomos: React.FC = () => {
             alt={t("who-finances.alt")}
           />
 
-          <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
+          <Stack
+            flex={2}
+            spacing={8}
+            mb={60}
+            alignItems={["center", "flex-start"]}
+          >
             <Heading
               as="h2"
               size="lg"
