@@ -43,7 +43,7 @@ const QuemSomos: React.FC = () => {
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
-          mb={20}
+          mb={48}
         >
           <Image
             src="/static/media/s3/incubations-tudonossas.png"
