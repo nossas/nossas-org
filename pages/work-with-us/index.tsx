@@ -40,7 +40,7 @@ const WorkWithUs: React.FC = () => (
     </Section>
 
     <Section direction="column" spacing="60px" bgColor="gray.light">
-      <Heading as="h2" color="green">
+      <Heading as="h2" color="green" mb={8}>
         NOSSAS <b>VAGAS</b>
       </Heading>
 
