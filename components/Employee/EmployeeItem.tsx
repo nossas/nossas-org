@@ -51,7 +51,6 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
       <Box
         position="relative"
         overflow="hidden"
-        marginBottom="10px"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
