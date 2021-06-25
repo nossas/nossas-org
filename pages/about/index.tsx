@@ -43,7 +43,7 @@ const QuemSomos: React.FC = () => {
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
-          mb={48}
+          mb={18}
         >
           <Image
             src="/static/media/s3/incubations-tudonossas.png"
@@ -146,12 +146,7 @@ const QuemSomos: React.FC = () => {
             alt={t("who-finances.alt")}
           />
 
-          <Stack
-            flex={2}
-            spacing={8}
-            mb={60}
-            alignItems={["center", "flex-start"]}
-          >
+          <Stack flex={2} spacing={8} alignItems={["center", "flex-start"]}>
             <Heading
               as="h2"
               size="lg"
