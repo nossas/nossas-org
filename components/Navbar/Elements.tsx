@@ -29,7 +29,7 @@ export const Nav = ({ children }) => {
         <Flex
           as="nav"
           w="100%"
-          maxW="1600px"
+          maxW="1850px"
           margin="0 auto"
           height="70px"
           alignItems="center"

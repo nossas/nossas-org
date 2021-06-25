@@ -28,7 +28,7 @@ const Section: React.FC<Props> = ({
         py={PY}
         columns={columns}
         w="100%"
-        maxW="1600px"
+        maxW="1850px"
         margin="0 auto"
         {...props}
       >
@@ -37,7 +37,7 @@ const Section: React.FC<Props> = ({
     </Box>
   ) : (
     <Box as={as} w="100%" bgColor={bgColor}>
-      <Stack px={PX} py={PY} w="100%" maxW="1600px" margin="0 auto" {...props}>
+      <Stack px={PX} py={PY} w="100%" maxW="1850" margin="0 auto" {...props}>
         {children}
       </Stack>
     </Box>
