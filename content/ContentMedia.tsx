@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
-
 import { Media } from "../components/Media";
 
 export const ContentMedia = ({ title }: any) => {

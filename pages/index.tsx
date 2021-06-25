@@ -133,7 +133,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
         />
       </Section>
 
-      <WeAreDoing ua={ua} backgroundColor="#F7F7F7" />
+      <WeAreDoing ua={ua} backgroundColor="gray.light" />
 
       <Section
         alignItems="center"

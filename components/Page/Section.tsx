@@ -17,12 +17,13 @@ export interface Props extends Omit<SimpleGridProps, "spacing">, StackProps {
 const Section: React.FC<Props> = ({
   as = "section",
   bgColor,
+  backgroundColor,
   children,
   columns,
   ...props
 }) => {
   return !!columns ? (
-    <Box as={as} w="100%" bgColor={bgColor}>
+    <Box as={as} w="100%" bgColor={bgColor || backgroundColor}>
       <SimpleGrid
         px={PX}
         py={PY}
@@ -36,7 +37,7 @@ const Section: React.FC<Props> = ({
       </SimpleGrid>
     </Box>
   ) : (
-    <Box as={as} w="100%" bgColor={bgColor}>
+    <Box as={as} w="100%" bgColor={bgColor || backgroundColor}>
       <Stack px={PX} py={PY} w="100%" maxW="1850" margin="0 auto" {...props}>
         {children}
       </Stack>
