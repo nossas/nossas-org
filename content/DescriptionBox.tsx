@@ -44,6 +44,7 @@ const DescriptionBox: React.FC<Props> = ({
 
       <Text>{description}</Text>
     </Stack>
+
     {children}
   </Section>
 );
