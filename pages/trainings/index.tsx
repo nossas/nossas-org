@@ -29,6 +29,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
         title={t("cover")}
         titleColor="white"
         titleAlign="center"
+        titleMaxW={518}
       />
 
       <Section>

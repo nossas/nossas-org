@@ -15,6 +15,7 @@ interface HeroProps {
   videoUrl?: string;
   maxWidth?: string;
   titleMarginTop?: string | Array<string>;
+  titleMaxW?: string | number;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -25,6 +26,7 @@ const Hero: React.FC<HeroProps> = ({
   titleColor,
   titleAlign,
   titleMarginTop,
+  titleMaxW,
   left,
   Subtitle,
   imageDesc,
@@ -92,6 +94,7 @@ const Hero: React.FC<HeroProps> = ({
               textAlign={titleAlign}
               mt={titleMarginTop}
               size="lg"
+              maxW={titleMaxW}
             >
               {title}
             </Heading>
