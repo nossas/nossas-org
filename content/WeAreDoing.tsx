@@ -20,15 +20,17 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
       spacing={8}
       backgroundColor={backgroundColor}
     >
-      <Heading as="h2" size="lg" color="pink.main">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: t("we-are-doing.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
-      </Heading>
+      <Heading
+        as="h2"
+        size="lg"
+        color="pink.main"
+        dangerouslySetInnerHTML={{
+          __html: t("we-are-doing.title", {
+            interpolation: { escapeValue: false },
+          }),
+        }}
+      ></Heading>
+
       <SliderPanel
         infiniteLoop
         isMobile={ua?.isMobile || false}

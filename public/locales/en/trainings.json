@@ -2,14 +2,14 @@
     "cover": "Discover our training in technologies for activism",
     "learning": {
         "title": "Learn more about <br/><strong>our training!</strong>",
-        "description": "We have actively shared our learnings through capacity building and mentoring programs in activism for young people from Brazil's interior, here are a few examples."
+        "description": "We have actively shared our learnings through capacity building and mentoring programs in activism for young people from all over Brazil. Here are a few examples."
     },
     "now": {
         "title": "Happening <strong>now</strong>",
         "carousel": {
             "1": {
                 "title": "MUVUCA",
-                "description": "NOSSAS’s first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
+                "description": "NOSSAS’ first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
                 "action": "Find out more"
             },
             "2": {

@@ -1,65 +1,71 @@
 import React from "react";
 import {
+  Box,
   Grid,
   UnorderedList,
   ListItem,
-  Link as LinkStyled,
+  Link,
   Image,
 } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
+import NextLink from "next/link";
 
+import Section from "../Page/Section";
 import Donation from "../Donation";
-import NewsletterForm from "../../components/NewsletterForm";
+import NewsletterForm from "../NewsletterForm";
 import SocialMedia from "../SocialMedia";
 
 const Footer = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <footer>
+    <Section as="footer">
       <Grid
         templateRows={["repeat(3, auto)", "auto"]}
         templateColumns={["auto", "auto", "repeat(3, auto)"]}
-        rowGap={["60px", 0]}
+        rowGap={["60px"]}
         columnGap={[0, "90px"]}
-        px={[30, "6%"]}
-        py={[20, 90]}
         alignItems="baseline"
       >
-        <div>
-          <Link href="/">
+        <Box>
+          <NextLink href="/">
             <Image src="/static/media/logo.svg" alt="Logo do Nossas" />
-          </Link>
+          </NextLink>
+
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
-              <Link href="/#join-us">
-                <LinkStyled>{t("footer.navigation.join-us")}</LinkStyled>
-              </Link>
+              <NextLink href="/#join-us">
+                <Link>{t("footer.navigation.join-us")}</Link>
+              </NextLink>
             </ListItem>
+
             <ListItem>
-              <Link href="/about">
-                <LinkStyled>{t("footer.navigation.about")}</LinkStyled>
-              </Link>
+              <NextLink href="/about">
+                <Link>{t("footer.navigation.about")}</Link>
+              </NextLink>
             </ListItem>
+
             <ListItem>
               <Donation variant="link">
                 {t("footer.navigation.donate")}
               </Donation>
             </ListItem>
+
             {i18n.language !== "en" && (
               <ListItem>
-                <Link href="/work-with-us">
-                  <LinkStyled>{t("footer.navigation.work-with-us")}</LinkStyled>
-                </Link>
+                <NextLink href="/work-with-us">
+                  <Link>{t("footer.navigation.work-with-us")}</Link>
+                </NextLink>
               </ListItem>
             )}
           </UnorderedList>
-        </div>
+        </Box>
+
         <NewsletterForm />
+
         <SocialMedia />
       </Grid>
-    </footer>
+    </Section>
   );
 };
 

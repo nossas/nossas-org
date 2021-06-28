@@ -1,12 +1,12 @@
 {
     "navbar": {
         "navigation": {
-            "see-more": "Get to know",
+            "see-more": "Discover",
             "about": "About NOSSAS",
             "work-with-us": "Work with us",
-            "participate": "Participate",
+            "participate": "Take part",
             "campaigns": "Campaigns",
-            "materials": "Materials",
+            "materials": "Manuals",
             "trainings": "Trainings",
             "incubations": "Incubations",
             "technologies": "Technologies"
@@ -141,7 +141,7 @@
         },
         "newsletter": {
             "title": "Stay in touch",
-            "description": "Sign up to receive notifications about NOSSAS' campaigns, projects and other opportunities in portuguese:",
+            "description": "Sign up to receive notifications about NOSSAS' campaigns, projects and other opportunities (in Portuguese):",
             "success": {
                 "title": "It cost!",
                 "description": "Glad you're here :) We'll send you news about NOSSAS' projects, reports and campaigns through this email."

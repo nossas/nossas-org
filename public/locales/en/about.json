@@ -1,9 +1,9 @@
 {
     "cover": "NOSSAS DEVELOPS TECHNOLOGIES, SHARES METHODOLOGIES, CONNECTS PEOPLE AND DEFENDS DEMOCRACY THROUGH ACTIVISM",
     "history": {
-        "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years the organization has  projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
+        "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years, we have developed  projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
         "title": "OUR HISTORY",
-        "about": "NOSSAS was founded in 2011. Since then, we have drawn thousands of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and built solidarity networks at scale to address intractable problems."
+        "about": "NOSSAS was founded in 2011. Since then, we have drawn millions of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and built solidarity networks at scale to address intractable problems."
     },
     "timeline": {
         "title": "Timeline",
@@ -53,29 +53,29 @@
         }
     },
     "impact": {
-        "title": "Numbers<br/><strong>of impact</strong>",
+        "title": "Impact <br/><strong>in numbers</strong>",
         "financial": {
-            "number": "+4 million",
-            "description": "reais raised in crowdfunding campaigns"
+            "number": "4 million",
+            "description": "reais raised through crowdfunding campaigns"
         },
         "volunteers": {
-            "number": "+5,400",
+            "number": "5,400",
             "description": "volunteers registered"
         },
         "political": {
-            "number": "+120",
-            "description": "changes to public policies"
+            "number": "120",
+            "description": "public policies changed"
         },
         "campaigns": {
-            "number": "+230",
+            "number": "200",
             "description": "campaigns launched"
         },
         "donations": {
-            "number": "+29,000",
-            "description": "individual donors"
+            "number": "29,000",
+            "description": "individual donors engaged"
         },
         "activists": {
-            "number": "+2.6 million",
+            "number": "2,6 million",
             "description": "people mobilized"
         }
     },
@@ -114,7 +114,7 @@
             "title": "Leadership",
             "alessandra": {
                 "role": "Co-founder and Executive Director",
-                "about": "Alessandra is a non-profit executive, activist, director, producer and writer with extensive experience in advocacy and campaigning. Alessandra was a very early member of Purpose PBC which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas, a columnist at Folha de São Paulo and a TED Global speaker. She is currently the showrunner at Greg News - a satirical journalism show on HBO - and a fellow at the Obama Foundation and the Ashoka network of social entrepreneurs. Alessandra has a degree from Columbia University in Economics and Human Rights."
+                "about": "Alessandra is a non-profit executive, activist, director, producer and writer with extensive experience in advocacy and campaigning. Alessandra was a very early member of Purpose PBC which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas, a columnist at Folha de São Paulo and a TED Global speaker. She is currently the showrunner at Greg News - a satirical journalism show on HBO - and a fellow at the Obama Foundation and the Ashoka. Alessandra has a degree from Columbia University in Economics and Human Rights."
             },
             "enrica": {
                 "role": "Deputy Director and Director of Mapa do Acolhimento",
@@ -184,7 +184,7 @@
                 "about": "Flávia is a developer from Pernambuco. She is a researcher and co-founder of some projects involving education, the environment, the food chain and the promotion of technology for women. Flavia was a public servant for almost 2 years in parliamentary advice and evaluating public policies. She has a technical background in Systems Development, a degree in Political Science at UFPE with complementary training in Data Science."
             },
             "gabriela": {
-                "role": "Mapa do Acolhimento's Attendance Coordinator",
+                "role": "Service Coordinator at Mapa do Acolhimento",
                 "about": "Gabriela is an anti-racist feminist and worked as an coordinator on the “Feminicidades” project, which aims to give voice to all types of women. She is a psychologist who graduated from PUC-SP, specializing in assisting women in situations of gender violence at IBCCRIM, with a focus on the Maria da Penha Law, Public Services, NGOs and domestic violence. Gabriela has a specialization in collective health from the Health Institute of the State Department of Health."
             },
             "gloria": {
@@ -240,7 +240,7 @@
                 "about": "Before joining the Sustainability team at NOSSAS, Tayná worked with customer services and customer relations, technical and functional support, active payment collection and sales, as well as working in education, as a classroom assistant in primary and secondary education. Tayná is a graduate student in Humanities with a specialization in Social Communication."
             },
             "thalita": {
-                "role": "Articulator at Mapa do Acolhimento",
+                "role": "Analyst at Mapa do Acolhimento",
                 "about": "Thalita is a feminist and anti-racist from Bahia. She is a defender of human rights with a special interest in topics at the intersection between race and gender that collaborate in the fight for justice and remedy of inequalities. She has a degree in Social Work from UFBA, where she discovered the areas of social welfare and socio-legal assistance, knowledge that she develops in her work in the Mapa do Acolhimento."
             },
             "vanessa": {

@@ -39,21 +39,19 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section direction="column" spacing="60px" bgColor="gray.light">
+    <Section direction="column" spacing={10} bgColor="gray.light">
       <Heading as="h2" color="green">
         NOSSAS <b>VAGAS</b>
       </Heading>
 
       <Stack
-        maxW="1800px"
+        maxW="1600px"
         direction={["column", "column", "column", "row"]}
         spacing={20}
         alignItems="center"
         justifyContent="space-between"
-        mb={12}
-        textAlign="center"
       >
-        <Stack alignItems="center" spacing={4}>
+        <Stack alignItems="center" spacing={3}>
           <MegaphoneYellow />
 
           <Text

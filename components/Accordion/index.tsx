@@ -57,7 +57,6 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           paddingBottom="30px"
           paddingX={["15px", null]}
           spacing={["10px", "10px", "25px"]}
-          maxW="650px"
         >
           <CustomHeading
             as="h2"

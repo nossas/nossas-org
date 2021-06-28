@@ -78,31 +78,30 @@ const Materials: React.FC = () => {
           },
         ]}
       />
-      <div id="manual">
-        <DescriptionBox
-          color="pink"
-          title={
-            <span>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: t("mobilization.title", {
-                    interpolation: { escapeValue: false },
-                  }),
-                }}
-              />
-            </span>
-          }
-          description={t("mobilization.description")}
-        >
-          <SubscribeForm
-            color="blue"
-            kind="materials"
-            title={t("mobilization.form.title")}
-            submitText={t("mobilization.form.submit")}
-            textSuccess={t("mobilization.form.success")}
-          />
-        </DescriptionBox>
-      </div>
+
+      <DescriptionBox
+        color="pink"
+        title={
+          <span>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("mobilization.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
+          </span>
+        }
+        description={t("mobilization.description")}
+      >
+        <SubscribeForm
+          color="blue"
+          kind="materials"
+          title={t("mobilization.form.title")}
+          submitText={t("mobilization.form.submit")}
+          textSuccess={t("mobilization.form.success")}
+        />
+      </DescriptionBox>
     </Body>
   );
 };

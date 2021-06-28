@@ -165,6 +165,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           ]}
         />
       </Section>
+
       {i18n.language === "pt-BR" && (
         <DescriptionBox
           color="pink"

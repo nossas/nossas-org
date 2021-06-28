@@ -29,6 +29,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
         title={t("cover")}
         titleColor="white"
         titleAlign="center"
+        titleMaxW={518}
       />
 
       <Section>
@@ -155,8 +156,8 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
         />
       </Section>
 
-      <Section>
-        {i18n.language === "pt-BR" && (
+      {i18n.language === "pt-BR" && (
+        <Section>
           <SimpleGrid
             columns={[1, null, null, 2]}
             templateColumns={["auto", null, null, "582px auto"]}
@@ -193,8 +194,8 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               </Box>
             </Stack>
           </SimpleGrid>
-        )}
-      </Section>
+        </Section>
+      )}
     </Body>
   );
 };

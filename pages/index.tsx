@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text, Stack } from "@chakra-ui/react";
+import { SimpleGrid, Heading, Image, Text, Stack } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -133,14 +133,14 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
         />
       </Section>
 
-      <WeAreDoing ua={ua} backgroundColor="#F7F7F7" />
+      <WeAreDoing ua={ua} backgroundColor="gray.light" />
 
       <Section
         alignItems="center"
         direction={["column", null, null, "row"]}
         spacing={["30px"]}
       >
-        <Flex flex={1}>
+        <SimpleGrid columns={[1, null, null, 2]}>
           <Image
             maxW={[226, 339]}
             maxH={[232, 347]}
@@ -148,30 +148,31 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             src="/static/media/s3/sustentabilidade.png"
             alt="Sustentabilidade"
           />
-        </Flex>
 
-        <Stack
-          flex={1.5}
-          spacing={8}
-          alignItems={["center", null, null, "flex-start"]}
-        >
-          <Heading
-            as="h2"
-            size="lg"
-            color="green"
-            dangerouslySetInnerHTML={{
-              __html: t("sustainability.donate", {
-                interpolation: { escapeValue: false },
-              }),
-            }}
-          />
+          <Stack
+            flex={1.5}
+            spacing={8}
+            alignItems={["center", null, null, "flex-start"]}
+          >
+            <Heading
+              as="h2"
+              size="lg"
+              color="green"
+              mt={7}
+              dangerouslySetInnerHTML={{
+                __html: t("sustainability.donate", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
 
-          <Text textAlign={["center", "left"]} maxW="711px">
-            {t("sustainability.description")}
-          </Text>
+            <Text textAlign={["center", "left"]}>
+              {t("sustainability.description")}
+            </Text>
 
-          <Donation>{t("sustainability.navigate")}</Donation>
-        </Stack>
+            <Donation>{t("sustainability.navigate")}</Donation>
+          </Stack>
+        </SimpleGrid>
       </Section>
 
       <ContentMedia

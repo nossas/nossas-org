@@ -6,14 +6,14 @@
         "action": "Download manual (in portuguese)",
         "explain": {
             "title": "What can you learn from the manual?",
-            "1": "Tips for strategies to help people achieve the change they want to make in the world.",
-            "2": "Information to understand who to put pressure on and how, and discover the public to mobilize for a cause.",
+            "1": "Strategies for  achieving the change activists  want to see in the world.",
+            "2": "Information on who to put pressure on and how.",
             "3": "Techniques for creating interesting narratives to mobilize the public on social media and in other shared spaces."
         }
     },
     "mobilization": {
         "title": "Mobilization <strong>manual</strong>",
-        "description": "Throughout the 10 chapters you will find references, successful cases, practical exercises and all the information we use to construct impact campaigns.",
+        "description": "Throughout the 10 chapters you will find references, success cases, practical exercises and all the information we use to build impact campaigns.",
         "form": {
             "title": "Download manual in Portuguese",
             "submit": "Download",

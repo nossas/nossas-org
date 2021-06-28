@@ -10,7 +10,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { ImpactNumber } from "./_impactNumber";
+import ImpactNumber from "./_impactNumber";
 import Donation from "../../components/Donation";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
@@ -43,6 +43,7 @@ const QuemSomos: React.FC = () => {
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
           rowGap="30px"
+          mb={18}
         >
           <Image
             src="/static/media/s3/incubations-tudonossas.png"
@@ -124,12 +125,10 @@ const QuemSomos: React.FC = () => {
       </Section>
 
       {/* Equipe */}
-      <Section direction="column" spacing={["60px", null, null, null, "100px"]}>
-        <>
-          <BoardMembers />
-          <LeadersMembers />
-          <TeamMembers />
-        </>
+      <Section spacing={["60px", null, null, null, "100px"]}>
+        <BoardMembers />
+        <LeadersMembers />
+        <TeamMembers />
       </Section>
 
       {/* Quem financia */}

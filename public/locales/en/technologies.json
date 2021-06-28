@@ -2,7 +2,7 @@
     "cover": "Get to know BONDE, our technology tool",
     "begin": {
         "title": "How BONDE <br/><strong>emerged</strong>",
-        "description": "BONDE is a platform created by NOSSAS’ tech team to organize the campaigns. In it, you can find tools used to build impact-driven mobilizations. Today, other organizations are sharing this resource to add value and create impact to their campaigns."
+        "description": "BONDE is a platform created by NOSSAS’ tech team to power our campaigns. In it, you can find tools used to build impact-driven mobilizations. We now share this resource with peer organizations looking to extend their impact and reach."
     },
     "functionalities": {
         "title": "Features",
@@ -11,7 +11,7 @@
             "email": "Pressure tool to put pressure on decision makers by email, phone or with a petition",
             "money": "Crowdfunding platform to raise money for a cause",
             "subscription": "Application form to register and coordinate volunteers",
-            "communication": "Solidarity platform to create network between volunteers and people seeking for help"
+            "communication": "Solidarity platform to create networks between volunteers and people seeking help"
         }
     },
     "use": {

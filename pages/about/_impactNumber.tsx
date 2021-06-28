@@ -1,6 +1,6 @@
 import { Heading, Text, Flex } from "@chakra-ui/react";
 
-export const ImpactNumber = ({ numberText, description }) => (
+const ImpactNumber = ({ numberText, description }) => (
   <Flex direction="column">
     <Heading
       as="span"
