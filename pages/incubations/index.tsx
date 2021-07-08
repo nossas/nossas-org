@@ -80,6 +80,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           },
         ]}
       />
+
       <Section
         id="projects"
         direction="column"
@@ -103,39 +104,42 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           showStatus
           items={[
             <ImageTextIncubations
-              src="/static/media/s3/meacolhelgbt.png"
+              src="/static/media/s3/apoio-psicologico.png"
               title={t("projects.carousel.1.title")}
               description={t("projects.carousel.1.description")}
-              href="https://www.acolhelgbt.org/"
-              linkText={t("projects.carousel.1.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/merepresenta.png"
+              src="/static/media/s3/meacolhelgbt.png"
               title={t("projects.carousel.2.title")}
               description={t("projects.carousel.2.description")}
-              href="https://merepresenta.org.br/"
+              href="https://www.acolhelgbt.org/"
               linkText={t("projects.carousel.2.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/defezap.jpg"
+              src="/static/media/s3/merepresenta.png"
               title={t("projects.carousel.3.title")}
               description={t("projects.carousel.3.description")}
-              href="http://www.saibamais.defezap.org.br/"
+              href="https://merepresenta.org.br/"
               linkText={t("projects.carousel.3.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/incubacoes-rnc.jpg"
+              src="/static/media/s3/defezap.jpg"
               title={t("projects.carousel.4.title")}
               description={t("projects.carousel.4.description")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/incubacoes-rnc.jpg"
+              title={t("projects.carousel.5.title")}
+              description={t("projects.carousel.5.description")}
               href="https://www.redenossascidades.org/"
-              linkText={t("projects.carousel.4.action")}
+              linkText={t("projects.carousel.5.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/incubacoes-beta.jpg"
-              title={t("projects.carousel.5.title")}
-              description={t("projects.carousel.5.description")}
+              title={t("projects.carousel.6.title")}
+              description={t("projects.carousel.6.description")}
               href="https://www.beta.org.br/"
-              linkText={t("projects.carousel.5.action")}
+              linkText={t("projects.carousel.6.action")}
             />,
           ]}
         />
