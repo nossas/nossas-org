@@ -15,34 +15,35 @@
         "title": "Previous  <br/><strong>incubations</strong>",
         "description": "See some of the projects that have already gone through  NOSSAS's incubation process and are now works of reference in their areas of expertise.",
         "carousel": {
+            
             "1": {
-                "title": "Rede de Apoio Psicológico ",
-                "description": "In 2020, we connected COVID 19 front line health professionals with volunteer psychologists willing to serve them."
-            },
-            "2": {
                 "title": "Acolhe LGBT+",
                 "description": "A solidarity network for the LGBTQIA+ community to connect people needing psychological support to a network of volunteers.",
                 "action": "Find out more"
             },
-            "3": {
+            "2": {
                 "title": "Me Representa",
                 "description": "A matching platform for candidates and electors who advocate for Human Rights.",
                 "action": "Find out more"
             },
-            "4": {
+            "3": {
                 "title": "Defezap",
                 "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, via Whatsapp, guaranteeing anonymity for the  victims.",
                 "action": "Find out more"
             },
-            "5": {
+            "4": {
                 "title": "Rede nossas cidades",
                 "description": "A network of city-based activist communities spread across Brazil, including <a href='https://www.meurio.org.br/' style='color: #FF0095; font-weight: bold;' target='_blank'>Meu Rio</a>, <a href='https://www.minhasampa.org.br/' style='color: #FF0095; font-weight: bold;' target='_blank'>Minha Sampa</a> and <a href='https://www.meurecife.org.br/' style='color: #FF0095; font-weight: bold;' target='_blank'>Meu Recife</a>.",
                 "action": "Find out more"
             },
-            "6": {
+            "5": {
                 "title": "Beta",
                 "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"
+            },
+            "6": {
+                "title": "Rede de Apoio Psicológico ",
+                "description": "In 2020, we connected COVID 19 front line health professionals with volunteer psychologists willing to serve them."
             }
         }
     },
