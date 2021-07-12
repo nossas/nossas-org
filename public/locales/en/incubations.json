@@ -15,6 +15,7 @@
         "title": "Previous  <br/><strong>incubations</strong>",
         "description": "See some of the projects that have already gone through  NOSSAS's incubation process and are now works of reference in their areas of expertise.",
         "carousel": {
+            
             "1": {
                 "title": "Acolhe LGBT+",
                 "description": "A solidarity network for the LGBTQIA+ community to connect people needing psychological support to a network of volunteers.",
@@ -39,6 +40,10 @@
                 "title": "Beta",
                 "description": "Facebook's first feminist robot monitors the process of bills on women's rights and warns her followers when she senses possible backsliding!",
                 "action": "Find out more"
+            },
+            "6": {
+                "title": "Rede de Apoio Psicológico ",
+                "description": "In 2020, we connected COVID 19 front line health professionals with volunteer psychologists willing to serve them."
             }
         }
     },

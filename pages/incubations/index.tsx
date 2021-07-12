@@ -80,6 +80,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           },
         ]}
       />
+
       <Section
         id="projects"
         direction="column"
@@ -120,8 +121,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               src="/static/media/s3/defezap.jpg"
               title={t("projects.carousel.3.title")}
               description={t("projects.carousel.3.description")}
-              href="http://www.saibamais.defezap.org.br/"
-              linkText={t("projects.carousel.3.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/incubacoes-rnc.jpg"
@@ -136,6 +135,11 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               description={t("projects.carousel.5.description")}
               href="https://www.beta.org.br/"
               linkText={t("projects.carousel.5.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/apoio-psicologico.jpg"
+              title={t("projects.carousel.6.title")}
+              description={t("projects.carousel.6.description")}
             />,
           ]}
         />

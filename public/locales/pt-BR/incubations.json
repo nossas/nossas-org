@@ -27,8 +27,7 @@
             },
             "3": {
                 "title": "Defezap",
-                "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
-                "action": "Saiba mais"
+                "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
             },
             "4": {
                 "title": "Rede nossas cidades",
@@ -39,6 +38,10 @@
                 "title": "Beta",
                 "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
                 "action": "Saiba mais"
+            },
+            "6": {
+                "title": "Rede de Apoio Psicológico",
+                "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los."
             }
         }
     },
