@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { gql, useMutation } from "@apollo/client";
 import {
   Heading,
@@ -18,7 +18,7 @@ import { Formik, FormikProps } from "formik";
 import { Elements, useStripe, useElements } from "@stripe/react-stripe-js";
 import { useTranslation } from "next-i18next";
 
-import { getWidgetId } from "../../content/SubscribeForm/settings";
+import { useWidgetId } from "../../content/SubscribeForm/settings";
 import getStripe from "../../lib/getStripe";
 import Lock from "./Lock";
 import {
@@ -53,7 +53,8 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const { t, i18n } = useTranslation("common");
-  const widgetId = getWidgetId("donation", i18n.language as any);
+  const widgetId = useWidgetId("donation", i18n.language as any);
+
   // use stripe in 2-step, see ./CardForm handleSubmit
   const stripe = useStripe();
   const elements = useElements();
