@@ -50,30 +50,8 @@ const WorkWithUs: React.FC = () => (
         spacing={20}
         alignItems="center"
         justifyContent="space-between"
+        textAlign="center"
       >
-        <Stack alignItems="center" spacing={3}>
-          <MegaphoneYellow />
-
-          <Text
-            fontFamily="Bebas Neue"
-            color="black"
-            fontSize="30px"
-            fontWeight="bold"
-            whiteSpace="nowrap"
-          >
-            DIRETOR(A) DE CAMPANHAS
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/diretora-de-campanhas"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
         <Stack alignItems="center" spacing={4}>
           <TransferPink />
 
@@ -82,15 +60,35 @@ const WorkWithUs: React.FC = () => (
             fontSize="30px"
             color="black"
             fontWeight="bold"
-            whiteSpace="nowrap"
+            maxW="123px"
           >
-            MOBILIZADOR(A) EM SÃO PAULO
+            Gestor(a) de Captação
           </Text>
 
           <Link
-            href="https://nossas.recruitee.com/o/mobilizadora-i-sao-paulo"
+            href="https://nossas.recruitee.com/o/previews/7tf3a"
             target="blank"
           >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={3}>
+          <MegaphoneYellow />
+
+          <Text
+            fontFamily="Bebas Neue"
+            color="black"
+            fontSize="30px"
+            fontWeight="bold"
+            maxW="158px"
+          >
+            Gestor(a) de Comunicação
+          </Text>
+
+          <Link href="" target="blank">
             <Button size="sm" width="140px">
               Saiba mais
             </Button>
@@ -105,9 +103,9 @@ const WorkWithUs: React.FC = () => (
             fontSize="30px"
             color="black"
             fontWeight="bold"
-            whiteSpace="nowrap"
+            maxW="210px"
           >
-            PROGRAMADORA WEB
+            DESENVOLVEDORA FULL-STACK | REMOTO
           </Text>
 
           <Link
