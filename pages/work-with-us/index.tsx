@@ -1,15 +1,15 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
-import { Button, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Image, Text } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
   MegaphoneYellow,
-  TransferPink,
   ComputerBlue,
+  Money,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -39,21 +39,21 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section direction="column" spacing={10} bgColor="gray.light">
+    <Section direction="column" spacing={[10]} bgColor="gray.light">
       <Heading as="h2" color="green">
         NOSSAS <b>VAGAS</b>
       </Heading>
 
       <Stack
         maxW="1600px"
-        direction={["column", "column", "column", "row"]}
-        spacing={20}
+        direction={["column", "column", "row"]}
+        spacing={[10, 14, 20, 138, 188]}
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent="center"
         textAlign="center"
       >
-        <Stack alignItems="center" spacing={4}>
-          <TransferPink />
+        <Stack alignItems="center" spacing={1}>
+          <Money />
 
           <Text
             fontFamily="Bebas Neue"
@@ -75,7 +75,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={3}>
+        <Stack alignItems="center" spacing={2}>
           <MegaphoneYellow />
 
           <Text
@@ -98,7 +98,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={4}>
+        <Stack alignItems="center" spacing={3}>
           <ComputerBlue />
 
           <Text
