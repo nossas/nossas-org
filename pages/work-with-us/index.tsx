@@ -88,7 +88,10 @@ const WorkWithUs: React.FC = () => (
             Gestor(a) de Comunicação
           </Text>
 
-          <Link href="" target="blank">
+          <Link
+            href="https://nossas.recruitee.com/o/gestora-de-comunicacao"
+            target="blank"
+          >
             <Button size="sm" width="140px">
               Saiba mais
             </Button>
