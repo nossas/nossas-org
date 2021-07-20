@@ -1,15 +1,15 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
-import { Button, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Image, Text } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
   MegaphoneYellow,
-  TransferPink,
   ComputerBlue,
+  Money,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -39,19 +39,43 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section direction="column" spacing={10} bgColor="gray.light">
+    <Section direction="column" spacing={[10]} bgColor="gray.light">
       <Heading as="h2" color="green">
         NOSSAS <b>VAGAS</b>
       </Heading>
 
       <Stack
         maxW="1600px"
-        direction={["column", "column", "column", "row"]}
-        spacing={20}
+        direction={["column", "column", "row"]}
+        spacing={[10, 14, 20, 138, 188]}
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent="center"
+        textAlign="center"
       >
-        <Stack alignItems="center" spacing={3}>
+        <Stack alignItems="center" spacing={1}>
+          <Money />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="123px"
+          >
+            Gestor(a) de Captação
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/previews/7tf3a"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={2}>
           <MegaphoneYellow />
 
           <Text
@@ -59,13 +83,13 @@ const WorkWithUs: React.FC = () => (
             color="black"
             fontSize="30px"
             fontWeight="bold"
-            whiteSpace="nowrap"
+            maxW="158px"
           >
-            DIRETOR(A) DE CAMPANHAS
+            Gestor(a) de Comunicação
           </Text>
 
           <Link
-            href="https://nossas.recruitee.com/o/diretora-de-campanhas"
+            href="https://nossas.recruitee.com/o/gestora-de-comunicacao"
             target="blank"
           >
             <Button size="sm" width="140px">
@@ -74,30 +98,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={4}>
-          <TransferPink />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            whiteSpace="nowrap"
-          >
-            MOBILIZADOR(A) EM SÃO PAULO
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/mobilizadora-i-sao-paulo"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
-        <Stack alignItems="center" spacing={4}>
+        <Stack alignItems="center" spacing={3}>
           <ComputerBlue />
 
           <Text
@@ -105,9 +106,9 @@ const WorkWithUs: React.FC = () => (
             fontSize="30px"
             color="black"
             fontWeight="bold"
-            whiteSpace="nowrap"
+            maxW="210px"
           >
-            PROGRAMADORA WEB
+            DESENVOLVEDORA FULL-STACK | REMOTO
           </Text>
 
           <Link
