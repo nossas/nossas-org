@@ -52,7 +52,7 @@ const WorkWithUs: React.FC = () => (
         justifyContent="center"
         textAlign="center"
       >
-        <Stack alignItems="center" spacing={1}>
+        <Stack alignItems="center" spacing={2}>
           <Money />
 
           <Text
@@ -66,7 +66,7 @@ const WorkWithUs: React.FC = () => (
           </Text>
 
           <Link
-            href="https://nossas.recruitee.com/o/previews/7tf3a"
+            href="https://nossas.recruitee.com/o/gestora-de-captacao"
             target="blank"
           >
             <Button size="sm" width="140px">
@@ -98,7 +98,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={3}>
+        <Stack alignItems="center" spacing={4}>
           <ComputerBlue />
 
           <Text
