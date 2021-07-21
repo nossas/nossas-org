@@ -52,7 +52,7 @@ const WorkWithUs: React.FC = () => (
         justifyContent="center"
         textAlign="center"
       >
-        <Stack alignItems="center" spacing={1}>
+        <Stack alignItems="center" spacing={2}>
           <Money />
 
           <Text
@@ -98,7 +98,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={3}>
+        <Stack alignItems="center" spacing={4}>
           <ComputerBlue />
 
           <Text
