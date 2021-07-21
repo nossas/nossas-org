@@ -66,7 +66,7 @@ const WorkWithUs: React.FC = () => (
           </Text>
 
           <Link
-            href="https://nossas.recruitee.com/o/previews/7tf3a"
+            href="https://nossas.recruitee.com/o/gestora-de-captacao"
             target="blank"
           >
             <Button size="sm" width="140px">
