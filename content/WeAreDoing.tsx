@@ -36,36 +36,44 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/s3/liberaotablet.jpg",
-            href: "https://www.liberaotablet.minhasampa.org.br/",
+            src: "/static/media/s3/parque-realengo-verde.png",
+            href: "https://www.parquerealengoverde.meurio.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
             title: t("we-are-doing.sliders.1.title"),
             description: t("we-are-doing.sliders.1.description"),
             link: t("we-are-doing.sliders.1.navigate"),
           },
           {
-            src: "/static/media/s3/licenciamento-ambiental.png",
-            href: "https://www.licenciamentoambientalfica.org/",
+            src: "/static/media/s3/livre-para-menstruar.png",
+            href: "https://www.sp.livreparamenstruar.org/",
             alt: t("we-are-doing.sliders.2.title"),
             title: t("we-are-doing.sliders.2.title"),
             description: t("we-are-doing.sliders.2.description"),
             link: t("we-are-doing.sliders.2.navigate"),
           },
           {
-            src: "/static/media/s3/rendabasica.png",
-            href: "https://www.auxilioateofimdapandemia.org/",
+            src: "/static/media/s3/sai-da-fossa-manaus.png",
+            href: "https://www.saidafossa.minhamanaus.org.br/",
             alt: t("we-are-doing.sliders.3.title"),
             title: t("we-are-doing.sliders.3.title"),
             description: t("we-are-doing.sliders.3.description"),
             link: t("we-are-doing.sliders.3.navigate"),
           },
           {
-            src: "/static/media/s3/temgentecomfome.png",
-            href: "https://www.temgentecomfome.com.br/",
+            src: "/static/media/s3/rendabasica.png",
+            href: "https://www.auxilioateofimdapandemia.org/",
             alt: t("we-are-doing.sliders.4.title"),
             title: t("we-are-doing.sliders.4.title"),
             description: t("we-are-doing.sliders.4.description"),
             link: t("we-are-doing.sliders.4.navigate"),
+          },
+          {
+            src: "/static/media/s3/temgentecomfome.png",
+            href: "https://www.temgentecomfome.com.br/",
+            alt: t("we-are-doing.sliders.5.title"),
+            title: t("we-are-doing.sliders.5.title"),
+            description: t("we-are-doing.sliders.5.description"),
+            link: t("we-are-doing.sliders.5.navigate"),
           },
         ]}
       />
