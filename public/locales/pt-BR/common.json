@@ -105,21 +105,26 @@
         "title": "O que estamos <strong>fazendo</strong>",
         "sliders": {
             "1": {
-                "title": "Libera o tablet",
-                "description": "O governo de São Paulo adquiriu tablets para alunos das escolas públicas no ano passado, mas até agora não liberou os equipamentos para auxiliar no ensino remoto dos jovens!",
-                "navigate": "Pressione para liberar o tablet"
+                "title": "Parque Realengo Verde",
+                "description": "Os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro, já estão há décadas lutando para manter uma das últimas áreas verdes da região de pé.",
+                "navigate": "Pressione por um parque urbano e ecológico"
             },
             "2": {
-                "title": "Licenciamento ambiental fica",
-                "description": "A qualquer momento o Senado pode votar o Projeto de Lei que flexibiliza o licenciamento ambiental no país, colocando em risco nossos biomas brasileiros e populações tradicionais.",
-                "navigate": "Pressione para barrar o projeto"
+                "title": "Livre Para Menstruar",
+                "description": "Em vários estados do Brasil, meninas estão articulando projetos de lei sobre pobreza menstrual.",
+                "navigate": "Pressione pela aprovação dos PLs"
             },
             "3": {
+                "title": "Sai da Fossa, Manaus!",
+                "description": "Em Manaus, 8 em cada 10 habitantes não possuem acesso ao sistema de esgoto. É hora de exigir que o prefeito garanta o aumento da cobertura desse serviço para todos os manauaras.",
+                "navigate": "Pressione por saneamento básico"
+            },
+            "4": {
                 "title": "Auxílio até o fim da pandemia",
                 "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
                 "navigate": "Participe da campanha"
             },
-            "4": {
+            "5": {
                 "title": "Tem gente com fome",
                 "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
                 "navigate": "Participe da campanha"
