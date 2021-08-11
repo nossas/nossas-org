@@ -102,7 +102,7 @@
         }
     },
     "we-are-doing": {
-        "title": "O que estamos <strong>fazendo</strong>",
+        "title": "Campanhas <strong>no ar</strong>",
         "sliders": {
             "1": {
                 "title": "Parque Realengo Verde",
@@ -127,6 +127,11 @@
             "5": {
                 "title": "Tem gente com fome",
                 "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+                "navigate": "Participe da campanha"
+            },
+            "6": {
+                "title": "MUVUCA",
+                "description": "O primeiro programa de ativismo climático do NOSSAS vai oferecer treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
                 "navigate": "Participe da campanha"
             }
         }

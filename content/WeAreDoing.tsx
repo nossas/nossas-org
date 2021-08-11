@@ -75,6 +75,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             description: t("we-are-doing.sliders.5.description"),
             link: t("we-are-doing.sliders.5.navigate"),
           },
+          {
+            src: "/static/media/s3/muvuca.png",
+            href: "https://www.muvuca.nossas.org/",
+            alt: t("we-are-doing.sliders.6.title"),
+            title: t("we-are-doing.sliders.6.title"),
+            description: t("we-are-doing.sliders.6.description"),
+            link: t("we-are-doing.sliders.6.navigate"),
+          }
         ]}
       />
     </Section>
