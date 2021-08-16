@@ -9,6 +9,7 @@ export { default as Question } from "./Question";
 export { default as MegaphoneGreen } from "./MegaphoneGreen";
 export { default as Transfer } from "./Transfer";
 export { default as ThumbsUp } from "./ThumbsUp";
+export { default as Pair } from "./Pair";
 export { default as People } from "./People";
 export { default as MegaphoneYellow } from "./MegaphoneYellow";
 export { default as TransferPink } from "./TransferPink";
