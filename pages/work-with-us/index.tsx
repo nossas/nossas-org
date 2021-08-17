@@ -10,6 +10,7 @@ import {
   MegaphoneYellow,
   ComputerBlue,
   Money,
+  Pair
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -48,10 +49,32 @@ const WorkWithUs: React.FC = () => (
         maxW="1600px"
         direction={["column", "column", "row"]}
         spacing={[10, 14, 20, 138, 188]}
-        alignItems="center"
         justifyContent="center"
         textAlign="center"
       >
+        <Stack alignItems="center" spacing={2}>
+          <Pair/>
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="123px"
+          >
+            Diretor(a) Executivo
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/diretora-executivo"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
         <Stack alignItems="center" spacing={2}>
           <Money />
 
