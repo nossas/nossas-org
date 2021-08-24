@@ -143,6 +143,18 @@
             "talita": {
                 "role": "Gestora Sênior de Tecnologia",
                 "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
+            },
+            "jerlan": {
+                "role": "Gestor",
+                "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
+            },
+            "karol": {
+                "role": "Gestora de Mobilização",
+                "about": "Karol é jornalista formada pela Cásper Líbero e mora em São Paulo. Trabalhou na Coordenação geral do Catalyst 2030 e na Coordenação de comunicação da deputada estadual Marina Helou (Rede-SP). É voluntária na Virada Política e no Vote Nelas, repórter da Revista Saúde e já atuou como consultora de advocacy e relações governamentais. Foi coordenadora da Minha Sampa entre 2017 e 2019 e agora volta ao NOSSAS como Gestora de Mobilização."
+            },
+            "rafael": {
+                "role": "Diretor de Campanhas",
+                "about": "Rafael é jornalista graduado pela USP, pós-graduado em Ciência Política pela FESP e cursa MBA em Marketing e Branding pela FIA. Trabalha há 8 anos em ONGs nacionais e internacionais, na intersecção entre tecnologia, comunicação, campanhas e impacto social. Foi diretor de Campanhas e Comunicação da equipe brasileira da Change.org, onde atuou por 6 anos. Também foi gerente na ARTIGO 19 e coordenador no Centro de Liderança Pública (CLP). Além disso, atuou como repórter de grandes veículos, como G1, R7 e Folha."
             }
         },
         "team": {

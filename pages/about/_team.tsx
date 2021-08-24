@@ -149,6 +149,27 @@ export const LeadersMembers: React.FC = () => {
           about: t("teams.leaders.talita.about"),
           team: t("teams.leaders.title"),
         },
+        {
+          avatar: "/static/media/team/jerlan.jpg",
+          name: "Jerlan Alves",
+          role: t("teams.leaders.jerlan.role"),
+          about: t("teams.leaders.jerlan.about"),
+          team: t("teams.leaders.title"),
+        },
+        {
+          avatar: "/static/media/team/karol.jpg",
+          name: "Gestora de Mobilização",
+          role: t("teams.leaders.karol.role"),
+          about: t("teams.leaders.karol.about"),
+          team: t("teams.leaders.title"),
+        },
+        {
+          avatar: "/static/media/team/rafael.jpg",
+          name: "Rafael Sampaio",
+          role: t("teams.leaders.rafael.role"),
+          about: t("teams.leaders.rafael.about"),
+          team: t("teams.leaders.title"),
+        },
       ]}
     />
   );
