@@ -167,6 +167,10 @@
                 "role": "Coordenadora de Operações",
                 "about": "Alexandra compõe a Equipe Operacional da organização, monitorando os processos internos burocráticos e administrativos. É amante de gastronomia, música e pessoas. Antes de chegar no NOSSAS, viveu e trabalhou na Dinamarca, Alemanha e Inglaterra. De volta ao Brasil já atuou na área de assessoria executiva e gestão de expatriados no setor de dragagem. É formada em Processos Gerenciais pela FGV e Hospitalidade pelo Highbury College."
             },
+            "alice": {
+                "role": "Estagiária de Comunicação",
+                "about": "Alice é manauara, estudante de Jornalismo da Universidade Federal do Amazonas e estagiária de comunicação do NOSSAS. Na faculdade, fez parte da diretoria do centro acadêmico em 2019 e foi coautora de um projeto científico na área de Jornalismo Ambiental. Antes de entrar no NOSSAS, passou por assessorias de comunicação do primeiro e do terceiro setor. Tem interesse nos saberes tradicionais da Amazônia e curiosidade sobre a diversidade do Brasil e do mundo."
+            },
             "aline": {
                 "role": "Coordenadora Financeira",
                 "about": "Funcionária mais veterana da organização, Aline acompanhou nosso crescimento desde o primeiro ano do Meu Rio. Ao longo desse período trabalhou à frente da estrutura administrativa idealizando os processos operacionais de base. É viciada em trabalho, mas nas horas vagas conduz um estudo espiritual, dando aula em um centro de educação mediúnica. Considera seus colegas de trabalho como filhos e adotou todas as crianças do NOSSAS como netos."
@@ -203,6 +207,10 @@
                 "role": "Mobilizador",
                 "about": "Izamir é um ativista socioambiental interessado na agenda de desenvolvimento sustentável da Amazônia Ocidental. Amazonense, trabalhou como comunicador em algumas organizações e liderou projetos do terceiro setor em Manaus. É formado em Relações-públicas (UFAM) e jornalismo (FMF-Devry), possui MBA em Marketing Digital pela ESPM e é especialista em Relações Internacionais Contemporâneas pela UFRGS."
             },
+            "juliana": {
+                "role": "Analista de Advocacy",
+                "about": "Juliana mora em São Paulo, é formada em Direito e tem grande experiência na gestão pública após trabalhar com uma grande lista de organizações no terceiro setor. É apaixonada pelas pautas de direitos humanos e democracia, com olhar atento a recortes de raça, gênero e território."
+            },
             "karina": {
                 "role": "Mobilizadora",
                 "about": "Karina é maranhense, bióloga e ambientalista. Foi coordenadora do Grupo de Trabalho de Clima da Organização de Jovens Engajamundo entre 2018 e 2020, é Líder da comunidade de Protagonismo Juvenil USBEA desde 2015 e faz parte da rede de líderes globais International Exchange Alumni. É apaixonada por educação e cultura, ama dançar, andar de perna de pau e tentar outras habilidades circenses. Faz parte do grupo de missões de uma igreja local e ama diálogos e histórias."
@@ -210,6 +218,10 @@
             "larissa": {
                 "role": "Gestora do Mapa do Acolhimento",
                 "about": "Larissa é psicóloga, ativista, feminista, militante LGBT+ e contra todas as formas de manicômio. Já atuou em serviços da saúde pública e da assistência social no centro e nas periferias de São Paulo pela garantia de direitos de populações em situação de vulnerabilidade. Como gestora do Mapa do Acolhimento, acredita que a tecnologia pode unir mulheres na luta pelo fim da violência baseada em gênero. Larissa é formada pela PUC/SP e especialista em saúde mental."
+            },
+            "laura": {
+                "role": "Estagiária de Comunicação",
+                "about": "Laura é estagiária de Comunicação do NOSSAS. Anteriormente, trabalhou como estagiária de redação no Jornal O Globo, escrevendo para os jornais de Bairros e editoria de gênero e diversidade. Nascida e criada na Zona Norte do Rio de Janeiro, no bairro da Penha. É graduanda de Jornalismo na Escola de Comunicação da UFRJ, com interesse especial nas áreas de direitos humanos, relações raciais e de gênero."
             },
             "leca": {
                 "role": "Coordenadora de Sustentabilidade",
@@ -230,6 +242,14 @@
             "maira": {
                 "role": "Gestora de Treinamento",
                 "about": "Maira é pernambucana, interessada nas pautas de Direitos Humanos, gênero, Direitos Sexuais e Direitos Reprodutivos e Política de Drogas. Militante feminista antiproibicionista, ela integra a Rede Nacional de Feministas Antiproibicionistas (RENFA) e a Articulação de Mulheres Brasileiras (AMB). Antes do NOSSAS, trabalhou como repórter do Diario de Pernambuco e na Fiocruz. Maira é formada em Comunicação Social."
+            },
+            "mariana": {
+                "role": "Mobilizadora",
+                "about": "Urbanista pela FAUUSP e ativista pelo Direito à Cidade, Mariana busca em suas atuações articular a política e o planejamento das cidades com o ativismo das ruas, por meio de um olhar contra-hegemônico e interseccional para as questões urbanas. Trabalhou com projetos sociais em cidades do Brasil e da Espanha, onde realizou intercâmbio acadêmico. Em paralelo ao seu trabalho como Mobilizadora no NOSSAS, integra a organização LGBTQIA+ TODXS Brasil, como Articuladora Política, e é colaboradora da Nossa Fala, onde pesquisa e escreve sobre território, gênero e interseccionalidades."
+            },
+            "paula": {
+                "role": "Estagiária do Mapa do Acolhimento",
+                "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
             },
             "sany": {
                 "role": "Coordenadora de Comunicação",

@@ -167,6 +167,10 @@
                 "role": "Logistics and HR Coordinator",
                 "about": "Alexandra is part of NOSSAS's Operations team, monitoring internal bureaucratic and administrative processes.  She has a passion for gastronomy, music and people. Before working at NOSSAS, Alexandra lived and worked in Denmark, Germany and England. In Brazil, she has worked as a manager and executive advisor for expatriates in the dredging sector. She’s a graduate in Management Processes at FGV in Rio and Hospitality at Highbury College, London."
             },
+            "alice": {
+                "role": "Estagiária de Comunicação",
+                "about": "Alice is from Manaus, a Journalism student at the Federal University of Amazonas and a communications intern at NOSSAS. In college, she was on the board of the academic center of her program in 2019 and was the co-author of a scientific initiation project in the field of Environmental Journalism. Before joining NOSSAS, Alice worked in the press offices of public entities and the third sector. She is interested in traditional knowledge about the Amazon and is curious about the diversity of Brazil and the world."
+            },
             "aline": {
                 "role": "Financial Coordinator",
                 "about": "Aline is the organization’s longest-serving employee. Aline has seen the entire evolutionary process since the first year of Meu Rio. During this period, she has worked at the head of the administrative structure, creating the basic operational processes. Aline is a workaholic, but in her spare time she conducts a spiritual study, teaching at a mediumistic education center. She considers her co-workers as family and has adopted all NOSSAS's kids as her own grandchildren."
@@ -203,6 +207,10 @@
                 "role": "Mobilizer",
                 "about": "Izamir is a socio-environmental activist interested in the sustainable development agenda of the Western Amazon. A native of the Amazon, Izamir worked as a communicator in some organizations and led third sector projects in Manaus. He holds a degree in Public Relations (UFAM) and journalism (FMF-Devry), an MBA in Digital Marketing from ESPM and is a specialist in Contemporary International Relations from UFRGS."
             },
+            "juliana": {
+                "role": "Advocacy Analyst",
+                "about": "Juliana Martins lives in São Paulo and she is part of the Representation and Strategy team at NOSSAS. She has a Law degree and a large experience in the public administration and she has already worked with several organizations of the third sector. Passionate about Human Rights and Democracy, Juliana has got an attentive focus about ethnicity, gender and territory."
+            },
             "karina": {
                 "role": "Mobilizer",
                 "about": "Karina is a biologist and environmentalist from Maranhão. Karina worked as coordinator of the Climate Working Group of the Engajamundo Youth Organization between 2018 and 2020, has been a leader in the USBEA Youth Protagonism community since 2015 and is part of the network of global leaders, International Exchange Alumni. Karina is passionate about education and culture, she loves dancing, walking on stilts and other circus skills. Karina is part of her local church's mission group and loves dialogues and stories."
@@ -210,6 +218,10 @@
             "larissa": {
                 "role": "Manager at Mapa do Acolhimento",
                 "about": "Larissa is a psychologist, activist, feminist, LGBT + activist and is opposed to all forms of mental health hospitalization. Larissa has already worked in public health and social welfare services in Sao Paulo center and in the peripheries to guarantee the rights of vulnerable populations. As the manager of Mapa do Acolhimento, Larissa believes that technology can bring women together in the fight to end gender-based violence. Larissa is a graduate of PUC / SP and a specialist in mental health."
+            },
+            "laura": {
+                "role": "Estagiária de Comunicação",
+                "about": "Communication intern at NOSSAS. Previously, Laura worked as an editorial intern at Jornal O Globo, writing for newspapers in Bairros and as a gender and diversity editor. Born and raised in the North Zone of Rio de Janeiro, in the neighborhood of Penha, Alice is a Journalism student at the UFRJ School of Communication, with a special interest in the areas of race and gender relations. Passionate about street carnival, fan of reality shows and assiduous reader."
             },
             "leca": {
                 "role": "Sustainability Coordinator",
@@ -230,6 +242,14 @@
             "maira": {
                 "role": "Training Manager",
                 "about": "Maira is from Pernambuco, and she is interested in the issues of human rights, gender, sexual and reproductive Rights and drug policy. Anti-prohibition, feminist activist, Maira is a member of Nacional de Feministas Antiproibicionistas (RENFA) e the Articulação de Mulheres Brasileiras (AMB). Before NOSSAS, Maira worked as a reporter for Diario de Pernambuco and Fiocruz. Maira has a degree in Social Communication."
+            },
+            "mariana": {
+                "role": "Mobilizer",
+                "about": "Mariana is an Urbanist by FAUUSP and activist for the city rights. In her actions, Mariana seeks to articulate politics and the city ​​planning with street activism,through a counter-hegemonic and intersectional perspective for urban issues. She has worked with social projects in several cities of Brazil and Spain, where she stayed as a visiting student. Apart from her work at NOSSAS, she is also part of the LGBTQIA+ TODXS Brazil organization as political articulator, and she works as collaborator at Nossa Fala, where she researches and writes about territory, gender and intersectionalities."
+            },
+            "paula": {
+                "role": "Estagiária do Mapa do Acolhimento",
+                "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
             },
             "sany": {
                 "role": "Communications Coordinator",

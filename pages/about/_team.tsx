@@ -158,7 +158,7 @@ export const LeadersMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/karol.jpg",
-          name: "Gestora de Mobilização",
+          name: "Karol Bergamo",
           role: t("teams.leaders.karol.role"),
           about: t("teams.leaders.karol.about"),
           team: t("teams.leaders.title"),
@@ -194,6 +194,13 @@ export const TeamMembers: React.FC = () => {
           name: "Alexandra Maier",
           role: t("teams.team.alexandra.role"),
           about: t("teams.team.alexandra.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/alice.jpg",
+          name: "Alice Almeida",
+          role: t("teams.team.alice.role"),
+          about: t("teams.team.alice.about"),
           team: t("teams.team.title"),
         },
         {
@@ -260,6 +267,13 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/juliana.jpg",
+          name: "Juliana Martins",
+          role: t("teams.team.juliana.role"),
+          about: t("teams.team.juliana.about"),
+          team: t("teams.team.title"),
+        },
+        {
           avatar: "/static/media/team/karina-penha.png",
           name: "Karina Penha",
           role: t("teams.team.karina.role"),
@@ -271,6 +285,13 @@ export const TeamMembers: React.FC = () => {
           name: "Larissa Schmillevitch",
           role: t("teams.team.larissa.role"),
           about: t("teams.team.larissa.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/laura.jpg",
+          name: "Laura Suprani",
+          role: t("teams.team.laura.role"),
+          about: t("teams.team.laura.about"),
           team: t("teams.team.title"),
         },
         {
@@ -306,6 +327,13 @@ export const TeamMembers: React.FC = () => {
           name: "Maira Baracho",
           role: t("teams.team.maira.role"),
           about: t("teams.team.maira.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/paula.jpg",
+          name: "Paula Eduarda Soares da Silva",
+          role: t("teams.team.paula.role"),
+          about: t("teams.team.paula.about"),
           team: t("teams.team.title"),
         },
         {
