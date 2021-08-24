@@ -105,26 +105,36 @@
         "title": "What <strong>we're doing</strong>",
         "sliders": {
             "1": {
+                "title": "Meu Corpo Meu DIU",
+                "description": "Health plans have required women the signature of their partners for the insertion of Intrauterine Devices (IUD). It is time to demand that they withdraw this obligation immediately!",
+                "navigate": "Take part in the campaign"
+            },
+            "2": {
+                "title": "Praça Pôr do Sol without fences NOW!",
+                "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
+                "navigate": "Pressure now!"
+            },
+            "3": {
                 "title": "Parque Realengo Verde",
                 "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
                 "navigate": "Pressure for an urban and ecological park"
             },
-            "2": {
+            "4": {
                 "title": "Livre Para Menstruar",
                 "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
                 "navigate": "Pressure to pass the bill"
             },
-            "3": {
+            "5": {
                 "title": "Sai da Fossa, Manaus!",
                 "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
                 "navigate": "Pressure for basic sanitation"
             },
-            "4": {
+            "6": {
                 "title": "Auxílio até o fim da pandemia",
                 "description": "The end of the emergency aid payments in 2021 has left millions of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
                 "navigate": "Take part in the campaign"
             },
-            "5": {
+            "7": {
                 "title": "Tem gente com fome",
                 "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
                 "navigate": "Take part in the campaign"
