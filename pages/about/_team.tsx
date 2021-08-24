@@ -183,7 +183,7 @@ export const TeamMembers: React.FC = () => {
       title={t("teams.team.title")}
       members={[
         {
-          avatar: "/static/media/team/adriele-alvarenga.png",
+          avatar: "/static/media/team/adriele.jpg",
           name: "Adriele Alvarenga",
           role: t("teams.team.adriele.role"),
           about: t("teams.team.adriele.about"),
@@ -239,14 +239,14 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/gloria-teodoro.png",
+          avatar: "/static/media/team/gloria.jpg",
           name: "Glória Teodoro",
           role: t("teams.team.gloria.role"),
           about: t("teams.team.gloria.about"),
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/igor-santos.png",
+          avatar: "/static/media/team/igor.jpg",
           name: "Igor Santos",
           role: t("teams.team.igor.role"),
           about: t("teams.team.igor.about"),
@@ -257,6 +257,13 @@ export const TeamMembers: React.FC = () => {
           name: "Isabel Pessanha",
           role: t("teams.team.isabel.role"),
           about: t("teams.team.isabel.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/isabella.jpg",
+          name: "Isabella dos Santos",
+          role: t("teams.team.isabella.role"),
+          about: t("teams.team.isabella.about"),
           team: t("teams.team.title"),
         },
         {
