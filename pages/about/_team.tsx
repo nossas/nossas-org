@@ -337,6 +337,13 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/mariana.jpg",
+          name: "Mariana Assef",
+          role: t("teams.team.mariana.role"),
+          about: t("teams.team.mariana.about"),
+          team: t("teams.team.title"),
+        },        
+        {
           avatar: "/static/media/team/paula.jpg",
           name: "Paula Eduarda Soares da Silva",
           role: t("teams.team.paula.role"),
