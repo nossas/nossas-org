@@ -1,186 +1,191 @@
 {
-    "navbar": {
-        "navigation": {
-            "see-more": "Conheça",
-            "about": "Sobre o NOSSAS",
-            "work-with-us": "Trabalhe conosco",
-            "participate": "Participe",
-            "campaigns": "Campanhas",
-            "materials": "Materiais",
-            "trainings": "Treinamentos",
-            "incubations": "Incubações",
-            "technologies": "Tecnologias"
+  "navbar": {
+    "navigation": {
+      "see-more": "Conheça",
+      "about": "Sobre o NOSSAS",
+      "work-with-us": "Trabalhe conosco",
+      "participate": "Participe",
+      "campaigns": "Campanhas",
+      "materials": "Materiais",
+      "trainings": "Treinamentos",
+      "incubations": "Incubações",
+      "technologies": "Tecnologias"
+    },
+    "donate": "Doar"
+  },
+  "donation": {
+    "title": "Doe para o <strong>NOSSAS</strong>",
+    "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
+    "form": {
+      "continue": "Continuar",
+      "donate": "Doar",
+      "done": "Finalizar",
+      "security": "doação segura",
+      "tabs": {
+        "activist": "Seus dados",
+        "payment": "Pagamento"
+      },
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Nome",
+          "required": "Informe seu nome"
         },
-        "donate": "Doar"
-    },
-    "donation": {
-        "title": "Doe para o <strong>NOSSAS</strong>",
-        "description": "O NOSSAS é sustentado exclusivamente por pessoas e fundações que acreditam em nosso trabalho e no impacto que queremos ver no mundo. Faça sua doação!",
-        "form": {
-            "continue": "Continuar",
-            "donate": "Doar",
-            "done": "Finalizar",
-            "security": "doação segura",
-            "tabs": {
-                "activist": "Seus dados",
-                "payment": "Pagamento"
-            },
-            "fields": {
-                "name": {
-                    "label": "Nome",
-                    "placeholder": "Nome",
-                    "required": "Informe seu nome"
-                },
-                "email": {
-                    "label": "E-mail",
-                    "placeholder": "E-mail",
-                    "required": "Informe seu e-mail",
-                    "invalid": "Informe um e-mail válido"
-                },
-                "phone": {
-                    "label": "Whatsapp",
-                    "required": "Informe seu whatsapp",
-                    "invalid": "Informe um número válido"
-                },
-                "cardholderName": {
-                    "label": "Nome",
-                    "placeholder": "Nome no cartão",
-                    "required": "Informe o nome no cartão"
-                },
-                "currency": {
-                    "label": "Moeda"
-                },
-                "customDonation": {
-                    "label": "Valor",
-                    "required": "Informe um valor de doação",
-                    "min": "Informe ao menos 5 para doação"
-                }
-            },
-            "success": {
-                "imageAlt": "Doação bem sucedida!",
-                "title": "Valeu, <strong>{{name}}!</strong>",
-                "thanks": "Sua doação faz toda a diferença!",
-                "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"   
-            }
-        }
-    },
-    "subscribe": {
-        "form": {
-            "fields": {
-                "name": {
-                    "label": "Nome",
-                    "placeholder": "Nome",
-                    "required": "Informe seu nome"
-                },
-                "lastName": {
-                    "label": "Sobrenome",
-                    "placeholder": "Sobrenome"
-                },
-                "phone": {
-                    "label": "Whatsapp",
-                    "required": "Informe seu whatsapp",
-                    "invalid": "Informe um número válido"
-                },
-                "email": {
-                    "label": "E-mail",
-                    "placeholder": "E-mail",
-                    "required": "Informe seu e-mail",
-                    "invalid": "Informe um e-mail válido"
-                },
-                "state": {
-                    "label": "Estado",
-                    "placeholder": "Estado"
-                },
-                "city": {
-                    "label": "Cidade",
-                    "placeholder": "Cidade"
-                }
-            },
-            "success": {
-                "title": "Valeu, <strong>{{name}}!</strong>"
-            }
-        }
-    },
-    "we-are-doing": {
-        "title": "Campanhas <strong>no ar</strong>",
-        "sliders": {
-            "1": {
-                "title": "Meu Corpo Meu DIU",
-                "description": "Planos de saúde têm exigido de mulheres a assinatura do cônjuge para inserção do Dispositivo Intrauterino (DIU). É hora de exigir que retirem imediatamente essa obrigação!",
-                "navigate": "Participe da campanha"
-            },
-            "2": {
-                "title": "Pôr do Sol Sem Cerca JÁ!",
-                "description": "A Praça Pôr do Sol foi gradeada pela Prefeitura de São Paulo sem nenhuma consulta pública! É hora de pressionar a Câmara Municipal e impedir o cercamento definitivo da praça!",
-                "navigate": "Pressione agora"
-            },
-            "3": {
-                "title": "Parque Realengo Verde",
-                "description": "Os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro, já estão há décadas lutando para manter uma das últimas áreas verdes da região de pé.",
-                "navigate": "Pressione por um parque urbano e ecológico"
-            },
-            "4": {
-                "title": "Livre Para Menstruar",
-                "description": "Em vários estados do Brasil, meninas estão articulando projetos de lei sobre pobreza menstrual.",
-                "navigate": "Pressione pela aprovação dos PLs"
-            },
-            "5": {
-                "title": "Sai da Fossa, Manaus!",
-                "description": "Em Manaus, 8 em cada 10 habitantes não possuem acesso ao sistema de esgoto. É hora de exigir que o prefeito garanta o aumento da cobertura desse serviço para todos os manauaras.",
-                "navigate": "Pressione por saneamento básico"
-            },
-            "6": {
-                "title": "Auxílio até o fim da pandemia",
-                "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
-                "navigate": "Participe da campanha"
-            },
-            "7": {
-                "title": "Tem gente com fome",
-                "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
-                "navigate": "Participe da campanha"
-            },
-            "8": {
-                "title": "MUVUCA",
-                "description": "O primeiro programa de ativismo climático do NOSSAS vai oferecer treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
-                "navigate": "Participe da campanha"
-            }
-        }
-    },
-    "media": "Na <strong>mídia</strong>",
-    "see": "Saiba +",
-    "know-more": "Saiba mais +",
-    "footer": {
-        "navigation": {
-            "join-us": "Junte-se a nós",
-            "about": "Conheça o NOSSAS",
-            "donate": "Faça uma doação",
-            "work-with-us": "Trabalhe conosco"
+        "email": {
+          "label": "E-mail",
+          "placeholder": "E-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "Informe um e-mail válido"
         },
-        "social": {
-            "title": "Siga nas redes sociais"
+        "phone": {
+          "label": "Whatsapp",
+          "required": "Informe seu whatsapp",
+          "invalid": "Informe um número válido"
         },
-        "newsletter": {
-            "title": "Fique por dentro",
-            "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
-            "success": {
-                "title": "Valeu!",
-                "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
-            },
-            "form": {
-                "email": {
-                    "placeholder": "Seu e-mail",
-                    "required": "Informe seu e-mail",
-                    "invalid": "OPS! Confira o e-mail"
-                },
-                "firstname": {
-                    "placeholder": "Nome",
-                    "required": "Informe seu nome"
-                },
-                "lastname": {
-                    "placeholder": "Sobrenome"
-                },
-                "submit": "Salvar"
-            }
+        "cardholderName": {
+          "label": "Nome",
+          "placeholder": "Nome no cartão",
+          "required": "Informe o nome no cartão"
+        },
+        "currency": {
+          "label": "Moeda"
+        },
+        "customDonation": {
+          "label": "Valor",
+          "required": "Informe um valor de doação",
+          "min": "Informe ao menos 5 para doação"
         }
+      },
+      "success": {
+        "imageAlt": "Doação bem sucedida!",
+        "title": "Valeu, <strong>{{name}}!</strong>",
+        "thanks": "Sua doação faz toda a diferença!",
+        "message": "Muito obrigada pela sua doação - ela irá nos ajudar a continuar o nosso trabalho :)"
+      }
     }
+  },
+  "subscribe": {
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Nome",
+          "required": "Informe seu nome"
+        },
+        "lastName": {
+          "label": "Sobrenome",
+          "placeholder": "Sobrenome"
+        },
+        "phone": {
+          "label": "Whatsapp",
+          "required": "Informe seu whatsapp",
+          "invalid": "Informe um número válido"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "E-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "Informe um e-mail válido"
+        },
+        "state": {
+          "label": "Estado",
+          "placeholder": "Estado"
+        },
+        "city": {
+          "label": "Cidade",
+          "placeholder": "Cidade"
+        }
+      },
+      "success": {
+        "title": "Valeu, <strong>{{name}}!</strong>"
+      }
+    }
+  },
+  "we-are-doing": {
+    "title": "Campanhas <strong>no ar</strong>",
+    "sliders": {
+      "1": {
+        "title": "Cadê Meu Absorvente?",
+        "description": "Diversos projetos de lei foram aprovados em vários estados do Brasil, mas já passou da hora de termos uma lei nacional que assegure a distribuição de absorventes no país.",
+        "navigate": "Pressione por dignidade menstrual para todas"
+      },
+      "2": {
+        "title": "Meu Corpo Meu DIU",
+        "description": "Planos de saúde têm exigido de mulheres a assinatura do cônjuge para inserção do Dispositivo Intrauterino (DIU). É hora de exigir que retirem imediatamente essa obrigação!",
+        "navigate": "Participe da campanha"
+      },
+      "3": {
+        "title": "Pôr do Sol Sem Cerca JÁ!",
+        "description": "A Praça Pôr do Sol foi gradeada pela Prefeitura de São Paulo sem nenhuma consulta pública! É hora de pressionar a Câmara Municipal e impedir o cercamento definitivo da praça!",
+        "navigate": "Pressione agora"
+      },
+      "4": {
+        "title": "Parque Realengo Verde",
+        "description": "Os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro, já estão há décadas lutando para manter uma das últimas áreas verdes da região de pé.",
+        "navigate": "Pressione por um parque urbano e ecológico"
+      },
+      "5": {
+        "title": "Livre Para Menstruar",
+        "description": "Em vários estados do Brasil, meninas estão articulando projetos de lei sobre pobreza menstrual.",
+        "navigate": "Pressione pela aprovação dos PLs"
+      },
+      "6": {
+        "title": "Sai da Fossa, Manaus!",
+        "description": "Em Manaus, 8 em cada 10 habitantes não possuem acesso ao sistema de esgoto. É hora de exigir que o prefeito garanta o aumento da cobertura desse serviço para todos os manauaras.",
+        "navigate": "Pressione por saneamento básico"
+      },
+      "7": {
+        "title": "Auxílio até o fim da pandemia",
+        "description": "O fim do auxílio emergencial em 2021 pode deixar milhares de pessoas na miséria. A distribuição de recursos precisa continuar enquanto durar a crise!",
+        "navigate": "Participe da campanha"
+      },
+      "8": {
+        "title": "Tem gente com fome",
+        "description": "Uma mobilização nacional está arrecadando fundos para combater a fome e a miséria na pandemia. É preciso comprar comida, a fome não pode esperar!",
+        "navigate": "Participe da campanha"
+      },
+      "9": {
+        "title": "MUVUCA",
+        "description": "O primeiro programa de ativismo climático do NOSSAS vai oferecer treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
+        "navigate": "Participe da campanha"
+      }
+    }
+  },
+  "media": "Na <strong>mídia</strong>",
+  "see": "Saiba +",
+  "know-more": "Saiba mais +",
+  "footer": {
+    "navigation": {
+      "join-us": "Junte-se a nós",
+      "about": "Conheça o NOSSAS",
+      "donate": "Faça uma doação",
+      "work-with-us": "Trabalhe conosco"
+    },
+    "social": {
+      "title": "Siga nas redes sociais"
+    },
+    "newsletter": {
+      "title": "Fique por dentro",
+      "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
+      "success": {
+        "title": "Valeu!",
+        "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
+      },
+      "form": {
+        "email": {
+          "placeholder": "Seu e-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "OPS! Confira o e-mail"
+        },
+        "firstname": {
+          "placeholder": "Nome",
+          "required": "Informe seu nome"
+        },
+        "lastname": {
+          "placeholder": "Sobrenome"
+        },
+        "submit": "Salvar"
+      }
+    }
+  }
 }
