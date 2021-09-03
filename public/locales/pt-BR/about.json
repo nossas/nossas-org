@@ -1,251 +1,291 @@
 {
-    "cover": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário",
-    "history": {
-        "description": "Somos uma organização sem fins lucrativos comprometida com o fortalecimento da democracia, da justiça social e da igualdade. Há mais de dez anos desenvolvemos projetos, táticas e estratégias de mobilização e solidariedade pelo Brasil inteiro.",
-        "title": "História",
-        "about": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos dezenas de projetos, fizemos centenas de campanhas de impacto, conseguimos a implementação de políticas públicas importantes e contribuímos na construção de redes de solidariedade."
+  "cover": "Desenvolvemos tecnologias, compartilhamos metodologias e articulamos pessoas para apoiar o ativismo democrático e solidário",
+  "history": {
+    "description": "Somos uma organização sem fins lucrativos comprometida com o fortalecimento da democracia, da justiça social e da igualdade. Há mais de dez anos desenvolvemos projetos, táticas e estratégias de mobilização e solidariedade pelo Brasil inteiro.",
+    "title": "História",
+    "about": "O NOSSAS nasceu em 2011. De lá para cá, reunimos milhares de pessoas em torno de causas, desenvolvemos dezenas de projetos, fizemos centenas de campanhas de impacto, conseguimos a implementação de políticas públicas importantes e contribuímos na construção de redes de solidariedade."
+  },
+  "timeline": {
+    "title": "Linha do tempo",
+    "description": "Conheça alguns dos momentos marcantes de nossa trajetória:",
+    "2011": {
+      "1": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local."
     },
-    "timeline": {
-        "title": "Linha do tempo",
-        "description": "Conheça alguns dos momentos marcantes de nossa trajetória:",
-        "2011": {
-            "1": "O NOSSAS nasce com o Meu Rio, uma organização multi-causas que aproxima os cariocas da política local."
-        },
-        "2013": {
-            "1": "O Meu Rio salva da demolição uma das melhores escolas públicas da cidade. A campanha envolveu várias táticas de mobilização popular e foi a primeira expressiva vitória da organização."
-        },
-        "2014": {
-            "1": "O Meu Rio faz sua primeira experiência de replicação, exportando metodologia e tecnologia para São Paulo. Nasce a Minha Sampa.",
-            "2": "O Meu Rio lidera campanha pela criação da primeira Delegacia de Descoberta de Paradeiros. Após sua implementação, 80% dos casos de desaparecimento no Rio passam a ser solucionados.",
-            "3": "A principal avenida de São Paulo passa a ser inteiramente para pedestres aos domingos graças a uma campanha da Minha Sampa e parceiros, que fez história na cidade.",
-            "4": "O programa de fundadores da Rede Nossas Cidades é lançado, com o objetivo de treinar pessoas de todo o Brasil para fundar suas redes de mobilização local."
-        },
-        "2016": {
-            "1": "Defezap, primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, é criada. Posteriormente, a ferramenta é doada à Comissão de Direitos Humanos da ALERJ.",
-            "2": "Nasce o Mapa do Acolhimento, uma rede de solidariedade que permite a conexão entre mulheres vítimas de violência e psicólogas ou advogadas voluntárias.",
-            "3": "O Meu Rio barra um projeto de lei que garantiria mesada vitalícia a vereadores da cidade. A campanha gerou mais de 10 mil pressões em menos de 24 horas."
-        },
-        "2017": {
-            "1": "Beta, a primeira chatbot feminista do Facebook, é programada para dar visibilidade à luta feminista no Brasil e compartilhar oportunidades de agir pelos direitos das mulheres."
-        },
-        "2018": {
-            "1": "O BONDE, a plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas, é lançado.",
-            "2": {
-                "src": "/static/media/timeline/PT/nfpt.png",
-                "text": "Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio."
-            },
-            "3": "Após uma mobilização histórica, o Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos em estabelecimentos comerciais.",
-            "4": "Somos Cria, a primeira campanha de apoio a pré-vestibulares comunitários é lançada. Ela contribui para a entrada de alunos periféricos nas universidades."
-        },
-        "2019": {
-            "1": "O Programa de Mobilizadores passa a oferecer treinamento em metodologias e ferramentas de mobilização para pessoas de várias cidades do Brasil.",
-            "2": "Depois de muita pressão da Minha Sampa, dez Delegacias de Atendimento a Mulheres Vítimas de Violência passam a funcionar 24h em todo Estado de São Paulo.",
-            "3": "No rastro da mobilização carioca, a Minha Sampa lidera campanha de pressão que leva a maior cidade do país a proibir a distribuição de canudos de plástico.",
-            "4": "Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão."
-        },
-        "2020": {
-            "1": "Tocada com outras 200 organizações, a campanha Renda Básica Que Queremos leva à aprovação do Auxílio Emergencial durante a pandemia.",
-            "2": "A campanha distribui 400 mil reais a dez coletivos periféricos do Rio de Janeiro, beneficiando a mais de 3 mil famílias duramente atingidas pela crise sanitária.",
-            "3": "Graças à mobilização Sem Aula Sem Enem, estudantes lançam mais de 4 mil campanhas locais em seus estados e conseguem o adiamento do ENEM para 2021.",
-            "4": "33 cursinhos de pré-vestibular comunitário recebem apoio para inclusão digital durante a pandemia. A campanha acaba beneficiando mais de 4,5 mil alunos em 10 estados do país, ao longo de três meses.",
-            "5": "A primeira campanha de arrecadação a bater o milhão de reais possibilita a distribuição de cestas básicas e kits de higiene para comunidades indígenas da Amazônia por seis meses.",
-            "6": "O primeiro programa de repasses do NOSSAS contempla 12 coletivos periféricos nas cinco regiões do país."
-        }
+    "2013": {
+      "1": "O Meu Rio salva da demolição uma das melhores escolas públicas da cidade. A campanha envolveu várias táticas de mobilização popular e foi a primeira expressiva vitória da organização."
     },
-    "impact": {
-        "title": "Números <br/><strong>de impacto</strong>",
-        "financial": {
-            "number": "+4 milhões",
-            "description": "de reais arrecadados em financiamento coletivo"
-        },
-        "volunteers": {
-            "number": "+5,4 mil",
-            "description": "voluntárias e voluntários cadastrados"
-        },
-        "political": {
-            "number": "+120",
-            "description": "mudanças de política pública"
-        },
-        "campaigns": {
-            "number": "+200",
-            "description": "campanhas lançadas"
-        },
-        "donations": {
-            "number": "+29 mil",
-            "description": "pessoas já fizeram doações"
-        },
-        "activists": {
-            "number": "+2,6 milhões",
-            "description": "de pessoas mobilizadas"
-        }
+    "2014": {
+      "1": "O Meu Rio faz sua primeira experiência de replicação, exportando metodologia e tecnologia para São Paulo. Nasce a Minha Sampa.",
+      "2": "O Meu Rio lidera campanha pela criação da primeira Delegacia de Descoberta de Paradeiros. Após sua implementação, 80% dos casos de desaparecimento no Rio passam a ser solucionados.",
+      "3": "A principal avenida de São Paulo passa a ser inteiramente para pedestres aos domingos graças a uma campanha da Minha Sampa e parceiros, que fez história na cidade.",
+      "4": "O programa de fundadores da Rede Nossas Cidades é lançado, com o objetivo de treinar pessoas de todo o Brasil para fundar suas redes de mobilização local."
     },
-    "teams": {
-        "board": {
-            "title": "Conselho",
-            "description": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de quatro anos:",
-            "members": {
-                "anacarolina": {
-                    "role": "Diretora do ISER",
-                    "about": "Cientista política e pesquisadora, Ana Carolina é especialista em políticas públicas locais e participação social. Foi gerente programática na Fundación Avina, onde fomentou experimentos em desenvolvimento urbano, gerenciamento local e inovação política na América Latina, e hoje é diretora do ISER, organização que promove estudos e pesquisas sobre religião e justiça social no Brasil. Tem mestrado em Relações Internacionais e é doutoranda pelo CPDOC/FGV."
-                },
-                "anapaula": {
-                    "role": "Fundadora da Casa Rede e colunista do jornal O Globo",
-                    "about": "Ana Paula é escritora, produtora e colunista do jornal O Globo. Atualmente, vive entre Rio de Janeiro e Luanda, onde dirige a produtora Aláfia e o espaço cultural Casa Rede. Foi produtora e apresentadora do programa \"Querendo Assunto\", tem contos e poesias publicados em coletâneas nacionais e internacionais e, desde 2016, tem contribuído regularmente com a revista feminista AzMina."
-                },
-                "roberto": {
-                    "role": "Fundador do Ocupa Política e editor da Piseagrama",
-                    "about": "Roberto é arquiteto, urbanista e pesquisador com ampla experiência em prática arquitetônica, desenvolvimento urbano e tecnologia da informação. É editor da revista Piseagrama e professor na UFMG, tendo passado antes pelos laboratórios de pesquisa Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) e Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto também é diretor e co-fundador da Hometeka."
-                },
-                "branca": {
-                    "role": "Fundadora e presidente da Rádio Novelo",
-                    "about": "Branca é filantropa e Presidente do Conselho Administrativo do Instituto Serrapilheira, primeira instituição privada, sem fins lucrativos, de fomento à ciência no Brasil. Ela também é presidente da Rádio Novelo e apresentadora do podcast \"Maria vai com as outras\", sobre mulheres no mercado de trabalho. Foi professora da PUC-Rio por mais de 10 anos e possui experiência sólida em comunicação para grandes audiências."
-                },
-                "felipe": {
-                    "role": "Diretor de investimentos da Luminate",
-                    "about": "À frente da Direção de investimentos na América Latina da Luminate, Felipe apoia a organização no fortalecimento de iniciativas e políticas públicas de direitos digitais, transparência financeira, independência da mídia e tecnologia cívica na região. Antes de entrar na Luminate, ele foi estrategista no Banco Mundial para a promoção da transparência nas instâncias de governo. Também foi membro fundador da Open Contracting Partnership."
-                },
-                "ines": {
-                    "role": "Diretora do Instituto Betty & Jacob Lafer",
-                    "about": "Inês é especialista em iniciativas filantrópicas e políticas públicas focadas em crianças e adolescentes. Ela iniciou sua carreira como psicóloga no SESI antes de tornar-se consultora na Kairós Desenvolvimento Social em projetos nas áreas de criança e adolescência e assistência social. Foi gerente programática na Fundação Maria Cecília Souto Vidigal, assistente técnica na Comissão Municipal de Direitos Humanos de São Paulo e gerente de projetos no IDIS."
-                }
-            }
-        },
-        "leaders": {
-            "title": "Liderança",
-            "alessandra": {
-                "role": "Co-fundadora e Diretora Executiva",
-                "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
-            },
-            "enrica": {
-                "role": "Diretora Adjunta e Diretora do Mapa do Acolhimento",
-                "about": "Enrica chegou ao NOSSAS como mobilizadora antes de se tornar chefe de equipe e Diretora Adjunta. Ela já morou e trabalhou na Bélgica, África do Sul e Japão até se fixar em sua cidade natal, o Rio de Janeiro. No Brasil, foi produtora da GloboNews, cobrindo os protestos de 2013. Atualmente lidera o projeto Mapa do Acolhimento. Ela é Bacharel em Ciências Políticas com concentração em Estudos Globais pela The New School."
-            },
-            "virginia": {
-                "role": "Diretora de Operações",
-                "about": "Virginia atuou como gerente de projetos editoriais nas Éditions Gallimard e pilotou projetos de comunicação pública e institucional em agências de comunicação na França. Ao regressar ao Brasil, atuou em organizações do terceiro setor que trabalham com cultura e justiça social. No NOSSAS, supervisiona as áreas de operações, comunicação e sustentabilidade. Ela é formada em Filosofia Política pela Sorbonne e pós-graduada em Comunicação pelo Instituto CELSA."
-            },
-            "daniela": {
-                "role": "Diretora Interina de Mobilização",
-                "about": "Daniela atua em campanhas de mobilização, campanhas eleitorais, advocacy e assessoria legislativa há quase uma década. Trabalhou por quatro anos com o presidente da Comissão de Direitos Humanos da Assembleia Legislativa do Rio de Janeiro, ao lado de Marielle Franco. Atualmente é Diretora de Mobilização no NOSSAS e lidera nossa equipe de campanhas e treinamentos. Daniela é socióloga pela UFRJ e mestranda em Ciência da Informação, também pela UFRJ."
-            },
-            "manoela": {
-                "role": "Estrategista Chefe",
-                "about": "Manoela é especialista em direitos humanos e estudos de gênero e ativista pelos direitos das mulheres. Criou e coapresenta o podcast Novo Normal e contribui como colunista para vários veículos, como Folha de São Paulo, Veja, Volcánica e Mídia Ninja. Antes do NOSSAS, fez parte da equipe da Open Society Foundations LATAM. Manoela é doutora em segurança do cidadão pelo Programa de Pós-Graduação em Relações Internacionais San Tiago Dantas."
-            },
-            "cledisson": {
-                "role": "Estrategista de Advocacy",
-                "about": "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ."
-            },
-            "pirola": {
-                "role": "Head de Tecnologia",
-                "about": "Pirola é líder de desenvolvimento autodidata de São Paulo. Ingressou na equipe como programador, mas com seu vasto conhecimento técnico, rapidamente liderou a área e hoje supervisiona todos os projetos relacionados à tecnologia no NOSSAS. Antes, trabalhou como especialista em infografia durante as eleições presidenciais de 2010 no Brasil. Amante da natureza, nas horas vagas gosta de surfar e ficar com sua companheira e filhote."
-            },
-            "talita": {
-                "role": "Gestora Sênior de Tecnologia",
-                "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
-            }
-        },
-        "team": {
-            "title": "Equipe",
-            "adriele": {
-                "role": "Programadora",
-                "about": "Adriele, preta, mineira, entrou recentemente para a equipe de tecnologia do Nossas. É graduada em Ciência da Computação pela UFJF e começou a trabalhar como programadora em 2014 e, desde então, vem questionando a importância da diversidade nesse meio, assim como as responsabilidades e poderes que profissionais da tecnologia têm na sociedade contemporânea. Nas horas vagas, gosta de música, viajar, cozinhar, boas companhias e boas histórias."
-            },
-            "alexandra": {
-                "role": "Coordenadora de Operações",
-                "about": "Alexandra compõe a Equipe Operacional da organização, monitorando os processos internos burocráticos e administrativos. É amante de gastronomia, música e pessoas. Antes de chegar no NOSSAS, viveu e trabalhou na Dinamarca, Alemanha e Inglaterra. De volta ao Brasil já atuou na área de assessoria executiva e gestão de expatriados no setor de dragagem. É formada em Processos Gerenciais pela FGV e Hospitalidade pelo Highbury College."
-            },
-            "aline": {
-                "role": "Coordenadora Financeira",
-                "about": "Funcionária mais veterana da organização, Aline acompanhou nosso crescimento desde o primeiro ano do Meu Rio. Ao longo desse período trabalhou à frente da estrutura administrativa idealizando os processos operacionais de base. É viciada em trabalho, mas nas horas vagas conduz um estudo espiritual, dando aula em um centro de educação mediúnica. Considera seus colegas de trabalho como filhos e adotou todas as crianças do NOSSAS como netos."
-            },
-            "anabeatriz": {
-                "role": "Coordenadora de Voluntárias do Mapa do Acolhimento",
-                "about": "Ana é advogada formada pela PUC-SP e compõe a equipe do Mapa do Acolhimento. Entre 2015 e 2016 atuou na 1ª Vara de Família do Fórum Regional de Pinheiros acompanhando de perto casos e audiências de demandas de família sem a perspectiva de gênero. Depois de graduada realizou o curso de atendimento a mulheres vítimas de violência de gênero ministrado pelo IBCCRIM em parceria com o Instituto Avon e está no Mapa do Acolhimento desde outubro de 2018."
-            },
-            "anaclaudia": {
-                "role": "Designer e Mobilizadora",
-                "about": "Ana Claudia é manauara e trabalhou durante 7 anos em organizações do terceiro setor na Amazônia. No NOSSAS, atua como designer e mobilizadora nas equipes de Criação e Comunicação. Ela é formada em design gráfico e estudante de artes visuais na Universidade Federal do Amazonas - UFAM."
-            },
-            "anderson": {
-                "role": "Coordenador de Dados",
-                "about": "Anderson é graduado em Ciência Política pela UFPE, onde pesquisou sobre produção de políticas públicas, conflito legislativo e polarização político-partidária. Foi através de estudos acadêmicos que teve contato com dados e programação, área na qual tem se aprofundado desde então. No NOSSAS desde 2019, ajuda a monitorar métricas relevantes e conduz experimentos e análises observacionais para testar hipóteses sobre como aumentar o impacto da organização."
-            },
-            "gabriela": {
-                "role": "Coordenadora de Atendimento do Mapa do Acolhimento",
-                "about": "Gabriela é feminista antirracista e trabalhou como articuladora no projeto “Feminicidades”, que visa dar voz a todos os tipos de mulheres. É psicóloga formada pela PUC-SP, especializou-se no atendimento à mulher em situação de violência de gênero no IBCCRIM, com foco em Lei Maria da Penha, Serviços Públicos, ONGs e violência familiar. Tem especialização em saúde coletiva pelo Instituto de Saúde da Secretaria de Estado da Saúde."
-            },
-            "gloria": {
-                "role": "Programadora",
-                "about": "Glória é baiana, atual moradora de Recife, e gosta de aprender sobre tecnologia, segurança da informação e música. Além disso, está sempre atenta a ambientes que incentivam o crescimento de mulheres na tecnologia. Ex-estudante de Direito, decidiu deixar o curso para se dedicar ao desenvolvimento de software, passando pela Reprograma e iniciando a graduação em Ciência da Computação na UFPE."
-            },
-            "igor": {
-                "role": "Programador",
-                "about": "Igor é desenvolvedor de software e produtor musical. Tem vasta experiência com programação e está há anos contribuindo com o desenvolvimento de novas tecnologias no NOSSAS. Ele é membro da Python Brasil Association, apaixonado por música, cultura e tecnologia."
-            },
-            "isabel": {
-                "role": "Assistente pessoal de Alessandra Orofino",
-                "about": "Isabel já trabalhou com produção, RH e gestão da diversidade. Hoje, ela atua como assistente de redação do Greg News e assistente pessoal de nossa diretora executiva, dando apoio em sua rotina de trocas com parceiros e equipes. Isabel é formada em Administração pela PUC-Rio com especialização em Recursos Humanos e Diversidade, pela ESG-UQÀM."
-            },
-            "izamir": {
-                "role": "Mobilizador",
-                "about": "Izamir é um ativista socioambiental interessado na agenda de desenvolvimento sustentável da Amazônia Ocidental. Amazonense, trabalhou como comunicador em algumas organizações e liderou projetos do terceiro setor em Manaus. É formado em Relações-públicas (UFAM) e jornalismo (FMF-Devry), possui MBA em Marketing Digital pela ESPM e é especialista em Relações Internacionais Contemporâneas pela UFRGS."
-            },
-            "karina": {
-                "role": "Mobilizadora",
-                "about": "Karina é maranhense, bióloga e ambientalista. Foi coordenadora do Grupo de Trabalho de Clima da Organização de Jovens Engajamundo entre 2018 e 2020, é Líder da comunidade de Protagonismo Juvenil USBEA desde 2015 e faz parte da rede de líderes globais International Exchange Alumni. É apaixonada por educação e cultura, ama dançar, andar de perna de pau e tentar outras habilidades circenses. Faz parte do grupo de missões de uma igreja local e ama diálogos e histórias."
-            },
-            "larissa": {
-                "role": "Gestora do Mapa do Acolhimento",
-                "about": "Larissa é psicóloga, ativista, feminista, militante LGBT+ e contra todas as formas de manicômio. Já atuou em serviços da saúde pública e da assistência social no centro e nas periferias de São Paulo pela garantia de direitos de populações em situação de vulnerabilidade. Como gestora do Mapa do Acolhimento, acredita que a tecnologia pode unir mulheres na luta pelo fim da violência baseada em gênero. Larissa é formada pela PUC/SP e especialista em saúde mental."
-            },
-            "leca": {
-                "role": "Coordenadora de Sustentabilidade",
-                "about": "Formada em Marketing, Leca trouxe sua experiência nas áreas comercial e de relacionamento para ampliar o compartilhamento sustentável da plataforma BONDE com organizações parceiras e fortalecer a rede de micro doadores da organização. Seu trabalho tem ajudado a distribuir a força da plataforma para diversos parceiros, como a All Out, o Pacto pela Democracia e o Coletivo Papo Reto."
-            },
-            "leticia": {
-                "role": "Mobilizadora",
-                "about": "Letícia sempre foi movida pelos direitos dos migrantes e refugiados e por formas de integração à cidade. No NOSSAS, ela trabalha na frente de Treinamento, na execução dos editais e do Programa de Mobilizadores. Antes, foi Assistente de Cooperação Internacional no Centro de Relações Internacionais em Saúde (Cris) da Fiocruz. Letícia é mestre em Gestão e Análises de Políticas Internacionais pela PUC-Rio e graduada em Relações Internacionais pela UFF."
-            },
-            "livia": {
-                "role": "Coordenadora de Mobilização",
-                "about": "Campaigner no Nossas, Lívia atuou previamente em projetos nas áreas de gênero, sustentabilidade e direitos humanos em organizações como a Actionaid e a Anistia Internacional. Ela possui graduação em Relações Internacionais pela Universidade Federal do Rio de Janeiro e especialização em Ecoliteracia pela Universidade de Coimbra e UNESCO."
-            },
-            "luciana": {
-                "role": "Mobilizadora",
-                "about": "Manauara, Luciana atua com projetos sociais relacionados à educação e humanização na cidade de Manaus há alguns anos. Em paralelo ao seu trabalho no NOSSAS, ela coordena um projeto voluntário que orienta jovens e adultos de comunidades carentes que têm interesse em realizar o Enem. Ela é formada em Relações Públicas pela UFAM e tem especialização em Comunicação Empresarial e Mídias Digitais."
-            },
-            "maira": {
-                "role": "Gestora de Treinamento",
-                "about": "Maira é pernambucana, interessada nas pautas de Direitos Humanos, gênero, Direitos Sexuais e Direitos Reprodutivos e Política de Drogas. Militante feminista antiproibicionista, ela integra a Rede Nacional de Feministas Antiproibicionistas (RENFA) e a Articulação de Mulheres Brasileiras (AMB). Antes do NOSSAS, trabalhou como repórter do Diario de Pernambuco e na Fiocruz. Maira é formada em Comunicação Social."
-            },
-            "sany": {
-                "role": "Coordenadora de Comunicação",
-                "about": "Sany atua na área de comunicação desde 2013, com experiência em produção de conteúdo para mídias digitais, design, produção audiovisual, consultoria e educação. Nas horas vagas, gosta de praticar atividades circenses, tocar percussão e mergulhar cada vez mais na literatura produzida por mulheres negras. Ela é graduada em Publicidade e Propaganda e especialista em Produção e Criação de Conteúdos Digitais pela ESPM."
-            },
-            "tayna": {
-                "role": "Analista de Sustentabilidade",
-                "about": "Antes de integrar a frente de Sustentabilidade, Tayná tinha experiência com atendimento ao público e relacionamento com cliente, suporte técnico/funcional, cobrança ativa e vendas, além de atuação na área da educação, como auxiliar de classe no ensino fundamental e médio. Tayná é graduanda em Licenciatura em Ciências Humanas e tem interesse de especialização em Comunicação Social."
-            },
-            "thalita": {
-                "role": "Articuladora do Mapa do Acolhimento",
-                "about": "Baiana, feminista e anti-racista, Thalita é uma defensora dos Direitos Humanos com especial interesse por temáticas na interseccionalidade entre raça e gênero que colaborem na luta por justiça e reparação das desigualdades. Ela é formada em Serviço Social pela UFBA, onde descobriu as áreas de assessoria em assistência social e sociojurídica, conhecimentos que desenvolve em seu trabalho no Mapa do Acolhimento."
-            },
-            "vanessa": {
-                "role": "Articuladora do Mapa do Acolhimento",
-                "about": "Nascida e criada em Recife, Vanessa possui experiências docentes do ensino superior em Serviço Social e em formação política de lideranças. É ativista do movimento progressista evangélico brasileiro e facilita a criação de espaços formativos para a incidência pública nas áreas de cidadania, justiça racial e de gênero. Vanessa é bacharel em Serviço Social (UFPE), pós-graduada em Gestão da Política de Assistência Social (UNICAP) e Mestra em Educação, Culturas e Identidades (UFRPE)."
-            }
-        }
+    "2016": {
+      "1": "Defezap, primeiro sistema de denúncia colaborativa e investigação contra a violência de estado no Rio de Janeiro, é criada. Posteriormente, a ferramenta é doada à Comissão de Direitos Humanos da ALERJ.",
+      "2": "Nasce o Mapa do Acolhimento, uma rede de solidariedade que permite a conexão entre mulheres vítimas de violência e psicólogas ou advogadas voluntárias.",
+      "3": "O Meu Rio barra um projeto de lei que garantiria mesada vitalícia a vereadores da cidade. A campanha gerou mais de 10 mil pressões em menos de 24 horas."
     },
-    "who-finances": {
-        "alt": "Quem financia o NOSSAS",
-        "title": "Quem financia o <strong>NOSSAS</strong>",
-        "description": "Somos financiados por organizações brasileiras e internacionais e contamos também com o apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela boa gestão desses recursos, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
-        "audit_action": "Baixar auditoria",
-        "donate_action": "Fazer uma doação",
-        "foundations": {
-            "title": "Fundações",
-            "description": "Em 2020, o NOSSAS executou atividades financiadas pelas seguintes fundações:"
-        }
+    "2017": {
+      "1": "Beta, a primeira chatbot feminista do Facebook, é programada para dar visibilidade à luta feminista no Brasil e compartilhar oportunidades de agir pelos direitos das mulheres."
+    },
+    "2018": {
+      "1": "O BONDE, a plataforma para ativistas que querem criar sites de impacto para mobilizar pessoas e movimentar suas causas, é lançado.",
+      "2": {
+        "src": "/static/media/timeline/PT/nfpt.png",
+        "text": "Logo após as eleições, a campanha Ninguém Fica Pra Trás arrecada R$400 mil para organizações que atendem populações vulneráveis ao discurso de ódio."
+      },
+      "3": "Após uma mobilização histórica, o Rio de Janeiro é a primeira capital do país a banir a distribuição de canudos em estabelecimentos comerciais.",
+      "4": "Somos Cria, a primeira campanha de apoio a pré-vestibulares comunitários é lançada. Ela contribui para a entrada de alunos periféricos nas universidades."
+    },
+    "2019": {
+      "1": "O Programa de Mobilizadores passa a oferecer treinamento em metodologias e ferramentas de mobilização para pessoas de várias cidades do Brasil.",
+      "2": "Depois de muita pressão da Minha Sampa, dez Delegacias de Atendimento a Mulheres Vítimas de Violência passam a funcionar 24h em todo Estado de São Paulo.",
+      "3": "No rastro da mobilização carioca, a Minha Sampa lidera campanha de pressão que leva a maior cidade do país a proibir a distribuição de canudos de plástico.",
+      "4": "Graças à mobilização realizada com a Beta, a PEC 29, que proibiria o aborto até em casos onde é legal, é arquivada no Senado. Foram dispararados mais de 50 mil e-mails de pressão."
+    },
+    "2020": {
+      "1": "Tocada com outras 200 organizações, a campanha Renda Básica Que Queremos leva à aprovação do Auxílio Emergencial durante a pandemia.",
+      "2": "A campanha distribui 400 mil reais a dez coletivos periféricos do Rio de Janeiro, beneficiando a mais de 3 mil famílias duramente atingidas pela crise sanitária.",
+      "3": "Graças à mobilização Sem Aula Sem Enem, estudantes lançam mais de 4 mil campanhas locais em seus estados e conseguem o adiamento do ENEM para 2021.",
+      "4": "33 cursinhos de pré-vestibular comunitário recebem apoio para inclusão digital durante a pandemia. A campanha acaba beneficiando mais de 4,5 mil alunos em 10 estados do país, ao longo de três meses.",
+      "5": "A primeira campanha de arrecadação a bater o milhão de reais possibilita a distribuição de cestas básicas e kits de higiene para comunidades indígenas da Amazônia por seis meses.",
+      "6": "O primeiro programa de repasses do NOSSAS contempla 12 coletivos periféricos nas cinco regiões do país."
     }
+  },
+  "impact": {
+    "title": "Números <br/><strong>de impacto</strong>",
+    "financial": {
+      "number": "+4 milhões",
+      "description": "de reais arrecadados em financiamento coletivo"
+    },
+    "volunteers": {
+      "number": "+5,4 mil",
+      "description": "voluntárias e voluntários cadastrados"
+    },
+    "political": {
+      "number": "+120",
+      "description": "mudanças de política pública"
+    },
+    "campaigns": {
+      "number": "+200",
+      "description": "campanhas lançadas"
+    },
+    "donations": {
+      "number": "+29 mil",
+      "description": "pessoas já fizeram doações"
+    },
+    "activists": {
+      "number": "+2,6 milhões",
+      "description": "de pessoas mobilizadas"
+    }
+  },
+  "teams": {
+    "board": {
+      "title": "Conselho",
+      "description": "Nosso conselho é consultivo e conta com seis pessoas, eleitas para mandatos de quatro anos:",
+      "members": {
+        "anacarolina": {
+          "role": "Diretora do ISER",
+          "about": "Cientista política e pesquisadora, Ana Carolina é especialista em políticas públicas locais e participação social. Foi gerente programática na Fundación Avina, onde fomentou experimentos em desenvolvimento urbano, gerenciamento local e inovação política na América Latina, e hoje é diretora do ISER, organização que promove estudos e pesquisas sobre religião e justiça social no Brasil. Tem mestrado em Relações Internacionais e é doutoranda pelo CPDOC/FGV."
+        },
+        "anapaula": {
+          "role": "Fundadora da Casa Rede e colunista do jornal O Globo",
+          "about": "Ana Paula é escritora, produtora e colunista do jornal O Globo. Atualmente, vive entre Rio de Janeiro e Luanda, onde dirige a produtora Aláfia e o espaço cultural Casa Rede. Foi produtora e apresentadora do programa \"Querendo Assunto\", tem contos e poesias publicados em coletâneas nacionais e internacionais e, desde 2016, tem contribuído regularmente com a revista feminista AzMina."
+        },
+        "roberto": {
+          "role": "Fundador do Ocupa Política e editor da Piseagrama",
+          "about": "Roberto é arquiteto, urbanista e pesquisador com ampla experiência em prática arquitetônica, desenvolvimento urbano e tecnologia da informação. É editor da revista Piseagrama e professor na UFMG, tendo passado antes pelos laboratórios de pesquisa Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) e Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto também é diretor e co-fundador da Hometeka."
+        },
+        "branca": {
+          "role": "Fundadora e presidente da Rádio Novelo",
+          "about": "Branca é filantropa e Presidente do Conselho Administrativo do Instituto Serrapilheira, primeira instituição privada, sem fins lucrativos, de fomento à ciência no Brasil. Ela também é presidente da Rádio Novelo e apresentadora do podcast \"Maria vai com as outras\", sobre mulheres no mercado de trabalho. Foi professora da PUC-Rio por mais de 10 anos e possui experiência sólida em comunicação para grandes audiências."
+        },
+        "felipe": {
+          "role": "Diretor de investimentos da Luminate",
+          "about": "À frente da Direção de investimentos na América Latina da Luminate, Felipe apoia a organização no fortalecimento de iniciativas e políticas públicas de direitos digitais, transparência financeira, independência da mídia e tecnologia cívica na região. Antes de entrar na Luminate, ele foi estrategista no Banco Mundial para a promoção da transparência nas instâncias de governo. Também foi membro fundador da Open Contracting Partnership."
+        },
+        "ines": {
+          "role": "Diretora do Instituto Betty & Jacob Lafer",
+          "about": "Inês é especialista em iniciativas filantrópicas e políticas públicas focadas em crianças e adolescentes. Ela iniciou sua carreira como psicóloga no SESI antes de tornar-se consultora na Kairós Desenvolvimento Social em projetos nas áreas de criança e adolescência e assistência social. Foi gerente programática na Fundação Maria Cecília Souto Vidigal, assistente técnica na Comissão Municipal de Direitos Humanos de São Paulo e gerente de projetos no IDIS."
+        }
+      }
+    },
+    "leaders": {
+      "title": "Liderança",
+      "alessandra": {
+        "role": "Co-fundadora e Diretora Executiva",
+        "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
+      },
+      "enrica": {
+        "role": "Diretora Adjunta e Diretora do Mapa do Acolhimento",
+        "about": "Enrica chegou ao NOSSAS como mobilizadora antes de se tornar chefe de equipe e Diretora Adjunta. Ela já morou e trabalhou na Bélgica, África do Sul e Japão até se fixar em sua cidade natal, o Rio de Janeiro. No Brasil, foi produtora da GloboNews, cobrindo os protestos de 2013. Atualmente lidera o projeto Mapa do Acolhimento. Ela é Bacharel em Ciências Políticas com concentração em Estudos Globais pela The New School."
+      },
+      "virginia": {
+        "role": "Diretora de Operações",
+        "about": "Virginia atuou como gerente de projetos editoriais nas Éditions Gallimard e pilotou projetos de comunicação pública e institucional em agências de comunicação na França. Ao regressar ao Brasil, atuou em organizações do terceiro setor que trabalham com cultura e justiça social. No NOSSAS, supervisiona as áreas de operações, comunicação e sustentabilidade. Ela é formada em Filosofia Política pela Sorbonne e pós-graduada em Comunicação pelo Instituto CELSA."
+      },
+      "daniela": {
+        "role": "Diretora Interina de Mobilização",
+        "about": "Daniela atua em campanhas de mobilização, campanhas eleitorais, advocacy e assessoria legislativa há quase uma década. Trabalhou por quatro anos com o presidente da Comissão de Direitos Humanos da Assembleia Legislativa do Rio de Janeiro, ao lado de Marielle Franco. Atualmente é Diretora de Mobilização no NOSSAS e lidera nossa equipe de campanhas e treinamentos. Daniela é socióloga pela UFRJ e mestranda em Ciência da Informação, também pela UFRJ."
+      },
+      "manoela": {
+        "role": "Estrategista Chefe",
+        "about": "Manoela é especialista em direitos humanos e estudos de gênero e ativista pelos direitos das mulheres. Criou e coapresenta o podcast Novo Normal e contribui como colunista para vários veículos, como Folha de São Paulo, Veja, Volcánica e Mídia Ninja. Antes do NOSSAS, fez parte da equipe da Open Society Foundations LATAM. Manoela é doutora em segurança do cidadão pelo Programa de Pós-Graduação em Relações Internacionais San Tiago Dantas."
+      },
+      "cledisson": {
+        "role": "Estrategista de Advocacy",
+        "about": "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ."
+      },
+      "pirola": {
+        "role": "Head de Tecnologia",
+        "about": "Pirola é líder de desenvolvimento autodidata de São Paulo. Ingressou na equipe como programador, mas com seu vasto conhecimento técnico, rapidamente liderou a área e hoje supervisiona todos os projetos relacionados à tecnologia no NOSSAS. Antes, trabalhou como especialista em infografia durante as eleições presidenciais de 2010 no Brasil. Amante da natureza, nas horas vagas gosta de surfar e ficar com sua companheira e filhote."
+      },
+      "talita": {
+        "role": "Gestora Sênior de Tecnologia",
+        "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
+      },
+      "jerlan": {
+        "role": "Gestor",
+        "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
+      },
+      "karol": {
+        "role": "Gestora de Mobilização",
+        "about": "Karol é jornalista formada pela Cásper Líbero e mora em São Paulo. Trabalhou na Coordenação geral do Catalyst 2030 e na Coordenação de comunicação da deputada estadual Marina Helou (Rede-SP). É voluntária na Virada Política e no Vote Nelas, repórter da Revista Saúde e já atuou como consultora de advocacy e relações governamentais. Foi coordenadora da Minha Sampa entre 2017 e 2019 e agora volta ao NOSSAS como Gestora de Mobilização."
+      },
+      "rafael": {
+        "role": "Diretor de Campanhas",
+        "about": "Rafael é jornalista graduado pela USP, pós-graduado em Ciência Política pela FESP e cursa MBA em Marketing e Branding pela FIA. Trabalha há 8 anos em ONGs nacionais e internacionais, na intersecção entre tecnologia, comunicação, campanhas e impacto social. Foi diretor de Campanhas e Comunicação da equipe brasileira da Change.org, onde atuou por 6 anos. Também foi gerente na ARTIGO 19 e coordenador no Centro de Liderança Pública (CLP). Além disso, atuou como repórter de grandes veículos, como G1, R7 e Folha."
+      }
+    },
+    "team": {
+      "title": "Equipe",
+      "adriele": {
+        "role": "Programadora",
+        "about": "Adriele, preta, mineira, entrou recentemente para a equipe de tecnologia do Nossas. É graduada em Ciência da Computação pela UFJF e começou a trabalhar como programadora em 2014 e, desde então, vem questionando a importância da diversidade nesse meio, assim como as responsabilidades e poderes que profissionais da tecnologia têm na sociedade contemporânea. Nas horas vagas, gosta de música, viajar, cozinhar, boas companhias e boas histórias."
+      },
+      "alexandra": {
+        "role": "Coordenadora de Operações",
+        "about": "Alexandra compõe a Equipe Operacional da organização, monitorando os processos internos burocráticos e administrativos. É amante de gastronomia, música e pessoas. Antes de chegar no NOSSAS, viveu e trabalhou na Dinamarca, Alemanha e Inglaterra. De volta ao Brasil já atuou na área de assessoria executiva e gestão de expatriados no setor de dragagem. É formada em Processos Gerenciais pela FGV e Hospitalidade pelo Highbury College."
+      },
+      "alice": {
+        "role": "Estagiária de Comunicação",
+        "about": "Alice é manauara, estudante de Jornalismo da Universidade Federal do Amazonas e estagiária de comunicação do NOSSAS. Na faculdade, fez parte da diretoria do centro acadêmico em 2019 e foi coautora de um projeto científico na área de Jornalismo Ambiental. Antes de entrar no NOSSAS, passou por assessorias de comunicação do primeiro e do terceiro setor. Tem interesse nos saberes tradicionais da Amazônia e curiosidade sobre a diversidade do Brasil e do mundo."
+      },
+      "aline": {
+        "role": "Coordenadora Financeira",
+        "about": "Funcionária mais veterana da organização, Aline acompanhou nosso crescimento desde o primeiro ano do Meu Rio. Ao longo desse período trabalhou à frente da estrutura administrativa idealizando os processos operacionais de base. É viciada em trabalho, mas nas horas vagas conduz um estudo espiritual, dando aula em um centro de educação mediúnica. Considera seus colegas de trabalho como filhos e adotou todas as crianças do NOSSAS como netos."
+      },
+      "anabeatriz": {
+        "role": "Coordenadora de Voluntárias do Mapa do Acolhimento",
+        "about": "Ana é advogada formada pela PUC-SP e compõe a equipe do Mapa do Acolhimento. Entre 2015 e 2016 atuou na 1ª Vara de Família do Fórum Regional de Pinheiros acompanhando de perto casos e audiências de demandas de família sem a perspectiva de gênero. Depois de graduada realizou o curso de atendimento a mulheres vítimas de violência de gênero ministrado pelo IBCCRIM em parceria com o Instituto Avon e está no Mapa do Acolhimento desde outubro de 2018."
+      },
+      "anaclaudia": {
+        "role": "Designer e Mobilizadora",
+        "about": "Ana Claudia é manauara e trabalhou durante 7 anos em organizações do terceiro setor na Amazônia. No NOSSAS, atua como designer e mobilizadora nas equipes de Criação e Comunicação. Ela é formada em design gráfico e estudante de artes visuais na Universidade Federal do Amazonas - UFAM."
+      },
+      "anderson": {
+        "role": "Coordenador de Dados",
+        "about": "Anderson é graduado em Ciência Política pela UFPE, onde pesquisou sobre produção de políticas públicas, conflito legislativo e polarização político-partidária. Foi através de estudos acadêmicos que teve contato com dados e programação, área na qual tem se aprofundado desde então. No NOSSAS desde 2019, ajuda a monitorar métricas relevantes e conduz experimentos e análises observacionais para testar hipóteses sobre como aumentar o impacto da organização."
+      },
+      "bianca": {
+        "role": "Estagiária do Mapa do Acolhimento",
+        "about": "Bianca é estudante do curso de Serviço Social na Universidade Federal de São Paulo (UNIFESP), Campus da Baixada Santista. Em paralelo ao seu trabalho no NOSSAS, Bianca está trabalhando em seu projeto de pesquisa na Universidade relacionado à temática de ‘’Pessoas Trans e Travestis em Situação de Cárcere’' - tema pouco explorado na literatura e sofrido com grandes estigmas sociais. Bianca gosta de tomar uma boa cerveja e comer comidas gostosas com os amigos, ir à brechós, museus e cinema."
+      },
+      "gabriela": {
+        "role": "Coordenadora de Atendimento do Mapa do Acolhimento",
+        "about": "Gabriela é feminista antirracista e trabalhou como articuladora no projeto “Feminicidades”, que visa dar voz a todos os tipos de mulheres. É psicóloga formada pela PUC-SP, especializou-se no atendimento à mulher em situação de violência de gênero no IBCCRIM, com foco em Lei Maria da Penha, Serviços Públicos, ONGs e violência familiar. Tem especialização em saúde coletiva pelo Instituto de Saúde da Secretaria de Estado da Saúde."
+      },
+      "gloria": {
+        "role": "Programadora",
+        "about": "Glória é baiana, atual moradora de Recife, e gosta de aprender sobre tecnologia, segurança da informação e música. Além disso, está sempre atenta a ambientes que incentivam o crescimento de mulheres na tecnologia. Ex-estudante de Direito, decidiu deixar o curso para se dedicar ao desenvolvimento de software, passando pela Reprograma e iniciando a graduação em Ciência da Computação na UFPE."
+      },
+      "igor": {
+        "role": "Programador",
+        "about": "Igor é desenvolvedor de software e produtor musical. Tem vasta experiência com programação e está há anos contribuindo com o desenvolvimento de novas tecnologias no NOSSAS. Ele é membro da Python Brasil Association, apaixonado por música, cultura e tecnologia."
+      },
+      "isabel": {
+        "role": "Assistente pessoal de Alessandra Orofino",
+        "about": "Isabel já trabalhou com produção, RH e gestão da diversidade. Hoje, ela atua como assistente de redação do Greg News e assistente pessoal de nossa diretora executiva, dando apoio em sua rotina de trocas com parceiros e equipes. Isabel é formada em Administração pela PUC-Rio com especialização em Recursos Humanos e Diversidade, pela ESG-UQÀM."
+      },
+      "isabella": {
+        "role": "Estagiária do Mapa do Acolhimento",
+        "about": "Isabella é paulista, graduanda de Psicologia e entrou para a equipe como estagiária do Mapa do Acolhimento. Suas experiências anteriores foram com o setor organizacional, atuando em Recursos Humanos, mas sempre teve uma paixão pela área social. Com as oportunidades que surgiram nesta área, atuou com pessoas em situação de vulnerabilidade no centro de SP, aplicando a redução de danos, e também com instituições voltadas ao público da terceira idade, sempre com o olhar da Psicologia. Sonha em ser instrumento de melhora para muitas pessoas!"
+      },
+      "izamir": {
+        "role": "Mobilizador",
+        "about": "Izamir é um ativista socioambiental interessado na agenda de desenvolvimento sustentável da Amazônia Ocidental. Amazonense, trabalhou como comunicador em algumas organizações e liderou projetos do terceiro setor em Manaus. É formado em Relações-públicas (UFAM) e jornalismo (FMF-Devry), possui MBA em Marketing Digital pela ESPM e é especialista em Relações Internacionais Contemporâneas pela UFRGS."
+      },
+      "juliana": {
+        "role": "Analista de Advocacy",
+        "about": "Juliana mora em São Paulo, é formada em Direito e tem grande experiência na gestão pública após trabalhar com uma grande lista de organizações no terceiro setor. É apaixonada pelas pautas de direitos humanos e democracia, com olhar atento a recortes de raça, gênero e território."
+      },
+      "karina": {
+        "role": "Mobilizadora",
+        "about": "Karina é maranhense, bióloga e ambientalista. Foi coordenadora do Grupo de Trabalho de Clima da Organização de Jovens Engajamundo entre 2018 e 2020, é Líder da comunidade de Protagonismo Juvenil USBEA desde 2015 e faz parte da rede de líderes globais International Exchange Alumni. É apaixonada por educação e cultura, ama dançar, andar de perna de pau e tentar outras habilidades circenses. Faz parte do grupo de missões de uma igreja local e ama diálogos e histórias."
+      },
+      "larissa": {
+        "role": "Gestora do Mapa do Acolhimento",
+        "about": "Larissa é psicóloga, ativista, feminista, militante LGBT+ e contra todas as formas de manicômio. Já atuou em serviços da saúde pública e da assistência social no centro e nas periferias de São Paulo pela garantia de direitos de populações em situação de vulnerabilidade. Como gestora do Mapa do Acolhimento, acredita que a tecnologia pode unir mulheres na luta pelo fim da violência baseada em gênero. Larissa é formada pela PUC/SP e especialista em saúde mental."
+      },
+      "laura": {
+        "role": "Estagiária de Comunicação",
+        "about": "Laura é estagiária de Comunicação do NOSSAS. Anteriormente, trabalhou como estagiária de redação no Jornal O Globo, escrevendo para os jornais de Bairros e editoria de gênero e diversidade. Nascida e criada na Zona Norte do Rio de Janeiro, no bairro da Penha. É graduanda de Jornalismo na Escola de Comunicação da UFRJ, com interesse especial nas áreas de direitos humanos, relações raciais e de gênero."
+      },
+      "leca": {
+        "role": "Coordenadora de Sustentabilidade",
+        "about": "Formada em Marketing, Leca trouxe sua experiência nas áreas comercial e de relacionamento para ampliar o compartilhamento sustentável da plataforma BONDE com organizações parceiras e fortalecer a rede de micro doadores da organização. Seu trabalho tem ajudado a distribuir a força da plataforma para diversos parceiros, como a All Out, o Pacto pela Democracia e o Coletivo Papo Reto."
+      },
+      "leticia": {
+        "role": "Mobilizadora",
+        "about": "Letícia sempre foi movida pelos direitos dos migrantes e refugiados e por formas de integração à cidade. No NOSSAS, ela trabalha na frente de Treinamento, na execução dos editais e do Programa de Mobilizadores. Antes, foi Assistente de Cooperação Internacional no Centro de Relações Internacionais em Saúde (Cris) da Fiocruz. Letícia é mestre em Gestão e Análises de Políticas Internacionais pela PUC-Rio e graduada em Relações Internacionais pela UFF."
+      },
+      "livia": {
+        "role": "Coordenadora de Mobilização",
+        "about": "Campaigner no Nossas, Lívia atuou previamente em projetos nas áreas de gênero, sustentabilidade e direitos humanos em organizações como a Actionaid e a Anistia Internacional. Ela possui graduação em Relações Internacionais pela Universidade Federal do Rio de Janeiro e especialização em Ecoliteracia pela Universidade de Coimbra e UNESCO."
+      },
+      "luciana": {
+        "role": "Mobilizadora",
+        "about": "Manauara, Luciana atua com projetos sociais relacionados à educação e humanização na cidade de Manaus há alguns anos. Em paralelo ao seu trabalho no NOSSAS, ela coordena um projeto voluntário que orienta jovens e adultos de comunidades carentes que têm interesse em realizar o Enem. Ela é formada em Relações Públicas pela UFAM e tem especialização em Comunicação Empresarial e Mídias Digitais."
+      },
+      "maira": {
+        "role": "Gestora de Treinamento",
+        "about": "Maira é pernambucana, interessada nas pautas de Direitos Humanos, gênero, Direitos Sexuais e Direitos Reprodutivos e Política de Drogas. Militante feminista antiproibicionista, ela integra a Rede Nacional de Feministas Antiproibicionistas (RENFA) e a Articulação de Mulheres Brasileiras (AMB). Antes do NOSSAS, trabalhou como repórter do Diario de Pernambuco e na Fiocruz. Maira é formada em Comunicação Social."
+      },
+      "mariana": {
+        "role": "Mobilizadora",
+        "about": "Urbanista pela FAUUSP e ativista pelo Direito à Cidade, Mariana busca em suas atuações articular a política e o planejamento das cidades com o ativismo das ruas, por meio de um olhar contra-hegemônico e interseccional para as questões urbanas. Trabalhou com projetos sociais em cidades do Brasil e da Espanha, onde realizou intercâmbio acadêmico. Em paralelo ao seu trabalho como Mobilizadora no NOSSAS, integra a organização LGBTQIA+ TODXS Brasil, como Articuladora Política, e é colaboradora da Nossa Fala, onde pesquisa e escreve sobre território, gênero e interseccionalidades."
+      },
+      "paula": {
+        "role": "Estagiária do Mapa do Acolhimento",
+        "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
+      },
+      "sany": {
+        "role": "Coordenadora de Comunicação",
+        "about": "Sany atua na área de comunicação desde 2013, com experiência em produção de conteúdo para mídias digitais, design, produção audiovisual, consultoria e educação. Nas horas vagas, gosta de praticar atividades circenses, tocar percussão e mergulhar cada vez mais na literatura produzida por mulheres negras. Ela é graduada em Publicidade e Propaganda e especialista em Produção e Criação de Conteúdos Digitais pela ESPM."
+      },
+      "tayna": {
+        "role": "Analista de Sustentabilidade",
+        "about": "Antes de integrar a frente de Sustentabilidade, Tayná tinha experiência com atendimento ao público e relacionamento com cliente, suporte técnico/funcional, cobrança ativa e vendas, além de atuação na área da educação, como auxiliar de classe no ensino fundamental e médio. Tayná é graduanda em Licenciatura em Ciências Humanas e tem interesse de especialização em Comunicação Social."
+      },
+      "thalita": {
+        "role": "Articuladora do Mapa do Acolhimento",
+        "about": "Baiana, feminista e anti-racista, Thalita é uma defensora dos Direitos Humanos com especial interesse por temáticas na interseccionalidade entre raça e gênero que colaborem na luta por justiça e reparação das desigualdades. Ela é formada em Serviço Social pela UFBA, onde descobriu as áreas de assessoria em assistência social e sociojurídica, conhecimentos que desenvolve em seu trabalho no Mapa do Acolhimento."
+      },
+      "vanessa": {
+        "role": "Articuladora do Mapa do Acolhimento",
+        "about": "Nascida e criada em Recife, Vanessa possui experiências docentes do ensino superior em Serviço Social e em formação política de lideranças. É ativista do movimento progressista evangélico brasileiro e facilita a criação de espaços formativos para a incidência pública nas áreas de cidadania, justiça racial e de gênero. Vanessa é bacharel em Serviço Social (UFPE), pós-graduada em Gestão da Política de Assistência Social (UNICAP) e Mestra em Educação, Culturas e Identidades (UFRPE)."
+      }
+    }
+  },
+  "who-finances": {
+    "alt": "Quem financia o NOSSAS",
+    "title": "Quem financia o <strong>NOSSAS</strong>",
+    "description": "Somos financiados por organizações brasileiras e internacionais e contamos também com o apoio de pessoas físicas que doam mensalmente para nossos projetos. Prezando pela boa gestão desses recursos, anualmente realizamos uma auditoria independente que verifica nossa contabilidade.",
+    "audit_action": "Baixar auditoria",
+    "donate_action": "Fazer uma doação",
+    "foundations": {
+      "title": "Fundações",
+      "description": "Em 2020, o NOSSAS executou atividades financiadas pelas seguintes fundações:"
+    }
+  }
 }

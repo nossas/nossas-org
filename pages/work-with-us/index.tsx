@@ -10,7 +10,7 @@ import {
   MegaphoneYellow,
   ComputerBlue,
   Money,
-  Pair
+  Pair,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -53,7 +53,7 @@ const WorkWithUs: React.FC = () => (
         textAlign="center"
       >
         <Stack alignItems="center" spacing={2}>
-          <Pair/>
+          <Pair />
 
           <Text
             fontFamily="Bebas Neue"
@@ -67,52 +67,6 @@ const WorkWithUs: React.FC = () => (
 
           <Link
             href="https://nossas.recruitee.com/o/diretora-executivo"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
-        <Stack alignItems="center" spacing={2}>
-          <Money />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            maxW="123px"
-          >
-            Gestor(a) de Captação
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/gestora-de-captacao"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
-        <Stack alignItems="center" spacing={2}>
-          <MegaphoneYellow />
-
-          <Text
-            fontFamily="Bebas Neue"
-            color="black"
-            fontSize="30px"
-            fontWeight="bold"
-            maxW="158px"
-          >
-            Gestor(a) de Comunicação
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/gestora-de-comunicacao"
             target="blank"
           >
             <Button size="sm" width="140px">

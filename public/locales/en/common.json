@@ -1,171 +1,191 @@
 {
-    "navbar": {
-        "navigation": {
-            "see-more": "Discover",
-            "about": "About NOSSAS",
-            "work-with-us": "Work with us",
-            "participate": "Take part",
-            "campaigns": "Campaigns",
-            "materials": "Manuals",
-            "trainings": "Trainings",
-            "incubations": "Incubations",
-            "technologies": "Technologies"
+  "navbar": {
+    "navigation": {
+      "see-more": "Discover",
+      "about": "About NOSSAS",
+      "work-with-us": "Work with us",
+      "participate": "Take part",
+      "campaigns": "Campaigns",
+      "materials": "Manuals",
+      "trainings": "Trainings",
+      "incubations": "Incubations",
+      "technologies": "Technologies"
+    },
+    "donate": "Donate"
+  },
+  "donation": {
+    "title": "Donate to <strong>NOSSAS</strong>",
+    "description": "NOSSAS is supported exclusively by people and foundations who believe in our work and in the impact we want to see in the world. Make your donation!",
+    "form": {
+      "continue": "Continue",
+      "donate": "Donate",
+      "done": "Done",
+      "security": "secure payment",
+      "tabs": {
+        "activist": "Your data",
+        "payment": "Payments"
+      },
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Name",
+          "required": "Enter your name"
         },
-        "donate": "Donate"
-    },
-    "donation": {
-        "title": "Donate to <strong>NOSSAS</strong>",
-        "description": "NOSSAS is supported exclusively by people and foundations who believe in our work and in the impact we want to see in the world. Make your donation!",
-        "form": {
-            "continue": "Continue",
-            "donate": "Donate",
-            "done": "Done",
-            "security": "secure payment",
-            "tabs": {
-                "activist": "Your data",
-                "payment": "Payments"
-            },
-            "fields": {
-                "name": {
-                    "label": "Name",
-                    "placeholder": "Name",
-                    "required": "Enter your name"
-                },
-                "email": {
-                    "label": "Email",
-                    "placeholder": "Email",
-                    "required": "Enter your email",
-                    "invalid": "Enter a valid email address"
-                },
-                "phone": {
-                    "label": "Whatsapp",
-                    "required": "Enter your whatsapp",
-                    "invalid": "Enter a valid number"
-                },
-                "cardholderName": {
-                    "label": "Name",
-                    "placeholder": "Cardholder name",
-                    "required": "Enter the cardholder name"
-                },
-                "currency": {
-                    "label": "Currency"
-                },
-                "customDonation": {
-                    "label": "Amount",
-                    "required": "Enter a donation amount",
-                    "min": "Inform at least 5 for donation"
-                }
-            },
-            "success": {
-                "imageAlt": "Successful donation!",
-                "title": "Thanks, <strong>{{name}}!</strong>",
-                "thanks": "Your donation makes all the difference!",
-                "message": "Thank you for your donation - it will help us continue our work :)"
-            }
-        }
-    },
-    "subscribe": {
-        "form": {
-            "fields": {
-                "name": {
-                    "label": "Name",
-                    "placeholder": "Name",
-                    "required": "Enter your name"
-                },
-                "lastName": {
-                    "label": "Lastname",
-                    "placeholder": "Lastname"
-                },
-                "phone": {
-                    "label": "Whatsapp",
-                    "required": "Enter your number",
-                    "invalid": "Enter a valid number"
-                },
-                "email": {
-                    "label": "Email",
-                    "placeholder": "Email",
-                    "required": "Enter your email",
-                    "invalid": "Enter a valid email"
-                },
-                "state": {
-                    "label": "State",
-                    "placeholder": "State"
-                },
-                "city": {
-                    "label": "City",
-                    "placeholder": "City"
-                }
-            },
-            "success": {
-                "title": "Thanks, <strong>{{name}}!</strong>"
-            }
-        }
-    },
-    "we-are-doing": {
-        "title": "What <strong>we're doing</strong>",
-        "sliders": {
-            "1": {
-                "title": "Parque Realengo Verde",
-                "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
-                "navigate": "Pressure for an urban and ecological park"
-            },
-            "2": {
-                "title": "Livre Para Menstruar",
-                "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
-                "navigate": "Pressure to pass the bill"
-            },
-            "3": {
-                "title": "Sai da Fossa, Manaus!",
-                "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
-                "navigate": "Pressure for basic sanitation"
-            },
-            "4": {
-                "title": "Auxílio até o fim da pandemia",
-                "description": "The end of the emergency aid payments in 2021 has left millions of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
-                "navigate": "Take part in the campaign"
-            },
-            "5": {
-                "title": "Tem gente com fome",
-                "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
-                "navigate": "Take part in the campaign"
-            }            
-        }
-    },
-    "media": "In the <strong>media</strong>",
-    "see": "See +",
-    "know-more": "Find out more +",
-    "footer": {
-        "navigation": {
-            "join-us": "Join us",
-            "about": "About NOSSAS",
-            "donate": "Make a donation",
-            "work-with-us": "Work with us"
+        "email": {
+          "label": "Email",
+          "placeholder": "Email",
+          "required": "Enter your email",
+          "invalid": "Enter a valid email address"
         },
-        "social": {
-            "title": "Follow NOSSAS on social media"
+        "phone": {
+          "label": "Whatsapp",
+          "required": "Enter your whatsapp",
+          "invalid": "Enter a valid number"
         },
-        "newsletter": {
-            "title": "Stay in touch",
-            "description": "Sign up to receive notifications about NOSSAS' campaigns, projects and other opportunities (in Portuguese):",
-            "success": {
-                "title": "It cost!",
-                "description": "Glad you're here :) We'll send you news about NOSSAS' projects, reports and campaigns through this email."
-            },
-            "form": {
-                "email": {
-                    "placeholder": "Your email",
-                    "required": "Enter your email",
-                    "invalid": "OPS! Check email"
-                },
-                "firstname": {
-                    "placeholder": "Name",
-                    "required": "Enter your name"
-                },
-                "lastname": {
-                    "placeholder": "Surname"
-                },
-                "submit": "Save"
-            }
+        "cardholderName": {
+          "label": "Name",
+          "placeholder": "Cardholder name",
+          "required": "Enter the cardholder name"
+        },
+        "currency": {
+          "label": "Currency"
+        },
+        "customDonation": {
+          "label": "Amount",
+          "required": "Enter a donation amount",
+          "min": "Inform at least 5 for donation"
         }
+      },
+      "success": {
+        "imageAlt": "Successful donation!",
+        "title": "Thanks, <strong>{{name}}!</strong>",
+        "thanks": "Your donation makes all the difference!",
+        "message": "Thank you for your donation - it will help us continue our work :)"
+      }
     }
+  },
+  "subscribe": {
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Name",
+          "required": "Enter your name"
+        },
+        "lastName": {
+          "label": "Lastname",
+          "placeholder": "Lastname"
+        },
+        "phone": {
+          "label": "Whatsapp",
+          "required": "Enter your number",
+          "invalid": "Enter a valid number"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email",
+          "required": "Enter your email",
+          "invalid": "Enter a valid email"
+        },
+        "state": {
+          "label": "State",
+          "placeholder": "State"
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "City"
+        }
+      },
+      "success": {
+        "title": "Thanks, <strong>{{name}}!</strong>"
+      }
+    }
+  },
+  "we-are-doing": {
+    "title": "What <strong>we're doing</strong>",
+    "sliders": {
+      "1": {
+        "title": "Cadê Meu Absorvente?",
+        "description": "Several bills have been approved in many states in Brazil, but it is about time we had a national law to ensure the distribution of sanitary pads over the country.",
+        "navigate": "Pressure for menstrual dignity for all"
+      },
+      "2": {
+        "title": "Meu Corpo Meu DIU",
+        "description": "Health plans have required women the signature of their partners for the insertion of Intrauterine Devices (IUD). It is time to demand that they withdraw this obligation immediately!",
+        "navigate": "Take part in the campaign"
+      },
+      "3": {
+        "title": "Praça Pôr do Sol without fences NOW!",
+        "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
+        "navigate": "Pressure now!"
+      },
+      "4": {
+        "title": "Parque Realengo Verde",
+        "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
+        "navigate": "Pressure for an urban and ecological park"
+      },
+      "5": {
+        "title": "Livre Para Menstruar",
+        "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
+        "navigate": "Pressure to pass the bill"
+      },
+      "6": {
+        "title": "Sai da Fossa, Manaus!",
+        "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
+        "navigate": "Pressure for basic sanitation"
+      },
+      "7": {
+        "title": "Auxílio até o fim da pandemia",
+        "description": "The end of the emergency aid payments in 2021 has left millions of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
+        "navigate": "Take part in the campaign"
+      },
+      "8": {
+        "title": "Tem gente com fome",
+        "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
+        "navigate": "Take part in the campaign"
+      },
+      "9": {
+        "title": "MUVUCA",
+        "description": "NOSSAS’ first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
+        "navigate": "Take part in the campaign"
+      }
+    }
+  },
+  "media": "In the <strong>media</strong>",
+  "see": "See +",
+  "know-more": "Find out more +",
+  "footer": {
+    "navigation": {
+      "join-us": "Join us",
+      "about": "About NOSSAS",
+      "donate": "Make a donation",
+      "work-with-us": "Work with us"
+    },
+    "social": {
+      "title": "Follow NOSSAS on social media"
+    },
+    "newsletter": {
+      "title": "Stay in touch",
+      "description": "Sign up to receive notifications about NOSSAS' campaigns, projects and other opportunities (in Portuguese):",
+      "success": {
+        "title": "It cost!",
+        "description": "Glad you're here :) We'll send you news about NOSSAS' projects, reports and campaigns through this email."
+      },
+      "form": {
+        "email": {
+          "placeholder": "Your email",
+          "required": "Enter your email",
+          "invalid": "OPS! Check email"
+        },
+        "firstname": {
+          "placeholder": "Name",
+          "required": "Enter your name"
+        },
+        "lastname": {
+          "placeholder": "Surname"
+        },
+        "submit": "Save"
+      }
+    }
+  }
 }
