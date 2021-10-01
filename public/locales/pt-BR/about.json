@@ -111,7 +111,7 @@
       }
     },
     "leaders": {
-      "title": "Liderança",
+      "title": "Gestores Executivos",
       "alessandra": {
         "role": "Co-fundadora e Diretora Executiva",
         "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
@@ -124,37 +124,17 @@
         "role": "Diretora de Operações",
         "about": "Virginia atuou como gerente de projetos editoriais nas Éditions Gallimard e pilotou projetos de comunicação pública e institucional em agências de comunicação na França. Ao regressar ao Brasil, atuou em organizações do terceiro setor que trabalham com cultura e justiça social. No NOSSAS, supervisiona as áreas de operações, comunicação e sustentabilidade. Ela é formada em Filosofia Política pela Sorbonne e pós-graduada em Comunicação pelo Instituto CELSA."
       },
-      "daniela": {
-        "role": "Diretora Interina de Mobilização",
-        "about": "Daniela atua em campanhas de mobilização, campanhas eleitorais, advocacy e assessoria legislativa há quase uma década. Trabalhou por quatro anos com o presidente da Comissão de Direitos Humanos da Assembleia Legislativa do Rio de Janeiro, ao lado de Marielle Franco. Atualmente é Diretora de Mobilização no NOSSAS e lidera nossa equipe de campanhas e treinamentos. Daniela é socióloga pela UFRJ e mestranda em Ciência da Informação, também pela UFRJ."
+      "rafael": {
+        "role": "Diretor de Campanhas",
+        "about": "Rafael é jornalista graduado pela USP, pós-graduado em Ciência Política pela FESP e cursa MBA em Marketing e Branding pela FIA. Trabalha há 8 anos em ONGs nacionais e internacionais, na intersecção entre tecnologia, comunicação, campanhas e impacto social. Foi diretor de Campanhas e Comunicação da equipe brasileira da Change.org, onde atuou por 6 anos. Também foi gerente na ARTIGO 19 e coordenador no Centro de Liderança Pública (CLP). Além disso, atuou como repórter de grandes veículos, como G1, R7 e Folha."
       },
       "manoela": {
         "role": "Estrategista Chefe",
         "about": "Manoela é especialista em direitos humanos e estudos de gênero e ativista pelos direitos das mulheres. Criou e coapresenta o podcast Novo Normal e contribui como colunista para vários veículos, como Folha de São Paulo, Veja, Volcánica e Mídia Ninja. Antes do NOSSAS, fez parte da equipe da Open Society Foundations LATAM. Manoela é doutora em segurança do cidadão pelo Programa de Pós-Graduação em Relações Internacionais San Tiago Dantas."
       },
-      "cledisson": {
-        "role": "Estrategista de Advocacy",
-        "about": "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ."
-      },
-      "pirola": {
-        "role": "Head de Tecnologia",
-        "about": "Pirola é líder de desenvolvimento autodidata de São Paulo. Ingressou na equipe como programador, mas com seu vasto conhecimento técnico, rapidamente liderou a área e hoje supervisiona todos os projetos relacionados à tecnologia no NOSSAS. Antes, trabalhou como especialista em infografia durante as eleições presidenciais de 2010 no Brasil. Amante da natureza, nas horas vagas gosta de surfar e ficar com sua companheira e filhote."
-      },
-      "talita": {
-        "role": "Gestora Sênior de Tecnologia",
-        "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
-      },
-      "jerlan": {
-        "role": "Gestor",
-        "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
-      },
-      "karol": {
-        "role": "Gestora de Mobilização",
-        "about": "Karol é jornalista formada pela Cásper Líbero e mora em São Paulo. Trabalhou na Coordenação geral do Catalyst 2030 e na Coordenação de comunicação da deputada estadual Marina Helou (Rede-SP). É voluntária na Virada Política e no Vote Nelas, repórter da Revista Saúde e já atuou como consultora de advocacy e relações governamentais. Foi coordenadora da Minha Sampa entre 2017 e 2019 e agora volta ao NOSSAS como Gestora de Mobilização."
-      },
-      "rafael": {
-        "role": "Diretor de Campanhas",
-        "about": "Rafael é jornalista graduado pela USP, pós-graduado em Ciência Política pela FESP e cursa MBA em Marketing e Branding pela FIA. Trabalha há 8 anos em ONGs nacionais e internacionais, na intersecção entre tecnologia, comunicação, campanhas e impacto social. Foi diretor de Campanhas e Comunicação da equipe brasileira da Change.org, onde atuou por 6 anos. Também foi gerente na ARTIGO 19 e coordenador no Centro de Liderança Pública (CLP). Além disso, atuou como repórter de grandes veículos, como G1, R7 e Folha."
+      "daniela": {
+        "role": "Diretora Interina de Mobilização",
+        "about": "Daniela atua em campanhas de mobilização, campanhas eleitorais, advocacy e assessoria legislativa há quase uma década. Trabalhou por quatro anos com o presidente da Comissão de Direitos Humanos da Assembleia Legislativa do Rio de Janeiro, ao lado de Marielle Franco. Atualmente é Diretora de Mobilização no NOSSAS e lidera nossa equipe de campanhas e treinamentos. Daniela é socióloga pela UFRJ e mestranda em Ciência da Informação, também pela UFRJ."
       }
     },
     "team": {
@@ -191,6 +171,10 @@
         "role": "Estagiária do Mapa do Acolhimento",
         "about": "Bianca é estudante do curso de Serviço Social na Universidade Federal de São Paulo (UNIFESP), Campus da Baixada Santista. Em paralelo ao seu trabalho no NOSSAS, Bianca está trabalhando em seu projeto de pesquisa na Universidade relacionado à temática de ‘’Pessoas Trans e Travestis em Situação de Cárcere’' - tema pouco explorado na literatura e sofrido com grandes estigmas sociais. Bianca gosta de tomar uma boa cerveja e comer comidas gostosas com os amigos, ir à brechós, museus e cinema."
       },
+      "cledisson": {
+        "role": "Estrategista de Advocacy",
+        "about": "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ."
+      },
       "gabriela": {
         "role": "Coordenadora de Atendimento do Mapa do Acolhimento",
         "about": "Gabriela é feminista antirracista e trabalhou como articuladora no projeto “Feminicidades”, que visa dar voz a todos os tipos de mulheres. É psicóloga formada pela PUC-SP, especializou-se no atendimento à mulher em situação de violência de gênero no IBCCRIM, com foco em Lei Maria da Penha, Serviços Públicos, ONGs e violência familiar. Tem especialização em saúde coletiva pelo Instituto de Saúde da Secretaria de Estado da Saúde."
@@ -215,6 +199,10 @@
         "role": "Mobilizador",
         "about": "Izamir é um ativista socioambiental interessado na agenda de desenvolvimento sustentável da Amazônia Ocidental. Amazonense, trabalhou como comunicador em algumas organizações e liderou projetos do terceiro setor em Manaus. É formado em Relações-públicas (UFAM) e jornalismo (FMF-Devry), possui MBA em Marketing Digital pela ESPM e é especialista em Relações Internacionais Contemporâneas pela UFRGS."
       },
+      "jerlan": {
+        "role": "Gestor",
+        "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
+      },
       "juliana": {
         "role": "Analista de Advocacy",
         "about": "Juliana mora em São Paulo, é formada em Direito e tem grande experiência na gestão pública após trabalhar com uma grande lista de organizações no terceiro setor. É apaixonada pelas pautas de direitos humanos e democracia, com olhar atento a recortes de raça, gênero e território."
@@ -222,6 +210,10 @@
       "karina": {
         "role": "Mobilizadora",
         "about": "Karina é maranhense, bióloga e ambientalista. Foi coordenadora do Grupo de Trabalho de Clima da Organização de Jovens Engajamundo entre 2018 e 2020, é Líder da comunidade de Protagonismo Juvenil USBEA desde 2015 e faz parte da rede de líderes globais International Exchange Alumni. É apaixonada por educação e cultura, ama dançar, andar de perna de pau e tentar outras habilidades circenses. Faz parte do grupo de missões de uma igreja local e ama diálogos e histórias."
+      },
+      "karol": {
+        "role": "Gestora de Mobilização",
+        "about": "Karol é jornalista formada pela Cásper Líbero e mora em São Paulo. Trabalhou na Coordenação geral do Catalyst 2030 e na Coordenação de comunicação da deputada estadual Marina Helou (Rede-SP). É voluntária na Virada Política e no Vote Nelas, repórter da Revista Saúde e já atuou como consultora de advocacy e relações governamentais. Foi coordenadora da Minha Sampa entre 2017 e 2019 e agora volta ao NOSSAS como Gestora de Mobilização."
       },
       "larissa": {
         "role": "Gestora do Mapa do Acolhimento",
@@ -259,9 +251,17 @@
         "role": "Estagiária do Mapa do Acolhimento",
         "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
       },
+      "pirola": {
+        "role": "Head de Tecnologia",
+        "about": "Pirola é líder de desenvolvimento autodidata de São Paulo. Ingressou na equipe como programador, mas com seu vasto conhecimento técnico, rapidamente liderou a área e hoje supervisiona todos os projetos relacionados à tecnologia no NOSSAS. Antes, trabalhou como especialista em infografia durante as eleições presidenciais de 2010 no Brasil. Amante da natureza, nas horas vagas gosta de surfar e ficar com sua companheira e filhote."
+      },
       "sany": {
         "role": "Coordenadora de Comunicação",
         "about": "Sany atua na área de comunicação desde 2013, com experiência em produção de conteúdo para mídias digitais, design, produção audiovisual, consultoria e educação. Nas horas vagas, gosta de praticar atividades circenses, tocar percussão e mergulhar cada vez mais na literatura produzida por mulheres negras. Ela é graduada em Publicidade e Propaganda e especialista em Produção e Criação de Conteúdos Digitais pela ESPM."
+      },
+      "talita": {
+        "role": "Gestora Sênior de Tecnologia",
+        "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
       },
       "tayna": {
         "role": "Analista de Sustentabilidade",
