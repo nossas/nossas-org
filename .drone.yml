@@ -1,0 +1,128 @@
+workspace:
+  base: /code
+
+pipeline:
+  test:
+    image: node:14-alpine
+    environment:
+      - PORT = 3000
+      - REDIS_URL=redis://127.0.0.1:6379
+      - ELASTIC_APM_SERVICE_NAME=nossas-org
+      - ELASTIC_APM_SERVER_URL=http://localhost:9200
+      - ELASTIC_APM_SECRET_TOKEN=1111
+      - ELASTIC_APM_ACTIVE=false
+    commands:
+      - apk --update add curl 
+      - npm i
+      - npm run build
+      - npm run lint
+      - npm run test
+  publish-staging-build:
+    image: plugins/docker
+    repo: nossas/nossas-org
+    dockerfile: Dockerfile
+    secrets: [ docker_username, docker_password ]
+    environment:
+      - NEXT_PUBLIC_BONDE_API_GRAPHQL_URL=wss://api-graphql.staging.bonde.org/v1/graphql
+      - NEXT_PUBLIC_DONATION_EN_WIDGET_ID=66736
+      - NEXT_PUBLIC_DONATION_WIDGET_ID=24146
+      - NEXT_PUBLIC_INCUBATIONS_EN_WIDGET_ID=66734
+      - NEXT_PUBLIC_INCUBATIONS_WIDGET_ID=20292
+      - NEXT_PUBLIC_MATERIALS_EN_WIDGET_ID=66735
+      - NEXT_PUBLIC_MATERIALS_WIDGET_ID=20293
+      - NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID=66737
+      - NEXT_PUBLIC_NEWSLETTER_WIDGET_ID=24147
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_Bhs5RG7HFGAGldrHmFWbNyBg00Q96hDiSN
+    build_args_from_env:
+      - NEXT_PUBLIC_BONDE_API_GRAPHQL_URL
+      - NEXT_PUBLIC_DONATION_EN_WIDGET_ID
+      - NEXT_PUBLIC_DONATION_WIDGET_ID
+      - NEXT_PUBLIC_INCUBATIONS_EN_WIDGET_ID
+      - NEXT_PUBLIC_INCUBATIONS_WIDGET_ID
+      - NEXT_PUBLIC_MATERIALS_EN_WIDGET_ID
+      - NEXT_PUBLIC_MATERIALS_WIDGET_ID
+      - NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID
+      - NEXT_PUBLIC_NEWSLETTER_WIDGET_ID
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+    group: builder
+    tags:
+      - ${DRONE_BRANCH/\//-}
+    when:
+      status: success
+      event: [push]
+
+  publish-production-build:
+    image: plugins/docker
+    repo: nossas/nossas-org
+    enviroment:
+      - NEXT_PUBLIC_BONDE_API_GRAPHQL_URL=wss://api-graphql.bonde.org/v1/graphql
+      - NEXT_PUBLIC_DONATION_EN_WIDGET_ID=68381
+      - NEXT_PUBLIC_DONATION_WIDGET_ID=67647
+      - NEXT_PUBLIC_INCUBATIONS_EN_WIDGET_ID=68382
+      - NEXT_PUBLIC_INCUBATIONS_WIDGET_ID=67644
+      - NEXT_PUBLIC_MATERIALS_EN_WIDGET_ID=68383
+      - NEXT_PUBLIC_MATERIALS_WIDGET_ID=67645
+      - NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID=68380
+      - NEXT_PUBLIC_NEWSLETTER_WIDGET_ID=67646
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_e5CIIedRLyfjhiraTWEyQTic000aasOAst
+      - NODE_ENV=production
+    build_args_from_env:
+      - NEXT_PUBLIC_BONDE_API_GRAPHQL_URL
+      - NEXT_PUBLIC_DONATION_EN_WIDGET_ID
+      - NEXT_PUBLIC_DONATION_WIDGET_ID
+      - NEXT_PUBLIC_INCUBATIONS_EN_WIDGET_ID
+      - NEXT_PUBLIC_INCUBATIONS_WIDGET_ID
+      - NEXT_PUBLIC_MATERIALS_EN_WIDGET_ID
+      - NEXT_PUBLIC_MATERIALS_WIDGET_ID
+      - NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID
+      - NEXT_PUBLIC_NEWSLETTER_WIDGET_ID
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+      - NODE_ENV
+    dockerfile: Dockerfile
+    secrets: [ docker_username, docker_password ]
+    group: builder
+    tags:
+      - ${DRONE_TAG##v}
+      - latest
+    when:
+      status: success
+      event: [tag]
+  
+  nossas-org-staging-deploy:
+    image: peloton/drone-rancher
+    url: http://cluster.bonde.org
+    service: webservers/nossas-org
+    group: deploying
+    docker_image: nossas/nossas-org:${DRONE_BRANCH/\//-}
+    timeout: 360
+    confirm: true
+    secrets: [ rancher_access_key, rancher_secret_key ]
+    when:
+      status: success
+      event: [push]
+  
+  nossas-org-production-deploy:
+    image: peloton/drone-rancher
+    url: http://cluster.bonde.org
+    service: webservers/nossas-org
+    group: deploying
+    docker_image: "nossas/nossas-org:${DRONE_TAG##v}"
+    timeout: 360
+    confirm: true
+    secrets:
+      - source: rancher_access_key_prod
+        target: rancher_access_key
+      - source: rancher_secret_key_prod
+        target: rancher_secret_key
+    when:
+      status: success
+      event: [tag]
+
+services:
+  database:
+    image: postgres:9
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  queue:
+    image: redis:3.2.4-alpine
