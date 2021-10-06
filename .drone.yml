@@ -54,7 +54,7 @@ pipeline:
   publish-production-build:
     image: plugins/docker
     repo: nossas/nossas-org
-    enviroment:
+    environment:
       - NEXT_PUBLIC_BONDE_API_GRAPHQL_URL=wss://api-graphql.bonde.org/v1/graphql
       - NEXT_PUBLIC_DONATION_EN_WIDGET_ID=68381
       - NEXT_PUBLIC_DONATION_WIDGET_ID=67647
