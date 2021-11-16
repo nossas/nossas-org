@@ -105,46 +105,56 @@
     "title": "What <strong>we're doing</strong>",
     "sliders": {
       "1": {
+        "title": "Sem Licença Pra Matar",
+        "description": "A proposal to reform the Military Penal Code makes room for police officers accused in cases of murder or aggression not to be trialed. We need to stop this absurd!",
+        "navigate": "Take part in the campaign!"
+      },
+      "2": {
+        "title": "EmLuta",
+        "description": "Over 5 million brazilians have lost family members and loved ones to Covid-19. It's time to mobilize and demand the public power to ensure that these families are not left without support.",
+        "navigate": "Join us!"
+      },
+      "3": {
         "title": "Cadê Meu Absorvente?",
         "description": "Several bills have been approved in many states in Brazil, but it is about time we had a national law to ensure the distribution of sanitary pads over the country.",
         "navigate": "Pressure for menstrual dignity for all"
       },
-      "2": {
+      "4": {
         "title": "Meu Corpo Meu DIU",
         "description": "Health plans have required women the signature of their partners for the insertion of Intrauterine Devices (IUD). It is time to demand that they withdraw this obligation immediately!",
         "navigate": "Take part in the campaign"
       },
-      "3": {
+      "5": {
         "title": "Praça Pôr do Sol without fences NOW!",
         "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
         "navigate": "Pressure now!"
       },
-      "4": {
+      "6": {
         "title": "Parque Realengo Verde",
         "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
         "navigate": "Pressure for an urban and ecological park"
       },
-      "5": {
+      "7": {
         "title": "Livre Para Menstruar",
         "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
         "navigate": "Pressure to pass the bill"
       },
-      "6": {
+      "8": {
         "title": "Sai da Fossa, Manaus!",
         "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
         "navigate": "Pressure for basic sanitation"
       },
-      "7": {
+      "9": {
         "title": "Auxílio até o fim da pandemia",
         "description": "The end of the emergency aid payments in 2021 has left millions of people in poverty. Our campaign is fighting so that aid continues to be paid while the crisis lasts.",
         "navigate": "Take part in the campaign"
       },
-      "8": {
+      "10": {
         "title": "Tem gente com fome",
         "description": "A national mobilization is raising funds to fight hunger and poverty during the pandemic. Food is needed, hunger cannot wait!",
         "navigate": "Take part in the campaign"
       },
-      "9": {
+      "11": {
         "title": "MUVUCA",
         "description": "NOSSAS’ first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
         "navigate": "Take part in the campaign"
