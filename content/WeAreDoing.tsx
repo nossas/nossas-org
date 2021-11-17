@@ -36,7 +36,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/s3/sem-licença-pra-matar.png",
+            src: "/static/media/we-are-doing/sem-licença-pra-matar.png",
             href: "https://www.semlicencapramatar.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
             title: t("we-are-doing.sliders.1.title"),
@@ -44,7 +44,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.1.navigate"),
           },
           {
-            src: "/static/media/s3/em-luta.png",
+            src: "/static/media/we-are-doing/em-luta.png",
             href: "https://www.emluta.org.br/",
             alt: t("we-are-doing.sliders.2.title"),
             title: t("we-are-doing.sliders.2.title"),
@@ -52,7 +52,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.2.navigate"),
           },
           {
-            src: "/static/media/s3/cade-meu-absorvente.png",
+            src: "/static/media/we-are-doing/cade-meu-absorvente.png",
             href: "https://www.cademeuabsorvente.nossas.org.br/",
             alt: t("we-are-doing.sliders.3.title"),
             title: t("we-are-doing.sliders.3.title"),
@@ -60,7 +60,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.3.navigate"),
           },
           {
-            src: "/static/media/s3/por-do-sol-sem-cerca.png",
+            src: "/static/media/we-are-doing/por-do-sol-sem-cerca.png",
             href: "https://www.pordosolsemcerca.minhasampa.org.br/",
             alt: t("we-are-doing.sliders.4.title"),
             title: t("we-are-doing.sliders.4.title"),
@@ -68,7 +68,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.4.navigate"),
           },
           {
-            src: "/static/media/s3/parque-realengo-verde.png",
+            src: "/static/media/we-are-doing/parque-realengo-verde.png",
             href: "https://www.parquerealengoverde.meurio.org.br/",
             alt: t("we-are-doing.sliders.5.title"),
             title: t("we-are-doing.sliders.5.title"),
@@ -76,7 +76,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.5.navigate"),
           },
           {
-            src: "/static/media/s3/livre-para-menstruar.png",
+            src: "/static/media/we-are-doing/livre-para-menstruar.png",
             href: "https://www.sp.livreparamenstruar.org/",
             alt: t("we-are-doing.sliders.6.title"),
             title: t("we-are-doing.sliders.6.title"),
@@ -84,7 +84,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.6.navigate"),
           },
           {
-            src: "/static/media/s3/sai-da-fossa-manaus.png",
+            src: "/static/media/we-are-doing/sai-da-fossa-manaus.png",
             href: "https://www.saidafossa.minhamanaus.org.br/",
             alt: t("we-are-doing.sliders.7.title"),
             title: t("we-are-doing.sliders.7.title"),
@@ -92,7 +92,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.7.navigate"),
           },
           {
-            src: "/static/media/s3/temgentecomfome.png",
+            src: "/static/media/we-are-doing/temgentecomfome.png",
             href: "https://www.temgentecomfome.com.br/",
             alt: t("we-are-doing.sliders.8.title"),
             title: t("we-are-doing.sliders.8.title"),
@@ -100,7 +100,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.8.navigate"),
           },
           {
-            src: "/static/media/s3/muvuca.png",
+            src: "/static/media/we-are-doing/muvuca.png",
             href: "https://www.muvuca.nossas.org/",
             alt: t("we-are-doing.sliders.9.title"),
             title: t("we-are-doing.sliders.9.title"),
