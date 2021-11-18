@@ -17,8 +17,8 @@ ARG NEXT_PUBLIC_NEWSLETTER_EN_WIDGET_ID
 # USER node
 WORKDIR /usr/src/app
 COPY package*.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN npm i
 COPY . /usr/src/app
-RUN yarn build
+RUN npm run build
 EXPOSE 3003
 CMD ["npm", "start"]

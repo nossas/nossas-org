@@ -30,7 +30,6 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
-          <link href="/styles/globals.css" rel="stylesheet" />
         </Head>
         <body>
           <Main />
