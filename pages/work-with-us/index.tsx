@@ -97,6 +97,29 @@ const WorkWithUs: React.FC = () => (
             </Button>
           </Link>
         </Stack>
+
+        <Stack alignItems="center" spacing={2}>
+          <Pair />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="241px"
+          >
+            Analista Administrativo  Financeiro - Nível II
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/analista-administrativo-financeiro-nivel-ii"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
       </Stack>
     </Section>
 
