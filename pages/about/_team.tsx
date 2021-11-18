@@ -211,6 +211,13 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/daiane.png",
+          name: "Daiane",
+          role: t("teams.team.daiane.role"),
+          about: t("teams.team.daiane.about"),
+          team: t("teams.team.title"),
+        },
+        {
           avatar: "/static/media/team/gabriela-silva.png",
           name: "Gabriela",
           role: t("teams.team.gabriela.role"),
@@ -341,6 +348,13 @@ export const TeamMembers: React.FC = () => {
           name: "Paula",
           role: t("teams.team.paula.role"),
           about: t("teams.team.paula.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/samira.png",
+          name: "Samira",
+          role: t("teams.team.samira.role"),
+          about: t("teams.team.samira.about"),
           team: t("teams.team.title"),
         },
         {
