@@ -205,9 +205,16 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/cledisson-junior.png",
-          name: "Cledisson Junior",
+          name: "Cledisson",
           role: t("teams.team.cledisson.role"),
           about: t("teams.team.cledisson.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/daiane.png",
+          name: "Daiane",
+          role: t("teams.team.daiane.role"),
+          about: t("teams.team.daiane.about"),
           team: t("teams.team.title"),
         },
         {
@@ -254,7 +261,7 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/jerlan.jpg",
-          name: "Jerlan Alves",
+          name: "Jerlan",
           role: t("teams.team.jerlan.role"),
           about: t("teams.team.jerlan.about"),
           team: t("teams.team.title"),
@@ -275,16 +282,9 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/karol.jpg",
-          name: "Karol Bergamo",
+          name: "Karol",
           role: t("teams.team.karol.role"),
           about: t("teams.team.karol.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/larissa.png",
-          name: "Larissa",
-          role: t("teams.team.larissa.role"),
-          about: t("teams.team.larissa.about"),
           team: t("teams.team.title"),
         },
         {
@@ -317,7 +317,7 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/lucas-pirola.png",
-          name: "Lucas Pirola",
+          name: "Lucas",
           role: t("teams.team.pirola.role"),
           about: t("teams.team.pirola.about"),
           team: t("teams.team.title"),
@@ -345,9 +345,16 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/paula.jpg",
-          name: "Paula Eduarda",
+          name: "Paula",
           role: t("teams.team.paula.role"),
           about: t("teams.team.paula.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/samira.png",
+          name: "Samira",
+          role: t("teams.team.samira.role"),
+          about: t("teams.team.samira.about"),
           team: t("teams.team.title"),
         },
         {
@@ -359,7 +366,7 @@ export const TeamMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/talita-novacoski.png",
-          name: "Talita Novacoski",
+          name: "Talita",
           role: t("teams.team.talita.role"),
           about: t("teams.team.talita.about"),
           team: t("teams.team.title"),

@@ -175,6 +175,10 @@
         "role": "Estrategista de Advocacy",
         "about": "Cledisson gerencia a área de advocacy no NOSSAS, elaborando análises conjunturais e de risco político e desenvolvendo estratégias de incidência junto a organizações parceiras e tomadores de decisões. Antes, foi Secretário Executivo do Conselho Nacional de Direitos Humanos da Presidência da República do Brasil de 2015 a 2016 e Assessor Parlamentar na Assembleia Legislativa de Minas Gerais. Cledisson é mestre em Desenvolvimento Rural pela UFRGS e doutorando em Ciências Sociais pela UFRRJ."
       },
+      "daiane": {
+        "role": "Gestora de Captação",
+        "about": "​​Daiane é gestora de captação de recursos do NOSSAS. Anteriormente, liderou projetos de impacto nos temas de equidade de gênero, justiça social e resiliência climática. Hoje atua mobilizando pessoas e recursos pela mesma missão, por um mundo socialmente mais justo e ambientalmente sustentável. Possui mais de 14 anos de experiência em gestão de projetos e captação de recursos, com ênfase em recursos internacionais. Foi sócia da Alumia Filmes, na produção executiva de filmes com propósito e campanhas de engajamento. É cofundadora da campanha Meu Voto Será Feminista, conselheira do Instituto Tríbio. Durante 8 anos integrou a equipe da ActionAid Brasil e foi responsável pelo portfólio de projetos na área de parcerias institucionais e filantropia. Nos últimos anos, atuou como consultora em planejamento, estratégia e fundraising para organizações da sociedade civil e empresas. Atualmente, mantém um projeto de democratização do conhecimento sobre captação de recursos no youtube e redes sociais, com curso de formação na área."
+      },
       "gabriela": {
         "role": "Coordenadora de Atendimento do Mapa do Acolhimento",
         "about": "Gabriela é feminista antirracista e trabalhou como articuladora no projeto “Feminicidades”, que visa dar voz a todos os tipos de mulheres. É psicóloga formada pela PUC-SP, especializou-se no atendimento à mulher em situação de violência de gênero no IBCCRIM, com foco em Lei Maria da Penha, Serviços Públicos, ONGs e violência familiar. Tem especialização em saúde coletiva pelo Instituto de Saúde da Secretaria de Estado da Saúde."
@@ -215,10 +219,6 @@
         "role": "Gestora de Mobilização",
         "about": "Karol é jornalista formada pela Cásper Líbero e mora em São Paulo. Trabalhou na Coordenação geral do Catalyst 2030 e na Coordenação de comunicação da deputada estadual Marina Helou (Rede-SP). É voluntária na Virada Política e no Vote Nelas, repórter da Revista Saúde e já atuou como consultora de advocacy e relações governamentais. Foi coordenadora da Minha Sampa entre 2017 e 2019 e agora volta ao NOSSAS como Gestora de Mobilização."
       },
-      "larissa": {
-        "role": "Gestora do Mapa do Acolhimento",
-        "about": "Larissa é psicóloga, ativista, feminista, militante LGBT+ e contra todas as formas de manicômio. Já atuou em serviços da saúde pública e da assistência social no centro e nas periferias de São Paulo pela garantia de direitos de populações em situação de vulnerabilidade. Como gestora do Mapa do Acolhimento, acredita que a tecnologia pode unir mulheres na luta pelo fim da violência baseada em gênero. Larissa é formada pela PUC/SP e especialista em saúde mental."
-      },
       "laura": {
         "role": "Estagiária de Comunicação",
         "about": "Laura é estagiária de Comunicação do NOSSAS. Anteriormente, trabalhou como estagiária de redação no Jornal O Globo, escrevendo para os jornais de Bairros e editoria de gênero e diversidade. Nascida e criada na Zona Norte do Rio de Janeiro, no bairro da Penha. É graduanda de Jornalismo na Escola de Comunicação da UFRJ, com interesse especial nas áreas de direitos humanos, relações raciais e de gênero."
@@ -249,11 +249,15 @@
       },
       "paula": {
         "role": "Estagiária do Mapa do Acolhimento",
-        "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
+        "about": "Paula Eduarda é natural de Cacoal/RO, graduanda de Serviço Social na UFMT, campus Cuiabá, compõe o Núcleo de Estudos e Pesquisas sobre Relações de Gênero (NUEPOM), e atua enquanto Estagiária de Serviço Social na equipe do Mapa do Acolhimento. É uma mulher preta, bissexual, advinda das camadas populares, aliada ao feminismo negro e a luta antirracista. Se dedica a pesquisar sobre relações raciais, gênero e sexualidade, a partir de leituras decoloniais."
       },
       "pirola": {
         "role": "Head de Tecnologia",
         "about": "Pirola é líder de desenvolvimento autodidata de São Paulo. Ingressou na equipe como programador, mas com seu vasto conhecimento técnico, rapidamente liderou a área e hoje supervisiona todos os projetos relacionados à tecnologia no NOSSAS. Antes, trabalhou como especialista em infografia durante as eleições presidenciais de 2010 no Brasil. Amante da natureza, nas horas vagas gosta de surfar e ficar com sua companheira e filhote."
+      },
+      "samira": {
+        "role": "Gestora de Comunicação",
+        "about": "​​Samira é mineira de BH, jornalista, pós-graduada em Comunicação Estratégica e negócios pela PUC Minas e cursa MBA em Marketing, Branding e Growth Hacking pela PUC RS. Trabalha há 15 anos na gestão da área de comunicação e projetos de grandes empresas em diversos segmentos. Especialista na construção de marcas e reputação, planejamento estratégico, mídia, gerenciamento de crise, posicionamento digital e de mercado."
       },
       "sany": {
         "role": "Coordenadora de Comunicação",
