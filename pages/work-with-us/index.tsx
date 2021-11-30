@@ -1,16 +1,16 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
-import { Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Button, Image, Text } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
-  MegaphoneYellow,
   ComputerBlue,
   Money,
   Pair,
+  MegaphoneYellow,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -99,7 +99,7 @@ const WorkWithUs: React.FC = () => (
         </Stack>
 
         <Stack alignItems="center" spacing={2}>
-          <Pair />
+          <Money />
 
           <Text
             fontFamily="Bebas Neue"
@@ -108,11 +108,65 @@ const WorkWithUs: React.FC = () => (
             fontWeight="bold"
             maxW="241px"
           >
-            Analista Administrativo  Financeiro - Nível II
+            Analista Administrativo Financeiro - Nível II
           </Text>
 
           <Link
             href="https://nossas.recruitee.com/o/analista-administrativo-financeiro-nivel-ii"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+      </Stack>
+
+      <Stack
+        maxW="1600px"
+        direction={["column", "column", "row"]}
+        spacing={[10, 14, 20, 138, 188]}
+        justifyContent="center"
+        textAlign="center"
+      >
+        <Stack alignItems="center" spacing={2}>
+          <Money />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="250px"
+          >
+            Analista de Captação e Aquisição de Doadores
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/analista-de-captacao-e-aquisicao-de-doadores"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={2}>
+          <MegaphoneYellow />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="350px"
+          >
+            Estagiária(o) de Captação e Parcerias Institucionais
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/estagiariao-de-captacao-e-parcerias-institucionais"
             target="blank"
           >
             <Button size="sm" width="140px">
