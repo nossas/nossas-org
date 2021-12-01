@@ -130,7 +130,7 @@ const WorkWithUs: React.FC = () => (
         textAlign="center"
       >
         <Stack alignItems="center" spacing={2}>
-          <Money />
+          <MegaphoneYellow />
 
           <Text
             fontFamily="Bebas Neue"
@@ -139,7 +139,7 @@ const WorkWithUs: React.FC = () => (
             fontWeight="bold"
             maxW="250px"
           >
-            Analista de Captação e Aquisição de Doadores
+            Analista de Marketing e Comunicação
           </Text>
 
           <Link
