@@ -4,7 +4,7 @@ const itemStyle = {
   color: "white !important",
 };
 
-export default {
+const _default = {
   baseStyle: {
     list: {
       bg: "blue.main",
@@ -24,3 +24,5 @@ export default {
     },
   },
 };
+
+export default _default;

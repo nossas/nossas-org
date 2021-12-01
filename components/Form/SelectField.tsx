@@ -30,7 +30,7 @@ const SelectWidget: React.FC<SelectWidgetProps> = ({
   options: { items, type },
   ...props
 }) => {
-  const [field, meta, helpers] = useField(name);
+  const [field, meta] = useField(name);
 
   let values = {};
   if (type !== "object") items.forEach((v: string) => (values[v] = v));

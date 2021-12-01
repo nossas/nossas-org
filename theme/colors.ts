@@ -1,4 +1,4 @@
-export default {
+const _default = {
   black: "#000000",
   white: "#FFFFFF",
   red: "#FF2B4E",
@@ -20,3 +20,5 @@ export default {
     light: "#F10991",
   },
 };
+
+export default _default;

@@ -37,7 +37,7 @@ const InputField: React.FC<InputFieldProps> = ({
   validate,
   ...props
 }) => {
-  const [field, meta, helpers] = useField({ name, validate });
+  const [field, meta] = useField({ name, validate });
   const borderStyles = {
     border: "1px solid",
     borderRadius: 4,

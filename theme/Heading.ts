@@ -1,4 +1,4 @@
-export default {
+const _default = {
   baseStyle: {
     fontWeight: 200,
   },
@@ -30,3 +30,5 @@ export default {
     size: "lg",
   },
 };
+
+export default _default;

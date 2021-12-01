@@ -3,7 +3,7 @@ const _disabled = {
   opacity: "1",
 };
 
-export default {
+const _default = {
   baseStyle: {
     _focus: {
       boxShadow: "none",
@@ -89,3 +89,5 @@ export default {
     variant: "solid",
   },
 };
+
+export default _default;

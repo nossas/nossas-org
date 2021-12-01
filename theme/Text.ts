@@ -1,4 +1,4 @@
-export default {
+const _default = {
   defaultStyles: {
     fontWeight: "normal",
   },
@@ -31,3 +31,5 @@ export default {
     size: "md",
   },
 };
+
+export default _default;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Heading, Text, SimpleGrid, Grid } from "@chakra-ui/react";
+import { Box, Stack, Heading, Text, Grid } from "@chakra-ui/react";
 
 import { EmployeeItem } from "./EmployeeItem";
 
