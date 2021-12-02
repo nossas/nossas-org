@@ -1,14 +1,7 @@
+import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import {
-  Box,
-  Heading,
-  Text,
-  SimpleGrid,
-  Stack,
-  Image,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, SimpleGrid, Stack, Link } from "@chakra-ui/react";
 
 import ImpactNumber from "./_impactNumber";
 import Donation from "../../components/Donation";
@@ -46,8 +39,10 @@ const QuemSomos: React.FC = () => {
           mb={18}
         >
           <Image
+            layout="responsive"
+            width="100"
+            height="100"
             src="/static/media/s3/incubations-tudonossas.png"
-            margin="0 auto"
           />
 
           <Text>{t("history.description")}</Text>
@@ -139,9 +134,9 @@ const QuemSomos: React.FC = () => {
           rowGap="30px"
         >
           <Image
-            margin="0 auto"
-            maxW={[226, 282]}
-            maxH={[232, 374]}
+            layout="responsive"
+            width="100"
+            height="100"
             src="/static/media/s3/sustentabilidade2.png"
             alt={t("who-finances.alt")}
           />
@@ -191,91 +186,103 @@ const QuemSomos: React.FC = () => {
           >
             <Link href="https://www.opensocietyfoundations.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/opensociety.png"
                 alt="Open Society Foundations"
               />
             </Link>
             <Link href="https://luminategroup.com/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/luminate.png"
                 alt="Luminate"
               />
             </Link>
             <Link href="https://oakfnd.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/oak.png"
                 alt="OAK Foundation"
               />
             </Link>
             <Link href="https://skoll.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/skoll.png"
                 alt="Skoll Foundation"
               />
             </Link>
             <Link href="http://umifund.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/umi.png"
                 alt="UMI fund"
               />
             </Link>
             <Link href="https://tinker.org/pt/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/tinker.png"
                 alt="Tinker Foundation"
               />
             </Link>
             <Link href="https://www.sigrid-rausing-trust.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/sigrid.png"
               />
             </Link>
             <Link href="https://www.svri.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/svri.png"
               />
             </Link>
             <Link href="https://institutoavon.org.br/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/avon.png"
               />
             </Link>
             <Link href="https://www.climaesociedade.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/ics.png"
               />
             </Link>
             <Link href="https://www.tides.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/tides.png"
               />
             </Link>
             <Link href="https://malala.org/" isExternal>
               <Image
-                m="0 auto"
-                objectFit="cover"
+                layout="responsive"
+                width="100"
+                height="100"
                 src="/static/media/foundations/malala.png"
               />
             </Link>

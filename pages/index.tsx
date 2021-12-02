@@ -1,4 +1,5 @@
-import { SimpleGrid, Heading, Image, Text, Stack } from "@chakra-ui/react";
+import Image from "next/image";
+import { SimpleGrid, Heading, Text, Stack } from "@chakra-ui/react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -142,9 +143,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
       >
         <SimpleGrid columns={[1, null, null, 2]}>
           <Image
-            maxW={[226, 339]}
-            maxH={[232, 347]}
-            margin="0 auto"
+            layout="fill"
             src="/static/media/s3/sustentabilidade.png"
             alt="Sustentabilidade"
           />

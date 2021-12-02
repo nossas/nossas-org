@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styled from "@emotion/styled";
@@ -5,7 +6,6 @@ import {
   Box,
   Stack,
   Heading,
-  Image,
   Text,
   Link as LinkStyled,
   useDisclosure,
@@ -77,12 +77,7 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
         </Stack>
 
         <Box flex={[null, null, null, "1"]} paddingY="15px">
-          <Image
-            margin="0 auto"
-            objectFit="cover"
-            maxW={["265px", null, null, null, "465px"]}
-            src={data.image}
-          />
+          <Image layout="fill" src={data.image} />
         </Box>
 
         <Box
