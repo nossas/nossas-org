@@ -1,0 +1,15 @@
+name: Lighthouse
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Lighthouse on urls and validate with lighthouserc
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: |
+            https://nossas-org.staging.bonde.org
+            https://nossas.org
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
