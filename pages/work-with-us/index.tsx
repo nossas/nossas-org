@@ -99,7 +99,7 @@ const WorkWithUs: React.FC = () => (
         </Stack>
 
         <Stack alignItems="center" spacing={2}>
-          <Money />
+          <Pair />
 
           <Text
             fontFamily="Bebas Neue"
@@ -153,7 +153,7 @@ const WorkWithUs: React.FC = () => (
         </Stack>
 
         <Stack alignItems="center" spacing={2}>
-          <MegaphoneYellow />
+          <Money />
 
           <Text
             fontFamily="Bebas Neue"
