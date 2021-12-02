@@ -14,9 +14,6 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.18",
-    "@apollo/react-hooks": "^4.0.0",
-    "@apollo/react-ssr": "^4.0.0",
     "@chakra-ui/react": "^1.7.2",
     "@elastic/apm-rum": "^5.8.0",
     "@emotion/react": "^11",
@@ -24,11 +21,10 @@
     "@rjsf/core": "^2.4.1",
     "@stripe/react-stripe-js": "^1.2.2",
     "@stripe/stripe-js": "^1.11.0",
-    "apollo-boost": "^0.4.9",
-    "apollo-link-ws": "^1.0.20",
     "formik": "^2.2.6",
     "framer-motion": "^4",
-    "graphql": "^15.5.0",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.6.1",
     "isomorphic-unfetch": "^3.1.0",
     "next": "12",
     "next-google-fonts": "^1.2.1",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { gql, useMutation } from "@apollo/client";
+import { GraphQLClient, gql } from "graphql-request";
 import {
   Heading,
   Image,
@@ -277,7 +277,15 @@ interface Result {
 
 const StripeDonation = (props) => {
   const { i18n } = useTranslation("common");
-  const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
+  const endpoint = "https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr";
+
+  const graphQLClient = new GraphQLClient(endpoint, {
+    headers: {
+      authorization: "Bearer MY_TOKEN",
+    },
+  });
+
+  // const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
   let stripeInstance = getStripe(i18n.language as any);
 
   // React.useEffect(() => {
@@ -285,12 +293,14 @@ const StripeDonation = (props) => {
   // }, [i18n.language]);
 
   const registerDonate = async (args: SubmitArgs): Promise<Result> => {
-    const { data, errors } = await donate({ variables: args });
+    const { data } = await graphQLClient.request(CREATE_DONATION_GQL, args);
 
-    if (errors) {
-      console.log("RegisterDonate failed!", { errors });
-      throw new Error("RegisterDonate failed!");
-    }
+    // const { data, errors } = await donate({ variables: args });
+
+    // if (errors) {
+    //   console.log("RegisterDonate failed!", { errors });
+    //   throw new Error("RegisterDonate failed!");
+    // }
 
     return data;
   };

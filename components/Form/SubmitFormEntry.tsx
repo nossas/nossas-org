@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { gql, useMutation } from "@apollo/client";
+import { GraphQLClient, gql } from "graphql-request";
 
 const CREATE_FORM_ENTRY_GQL = gql`
   mutation(
@@ -82,10 +82,14 @@ const SubmitFormEntry: React.FC<Props> = ({
   successComponent: SuccessComponent,
 }) => {
   const [data, setData] = useState(undefined);
-  const [createFormEntry] = useMutation<Result, Variables>(
-    CREATE_FORM_ENTRY_GQL
-  );
 
+  const endpoint = "https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr";
+
+  const graphQLClient = new GraphQLClient(endpoint, {
+    headers: {
+      authorization: "Bearer MY_TOKEN",
+    },
+  });
   // render children with submit(values: any)
   return data ? (
     <SuccessComponent data={data} />
@@ -105,21 +109,24 @@ const SubmitFormEntry: React.FC<Props> = ({
             }
           );
 
-          const { data } = await createFormEntry({
-            variables: {
-              widget_id: widgetId,
-              activist: {
-                name:
-                  formData.name ||
-                  `${formData.first_name} ${formData.last_name}`.trim(),
-                first_name: formData.first_name,
-                last_name: formData.last_name,
-                email: formData.email,
-                phone: formData.whatsapp || formData.phone,
-              },
-              input: { fields },
+          const variables = {
+            widget_id: widgetId,
+            activist: {
+              name:
+                formData.name ||
+                `${formData.first_name} ${formData.last_name}`.trim(),
+              first_name: formData.first_name,
+              last_name: formData.last_name,
+              email: formData.email,
+              phone: formData.whatsapp || formData.phone,
             },
-          });
+            input: { fields },
+          };
+
+          const { data } = await graphQLClient.request(
+            CREATE_FORM_ENTRY_GQL,
+            variables
+          );
 
           setData({ data, formData });
         } catch (err) {
