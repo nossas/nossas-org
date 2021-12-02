@@ -47,16 +47,13 @@ interface Values extends YourDataValues, CardFormValues {
   widget_id: number;
 }
 
-const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
+const Donation: React.FC<any> = ({ ...props }) => {
   const [index, setIndex] = useState(0);
   const [donation, setDonation] = useState({});
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const { t, i18n } = useTranslation("common");
   const widgetId = getWidgetId("donation", i18n.language as any);
-  // use stripe in 2-step, see ./CardForm handleSubmit
-  const stripe = useStripe();
-  const elements = useElements();
   // active panel
   const isYourData: boolean = index === 0;
   const isPayment: boolean = index === 1;
@@ -118,14 +115,14 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
           setIndex(1);
         } else if (isPayment) {
           // Submit donation on stripe
-          const payment = await cardHandleSubmit(formData, actions, {
-            stripe,
-            elements,
-          });
+          // const payment = await cardHandleSubmit(formData, actions, {
+          //   stripe,
+          //   elements,
+          // });
 
           try {
             // Register donation in Bonde API
-            await registerDonate({
+            console.log({
               activist: {
                 name: formData.name,
                 phone: formData.phone,
@@ -135,13 +132,13 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
                 amount: formData.customDonation,
                 payment_method: "credit_card",
                 checkout_data: { formData },
-                gateway_data: { payment },
+                gateway_data: {}, //{ payment },
               },
               widget_id: formData.widget_id,
             });
 
             // Prepare state to success message
-            setDonation({ ...donation, payment });
+            setDonation({ ...donation });
             setIndex(2);
           } catch (e) {
             console.error(e);
@@ -276,6 +273,10 @@ interface Result {
 }
 
 const StripeDonation = (props) => {
+  // use stripe in 2-step, see ./CardForm handleSubmit
+  const stripe = useStripe();
+  const elements = useElements();
+
   const { i18n } = useTranslation("common");
   const endpoint = "https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr";
 
@@ -312,4 +313,4 @@ const StripeDonation = (props) => {
   );
 };
 
-export default StripeDonation;
+export default Donation;
