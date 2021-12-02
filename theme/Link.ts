@@ -1,4 +1,4 @@
-export default {
+const _default = {
   baseStyle: {
     fontWeight: "bold",
     _focus: {
@@ -47,3 +47,5 @@ export default {
     size: "md",
   },
 };
+
+export default _default;

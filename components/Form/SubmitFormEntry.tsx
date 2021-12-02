@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { gql, useMutation } from "@apollo/client";
-import { Text } from "@chakra-ui/react";
-import SuccessPanel from "./SuccessPanel";
 
 const CREATE_FORM_ENTRY_GQL = gql`
   mutation(

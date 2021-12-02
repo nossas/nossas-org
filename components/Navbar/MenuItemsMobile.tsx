@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
   Box,
   Link as LinkStyled,
   Stack,
