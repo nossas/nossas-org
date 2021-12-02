@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 
 import InputField from "../../components/Form/InputField";
 import SubmitFormEntry from "../../components/Form/SubmitFormEntry";
-import { getWidgetId } from "../../content/SubscribeForm/settings";
+import { useWidgetId } from "../../content/SubscribeForm/settings";
 
 interface Values {
   first_name: string;
@@ -30,7 +30,7 @@ const Header = ({ inverted, title, description }) => (
 
 const NewsletterForm = ({ inverted }: any) => {
   const { t, i18n } = useTranslation("common");
-  const widgetId = getWidgetId("newsletter", i18n.language as any);
+  const widgetId = useWidgetId("newsletter", i18n.language as any);
 
   return (
     <Stack spacing={4} maxW="430px">
