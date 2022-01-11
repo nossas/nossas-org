@@ -62,28 +62,36 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
           infiniteLoop
           items={[
             {
-              src: "/static/media/s3/muvuca.png",
-              href: "https://www.muvuca.nossas.org/",
+              src: "/static/media/trainings/geracao-que-move.png",
+              href: "https://geracaoquemove.nossas.org/",
               alt: t("now.carousel.1.title"),
               title: t("now.carousel.1.title"),
               description: t("now.carousel.1.description"),
               link: t("now.carousel.1.action"),
             },
             {
-              src: "/static/media/s3/programademobilizadores.png",
-              href: "https://mobilizadores.nossas.org/",
+              src: "/static/media/trainings/muvuca.png",
+              href: "https://www.muvuca.nossas.org/",
               alt: t("now.carousel.2.title"),
               title: t("now.carousel.2.title"),
               description: t("now.carousel.2.description"),
               link: t("now.carousel.2.action"),
             },
             {
-              src: "/static/media/s3/jovens-mobilizadoras.png",
-              href: "https://www.programademobilizadoras.nossas.org/",
+              src: "/static/media/trainings/programademobilizadores.png",
+              href: "https://mobilizadores.nossas.org/",
               alt: t("now.carousel.3.title"),
               title: t("now.carousel.3.title"),
               description: t("now.carousel.3.description"),
               link: t("now.carousel.3.action"),
+            },
+            {
+              src: "/static/media/trainings/jovens-mobilizadoras.png",
+              href: "https://www.programademobilizadoras.nossas.org/",
+              alt: t("now.carousel.4.title"),
+              title: t("now.carousel.4.title"),
+              description: t("now.carousel.4.description"),
+              link: t("now.carousel.4.action"),
             },
           ]}
         />
