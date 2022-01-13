@@ -99,22 +99,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             description: t("we-are-doing.sliders.8.description"),
             link: t("we-are-doing.sliders.8.navigate"),
           },
-          {
-            src: "/static/media/we-are-doing/temgentecomfome.png",
-            href: "https://www.temgentecomfome.com.br/",
-            alt: t("we-are-doing.sliders.9.title"),
-            title: t("we-are-doing.sliders.9.title"),
-            description: t("we-are-doing.sliders.9.description"),
-            link: t("we-are-doing.sliders.9.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/muvuca.png",
-            href: "https://www.muvuca.nossas.org/",
-            alt: t("we-are-doing.sliders.10.title"),
-            title: t("we-are-doing.sliders.10.title"),
-            description: t("we-are-doing.sliders.10.description"),
-            link: t("we-are-doing.sliders.10.navigate"),
-          },
         ]}
       />
     </Section>
