@@ -91,6 +91,9 @@ const MenuItems: React.FC<{ variant: string }> = ({ variant }) => {
                   {t("navbar.navigation.work-with-us")}
                 </LinkMenuItem>
               )}
+              <LinkMenuItem href="/press">
+                {t("navbar.navigation.press")}
+              </LinkMenuItem>
             </MenuList>
           </MenuStyled>
         )}
