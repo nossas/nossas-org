@@ -4,10 +4,17 @@ import { WithUserAgentProps } from "next-useragent";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Header } from "../../content";
-import { VStack, Text, Link, Stack } from "@chakra-ui/react";
+import { Text, Link, Stack, VStack } from "@chakra-ui/react";
 import SocialMedia from "./SocialMedia";
+import { useTranslation } from "next-i18next";
 
 const Press: React.FC<WithUserAgentProps> = () => {
+  const { t } = useTranslation("press");
+
+  const nossasEmail = (
+    <Link href="mailto:imprensa@nossas.org">imprensa@nossas.org</Link>
+  );
+
   return (
     <Body>
       <Hero
@@ -18,20 +25,30 @@ const Press: React.FC<WithUserAgentProps> = () => {
       />
 
       <Section>
+        {/* -------------------- */}
+        {/* // Nesse trecho a tradução funciona */}
         <Header
           title={
-            <>
-              Jornalista, <br />
-              esse espaço <br />
-              <b>é para você</b>
-            </>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("journalist.title", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
           }
           description={
             <VStack spacing={7} maxW={725}>
+              {/* -------------------- */}
+              {/* Já esse trecho não está sendo traduzido */}
               <Text>
-                Se você tem interesse em conversar conosco sobre alguma pauta,
-                saber mais sobre algum dos nossos projetos ou campanhas em
-                andamento, esse espaço é para você!
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: t("journalist.title", {
+                      interpolation: { escapeValue: false },
+                    }),
+                  }}
+                />
               </Text>
               <Text>
                 Nos mobilizamos por inúmeras causas tanto de alcance nacional,
@@ -54,11 +71,7 @@ const Press: React.FC<WithUserAgentProps> = () => {
               <Text>
                 Se você deseja saber mais sobre o que estamos fazendo agora ou
                 sobre alguma das nossas campanhas ativas, escreva para a gente
-                em{" "}
-                <Link href="mailto:imprensa@nossas.org">
-                  imprensa@nossas.org
-                </Link>
-                .
+                em {nossasEmail}.
               </Text>
             </VStack>
           }
