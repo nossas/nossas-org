@@ -137,13 +137,26 @@ const Navbar: React.FC = () => {
 
   let submenuMobile = [];
   if (i18n.language === "en") {
-    submenuMobile = [{ label: t("navbar.navigation.about"), href: "/about" }];
+    submenuMobile = [
+      {
+        label: t("navbar.navigation.about"),
+        href: "/about",
+      },
+      {
+        label: t("navbar.navigation.press"),
+        href: "/press",
+      },
+    ];
   } else {
     submenuMobile = [
       { label: t("navbar.navigation.about"), href: "/about" },
       {
         label: t("navbar.navigation.work-with-us"),
         href: "/work-with-us",
+      },
+      {
+        label: t("navbar.navigation.press"),
+        href: "/press",
       },
     ];
   }
