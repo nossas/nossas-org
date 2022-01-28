@@ -1,7 +1,14 @@
 {
   "cover": "Imprensa",
   "journalist": {
-    "title": "Jornalista, <br /> esse espaço <br /> <b>é para você</b>",
-    "text": "Se você tem interesse em conversar conosco sobre alguma pauta, saber mais sobre algum dos nossos projetos ou campanhas em andamento, esse espaço é para você!"
+    "title": "Journalist, <br /> this space <br/> <b>is for you </b>",
+    "p1": "If you are interested in talking to us about an issue, knowing more about any of our projects or ongoing campaigns, this place is for you!",
+    "p2": "We mobilize for numerous causes both on national and local level, through the Rede Nossas Cidades, from North to South of Brazil.",
+    "p3": "In 2021,  we launched 15 successful campaigns that mobilized thousands of people, volunteers and partner organizations across the country, and whose impact positively transformed the lives of thousands of brazilians.",
+    "p4": "And because of that, we are an almost inexhaustible source of great stories and characters; from those who work hard to make the world a more supportive and democratic place, to those whose lives are forever transformed by our work.",
+    "p5": "If you want to know more about what we are doing now, contact us at: ",
+    "about": "About <b>Nossas</b>",
+    "description": "NOSSAS catalyzes democratic and solidarity-based activism in Brazil and Latin America, by helping individuals, collectives and organizations in their struggle for justice and sharing opportunities for action, methodologies and tools for creating impactful mobilizations.",
+    "description2": "Follow our work through our channels:"
   }
 }
