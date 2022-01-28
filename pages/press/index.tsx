@@ -19,7 +19,7 @@ const Press: React.FC<WithUserAgentProps> = () => {
     <Body>
       <Hero
         bgImage="/static/media/covers/header-press.png"
-        title="Imprensa"
+        title={t("cover")}
         titleColor="white"
         titleAlign="center"
       />
@@ -91,12 +91,36 @@ const Press: React.FC<WithUserAgentProps> = () => {
       <Section bgColor="gray.light">
         <Header
           titleColor="pink.main"
-          title={t("journalist.about")}
+          title={
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t("journalist.about", {
+                  interpolation: { escapeValue: false },
+                }),
+              }}
+            />
+          }
           description={
             <>
               <Stack spacing={7}>
-                <Text>{t("journalist.description")}</Text>
-                <Text>{t("journalist.description2")}</Text>
+                <Text>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("journalist.description", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
+                </Text>
+                <Text>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: t("journalist.description2", {
+                        interpolation: { escapeValue: false },
+                      }),
+                    }}
+                  />
+                </Text>
                 <SocialMedia />
               </Stack>
             </>
