@@ -97,29 +97,6 @@ const WorkWithUs: React.FC = () => (
             </Button>
           </Link>
         </Stack>
-
-        <Stack alignItems="center" spacing={2}>
-          <Pair />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            maxW="241px"
-          >
-            Analista Administrativo Financeiro - Nível II
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/analista-administrativo-financeiro-nivel-ii"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
       </Stack>
 
       <Stack
@@ -128,53 +105,7 @@ const WorkWithUs: React.FC = () => (
         spacing={[10, 14, 20, 138, 188]}
         justifyContent="center"
         textAlign="center"
-      >
-        <Stack alignItems="center" spacing={2}>
-          <MegaphoneYellow />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            maxW="250px"
-          >
-            Analista de Marketing e Comunicação
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/analista-de-captacao-e-aquisicao-de-doadores"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
-        <Stack alignItems="center" spacing={2}>
-          <Money />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            maxW="350px"
-          >
-            Estagiária(o) de Captação e Parcerias Institucionais
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/estagiariao-de-captacao-e-parcerias-institucionais"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-      </Stack>
+      ></Stack>
     </Section>
 
     <Section display="flex">
