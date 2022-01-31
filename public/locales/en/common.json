@@ -106,66 +106,76 @@
     "title": "What <strong>we're doing</strong>",
     "sliders": {
       "1": {
+        "title": "Supervia, aumento não!",
+        "description": "SuperVia, the company responsible for rail transport in Rio de Janeiro, proposed an increase in the train tickets in the city, which would now cost R$7. We need to mobilize now so that this abusive measure is suspended!",
+        "navigate": "Join us!"
+      },
+      "2": {
+        "title": "#ParaisópolisResiste",
+        "description": "Last October, a strong storm caused a series of floods and landslides in the community of Paraisópolis, in São Paulo, leaving victims, injured and homeless families. It's time to join our forces to help them start over!",
+        "navigate": "Make a donation!"
+      },
+      "3": {
         "title": "Geração Que Move",
         "description": "Geração Que Move is a training program in social mobilization, and is the result of a partnership between NOSSAS and UNICEF, aimed at young people from Rio de Janeiro and São Paulo who want to transform their cities.",
         "navigate": "Find out more!"
       },
-      "2": {
+      "4": {
         "title": "Meu Nome Importa!",
         "description": "The Bill that will grant transgender people the access to the Social Name Identification Card hasn’t been discussed in months in the Legislative Assembly of Amazonas and is in danger of being rejected. We need to act now to secure the project is approved!",
         "navigate": "Take part in the campaign!"
       },
-      "3": {
+      "5": {
         "title": "PETAR sem Concessão",
         "description": "The Government of São Paulo plans to initiate a 30-year concession project for the Alto do Ribeira State Park (PETAR), allowing the private sector to explore the region, ignoring the environmental damage that this would cause, and the wishes of traditional communities and residents of the area. We need to stop this!",
         "navigate": "Join us!"
       },
-      "4": {
+      "6": {
         "title": "Lutar Não é Crime",
         "description": "A proposal known as the “Antiterrorism Bill” can be voted by the Congress at any time. If approved, the project will allow the political persecution of activists and the criminalization of social movements. It's time to act to stop this threat to democracy!",
         "navigate": "Take part in the campaign!"
       },
-      "5": {
+      "7": {
         "title": "HIV não é requisito!",
         "description": "The Amazonas Military Police is demanding the presentation of an HIV test for classified candidates who applied to join the force. The practice, in addition to being illegal, is exclusionary and a violation of privacy and human rights. We need to stop this absurd!",
         "navigate": "Join us!"
       },
-      "6": {
+      "8": {
         "title": "PL da Boiada Não!",
         "description": "Bill 2159/2021, known as “PL da Boiada”, is to be voted in the Senate at any time. If approved, it will end environmental licensing and open the “gateway” to practices that cause the destruction of our ecossystem and cause environmental disasters, such as the tragedies of Brumadinho and Mariana. It's time to fight this measure!",
         "navigate": "Take part in the campaign"
       },
-      "7": {
+      "9": {
         "title": "Sem Licença Pra Matar",
         "description": "A proposal to reform the Military Penal Code makes room for police officers accused in cases of murder or aggression not to be trialed. We need to stop this absurd!",
         "navigate": "Take part in the campaign!"
       },
-      "8": {
+      "10": {
         "title": "EmLuta",
         "description": "Over 5 million brazilians have lost family members and loved ones to Covid-19. It's time to mobilize and demand the public power to ensure that these families are not left without support.",
         "navigate": "Join us!"
       },
-      "9": {
+      "11": {
         "title": "Cadê Meu Absorvente?",
         "description": "Several bills have been approved in many states in Brazil, but it is about time we had a national law to ensure the distribution of sanitary pads over the country.",
         "navigate": "Pressure for menstrual dignity for all"
       },
-      "10": {
+      "12": {
         "title": "Praça Pôr do Sol without fences NOW!",
         "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
         "navigate": "Pressure now!"
       },
-      "11": {
+      "13": {
         "title": "Parque Realengo Verde",
         "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
         "navigate": "Pressure for an urban and ecological park"
       },
-      "12": {
+      "14": {
         "title": "Livre Para Menstruar",
         "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
         "navigate": "Pressure to pass the bill"
       },
-      "13": {
+      "15": {
         "title": "Sai da Fossa, Manaus!",
         "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
         "navigate": "Pressure for basic sanitation"
