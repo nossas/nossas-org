@@ -1,13 +1,11 @@
 import React from "react";
 import NextApp from "next/app";
 import { appWithTranslation } from "next-i18next";
-import { ApolloProvider } from "@apollo/client";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 import apm from "../lib/apm";
 // import NextI18n from "../i18n";
 import { nossas } from "../theme";
-import { createApolloClient } from "../lib";
 // add global css
 import "../styles/globals.css";
 
@@ -21,9 +19,7 @@ class App extends NextApp {
 
     return (
       <ChakraProvider theme={theme}>
-        <ApolloProvider client={createApolloClient({}, {}) as any}>
-          <Component {...pageProps} />
-        </ApolloProvider>
+        <Component {...pageProps} />
       </ChakraProvider>
     );
   }

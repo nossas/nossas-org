@@ -1,12 +1,6 @@
+import Image from "next/image";
 import React from "react";
-import {
-  Box,
-  Grid,
-  UnorderedList,
-  ListItem,
-  Link,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Grid, UnorderedList, ListItem, Link } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import NextLink from "next/link";
 
@@ -29,7 +23,13 @@ const Footer = () => {
       >
         <Box>
           <NextLink href="/">
-            <Image src="/static/media/logo.svg" alt="Logo do Nossas" />
+            <Image
+              src="/static/media/logo.svg"
+              layout="responsive"
+              width="300"
+              height="100"
+              alt="Logo do Nossas"
+            />
           </NextLink>
 
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>

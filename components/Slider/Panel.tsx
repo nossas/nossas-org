@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { useTranslation } from "next-i18next";
 import { Heading, Img, Link, Stack, Text } from "@chakra-ui/react";
@@ -20,7 +21,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => {
 
   return (
     <Stack flex={1} boxShadow={["base"]} rounded="base" bgColor="white">
-      <Img src={item.src} alt={item.alt} objectFit="fill" />
+      <Image src={item.src} alt={item.alt} layout="fill" />
       <Stack p={8} spacing={4} textAlign="left">
         <Link
           href={item.href}

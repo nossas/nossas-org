@@ -1,13 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { useTranslation } from "next-i18next";
-import {
-  Image,
-  Text,
-  Heading,
-  Link,
-  Stack,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Text, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/react";
 
 export interface SliderContentProps {
   imageUrl: string;
@@ -31,8 +25,9 @@ const SliderContent: React.FC<SliderContentProps> = ({
       <Image
         src={imageUrl}
         alt={title}
-        width={[315, 615]}
-        height={[194, 357]}
+        layout="fill"
+        // width={[315, 615]}
+        // height={[194, 357]}
       />
       <Stack flex="1" direction="column" spacing="8">
         {tag && (
@@ -88,8 +83,9 @@ export const ImageText: React.FC<ImageTextProps> = ({
       alignItems="center"
     >
       <Image
-        objectFit="cover"
-        boxSize={["357px", null, null, null, "357px", "427px"]}
+        layout="fill"
+        // width="427"
+        // boxSize={["357px", null, null, null, "357px", "427px"]}
         src={src}
         alt={alt}
       />
