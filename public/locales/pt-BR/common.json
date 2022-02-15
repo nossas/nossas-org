@@ -106,76 +106,86 @@
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
       "1": {
+        "title": "Honra Não É Desculpa",
+        "description": "Durante décadas, o argumento da legítima defesa da honra foi utilizado em casos de feminicídio e violência doméstica, como uma forma de isentar o agressor de culpa e responsabilizar a própria vítima pela violência sofrida. Em 2021, o STF declarou essa tese como inconstitucional, mas, ainda não existe uma lei que garanta que esse argumento não seja utilizado em júris. Precisamos agir pelo fim da impunidade nos casos de violência de gênero!",
+        "navigate": "Pressione agora pela aprovação do PL que põe fim a esse recurso!"
+      },
+      "2": {
+        "title": "Auxílio Camelô, Já!",
+        "description": "Com o cancelamento do carnaval de rua no Rio de Janeiro, milhares de trabalhadores ambulantes que dependem da festa para botar comida na mesa tiveram sua fonte de renda comprometida. E o Auxílio anunciado pela Prefeitura para amparar essas pessoas exclui a maior parte dos camelôs que de fato trabalham para fazer o carnaval acontecer. Por isso, precisamos nos mobilizar para garantir um auxílio que beneficie a todos os camelôs de festa!",
+        "navigate": "Junte-se a nós e pressione!"
+      },
+      "3": {
+        "title": "Cada Voto Conta",
+        "description": "Hoje, apenas 10% dos jovens brasileiros entre 16 e 18 anos possuem título de eleitor. Para mudar esse cenário, convidamos os jovens em idade eleitoral a participar de um mutirão para tirar seus títulos e chamar seus amigos para fazerem o mesmo até 4 de maio, garantindo assim sua participação nas eleições de outubro! E, no final, além de contribuir para o fortalecimento da democracia, ainda concorrer a prêmios!",
+        "navigate": "Participe! Nosso futuro depende da gente"
+      },
+      "4": {
         "title": "Supervia, aumento não!",
         "description": "A SuperVia, concessionária responsável pelo transporte ferroviário no Rio de Janeiro, propôs um novo aumento no valor da passagem dos trens na cidade, que deverá passar a custar R$7 em fevereiro. Precisamos nos mobilizar já para que essa medida abusiva seja suspensa!",
         "navigate": "Junte-se a nós e pressione agora!"
       },
-      "2": {
-        "title": "#ParaisópolisResiste",
-        "description": "Em outubro passado, um forte temporal causou uma série de enchentes e desabamentos na comunidade de Paraisópolis, em São Paulo, deixando vítimas, feridos e famílias desabrigadas. É hora de nos unirmos para ajudá-las a recomeçar!",
-        "navigate": "Faça uma doação!"
-      },
-      "3": {
+      "5": {
         "title": "Geração Que Move",
         "description": "O Geração Que Move é um programa de treinamento em mobilização social fruto de uma parceria entre o NOSSAS e o UNICEF, voltado para adolescentes e jovens do Rio de Janeiro e de São Paulo  que queiram botar a mão na massa para transformar a mobilidade urbana em suas cidades.",
         "navigate": "Saiba mais!"
       },
-      "4": {
+      "6": {
         "title": "Meu Nome Importa!",
         "description": "O Projeto de Lei que irá garantir o acesso de pessoas trans e travestis à Carteira de Identificação de Nome Social está parada há meses na Assembleia Legislativa do Amazonas e corre o risco de ser rejeitado. Precisamos nos mobilizar agora para garantir a aprovação do projeto!",
         "navigate": "Pressione agora e junte-se à campanha!"
       },
-      "5": {
+      "7": {
         "title": "PETAR sem Concessão",
         "description": "O Governo de São Paulo planeja iniciar um projeto de concessão do Parque Estadual do Alto do Ribeira à iniciativa privada por 30 anos, ignorando os danos ambientais que isso causaria, e os desejos das comunidades tradicionais e moradores da região.",
         "navigate": "Pressione agora e mostre sua indignação!"
       },
-      "6": {
+      "8": {
         "title": "Lutar Não é Crime",
         "description": "A Câmara dos Deputados pode votar a qualquer momento um Projeto de Lei conhecido como “PL Antiterrorismo”, que abre brechas para a perseguição política de ativistas e criminalização da atuação de movimentos sociais. É hora de agir para impedir essa ameaça à democracia!",
         "navigate": "Participe da campanha!"
       },
-      "7": {
+      "9": {
         "title": "HIV não é requisito!",
         "description": "O Concurso da Polícia Militar do Amazonas está exigindo a apresentação do teste de HIV para os candidatos classificados. A prática, além de ser ilegal, é excludente e uma violação à privacidade e aos direitos humanos. Precisamos barrar esse absurdo!",
         "navigate": "Junte-se à campanha!"
       },
-      "8": {
+      "10": {
         "title": "PL da Boiada Não!",
         "description": "O Projeto de Lei 2159/2021, conhecido como PL da Boiada, está para ser votado no Senado. Se aprovado, ele irá acabar com o licenciamento ambiental e abrir a “porteira” para práticas que causam a destruição dos nossos biomas e provocam desastres ambientais, como as tragédias de Brumadinho e Mariana. É hora de nos mobilizar contra essa medida!",
         "navigate": "Pressione agora!"
       },
-      "9": {
+      "11": {
         "title": "Sem Licença Pra Matar",
         "description": "Um Projeto de Lei que pretende reformar o Código Penal Militar abre brechas para que militares das força armadas ou policiais não sejam punidos em casos de assassinato ou agressão. Precisamos barrar essa proposta absurda!",
         "navigate": "Pressione agora contra essa medida!"
       },
-      "10": {
+      "12": {
         "title": "EmLuta",
         "description": "Mais de 5 milhões de brasileiros perderam familiares e entes queridos para a Covid-19. É hora de nos mobilizarmos e cobrar políticas públicas para garantir que essas famílias não fiquem desamparadas.",
         "navigate": "Junte-se ao movimento e pressione pela pensão especial para órfãos da pandemia!"
       },
-      "11": {
+      "13": {
         "title": "Cadê Meu Absorvente?",
         "description": "Diversos projetos de lei foram aprovados em vários estados do Brasil, mas já passou da hora de termos uma lei nacional que assegure a distribuição de absorventes no país.",
         "navigate": "Pressione por dignidade menstrual para todas"
       },
-      "12": {
+      "14": {
         "title": "Pôr do Sol Sem Cerca JÁ!",
         "description": "A Praça Pôr do Sol foi gradeada pela Prefeitura de São Paulo sem nenhuma consulta pública! É hora de pressionar a Câmara Municipal e impedir o cercamento definitivo da praça!",
         "navigate": "Pressione agora"
       },
-      "13": {
+      "15": {
         "title": "Parque Realengo Verde",
         "description": "Os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro, já estão há décadas lutando para manter uma das últimas áreas verdes da região de pé.",
         "navigate": "Pressione por um parque urbano e ecológico"
       },
-      "14": {
+      "16": {
         "title": "Livre Para Menstruar",
         "description": "Em vários estados do Brasil, meninas estão articulando projetos de lei sobre pobreza menstrual.",
         "navigate": "Pressione pela aprovação dos PLs"
       },
-      "15": {
+      "17": {
         "title": "Sai da Fossa, Manaus!",
         "description": "Em Manaus, 8 em cada 10 habitantes não possuem acesso ao sistema de esgoto. É hora de exigir que o prefeito garanta o aumento da cobertura desse serviço para todos os manauaras.",
         "navigate": "Pressione por saneamento básico"
