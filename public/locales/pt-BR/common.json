@@ -106,19 +106,19 @@
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
       "1": {
+        "title": "Cada Voto Conta",
+        "description": "Hoje, apenas 10% dos jovens brasileiros entre 16 e 18 anos possuem título de eleitor. Para mudar esse cenário, convidamos os jovens em idade eleitoral a participar de um mutirão para tirar seus títulos e chamar seus amigos para fazerem o mesmo até 4 de maio, garantindo assim sua participação nas eleições de outubro! E, no final, além de contribuir para o fortalecimento da democracia, ainda concorrer a prêmios!",
+        "navigate": "Participe! Nosso futuro depende da gente"
+      },
+      "2": {
         "title": "Honra Não É Desculpa",
         "description": "Durante décadas, o argumento da legítima defesa da honra foi utilizado em casos de feminicídio e violência doméstica, como uma forma de isentar o agressor de culpa e responsabilizar a própria vítima pela violência sofrida. Em 2021, o STF declarou essa tese como inconstitucional, mas, ainda não existe uma lei que garanta que esse argumento não seja utilizado em júris. Precisamos agir pelo fim da impunidade nos casos de violência de gênero!",
         "navigate": "Pressione agora pela aprovação do PL que põe fim a esse recurso!"
       },
-      "2": {
+      "3": {
         "title": "Auxílio Camelô, Já!",
         "description": "Com o cancelamento do carnaval de rua no Rio de Janeiro, milhares de trabalhadores ambulantes que dependem da festa para botar comida na mesa tiveram sua fonte de renda comprometida. E o Auxílio anunciado pela Prefeitura para amparar essas pessoas exclui a maior parte dos camelôs que de fato trabalham para fazer o carnaval acontecer. Por isso, precisamos nos mobilizar para garantir um auxílio que beneficie a todos os camelôs de festa!",
         "navigate": "Junte-se a nós e pressione!"
-      },
-      "3": {
-        "title": "Cada Voto Conta",
-        "description": "Hoje, apenas 10% dos jovens brasileiros entre 16 e 18 anos possuem título de eleitor. Para mudar esse cenário, convidamos os jovens em idade eleitoral a participar de um mutirão para tirar seus títulos e chamar seus amigos para fazerem o mesmo até 4 de maio, garantindo assim sua participação nas eleições de outubro! E, no final, além de contribuir para o fortalecimento da democracia, ainda concorrer a prêmios!",
-        "navigate": "Participe! Nosso futuro depende da gente"
       },
       "4": {
         "title": "Supervia, aumento não!",

@@ -36,24 +36,24 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/honra-nao-e-desculpa.png",
-            href: "https://www.honranaoedesculpa.nossas.org/",
+            src: "/static/media/we-are-doing/cada-voto-conta.png",
+            href: "https://www.cadavotoconta.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
             title: t("we-are-doing.sliders.1.title"),
             description: t("we-are-doing.sliders.1.description"),
             link: t("we-are-doing.sliders.1.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/auxilio-camelo.png",
-            href: "https://auxiliocamelo.meurio.org.br",
+            src: "/static/media/we-are-doing/honra-nao-e-desculpa.png",
+            href: "https://www.honranaoedesculpa.nossas.org/",
             alt: t("we-are-doing.sliders.2.title"),
             title: t("we-are-doing.sliders.2.title"),
             description: t("we-are-doing.sliders.2.description"),
             link: t("we-are-doing.sliders.2.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/cada-voto-conta.png",
-            href: "https://www.cadavotoconta.org.br/",
+            src: "/static/media/we-are-doing/auxilio-camelo.png",
+            href: "https://auxiliocamelo.meurio.org.br",
             alt: t("we-are-doing.sliders.3.title"),
             title: t("we-are-doing.sliders.3.title"),
             description: t("we-are-doing.sliders.3.description"),
