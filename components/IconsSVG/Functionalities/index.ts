@@ -14,3 +14,4 @@ export { default as People } from "./People";
 export { default as MegaphoneYellow } from "./MegaphoneYellow";
 export { default as TransferPink } from "./TransferPink";
 export { default as ComputerBlue } from "./ComputerBlue";
+export { default as Trio } from "./Trio";

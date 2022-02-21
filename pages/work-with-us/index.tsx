@@ -8,7 +8,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
   ComputerBlue,
-  MegaphonePink,
+  Trio,
   Pair,
   MegaphoneYellow,
 } from "../../components/IconsSVG/Functionalities";
@@ -99,7 +99,7 @@ const WorkWithUs: React.FC = () => (
         </Stack>
 
         <Stack alignItems="center" spacing={4}>
-          <MegaphonePink />
+          <Trio />
 
           <Text
             fontFamily="Bebas Neue"
