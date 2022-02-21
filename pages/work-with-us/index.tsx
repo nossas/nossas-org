@@ -8,7 +8,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
   ComputerBlue,
-  Money,
+  MegaphonePink,
   Pair,
   MegaphoneYellow,
 } from "../../components/IconsSVG/Functionalities";
@@ -90,6 +90,52 @@ const WorkWithUs: React.FC = () => (
 
           <Link
             href="https://nossas.recruitee.com/o/programadora-web-pleno"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={4}>
+          <MegaphonePink />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="259px"
+          >
+            Articulador(a) Regional - Amazônia em Pé
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/articulador-regional-amazonia-em-pe"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={4}>
+          <MegaphoneYellow />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="210px"
+          >
+            Mobilizador(a) - Amazônia em Pé
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/mobilizadora-amazonia-em-pe"
             target="blank"
           >
             <Button size="sm" width="140px">
