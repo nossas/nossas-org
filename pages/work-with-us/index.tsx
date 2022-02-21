@@ -98,7 +98,7 @@ const WorkWithUs: React.FC = () => (
           </Link>
         </Stack>
 
-        <Stack alignItems="center" spacing={4}>
+        <Stack alignItems="center" spacing={2}>
           <Trio />
 
           <Text
