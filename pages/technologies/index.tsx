@@ -20,7 +20,7 @@ import Header from "../../content/Header";
 
 import {
   Computer,
-  Communication,
+  MegaphonePink,
   Email,
   Subscription,
   Money,
@@ -76,7 +76,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
             description: t("functionalities.items.subscription"),
           },
           {
-            icon: <Communication />,
+            icon: <MegaphonePink />,
             description: t("functionalities.items.communication"),
           },
         ]}

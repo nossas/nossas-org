@@ -1,6 +1,6 @@
 import { Icon } from "@chakra-ui/react";
 
-const Communication = () => (
+const MegaphonePink = () => (
   <Icon viewBox="0 0 128 119" w="128px" h="119px">
     <path
       fill="#EEE"
@@ -19,4 +19,4 @@ const Communication = () => (
   </Icon>
 );
 
-export default Communication;
+export default MegaphonePink;
