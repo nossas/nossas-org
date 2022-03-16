@@ -8,50 +8,54 @@
     "title": "Our <strong>successes</strong>",
     "carousel": {
       "1": {
+        "title": "Cadê Meu Absorvente?",
+        "description": "After months of mobilization and actions pushing for a law that could guarantee menstrual dignity in Brazil, the Chamber and Senate overturned President Jair Bolsonaro's veto, ensuring the approval of the bill that establishes the free distribution of sanitary pads for girls and women across the country."
+      },
+      "2": {
         "title": "#ParaisópolisResiste",
         "description": "With the support of more than 150 people, we managed to raise over R$ 12.000 to help families that had lost their homes due to heavy rains and floods in the community of Paraisópolis, in São Paulo."
       },
-      "2": {
+      "3": {
         "title": "Acolhimento Não se Terceiriza",
         "description": "Public spaces for welcoming women who suffered from gender-based violence in São Paulo were at risk of being outsourced! We joined forces with women's movement initiatives and feminist lawyers who filed a lawsuit at the Municipal Court demonstrating irregularities in the outsourcing notice, and thanks to that, the process was suspended!"
       },
-      "3": {
+      "4": {
         "title": "Meia-Entrada SIM",
         "description": "More than 14 thousand people joined us in the campaign against the bill 300/2020, by Deputy Arthur do Val (Patriotas), which intended to end the right to half-price tickets for students, elderly and low-income youth in cultural events and events and sports activities in the State of São Paulo."
       },
-      "4": {
+      "5": {
         "title": "Meu Corpo Meu DIU",
         "description": "Over almost 2 months, we pressured 10 health insurance plans notified by PROCON-SP to go public explaining whether or not they require women to present their husband's authorization for insertion of the Intrauterine Device (IUD). Finally, we were heard and all companies spoke against this illegal and absurd demand!"
       },
-      "5": {
+      "6": {
         "title": "Camarote da vacina não",
         "description": "Businessmen were able to pass a bill in the Chamber that allowed them to buy vaccines to apply to their employees and their families, ignoring SUS' priority list. With a campaign that had more than 100 thousand objections, we have managed to stop the project."
       },
-      "6": {
+      "7": {
         "title": "Meia-Entrada SIM",
         "description": "Graças ao apoio de mais de 14 mil pessoas, conseguimos barrar o Projeto de Lei 300/2020, do Deputado Arthur do Val (Patriotas), que pretendia acabar com o direito à meia-entrada de estudantes, idosos e jovens de baixa renda em eventos culturais e esportivos no Estado de São Paulo."
       },
-      "7": {
+      "8": {
         "title": "Auxílio para saúde",
         "description": "Health professionals such as nursing, cleaning and general service assistants have been very exposed to the virus during the pandemic. We managed to get a law passed which guarantees compensation for the families of professionals who lost their lives during the Covid-19 health crisis"
       },
-      "8": {
+      "9": {
         "title": "Sem Aula Sem ENEM",
         "description": "To go ahead with Brazil's National High School Exam (ENEM) in the middle of the pandemic would be a catastrophe, especially for the poorest students who haven't had any classes. More than four thousand students created regional campaigns putting pressure on senators, and with more than 150 thousand objections in total the exam was postponed."
       },
-      "9": {
+      "10": {
         "title": "Renda Básica",
         "description": "Together with another 200 organizations, we managed to get approval for emergency aid payments of R$600 to be made to 68 million Brazilians in 2020. In 2021, the fight continues to create a bill guaranteeing a permanent basic income for the whole population."
       },
-      "10": {
+      "11": {
         "title": "Paulista Aberta",
         "description": "After more than two years of intense mobilizations with civil society organizations and collectives in São Paulo, the then mayor, Fernando Haddad, published the decree opening Avenida Paulista to pedestrians at certain times and creating the project 'Ruas Abertas', changing leisure in São Paulo."
       },
-      "11": {
+      "12": {
         "title": "Escola Não se Destrói",
         "description": "Today, the Friedenreich School is among the highest ranked in Rio de Janeiro according to IDEB indicators, but in 2014 it was under threat of demolition to make way for World Cup facilities. After a multi-stage campaign, it is still up and running!"
       },
-      "12": {
+      "13": {
         "title": "Rio sem Canudo",
         "description": "Rio de Janeiro was the first city to ban bars, restaurants and commercial establishments from using plastic straws. Several other cities around the country then followed its example. Now, the fight continues to ban all single-use plastics!"
       }
