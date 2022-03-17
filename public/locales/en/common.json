@@ -106,86 +106,96 @@
     "title": "What <strong>we're doing</strong>",
     "sliders": {
       "1": {
+        "title": "Essa conta eu não pago!",
+        "description": "A report from the Instituto de Pesos e Medidas do Amazonas (Ipem) proved that several of the new “smart” devices installed by the Amazonas Energia concessionaire presented irregularities and charged twice the amount of electricity consumption to the population! Residents who were harmed by this mistake need to be compensated!",
+        "navigate": "Pressure now!"
+      },
+      "2": {
+        "title": "Aposentadoria Para Nossas Mães",
+        "description": "After a lifetime dedicated to caring for their children, many women are unable to retire because they have not completed the necessary contribution time. If approved, Bill 2757/21 will finally recognize these efforts and guarantee the right to retirement for mothers over 60 years of age, in addition to allowing the period of maternity leave to be counted as time of service. It is time to take care of those who always took care of us!",
+        "navigate": "Join us!"
+      },
+      "3": {
         "title": "Trabalho Infantil Não!",
         "description": "Deputies who support president Bolsonaro want to approve a Proposal for an Amendment to the Constitution (PEC 18/2011) that aims to reduce the age at which teenagers can work - labor would be legalized from the age of 14. This is an attack on the rights of young people!",
         "navigate": "Pressure now and help us stop this absurd!"
       },
-      "2": {
+      "4": {
         "title": "Cada Voto Conta",
         "description": "Today, only 10% of young Brazilians between the ages of 16 and 18 have a voter registration card. To change this scenario, we invited young people of voting age to participate in a collective effort to register to vote and invite their friends to do the same until May 4th! And, in the end, in addition to contributing to the strengthening of democracy, they can also compete to win awards!",
         "navigate": "Take part in the campaign! Our future is up to us!"
       },
-      "3": {
+      "5": {
         "title": "Honra Não É Desculpa",
         "description": "For decades, the argument of \"legitimate defense of honor\" was used in cases of gender based violence, as a way to  hold the victim responsible for the violence suffered, while the agressor remained free. In 2021, the STF declared this thesis as unconstitutional, but there is still no law that guarantees that this argument is not used in court. We need to act NOW to end impunity in cases of gender based violence!",
         "navigate": "Pressure now!"
       },
-      "4": {
+      "6": {
         "title": "Auxílio Camelô, Já!",
         "description": "With the suspension of the street carnival in Rio de Janeiro, thousands of street vendors who depend on the event to put food on the table had their income compromised. And the aid announced by the City Hall to support these people excludes most of the workers who actually make Carnival happen. That's why we need to mobilize to guarantee an aid that benefits all vendors!",
         "navigate": "Join us!"
       },
-      "5": {
+      "7": {
         "title": "Supervia, aumento não!",
         "description": "SuperVia, the company responsible for rail transport in Rio de Janeiro, proposed an increase in the train tickets in the city, which would now cost R$7. We need to mobilize now so that this abusive measure is suspended!",
         "navigate": "Join us!"
       },
-      "6": {
+      "8": {
         "title": "Geração Que Move",
         "description": "Geração Que Move is a training program in social mobilization, and is the result of a partnership between NOSSAS and UNICEF, aimed at young people from Rio de Janeiro and São Paulo who want to transform their cities.",
         "navigate": "Find out more!"
       },
-      "7": {
+      "9": {
         "title": "Meu Nome Importa!",
         "description": "The Bill that will grant transgender people the access to the Social Name Identification Card hasn’t been discussed in months in the Legislative Assembly of Amazonas and is in danger of being rejected. We need to act now to secure the project is approved!",
         "navigate": "Take part in the campaign!"
       },
-      "8": {
+      "10": {
         "title": "PETAR sem Concessão",
         "description": "The Government of São Paulo plans to initiate a 30-year concession project for the Alto do Ribeira State Park (PETAR), allowing the private sector to explore the region, ignoring the environmental damage that this would cause, and the wishes of traditional communities and residents of the area. We need to stop this!",
         "navigate": "Join us!"
       },
-      "9": {
+      "11": {
         "title": "Lutar Não é Crime",
         "description": "A proposal known as the “Antiterrorism Bill” can be voted by the Congress at any time. If approved, the project will allow the political persecution of activists and the criminalization of social movements. It's time to act to stop this threat to democracy!",
         "navigate": "Take part in the campaign!"
       },
-      "10": {
+      "12": {
         "title": "HIV não é requisito!",
         "description": "The Amazonas Military Police is demanding the presentation of an HIV test for classified candidates who applied to join the force. The practice, in addition to being illegal, is exclusionary and a violation of privacy and human rights. We need to stop this absurd!",
         "navigate": "Join us!"
       },
-      "11": {
+      "13": {
         "title": "PL da Boiada Não!",
         "description": "Bill 2159/2021, known as “PL da Boiada”, is to be voted in the Senate at any time. If approved, it will end environmental licensing and open the “gateway” to practices that cause the destruction of our ecossystem and cause environmental disasters, such as the tragedies of Brumadinho and Mariana. It's time to fight this measure!",
         "navigate": "Take part in the campaign"
       },
-      "12": {
+      "14": {
         "title": "Sem Licença Pra Matar",
         "description": "A proposal to reform the Military Penal Code makes room for police officers accused in cases of murder or aggression not to be trialed. We need to stop this absurd!",
         "navigate": "Take part in the campaign!"
       },
-      "13": {
+      "15": {
         "title": "EmLuta",
         "description": "Over 5 million brazilians have lost family members and loved ones to Covid-19. It's time to mobilize and demand the public power to ensure that these families are not left without support.",
         "navigate": "Join us!"
       },
-      "14": {
+      "16": {
         "title": "Praça Pôr do Sol without fences NOW!",
         "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
         "navigate": "Pressure now!"
       },
-      "15": {
+      "17": {
         "title": "Parque Realengo Verde",
         "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
         "navigate": "Pressure for an urban and ecological park"
       },
-      "16": {
+      "18": {
         "title": "Livre Para Menstruar",
         "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
         "navigate": "Pressure to pass the bill"
       },
-      "17": {
+      "19": {
         "title": "Sai da Fossa, Manaus!",
         "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
         "navigate": "Pressure for basic sanitation"

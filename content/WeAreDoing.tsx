@@ -36,6 +36,22 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/essa-conta.png",
+            href: "https://essacontaeunaopago.minhamanaus.org.br/",
+            alt: t("we-are-doing.sliders.1.title"),
+            title: t("we-are-doing.sliders.1.title"),
+            description: t("we-are-doing.sliders.1.description"),
+            link: t("we-are-doing.sliders.1.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/aposentadoria-maes.png",
+            href: "https://aposentadoriaparamaes.nossas.org/",
+            alt: t("we-are-doing.sliders.2.title"),
+            title: t("we-are-doing.sliders.2.title"),
+            description: t("we-are-doing.sliders.2.description"),
+            link: t("we-are-doing.sliders.2.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/trabalho-infantil-nao.png",
             href: "https://trabalhoinfantilnao.nossas.org/",
             alt: t("we-are-doing.sliders.1.title"),
