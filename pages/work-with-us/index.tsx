@@ -8,9 +8,7 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import {
   ComputerBlue,
-  Trio,
-  Pair,
-  MegaphoneYellow,
+  Computer,
 } from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
@@ -67,6 +65,28 @@ const WorkWithUs: React.FC = () => (
 
           <Link
             href="https://nossas.recruitee.com/o/programadora-web-pleno"
+            target="blank"
+          >
+            <Button size="sm" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+        <Stack alignItems="center" spacing={4}>
+          <Computer />
+
+          <Text
+            fontFamily="Bebas Neue"
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            maxW="210px"
+          >
+            ENGENHEIRA DE DADOS
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/engenheira-de-dados"
             target="blank"
           >
             <Button size="sm" width="140px">
