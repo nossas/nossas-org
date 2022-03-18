@@ -99,9 +99,9 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               src: "/static/media/our-victories/restingaemangue.png",
-              alt: t("our-victories.carousel.78title"),
-              title: t("our-victories.carousel.78title"),
-              description: t("our-victories.carousel.78description"),
+              alt: t("our-victories.carousel.7.title"),
+              title: t("our-victories.carousel.7.title"),
+              description: t("our-victories.carousel.7.description"),
               href: "https://www.restingaemangueficam.nossas.org/",
             },
             {
