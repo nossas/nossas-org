@@ -15,6 +15,20 @@ const theme = extendTheme(nossas);
 
 apm.setInitialPageLoadName("Home NOSSAS");
 
+if (
+  !(
+    "NEXT_PUBLIC_BONDE_API_GRAPHQL_URL" in process.env &&
+    "CONTENT_API_GRAPHQL_URL" in process.env &&
+    "CONTENT_API_GRAPHQL_TOKEN" in process.env
+  )
+) {
+  console.log(
+    `CONTENT_API_GRAPHQL_URL, CONTENT_API_GRAPHQL_TOKEN, NEXT_PUBLIC_BONDE_API_GRAPHQL_URL must be defined`,
+    process.env
+  );
+  process.exit();
+}
+
 class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;

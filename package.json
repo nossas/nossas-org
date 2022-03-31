@@ -26,6 +26,7 @@
     "formik": "^2.2.6",
     "framer-motion": "^4",
     "graphql": "^15.5.0",
+    "graphql-request": "^4.2.0",
     "isomorphic-unfetch": "^3.1.0",
     "next": "12",
     "next-google-fonts": "^1.2.1",
