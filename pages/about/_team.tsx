@@ -59,33 +59,6 @@ export const BoardMembers: React.FC = () => {
   );
 };
 
-export const LeadersMembersMobile: React.FC = () => {
-  const { t } = useTranslation("about");
-
-  return (
-    <Stack direction="column" spacing="35px">
-      <Heading as="h2" fontWeight="bold" color="pink.main">
-        Equipe
-      </Heading>
-      <Stack direction="column" spacing="20px">
-        <Image
-          objectFit="cover"
-          src="/static/media/team/alessandra-orofino.png"
-          width="240px"
-          height="240px"
-        />
-        <Box flexDirection="column">
-          <Heading as="h3" fontWeight="bold" fontSize="3xl" lineHeight="42px">
-            Alessandra Orofino
-          </Heading>
-          <Text>{t("teams.leaders.alessandra.role")}</Text>
-        </Box>
-        <Text>{t("teams.leaders.alessandra.about")}</Text>
-      </Stack>
-    </Stack>
-  );
-};
-
 export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("about");
 
