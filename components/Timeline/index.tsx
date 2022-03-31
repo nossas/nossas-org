@@ -32,7 +32,7 @@ interface ImageTextProps {
 export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
   <BoxStyled borderColor="gray.light" mb="10px">
     <Box
-      width="2px"
+      width="5px"
       height="40px"
       backgroundColor="gray.light"
       // left={["45%", null, "48%"]}
@@ -44,7 +44,7 @@ export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
       alignItems="center"
       justifyContent="center"
       direction="column"
-      marginBottom="10px"
+      marginBottom="23px"
     >
       {href ? (
         <Link href={href} isExternal>
