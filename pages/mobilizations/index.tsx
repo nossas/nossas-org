@@ -55,7 +55,8 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           isMobile={ua?.isMobile || false}
           items={[
             {
-              src: "/static/media/our-victories/cade-meu-absorvente.png",
+              src:
+                "/static/media/our-victories/acolhimento-não-se-terceiriza.png",
               alt: t("our-victories.carousel.1.title"),
               title: t("our-victories.carousel.1.title"),
               description: t("our-victories.carousel.1.description"),
