@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { gql, useMutation } from "@apollo/client";
+import { request, gql } from "graphql-request";
 
 const CREATE_FORM_ENTRY_GQL = gql`
   mutation(
@@ -17,13 +17,13 @@ const CREATE_FORM_ENTRY_GQL = gql`
   }
 `;
 
-type ActivistInput = {
-  name?: string;
-  first_name?: string;
-  last_name?: string;
-  email: string;
-  phone?: string;
-};
+// type ActivistInput = {
+//   name?: string;
+//   first_name?: string;
+//   last_name?: string;
+//   email: string;
+//   phone?: string;
+// };
 
 type FormEntry = {
   // ADICIONEI A OPÇÃO "PHONE" VISTO QUE ESSA INTEGRAÇÃO CONSIDERA
@@ -36,22 +36,22 @@ type FormEntry = {
   value?: string;
 };
 
-type FormEntryInput = {
-  fields: FormEntry[];
-};
+// type FormEntryInput = {
+//   fields: FormEntry[];
+// };
 
-interface Variables {
-  activist: ActivistInput;
-  input: FormEntryInput;
-  widget_id: number;
-}
+// interface Variables {
+//   activist: ActivistInput;
+//   input: FormEntryInput;
+//   widget_id: number;
+// }
 
-interface Result {
-  data: {
-    id: number;
-    created_at: string;
-  };
-}
+// interface Result {
+//   data: {
+//     id: number;
+//     created_at: string;
+//   };
+// }
 
 interface Props {
   widgetId: number;
@@ -82,9 +82,6 @@ const SubmitFormEntry: React.FC<Props> = ({
   successComponent: SuccessComponent,
 }) => {
   const [data, setData] = useState(undefined);
-  const [createFormEntry] = useMutation<Result, Variables>(
-    CREATE_FORM_ENTRY_GQL
-  );
 
   // render children with submit(values: any)
   return data ? (
@@ -104,21 +101,27 @@ const SubmitFormEntry: React.FC<Props> = ({
               };
             }
           );
-
-          const { data } = await createFormEntry({
-            variables: {
-              widget_id: widgetId,
-              activist: {
-                name:
-                  formData.name ||
-                  `${formData.first_name} ${formData.last_name}`.trim(),
-                first_name: formData.first_name,
-                last_name: formData.last_name,
-                email: formData.email,
-                phone: formData.whatsapp || formData.phone,
-              },
-              input: { fields },
+          const query = CREATE_FORM_ENTRY_GQL;
+          const endpoint = process.env.NEXT_PUBLIC_BONDE_API_GRAPHQL_URL;
+          const variables = {
+            widget_id: widgetId,
+            activist: {
+              name:
+                formData.name ||
+                `${formData.first_name} ${formData.last_name}`.trim(),
+              first_name: formData.first_name,
+              last_name: formData.last_name,
+              email: formData.email,
+              phone: formData.whatsapp || formData.phone,
             },
+            input: { fields },
+          };
+          const headers = {};
+          const { data } = await request({
+            url: endpoint,
+            document: query,
+            variables: variables,
+            requestHeaders: headers,
           });
 
           setData({ data, formData });

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { gql, useMutation } from "@apollo/client";
+import { request, gql } from "graphql-request";
 import {
   Heading,
   Image,
@@ -277,7 +277,6 @@ interface Result {
 
 const StripeDonation = (props) => {
   const { i18n } = useTranslation("common");
-  const [donate] = useMutation<Result, SubmitArgs>(CREATE_DONATION_GQL);
   let stripeInstance = getStripe(i18n.language as any);
 
   // React.useEffect(() => {
@@ -285,7 +284,17 @@ const StripeDonation = (props) => {
   // }, [i18n.language]);
 
   const registerDonate = async (args: SubmitArgs): Promise<Result> => {
-    const { data, errors } = await donate({ variables: args });
+    const query = CREATE_DONATION_GQL;
+    const endpoint = process.env.NEXT_PUBLIC_BONDE_API_GRAPHQL_URL;
+    const variables = args;
+    const headers = {};
+
+    const { data, errors } = await request({
+      url: endpoint,
+      document: query,
+      variables: variables,
+      requestHeaders: headers,
+    });
 
     if (errors) {
       console.log("RegisterDonate failed!", { errors });
