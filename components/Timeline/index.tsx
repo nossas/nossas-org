@@ -44,7 +44,7 @@ export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
       alignItems="center"
       justifyContent="center"
       direction="column"
-      marginBottom="23px"
+      marginBottom="43px"
     >
       {href ? (
         <Link href={href} isExternal>
@@ -55,7 +55,12 @@ export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
       )}
     </Flex>
 
-    <Text size="xs" minH={["145px"]}>
+    <Text
+      size="xs"
+      minH={"145px"}
+      marginTop={["-45px", 0, 0, "-20px", "-20px", "50px"]}
+      marginBottom={"10px"}
+    >
       {text}
     </Text>
   </BoxStyled>
