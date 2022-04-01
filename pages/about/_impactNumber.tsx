@@ -11,7 +11,7 @@ const ImpactNumber = ({ numberText, description }) => (
     >
       {numberText}
     </Heading>
-    <Text as="span" size="sm">
+    <Text as="span" size="sm" maxW={270}>
       {description}
     </Text>
   </Flex>

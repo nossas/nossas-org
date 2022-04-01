@@ -223,21 +223,21 @@ const renderDesktop = (t: any) => [
     </Timeline>
     <Timeline title="2021" titleVisibility="hidden">
       <ImageText
-        alt='Imagem com o texto "4G para estudar"'
-        src="/static/media/timeline/PT/4gpraestudantes.png"
+        alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
+        src="/static/media/timeline/PT/cop26.png"
         text={t("timeline.2021.7")}
       />
       <ImageText
-        alt='Imagem com o texto "Amazônia contra a Covid 19"'
+        alt='Ilustração com o texto "Acolhimento não se terceiriza"'
         href="https://www.acolhimentonaoseterceiriza.minhasampa.org.br/"
-        src="/static/media/timeline/PT/amazoniacontracovid.png"
+        src="/static/media/timeline/PT/acolhimento-nao-se-terceiriza.png"
         text={t("timeline.2021.8")}
       />
     </Timeline>
     <Timeline title="2021" titleVisibility="hidden">
       <ImageText
-        alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
-        src="/static/media/timeline/PT/cop26.png"
+        alt='Ilustração com o texto "1º fórum do mapa do acolhimento"'
+        src="/static/media/timeline/PT/forum.png"
         text={t("timeline.2021.9")}
       />
       <ImageText
@@ -460,8 +460,8 @@ const renderMobile = (t: any) => [
   </Timeline>,
   <Timeline title="2021">
     <ImageText
-      alt='Imagem com o texto "4G para estudar"'
-      src="/static/media/timeline/PT/4gpraestudantes.png"
+      alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
+      src="/static/media/timeline/PT/cop26.png"
       text={t("timeline.2021.7")}
     />
     <ImageText
@@ -472,11 +472,11 @@ const renderMobile = (t: any) => [
     />
   </Timeline>,
   <Timeline title="2021">
-    <ImageText
+    {/* <ImageText
       alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
       src="/static/media/timeline/PT/cop26.png"
       text={t("timeline.2021.9")}
-    />
+    /> */}
     <ImageText
       alt='Imagem com o texto "SOS floresta do camboatá"'
       href="https://www.sosflorestadocamboata.meurio.org.br/"

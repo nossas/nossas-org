@@ -32,7 +32,7 @@ interface ImageTextProps {
 export const ImageText = ({ src, href, text, alt }: ImageTextProps) => (
   <BoxStyled borderColor="gray.light" mb="10px">
     <Box
-      width="5px"
+      width="2px"
       height="40px"
       backgroundColor="gray.light"
       // left={["45%", null, "48%"]}
