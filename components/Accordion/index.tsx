@@ -34,10 +34,10 @@ const CustomHeading = styled(Heading)`
 `;
 
 export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
-  const ref = React.useRef();
+  const ref = React.useRef(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
   useOutsideClick({
-    ref: ref,
+    ref,
     handler: () => onClose(),
   });
 
