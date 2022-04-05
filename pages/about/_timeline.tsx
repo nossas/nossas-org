@@ -168,7 +168,7 @@ const renderDesktop = (t: any) => [
       />
       <ImageText
         alt='Imagem com o texto "Amazônia contra a Covid-19"'
-        href="https://www.amazoniacontracovid.org.br/"
+        href="https://www.amazoniacontracovid.nossas.org/"
         src="/static/media/timeline/PT/amazoniacontracovid.png"
         text={t("timeline.2020.5")}
       />
@@ -402,7 +402,7 @@ const renderMobile = (t: any) => [
     <ImageText
       alt='Imagem com o texto "4g para estudar"'
       href="https://www.4gparaestudar.nossas.org.br/"
-      src="/static/media/timeline/PT/4gpraestudantes.png"
+      src="/static/media/timeline/PT/4g.png"
       text={t("timeline.2020.4")}
     />
     <ImageText
