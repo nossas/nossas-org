@@ -163,7 +163,7 @@ const renderDesktop = (t: any) => [
       <ImageText
         alt='Imagem com o texto "4g para estudar"'
         href="https://www.4gparaestudar.nossas.org.br/"
-        src="/static/media/timeline/PT/4gpraestudantes.png"
+        src="/static/media/timeline/PT/4g-para-estudar.png"
         text={t("timeline.2020.4")}
       />
       <ImageText
@@ -402,7 +402,7 @@ const renderMobile = (t: any) => [
     <ImageText
       alt='Imagem com o texto "4g para estudar"'
       href="https://www.4gparaestudar.nossas.org.br/"
-      src="/static/media/timeline/PT/4g.png"
+      src="/static/media/timeline/PT/4g-para-estudar.png"
       text={t("timeline.2020.4")}
     />
     <ImageText
@@ -472,11 +472,6 @@ const renderMobile = (t: any) => [
     />
   </Timeline>,
   <Timeline title="2021">
-    {/* <ImageText
-      alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
-      src="/static/media/timeline/PT/cop26.png"
-      text={t("timeline.2021.9")}
-    /> */}
     <ImageText
       alt='Imagem com o texto "SOS floresta do camboatá"'
       href="https://www.sosflorestadocamboata.meurio.org.br/"
