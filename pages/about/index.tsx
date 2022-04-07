@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { request, gql } from "graphql-request";
 import {
   Box,
   Heading,
@@ -18,7 +19,7 @@ import { ContentMedia } from "../../content/ContentMedia";
 import Timeline from "./_timeline";
 import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
 
-const QuemSomos: React.FC = () => {
+const QuemSomos: React.FC = ({ estatisticas_mobilizacaoList }: any) => {
   const { t } = useTranslation("about");
 
   return (
@@ -96,30 +97,15 @@ const QuemSomos: React.FC = () => {
             gridRowGap="45px"
             gridTemplateColumns={["auto auto"]}
           >
-            <ImpactNumber
-              numberText={t("impact.financial.number")}
-              description={t("impact.financial.description")}
-            />
-            <ImpactNumber
-              numberText={t("impact.volunteers.number")}
-              description={t("impact.volunteers.description")}
-            />
-            <ImpactNumber
-              numberText={t("impact.political.number")}
-              description={t("impact.political.description")}
-            />
-            <ImpactNumber
-              numberText={t("impact.campaigns.number")}
-              description={t("impact.campaigns.description")}
-            />
-            <ImpactNumber
-              numberText={t("impact.donations.number")}
-              description={t("impact.donations.description")}
-            />
-            <ImpactNumber
-              numberText={t("impact.activists.number")}
-              description={t("impact.activists.description")}
-            />
+            {estatisticas_mobilizacaoList.map((v) => {
+              return (
+                <ImpactNumber
+                  key={v.id}
+                  numberText={v.numero}
+                  description={v.descricao}
+                />
+              );
+            })}
           </SimpleGrid>
         </SimpleGrid>
       </Section>
@@ -299,9 +285,28 @@ const QuemSomos: React.FC = () => {
   );
 };
 
-export const getStaticProps = async ({ locale }) => {
+export const getServerSideProps = async ({ locale }) => {
+  const query = gql`{
+    estatisticas_mobilizacaoList (where:"(lang,eq,${locale})"){
+      id,
+      descricao,
+      numero
+    }
+  }`;
+  const endpoint = process.env.CONTENT_API_GRAPHQL_URL;
+  const variables = {};
+  const headers = {
+    "xc-token": process.env.CONTENT_API_GRAPHQL_TOKEN,
+  };
+
   return {
     props: {
+      ...(await request({
+        url: endpoint,
+        document: query,
+        variables: variables,
+        requestHeaders: headers,
+      })),
       ...(await serverSideTranslations(locale, ["common", "about"])),
     },
   };
