@@ -221,29 +221,6 @@ const QuemSomos: React.FC = () => {
                 alt="Skoll Foundation"
               />
             </Link>
-            <Link href="http://umifund.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/umi.png"
-                alt="UMI fund"
-              />
-            </Link>
-            <Link href="https://tinker.org/pt/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/tinker.png"
-                alt="Tinker Foundation"
-              />
-            </Link>
-            <Link href="https://www.sigrid-rausing-trust.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/sigrid.png"
-              />
-            </Link>
             <Link href="https://www.svri.org/" isExternal>
               <Image
                 m="0 auto"
@@ -251,32 +228,11 @@ const QuemSomos: React.FC = () => {
                 src="/static/media/foundations/svri.png"
               />
             </Link>
-            <Link href="https://institutoavon.org.br/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/avon.png"
-              />
-            </Link>
             <Link href="https://www.climaesociedade.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/ics.png"
-              />
-            </Link>
-            <Link href="https://www.tides.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/tides.png"
-              />
-            </Link>
-            <Link href="https://malala.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/malala.png"
               />
             </Link>
           </SimpleGrid>
