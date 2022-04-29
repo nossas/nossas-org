@@ -15,18 +15,14 @@ const theme = extendTheme(nossas);
 
 apm.setInitialPageLoadName("Home NOSSAS");
 
-class App extends NextApp {
-  render() {
-    const { Component, pageProps } = this.props;
-
-    return (
-      <ChakraProvider theme={theme}>
-        <ApolloProvider client={createApolloClient({}, {}) as any}>
-          <Component {...pageProps} />
-        </ApolloProvider>
-      </ChakraProvider>
-    );
-  }
+function App({ Component, pageProps }) {
+  return (
+    <ChakraProvider theme={theme}>
+      <ApolloProvider client={createApolloClient({}, {}) as any}>
+        <Component {...pageProps} />
+      </ApolloProvider>
+    </ChakraProvider>
+  );
 }
 
 App.getInitialProps = async (appContext) => ({
