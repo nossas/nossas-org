@@ -135,11 +135,6 @@
         "description": "SuperVia, the company responsible for rail transport in Rio de Janeiro, proposed an increase in the train tickets in the city, which would now cost R$7. We need to mobilize now so that this abusive measure is suspended!",
         "navigate": "Join us!"
       },
-      "7": {
-        "title": "Geração Que Move",
-        "description": "Geração Que Move is a training program in social mobilization, and is the result of a partnership between NOSSAS and UNICEF, aimed at young people from Rio de Janeiro and São Paulo who want to transform their cities.",
-        "navigate": "Find out more!"
-      },
       "8": {
         "title": "Meu Nome Importa!",
         "description": "The Bill that will grant transgender people the access to the Social Name Identification Card hasn’t been discussed in months in the Legislative Assembly of Amazonas and is in danger of being rejected. We need to act now to secure the project is approved!",
@@ -179,16 +174,6 @@
         "title": "Parque Realengo Verde",
         "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
         "navigate": "Pressure for an urban and ecological park"
-      },
-      "16": {
-        "title": "Livre Para Menstruar",
-        "description": "In several states in Brazil, girls are articulating bills on menstrual poverty.",
-        "navigate": "Pressure to pass the bill"
-      },
-      "17": {
-        "title": "Sai da Fossa, Manaus!",
-        "description": "In the city of Manaus, 8 out of 10 inhabitants do not have access to the sewage system. It's time to demand that the mayor guarantee increased coverage of this service to all city's citizens.",
-        "navigate": "Pressure for basic sanitation"
       }
     }
   },

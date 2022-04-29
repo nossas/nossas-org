@@ -84,14 +84,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.6.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/geracao-que-move.png",
-            href: "https://geracaoquemove.nossas.org/",
-            alt: t("we-are-doing.sliders.7.title"),
-            title: t("we-are-doing.sliders.7.title"),
-            description: t("we-are-doing.sliders.7.description"),
-            link: t("we-are-doing.sliders.7.navigate"),
-          },
-          {
             src: "/static/media/we-are-doing/meu-nome-importa.png",
             href: "https://www.meunomeimporta.minhamanaus.org.br/",
             alt: t("we-are-doing.sliders.8.title"),
@@ -154,22 +146,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             title: t("we-are-doing.sliders.15.title"),
             description: t("we-are-doing.sliders.15.description"),
             link: t("we-are-doing.sliders.15.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/livre-para-menstruar.png",
-            href: "https://www.sp.livreparamenstruar.org/",
-            alt: t("we-are-doing.sliders.16.title"),
-            title: t("we-are-doing.sliders.16.title"),
-            description: t("we-are-doing.sliders.16.description"),
-            link: t("we-are-doing.sliders.16.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/sai-da-fossa-manaus.png",
-            href: "https://www.saidafossa.minhamanaus.org.br/",
-            alt: t("we-are-doing.sliders.17.title"),
-            title: t("we-are-doing.sliders.17.title"),
-            description: t("we-are-doing.sliders.17.description"),
-            link: t("we-are-doing.sliders.17.navigate"),
           },
         ]}
       />

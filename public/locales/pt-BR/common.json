@@ -135,11 +135,6 @@
         "description": "A SuperVia, concessionária responsável pelo transporte ferroviário no Rio de Janeiro, propôs um novo aumento no valor da passagem dos trens na cidade, que deverá passar a custar R$7 em fevereiro. Precisamos nos mobilizar já para que essa medida abusiva seja suspensa!",
         "navigate": "Junte-se a nós e pressione agora!"
       },
-      "7": {
-        "title": "Geração Que Move",
-        "description": "O Geração Que Move é um programa de treinamento em mobilização social fruto de uma parceria entre o NOSSAS e o UNICEF, voltado para adolescentes e jovens do Rio de Janeiro e de São Paulo  que queiram botar a mão na massa para transformar a mobilidade urbana em suas cidades.",
-        "navigate": "Saiba mais!"
-      },
       "8": {
         "title": "Meu Nome Importa!",
         "description": "O Projeto de Lei que irá garantir o acesso de pessoas trans e travestis à Carteira de Identificação de Nome Social está parada há meses na Assembleia Legislativa do Amazonas e corre o risco de ser rejeitado. Precisamos nos mobilizar agora para garantir a aprovação do projeto!",
@@ -179,16 +174,6 @@
         "title": "Parque Realengo Verde",
         "description": "Os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro, já estão há décadas lutando para manter uma das últimas áreas verdes da região de pé.",
         "navigate": "Pressione por um parque urbano e ecológico"
-      },
-      "16": {
-        "title": "Livre Para Menstruar",
-        "description": "Em vários estados do Brasil, meninas estão articulando projetos de lei sobre pobreza menstrual.",
-        "navigate": "Pressione pela aprovação dos PLs"
-      },
-      "17": {
-        "title": "Sai da Fossa, Manaus!",
-        "description": "Em Manaus, 8 em cada 10 habitantes não possuem acesso ao sistema de esgoto. É hora de exigir que o prefeito garanta o aumento da cobertura desse serviço para todos os manauaras.",
-        "navigate": "Pressione por saneamento básico"
       }
     }
   },
