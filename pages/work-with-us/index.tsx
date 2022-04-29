@@ -35,50 +35,20 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section direction="column" spacing={[10]} bgColor="gray.light">
+    {/* <Section direction="column" spacing={[10]} bgColor="gray.light">
       <Heading as="h2" color="green">
         NOSSAS <b>VAGAS</b>
-      </Heading>
+      </Heading> */}
 
-      <Stack
+    {/* <Stack
         maxW="1600px"
         direction={["column", "column", "row"]}
         spacing={[10, 14, 20, 138, 188]}
         justifyContent="center"
         textAlign="center"
       >
-        <Stack alignItems="center" spacing={4}>
-          <ComputerBlue />
-
-          <Text
-            fontFamily="Bebas Neue"
-            fontSize="30px"
-            color="black"
-            fontWeight="bold"
-            maxW="210px"
-          >
-            ENGENHEIRA DE DADOS
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/engenheira-de-dados"
-            target="blank"
-          >
-            <Button size="sm" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-      </Stack>
-
-      <Stack
-        maxW="1600px"
-        direction={["column", "column", "row"]}
-        spacing={[10, 14, 20, 138, 188]}
-        justifyContent="center"
-        textAlign="center"
-      ></Stack>
-    </Section>
+      </Stack> */}
+    {/* </Section> */}
 
     <Section display="flex">
       <SimpleGrid
