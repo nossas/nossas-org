@@ -61,7 +61,6 @@ export const BoardMembers: React.FC = () => {
 
 export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("about");
-  //GESTORES EXECUTIVOS
 
   return (
     <EmployeeTeam
