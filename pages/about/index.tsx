@@ -184,7 +184,7 @@ const QuemSomos: React.FC = () => {
           </SimpleGrid>
 
           <SimpleGrid
-            columns={[2, null, null, null, 4]}
+            columns={[2, null, null, null, 5]}
             rowGap={["20px", null, null, null, "45px"]}
             columnGap="20px"
             pt="75px"
@@ -226,6 +226,7 @@ const QuemSomos: React.FC = () => {
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/svri.png"
+                alt="fundação SVRI"
               />
             </Link>
             <Link href="https://www.climaesociedade.org/" isExternal>
@@ -233,6 +234,39 @@ const QuemSomos: React.FC = () => {
                 m="0 auto"
                 objectFit="cover"
                 src="/static/media/foundations/ics.png"
+                alt="Instituto Clima e Sociedade"
+              />
+            </Link>
+            <Link href="https://institutogalodamanha.org.br/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/galodamanha.png"
+                alt="Instituto galo da manhã"
+              />
+            </Link>
+            <Link href="https://www.co-impact.org/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/coimpact.png"
+                alt="Fundação co-impact"
+              />
+            </Link>
+            <Link href="https://www.unicef.org/brazil/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/unicef1.png"
+                alt="Instituto Unicef"
+              />
+            </Link>
+            <Link href="https://www.laudesfoundation.org/br" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/laudes.png"
+                alt="Fundação Laudes"
               />
             </Link>
           </SimpleGrid>
