@@ -146,6 +146,13 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               description: t("our-victories.carousel.13.description"),
               href: "https://www.riosemcanudo.meurio.org.br/",
             },
+            {
+              src: "/static/media/our-victories/fora-gabriel-monteiro.png",
+              alt: t("our-victories.carousel.14.title"),
+              title: t("our-victories.carousel.14.title"),
+              description: t("our-victories.carousel.14.description"),
+              href: "https://www.foragabrielmonteiro.meurio.org.br/",
+            },
           ]}
         />
       </Section>
