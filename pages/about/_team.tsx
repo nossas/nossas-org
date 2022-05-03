@@ -61,6 +61,7 @@ export const BoardMembers: React.FC = () => {
 
 export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("about");
+  //GESTORES EXECUTIVOS
 
   return (
     <EmployeeTeam
@@ -106,6 +107,20 @@ export const LeadersMembers: React.FC = () => {
           name: "Daniela Orofino",
           role: t("teams.leaders.daniela.role"),
           about: t("teams.leaders.daniela.about"),
+          team: t("teams.leaders.title"),
+        },
+        {
+          avatar: "/static/media/team/samira.png",
+          name: "Samira",
+          role: t("teams.leaders.samira.role"),
+          about: t("teams.leaders.samira.about"),
+          team: t("teams.leaders.title"),
+        },
+        {
+          avatar: "/static/media/team/daiane.png",
+          name: "Daiane",
+          role: t("teams.leaders.daiane.role"),
+          about: t("teams.leaders.daiane.about"),
           team: t("teams.leaders.title"),
         },
       ]}
@@ -181,13 +196,6 @@ export const TeamMembers: React.FC = () => {
           name: "Cledisson",
           role: t("teams.team.cledisson.role"),
           about: t("teams.team.cledisson.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/daiane.png",
-          name: "Daiane",
-          role: t("teams.team.daiane.role"),
-          about: t("teams.team.daiane.about"),
           team: t("teams.team.title"),
         },
         {
@@ -384,13 +392,6 @@ export const TeamMembers: React.FC = () => {
           name: "Renata",
           role: t("teams.team.renata.role"),
           about: t("teams.team.renata.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/samira.png",
-          name: "Samira",
-          role: t("teams.team.samira.role"),
-          about: t("teams.team.samira.about"),
           team: t("teams.team.title"),
         },
         {
