@@ -209,19 +209,25 @@ const renderDesktop = (t: any) => [
         text={t("timeline.2021.4")}
       />
       <ImageText
+        alt='Ilustração com o texto "Contra-ataque: apoie o jacaré basquete"'
+        href="https://www.jacarebasquete.meurio.org.br/"
+        src="/static/media/timeline/PT/logo-jacare-basquete.png"
+        text={t("timeline.2021.11")}
+      />
+      <ImageText
         alt='Imagem com o texto "Meia-entrada SIM! #VETAPL300"'
         href="https://www.meiaentradasim.minhasampa.org.br/"
         src="/static/media/timeline/PT/meia-entrada.png"
         text={t("timeline.2021.5")}
       />
+    </Timeline>
+    <Timeline title="2021" titleVisibility="hidden">
       <ImageText
         alt='Imagem com o texto "EmLuta"'
         href="https://www.emluta.org.br/"
         src="/static/media/timeline/PT/em-luta.png"
         text={t("timeline.2021.6")}
       />
-    </Timeline>
-    <Timeline title="2021" titleVisibility="hidden">
       <ImageText
         alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
         src="/static/media/timeline/PT/cop26.png"
@@ -245,6 +251,42 @@ const renderDesktop = (t: any) => [
         href="https://www.sosflorestadocamboata.meurio.org.br/"
         src="/static/media/timeline/PT/sos-floresta-camboata.png"
         text={t("timeline.2021.10")}
+      />
+    </Timeline>
+  </SimpleGrid>,
+  <SimpleGrid columns={4}>
+    <Timeline title="2022">
+      <ImageText
+        alt='Imagem com o texto "Paraisópolis Resiste"'
+        href="https://paraisopolis.minhasampa.org.br/"
+        src="/static/media/timeline/PT/logo-paraisopolis-resiste.png"
+        text={t("timeline.2022.1")}
+      />
+      <ImageText
+        alt='Ilustração com o texto "Cadê meu absorvente?"'
+        href="https://www.cademeuabsorvente.nossas.org.br/"
+        src="/static/media/timeline/PT/logo-cade-meu-absorvente.png"
+        text={t("timeline.2022.2")}
+      />
+      <ImageText
+        alt='Imagem com o texto "Creators pelo clima"'
+        href="https://creatorspeloclima.nossas.org/"
+        src="/static/media/timeline/PT/logo-creators-pelo-clima.png"
+        text={t("timeline.2022.3")}
+      />
+    </Timeline>
+    <Timeline title="2022" titleVisibility="hidden">
+      <ImageText
+        alt='Imagem com o texto "cada voto conta"'
+        href="https://www.cadavotoconta.org.br/"
+        src="/static/media/timeline/PT/logo-cada-voto-conta.png"
+        text={t("timeline.2022.4")}
+      />
+      <ImageText
+        alt='Imagem com o texto "Geração que move"'
+        href="https://geracaoquemove.nossas.org/"
+        src="/static/media/timeline/PT/logo-geracao-que-move.png"
+        text={t("timeline.2022.5")}
       />
     </Timeline>
   </SimpleGrid>,
@@ -446,19 +488,25 @@ const renderMobile = (t: any) => [
       text={t("timeline.2021.4")}
     />
     <ImageText
+      alt='Ilustração com o texto "Contra-ataque: apoie o jacaré basquete"'
+      href="https://www.jacarebasquete.meurio.org.br/"
+      src="/static/media/timeline/PT/logo-jacare-basquete.png"
+      text={t("timeline.2021.11")}
+    />
+    <ImageText
       alt='Imagem com o texto "Meia-entrada SIM! #VETAPL300"'
       href="https://www.meiaentradasim.minhasampa.org.br/"
       src="/static/media/timeline/PT/meia-entrada.png"
       text={t("timeline.2021.5")}
     />
+  </Timeline>,
+  <Timeline title="2021">
     <ImageText
       alt='Imagem com o texto "EmLuta"'
       href="https://www.emluta.org.br/"
       src="/static/media/timeline/PT/em-luta.png"
       text={t("timeline.2021.6")}
     />
-  </Timeline>,
-  <Timeline title="2021">
     <ImageText
       alt='Imagem da Cop 26 com o texto "keep the amazon alive"'
       src="/static/media/timeline/PT/cop26.png"
@@ -473,10 +521,49 @@ const renderMobile = (t: any) => [
   </Timeline>,
   <Timeline title="2021">
     <ImageText
+      alt='Ilustração com o texto "1º fórum do mapa do acolhimento"'
+      src="/static/media/timeline/PT/forum.png"
+      text={t("timeline.2021.9")}
+    />
+    <ImageText
       alt='Imagem com o texto "SOS floresta do camboatá"'
       href="https://www.sosflorestadocamboata.meurio.org.br/"
       src="/static/media/timeline/PT/sos-floresta-camboata.png"
       text={t("timeline.2021.10")}
+    />
+  </Timeline>,
+  <Timeline title="2022">
+    <ImageText
+      alt='Imagem com o texto "Paraisópolis Resiste"'
+      href="https://paraisopolis.minhasampa.org.br/"
+      src="/static/media/timeline/PT/logo-paraisopolis-resiste.png"
+      text={t("timeline.2022.1")}
+    />
+    <ImageText
+      alt='Ilustração com o texto "Cadê meu absorvente?"'
+      href="https://www.cademeuabsorvente.nossas.org.br/"
+      src="/static/media/timeline/PT/logo-cade-meu-absorvente.png"
+      text={t("timeline.2022.2")}
+    />
+    <ImageText
+      alt='Imagem com o texto "Creators pelo clima"'
+      href="https://creatorspeloclima.nossas.org/"
+      src="/static/media/timeline/PT/logo-creators-pelo-clima.png"
+      text={t("timeline.2022.3")}
+    />
+  </Timeline>,
+  <Timeline title="2022">
+    <ImageText
+      alt='Imagem com o texto "cada voto conta"'
+      href="https://www.cadavotoconta.org.br/"
+      src="/static/media/timeline/PT/logo-cada-voto-conta.png"
+      text={t("timeline.2022.4")}
+    />
+    <ImageText
+      alt='Imagem com o texto "Geração que move"'
+      href="https://geracaoquemove.nossas.org/"
+      src="/static/media/timeline/PT/logo-geracao-que-move.png"
+      text={t("timeline.2022.5")}
     />
   </Timeline>,
 ];
