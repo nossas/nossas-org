@@ -61,7 +61,15 @@
       "7": "For the first time, we attended COP26, the largest event on climate issues in the world, to defend the socio-environmental activism and climate justice agenda.",
       "8": "Along with initiatives from the women's movement and feminist lawyers, we were able to suspend the outsourcing process of the main Women's Reference Centers in São Paulo.",
       "9": "We held the First Forum of Mapa do Acolhimento, with free and virtual meetings for the exchange of experiences on combating gender violence.",
-      "10": "More than 30,000 people pressured the City Hall of Rio to give up from building a race track in the Camboatá Forest, and to pass a law that will guarantee the protection of the region."
+      "10": "More than 30,000 people pressured the City Hall of Rio to give up from building a race track in the Camboatá Forest, and to pass a law that will guarantee the protection of the region.",
+      "11": "Thanks to the support of more than 300 people, we were able to raise almost R$30.000 to revitalize the Jacarezinho basketball court, and ensure the continuity of the project that offers free basketball lessons to children and teens in the community."
+    },
+    "2022": {
+      "1": "We raised over R$10,000 to support four families who lost their homes after a series of heavy rains and floods in the region of Paraisópolis, in São Paulo.",
+      "2": "After a lot of pressure, we managed to overturn President Jair Bolsonaro's veto and pass the Bill that guarantees the free distribution of sanitary pads for people who menstruate and are living in vulnerable conditions.",
+      "3": "Our first training program to boost the careers of four content producers focused on communicating the climate agenda and advocate for socio-environmental justice.",
+      "4": "Over four months, we mobilized to help young people between the ages of 16 and 18 years to take their voter registration and exercise their right to citizenship.",
+      "5": "In partnership with UNICEF, we carried out a training program with young people from Rio de Janeiro and São Paulo, focused on the agenda of urban mobilization and the right to the city."
     }
   },
   "impact": {
@@ -251,6 +259,10 @@
         "role": "Advocacy Analyst",
         "about": "Juliana Martins lives in São Paulo and she is part of the Representation and Strategy team at NOSSAS. She has a Law degree and a large experience in the public administration and she has already worked with several organizations of the third sector. Passionate about Human Rights and Democracy, Juliana has got an attentive focus about ethnicity, gender and territory."
       },
+      "kaianaku": {
+        "role": "Articulator at Amazônia de Pé",
+        "about": "Kaianaku Kamaiurá is a mother, artisan, researcher, activist of the indigenous movement and indigenous women, activist of the environmental and human rights movement, Master in Human Rights from the University of Goiás - UFG. At NOSSAS she is an articulator of the Amazônia de Pé project."
+      },
       "karina": {
         "role": "Mobilizer at Amazônia de Pé",
         "about": "Karina is a biologist and environmentalist from Maranhão. Karina worked as coordinator of the Climate Working Group of the Engajamundo Youth Organization between 2018 and 2020, has been a leader in the USBEA Youth Protagonism community since 2015 and is part of the network of global leaders, International Exchange Alumni. Karina is passionate about education and culture, she loves dancing, walking on stilts and other circus skills. Karina is part of her local church's mission group and loves dialogues and stories."
@@ -283,10 +295,6 @@
         "role": "Training Manager",
         "about": "Maira is from Pernambuco, and she is interested in the issues of human rights, gender, sexual and reproductive Rights and drug policy. Anti-prohibition, feminist activist, Maira is a member of Nacional de Feministas Antiproibicionistas (RENFA) e the Articulação de Mulheres Brasileiras (AMB). Before NOSSAS, Maira worked as a reporter for Diario de Pernambuco and Fiocruz. Maira has a degree in Social Communication."
       },
-      "mariana": {
-        "role": "Mobilizer",
-        "about": "Mariana is an Urbanist by FAUUSP and activist for the city rights. In her actions, Mariana seeks to articulate politics and the city ​​planning with street activism,through a counter-hegemonic and intersectional perspective for urban issues. She has worked with social projects in several cities of Brazil and Spain, where she stayed as a visiting student. Apart from her work at NOSSAS, she is also part of the LGBTQIA+ TODXS Brazil organization as political articulator, and she works as collaborator at Nossa Fala, where she researches and writes about territory, gender and intersectionalities."
-      },
       "matheus": {
         "role": "Mobilizer",
         "about": "Matheus is a Mobilizer at NOSSAS and brings in his baggage multiple experiences in the area of communication. He has worked for advertising agencies, technology companies and NGOs. He worked with the social and labor integration of migrants and refugees in the state of Santa Catarina, together with the Círculos de Hospitalidade Organization. He also participated in the Oportunidades Project, implemented by the IOM (International Organization for Migration). Being in touch with nature, listening to the sound of the sea and good music are part of his daily therapy. DJ in his spare time and pioneer of vegan cuisine."
@@ -310,6 +318,10 @@
       "sany": {
         "role": "Communications Coordinator",
         "about": "Sany has worked in communications since 2013. She has experience in content production for digital media, design, audiovisual production, consulting and education. In her spare time, Suny likes to practice circus activities, play percussion and immerse herself more and more in literature written by black women. Sany graduated in Advertising and specialized in the Production and Creation of Digital Content by ESPM."
+      },
+      "sarah1": {
+        "role": "Data Engineer",
+        "about": "Sarah is from Acre, graduated in Information Systems from UFAC and has a master's degree in Computer Science, where she developed research related to education, environment and inclusion policies. It was through the academy that she became interested in working in activities with social impact. Passionate about Data since her first contacts with computing, she has collaborated and developed projects in the area for 8 years, from production stages to analytical processes, with a focus on Big Data and Analytics. At NOSSAS she helps structure, monitor and optimize data models to increase the organization's impact."
       },
       "sarah": {
         "role": "Financial Analyst",
