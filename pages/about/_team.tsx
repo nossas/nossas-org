@@ -127,6 +127,7 @@ export const LeadersMembers: React.FC = () => {
   );
 };
 
+// Equipe
 export const TeamMembers: React.FC = () => {
   const { t } = useTranslation("about");
 
@@ -184,6 +185,13 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/carol.png",
+          name: "Carolina",
+          role: t("teams.team.carolina.role"),
+          about: t("teams.team.carolina.about"),
+          team: t("teams.team.title"),
+        },
+        {
           avatar: "/static/media/team/catarina.png",
           name: "Catarina",
           role: t("teams.team.catarina.role"),
@@ -223,6 +231,13 @@ export const TeamMembers: React.FC = () => {
           name: "Gabriela",
           role: t("teams.team.gabriela.role"),
           about: t("teams.team.gabriela.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/gabrielly.png",
+          name: "Gabrielly",
+          role: t("teams.team.gabrielly.role"),
+          about: t("teams.team.gabrielly.about"),
           team: t("teams.team.title"),
         },
         {
@@ -321,6 +336,13 @@ export const TeamMembers: React.FC = () => {
           name: "Laura",
           role: t("teams.team.laura.role"),
           about: t("teams.team.laura.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/leila.png",
+          name: "Leila",
+          role: t("teams.team.leila.role"),
+          about: t("teams.team.leila.about"),
           team: t("teams.team.title"),
         },
         {

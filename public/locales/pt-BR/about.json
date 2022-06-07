@@ -195,6 +195,10 @@
         "role": "Estagiária do Mapa do Acolhimento",
         "about": "Bianca é estudante do curso de Serviço Social na Universidade Federal de São Paulo (UNIFESP), Campus da Baixada Santista. Em paralelo ao seu trabalho no NOSSAS, Bianca está trabalhando em seu projeto de pesquisa na Universidade relacionado à temática de ‘’Pessoas Trans e Travestis em Situação de Cárcere’' - tema pouco explorado na literatura e sofrido com grandes estigmas sociais. Bianca gosta de tomar uma boa cerveja e comer comidas gostosas com os amigos, ir à brechós, museus e cinema."
       },
+      "carolina": {
+        "role": "Articuladora da Amazônia de Pé",
+        "about": "Carolina, ou Carol, é baiana, nascida e criada na periferia de Salvador e apaixonada pela cidade, e principalmente por suas águas. Também é ativista socioambiental há quase 5 anos (e contando), trabalhando com projetos voltados ao socioambientalismo. Nos últimos 2 anos tem focado sua atuação na luta pela justiça climática, por acreditar que um mundo mais justo e sustentável é possível sim!"
+      },
       "catarina": {
         "role": "Coordenadora de Comunicação da Amazônia de Pé",
         "about": "Catarina Nefertari é comunicóloga e ativista amazônida, bacharel em Comunicação Social - Publicidade e Propaganda (UFPA) e tem MBA em Gestão Estratégica de Negócios (FIAP). Tem experiências interdisciplinares, já atuou em times da área da educação, energia, inovação, tecnologia, direito à cidade e mobilização de comunidades, tendo co-fundado a ong Laboratório da Cidade (LdC) de Belém em 2018. Catarina coordena a comunicação da campanha Amazônia de Pé e faz parte do time de estratégia do Laboratório da Cidade."
@@ -215,9 +219,9 @@
         "role": "Produtor Audiovisual da Amazônia de Pé",
         "about": "Fábio é formado em comunicação pela UFRJ com habilitação em jornalismo. Volta-se, desde a graduação, para a produção e gestão de conteúdo em formatos audiovisuais, iniciando sua trajetória pelo telejornal universitário da UFRJ, com posterior passagem por canal de televisão e por produções de TV e Cinema. Foi aluno da Escola de Cinema Darcy Ribeiro, onde aprofundou seus conhecimentos no campo de roteiro audiovisual e está, atualmente, em condução de uma pesquisa sobre cinema e infância no programa de mestrado em Cinema e Audiovisual do PPGCine-UFF. No momento, ocupa o cargo de Produtor Audiovisual no NOSSAS, alocado no projeto Amazônia de Pé, onde também lidera o programa Creators pelo Clima."
       },
-      "gabriela": {
-        "role": "Gestora de Atendimento do Mapa do Acolhimento",
-        "about": "Gabriela é feminista antirracista e trabalhou como articuladora no projeto “Feminicidades”, que visa dar voz a todos os tipos de mulheres. É psicóloga formada pela PUC-SP, especializou-se no atendimento à mulher em situação de violência de gênero no IBCCRIM, com foco em Lei Maria da Penha, Serviços Públicos, ONGs e violência familiar. Tem especialização em saúde coletiva pelo Instituto de Saúde da Secretaria de Estado da Saúde."
+      "gabrielly": {
+        "role": "Articuladora da Amazônia de Pé",
+        "about": "Gabrielly Lima é sagitariana e manauara. Internacionalista e pós-graduanda em Gestão de Projetos e Organizações do terceiro setor. Coordenadora da SDSN Jovem Amazônia, possui experiência em diásporas, Agenda 2030 e protagonismo jovem."
       },
       "gisela": {
         "role": "Gestora de Campanhas da Amazônia de Pé",
@@ -274,6 +278,10 @@
       "laura": {
         "role": "Estagiária de Comunicação",
         "about": "Laura é estagiária de Comunicação do NOSSAS. Anteriormente, trabalhou como estagiária de redação no Jornal O Globo, escrevendo para os jornais de Bairros e editoria de gênero e diversidade. Nascida e criada na Zona Norte do Rio de Janeiro, no bairro da Penha. É graduanda de Jornalismo na Escola de Comunicação da UFRJ, com interesse especial nas áreas de direitos humanos, relações raciais e de gênero."
+      },
+      "leila": {
+        "role": "Articuladora da Amazônia de Pé",
+        "about": "Leila Borari é turismóloga, mulher indígena do povo Borari de Alter do Chão, Santarém-Pará,  coordenadora da Associação de Mulheres Indígenas Suraras do Tapajós, ativista socioambiental, musicista, compositora, produtora cultural e empreendedora na Amazônia."
       },
       "leticia": {
         "role": "Mobilizadora",
