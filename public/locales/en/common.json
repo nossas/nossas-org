@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "estação-acolhedora": {
+        "title": "Estação Acolhedora",
+        "description": "With the drop in temperatures and the arrival of winter, we need to ensure that all residents of the city of São Paulo have access to the necessary conditions to face the cold. Therefore, we are pressing the authorities to adopt adequate policies to serve the homeless population.",
+        "navigate": "Pressure now!"
+      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "With the advance of the climate crisis and the devastation of the Amazon, it is urgent to act so that the forest can stand. The Amazônia de Pé is a bill of popular initiative that proposes that the public forests of the region are destined to those who historically proved that they know how to preserve the forest: indigenous peoples, quilombolas and conservation units. The future of the forest and life on the planet is in our hands!",

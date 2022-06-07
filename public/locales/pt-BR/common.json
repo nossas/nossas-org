@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
+      "estação-acolhedora": {
+        "title": "Estação Acolhedora",
+        "description": "Com a queda das temperaturas e a chegada do inverno, precisamos garantir que todos os moradores da cidade de São Paulo tenham acesso às condições necessárias para enfrentar o frio. Por isso, estamos pressionando a Prefeitura e o Governo de SP a adotarem políticas de acolhimento adequadas para atender à população em situação de rua.",
+        "navigate": "Pressione agora!"
+      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
