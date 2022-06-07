@@ -69,29 +69,14 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               description: t("now.carousel.1.description"),
               link: t("now.carousel.1.action"),
             },
+
             {
-              src: "/static/media/trainings/muvuca.png",
-              href: "https://www.muvuca.nossas.org/",
-              alt: t("now.carousel.2.title"),
-              title: t("now.carousel.2.title"),
-              description: t("now.carousel.2.description"),
-              link: t("now.carousel.2.action"),
-            },
-            {
-              src: "/static/media/trainings/programademobilizadores.png",
+              src: "/static/media/trainings/programa-de-mobilizadores.png",
               href: "https://mobilizadores.nossas.org/",
               alt: t("now.carousel.3.title"),
               title: t("now.carousel.3.title"),
               description: t("now.carousel.3.description"),
               link: t("now.carousel.3.action"),
-            },
-            {
-              src: "/static/media/trainings/jovens-mobilizadoras.png",
-              href: "https://www.programademobilizadoras.nossas.org/",
-              alt: t("now.carousel.4.title"),
-              title: t("now.carousel.4.title"),
-              description: t("now.carousel.4.description"),
-              link: t("now.carousel.4.action"),
             },
           ]}
         />
@@ -111,6 +96,25 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
           infiniteLoop
           isMobile={ua?.isMobile || false}
           items={[
+            {
+              src: "/static/media/trainings/our-victories/muvuca.png",
+              href: "https://www.muvuca.nossas.org/",
+              alt: t("victories.carousel.muvuca.title"),
+              title: t("victories.carousel.muvuca.title"),
+              description: t("victories.carousel.muvuca.description"),
+              link: t("victories.carousel.muvuca.action"),
+            },
+            {
+              src:
+                "/static/media/trainings/our-victories/jovens-mobilizadoras.png",
+              href: "https://www.programademobilizadoras.nossas.org/",
+              alt: t("victories.carousel.jovens-mobilizadoras.title"),
+              title: t("victories.carousel.jovens-mobilizadoras.title"),
+              description: t(
+                "victories.carousel.jovens-mobilizadoras.description"
+              ),
+              link: t("victories.carousel.jovens-mobilizadoras.action"),
+            },
             {
               src: "/static/media/s3/boonline.png",
               href: "https://www.boonlineparaelas.bonde.org/",

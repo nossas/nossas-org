@@ -5,33 +5,33 @@
     "description": "Temos um programa de treinamento e mentoria para ativistas iniciantes e experientes do Brasil inteiro! Confira nossa agenda para não perder sua inscrição."
   },
   "now": {
-    "title": "Rolando <strong>agora</strong>",
+    "title": "Nossos <strong>programas</strong>",
     "carousel": {
       "1": {
         "title": "Geração Que Move",
         "description": "O Geração Que Move é um programa de treinamento em mobilização social fruto de uma parceria entre o NOSSAS e o UNICEF, voltado para adolescentes e jovens do Rio de Janeiro e de São Paulo  que queiram botar a mão na massa para transformar a mobilidade urbana em suas cidades.",
         "action": "Saiba mais"
       },
-      "2": {
-        "title": "MUVUCA",
-        "description": "O primeiro programa de ativismo climático do NOSSAS vai oferecer treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
-        "action": "Saiba mais"
-      },
       "3": {
         "title": "PROGRAMA DE MOBILIZADORES",
         "description": "As turmas deste programa recebem gratuitamente treinamento em mobilizações, comunicação de campanhas e tecnologias de ativismo.",
         "action": "Inscreva-se para a próxima turma"
-      },
-      "4": {
-        "title": "PROGRAMA DE JOVENS MOBILIZADORAS",
-        "description": "O programa é voltado para jovens estudantes do Ensino Médio. Esta edição realizada em parceria com a Girl Up! está treinando 100 jovens meninas no tema pobreza menstrual.",
-        "action": "Saiba mais"
       }
     }
   },
   "victories": {
     "title": "Vitórias dos <strong>mobilizadores</strong>",
     "carousel": {
+      "muvuca": {
+        "title": "Muvuca",
+        "description": "O nosso primeiro programa de ativismo climático no NOSSAS ofereceu treinamento ao longo de seis meses para jovens que lutam por um futuro viável para nosso planeta.",
+        "action": "Saiba mais"
+      },
+      "jovens-mobilizadoras": {
+        "title": "Programa de Jovens Mobilizadoras",
+        "description": "O programa é voltado para jovens estudantes do Ensino Médio. Na última edição, realizada em parceria com a Girl Up!, treinamos 100 jovens meninas no tema da pobreza menstrual.",
+        "action": "Saiba mais"
+      },
       "1": {
         "title": "B.O Online para elas - Minas Gerais",
         "description": "O Coletivo Abertha conseguiu implementar a Delegacia Virtual do Estado de Minas Gerais depois de uma campanha que recebeu nossa mentoria. Agora, mulheres podem fazer seus boletins de ocorrência sem sair de casa.",

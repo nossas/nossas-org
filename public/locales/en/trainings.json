@@ -12,26 +12,26 @@
         "description": "Geração Que Move is a training program in social mobilization, and is the result of a partnership between NOSSAS and UNICEF, aimed at young people from Rio de Janeiro and São Paulo who want to transform their cities.",
         "action": "Find out more"
       },
-      "2": {
-        "title": "MUVUCA",
-        "description": "NOSSAS’ first climate activism program will offer training over six months to young people fighting for a viable future for our planet.",
-        "action": "Find out more"
-      },
       "3": {
         "title": "PROGRAMA DE MOBILIZADORES",
         "description": "People on this program will receive free training in mobilization, campaign communication and technologies for activism.",
         "action": "Visit the webpage"
-      },
-      "4": {
-        "title": "PROGRAMA DE JOVENS MOBILIZADORAS",
-        "description": "This is a program aimed at young students in secondary education. In partnership with Girl Up! We're currently training 100 young girls about period poverty.",
-        "action": "Find out more"
       }
     }
   },
   "victories": {
     "title": "Mobilizer Program <strong>Successes</strong>",
     "carousel": {
+      "muvuca": {
+        "title": "Muvuca",
+        "description": "NOSSAS’ first climate activism program offered a six-month training to young people fighting for a viable future for our planet.",
+        "action": "Find out more"
+      },
+      "jovens-mobilizadoras": {
+        "title": "Programa de Jovens Mobilizadoras",
+        "description": "This is a program aimed at young students in secondary education. In partnership with Girl Up!, in the program’s first edition we trained 100 young girls about period poverty.",
+        "action": "Find out more"
+      },
       "1": {
         "title": "B.O Online para elas - Minas Gerais",
         "description": "The Coletivo Abertha managed to get a Virtual Police Precinct installed in Minas Gerais state after a campaign mentored by NOSSAS. Now women can file police reports without leaving home.",
