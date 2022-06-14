@@ -62,14 +62,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.2.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/unidas-contra-a-lap.png",
-            href: "https://unidascontraalap.mapadoacolhimento.org/",
-            alt: t("we-are-doing.sliders.3.title"),
-            title: t("we-are-doing.sliders.3.title"),
-            description: t("we-are-doing.sliders.3.description"),
-            link: t("we-are-doing.sliders.3.navigate"),
-          },
-          {
             src: "/static/media/we-are-doing/lei-de-cotas.png",
             href: "https://www.cotasraciais.org/",
             alt: t("we-are-doing.sliders.4.title"),
