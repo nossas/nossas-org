@@ -125,16 +125,6 @@
         "description": "In 2022, we celebrate a great milestone in our history and an important achievement of the Black Movement in the country: the 10th anniversary of the Racial Quotas Law within public universities! But, despite the importance of this policy, we run a serious risk of suffering a major setback with the revision of the law, which should take place this year. We will remain vigilant and monitor everything closely so that we can act in defense of the permanence of affirmartive actions!",
         "navigate": "Join us!"
       },
-      "5": {
-        "title": "Lei Paulo Gustavo, SIM!",
-        "description": "President Jair Bolsonaro vetoed the Complementary Law Project 73/2021, known as the Paulo Gustavo Law, which aims to allocate R$3.8 billion for investments in the cultural sector and support more than 900,000 workers and their families. Now it's up to Congress to override the veto, and for that, we need to pressure the deputies to vote in favor of cultural workers and honor the memory of Paulo Gustavo!",
-        "navigate": "Pressure now!"
-      },
-      "6": {
-        "title": "Essa conta eu não pago!",
-        "description": "A report from the Instituto de Pesos e Medidas do Amazonas (Ipem) proved that several of the new “smart” devices installed by the Amazonas Energia concessionaire presented irregularities and charged twice the amount of electricity consumption to the population! Residents who were harmed by this mistake need to be compensated!",
-        "navigate": "Pressure now!"
-      },
       "7": {
         "title": "Aposentadoria Para Nossas Mães",
         "description": "After a lifetime dedicated to caring for their children, many women are unable to retire because they have not completed the necessary contribution time. If approved, Bill 2757/21 will finally recognize these efforts and guarantee the right to retirement for mothers over 60 years of age, in addition to allowing the period of maternity leave to be counted as time of service. It is time to take care of those who always took care of us!",
@@ -150,24 +140,9 @@
         "description": "For decades, the argument of \"legitimate defense of honor\" was used in cases of gender based violence, as a way to  hold the victim responsible for the violence suffered, while the agressor remained free. In 2021, the STF declared this thesis as unconstitutional, but there is still no law that guarantees that this argument is not used in court. We need to act NOW to end impunity in cases of gender based violence!",
         "navigate": "Pressure now!"
       },
-      "10": {
-        "title": "Supervia, aumento não!",
-        "description": "SuperVia, the company responsible for rail transport in Rio de Janeiro, proposed an increase in the train tickets in the city, which would now cost R$7. We need to mobilize now so that this abusive measure is suspended!",
-        "navigate": "Join us!"
-      },
       "11": {
         "title": "Meu Nome Importa!",
         "description": "The Bill that will grant transgender people the access to the Social Name Identification Card hasn’t been discussed in months in the Legislative Assembly of Amazonas and is in danger of being rejected. We need to act now to secure the project is approved!",
-        "navigate": "Take part in the campaign!"
-      },
-      "12": {
-        "title": "PETAR sem Concessão",
-        "description": "The Government of São Paulo plans to initiate a 30-year concession project for the Alto do Ribeira State Park (PETAR), allowing the private sector to explore the region, ignoring the environmental damage that this would cause, and the wishes of traditional communities and residents of the area. We need to stop this!",
-        "navigate": "Join us!"
-      },
-      "13": {
-        "title": "Lutar Não é Crime",
-        "description": "A proposal known as the “Antiterrorism Bill” can be voted by the Congress at any time. If approved, the project will allow the political persecution of activists and the criminalization of social movements. It's time to act to stop this threat to democracy!",
         "navigate": "Take part in the campaign!"
       },
       "14": {
@@ -175,25 +150,10 @@
         "description": "Bill 2159/2021, known as “PL da Boiada”, is to be voted in the Senate at any time. If approved, it will end environmental licensing and open the “gateway” to practices that cause the destruction of our ecossystem and cause environmental disasters, such as the tragedies of Brumadinho and Mariana. It's time to fight this measure!",
         "navigate": "Take part in the campaign"
       },
-      "15": {
-        "title": "Sem Licença Pra Matar",
-        "description": "A proposal to reform the Military Penal Code makes room for police officers accused in cases of murder or aggression not to be trialed. We need to stop this absurd!",
-        "navigate": "Take part in the campaign!"
-      },
       "16": {
         "title": "EmLuta",
         "description": "Over 5 million brazilians have lost family members and loved ones to Covid-19. It's time to mobilize and demand the public power to ensure that these families are not left without support.",
         "navigate": "Join us!"
-      },
-      "17": {
-        "title": "Praça Pôr do Sol without fences NOW!",
-        "description": "The Praça Pôr do Sol was fenced off by the São Paulo City Hall without any public debate! It's time to ask for the City Hall to change this policy and prevent the definitive fencing of the square!",
-        "navigate": "Pressure now!"
-      },
-      "18": {
-        "title": "Parque Realengo Verde",
-        "description": "Residents of Realengo, a district in the West Zone of Rio de Janeiro, have been fighting over decades to keep one of the last green areas in the region standing.",
-        "navigate": "Pressure for an urban and ecological park"
       }
     }
   },
