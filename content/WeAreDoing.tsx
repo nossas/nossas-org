@@ -54,6 +54,44 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.1.navigate"),
           },
           {
+            src: "/static/media/we-are-doing/candidato-e-o-salario.png",
+            href: "https://salariominimo.org.br/",
+            alt: t("we-are-doing.sliders.candidato-e-o-salario.title"),
+            title: t("we-are-doing.sliders.candidato-e-o-salario.title"),
+            description: t(
+              "we-are-doing.sliders.candidato-e-o-salario.description"
+            ),
+            link: t("we-are-doing.sliders.candidato-e-o-salario.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/cuidem-de-nossas-meninas.png",
+            href: "https://cuidemdenossasmeninas.mapadoacolhimento.org.br/",
+            alt: t("we-are-doing.sliders.cuidem-de-nossas-meninas.title"),
+            title: t("we-are-doing.sliders.cuidem-de-nossas-meninas.title"),
+            description: t(
+              "we-are-doing.sliders.cuidem-de-nossas-meninas.description"
+            ),
+            link: t("we-are-doing.sliders.cuidem-de-nossas-meninas.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/cpi-não-é-inquisição.png",
+            href: "https://www.cpinaoeinquisicao.mapadoacolhimento.org.br/",
+            alt: t("we-are-doing.sliders.cpi-não-é-inquisição.title"),
+            title: t("we-are-doing.sliders.cpi-não-é-inquisição.title"),
+            description: t(
+              "we-are-doing.sliders.cpi-não-é-inquisição.description"
+            ),
+            link: t("we-are-doing.sliders.cpi-não-é-inquisição.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/xô-lata-velha.png",
+            href: "https://xolatavelha.minhamanaus.org.br/",
+            alt: t("we-are-doing.sliders.xô-lata-velha.title"),
+            title: t("we-are-doing.sliders.xô-lata-velha.title"),
+            description: t("we-are-doing.sliders.xô-lata-velha.description"),
+            link: t("we-are-doing.sliders.xô-lata-velha.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/observatorio-cidade-integrada.png",
             href: "https://www.observatoriocidadeintegrada.org/",
             alt: t("we-are-doing.sliders.2.title"),
