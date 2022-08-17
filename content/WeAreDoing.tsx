@@ -36,6 +36,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/virada-cultural-amazonia.png",
+            href: "https://virada.amazoniadepe.org.br/",
+            alt: t("we-are-doing.sliders.virada-cultural.title"),
+            title: t("we-are-doing.sliders.virada-cultural.title"),
+            description: t("we-are-doing.sliders.virada-cultural.description"),
+            link: t("we-are-doing.sliders.virada-cultural.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
