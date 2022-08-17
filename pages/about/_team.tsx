@@ -88,13 +88,6 @@ export const LeadersMembers: React.FC = () => {
           team: t("teams.leaders.title"),
         },
         {
-          avatar: "/static/media/team/rafael.jpg",
-          name: "Rafael Sampaio",
-          role: t("teams.leaders.rafael.role"),
-          about: t("teams.leaders.rafael.about"),
-          team: t("teams.leaders.title"),
-        },
-        {
           avatar: "/static/media/team/manoela-miklos.png",
           name: "Manoela Miklos",
           role: t("teams.leaders.manoela.role"),
@@ -110,16 +103,9 @@ export const LeadersMembers: React.FC = () => {
         },
         {
           avatar: "/static/media/team/samira.png",
-          name: "Samira",
+          name: "Samira Martins",
           role: t("teams.leaders.samira.role"),
           about: t("teams.leaders.samira.about"),
-          team: t("teams.leaders.title"),
-        },
-        {
-          avatar: "/static/media/team/daiane.png",
-          name: "Daiane",
-          role: t("teams.leaders.daiane.role"),
-          about: t("teams.leaders.daiane.about"),
           team: t("teams.leaders.title"),
         },
       ]}
@@ -455,13 +441,6 @@ export const TeamMembers: React.FC = () => {
           name: "Thalita",
           role: t("teams.team.thalita.role"),
           about: t("teams.team.thalita.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/titouan.png",
-          name: "Titouan",
-          role: t("teams.team.titouan.role"),
-          about: t("teams.team.titouan.about"),
           team: t("teams.team.title"),
         },
         {
