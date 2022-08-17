@@ -110,30 +110,10 @@
         "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
         "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé."
       },
-      "estação-acolhedora": {
-        "title": "Estação Acolhedora",
-        "description": "Com a queda das temperaturas e a chegada do inverno, precisamos garantir que todos os moradores da cidade de São Paulo tenham acesso às condições necessárias para enfrentar o frio. Por isso, estamos pressionando a Prefeitura e o Governo de SP a adotarem políticas de acolhimento adequadas para atender à população em situação de rua.",
-        "navigate": "Pressione agora!"
-      },
-      "candidato-e-o-salario": {
-        "title": "Candidato, e o salário?",
-        "description": "Desde 2020, a população brasileira não vê um aumento real no valor do salário mínimo. Tá tudo caro, e, para muita gente, o dinheiro não dura nem até o fim do mês. Queremos que os pré-candidatos à presidência se comprometam, caso eleitos, a um reajuste salarial que de fato beneficie o povo!",
-        "navigate": "Pressione agora por um salário mínimo digno!"
-      },
-      "cuidem-de-nossas-meninas": {
-        "title": "Cuidem de Nossas Meninas",
-        "description": "Um novo manual proposto pelo Ministério da Saúde alega que “todo aborto é ilegal” e incentiva a investigação criminal de mulheres vítimas de estupro que tentem acessar o serviço legal no país. Isso é um absurdo, e um retrocesso gigante na luta pelos direitos das mulheres!",
-        "navigate": "Pressione agora pela revogação do manual!"
-      },
       "cpi-não-é-inquisição": {
         "title": "CPI Não é Inquisição",
         "description": "Deputados da Assembleia Legislativa de Santa Catarina querem abrir uma CPI para investigar o aborto legal da menina de 11 anos vítima de violência sexual, numa verdadeira espécie de “caça às bruxas”. Não podemos que essa criança seja revitimizada e exposta para todo o país!",
         "navigate": "Pressione agora contra esse absurdo!"
-      },
-      "xô-lata-velha": {
-        "title": "Xô Lata Velha",
-        "description": "O Prefeito David Almeida aprovou uma nova lei que atualiza os decretos referentes ao transporte público em Manaus e acabou com a vida útil de 10 anos para os ônibus da cidade, permitindo que veículos precários continuem em circulação. A população manauara tá cansada de andar em lata velha!",
-        "navigate": "Pressione agora para barrar esse absurdo!"
       },
       "2": {
         "title": "Observatório Cidade Integrada",
@@ -149,31 +129,6 @@
         "title": "Aposentadoria Para Nossas Mães",
         "description": "Após toda uma vida dedicada aos cuidados dos filhos, muitas mulheres mães não conseguem se aposentar por não terem cumprido o tempo de contribuição necessário. Se aprovado, o Projeto de Lei 2757/21, irá finalmente reconhecer esses esforços e garantir o direito à aposentadoria para mulheres mães maiores de 60 anos, além de permitir que o período de licença maternidade seja computado como tempo de serviço. Chegou a hora de cuidar de quem sempre cuidou da gente.",
         "navigate": "Pressione agora!"
-      },
-      "8": {
-        "title": "Trabalho Infantil Não!",
-        "description": "Deputados bolsonaristas querem fazer com que a Câmara aprove uma Proposta de Emenda à Constituição (PEC 18/2011) que visa reduzir a idade em que adolescentes podem trabalhar - o trabalho seria legalizado a partir dos 14 anos. Isso é um ataque aos direitos dos jovens!",
-        "navigate": "Pressione agora para barrar esse absurdo!"
-      },
-      "9": {
-        "title": "Honra Não É Desculpa",
-        "description": "Durante décadas, o argumento da legítima defesa da honra foi utilizado em casos de feminicídio e violência doméstica, como uma forma de isentar o agressor de culpa e responsabilizar a própria vítima pela violência sofrida. Em 2021, o STF declarou essa tese como inconstitucional, mas, ainda não existe uma lei que garanta que esse argumento não seja utilizado em júris. Precisamos agir pelo fim da impunidade nos casos de violência de gênero!",
-        "navigate": "Pressione agora pela aprovação do PL que põe fim a esse recurso!"
-      },
-      "11": {
-        "title": "Meu Nome Importa!",
-        "description": "O Projeto de Lei que irá garantir o acesso de pessoas trans e travestis à Carteira de Identificação de Nome Social está parada há meses na Assembleia Legislativa do Amazonas e corre o risco de ser rejeitado. Precisamos nos mobilizar agora para garantir a aprovação do projeto!",
-        "navigate": "Pressione agora e junte-se à campanha!"
-      },
-      "14": {
-        "title": "PL da Boiada Não!",
-        "description": "O Projeto de Lei 2159/2021, conhecido como PL da Boiada, está para ser votado no Senado. Se aprovado, ele irá acabar com o licenciamento ambiental e abrir a “porteira” para práticas que causam a destruição dos nossos biomas e provocam desastres ambientais, como as tragédias de Brumadinho e Mariana. É hora de nos mobilizar contra essa medida!",
-        "navigate": "Pressione agora!"
-      },
-      "16": {
-        "title": "EmLuta",
-        "description": "Mais de 5 milhões de brasileiros perderam familiares e entes queridos para a Covid-19. É hora de nos mobilizarmos e cobrar políticas públicas para garantir que essas famílias não fiquem desamparadas.",
-        "navigate": "Junte-se ao movimento e pressione pela pensão especial para órfãos da pandemia!"
       }
     }
   },
