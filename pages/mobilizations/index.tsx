@@ -55,6 +55,24 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           isMobile={ua?.isMobile || false}
           items={[
             {
+              src: "/static/media/our-victories/essa-conta.png",
+              alt: t("our-victories.carousel.essa-conta-eu-não-pago.title"),
+              title: t("our-victories.carousel.essa-conta-eu-não-pago.title"),
+              description: t(
+                "our-victories.carousel.essa-conta-eu-não-pago.description"
+              ),
+              href: "https://essacontaeunaopago.minhamanaus.org.br/",
+            },
+            {
+              src: "/static/media/our-victories/lei-paulo-gustavo.png",
+              alt: t("our-victories.carousel.lei-paulo-gustavo.title"),
+              title: t("our-victories.carousel.lei-paulo-gustavo.title"),
+              description: t(
+                "our-victories.carousel.lei-paulo-gustavo.description"
+              ),
+              href: "https://leipaulogustavosim.nossas.org/",
+            },
+            {
               src: "/static/media/our-victories/fora-gabriel-monteiro.png",
               alt: t("our-victories.carousel.1.title"),
               title: t("our-victories.carousel.1.title"),

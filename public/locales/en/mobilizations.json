@@ -7,6 +7,14 @@
   "our-victories": {
     "title": "Our <strong>successes</strong>",
     "carousel": {
+      "essa-conta-eu-não-pago": {
+        "title": "Essa conta eu não pago!",
+        "description": "After months of pressure by email, comments on social networks and our presence in the CPI da Energia in the Legislative Assembly of Amazonas, we managed to ban the installation of new energy meters that came to charge, in some cases, up to twice the value to the population of the state!"
+      },
+      "lei-paulo-gustavo": {
+        "title": "Lei Paulo Gustavo SIM!",
+        "description": "After months of intense mobilization, we sent our message to the president and the vetoes against culture were overturned! With the approval of the Paulo Gustavo Law, more than 3.8 billion reais will be allocated to professionals in the cultural sector in Brazil."
+      },
       "1": {
         "title": "Fora, Gabriel Monteiro!",
         "description": "Thanks to the mobilization of thousands of cariocas, the Ethics Council of the Chamber of Rio unanimously approved the opening of the representation against councilor Gabriel Monteiro, after serious charges involving sexual abuse, aggression and sexual and moral harassment presented against him."

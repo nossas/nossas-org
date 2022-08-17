@@ -7,6 +7,14 @@
   "our-victories": {
     "title": "Nossas <strong>vitórias</strong>",
     "carousel": {
+      "essa-conta-eu-não-pago": {
+        "title": "Essa conta eu não pago!",
+        "description": "Depois de meses de pressão por email, comentários nas redes sociais e nossa presença na CPI da Energia na Assembleia Legislativa do Amazonas, conseguimos proibir a instalação dos novos medidores de energia que chegavam a cobrar, em alguns casos, até o dobro do valor à população amazonense!"
+      },
+      "lei-paulo-gustavo": {
+        "title": "Lei Paulo Gustavo SIM!",
+        "description": "Depois de meses de intensa mobilização, mandamos nosso recado ao presidente e os vetos contra a cultura foram derrubados! Com a aprovação da Lei Paulo Gustavo, mais de 3,8 bilhões de reais serão destinados ao profissionais do setor cultural do Brasil."
+      },
       "1": {
         "title": "Fora, Gabriel Monteiro!",
         "description": "Graças a mobilização de milhares de cariocas, o Conselho de Ética da Câmara do Rio aprovou, por unanimidade, a abertura da representação contra o vereador Gabriel Monteiro, após graves denúncias envolvendo abuso sexual, agressões e assédio sexual e moral apresentadas contra o ex-PM."
