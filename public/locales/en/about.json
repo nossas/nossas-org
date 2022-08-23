@@ -168,7 +168,7 @@
         "about": "Alexandra is part of NOSSAS's Operations team, monitoring internal bureaucratic and administrative processes.  She has a passion for gastronomy, music and people. Before working at NOSSAS, Alexandra lived and worked in Denmark, Germany and England. In Brazil, she has worked as a manager and executive advisor for expatriates in the dredging sector. She’s a graduate in Management Processes at FGV in Rio and Hospitality at Highbury College, London."
       },
       "alice": {
-        "role": "Communication Intern",
+        "role": "Communications Analyst",
         "about": "Alice is from Manaus, a Journalism student at the Federal University of Amazonas and a communications intern at NOSSAS. In college, she was on the board of the academic center of her program in 2019 and was the co-author of a scientific initiation project in the field of Environmental Journalism. Before joining NOSSAS, Alice worked in the press offices of public entities and the third sector. She is interested in traditional knowledge about the Amazon and is curious about the diversity of Brazil and the world."
       },
       "anabeatriz": {
@@ -182,10 +182,6 @@
       "anderson": {
         "role": "Data Manager",
         "about": "Anderson has a degree in Political Science from UFPE, where he researched the production of public policies, legislative conflict and political-party polarization. It was through academic studies that Anderson came into contact with data and programming - an area in which he has been immersed ever since. At NOSSAS since 2019, he helps monitor relevant metrics and conducts observational experiments and analyses to test hypotheses on how to increase the organization's impact."
-      },
-      "bianca": {
-        "role": "Intern at Mapa do Acolhimento",
-        "about": "Bianca is a black woman and is an intern at Mapa do Acolhimento. Bianca is a student of Social Work degree at the Federal University of São Paulo (UNIFESP) - Baixada Santista Campus. In parallel to her activity at NOSSAS, Bianca is working on her research project at the University related to the theme of ’Transgender and Transvestites incarcerated People in Crises” - a theme little explored in the literature and suffering from great social stigmas. In her spare time, she likes to have a beer and eat good food with friends, go to thrift stores, museums and to the movies."
       },
       "carolina": {
         "role": "Articulator at Amazônia de Pé",
@@ -204,7 +200,7 @@
         "about": "Danielle holds a degree in Journalism from the University of Brasília (UnB) and a master's degree in Political Communication from the London School of Economics and Political Science (LSE). She worked as communications advisor for the PSOL national directory and was part of the communications team of federal deputy Talíria Petrone (PSOL-RJ). She has worked on several electoral campaigns and was a member of the CHAMA and Ocupa Política networks, focused on planning and managing social networks and audiovisual production. At NOSSAS she works as a media analyst in the Amazônia de Pé project."
       },
       "fabiana": {
-        "role": "Fundraising Intern",
+        "role": "Operations Intern",
         "about": "Fabiana is studying International Relations at the Fluminense Federal University. For a year now, she has been the vice-president of Argos Consultoria Internacional - the university's junior company, focusing on Brazilian insertion in international trade and in high global production chains. In 2022 Fabiana will assume the presidency of the company. Fabiana is from Volta Redonda and is a NOSSAS Fundraising Intern."
       },
       "fabio": {
@@ -244,7 +240,7 @@
         "about": "Isabel has worked with production, HR and diversity management. Currently Isabel works as an editorial assistant for Greg News and is a personal assistant to NOSSAS’s Executive Director, providing support in her routine exchanges with partners and teams. Isabel has a degree in Business Administration from PUC-Rio with a specialization in Human Resources and Diversity, from ESG-UQÀM."
       },
       "isabella": {
-        "role": "Intern at Mapa do Acolhimento",
+        "role": "Trainee at Mapa do Acolhimento",
         "about": "Isabella is from São Paulo, is 21 years old, is a Psychology student and joined the team as an intern at Mapa do Acolhimento. Her previous experiences were with the organizational sector, working in Human Resources, but she always had a passion for the social area. With the opportunities that emerged in this area, she worked with people in vulnerable situations in the center of São Paulo applying harm reduction, and also with institutions aimed at senior citizens, always with a Psychology perspective. Isa dreams of being an instrument of improvement for many people!"
       },
       "izamir": {
@@ -256,7 +252,7 @@
         "about": "Native from Rio Grande do Norte and passionate about João Pessoa, Jerlan is Manager at NOSSAS. He has a degree in Chemical Engineering from the Federal University of Paraiba (UFPB), with experience at Sapienza Università di Roma as a visiting student. Jerlan has worked as an Executive Director at Minha Jampa - a branch of Rede Nossas Cidades in the Northeast. Optimistic and a good mood person, Jerlan loves to tell stories, enjoy his family and cook pizza while listening to his favorite podcasts."
       },
       "juliana": {
-        "role": "Advocacy Analyst",
+        "role": "Analyst at Mapa do Acolhimento",
         "about": "Juliana Martins lives in São Paulo and she is part of the Representation and Strategy team at NOSSAS. She has a Law degree and a large experience in the public administration and she has already worked with several organizations of the third sector. Passionate about Human Rights and Democracy, Juliana has got an attentive focus about ethnicity, gender and territory."
       },
       "kaianaku": {
@@ -264,7 +260,7 @@
         "about": "Kaianaku Kamaiurá is a mother, artisan, researcher, activist of the indigenous movement and indigenous women, activist of the environmental and human rights movement, Master in Human Rights from the University of Goiás - UFG. At NOSSAS she is an articulator of the Amazônia de Pé project."
       },
       "karina": {
-        "role": "Mobilizer at Amazônia de Pé",
+        "role": "Mobilization Coordinator at Amazônia de Pé",
         "about": "Karina is a biologist and environmentalist from Maranhão. Karina worked as coordinator of the Climate Working Group of the Engajamundo Youth Organization between 2018 and 2020, has been a leader in the USBEA Youth Protagonism community since 2015 and is part of the network of global leaders, International Exchange Alumni. Karina is passionate about education and culture, she loves dancing, walking on stilts and other circus skills. Karina is part of her local church's mission group and loves dialogues and stories."
       },
       "karol": {
@@ -336,7 +332,7 @@
         "about": "Talita is a UX Designer and manages the technology area at NOSSAS, working at the intersection of design, technology and activism. Talita has experience with product strategy, user research, design thinking, agile methodologies, systemic thinking, UI and UX design. A graduate in Communication and Multimedia, Talita specialized in UX Design and has worked with large companies such as Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin and others."
       },
       "tayna": {
-        "role": "Relationship Analyst",
+        "role": "Analyst at Mapa do Acolhimento",
         "about": "Before joining the Sustainability team at NOSSAS, Tayná worked with customer services and customer relations, technical and functional support, active payment collection and sales, as well as working in education, as a classroom assistant in primary and secondary education. Tayná is a graduate student in Humanities with a specialization in Social Communication."
       },
       "thalita": {
@@ -346,10 +342,6 @@
       "tonia": {
         "role": "Financial Coordinator",
         "about": "Tonia developed her trajectory in the social segment in civil society organizations that strengthen and implement projects that transform lives, through continuous development, in the areas of education, health, rights and social justice, aiming at a fairer world. Respect, ethics and appreciation of diversity describe her personal feelings. At NOSSAS, Tonia is Financial Coordinator. She has a postgraduate degree in Finance, Accounting and Auditing from FGV-MA."
-      },
-      "vanessa": {
-        "role": "Coordinator at Mapa do Acolhimento",
-        "about": "Born and raised in Recife, Vanessa has teaching experience in Social Work and in political leadership training. She is an activist in the Brazilian evangelical progressive movement and facilitates the creation of training spaces for public advocacy in the areas of citizenship, racial justice and gender. Vanessa has a bachelor's degree in Social Work (UFPE), a postgraduate degree in Social Welfare Policy Management (UNICAP) and a Master's Degree in Education, Cultures and Identities (UFRPE)."
       }
     }
   },

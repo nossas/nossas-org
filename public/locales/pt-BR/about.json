@@ -168,7 +168,7 @@
         "about": "Alexandra compõe a Equipe Operacional da organização, monitorando os processos internos burocráticos e administrativos. É amante de gastronomia, música e pessoas. Antes de chegar no NOSSAS, viveu e trabalhou na Dinamarca, Alemanha e Inglaterra. De volta ao Brasil já atuou na área de assessoria executiva e gestão de expatriados no setor de dragagem. É formada em Processos Gerenciais pela FGV e Hospitalidade pelo Highbury College."
       },
       "alice": {
-        "role": "Estagiária de Comunicação",
+        "role": "Analista de Comunicação",
         "about": "Alice é manauara, estudante de Jornalismo da Universidade Federal do Amazonas e estagiária de comunicação do NOSSAS. Na faculdade, fez parte da diretoria do centro acadêmico em 2019 e foi coautora de um projeto científico na área de Jornalismo Ambiental. Antes de entrar no NOSSAS, passou por assessorias de comunicação do primeiro e do terceiro setor. Tem interesse nos saberes tradicionais da Amazônia e curiosidade sobre a diversidade do Brasil e do mundo."
       },
       "anabeatriz": {
@@ -182,10 +182,6 @@
       "anderson": {
         "role": "Gestor de Dados",
         "about": "Anderson é graduado em Ciência Política pela UFPE, onde pesquisou sobre produção de políticas públicas, conflito legislativo e polarização político-partidária. Foi através de estudos acadêmicos que teve contato com dados e programação, área na qual tem se aprofundado desde então. No NOSSAS desde 2019, ajuda a monitorar métricas relevantes e conduz experimentos e análises observacionais para testar hipóteses sobre como aumentar o impacto da organização."
-      },
-      "bianca": {
-        "role": "Estagiária do Mapa do Acolhimento",
-        "about": "Bianca é estudante do curso de Serviço Social na Universidade Federal de São Paulo (UNIFESP), Campus da Baixada Santista. Em paralelo ao seu trabalho no NOSSAS, Bianca está trabalhando em seu projeto de pesquisa na Universidade relacionado à temática de ‘’Pessoas Trans e Travestis em Situação de Cárcere’' - tema pouco explorado na literatura e sofrido com grandes estigmas sociais. Bianca gosta de tomar uma boa cerveja e comer comidas gostosas com os amigos, ir à brechós, museus e cinema."
       },
       "carolina": {
         "role": "Articuladora da Amazônia de Pé",
@@ -204,7 +200,7 @@
         "about": "Danielle é graduada em Jornalismo pela Universidade de Brasília (UnB) e mestre em Comunicação Política pela London School of Economics and Political Science (LSE). Foi assessora de comunicação do diretório nacional do PSOL e integrou a equipe de comunicação da deputada federal Talíria Petrone (PSOL-RJ). Trabalhou em diversas campanhas eleitorais e ativistas e, foi membro das redes CHAMA e Ocupa Política, focada em planejamento e gestão de redes sociais e produção audiovisual. No NOSSAS atua como analista de redes e mídias no projeto Amazônia de Pé."
       },
       "fabiana": {
-        "role": "Estagiária de Captação",
+        "role": "Estagiária de Operações",
         "about": "Fabiana cursa Relações Internacionais na Universidade Federal Fluminense. Há um ano está na vice-presidência da Argos Consultoria Internacional - empresa júnior da universidade, com foco na inserção brasileira no comércio internacional e nas altas cadeias produtivas globais. Em 2022 Fabiana assumirá a presidência da empresa. Fabiana é natural de Volta Redonda e Estagiária de Captação do NOSSAS."
       },
       "fabio": {
@@ -244,7 +240,7 @@
         "about": "Isabel já trabalhou com produção, RH e gestão da diversidade. Hoje, ela atua como assistente de redação do Greg News e assistente pessoal de nossa diretora executiva, dando apoio em sua rotina de trocas com parceiros e equipes. Isabel é formada em Administração pela PUC-Rio com especialização em Recursos Humanos e Diversidade, pela ESG-UQÀM."
       },
       "isabella": {
-        "role": "Estagiária do Mapa do Acolhimento",
+        "role": "Trainee do Mapa do Acolhimento",
         "about": "Isabella é paulista, graduanda de Psicologia e entrou para a equipe como estagiária do Mapa do Acolhimento. Suas experiências anteriores foram com o setor organizacional, atuando em Recursos Humanos, mas sempre teve uma paixão pela área social. Com as oportunidades que surgiram nesta área, atuou com pessoas em situação de vulnerabilidade no centro de SP, aplicando a redução de danos, e também com instituições voltadas ao público da terceira idade, sempre com o olhar da Psicologia. Sonha em ser instrumento de melhora para muitas pessoas!"
       },
       "izamir": {
@@ -256,7 +252,7 @@
         "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
       },
       "juliana": {
-        "role": "Analista de Advocacy",
+        "role": "Analista do Mapa do Acolhimento",
         "about": "Juliana mora em São Paulo, é formada em Direito e tem grande experiência na gestão pública após trabalhar com uma grande lista de organizações no terceiro setor. É apaixonada pelas pautas de direitos humanos e democracia, com olhar atento a recortes de raça, gênero e território."
       },
       "kaianaku": {
@@ -264,7 +260,7 @@
         "about": "Kaianaku Kamaiurá é mãe, artesã, pesquisadora, ativista do movimento indígena e de mulheres indígenas, ativista do movimento ambiental e de direitos humanos, Mestre em Direitos Humanos pela Universidade de Goiás - UFG. No NOSSAS é articuladora do projeto Amazônia de Pé."
       },
       "karina": {
-        "role": "Mobilizadora da Amazônia de Pé",
+        "role": "Coordenadora de Mobilização da Amazônia de Pé",
         "about": "Karina é maranhense, bióloga e ambientalista. Foi coordenadora do Grupo de Trabalho de Clima da Organização de Jovens Engajamundo entre 2018 e 2020, é Líder da comunidade de Protagonismo Juvenil USBEA desde 2015 e faz parte da rede de líderes globais International Exchange Alumni. É apaixonada por educação e cultura, ama dançar, andar de perna de pau e tentar outras habilidades circenses. Faz parte do grupo de missões de uma igreja local e ama diálogos e histórias."
       },
       "karol": {
@@ -336,7 +332,7 @@
         "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
       },
       "tayna": {
-        "role": "Analista de Relacionamento",
+        "role": "Analista do Mapa do Acolhimento",
         "about": "Antes de integrar a frente de Sustentabilidade, Tayná tinha experiência com atendimento ao público e relacionamento com cliente, suporte técnico/funcional, cobrança ativa e vendas, além de atuação na área da educação, como auxiliar de classe no ensino fundamental e médio. Tayná é graduanda em Licenciatura em Ciências Humanas e tem interesse de especialização em Comunicação Social."
       },
       "thalita": {
@@ -346,10 +342,6 @@
       "tonia": {
         "role": "Coordenadora Financeira",
         "about": "Tonia desenvolveu sua trajetória no segmento social em organizações da sociedade civil que fortalecem e implementam projetos que transformam vidas, através do desenvolvimento contínuo, na temática da educação, saúde, direitos e justiça social, visando um mundo mais justo. Respeito, ética e valorização da diversidade descrevem seus sentimentos pessoais. No NOSSAS, Tonia é Coordenadora Financeira. Ela é Pós-graduada em Finanças, Contabilidade e Auditoria pela FGV-MA."
-      },
-      "vanessa": {
-        "role": "Articuladora do Mapa do Acolhimento",
-        "about": "Nascida e criada em Recife, Vanessa possui experiências docentes do ensino superior em Serviço Social e em formação política de lideranças. É ativista do movimento progressista evangélico brasileiro e facilita a criação de espaços formativos para a incidência pública nas áreas de cidadania, justiça racial e de gênero. Vanessa é bacharel em Serviço Social (UFPE), pós-graduada em Gestão da Política de Assistência Social (UNICAP) e Mestra em Educação, Culturas e Identidades (UFRPE)."
       }
     }
   },
