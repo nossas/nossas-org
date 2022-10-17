@@ -36,24 +36,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/virada-cultural-amazonia.png",
-            href: "https://virada.amazoniadepe.org.br/",
-            alt: t("we-are-doing.sliders.virada-cultural.title"),
-            title: t("we-are-doing.sliders.virada-cultural.title"),
-            description: t("we-are-doing.sliders.virada-cultural.description"),
-            link: t("we-are-doing.sliders.virada-cultural.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/rol-exemplificativo.png",
-            href: "https://rolexemplificativosalva.nossas.org/",
-            alt: t("we-are-doing.sliders.rol-exemplificativo.title"),
-            title: t("we-are-doing.sliders.rol-exemplificativo.title"),
-            description: t(
-              "we-are-doing.sliders.rol-exemplificativo.description"
-            ),
-            link: t("we-are-doing.sliders.rol-exemplificativo.navigate"),
-          },
-          {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
