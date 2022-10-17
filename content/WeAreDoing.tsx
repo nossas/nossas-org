@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import { Heading } from "@chakra-ui/react";
-
 import { Section } from "../components/Page";
 import { SliderPanel } from "../components/Slider";
 
@@ -35,6 +34,16 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         infiniteLoop
         isMobile={ua?.isMobile || false}
         items={[
+          {
+            src: "/static/media/we-are-doing/triplique-seu-voto.png",
+            href: "https://tripliqueseuvoto.org.br/",
+            alt: t("we-are-doing.sliders.triplique-seu-voto.title"),
+            title: t("we-are-doing.sliders.triplique-seu-voto.title"),
+            description: t(
+              "we-are-doing.sliders.triplique-seu-voto.description"
+            ),
+            link: t("we-are-doing.sliders.triplique-seu-voto.navigate"),
+          },
           {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
