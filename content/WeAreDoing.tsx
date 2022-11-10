@@ -35,16 +35,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/triplique-seu-voto.png",
-            href: "https://tripliqueseuvoto.org.br/",
-            alt: t("we-are-doing.sliders.triplique-seu-voto.title"),
-            title: t("we-are-doing.sliders.triplique-seu-voto.title"),
-            description: t(
-              "we-are-doing.sliders.triplique-seu-voto.description"
-            ),
-            link: t("we-are-doing.sliders.triplique-seu-voto.navigate"),
-          },
-          {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
