@@ -55,6 +55,40 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           isMobile={ua?.isMobile || false}
           items={[
             {
+              src: "/static/media/our-victories/triplique.png",
+              alt: t("our-victories.carousel.triplique-seu-voto.title"),
+              title: t("our-victories.carousel.triplique-seu-voto.title"),
+              description: t(
+                "our-victories.carousel.triplique-seu-voto.description"
+              ),
+              href: "https://tripliqueseuvoto.org.br/",
+            },
+            {
+              src: "/static/media/our-victories/passe-livre.png",
+              alt: t("our-victories.carousel.passe-livre.title"),
+              title: t("our-victories.carousel.passe-livre.title"),
+              description: t("our-victories.carousel.passe-livre.description"),
+              href: "https://www.passelivrepelademocracia.org/",
+            },
+            {
+              src: "/static/media/our-victories/vatapa.png",
+              alt: t("our-victories.carousel.vatapa-buraco.title"),
+              title: t("our-victories.carousel.vatapa-buraco.title"),
+              description: t(
+                "our-victories.carousel.vatapa-buraco.description"
+              ),
+              href: "https://www.vatapaburaco.minhamanaus.org.br/",
+            },
+            {
+              src: "/static/media/our-victories/rol.png",
+              alt: t("our-victories.carousel.rol-exemplificativo.title"),
+              title: t("our-victories.carousel.rol-exemplificativo.title"),
+              description: t(
+                "our-victories.carousel.rol-exemplificativo.description"
+              ),
+              href: "https://rolexemplificativosalva.nossas.org/",
+            },
+            {
               src: "/static/media/our-victories/essa-conta.png",
               alt: t("our-victories.carousel.essa-conta-eu-não-pago.title"),
               title: t("our-victories.carousel.essa-conta-eu-não-pago.title"),

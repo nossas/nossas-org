@@ -7,6 +7,22 @@
   "our-victories": {
     "title": "Nossas <strong>vitórias</strong>",
     "carousel": {
+      "triplique-seu-voto": {
+        "title": "TRIPLIQUE SEU VOTO",
+        "description": "Milhares de eleitores se uniram para triplicar seus votos com o intuito de reduzir a abstenção nas eleições brasileiras de 2022. Pela primeira vez em uma eleição presidencial, mais eleitores compareceram às urnas no segundo turno do que no primeiro."
+      },
+      "passe-livre": {
+        "title": "PASSE LIVRE PELA DEMOCRACIA",
+        "description": "Em um movimento histórico, pressionamos prefeitos e governadores de Norte a Sul do país para liberarem o acesso ao transporte público no dia das eleições. Ao fim, quase 400 cidades brasileiras aderiram ao passe livre!"
+      },
+      "vatapa-buraco": {
+        "title": "VATAPÁ BURACO",
+        "description": "No aniversário de 5 meses da cratera que se abriu em uma avenida central de Manaus, pressionamos o secretário de infraestrutura a tomar providências imediatas para consertar o trecho que afetava a circulação diária de milhares de habitantes."
+      },
+      "rol-exemplificativo": {
+        "title": "ROL EXEMPLIFICATIVO SALVA!",
+        "description": "Conseguimos derrubar o rol taxativo da Agência Nacional de Saúde Suplementar e garantir aos usuários de planos de saúde o direito de lutar na justiça pela cobertura de seus tratamentos! Mais de 18 mil emails de pressão foram enviados aos parlamentares pedindo a aprovação do PL 2033/2022."
+      },
       "essa-conta-eu-não-pago": {
         "title": "Essa conta eu não pago!",
         "description": "Depois de meses de pressão por email, comentários nas redes sociais e nossa presença na CPI da Energia na Assembleia Legislativa do Amazonas, conseguimos proibir a instalação dos novos medidores de energia que chegavam a cobrar, em alguns casos, até o dobro do valor à população amazonense!"

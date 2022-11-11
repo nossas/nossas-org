@@ -7,6 +7,22 @@
   "our-victories": {
     "title": "Our <strong>successes</strong>",
     "carousel": {
+      "triplique-seu-voto": {
+        "title": "TRIPLIQUE SEU VOTO",
+        "description": "Thousands of voters came together to triple their votes to reduce abstention in Brazil's 2022 elections. For the first time in a presidential election in Brazil, more voters attended in the second round than in the first."
+      },
+      "passe-livre": {
+        "title": "PASSE LIVRE PELA DEMOCRACIA",
+        "description": "In a historic move, we put pressure on mayors and governors from North to South of Brazil to allow access to public transport on election day. In the end, almost 400 brazilian cities joined the free pass!"
+      },
+      "vatapa-buraco": {
+        "title": "VATAPÁ BURACO",
+        "description": "On the 5-month anniversary of the crater that opened on a central avenue in Manaus, we pressured the infrastructure secretary to take immediate steps to repair the stretch that affected the daily movement of thousands of inhabitants."
+      },
+      "rol-exemplificativo": {
+        "title": "ROL EXEMPLIFICATIVO SALVA!",
+        "description": "We managed to overturn the exhaustive list of the National Supplementary Health Agency and guarantee health plan users the right to fight in court for the coverage of their treatments! More than 18,000 pressure emails were sent to parliamentarians asking for the approval of Bill 2033/2022."
+      },
       "essa-conta-eu-não-pago": {
         "title": "Essa conta eu não pago!",
         "description": "After months of pressure by email, comments on social networks and our presence in the CPI da Energia in the Legislative Assembly of Amazonas, we managed to ban the installation of new energy meters that came to charge, in some cases, up to twice the value to the population of the state!"
