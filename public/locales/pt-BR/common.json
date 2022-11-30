@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
+      "passe-livre": {
+        "title": "Movimento Passe Livre",
+        "description": "O movimento pelo passe livre nas eleições de 2022 foi histórico! Pela primeira vez, quase 400 cidades ofereceram transporte público gratuito aos seus eleitores, beneficiando mais de 100 milhões de pessoas. Agora, precisamos aproveitar o clima de vitória e garantir que essa se torne uma medida permanente para todo o país.",
+        "navigate": "Assine agora a petição que será entregue à Câmara dos Deputados pedindo que o Passe Livre nas eleições vire lei!"
+      },
       "orçamento-secreto": {
         "title": "Fim do Orçamento Secreto",
         "description": "Só nos últimos 3 anos, mais de R$50 bilhões de dinheiro público foram para o Orçamento Secreto. Um dinheiro gasto sem transparência e com muita corrupção.",

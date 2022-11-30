@@ -35,6 +35,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/passe-livre.png",
+            href: "https://www.passelivrepelademocracia.org/",
+            alt: t("we-are-doing.sliders.passe-livre.title"),
+            title: t("we-are-doing.sliders.passe-livre.title"),
+            description: t("we-are-doing.sliders.passe-livre.description"),
+            link: t("we-are-doing.sliders.passe-livre.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/fim-do-orcamento.png",
             href: "https://fimdoorcamentosecreto.org/",
             alt: t("we-are-doing.sliders.orçamento-secreto.title"),

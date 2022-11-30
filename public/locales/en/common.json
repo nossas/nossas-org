@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "passe-livre": {
+        "title": "Movimento Passe Livre",
+        "description": "The free pass movement in the 2022 elections was historic! For the first time, nearly 400 cities allowed free access to public transport for voters, benefiting more than 100 million people. Now, we need to take advantage of the winning mood and ensure that this becomes a permanent measure for the entire country.",
+        "navigate": " Sign now the petition demanding asking for the free pass in elections to become law!"
+      },
       "orçamento-secreto": {
         "title": "Fim do Orçamento Secreto",
         "description": "In the last 3 years alone, more than R$50 billion of public money went to the Secret Budget. Money spent without transparency and with a lot of corruption.",
