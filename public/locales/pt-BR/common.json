@@ -105,40 +105,10 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
-      "passe-livre": {
-        "title": "Movimento Passe Livre",
-        "description": "O movimento pelo passe livre nas eleições de 2022 foi histórico! Pela primeira vez, quase 400 cidades ofereceram transporte público gratuito aos seus eleitores, beneficiando mais de 100 milhões de pessoas. Agora, precisamos aproveitar o clima de vitória e garantir que essa se torne uma medida permanente para todo o país.",
-        "navigate": "Assine agora a petição que será entregue à Câmara dos Deputados pedindo que o Passe Livre nas eleições vire lei!"
-      },
-      "orçamento-secreto": {
-        "title": "Fim do Orçamento Secreto",
-        "description": "Só nos últimos 3 anos, mais de R$50 bilhões de dinheiro público foram para o Orçamento Secreto. Um dinheiro gasto sem transparência e com muita corrupção.",
-        "navigate": "Assine agora a petição que será entregue aos ministros do STF e exija a derrubada do Orçamento Secreto."
-      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
         "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé."
-      },
-      "cpi-não-é-inquisição": {
-        "title": "CPI Não é Inquisição",
-        "description": "Deputados da Assembleia Legislativa de Santa Catarina querem abrir uma CPI para investigar o aborto legal da menina de 11 anos vítima de violência sexual, numa verdadeira espécie de “caça às bruxas”. Não podemos que essa criança seja revitimizada e exposta para todo o país!",
-        "navigate": "Pressione agora contra esse absurdo!"
-      },
-      "2": {
-        "title": "Observatório Cidade Integrada",
-        "description": "O Observatório Cidade Integrada é uma iniciativa de um conjunto de organizações que, juntas, têm o objetivo de produzir dados sobre violações de direitos humanos e trazer a visão de moradores sobre como o programa implementado pelo governo do Rio de Janeiro tem atuado na favela do Jacarezinho.",
-        "navigate": "Conheça o Observatório!"
-      },
-      "4": {
-        "title": "Lei de Cotas Raciais",
-        "description": "Em 2022, celebramos um grande marco na nossa história e uma importante conquista do Movimento Negro no país: os 10 anos da Lei de Cotas Raciais dentro das universidades públicas! Mas, apesar da importância dessa política, corremos um risco sério de sofrer um grande retrocesso com a revisão da lei, que deverá ocorrer esse ano. Seguiremos atentos e monitorando tudo de perto para que possamos agir em defesa da permanência das cotas!",
-        "navigate": "Junte-se a nós!"
-      },
-      "7": {
-        "title": "Aposentadoria Para Nossas Mães",
-        "description": "Após toda uma vida dedicada aos cuidados dos filhos, muitas mulheres mães não conseguem se aposentar por não terem cumprido o tempo de contribuição necessário. Se aprovado, o Projeto de Lei 2757/21, irá finalmente reconhecer esses esforços e garantir o direito à aposentadoria para mulheres mães maiores de 60 anos, além de permitir que o período de licença maternidade seja computado como tempo de serviço. Chegou a hora de cuidar de quem sempre cuidou da gente.",
-        "navigate": "Pressione agora!"
       }
     }
   },

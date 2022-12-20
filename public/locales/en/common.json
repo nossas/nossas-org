@@ -105,40 +105,10 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
-      "passe-livre": {
-        "title": "Movimento Passe Livre",
-        "description": "The free pass movement in the 2022 elections was historic! For the first time, nearly 400 cities allowed free access to public transport for voters, benefiting more than 100 million people. Now, we need to take advantage of the winning mood and ensure that this becomes a permanent measure for the entire country.",
-        "navigate": " Sign now the petition demanding asking for the free pass in elections to become law!"
-      },
-      "orçamento-secreto": {
-        "title": "Fim do Orçamento Secreto",
-        "description": "In the last 3 years alone, more than R$50 billion of public money went to the Secret Budget. Money spent without transparency and with a lot of corruption.",
-        "navigate": " Sign now the petition that will be delivered to the ministers of the Supreme Court and demand the overthrow of the Secret Budget."
-      },
-      "cpi-não-é-inquisição": {
-        "title": "CPI Não é Inquisição",
-        "description": "Deputies from the Legislative Assembly of Santa Catarina want to open a CPI (Parliamentary Commission of Inquiry) to investigate the legal abortion of an 11-year-old girl victim of sexual violence, in a true kind of “witch hunt”. We can't have this child re-victimized and exposed to the whole country!",
-        "navigate": "Press now against this absurd!"
-      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "With the advance of the climate crisis and the devastation of the Amazon, it is urgent to act so that the forest can stand. The Amazônia de Pé is a bill of popular initiative that proposes that the public forests of the region are destined to those who historically proved that they know how to preserve the forest: indigenous peoples, quilombolas and conservation units. The future of the forest and life on the planet is in our hands!",
         "navigate": "Find out how your signature keeps the Amazon forest standing."
-      },
-      "2": {
-        "title": "Observatório Cidade Integrada",
-        "description": "The Observatório Cidade Integrada is an initiative of a group of organizations that, together, aim to produce data on human rights violations and bring the views of residents about how the program implemented by the government of Rio de Janeiro has been acting in the Jacarezinho favela.",
-        "navigate": "Find out more about what we are doing!"
-      },
-      "4": {
-        "title": "Lei de Cotas Raciais",
-        "description": "In 2022, we celebrate a great milestone in our history and an important achievement of the Black Movement in the country: the 10th anniversary of the Racial Quotas Law within public universities! But, despite the importance of this policy, we run a serious risk of suffering a major setback with the revision of the law, which should take place this year. We will remain vigilant and monitor everything closely so that we can act in defense of the permanence of affirmartive actions!",
-        "navigate": "Join us!"
-      },
-      "7": {
-        "title": "Aposentadoria Para Nossas Mães",
-        "description": "After a lifetime dedicated to caring for their children, many women are unable to retire because they have not completed the necessary contribution time. If approved, Bill 2757/21 will finally recognize these efforts and guarantee the right to retirement for mothers over 60 years of age, in addition to allowing the period of maternity leave to be counted as time of service. It is time to take care of those who always took care of us!",
-        "navigate": "Join us!"
       }
     }
   },
