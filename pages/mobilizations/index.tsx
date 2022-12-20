@@ -55,6 +55,24 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           isMobile={ua?.isMobile || false}
           items={[
             {
+              src: "/static/media/our-victories/fim-do-orcamento.png",
+              alt: t("our-victories.carousel.orçamento-secreto.title"),
+              title: t("our-victories.carousel.orçamento-secreto.title"),
+              description: t(
+                "our-victories.carousel.orçamento-secreto.description"
+              ),
+              href: "https://fimdoorcamentosecreto.org/",
+            },
+            {
+              src: "/static/media/our-victories/orçamento-cultura-fica.png",
+              alt: t("our-victories.carousel.orçamento-cultura-fica.title"),
+              title: t("our-victories.carousel.orçamento-cultura-fica.title"),
+              description: t(
+                "our-victories.carousel.orçamento-cultura-fica.description"
+              ),
+              href: "https://leisdacultura.org/",
+            },
+            {
               src: "/static/media/our-victories/triplique.png",
               alt: t("our-victories.carousel.triplique-seu-voto.title"),
               title: t("our-victories.carousel.triplique-seu-voto.title"),

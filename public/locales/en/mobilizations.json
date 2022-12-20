@@ -7,9 +7,13 @@
   "our-victories": {
     "title": "Our <strong>successes</strong>",
     "carousel": {
-      "triplique-seu-voto": {
-        "title": "TRIPLIQUE SEU VOTO",
-        "description": "Thousands of voters came together to triple their votes to reduce abstention in Brazil's 2022 elections. For the first time in a presidential election in Brazil, more voters attended in the second round than in the first."
+      "orçamento-secreto": {
+        "title": "FIM DO ORÇAMENTO SECRETO",
+        "description": "We took down the biggest corruption scheme in Brazil! 200,000 people signed the petition delivered to the Supreme Court for the end of the \"secret budget\" and more than 40,000 sent a request to Minister Lewandowski to cast the deciding vote against the amendments. It was historic!"
+      },
+      "orçamento-cultural-fica": {
+        "title": "ORÇAMENTO CULTURAL FICA!",
+        "description": "Through Provisional Measure 1.135/22, Bolsonaro tried til the end to block the budgets of the Paulo Gustavo and Aldir Blanc 2 laws. But the force of mobilization was bigger and the cultural sector won!"
       },
       "passe-livre": {
         "title": "PASSE LIVRE PELA DEMOCRACIA",
