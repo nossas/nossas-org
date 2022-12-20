@@ -62,6 +62,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             ),
             link: t("we-are-doing.sliders.estatuto-nascituro.navigate"),
           },
+          {
+            src: "/static/media/we-are-doing/auxilio-realengo.png",
+            href: "https://www.parquerealengoverde.meurio.org.br/",
+            alt: t("we-are-doing.sliders.auxilio-realengo.title"),
+            title: t("we-are-doing.sliders.auxilio-realengo.title"),
+            description: t("we-are-doing.sliders.auxilio-realengo.description"),
+            link: t("we-are-doing.sliders.auxilio-realengo.navigate"),
+          },
         ]}
       />
     </Section>
