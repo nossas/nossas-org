@@ -105,10 +105,20 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "honra-não-é-desculpa": {
+        "title": "Honra Não é Desculpa",
+        "description": "297 / 5.000 Resultados de tradução Resultado da tradução Campaign for the approval of Bill 2325/21, which eliminates the legitimate defense of honor as an argumentative resource in cases of gender violence. More than 25,000 people got involved, and in July 2022, the law passed the Senate. Now, it has returned to the Chamber of Deputies, where it's awaiting the vote.",
+        "navigate": " Join us!"
+      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "With the advance of the climate crisis and the devastation of the Amazon, it is urgent to act so that the forest can stand. The Amazônia de Pé is a bill of popular initiative that proposes that the public forests of the region are destined to those who historically proved that they know how to preserve the forest: indigenous peoples, quilombolas and conservation units. The future of the forest and life on the planet is in our hands!",
-        "navigate": "Find out how your signature keeps the Amazon forest standing."
+        "navigate": "Find out how your signature keeps the Amazon forest standing!"
+      },
+      "estatuto-nascituro": {
+        "title": " Não ao Estatuto do Nascituro!",
+        "description": "Fundamentalist deputies want to approve the Statute of the Unborn Child, which ends abortion in cases of anencephaly and makes the procedure even more difficult in cases of rape and risk of death.",
+        "navigate": "Press to stop this setback for girls and women's rights!"
       }
     }
   },

@@ -42,6 +42,26 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             description: t("we-are-doing.sliders.1.description"),
             link: t("we-are-doing.sliders.1.navigate"),
           },
+          {
+            src: "/static/media/we-are-doing/honra-nao-e-desculpa.png",
+            href: "https://honranaoedesculpa.nossas.org/",
+            alt: t("we-are-doing.sliders.honra-não-é-desculpa.title"),
+            title: t("we-are-doing.sliders.honra-não-é-desculpa.title"),
+            description: t(
+              "we-are-doing.sliders.honra-não-é-desculpa.description"
+            ),
+            link: t("we-are-doing.sliders.honra-não-é-desculpa.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/nao-estatuto-nascituro.png",
+            href: "https://naoaoestatutodonascituro.mapadoacolhimento.org.br",
+            alt: t("we-are-doing.sliders.estatuto-nascituro.title"),
+            title: t("we-are-doing.sliders.estatuto-nascituro.title"),
+            description: t(
+              "we-are-doing.sliders.estatuto-nascituro.description"
+            ),
+            link: t("we-are-doing.sliders.estatuto-nascituro.navigate"),
+          },
         ]}
       />
     </Section>

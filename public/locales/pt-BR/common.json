@@ -105,10 +105,20 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
+      "honra-não-é-desculpa": {
+        "title": "Honra Não é Desculpa",
+        "description": "Campanha pela aprovação do Projeto de Lei 2325/21, que elimina a legítima defesa da honra como recurso argumentativo em casos de violência de gênero. Mais de 25 mil pessoas se engajaram e, em julho de 2022, a lei foi aprovada no Senado. Agora, ela retornou à Câmara, onde aguarda votação.",
+        "navigate": "Pressione!"
+      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
-        "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé."
+        "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé!"
+      },
+      "estatuto-nascituro": {
+        "title": " Não ao Estatuto do Nascituro!",
+        "description": "Deputados fundamentalistas querem aprovar o Estatuto do Nascituro, que acaba com o aborto em caso de anencefalia e dificulta ainda mais o procedimento em caso de estupro e risco de morte.",
+        "navigate": "Pressione para barrar esse retrocesso no direito de meninas e mulheres!"
       }
     }
   },

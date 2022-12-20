@@ -65,10 +65,10 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
             },
             {
               src: "/static/media/our-victories/orçamento-cultura-fica.png",
-              alt: t("our-victories.carousel.orçamento-cultura-fica.title"),
-              title: t("our-victories.carousel.orçamento-cultura-fica.title"),
+              alt: t("our-victories.carousel.orçamento-cultural-fica.title"),
+              title: t("our-victories.carousel.orçamento-cultural-fica.title"),
               description: t(
-                "our-victories.carousel.orçamento-cultura-fica.description"
+                "our-victories.carousel.orçamento-cultural-fica.description"
               ),
               href: "https://leisdacultura.org/",
             },
