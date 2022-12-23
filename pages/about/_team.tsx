@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 
 import { EmployeeTeam } from "../../components/Employee";
@@ -95,17 +94,17 @@ export const LeadersMembers: React.FC = () => {
           team: t("teams.leaders.title"),
         },
         {
-          avatar: "/static/media/team/roberto-andres.png",
-          name: "Roberto Andrés",
-          role: t("teams.leaders.roberto.role"),
-          about: t("teams.leaders.roberto.about"),
-          team: t("teams.leaders.title"),
-        },
-        {
           avatar: "/static/media/team/talita.png",
           name: "Talita Novacoski",
           role: t("teams.leaders.talita.role"),
           about: t("teams.leaders.talita.about"),
+          team: t("teams.leaders.title"),
+        },
+        {
+          avatar: "/static/media/team/roberto-andres.png",
+          name: "Roberto Andrés",
+          role: t("teams.leaders.roberto.role"),
+          about: t("teams.leaders.roberto.about"),
           team: t("teams.leaders.title"),
         },
       ]}
