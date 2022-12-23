@@ -183,6 +183,10 @@
         "role": "Gestor de Dados",
         "about": "Anderson é graduado em Ciência Política pela UFPE, onde pesquisou sobre produção de políticas públicas, conflito legislativo e polarização político-partidária. Foi através de estudos acadêmicos que teve contato com dados e programação, área na qual tem se aprofundado desde então. No NOSSAS desde 2019, ajuda a monitorar métricas relevantes e conduz experimentos e análises observacionais para testar hipóteses sobre como aumentar o impacto da organização."
       },
+      "camila": {
+        "role": "Mobilizadora",
+        "about": "Camila é comunicadora social graduada pela UFMG e pós-graduada em Escrita e Criação pela Universidade de Fortaleza. É produtora formada pela prática no audiovisual mineiro e ativista gestada pelas ruas e redes. Tem 30 anos e atualmente reside entre Contagem e Belo Horizonte."
+      },
       "carolina": {
         "role": "Articuladora da Amazônia de Pé",
         "about": "Carolina, ou Carol, é baiana, nascida e criada na periferia de Salvador e apaixonada pela cidade, e principalmente por suas águas. Também é ativista socioambiental há quase 5 anos (e contando), trabalhando com projetos voltados ao socioambientalismo. Nos últimos 2 anos tem focado sua atuação na luta pela justiça climática, por acreditar que um mundo mais justo e sustentável é possível sim!"
@@ -190,6 +194,10 @@
       "catarina": {
         "role": "Coordenadora de Comunicação da Amazônia de Pé",
         "about": "Catarina Nefertari é comunicóloga e ativista amazônida, bacharel em Comunicação Social - Publicidade e Propaganda (UFPA) e tem MBA em Gestão Estratégica de Negócios (FIAP). Tem experiências interdisciplinares, já atuou em times da área da educação, energia, inovação, tecnologia, direito à cidade e mobilização de comunidades, tendo co-fundado a ong Laboratório da Cidade (LdC) de Belém em 2018. Catarina coordena a comunicação da campanha Amazônia de Pé e faz parte do time de estratégia do Laboratório da Cidade."
+      },
+      "clareana": {
+        "role": "Mobilizadora",
+        "about": "Clareana atuou como Conselheira Nacional de Juventude, Assessora na Prefeitura Municipal de Osasco, Assessora na Secretaria Nacional de Mobilização do Partido dos Trabalhadores, Assessora Parlamentar na Câmara dos deputados e vários trabalhos em campanhas políticas e ativismo. Em paralelo, Clareana é astróloga, taróloga e praticante da religião de matriz africana."
       },
       "cledisson": {
         "role": "Gestor de Advocacy",
@@ -298,6 +306,14 @@
       "maira": {
         "role": "Gestora de Treinamento",
         "about": "Maira é pernambucana, interessada nas pautas de Direitos Humanos, gênero, Direitos Sexuais e Direitos Reprodutivos e Política de Drogas. Militante feminista antiproibicionista, ela integra a Rede Nacional de Feministas Antiproibicionistas (RENFA) e a Articulação de Mulheres Brasileiras (AMB). Antes do NOSSAS, trabalhou como repórter do Diario de Pernambuco e na Fiocruz. Maira é formada em Comunicação Social."
+      },
+      "manuela": {
+        "role": "Analista de Campanha do Mapa do Acolhimento",
+        "about": "Pernambucana morando no Rio de Janeiro, Manuela é doutoranda e mestre em Comunicação pela Universidade Federal Fluminense e formada em Jornalismo pela UFPE. Tem uma trajetória multidisciplinar, com experiência nos campos da fotografia, audiovisual, artes visuais e no ativismo feminista e antiproibicionista."
+      },
+      "marcia": {
+        "role": "",
+        "about": "Márcia é mulher negra, bissexual, sonhadora e escrevivente, nascida em Minas Gerais. É advogada, especialista em direito penal e processo penal, e entende que o direito é paradoxal e pode ser extremamente violento com tudo que foge à norma branca-heterocispatriarcal. Doutoranda e mestre em Direito pela UFMG, em suas pesquisas, Márcia utiliza das lentes afropessimistas e do feminismo negro para uma leitura crítica do direito e do Estado."
       },
       "matheus": {
         "role": "Mobilizador",
