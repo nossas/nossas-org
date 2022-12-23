@@ -75,23 +75,23 @@
   "impact": {
     "title": "Números <br/><strong>de impacto</strong>",
     "financial": {
-      "number": "+4,4 milhões",
+      "number": "+4,5 milhões",
       "description": "de reais arrecadados em financiamento coletivo"
     },
     "volunteers": {
-      "number": "+5,4 mil",
+      "number": "+33 mil",
       "description": "voluntárias e voluntários cadastrados"
     },
     "political": {
-      "number": "+149",
+      "number": "+175",
       "description": "mudanças de política pública"
     },
     "campaigns": {
-      "number": "+242",
+      "number": "+274",
       "description": "campanhas lançadas"
     },
     "donations": {
-      "number": "+30,6 mil",
+      "number": "+31,1 mil",
       "description": "pessoas já fizeram doações"
     },
     "activists": {
