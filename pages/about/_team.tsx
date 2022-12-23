@@ -27,13 +27,6 @@ export const BoardMembers: React.FC = () => {
           team: t("teams.board.title"),
         },
         {
-          avatar: "/static/media/team/roberto-andres.png",
-          name: "Roberto Andres",
-          role: t("teams.board.members.roberto.role"),
-          about: t("teams.board.members.roberto.about"),
-          team: t("teams.board.title"),
-        },
-        {
           avatar: "/static/media/team/branca-vianna.png",
           name: "Branca Vianna",
           role: t("teams.board.members.branca.role"),
@@ -102,10 +95,10 @@ export const LeadersMembers: React.FC = () => {
           team: t("teams.leaders.title"),
         },
         {
-          avatar: "/static/media/team/samira.png",
-          name: "Samira Martins",
-          role: t("teams.leaders.samira.role"),
-          about: t("teams.leaders.samira.about"),
+          avatar: "/static/media/team/roberto-andres.png",
+          name: "Roberto Andrés",
+          role: t("teams.leaders.roberto.role"),
+          about: t("teams.leaders.roberto.about"),
           team: t("teams.leaders.title"),
         },
         {
@@ -136,13 +129,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/alexandra-maier.png",
-          name: "Alexandra",
-          role: t("teams.team.alexandra.role"),
-          about: t("teams.team.alexandra.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/alice.jpg",
           name: "Alice",
           role: t("teams.team.alice.role"),
@@ -161,13 +147,6 @@ export const TeamMembers: React.FC = () => {
           name: "Ana Claudia",
           role: t("teams.team.anaclaudia.role"),
           about: t("teams.team.anaclaudia.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/anderson-bento.png",
-          name: "Anderson",
-          role: t("teams.team.anderson.role"),
-          about: t("teams.team.anderson.about"),
           team: t("teams.team.title"),
         },
         {
@@ -287,13 +266,6 @@ export const TeamMembers: React.FC = () => {
           name: "Isabella",
           role: t("teams.team.isabella.role"),
           about: t("teams.team.isabella.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/izamir-barbosa.png",
-          name: "Izamir",
-          role: t("teams.team.izamir.role"),
-          about: t("teams.team.izamir.about"),
           team: t("teams.team.title"),
         },
         {
