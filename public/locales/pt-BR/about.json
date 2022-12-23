@@ -112,10 +112,6 @@
           "role": "Fundadora da Casa Rede e colunista do jornal O Globo",
           "about": "Ana Paula é escritora, produtora e colunista do jornal O Globo. Atualmente, vive entre Rio de Janeiro e Luanda, onde dirige a produtora Aláfia e o espaço cultural Casa Rede. Foi produtora e apresentadora do programa \"Querendo Assunto\", tem contos e poesias publicados em coletâneas nacionais e internacionais e, desde 2016, tem contribuído regularmente com a revista feminista AzMina."
         },
-        "roberto": {
-          "role": "Fundador do Ocupa Política e editor da Piseagrama",
-          "about": "Roberto é arquiteto, urbanista e pesquisador com ampla experiência em prática arquitetônica, desenvolvimento urbano e tecnologia da informação. É editor da revista Piseagrama e professor na UFMG, tendo passado antes pelos laboratórios de pesquisa Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) e Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto também é diretor e co-fundador da Hometeka."
-        },
         "branca": {
           "role": "Fundadora e presidente da Rádio Novelo",
           "about": "Branca é filantropa e Presidente do Conselho Administrativo do Instituto Serrapilheira, primeira instituição privada, sem fins lucrativos, de fomento à ciência no Brasil. Ela também é presidente da Rádio Novelo e apresentadora do podcast \"Maria vai com as outras\", sobre mulheres no mercado de trabalho. Foi professora da PUC-Rio por mais de 10 anos e possui experiência sólida em comunicação para grandes audiências."
@@ -155,6 +151,14 @@
       "samira": {
         "role": "Gestora de Comunicação",
         "about": "​​Samira é mineira de BH, jornalista, pós-graduada em Comunicação Estratégica e negócios pela PUC Minas e cursa MBA em Marketing, Branding e Growth Hacking pela PUC RS. Trabalha há 15 anos na gestão da área de comunicação e projetos de grandes empresas em diversos segmentos. Especialista na construção de marcas e reputação, planejamento estratégico, mídia, gerenciamento de crise, posicionamento digital e de mercado."
+      },
+      "talita": {
+        "role": "Diretora de Inteligência e Tecnologia",
+        "about": "Talita lidera a área de Tecnologia e Inteligência do NOSSAS, atuando na intersecção entre tecnologia, dados e estratégia. Formada em Comunicação e Multimeios, se especializou em Gestão de Produto e UX. Como consultora, trabalhou com grandes empresas e startups guiando processos de inovação e design. Criou o bootcamp de UX Design da Mastertech, onde foi coordenadora e professora. Há cinco anos atrás direcionou essa experiência para o terceiro setor, trabalhando com o desenvolvimento de tecnologias para mobilização social, projetos de justiça climática e combate à violência de gênero."
+      },
+      "roberto": {
+        "role": "Diretor de Campanhas",
+        "about": "Roberto é arquiteto, urbanista e pesquisador com ampla experiência em prática arquitetônica, desenvolvimento urbano e tecnologia da informação. É editor da revista Piseagrama e professor na UFMG, tendo passado antes pelos laboratórios de pesquisa Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) e Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto também é diretor e co-fundador da Hometeka."
       }
     },
     "team": {
@@ -172,7 +176,7 @@
         "about": "Alice é manauara, estudante de Jornalismo da Universidade Federal do Amazonas e estagiária de comunicação do NOSSAS. Na faculdade, fez parte da diretoria do centro acadêmico em 2019 e foi coautora de um projeto científico na área de Jornalismo Ambiental. Antes de entrar no NOSSAS, passou por assessorias de comunicação do primeiro e do terceiro setor. Tem interesse nos saberes tradicionais da Amazônia e curiosidade sobre a diversidade do Brasil e do mundo."
       },
       "anabeatriz": {
-        "role": "Coordenadora de Desenvolvimento de Projeto do Mapa do Acolhimento",
+        "role": "Gestora do Projeto Mapa do Acolhimento",
         "about": "Ana é advogada formada pela PUC-SP e compõe a equipe do Mapa do Acolhimento. Entre 2015 e 2016 atuou na 1ª Vara de Família do Fórum Regional de Pinheiros acompanhando de perto casos e audiências de demandas de família sem a perspectiva de gênero. Depois de graduada realizou o curso de atendimento a mulheres vítimas de violência de gênero ministrado pelo IBCCRIM em parceria com o Instituto Avon e está no Mapa do Acolhimento desde outubro de 2018."
       },
       "anaclaudia": {
@@ -280,7 +284,7 @@
         "about": "Larissa Nascimento, produtora, militante, professora e Mestra de Bateria Popular pelo Levante Popular da Juventude, atua na área da Arte e Cultura desde 2013. Iniciou seus estudos em Produção Audiovisual, desenvolvendo diversos eventos, filmes, web documentários, shows. Estudou Percussão Brasileira na Escola de Música Villa Lobos, coordenou inúmeras oficinas de percussão popular pelo Brasil e participou de várias rodas de samba. Divido conhecimentos com jovens através de aulas de percussão no Complexo de Manguinhos. Atualmente, somando na Produção da equipe da Amazônia de Pé."
       },
       "laura": {
-        "role": "Estagiária de Comunicação",
+        "role": "Trainee de Comunicação",
         "about": "Laura é estagiária de Comunicação do NOSSAS. Anteriormente, trabalhou como estagiária de redação no Jornal O Globo, escrevendo para os jornais de Bairros e editoria de gênero e diversidade. Nascida e criada na Zona Norte do Rio de Janeiro, no bairro da Penha. É graduanda de Jornalismo na Escola de Comunicação da UFRJ, com interesse especial nas áreas de direitos humanos, relações raciais e de gênero."
       },
       "leila": {
@@ -292,7 +296,7 @@
         "about": "Letícia sempre foi movida pelos direitos dos migrantes e refugiados e por formas de integração à cidade. No NOSSAS, ela trabalha na frente de Treinamento, na execução dos editais e do Programa de Mobilizadores. Antes, foi Assistente de Cooperação Internacional no Centro de Relações Internacionais em Saúde (Cris) da Fiocruz. Letícia é mestre em Gestão e Análises de Políticas Internacionais pela PUC-Rio e graduada em Relações Internacionais pela UFF."
       },
       "livia": {
-        "role": "Coordenadora de Campanhas do Mapa do Acolhimento",
+        "role": "Gestora de Campanhas do Mapa do Acolhimento",
         "about": "Campaigner no Nossas, Lívia atuou previamente em projetos nas áreas de gênero, sustentabilidade e direitos humanos em organizações como a Actionaid e a Anistia Internacional. Ela possui graduação em Relações Internacionais pela Universidade Federal do Rio de Janeiro e especialização em Ecoliteracia pela Universidade de Coimbra e UNESCO."
       },
       "luana": {
@@ -346,10 +350,6 @@
       "sarah": {
         "role": "Analista Financeira",
         "about": "Sarah é paulista, natural de Itapecerica da Serra, bacharela em Administração pela Universidade do Estado de Minas Gerais e pós graduada em Gestão Financeira de Negócios pela Mackenzie. Integrou o Movimento Empresa Júnior em prol do desenvolvimento econômico de Carangola e região, e pensando em desconstruir o racismo e empoderar as mulheres negras da cidade desenvolveu em parceria o grupo “Mulheres Negras Carangola”, partilhando conhecimento e ressignificando histórias locais. Nos últimos anos, atuou como coordenadora financeira e administrativa da organização de jovens ativistas Engajamundo. Sarah acredita que todos somos parte da solução e potenciais instrumentos para construir uma sociedade mais utópica."
-      },
-      "talita": {
-        "role": "Gestora de Tecnologia",
-        "about": "Talita gerencia a área de tecnologia do NOSSAS, trabalhando na interseção de design, tecnologia e ativismo. Ela tem experiência com estratégia de produto, pesquisa de usuário, design thinking, metodologias ágeis, pensamento sistêmico, design de UI e UX. Formada em Comunicação e Multimeios, se especializou em UX Design e trabalhou com grandes empresas como Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin e outras."
       },
       "tayna": {
         "role": "Analista do Mapa do Acolhimento",

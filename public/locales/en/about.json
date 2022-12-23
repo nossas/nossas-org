@@ -112,10 +112,6 @@
           "role": "Founder of Casa Rede and O Globo columnist",
           "about": "Ana is a writer, producer and columnist at O Globo. Currently, she lives between Rio de Janeiro and Luanda - where she runs the production company Aláfia and the cultural venue Casa Rede. Ana was a producer and the presenter of the show \"Querendo Assunto\". She has published novels and poetry nationally and internationally, and since 2016 she has regularly contributed to the feminist magazine AzMina."
         },
-        "roberto": {
-          "role": "Founder of Ocupa Política and Editor of Piseagrama",
-          "about": "Roberto is an architect, urban planner and researcher with extensive experience in architectural practice, urban development and information technology. He is the editor of the magazine Piseagrama and a professor at UFMG, having previously worked at the research laboratories Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) and Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto is also a director and co-founder of Hometeka."
-        },
         "branca": {
           "role": "Founder and President of Radio Novelo",
           "about": "Branca is a philanthropist and President of the Administrative Council of the Insitituto Serrapilheira, the first private, non-profit institution to promote science in Brazil. Branca is also president of Radio Novelo and a member of the podcast \"Maria vai com as Outras\" - about women in the labor market. She was a professor at PUC-Rio for more than 10 years and has significant experience in communication for large audiences."
@@ -155,6 +151,14 @@
       "samira": {
         "role": "Head of Communication",
         "about": "Samira is from Belo Horizonte and is Head of Communication at NOSSAS. She is a journalist, with postgraduate degree in Strategic Communication and Business from PUC Minas and an MBA in Marketing, Branding and Growth Hacking from PUC RS. She has been working for 15 years in the management of communication and projects for large companies in different segments. Samira is specialist in building brands and reputation, strategic planning, media, crisis management, digital and market positioning."
+      },
+      "talita": {
+        "role": "Director of Intelligence and Technology",
+        "about": "Talita leads the Technology and Intelligence department at NOSSAS, working at the intersection of technology, data and strategy. A graduate in Communication and Multimedia, she specialized in Product Management and UX. As a consultant, she has worked with large companies and startups guiding innovation and design processes. She created Mastertech's UX Design bootcamp, where she was coordinator and teacher. Five years ago, she directed this experience to social innovation, developing technologies for mobilization, climate justice and gender violence projects."
+      },
+      "roberto": {
+        "role": "Campaigns Director",
+        "about": "Roberto is an architect, urban planner and researcher with extensive experience in architectural practice, urban development and information technology. He is the editor of the magazine Piseagrama and a professor at UFMG, having previously worked at the research laboratories Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) and Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto is also a director and co-founder of Hometeka."
       }
     },
     "team": {
@@ -172,7 +176,7 @@
         "about": "Alice is from Manaus, a Journalism student at the Federal University of Amazonas and a communications intern at NOSSAS. In college, she was on the board of the academic center of her program in 2019 and was the co-author of a scientific initiation project in the field of Environmental Journalism. Before joining NOSSAS, Alice worked in the press offices of public entities and the third sector. She is interested in traditional knowledge about the Amazon and is curious about the diversity of Brazil and the world."
       },
       "anabeatriz": {
-        "role": "Project Development Coordinator at Mapa do Acolhimento",
+        "role": "Manager at Mapa do Acolhimento",
         "about": "Ana is a lawyer with a degree from PUC-SP, and is part of Mapa's team. From 2015 to 2016 she worked in family law at the Pinheiros Forum Family Court, closely monitoring cases of family demands without a gender perspective. After graduating, she took the specialization course in the care of women in situations of gender-based violence at IBCCRIM as a partnership with Instituto Avon and has been working for Mapa since 2018."
       },
       "anaclaudia": {
@@ -280,7 +284,7 @@
         "about": "Larissa Nascimento, producer, activist, teacher and Master of Popular Drums for Levante Popular da Juventude, has been working in the field of Art and Culture since 2013. She began her studies in Audiovisual Production, developing various events, films, web documentaries, shows. She studied Brazilian Percussion at the Villa Lobos Music School, coordinated numerous popular percussion workshops throughout Brazil and participated in several samba circles. She shares knowledge with young people through percussion classes at the Manguinhos Complex. Currently, works in the production team at Amazônia de Pé."
       },
       "laura": {
-        "role": "Communication Intern",
+        "role": "Communications Trainee ",
         "about": "Communication intern at NOSSAS. Previously, Laura worked as an editorial intern at Jornal O Globo, writing for newspapers in Bairros and as a gender and diversity editor. Born and raised in the North Zone of Rio de Janeiro, in the neighborhood of Penha, Alice is a Journalism student at the UFRJ School of Communication, with a special interest in the areas of race and gender relations. Passionate about street carnival, fan of reality shows and assiduous reader."
       },
       "leila": {
@@ -292,7 +296,7 @@
         "about": "Leticia has always been driven by the rights of migrants and refugees and by forms of integration in the city. At NOSSAS, she works on the training front for the Mobilizers Program. Before that, Leticia was an International Cooperation Assistant at the Center for International Health Relations at Fiocruz. Letícia has a master's degree in Management and Analysis of International Policies from PUC-Rio and a degree in International Relations from UFF."
       },
       "livia": {
-        "role": "Mobilization Coordinator at Mapa do Acolhimento",
+        "role": "Campaigns Manager at Mapa do Acolhimento",
         "about": "A campaigner at Nossas, Lívia has previously worked on projects in the areas of gender, sustainability and human rights in organizations such as Actionaid and Amnesty International. She’s a graduate in International Relations from the Federal University of Rio de Janeiro with a specialization in Ecoliteracy from the University of Coimbra and UNESCO."
       },
       "luana": {
@@ -346,10 +350,6 @@
       "sarah": {
         "role": "Financial Analyst",
         "about": "Sarah is from São Paulo, born in Itapecerica da Serra, holds a bachelor's degree in Business Administration from the Universidade do Estado de Minas Gerais and a postgraduate degree in Business Financial Management from Mackenzie. She was part of the Junior Enterprise Movement for the economic development of Carangola and region, and thinking about deconstructing racism and empowering black women in the city, she developed in partnership the group “Mulheres Negras Carangola”, sharing knowledge and giving new meaning to local stories. In recent years, she has served as financial and administrative coordinator for the youth activist organization Engajamundo. Sarah believes that we are all part of the solution and potential instruments to build a more utopian society."
-      },
-      "talita": {
-        "role": "Senior Technology Manager",
-        "about": "Talita is a UX Designer and manages the technology area at NOSSAS, working at the intersection of design, technology and activism. Talita has experience with product strategy, user research, design thinking, agile methodologies, systemic thinking, UI and UX design. A graduate in Communication and Multimedia, Talita specialized in UX Design and has worked with large companies such as Itaú, Accenture, Facebook, Visa, Santander, Leroy Merlin and others."
       },
       "tayna": {
         "role": "Analyst at Mapa do Acolhimento",
