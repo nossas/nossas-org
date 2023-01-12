@@ -254,7 +254,7 @@ const renderDesktop = (t: any) => [
       />
     </Timeline>
   </SimpleGrid>,
-  <SimpleGrid columns={4}>
+  <SimpleGrid columns={5}>
     <Timeline title="2022">
       <ImageText
         alt='Imagem com o texto "Paraisópolis Resiste"'
@@ -313,6 +313,40 @@ const renderDesktop = (t: any) => [
         href="https://www.foragabrielmonteiro.meurio.org.br/"
         src="/static/media/timeline/PT/fora-gabriel-monteiro.png"
         text={t("timeline.2022.9")}
+      />
+    </Timeline>
+    <Timeline title="2022" titleVisibility="hidden">
+      <ImageText
+        alt='Imagem com o texto "Rol Exemplificativo Salva"'
+        href="https://rolexemplificativosalva.nossas.org/"
+        src="/static/media/timeline/PT/rol-exemplificativo.png"
+        text={t("timeline.2022.10")}
+      />
+      <ImageText
+        alt='Imagem com o texto "Vatapá Buraco"'
+        href="https://www.vatapaburaco.minhamanaus.org.br/"
+        src="/static/media/timeline/PT/vatapa.png"
+        text={t("timeline.2022.11")}
+      />
+      <ImageText
+        alt='Imagem com o texto "Triplique Seu Voto"'
+        href="https://tripliqueseuvoto.org.br/"
+        src="/static/media/timeline/PT/triplique.png"
+        text={t("timeline.2022.12")}
+      />
+    </Timeline>
+    <Timeline title="2022" titleVisibility="hidden">
+      <ImageText
+        alt='Imagem com o texto "Passe Livre Pela Democracia"'
+        href="https://www.passelivrepelademocracia.org/"
+        src="/static/media/timeline/PT/passe-livre.png"
+        text={t("timeline.2022.13")}
+      />
+      <ImageText
+        alt='Imagem com o texto "Fim do Orçamento Secreto"'
+        href="https://www.fimdoorcamentosecreto.org/"
+        src="/static/media/timeline/PT/fim-orçamento.png"
+        text={t("timeline.2022.14")}
       />
     </Timeline>
   </SimpleGrid>,
@@ -595,28 +629,62 @@ const renderMobile = (t: any) => [
       alt='Imagem com o texto "Amazônia de pé"'
       href="https://amazoniadepe.org.br/"
       src="/static/media/timeline/PT/amazonia-de-pe.png"
-      text={t("timeline.2022.5")}
+      text={t("timeline.2022.6")}
     />
   </Timeline>,
   <Timeline title="2022">
-    {/* <ImageText
-      alt='Imagem com o texto "cada voto conta"'
-      href="https://www.cadavotoconta.org.br/"
-      src="/static/media/timeline/PT/logo-cada-voto-conta.png"
-      text={t("timeline.2022.4")}
+    <ImageText
+      alt='Imagem com o texto "Minha BH"'
+      href="https://www.instagram.com/minhabh_/"
+      src="/static/media/timeline/PT/minhabh.png"
+      text={t("timeline.2022.7")}
     />
     <ImageText
-      alt='Imagem com o texto "Geração que move"'
-      href="https://geracaoquemove.nossas.org/"
-      src="/static/media/timeline/PT/logo-geracao-que-move.png"
-      text={t("timeline.2022.5")}
+      alt='Imagem com o texto "Cuidem de Nossas Meninas"'
+      href="https://www.cuidemdenossasmeninas.mapadoacolhimento.org.br/"
+      src="/static/media/timeline/PT/cuidem-de-nossas-meninas.png"
+      text={t("timeline.2022.8")}
     />
     <ImageText
-      alt='Imagem com o texto "Amazônia de pé"'
-      href="https://amazoniadepe.org.br/"
-      src="/static/media/timeline/PT/amazonia-de-pe.png"
-      text={t("timeline.2022.5")}
-    /> */}
+      alt='Imagem com o texto "Fora, Gabriel Monteiro!"'
+      href="https://www.foragabrielmonteiro.meurio.org.br/"
+      src="/static/media/timeline/PT/fora-gabriel-monteiro.png"
+      text={t("timeline.2022.9")}
+    />
+  </Timeline>,
+  <Timeline title="2022">
+    <ImageText
+      alt='Imagem com o texto "Rol Exemplificativo Salva"'
+      href="https://rolexemplificativosalva.nossas.org/"
+      src="/static/media/timeline/PT/rol-exemplificativo.png"
+      text={t("timeline.2022.10")}
+    />
+    <ImageText
+      alt='Imagem com o texto "Vatapá Buraco"'
+      href="https://www.vatapaburaco.minhamanaus.org.br/"
+      src="/static/media/timeline/PT/vatapa.png"
+      text={t("timeline.2022.11")}
+    />
+    <ImageText
+      alt='Imagem com o texto "Triplique Seu Voto"'
+      href="https://tripliqueseuvoto.org.br/"
+      src="/static/media/timeline/PT/triplique.png"
+      text={t("timeline.2022.12")}
+    />
+  </Timeline>,
+  <Timeline title="2022">
+    <ImageText
+      alt='Imagem com o texto "Passe Livre Pela Democracia"'
+      href="https://www.passelivrepelademocracia.org/"
+      src="/static/media/timeline/PT/passe-livre.png"
+      text={t("timeline.2022.13")}
+    />
+    <ImageText
+      alt='Imagem com o texto "Fim do Orçamento Secreto"'
+      href="https://www.fimdoorcamentosecreto.org/"
+      src="/static/media/timeline/PT/fim-orçamento.png"
+      text={t("timeline.2022.14")}
+    />
   </Timeline>,
 ];
 
