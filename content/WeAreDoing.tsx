@@ -35,6 +35,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/fora-ibaneis.png",
+            href: "https://foraibaneis.org.br/",
+            alt: t("we-are-doing.sliders.0.title"),
+            title: t("we-are-doing.sliders.0.title"),
+            description: t("we-are-doing.sliders.0.description"),
+            link: t("we-are-doing.sliders.0.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
