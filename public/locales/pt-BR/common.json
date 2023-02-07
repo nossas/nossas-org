@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
+      "supervia": {
+        "title": "Supervia, aumento não!",
+        "description": "Mais um ano, mais uma proposta de aumento no preço das passagens. Dessa vez, a passagem de trem no Rio de Janeiro vai passar a custar R$7,40 a partir de fevereiro. E, enquanto as tarifas aumentam, a qualidade do serviço oferecido só cai. Queremos um transporte público acessível e de qualidade para todos!",
+        "navigate": "Pressione para barrar o aumento da passagem de trem! "
+      },
       "0": {
         "title": "Fora Ibaneis!",
         "description": "O terrorismo que tomou conta de Brasília em 8 de janeiro não pode passar impune. E o governador do DF, Ibaneis Rocha, foi cúmplice dos crimes. Pressione o presidente do Câmara Legislativa do Distrito Federal, Wellington Luiz, pela abertura imediata do processo de Impeachment do governador Ibaneis Rocha.",

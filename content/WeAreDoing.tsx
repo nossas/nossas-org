@@ -35,6 +35,22 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/supervia.png",
+            href: "https://www.superviaaumentonao.meurio.org.br/",
+            alt: t("we-are-doing.sliders.supervia.title"),
+            title: t("we-are-doing.sliders.supervia.title"),
+            description: t("we-are-doing.sliders.supervia.description"),
+            link: t("we-are-doing.sliders.supervia.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/fora-ibaneis.png",
+            href: "https://foraibaneis.org.br/",
+            alt: t("we-are-doing.sliders.0.title"),
+            title: t("we-are-doing.sliders.0.title"),
+            description: t("we-are-doing.sliders.0.description"),
+            link: t("we-are-doing.sliders.0.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/fora-ibaneis.png",
             href: "https://foraibaneis.org.br/",
             alt: t("we-are-doing.sliders.0.title"),

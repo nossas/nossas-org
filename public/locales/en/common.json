@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "supervia": {
+        "title": "Supervia, aumento não!",
+        "description": "Another year, another proposal to increase public transport fares. This time, the price of train tickets in Rio de Janeiro will cost R$7.40 starting in February. And, while tariffs increase, the quality of the offered service only drops. We want affordable and quality public transport for everyone! ",
+        "navigate": "Press to stop the train fare increase!"
+      },
       "0": {
         "title": "Fora Ibaneis!",
         "description": "The terrorism that took over Brasilia on January 8 cannot go unpunished. And the governor of the DF, Ibaneis Rocha, was an accomplice to the crimes. Pressure the President of the Legislative Chamber of the Federal District, Wellington Luiz, for the immediate opening of the Impeachment process of Governor Ibaneis Rocha.",
