@@ -8,7 +8,6 @@ export const Nav = ({ children }) => {
   const [offset, setOffset] = useState(0);
   const [scrollUp, setScrollUp] = useState(true);
 
-  console.log(offset);
   useEffect(() => {
     window.onscroll = () => {
       setOffset((oldOffset) => {
