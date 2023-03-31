@@ -65,7 +65,7 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
     fontSize: "18px",
     fontFamily: "Bebas Neue",
     color: "gray.main",
-    _selected: { color: "blue.main" },
+    _selected: { color: "blue.neon" },
     textTransform: "uppercase",
     p: "0 35px 0 0",
   };

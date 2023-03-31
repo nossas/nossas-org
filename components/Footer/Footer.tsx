@@ -29,7 +29,10 @@ const Footer = () => {
       >
         <Box>
           <NextLink href="/">
-            <Image src="/static/media/logo.svg" alt="Logo do Nossas" />
+            <Image
+              src="/static/media/logos/footer_nossas_logo.png"
+              alt="Logo do Nossas"
+            />
           </NextLink>
 
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>

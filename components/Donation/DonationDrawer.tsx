@@ -65,10 +65,8 @@ const Donation: React.FC<DonationProps> = ({
             />
             <DrawerHeader>
               <Image
-                src="/static/media/brand.png"
+                src="/static/media/logos/donation_nossas_logo.png"
                 alt="NOSSAS"
-                w="69px"
-                h="32px"
               />
             </DrawerHeader>
             <DrawerBody>

@@ -13,6 +13,7 @@ const _default = {
     dark: "#250086",
     main: "#163E86",
     light: "#3707B4",
+    neon: "#2D00A1",
   },
   pink: {
     dark: "#CC097B",
