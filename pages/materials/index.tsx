@@ -83,7 +83,7 @@ const Materials: React.FC = () => {
 
       <div id="manual">
         <DescriptionBox
-          color="pink"
+          color="orange"
           title={
             <span>
               <div

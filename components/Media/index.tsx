@@ -14,7 +14,7 @@ export const Media = ({ title, logos }) => {
         <Heading
           display="flex"
           alignItems="center"
-          color="blue.main"
+          color="orange.main"
           size="lg"
           mb={["20px", null, null, null, null]}
         >

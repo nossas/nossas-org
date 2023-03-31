@@ -82,7 +82,7 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
           <Image
             margin="0 auto"
             objectFit="cover"
-            maxW={["265px", null, null, null, "465px"]}
+            maxW={["265px", null, null, null, "365px"]}
             src={data.image}
           />
         </Box>

@@ -5,7 +5,7 @@ import { Section } from "../components/Page";
 interface Props {
   title: React.ReactNode | string;
   description: React.ReactNode | string;
-  color: "blue" | "pink" | "green";
+  color: "blue" | "orange" | "green";
   maxW?: string | number;
   bgColor?: string;
   headingStyles?: any;
@@ -13,7 +13,7 @@ interface Props {
 
 const colors = {
   blue: "blue.main",
-  pink: "pink.main",
+  orange: "orange.main",
   green: "green",
 };
 

@@ -40,16 +40,13 @@ const QuemSomos: React.FC = () => {
         spacing={["60px", null, null, "215px"]}
       >
         <SimpleGrid
+          // direction={['column', null, null, 'row']}
           columns={[1, null, null, 2]}
           templateColumns={["auto", null, null, "582px auto"]}
-          rowGap="30px"
+          alignItems="center"
           mb={18}
         >
-          <Image
-            src="/static/media/s3/incubations-tudonossas.png"
-            margin="0 auto"
-          />
-
+          <Image src="/static/media/s3/incubations-tudonossas.png" />
           <Text>{t("history.description")}</Text>
         </SimpleGrid>
 
@@ -163,7 +160,7 @@ const QuemSomos: React.FC = () => {
             <Stack direction="row" spacing="20px">
               <Donation
                 size="sm"
-                colorScheme="blue"
+                colorScheme="orange"
                 display={["none", "block"]}
               >
                 {t("who-finances.donate_action")}
