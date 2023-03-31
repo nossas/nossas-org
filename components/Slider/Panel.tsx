@@ -36,7 +36,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => {
         <Link
           href={item.href}
           target="_blank"
-          variant="pink"
+          colorScheme="orange"
           flexDirection="row"
           display="flex"
           alignItems="center"

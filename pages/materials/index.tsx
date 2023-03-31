@@ -55,7 +55,9 @@ const Materials: React.FC = () => {
             <Stack direction="column" spacing="30px">
               <Text maxW="670px">{t("manual.description")}</Text>
               <Link href="/materials#manual">
-                <LinkStyled variant="pink">{t("manual.action")}</LinkStyled>
+                <LinkStyled colorScheme="orange">
+                  {t("manual.action")}
+                </LinkStyled>
               </Link>
             </Stack>
           }

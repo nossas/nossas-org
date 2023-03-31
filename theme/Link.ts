@@ -11,18 +11,12 @@ const _default = {
     },
   },
   variants: {
-    blue: {
-      color: "blue.main",
+    primary: (props) => ({
+      color: `${props.colorScheme}.main`,
       _hover: {
-        color: "blue.light",
+        color: `${props.colorScheme}.light`,
       },
-    },
-    pink: {
-      color: "pink.main",
-      _hover: {
-        color: "pink.light",
-      },
-    },
+    }),
     nav: {
       fontWeight: "normal",
       fontSize: "16px",
@@ -43,8 +37,9 @@ const _default = {
     },
   },
   defaultProps: {
-    variant: "blue",
+    variant: "primary",
     size: "md",
+    colorScheme: "blue",
   },
 };
 

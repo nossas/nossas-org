@@ -22,6 +22,8 @@ const _default = {
   orange: {
     dark: "#EE4317",
     main: "#FF5F36",
+    // TODO: confirmar cor light
+    light: "#EE4317",
   },
 };
 

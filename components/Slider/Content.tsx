@@ -107,7 +107,7 @@ export const ImageText: React.FC<ImageTextProps> = ({
 
         {linkText ||
           (href && (
-            <Link href={href} target="_blank" variant="pink">
+            <Link href={href} target="_blank" colorScheme="orange">
               {`${linkText} +`}
             </Link>
           ))}

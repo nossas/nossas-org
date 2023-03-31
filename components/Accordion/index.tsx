@@ -71,7 +71,9 @@ export const NavigationItem: React.FC<{ data: Item }> = ({ data }) => {
 
           {data.navigation && (
             <Link href={data.navigation.href}>
-              <LinkStyled variant="pink">{data.navigation.title}</LinkStyled>
+              <LinkStyled colorScheme="orange">
+                {data.navigation.title}
+              </LinkStyled>
             </Link>
           )}
         </Stack>
