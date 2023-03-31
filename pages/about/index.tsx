@@ -161,7 +161,11 @@ const QuemSomos: React.FC = () => {
             <Text>{t("who-finances.description")}</Text>
 
             <Stack direction="row" spacing="20px">
-              <Donation size="sm" variant="pink" display={["none", "block"]}>
+              <Donation
+                size="sm"
+                colorScheme="blue"
+                display={["none", "block"]}
+              >
                 {t("who-finances.donate_action")}
               </Donation>
             </Stack>

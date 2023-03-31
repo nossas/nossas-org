@@ -28,17 +28,17 @@ const _default = {
     },
   },
   variants: {
-    solid: {
-      bg: "blue.main",
+    solid: (props) => ({
+      bg: `${props.colorScheme}.main`,
       color: "white",
       _hover: {
-        bg: "blue.light",
+        bg: `${props.colorScheme}.dark`,
         _disabled,
       },
       _active: {
-        bg: "blue.dark",
+        bg: `${props.colorScheme}.dark`,
       },
-    },
+    }),
     outline: {
       bg: "white",
       color: "blue.main",
@@ -87,6 +87,7 @@ const _default = {
   defaultProps: {
     size: "md",
     variant: "solid",
+    colorScheme: "orange",
   },
 };
 

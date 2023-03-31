@@ -11,13 +11,17 @@ const _default = {
   },
   blue: {
     dark: "#250086",
-    main: "#2D00A1",
+    main: "#163E86",
     light: "#3707B4",
   },
   pink: {
     dark: "#CC097B",
     main: "#FF0095",
     light: "#F10991",
+  },
+  orange: {
+    dark: "#EE4317",
+    main: "#FF5F36",
   },
 };
 

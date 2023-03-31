@@ -94,11 +94,7 @@ const NewsletterForm = ({ inverted }: any) => {
                           "footer.newsletter.form.email.placeholder"
                         )}
                       />
-                      <Button
-                        size="sm"
-                        variant="pink"
-                        onClick={handleSubmit as any}
-                      >
+                      <Button size="sm" onClick={handleSubmit as any}>
                         {t("footer.newsletter.form.submit")}
                       </Button>
                     </Stack>
