@@ -189,7 +189,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
       </Section>
 
       <Section direction="column" spacing="30px">
-        <Heading as="h2" color="pink.main">
+        <Heading as="h2" color="orange.main">
           <div
             dangerouslySetInnerHTML={{
               __html: t("campaigns.title", {

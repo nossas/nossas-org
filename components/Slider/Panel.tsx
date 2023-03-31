@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import { Heading, Img, Link, Stack, Text } from "@chakra-ui/react";
+import Arrow from "../IconsSVG/Arrow";
 
 type Item = {
   src: string;
@@ -46,12 +47,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => {
           {item.link ? (
             <>
               <span>{`${item.link}`}</span>
-              <Img
-                src="/static/media/icon-right-arrow-pink.png"
-                width="10px !important"
-                height="17px"
-                ml="19px"
-              />
+              <Arrow />
             </>
           ) : (
             t("know-more")

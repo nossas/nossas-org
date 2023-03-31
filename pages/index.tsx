@@ -29,7 +29,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
               }}
             />
           }
-          titleColor="pink.main"
+          titleColor="orange.main"
           description={t("header.description")}
         />
       </Section>

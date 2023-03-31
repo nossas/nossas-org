@@ -20,45 +20,40 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color }) => {
           href="https://instagram.com/_nossas"
           target="_blank"
           title="Instagram"
-          color={color}
         >
-          <Instagram />
+          <Instagram color={color} />
         </Link>
 
         <Link
           href="https://www.facebook.com/nossasorg/"
           target="_blank"
           title="Facebook"
-          color={color}
         >
-          <Facebook />
+          <Facebook color={color} />
         </Link>
 
         <Link
           href="https://www.twitter.com/_nossas"
           target="_blank"
           title="Twitter"
-          color={color}
         >
-          <Twitter />
+          <Twitter color={color} />
         </Link>
 
         <Link
           href="https://www.linkedin.com/company/nossas/"
           target="_blank"
           title="Linkedin"
-          color={color}
         >
-          <Linkedin />
+          <Linkedin color={color} />
         </Link>
 
         <Link
           href="https://www.youtube.com/nossas"
           target="_blank"
           title="Youtube"
-          color={color}
         >
-          <Youtube />
+          <Youtube color={color} />
         </Link>
       </Stack>
     </Stack>
@@ -66,7 +61,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color }) => {
 };
 
 SocialMedia.defaultProps = {
-  color: "pink.main",
+  color: "orange.main",
 };
 
 export default SocialMedia;

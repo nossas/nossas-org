@@ -27,7 +27,7 @@ export const DrawerInfo = ({ isOpen, handleClose, data }: DrawerInfoProps) => {
       <react.DrawerOverlay>
         <react.DrawerContent>
           <react.DrawerHeader
-            color="pink.main"
+            color="orange.main"
             textTransform="uppercase"
             fontFamily="Bebas Neue"
             fontSize="md"

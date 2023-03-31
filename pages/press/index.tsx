@@ -90,7 +90,7 @@ const Press: React.FC<WithUserAgentProps> = () => {
 
       <Section bgColor="gray.light">
         <Header
-          titleColor="pink.main"
+          titleColor="orange.main"
           title={
             <div
               dangerouslySetInnerHTML={{

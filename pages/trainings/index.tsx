@@ -48,7 +48,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
       </Section>
 
       <Section direction={["column"]} spacing={["30px"]}>
-        <Heading as="h2" color="pink.main">
+        <Heading as="h2" color="orange.main">
           <div
             dangerouslySetInnerHTML={{
               __html: t("now.title", {
@@ -136,7 +136,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
       </Section>
 
       <Section direction="column" spacing="30px">
-        <Heading as="h2" color="pink.main" size="lg" fontWeight="bold">
+        <Heading as="h2" color="orange.main" size="lg" fontWeight="bold">
           <div
             dangerouslySetInnerHTML={{
               __html: t("testimonials.title", {

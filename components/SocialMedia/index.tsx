@@ -13,24 +13,17 @@ const MediaLink = styled(Link)`
   :focus {
     box-shadow: none;
   }
-
-  svg {
-    path {
-      fill: ${(props) => props.color};
-    }
-  }
 `;
 
 const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
   const { t } = useTranslation("common");
 
   return (
-    <Stack alignItems="center" display="block" spacing={4}>
+    <Stack alignItems="center" display="block" spacing={3}>
       {!flat && (
         <Heading
           as="h5"
           color="blue.main"
-          mb={5}
           fontWeight="bold"
           size="md"
           maxW="190px"
@@ -38,62 +31,60 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
           {t("footer.social.title")}
         </Heading>
       )}
-
-      <Stack direction="row" spacing={5}>
+      <Stack direction="row" spacing={2}>
         <MediaLink
           href="https://instagram.com/_nossas"
           target="_blank"
           title="Instagram"
-          color={color}
         >
-          <Instagram />
+          <Instagram color={color} />
         </MediaLink>
         <MediaLink
           href="https://www.facebook.com/nossasorg/"
           target="_blank"
           title="Facebook"
-          color={color}
         >
-          <Facebook />
+          <Facebook color={color} />
         </MediaLink>
         <MediaLink
           href="https://www.twitter.com/_nossas"
           target="_blank"
           title="Twitter"
-          color={color}
         >
-          <Twitter />
+          <Twitter color={color} />
         </MediaLink>
         <MediaLink
           href="https://www.linkedin.com/company/nossas/"
           target="_blank"
           title="Linkedin"
-          color={color}
         >
-          <Linkedin />
+          <Linkedin color={color} />
         </MediaLink>
         <MediaLink
           href="https://www.youtube.com/nossas"
           target="_blank"
           title="Youtube"
-          color={color}
+          color="orange.main"
         >
-          <Youtube />
+          <Youtube color={color} />
         </MediaLink>
       </Stack>
       {!flat && (
-        <Img
-          maxWidth="200px"
-          src="static/media/footer/email.png"
-          alt="Email do Nossas"
-        />
+        <Stack>
+          <Img
+            mt={2}
+            maxWidth="200px"
+            src="static/media/footer/email.png"
+            alt="Email do Nossas"
+          />
+        </Stack>
       )}
     </Stack>
   );
 };
 
 SocialMedia.defaultProps = {
-  color: "pink.main",
+  color: "orange.main",
   flat: false,
 };
 

@@ -5,7 +5,7 @@ const ImpactNumber = ({ numberText, description }) => (
     <Heading
       as="span"
       size="lg"
-      color="pink.main"
+      color="orange.main"
       fontWeight="bold"
       lineHeight=".8"
     >

@@ -22,7 +22,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
       <Heading
         as="h2"
         size="lg"
-        color="pink.main"
+        color="orange.main"
         dangerouslySetInnerHTML={{
           __html: t("we-are-doing.title", {
             interpolation: { escapeValue: false },

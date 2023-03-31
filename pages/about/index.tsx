@@ -81,7 +81,7 @@ const QuemSomos: React.FC = () => {
             <Heading
               as="h2"
               size="lg"
-              color="pink.main"
+              color="orange.main"
               dangerouslySetInnerHTML={{
                 __html: t("impact.title", {
                   interpolation: { escapeValue: false },

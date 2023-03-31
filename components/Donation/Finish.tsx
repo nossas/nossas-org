@@ -13,7 +13,7 @@ const Finish: React.FC<FinishProps> = ({ name }) => {
 
   return (
     <SuccessPanel
-      color="pink.main"
+      color="orange.main"
       title={
         <div
           dangerouslySetInnerHTML={{
