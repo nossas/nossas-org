@@ -82,7 +82,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavSide = ({ children }) => (
-  <Stack spacing={[6, 8]} direction="row" alignItems="flex-end">
+  <Stack direction="row" alignItems="baseline">
     {children}
   </Stack>
 );

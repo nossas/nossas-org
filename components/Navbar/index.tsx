@@ -7,6 +7,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
@@ -199,7 +200,9 @@ const Navbar: React.FC = () => {
             </MenuItemGroup>
           </NavMobile>
           <NavLink href="/">
-            <NossasLogo />
+            <Stack>
+              <NossasLogo />
+            </Stack>
           </NavLink>
         </NavSide>
         <NavSide>
@@ -209,7 +212,7 @@ const Navbar: React.FC = () => {
           <Box display={["none", null, "block"]}>
             <I18n />
           </Box>
-          <Donation variant="outline">{t("navbar.donate")}</Donation>
+          <Donation>{t("navbar.donate")}</Donation>
         </NavSide>
       </Nav>
     </>
