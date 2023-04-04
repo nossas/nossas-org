@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  Flex,
   Button,
   Link as LinkStyled,
   Menu,
@@ -206,13 +207,15 @@ const Navbar: React.FC = () => {
           </NavLink>
         </NavSide>
         <NavSide>
-          <NavMenu>
-            <MenuItems variant="desktop" />
-          </NavMenu>
-          <Box display={["none", null, "block"]}>
-            <I18n />
-          </Box>
-          <Donation>{t("navbar.donate")}</Donation>
+          <Flex>
+            <NavMenu>
+              <MenuItems variant="desktop" />
+            </NavMenu>
+            <Box display={["none", null, "block"]}>
+              <I18n />
+            </Box>
+            <Donation>{t("navbar.donate")}</Donation>
+          </Flex>
         </NavSide>
       </Nav>
     </>

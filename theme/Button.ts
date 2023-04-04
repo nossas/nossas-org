@@ -79,6 +79,7 @@ const _default = {
       fontFamily: "Bebas Neue Pro",
       bg: "transparent",
       color: "white",
+      textTransform: "uppercase",
       fontSize: ["xs", "sm"],
       fontWeight: "bold",
       _hover: {
