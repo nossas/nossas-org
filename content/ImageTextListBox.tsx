@@ -24,7 +24,6 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
     <Heading as="h2" variant="tag" mb={16}>
       {title}
     </Heading>
-
     <Flex justify="center">
       <Stack
         direction={["column", "column", "column", "row"]}

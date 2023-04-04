@@ -4,12 +4,11 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
   Box,
-  Button,
   Heading,
-  Text,
   Link,
   Img as Image,
   SimpleGrid,
+  Stack,
 } from "@chakra-ui/react";
 
 import { Body, Section } from "../../components/Page";
@@ -17,12 +16,13 @@ import Hero from "../../components/Hero";
 import { ImageTextListBox } from "../../content";
 import { SliderPanel } from "../../components/Slider";
 import Header from "../../content/Header";
+import { Carousel } from "../../components/Slider";
+import { ImageTextIncubations } from "../../components/Slider/ImageTextIncubations";
 
 import {
   Computer,
-  MegaphonePink,
-  Email,
-  Subscription,
+  Megaphone,
+  Redes,
   Money,
 } from "../../components/IconsSVG/Functionalities";
 
@@ -64,57 +64,67 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
             description: t("functionalities.items.computer"),
           },
           {
-            icon: <Email />,
-            description: t("functionalities.items.email"),
+            icon: <Redes />,
+            description: t("functionalities.items.redes"),
+          },
+          {
+            icon: <Megaphone />,
+            description: t("functionalities.items.communication"),
           },
           {
             icon: <Money />,
             description: t("functionalities.items.money"),
           },
-          {
-            icon: <Subscription />,
-            description: t("functionalities.items.subscription"),
-          },
-          {
-            icon: <MegaphonePink />,
-            description: t("functionalities.items.communication"),
-          },
         ]}
       />
 
-      <Section>
-        <SimpleGrid
-          columns={[1, null, null, 2]}
-          templateColumns={["auto", null, null, "582px auto"]}
-          rowGap="30px"
-          alignItems="flex-start"
-        >
-          <Box>
-            <Image
-              src="/static/media/s3/computer.png"
-              alt="Computer Image"
-              transform="scale(0.8)"
-            />
-          </Box>
-          <Box>
-            <Heading as="h2" color="green" maxW="300px" size="lg">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: t("use.title", {
-                    interpolation: { escapeValue: false },
-                  }),
-                }}
-              />
-            </Heading>
-            <Text marginBottom="25px">{t("use.description")}</Text>
-            <Button
-              onClick={() => window.open("https://www.bonde.org/", "_target")}
-              maxW="190px"
-            >
-              {t("use.action")}
-            </Button>
-          </Box>
-        </SimpleGrid>
+      <Section direction="column" spacing={8}>
+        <Heading as="h2" size="lg" color="blue.main">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t("technologies.title", {
+                interpolation: { escapeValue: false },
+              }),
+            }}
+          />
+        </Heading>
+        <Carousel
+          infiniteLoop
+          showStatus
+          items={[
+            <ImageTextIncubations
+              src="/static/media/s3/bonde.png"
+              title={t("technologies.carousel.1.title")}
+              description={t("technologies.carousel.1.description")}
+              href="#"
+              linkText={t("technologies.carousel.1.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/pdp.png"
+              title={t("technologies.carousel.2.title")}
+              description={t("technologies.carousel.2.description")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/defezap.png"
+              title={t("technologies.carousel.3.title")}
+              description={t("technologies.carousel.3.description")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/mapadoacolhimento.png"
+              title={t("technologies.carousel.4.title")}
+              description={t("technologies.carousel.4.description")}
+              href="#"
+              linkText={t("technologies.carousel.4.action")}
+            />,
+            <ImageTextIncubations
+              src="/static/media/s3/beta.png"
+              title={t("technologies.carousel.5.title")}
+              description={t("technologies.carousel.5.description")}
+              href="#"
+              linkText={t("technologies.carousel.5.action")}
+            />,
+          ]}
+        />
       </Section>
 
       <Section

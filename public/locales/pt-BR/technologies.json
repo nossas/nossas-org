@@ -1,17 +1,45 @@
 {
     "cover": "Explore nossas tecnologias de ativismo",
     "begin": {
-        "title": "Assim surgiu <br/><strong>o BONDE</strong>",
-        "description": "Temos a ferramenta perfeita para espalhar sua causa por aí :) O BONDE é a plataforma criada pelo nosso time de tecnologia para movimentar nossas mobilizações: ela agora está disponível para outras organizações causarem também."
+        "title": "Tecnologia <br/><strong>e incidencia</strong>",
+        "description": "Há mais de dez anos fazemos experimentos e desenvolvemos tecnologias sociais para tornar o Brasil e a América Latina lugares mais justos, inclusivos e democráticos."
     },
     "functionalities": {
-        "title": "Funcionalidades",
+        "title": "Ferramentas",
         "items": {
-            "computer": "Crie páginas para suas campanhas de mobilização",
-            "email": "Pressione tomadores de decisão por email, telefone ou petição",
-            "money": "Faça um financiamento coletivo para o seu projeto",
-            "subscription": "Receba inscrições de voluntários para a sua causa",
-            "communication": "Crie uma rede de solidariedade e aumente o seu impacto"
+            "computer": "Criar rapidamente campanhas de pressão que causam impacto direto em políticas públicas",
+            "redes": "Conectar automaticamente mulheres em situação de risco com psicólogas e advogadas voluntárias na rede de solidariedade Mapa do Acolhimento",
+            "communication": "Se comunicar de forma eficiente por meio de chatbots de monitoramento legislativo, ação e divulgação de pautas importantes",
+            "money": "Desenvolver campanhas de financiamento coletivo com autonomia e sem intermediários"
+        }
+    },
+    "technologies": {
+        "title": "Nossas <strong>tecnologias</strong>",
+        "carousel": {
+            "1": {
+                "title": "BONDE",
+                "description": "Feito por ativistas para ativistas, o BONDE reuniu ferramentas para pressionar tomadores de decisao, levantar recursos, criar sites de campanha personalizados e levar causas pra rua.",
+                "action": "Saiba mais"
+            },
+            "2": {
+                "title": "PANELA DE PRESSÃO",
+                "description": "Nossa primeira tecnologia a serviço da participacao popular: com o Panela de Pressao, qualquer pessoa montava sua propria campanha, em poucos cliques. "
+            },
+            "3": {
+                "title": "DEFEZAP",
+                "description": "O Defezap e um sistema pioneiro de denúncias contra a violencia de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
+                "action": "Saiba mais"
+            },
+            "4": {
+                "title": "MAPA DO ACOLHIMENTO",
+                "description": "A plataforma do Mapa do Acolhimento conecta mulheres que sofrem violencia de genero a psicologas e advogadas voluntarias em questao de minutos.",
+                "action": "Saiba mais"
+            },
+            "5": {
+                "title": "BETA",
+                "description": "A primeira robo feminista do Facebook foi desenvolvida para acompanhar projetos de lei sobre direitos das mulheres e avisar quando havia cheiro de retrocesso no ar.",
+                "action": "Saiba mais"
+            }
         }
     },
     "use": {

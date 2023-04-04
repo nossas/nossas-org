@@ -1,5 +1,5 @@
 export { default as Computer } from "./Computer";
-export { default as MegaphonePink } from "./MegaphonePink";
+export { default as Megaphone } from "./Megaphone";
 export { default as Email } from "./Email";
 export { default as Subscription } from "./Subscription";
 export { default as Money } from "./Money";
@@ -15,3 +15,4 @@ export { default as MegaphoneYellow } from "./MegaphoneYellow";
 export { default as TransferPink } from "./TransferPink";
 export { default as ComputerBlue } from "./ComputerBlue";
 export { default as Trio } from "./Trio";
+export { default as Redes } from "./Redes";
