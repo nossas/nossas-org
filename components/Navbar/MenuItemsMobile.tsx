@@ -34,7 +34,7 @@ export const MenuItem: React.FC<ItemProps> = ({ name, submenus }) => (
   <AccordionItemCustom>
     <h2>
       <AccordionButton
-        fontFamily="Bebas Neue"
+        fontFamily="Bebas Neue Pro"
         fontSize="40px"
         color="white"
         fontWeight="bold"

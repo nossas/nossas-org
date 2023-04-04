@@ -37,7 +37,6 @@ const Donation: React.FC<DonationProps> = ({
   const { isOpen, onOpen, onClose } = disclosureOpts;
   const btnRef = React.useRef();
   // const t = (i18nKey: string, _?: any) => i18nKey;
-
   return (
     <Form>
       <Button

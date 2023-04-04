@@ -18,7 +18,7 @@ const _default = {
     },
     lg: {
       fontSize: ["lg"],
-      fontWeight: "700",
+      fontWeight: "400",
     },
   },
   variants: {

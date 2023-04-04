@@ -43,13 +43,7 @@ const WorkWithUs: React.FC = () => (
       <Stack alignItems="center" spacing={4}>
         <Trio />
 
-        <Text
-          fontFamily="Bebas Neue"
-          fontSize="30px"
-          color="black"
-          fontWeight="bold"
-          maxW="297px"
-        >
+        <Text fontSize="30px" color="black" fontWeight="bold" maxW="297px">
           Coordenador(a) de Operações
         </Text>
 

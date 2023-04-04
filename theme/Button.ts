@@ -5,7 +5,7 @@ const _disabled = {
 
 const _default = {
   baseStyle: {
-    fontFamily: "Bebas Neue",
+    fontFamily: "Bebas Neue Pro",
     _focus: {
       boxShadow: "none",
     },
@@ -25,7 +25,7 @@ const _default = {
       padding: "12px 24px",
     },
     lg: {
-      fontSize: "24px",
+      fontSize: "18px",
     },
   },
   variants: {
@@ -63,20 +63,20 @@ const _default = {
         bg: "pink.dark",
       },
     },
-    link: {
+    link: (props) => ({
       bg: "transparent",
-      color: "blue.main",
+      color: `${props.colorScheme}.main`,
       fontSize: ["sm", "md"],
       fontWeight: "600",
       lineHeight: "1.5",
       padding: 0,
       borderRadius: 0,
       _hover: {
-        color: "blue.light",
+        color: `${props.colorScheme}.dark`,
       },
-    },
+    }),
     menu: {
-      fontFamily: "Bebas Neue",
+      fontFamily: "Bebas Neue Pro",
       bg: "transparent",
       color: "white",
       fontSize: ["xs", "sm"],

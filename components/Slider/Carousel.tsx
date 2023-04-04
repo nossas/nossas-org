@@ -91,7 +91,7 @@ const CarouselStyled: React.FC<CarouselProps> = styled(
   }
 
   .carousel-status {
-    font-family: Bebas Neue;
+    font-family: Bebas Neue Pro;
     font-size: 30px;
     font-weight: 700;
     color: #bcbec0;

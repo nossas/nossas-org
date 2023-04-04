@@ -14,7 +14,7 @@ const _default = {
     primary: (props) => ({
       color: `${props.colorScheme}.main`,
       _hover: {
-        color: `${props.colorScheme}.light`,
+        color: `${props.colorScheme}.dark`,
       },
     }),
     nav: {

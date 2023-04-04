@@ -170,7 +170,9 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
               {t("sustainability.description")}
             </Text>
 
-            <Donation>{t("sustainability.navigate")}</Donation>
+            <Donation colorScheme="blue">
+              {t("sustainability.navigate")}
+            </Donation>
           </Stack>
         </SimpleGrid>
       </Section>

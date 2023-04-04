@@ -63,7 +63,7 @@ const Donation: React.FC<DonationProps> = ({ registerDonate, ...props }) => {
   // default props to tab
   const tabProps: any = {
     fontSize: "18px",
-    fontFamily: "Bebas Neue",
+    fontFamily: "Bebas Neue Pro",
     color: "gray.main",
     _selected: { color: "blue.neon" },
     textTransform: "uppercase",

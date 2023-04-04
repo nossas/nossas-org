@@ -12,15 +12,15 @@ import Menu from "./Menu";
 export const nossas = {
   fonts: {
     heading: "Bebas Neue Pro",
-    body: "Droid Sans",
+    body: "Bebas Neue Pro",
   },
   colors,
   fontSizes: {
-    xs: "16px",
-    sm: "21px",
-    md: "24px",
-    lg: "30px",
-    xl: "36px",
+    xs: "21px",
+    sm: "24px",
+    md: "32px",
+    lg: "36px",
+    // xl: "40px",
     "2xl": "40px",
     "3xl": "42px",
     "4xl": "60px",

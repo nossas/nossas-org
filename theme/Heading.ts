@@ -1,6 +1,6 @@
 const _default = {
   baseStyle: {
-    fontWeight: 200,
+    fontWeight: 400,
     textTransform: "uppercase",
   },
   sizes: {

@@ -29,7 +29,7 @@ export const DrawerInfo = ({ isOpen, handleClose, data }: DrawerInfoProps) => {
           <react.DrawerHeader
             color="orange.main"
             textTransform="uppercase"
-            fontFamily="Bebas Neue"
+            fontFamily="Bebas Neue Pro"
             fontSize="md"
           >
             {data.team}

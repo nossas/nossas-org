@@ -49,7 +49,7 @@ const Footer = () => {
             </ListItem>
 
             <ListItem>
-              <Donation variant="link">
+              <Donation variant="link" colorScheme="blue">
                 {t("footer.navigation.donate")}
               </Donation>
             </ListItem>
