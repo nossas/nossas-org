@@ -15,6 +15,17 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  font-family: Bebas Neue Pro Book;
+  color: gray.soft;
+}
+
+span {
+  font-family: Bebas Neue Pro;
+  font-size: 32px;
+  font-weight: 400;
+}
+
 /* Local Fonts */
 @font-face {
   font-family: "Bebas Neue";
@@ -23,6 +34,7 @@ a {
   font-weight: 100;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Bebas Neue";
   src: url("/fonts/BebasNeue/BebasNeue-Regular.ttf");
@@ -30,10 +42,27 @@ a {
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Bebas Neue";
   src: url("/fonts/BebasNeue/BebasNeue-Bold.ttf");
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue Pro";
+  src: url("/fonts/BebasNeuePro/Bebas Neue Pro Bold.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue Pro Book";
+  src: url("/fonts/BebasNeuePro/Bebas Neue Pro Book.otf");
+  font-style: normal;
+  font-weight: 800;
   font-display: swap;
 }

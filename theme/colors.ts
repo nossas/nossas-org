@@ -8,6 +8,7 @@ const _default = {
     dark: "#424242",
     main: "#AAAAAA",
     light: "#EEEEEE",
+    soft: "#606373",
   },
   blue: {
     dark: "#250086",

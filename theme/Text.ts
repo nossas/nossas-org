@@ -1,6 +1,7 @@
 const _default = {
   defaultStyles: {
     fontWeight: "normal",
+    fontFamily: "Beba Neue Pro",
   },
   sizes: {
     xs: {
@@ -16,9 +17,8 @@ const _default = {
       fontWeight: "normal",
     },
     lg: {
-      fontSize: ["lg", "md", "xl", "3xl", "4xl"],
+      fontSize: ["lg"],
       fontWeight: "700",
-      textTransform: "uppercase",
     },
   },
   variants: {

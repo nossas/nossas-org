@@ -11,7 +11,7 @@ import Menu from "./Menu";
 
 export const nossas = {
   fonts: {
-    heading: "Bebas Neue",
+    heading: "Bebas Neue Pro",
     body: "Droid Sans",
   },
   colors,
