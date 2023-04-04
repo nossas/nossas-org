@@ -96,7 +96,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
               src="/static/media/s3/bonde.png"
               title={t("technologies.carousel.1.title")}
               description={t("technologies.carousel.1.description")}
-              href="#"
+              href="https://bonde.org/"
               linkText={t("technologies.carousel.1.action")}
             />,
             <ImageTextIncubations
@@ -108,19 +108,21 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
               src="/static/media/s3/defezap.png"
               title={t("technologies.carousel.3.title")}
               description={t("technologies.carousel.3.description")}
+              href="https://www.defezap.org.br/"
+              linkText={t("technologies.carousel.3.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/mapadoacolhimento.png"
               title={t("technologies.carousel.4.title")}
               description={t("technologies.carousel.4.description")}
-              href="#"
+              href="https://www.mapadoacolhimento.org/"
               linkText={t("technologies.carousel.4.action")}
             />,
             <ImageTextIncubations
               src="/static/media/s3/beta.png"
               title={t("technologies.carousel.5.title")}
               description={t("technologies.carousel.5.description")}
-              href="#"
+              href="https://www.beta.org.br/"
               linkText={t("technologies.carousel.5.action")}
             />,
           ]}
