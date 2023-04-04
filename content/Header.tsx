@@ -19,7 +19,11 @@ const Header: React.FC<HeaderProps> = ({ title, titleColor, description }) => (
         {title}
       </Heading>
     </Box>
-    {typeof description === "string" ? <Text>{description}</Text> : description}
+    {typeof description === "string" ? (
+      <Text size="lg">{description}</Text>
+    ) : (
+      description
+    )}
   </SimpleGrid>
 );
 

@@ -62,7 +62,11 @@ const SliderPanel: React.FC<Props> = ({ items, infiniteLoop, columns = 2 }) => {
       infiniteLoop={infiniteLoop}
       isMobile={isMobile}
       items={renderGroupItems.map((items: any) => (
-        <SimpleGrid columns={items.length} columnGap="20px">
+        <SimpleGrid
+          columns={items.length}
+          columnGap="20px"
+          textTransform="uppercase"
+        >
           {items}
         </SimpleGrid>
       ))}
