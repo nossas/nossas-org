@@ -44,24 +44,5 @@
                 "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los."
             }
         }
-    },
-    "current-projects": {
-        "title": "Projetos <strong>Atuais</strong>",
-        "carousel": {
-            "1": {
-                "title": "Mapa do acolhimento",
-                "description": "O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
-                "action": "Saiba mais"
-            }
-        }
-    },
-    "incubate": {
-        "title": "Incube seu <strong>projeto</strong>",
-        "description": "Sua organização tem um projeto incrível que pode gerar impacto em sua comunidade, mas precisa de um empurrãozinho para colocá-lo no mundo? Nossa incubadora foi feita pra você! Inscreva-se ao lado, entraremos em contato em breve para que vocês nos contem um pouco mais :)",
-        "form": {
-            "title": "Inscreva-se",
-            "submit": "Enviar",
-            "success": "Recebemos sua inscrição! Em até duas semanas entraremos em contato para conversarmos sobre seu projeto :) Boa sorte!"
-        }
     }
 }

@@ -2,18 +2,13 @@ import React from "react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Heading, Img } from "@chakra-ui/react";
+import { Img } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { Carousel } from "../../components/Slider";
-import {
-  Header,
-  DescriptionBox,
-  SubscribeForm,
-  ImageTextListBox,
-} from "../../content";
+import { Header, ImageTextListBox } from "../../content";
 import {
   MegaphoneGreen,
   People,
@@ -31,7 +26,7 @@ ImageIcon.defaultProps = {
 };
 
 const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
-  const { t, i18n } = useTranslation("incubations");
+  const { t } = useTranslation("incubations");
 
   return (
     <Body>
@@ -118,7 +113,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               linkText={t("projects.carousel.2.action")}
             />,
             <ImageTextIncubations
-              src="/static/media/s3/defezap.jpg"
+              src="/static/media/s3/defezap.png"
               title={t("projects.carousel.3.title")}
               description={t("projects.carousel.3.description")}
             />,
@@ -144,55 +139,6 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           ]}
         />
       </Section>
-      <Section direction="column" spacing="30px">
-        <Heading
-          as="h2"
-          color="green"
-          size="lg"
-          dangerouslySetInnerHTML={{
-            __html: t("current-projects.title", {
-              interpolation: { escapeValue: false },
-            }),
-          }}
-        />
-
-        <Carousel
-          isMobile={ua?.isMobile || false}
-          items={[
-            <ImageTextIncubations
-              src="/static/media/s3/mapadoacolhimento.png"
-              title={t("current-projects.carousel.1.title")}
-              description={t("current-projects.carousel.1.description")}
-              href="https://www.mapadoacolhimento.org/"
-              linkText={t("current-projects.carousel.1.action")}
-            />,
-          ]}
-        />
-      </Section>
-
-      {i18n.language === "pt-BR" && (
-        <DescriptionBox
-          color="pink"
-          title={
-            <div
-              dangerouslySetInnerHTML={{
-                __html: t("incubate.title", {
-                  interpolation: { escapeValue: false },
-                }),
-              }}
-            />
-          }
-          description={t("incubate.description")}
-        >
-          <SubscribeForm
-            color="blue"
-            kind="incubations"
-            title={t("incubate.form.title")}
-            submitText={t("incubate.form.submit")}
-            textSuccess={t("incubate.form.success")}
-          />
-        </DescriptionBox>
-      )}
     </Body>
   );
 };
