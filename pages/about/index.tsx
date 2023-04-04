@@ -16,7 +16,12 @@ import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
 import { ContentMedia } from "../../content/ContentMedia";
 import Timeline from "./_timeline";
-import { BoardMembers, TeamMembers, LeadersMembers } from "./_team";
+import {
+  BoardMembers,
+  FounderMembers,
+  TeamMembers,
+  LeadersMembers,
+} from "./_team";
 
 const QuemSomos: React.FC = () => {
   const { t } = useTranslation("about");
@@ -124,6 +129,7 @@ const QuemSomos: React.FC = () => {
       {/* Equipe */}
       <Section spacing={["60px", null, null, null, "100px"]}>
         <BoardMembers />
+        <FounderMembers />
         <LeadersMembers />
         <TeamMembers />
       </Section>

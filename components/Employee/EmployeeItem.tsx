@@ -57,12 +57,13 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
         <Image
           src={data.avatar}
           boxSize="100%"
+          height="190px"
           objectFit="cover"
           transition="all 0.2s ease-out"
           transform={open ? "scale(1.1)" : "scale(1.0)"}
         />
 
-        {open && (
+        {open ? (
           <Fade in={open} unmountOnExit={true}>
             <Stack
               width="100%"
@@ -84,6 +85,16 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
               </Text>
             </Stack>
           </Fade>
+        ) : (
+          <Stack
+            width="100%"
+            height="100%"
+            position="absolute"
+            top="0"
+            padding="12px"
+            bg="linear-gradient(180deg, rgba(81, 32, 206, 0.2) 0%, rgba(45, 0, 161, 0.2) 100%)"
+            cursor="pointer"
+          />
         )}
       </Box>
 

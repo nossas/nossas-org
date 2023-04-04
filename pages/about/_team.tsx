@@ -51,6 +51,32 @@ export const BoardMembers: React.FC = () => {
   );
 };
 
+export const FounderMembers: React.FC = () => {
+  const { t } = useTranslation("about");
+
+  return (
+    <EmployeeTeam
+      title={t("teams.founders.title")}
+      members={[
+        {
+          avatar: "/static/media/team/alessandra-orofino.png",
+          name: "Alessandra Orofino",
+          role: t("teams.founders.alessandra.role"),
+          about: t("teams.founders.alessandra.about"),
+          team: t("teams.founders.title"),
+        },
+        {
+          avatar: "/static/media/team/miguel-lago.png",
+          name: "Miguel Lago",
+          role: t("teams.founders.miguel.role"),
+          about: t("teams.founders.miguel.about"),
+          team: t("teams.founders.title"),
+        },
+      ]}
+    />
+  );
+};
+
 export const LeadersMembers: React.FC = () => {
   const { t } = useTranslation("about");
 
@@ -59,17 +85,10 @@ export const LeadersMembers: React.FC = () => {
       title={t("teams.leaders.title")}
       members={[
         {
-          avatar: "/static/media/team/alessandra-orofino.png",
-          name: "Alessandra Orofino",
-          role: t("teams.leaders.alessandra.role"),
-          about: t("teams.leaders.alessandra.about"),
-          team: t("teams.leaders.title"),
-        },
-        {
-          avatar: "/static/media/team/enrica-duncan.png",
-          name: "Enrica Duncan",
-          role: t("teams.leaders.enrica.role"),
-          about: t("teams.leaders.enrica.about"),
+          avatar: "/static/media/team/aurea-carolina.png",
+          name: "Áurea Carolina",
+          role: t("teams.leaders.aurea.role"),
+          about: t("teams.leaders.aurea.about"),
           team: t("teams.leaders.title"),
         },
         {
@@ -135,13 +154,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/ana-beatriz.png",
-          name: "Ana Beatriz",
-          role: t("teams.team.anabeatriz.role"),
-          about: t("teams.team.anabeatriz.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/ana-claudia.png",
           name: "Ana Claudia",
           role: t("teams.team.anaclaudia.role"),
@@ -156,10 +168,17 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/carol.png",
+          avatar: "/static/media/team/carolina.png",
           name: "Carolina",
           role: t("teams.team.carolina.role"),
           about: t("teams.team.carolina.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/carol-abreu.png",
+          name: "Carol",
+          role: t("teams.team.carol.role"),
+          about: t("teams.team.carol.about"),
           team: t("teams.team.title"),
         },
         {
@@ -177,13 +196,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/cledisson-junior.png",
-          name: "Cledisson",
-          role: t("teams.team.cledisson.role"),
-          about: t("teams.team.cledisson.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/danielle.png",
           name: "Danielle",
           role: t("teams.team.danielle.role"),
@@ -195,20 +207,6 @@ export const TeamMembers: React.FC = () => {
           name: "Fabiana",
           role: t("teams.team.fabiana.role"),
           about: t("teams.team.fabiana.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/fabio.png",
-          name: "Fábio",
-          role: t("teams.team.fabio.role"),
-          about: t("teams.team.fabio.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/gabriela-silva.png",
-          name: "Gabriela",
-          role: t("teams.team.gabriela.role"),
-          about: t("teams.team.gabriela.about"),
           team: t("teams.team.title"),
         },
         {
@@ -254,31 +252,10 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/isabel-pessanha.png",
-          name: "Isabel",
-          role: t("teams.team.isabel.role"),
-          about: t("teams.team.isabel.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/isabella.jpg",
-          name: "Isabella",
-          role: t("teams.team.isabella.role"),
-          about: t("teams.team.isabella.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/jerlan.jpg",
           name: "Jerlan",
           role: t("teams.team.jerlan.role"),
           about: t("teams.team.jerlan.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/juliana.jpg",
-          name: "Juliana",
-          role: t("teams.team.juliana.role"),
-          about: t("teams.team.juliana.about"),
           team: t("teams.team.title"),
         },
         {
@@ -293,13 +270,6 @@ export const TeamMembers: React.FC = () => {
           name: "Karina",
           role: t("teams.team.karina.role"),
           about: t("teams.team.karina.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/karol.jpg",
-          name: "Karol",
-          role: t("teams.team.karol.role"),
-          about: t("teams.team.karol.about"),
           team: t("teams.team.title"),
         },
         {
@@ -331,27 +301,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/livia-merlin.png",
-          name: "Lívia",
-          role: t("teams.team.livia.role"),
-          about: t("teams.team.livia.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/luana.png",
-          name: "Luana",
-          role: t("teams.team.luana.role"),
-          about: t("teams.team.luana.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/lucas-pirola.png",
-          name: "Lucas",
-          role: t("teams.team.pirola.role"),
-          about: t("teams.team.pirola.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/luciana-travassos.png",
           name: "Luciana",
           role: t("teams.team.luciana.role"),
@@ -366,20 +315,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/manuela.png",
-          name: "Manuela",
-          role: t("teams.team.manuela.role"),
-          about: t("teams.team.manuela.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/márcia.png",
-          name: "Márcia",
-          role: t("teams.team.marcia.role"),
-          about: t("teams.team.marcia.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/maria-alice.png",
           name: "Maria Alice",
           role: t("teams.team.maria-alice.role"),
@@ -387,17 +322,17 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/maria-julia.jpg",
+          name: "Maria Julia",
+          role: t("teams.team.maria-julia.role"),
+          about: t("teams.team.maria-julia.about"),
+          team: t("teams.team.title"),
+        },
+        {
           avatar: "/static/media/team/matheus.png",
           name: "Matheus",
           role: t("teams.team.matheus.role"),
           about: t("teams.team.matheus.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/paula.jpg",
-          name: "Paula",
-          role: t("teams.team.paula.role"),
-          about: t("teams.team.paula.about"),
           team: t("teams.team.title"),
         },
         {
@@ -415,10 +350,10 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/sany-cristina.png",
-          name: "Sany",
-          role: t("teams.team.sany.role"),
-          about: t("teams.team.sany.about"),
+          avatar: "/static/media/team/romulo.jpg",
+          name: "Romulo",
+          role: t("teams.team.romulo.role"),
+          about: t("teams.team.romulo.about"),
           team: t("teams.team.title"),
         },
         {
@@ -431,22 +366,8 @@ export const TeamMembers: React.FC = () => {
         {
           avatar: "/static/media/team/sarah-cristina.png",
           name: "Sarah",
-          role: t("teams.team.sarah1.role"),
-          about: t("teams.team.sarah1.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/tayna-araujo.png",
-          name: "Tayná",
-          role: t("teams.team.tayna.role"),
-          about: t("teams.team.tayna.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/thalita-queiroz.png",
-          name: "Thalita",
-          role: t("teams.team.thalita.role"),
-          about: t("teams.team.thalita.about"),
+          role: t("teams.team.sarah-cristina.role"),
+          about: t("teams.team.sarah-cristina.about"),
           team: t("teams.team.title"),
         },
         {
