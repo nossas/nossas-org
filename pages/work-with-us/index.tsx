@@ -1,7 +1,7 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Box, Heading, Link, Stack, SimpleGrid } from "@chakra-ui/layout";
-import { Button, Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Stack, SimpleGrid } from "@chakra-ui/layout";
+import { Image, Text } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
@@ -25,12 +25,11 @@ const WorkWithUs: React.FC = () => (
           </>
         }
         description={`
-          O NOSSAS é uma organização que impulsiona o ativismo democrático e
-          solidário no Brasil. Juntos, nossos membros defendem a democracia e
-          fazem pressão pública por um país mais justo e solidário. Somos uma
-          organização sem fins lucrativos e por trás de tudo isso estão pessoas:
-          mobilizadores, programadores, psicólogas, advogadas, comunicadores,
-          cientistas de dados, designers.
+          O NOSSAS é uma organização que impulsiona o ativismo democrático 
+          e solidário no Brasil. Juntos, defendemos a democracia e fazemos 
+          pressão pública por um país mais justo. Somos uma organização sem 
+          fins lucrativos e por trás de tudo isso estão pessoas: mobilizadoras, 
+          programadoras, comunicadoras, cientistas de dados, designers.
         `}
       />
     </Section>
@@ -42,29 +41,16 @@ const WorkWithUs: React.FC = () => (
 
       <Stack alignItems="center" spacing={4}>
         <Trio />
-
-        <Text fontSize="30px" color="black" fontWeight="bold" maxW="297px">
-          Coordenador(a) de Operações
-        </Text>
-
-        <Link
-          href="https://nossas.recruitee.com/o/coordenadora-de-operacoes-administrativorecursos-humanos"
-          target="blank"
+        <Text
+          fontFamily="Bebas Neue"
+          fontSize="30px"
+          color="black"
+          maxW="297px"
+          textAlign="center"
         >
-          <Button size="sm" width="140px">
-            Saiba mais
-          </Button>
-        </Link>
+          Quando abrirmos novas vagas, elas estarão aqui!
+        </Text>
       </Stack>
-
-      {/* <Stack
-        maxW="1600px"
-        direction={["column", "column", "row"]}
-        spacing={[10, 14, 20, 138, 188]}
-        justifyContent="center"
-        textAlign="center"
-      >
-      </Stack> */}
     </Section>
 
     <Section display="flex">
@@ -82,13 +68,16 @@ const WorkWithUs: React.FC = () => (
             margin="0 auto"
           />
         </Box>
-        <Text textAlign={["center", null, null, "left"]}>
-          Somos uma equipe comprometida com justiça e equidade, mas nossa
-          composição ainda não reflete de forma adequada a diversidade do país
-          onde vivemos. Por isso, em nossos processos seletivos priorizamos a
-          candidatura de pessoas não-brancas (pretas, pardas e indígenas),
-          pessoas trans e moradoras de periferias do Brasil.
-        </Text>
+        <Stack>
+          <Heading size="md">POLÍTICA AFIRMATIVA</Heading>
+          <Text textAlign={["center", null, null, "left"]}>
+            Somos uma equipe comprometida com justiça e equidade, mas nossa
+            composição ainda não reflete de forma adequada a diversidade do país
+            onde vivemos. Por isso, em nossos processos seletivos priorizamos a
+            candidatura de pessoas não-brancas (pretas, pardas e indígenas),
+            pessoas trans e moradoras de periferias do Brasil.
+          </Text>
+        </Stack>
       </SimpleGrid>
     </Section>
   </Body>

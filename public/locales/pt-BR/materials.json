@@ -1,19 +1,19 @@
 {
-    "cover": "Faça você mesmo sua própria campanha de impacto!",
+    "cover": "Faça você mesmo uma campanha de mobilização!",
     "manual": {
         "title": "Baixe agora <br/><strong>seu manual</strong>",
         "description": "Nosso manual de mobilização resume muito do que aprendemos em uma década de experiência com ativismo no Brasil. Saiba também como mobilizar pessoas em torno de causas e organizá-las em redes de solidariedade.",
         "action": "Baixar manual",
         "explain": {
             "title": "O que você pode aprender com o manual?",
-            "1": "Identificar qual mudança você quer no mundo e traçar estratégias para alcançar seu objetivo",
+            "1": "Identificar a mudança que você quer no mundo e traçar estratégias para alcançar seu objetivo",
             "2": "Entender como e quem pressionar, além de saber quem é o público que pode se mobilizar com você",
             "3": "Criar narrativas interessantes que mobilizem seu público nas redes sociais e em outros espaços de convivência"
         }
     },
     "mobilization": {
         "title": "Manual de <b>mobilização</b>",
-        "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa de informação para construir campanhas de impacto.",
+        "description": "Ao longo dos 10 capítulos você vai encontrar referências, casos de sucesso, exercícios e tudo que você precisa para construir campanhas de impacto.",
         "form": {
             "title": "Baixar manual",
             "submit": "Baixar",

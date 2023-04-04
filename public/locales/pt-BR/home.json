@@ -2,33 +2,33 @@
     "cover": "O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL",
     "header": {
         "title": "Junte-se <strong>a nós</strong>",
-        "description": "O NOSSAS apoia indivíduos, coletivos e organizações em sua luta por direitos e melhores políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a criação de mobilizações de impacto. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
+        "description": "O NOSSAS apoia ativistas, coletivos e organizações na luta por direitos e incidência nas políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a mobilização social. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
     },
     "navigation": {
         "join-us": {
             "title": "Participe de uma de <br/><strong>nossas campanhas</strong>",
-            "about": "Conheça as causas nas quais estamos engajados no momento e participe de nossa luta pela defesa de direitos e fortalecimento da democracia.",
+            "about": "Conheça as mobilizações que estamos apoiando e participe da nossa luta em defesa de direitos e fortalecimento da democracia.",
             "navigate": "Veja as campanhas ativas"
         },
         "materials": {
             "title": "Acesse nossos <br/><strong>materiais educativos</strong>",
-            "about": "Disponibilizamos um material super completo e com várias dicas para ajudar seu coletivo ou organização a aumentar o seu impacto.",
-            "navigate": "Acesse a página"
+            "about": "Disponibilizamos orientações e dicas para ajudar seu coletivo ou organização a mobilizar outras pessoas em torno de causas importantes. ",
+            "navigate": "Acesse nossos materiais"
         },
         "trainings": {
-            "title": "Seja treinado em <br/><strong>metodologias de ativismo</strong>",
-            "about": "Realizamos ao longo do ano programas de treinamento em ativismo, temáticos e gratuitos, para pessoas do Brasil inteiro. Veja quais turmas estão abertas agora.",
-            "navigate": "Confira nosso cronograma"
+            "title": "Participe de treinamentos em <br/><strong>metodologias de ativismo</strong>",
+            "about": "Realizamos programas periódicos, temáticos e gratuitos para compartilhar nossa metodologia com pessoas do Brasil inteiro.",
+            "navigate": "Confira as turmas abertas"
         },
         "incubations": {
-            "title": "Incube seu <br/><strong>projeto conosco</strong>",
-            "about": "Receba capacitação, apoio e mentoria através do programa de incubação. Nós aceleramos projetos de mobilização e solidariedade que querem causar impacto no mundo.",
-            "navigate": "Acesse a página"
+            "title": "Conheça projetos que <br/><strong>incubamos</strong>",
+            "about": "Por meio do programa de incubação, oferecemos capacitação, apoio e mentoria para acelerar projetos de mobilização e solidariedade que querem causar impacto no mundo.",
+            "navigate": "Saiba mais"
         },
         "technologies": {
-            "title": "Use as melhores <br/><strong>tecnologias de ativismo</strong>",
-            "about": "Conheça o BONDE, nossa plataforma de tecnologia, especialmente desenvolvida para ativistas amadores ou experientes criarem suas campanhas sob medida.",
-            "navigate": "Conheça o BONDE"
+            "title": "Explore as melhores <br/><strong>tecnologias de ativismo</strong>",
+            "about": "Fazemos experimentos e criamos ferramentas para fortalecer o ativismo brasileiro e latino-americano.",
+            "navigate": "Saiba mais"
         }
     },
     "sustainability": {
