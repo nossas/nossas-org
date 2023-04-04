@@ -5,6 +5,7 @@ const _disabled = {
 
 const _default = {
   baseStyle: {
+    fontFamily: "Bebas Neue",
     _focus: {
       boxShadow: "none",
     },
@@ -24,13 +25,14 @@ const _default = {
       padding: "12px 24px",
     },
     lg: {
-      fontSize: "18px",
+      fontSize: "24px",
     },
   },
   variants: {
     solid: (props) => ({
       bg: `${props.colorScheme}.main`,
       color: "white",
+      textTransform: "uppercase",
       _hover: {
         bg: `${props.colorScheme}.dark`,
         _disabled,
