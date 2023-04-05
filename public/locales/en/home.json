@@ -1,39 +1,39 @@
 {
-    "cover": "NOSSAS CATALYZES DEMOCRATIC AND SOLIDARITY-BASED ACTIVISM IN BRAZIL AND LATIN AMERICA",
-    "header": {
-        "title": "Join <strong>us</strong>",
-        "description": "NOSSAS helps individuals, collectives and organizations in their struggle for justice. We share opportunities for action, methodologies and tools for creating impactful mobilizations. Explore our offering to understand how we support activism in our region!"
+  "cover": "NOSSAS CATALYZES DEMOCRATIC AND SOLIDARITY-BASED ACTIVISM IN BRAZIL AND LATIN AMERICA",
+  "header": {
+    "title": "Join <strong>us</strong>",
+    "description": "NOSSAS supports activists, collectives and organizations in their struggle for justice. We share opportunities for action, methodologies and tools for creating impactful mobilizations. Explore our offering to understand how we support activism in our region!"
+  },
+  "navigation": {
+    "join-us": {
+      "title": "Discover our <br/><strong>campaigns</strong>",
+      "about": "Find out the causes in which NOSSAS is currently engaged in and follow our most recent campaigning efforts",
+      "navigate": "See active campaigns"
     },
-    "navigation": {
-        "join-us": {
-            "title": "Discover our <br/><strong>campaigns</strong>",
-            "about": "Find out the causes in which NOSSAS is currently engaged in and follow our most recent campaigning efforts",
-            "navigate": "See active campaigns"
-        },
-        "materials": {
-            "title": "Access our <br/><strong>educational materials</strong>",
-            "about": "NOSSAS offers educational materials with several tips to help collectives or organizations increase their impact.",
-            "navigate": "Download our manuals"
-        },
-        "trainings": {
-            "title": "Find out more about our <br/><strong>trainings</strong>",
-            "about": "Throughout the year, NOSSAS carries out free activism training programs on different themes for people all over Brazil. Find out how the program works.",
-            "navigate": "Check our schedule"
-        },
-        "incubations": {
-            "title": " Learn about our <br/><strong>incubations</strong>",
-            "about": "NOSSAS’ incubation program offers training, technology, support and mentoring to help new activist projects get off the ground.",
-            "navigate": "Discover our incubations"
-        },
-        "technologies": {
-            "title": "Understand our <br/><strong>tech solutions</strong>",
-            "about": "Our technology platform, BONDE, is custom developed for activists beyond NOSSAS to create their campaigns.",
-            "navigate": "Discover BONDE"
-        }
+    "materials": {
+      "title": "Access our <br/><strong>educational materials</strong>",
+      "about": "NOSSAS offers educational materials with several tips to help collectives or organizations increase their impact.",
+      "navigate": "Download our manuals"
     },
-    "sustainability": {
-        "donate": "Make a <strong>donation</strong>",
-        "description": "NOSSAS is funded by donations from individuals and foundations who believe in our work and the impact we wish to have on the world. The organization does not accept money from political parties and our accounts are audited every year by independent professionals. Here's how to donate!",
-        "navigate": "I want to make a donation"
+    "trainings": {
+      "title": "Find out more about our <br/><strong>trainings</strong>",
+      "about": "Throughout the year, NOSSAS carries out free activism training programs on different themes for people all over Brazil. Find out how the program works.",
+      "navigate": "Check our schedule"
+    },
+    "incubations": {
+      "title": " Learn about our <br/><strong>incubations</strong>",
+      "about": "NOSSAS’ incubation program offers training, technology, support and mentoring to help new activist projects get off the ground.",
+      "navigate": "Discover our incubations"
+    },
+    "technologies": {
+      "title": "Explore our <br/><strong>tech solutions</strong>",
+      "about": "We experiment and create tools to strengthen Brazilian and Latin American activism.",
+      "navigate": "Learn more"
     }
+  },
+  "sustainability": {
+    "donate": "Make a <strong>donation</strong>",
+    "description": "NOSSAS is funded by donations from individuals and foundations who believe in our work and the impact we wish to have on the world. The organization does not accept money from political parties and our accounts are audited every year by independent professionals. Here's how to donate!",
+    "navigate": "I want to make a donation"
+  }
 }

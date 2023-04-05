@@ -1,39 +1,39 @@
 {
-    "cover": "O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL",
-    "header": {
-        "title": "Junte-se <strong>a nós</strong>",
-        "description": "O NOSSAS apoia ativistas, coletivos e organizações na luta por direitos e incidência nas políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a mobilização social. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
+  "cover": "O NOSSAS IMPULSIONA O ATIVISMO SOLIDÁRIO E DEMOCRÁTICO NO BRASIL",
+  "header": {
+    "title": "Junte-se <strong>a nós</strong>",
+    "description": "O NOSSAS apoia ativistas, coletivos e organizações na luta por direitos e incidência nas políticas públicas. Compartilhamos oportunidades de ação, metodologias e ferramentas para a mobilização social. Explore nosso espaço de ativismo e impulsione seu movimento com a gente!"
+  },
+  "navigation": {
+    "join-us": {
+      "title": "Participe de uma de <br/><strong>nossas campanhas</strong>",
+      "about": "Conheça as mobilizações que estamos apoiando e participe da nossa luta em defesa de direitos e fortalecimento da democracia.",
+      "navigate": "Veja as campanhas ativas"
     },
-    "navigation": {
-        "join-us": {
-            "title": "Participe de uma de <br/><strong>nossas campanhas</strong>",
-            "about": "Conheça as mobilizações que estamos apoiando e participe da nossa luta em defesa de direitos e fortalecimento da democracia.",
-            "navigate": "Veja as campanhas ativas"
-        },
-        "materials": {
-            "title": "Acesse nossos <br/><strong>materiais educativos</strong>",
-            "about": "Disponibilizamos orientações e dicas para ajudar seu coletivo ou organização a mobilizar outras pessoas em torno de causas importantes. ",
-            "navigate": "Acesse nossos materiais"
-        },
-        "trainings": {
-            "title": "Participe de treinamentos em <br/><strong>metodologias de ativismo</strong>",
-            "about": "Realizamos programas periódicos, temáticos e gratuitos para compartilhar nossa metodologia com pessoas do Brasil inteiro.",
-            "navigate": "Confira as turmas abertas"
-        },
-        "incubations": {
-            "title": "Conheça projetos que <br/><strong>incubamos</strong>",
-            "about": "Por meio do programa de incubação, oferecemos capacitação, apoio e mentoria para acelerar projetos de mobilização e solidariedade que querem causar impacto no mundo.",
-            "navigate": "Saiba mais"
-        },
-        "technologies": {
-            "title": "Explore as melhores <br/><strong>tecnologias de ativismo</strong>",
-            "about": "Fazemos experimentos e criamos ferramentas para fortalecer o ativismo brasileiro e latino-americano.",
-            "navigate": "Saiba mais"
-        }
+    "materials": {
+      "title": "Acesse nossos <br/><strong>materiais educativos</strong>",
+      "about": "Disponibilizamos orientações e dicas para ajudar seu coletivo ou organização a mobilizar outras pessoas em torno de causas importantes. ",
+      "navigate": "Acesse nossos materiais"
     },
-    "sustainability": {
-        "donate": "Faça uma <strong>doação</strong>",
-        "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho. Não recebemos dinheiro de concessionárias de serviços públicos, empresas privadas ou partidos políticos, e auditamos anualmente nossas contas com profissionais independentes. Contribua você também!",
-        "navigate": "Quero doar"
+    "trainings": {
+      "title": "Participe de treinamentos em <br/><strong>metodologias de ativismo</strong>",
+      "about": "Realizamos programas periódicos, temáticos e gratuitos para compartilhar nossa metodologia com pessoas do Brasil inteiro.",
+      "navigate": "Confira as turmas abertas"
+    },
+    "incubations": {
+      "title": "Conheça projetos que <br/><strong>incubamos</strong>",
+      "about": "Por meio do programa de incubação, oferecemos capacitação, apoio e mentoria para acelerar projetos de mobilização e solidariedade que querem causar impacto no mundo.",
+      "navigate": "Saiba mais"
+    },
+    "technologies": {
+      "title": "Explore as melhores <br/><strong>tecnologias de ativismo</strong>",
+      "about": "Fazemos experimentos e criamos ferramentas para fortalecer o ativismo brasileiro e latino-americano.",
+      "navigate": "Saiba mais"
     }
+  },
+  "sustainability": {
+    "donate": "Faça uma <strong>doação</strong>",
+    "description": "O NOSSAS vive de doações de pessoas e fundações que acreditam em nosso trabalho. Não recebemos dinheiro de concessionárias de serviços públicos, empresas privadas ou partidos políticos, e auditamos anualmente nossas contas com profissionais independentes. Contribua você também!",
+    "navigate": "Quero doar"
+  }
 }
