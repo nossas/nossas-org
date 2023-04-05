@@ -191,17 +191,48 @@ const QuemSomos: React.FC = () => {
           </SimpleGrid>
 
           <SimpleGrid
-            columns={[2, null, null, null, 5]}
+            columns={[2, null, null, null, 4]}
             rowGap={["20px", null, null, null, "45px"]}
-            columnGap="20px"
             pt="75px"
           >
-            <Link href="https://www.opensocietyfoundations.org/" isExternal>
+            <Link href="https://www.co-impact.org/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
-                src="/static/media/foundations/opensociety.png"
-                alt="Open Society Foundations"
+                src="/static/media/foundations/coimpact.png"
+                alt="Fundação co-impact"
+              />
+            </Link>
+            <Link href="https://institutogalodamanha.org.br/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/galodamanha.png"
+                alt="Instituto galo da manhã"
+              />
+            </Link>
+            <Link href="https://gsccnetwork.org/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/global.png"
+                alt="Global Strategic Communications Council"
+              />
+            </Link>
+            <Link href="https://climaesociedade.org/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/clima.png"
+                alt="Instituto clima e sociedade"
+              />
+            </Link>
+            <Link href="https://www.laudesfoundation.org/br" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/laudes.png"
+                alt="Fundação Laudes"
               />
             </Link>
             <Link href="https://luminategroup.com/" isExternal>
@@ -220,6 +251,22 @@ const QuemSomos: React.FC = () => {
                 alt="OAK Foundation"
               />
             </Link>
+            <Link href="https://www.opensocietyfoundations.org/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/open.png"
+                alt="Open Society Foundations"
+              />
+            </Link>
+            <Link href="https://www.siliconvalleycf.org/" isExternal>
+              <Image
+                m="0 auto"
+                objectFit="cover"
+                src="/static/media/foundations/silicon-valley.png"
+                alt="Silicon Valley Community Foundation"
+              />
+            </Link>
             <Link href="https://skoll.org/" isExternal>
               <Image
                 m="0 auto"
@@ -228,52 +275,20 @@ const QuemSomos: React.FC = () => {
                 alt="Skoll Foundation"
               />
             </Link>
-            <Link href="https://www.svri.org/" isExternal>
+            <Link href="https://tinder.com/pt" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
-                src="/static/media/foundations/svri.png"
-                alt="fundação SVRI"
-              />
-            </Link>
-            <Link href="https://www.climaesociedade.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/ics.png"
-                alt="Instituto Clima e Sociedade"
-              />
-            </Link>
-            <Link href="https://institutogalodamanha.org.br/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/galodamanha.png"
-                alt="Instituto galo da manhã"
-              />
-            </Link>
-            <Link href="https://www.co-impact.org/" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/coimpact.png"
-                alt="Fundação co-impact"
+                src="/static/media/foundations/tinder.png"
+                alt="Tinder"
               />
             </Link>
             <Link href="https://www.unicef.org/brazil/" isExternal>
               <Image
                 m="0 auto"
                 objectFit="cover"
-                src="/static/media/foundations/unicef1.png"
+                src="/static/media/foundations/unicef.png"
                 alt="Instituto Unicef"
-              />
-            </Link>
-            <Link href="https://www.laudesfoundation.org/br" isExternal>
-              <Image
-                m="0 auto"
-                objectFit="cover"
-                src="/static/media/foundations/laudes.png"
-                alt="Fundação Laudes"
               />
             </Link>
           </SimpleGrid>
