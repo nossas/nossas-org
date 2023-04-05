@@ -61,14 +61,12 @@ export const FounderMembers: React.FC = () => {
         {
           avatar: "/static/media/team/alessandra-orofino.png",
           name: "Alessandra Orofino",
-          role: t("teams.founders.alessandra.role"),
           about: t("teams.founders.alessandra.about"),
           team: t("teams.founders.title"),
         },
         {
           avatar: "/static/media/team/miguel-lago.png",
           name: "Miguel Lago",
-          role: t("teams.founders.miguel.role"),
           about: t("teams.founders.miguel.about"),
           team: t("teams.founders.title"),
         },
@@ -368,6 +366,13 @@ export const TeamMembers: React.FC = () => {
           name: "Sarah",
           role: t("teams.team.sarah-cristina.role"),
           about: t("teams.team.sarah-cristina.about"),
+          team: t("teams.team.title"),
+        },
+        {
+          avatar: "/static/media/team/tayane.png",
+          name: "tayane",
+          role: t("teams.team.tayane.role"),
+          about: t("teams.team.tayane.about"),
           team: t("teams.team.title"),
         },
         {

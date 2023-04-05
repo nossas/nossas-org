@@ -138,7 +138,6 @@
     "founders": {
       "title": "Fundadores",
       "alessandra": {
-        "role": "Co-fundadora",
         "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
       },
       "miguel": {
@@ -196,7 +195,7 @@
         "about": "Carolina, ou Carol, é baiana, nascida e criada na periferia de Salvador e apaixonada pela cidade, e principalmente por suas águas. Também é ativista socioambiental há quase 5 anos (e contando), trabalhando com projetos voltados ao socioambientalismo. Nos últimos 2 anos tem focado sua atuação na luta pela justiça climática, por acreditar que um mundo mais justo e sustentável é possível sim!"
       },
       "carol": {
-        "role": "[FALTANDO FUNÇÃO]",
+        "role": "Gestora de Comunicação",
         "about": "Carol é jornalista e educadora popular. É mestre em Comunicação e Sociabilidade pela Universidade Federal de Minas Gerais (UFMG), onde pesquisou fenômenos contemporâneos de contestação social. Há 10 anos, trabalha com comunicação, educação e mobilização, passando por diferentes organizações da sociedade civil. Coordenou a Comunicação da campanha de Áurea Carolina à Câmara dos Deputados e integrou o núcleo de comunicação nos quatro anos de mandato. No NOSSAS, atua como Gestora de Comunicação, coordenando processos de comunicação institucional e buscando garantir a sintonia entre as diferentes equipes."
       },
       "catarina": {
@@ -280,7 +279,7 @@
         "about": "Atual moradora de Belo Horizonte, Maria Alice é designer há 2 anos e estudante de Design na UFMG. Por ser de uma pequena cidade do interior de São Paulo, tem uma forte relação com a natureza e simplicidade, buscando refletir isso em seu trabalho gráfico. Como mulher bissexual, tem profundo envolvimento com as pautas LGBTQIA+."
       },
       "maria-julia": {
-        "role": "[FALTANDO FUNÇÃO]",
+        "role": "PMO/Gestora de Projetos",
         "about": "Maju é formada em relações internacionais com foco em resolução de conflitos e cooperação internacional. Se especializou em comunicação estratégica e gestão de inovação social na teoria e prática, tendo mais de dez anos de experiência profissional (sete deles no setor social). Depois de iniciar sua carreira em empresas de comunicação do setor privado, foi a primeira contratação do NOSSAS, organização que ajudou a estruturar desde o início. Maju passou por cargos de liderança em todas as áreas; mobilização, tecnologia, treinamentos, estratégia e captação. No momento, cumpre o papel de PMO/Gestora de Projetos na organização. E para sustentar a saúde mental de uma pisciana-escorpiana nessa vida, a carioca precisou dar uma reviravolta. Hoje mora em uma vila no sul da Bahia, entre mar e rio, onde faz da natureza e da poesia suas aliadas por uma vida mais saudável."
       },
       "matheus": {
@@ -296,7 +295,7 @@
         "about": "Renata é bióloga e mestre em Ecologia. Trabalha há 11 anos no terceiro setor passando por organizações do campo nacional e internacional como WCS, WAP, INPA, Movimento Ficha Verde, Instituto Mamiraua, Purpose e ABCD. Renata foi membro do conselho criativo da virada sustentável de Manaus, migrou para a Amazônia, e por 7 anos trabalhou na pauta de direito de uso da terra por populações tradicionais, ribeirinhas e indígenas, atuando nas pautas de direito de uso da terra, articulação entre sociedade civil e governo, mobilização e estratégia de campanhas. Atualmente integra o time do NOSSAS como Coordenadora de Parcerias na campanha Amazônia de Pé."
       },
       "romulo": {
-        "role": "[FALTANDO FUNÇÃO]",
+        "role": "Gestor Executivo",
         "about": "Romulo é bacharel e licenciado em Ciências Sociais pela PUC Minas, Mestre em Educação pela Faculdade de Educação da UFMG e Especialista em Gestão Cultural pela Faculdade de Políticas Públicas da UEMG. Foi pesquisador e professor do Observatório da Juventude da UFMG. Cria do movimento Hip Hop, produtor cultural e educador popular, atuou em planejamento, gestão e produção de projetos culturais e educacionais na esfera municipal (BH) e estadual (MG). Integrou nos últimos anos o fórum de coordenadores do mandato de Áurea Carolina na Câmara dos Deputados, sendo responsável pela assessoria direta da parlamentar e pela coordenação da consulta pública para a destinação dos recursos das emendas impositivas - o \"Emenda Geral\". No NOSSAS, é Gestor Executivo e atua na assessoria da diretora executiva e na elaboração de estratégias e parcerias da equipe institucional."
       },
       "sarah-cristina": {
@@ -306,6 +305,10 @@
       "sarah": {
         "role": "Analista Financeira",
         "about": "Sarah é paulista, natural de Itapecerica da Serra, bacharela em Administração pela Universidade do Estado de Minas Gerais e pós graduada em Gestão Financeira de Negócios pela Mackenzie. Integrou o Movimento Empresa Júnior em prol do desenvolvimento econômico de Carangola e região, e pensando em desconstruir o racismo e empoderar as mulheres negras da cidade desenvolveu em parceria o grupo “Mulheres Negras Carangola”, partilhando conhecimento e ressignificando histórias locais. Nos últimos anos, atuou como coordenadora financeira e administrativa da organização de jovens ativistas Engajamundo. Sarah acredita que todos somos parte da solução e potenciais instrumentos para construir uma sociedade mais utópica."
+      },
+      "tayane": {
+        "role": "Coordenadora do núcleo de Operações",
+        "about": "Tayane iniciou sua vida profissional trabalhando com contabilidade e finanças, mas na primeira oportunidade decidiu mergulhar na área de RH e gestão de pessoas. Busca refletir na sua vida profissional conceitos que estejam alinhados com sua vivência e trajetória pessoal. Cansou de ser morena ou Mulata e está se re descobrindo como Mulher preta. Gosta de estar conectada com a natureza, atividades ao ar livre e de apreciar as maravilhas do Rio de Janeiro nas horas vagas. É formada em Contabilidade, Processos Gerenciais e atualmente cursa MBA em Gestão Estratégica de Pessoas. Entra no NOSSAS como Coordenadora do núcleo de Operações."
       },
       "tonia": {
         "role": "Coordenadora Financeira",

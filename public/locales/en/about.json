@@ -1,7 +1,7 @@
 {
   "cover": "NOSSAS DEVELOPS TECHNOLOGIES, SHARES METHODOLOGIES, CONNECTS PEOPLE AND DEFENDS DEMOCRACY THROUGH ACTIVISM",
   "history": {
-    "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years, we have developed  projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
+    "description": "NOSSAS is a non-profit organization committed to strengthening democracy, social justice and equality. For over ten years, we have developed projects, tactics and strategies for mobilization and solidarity throughout Brazil.",
     "title": "OUR HISTORY",
     "about": "NOSSAS was founded in 2011. Since then, we have drawn millions of people to support causes, developed projects and led countless impact campaigns. We have succeeded in having important public policies implemented and built solidarity networks at scale to address intractable problems."
   },
@@ -135,15 +135,22 @@
         }
       }
     },
+    "founders": {
+      "title": "Fundadores",
+      "alessandra": {
+        "role": "Co-fundadora",
+        "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
+      },
+      "miguel": {
+        "role": "Co-fundador",
+        "about": "Miguel Lago is co-founder of Meu Rio and NOSSAS, and was their CEO until 2019, when he took over as executive director of Instituto de Estudos para Políticas de Saúde (IEPS). Miguel is also a political scientist, and has developed and taught master's courses on the intersection of democracy, health and technology at the School of International and Public Affairs (SIPA) at Columbia University (2018-2022), at Sciences Po Paris (2017-2018) and at the T.H. Chan School of Public Health at Harvard University (since 2023). Active in the public debate, Miguel has published articles in several major newspapers, such as The New York Times, Le Monde, El País and Revista piauí. He is also co-author of the books “Linguagem da Destruição” and “Do que falamos quando falamos de Populismo” by Companhia das Letras, and “Construção de um Estado para o Século XXI”. In 2019, he was awarded the World's 100 Most Influential People in Digital Government."
+      }
+    },
     "leaders": {
       "title": "Executive Managers",
-      "alessandra": {
-        "role": "Co-founder and Executive Director",
-        "about": "Alessandra is a non-profit executive, activist, director, producer and writer with extensive experience in advocacy and campaigning. Alessandra was a very early member of Purpose PBC which she brought to Brazil before co-founding NOSSAS. She was the curator of Agora É que são Elas, a columnist at Folha de São Paulo and a TED Global speaker. She is currently the showrunner at Greg News - a satirical journalism show on HBO - and a fellow at the Obama Foundation and Ashoka. Alessandra has a degree from Columbia University in Economics and Human Rights."
-      },
-      "enrica": {
-        "role": "Deputy Director and Director of Mapa do Acolhimento",
-        "about": "Enrica arrived at NOSSAS as a mobilizer before becoming Chief of Staff and Deputy Director. She has lived and worked in Belgium, South Africa and Japan until settling in her hometown - Rio de Janeiro. In Brazil, she was a producer at GloboNews covering the 2013 protests in Brazil. Currently she leads the Project Mapa do Acolhimento. She holds an degree in Political Science specializing in Global Studies from The New School."
+      "aurea": {
+        "role": "Executive Director",
+        "about": "Popular educator and master in political science, Áurea Carolina is a brazilian activist with a history in the struggles of women, black people, youth, traditional peoples and communities and peripheral populations. In 2016, she was elected the most voted councilor in Belo Horizonte. In 2018, she was elected federal deputy for Minas Gerais - the most voted woman in the state. She was head of the Culture Commission of the Chamber of Deputies and, at the end of 2022, collaborated with the transition team of the Lula government for the refoundation of the Ministry of Culture. She was a member of the Gabinetona political project, the Ocupa Política network and the Progressive International global network. In 2019, she was recognized by Most Influential People of African Descent as one of the 100 Most Influential Young Black People in the World in Politics and Governance. For her work in the fight against mining, she was recognized in 2020 by the Prêmio Congresso em Foco as one of the best parliamentarians in the climate and sustainability category. She is currently the Executive Director of NOSSAS."
       },
       "virginia": {
         "role": "Director of Operations and Culture",
@@ -162,7 +169,7 @@
         "about": "Talita leads the Technology and Intelligence department at NOSSAS, working at the intersection of technology, data and strategy. A graduate in Communication and Multimedia, she specialized in Product Management and UX. As a consultant, she has worked with large companies and startups guiding innovation and design processes. She created Mastertech's UX Design bootcamp, where she was coordinator and teacher. Five years ago, she directed this experience to social innovation, developing technologies for mobilization, climate justice and gender violence projects."
       },
       "roberto": {
-        "role": "Campaigns Director",
+        "role": "Campaigns Strategist",
         "about": "Roberto is an architect, urban planner and researcher with extensive experience in architectural practice, urban development and information technology. He is the editor of the magazine Piseagrama and a professor at UFMG, having previously worked at the research laboratories Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) and Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto is also a director and co-founder of Hometeka."
       }
     },
@@ -176,10 +183,6 @@
         "role": "Communications Analyst",
         "about": "Alice is from Manaus, a Journalism student at the Federal University of Amazonas and a communications intern at NOSSAS. In college, she was on the board of the academic center of her program in 2019 and was the co-author of a scientific initiation project in the field of Environmental Journalism. Before joining NOSSAS, Alice worked in the press offices of public entities and the third sector. She is interested in traditional knowledge about the Amazon and is curious about the diversity of Brazil and the world."
       },
-      "anabeatriz": {
-        "role": "Manager at Mapa do Acolhimento",
-        "about": "Ana is a lawyer with a degree from PUC-SP, and is part of Mapa's team. From 2015 to 2016 she worked in family law at the Pinheiros Forum Family Court, closely monitoring cases of family demands without a gender perspective. After graduating, she took the specialization course in the care of women in situations of gender-based violence at IBCCRIM as a partnership with Instituto Avon and has been working for Mapa since 2018."
-      },
       "anaclaudia": {
         "role": "Designer",
         "about": "Ana Claudia is from Manaus and has worked for 7 years in third sector organizations in the Amazon. At NOSSAS, she works as a designer and mobilizer in the Creative and Communication teams. Ana has a degree in graphic design and is a visual arts student at the Federal University of Amazonas - UFAM."
@@ -187,6 +190,10 @@
       "camila": {
         "role": "Mobilizer",
         "about": "Camila is a social communicator graduated by UFMG and post-graduated in Writing and Creation by the University of Fortaleza. She is a producer formed by the practice in the audiovisual of Minas Gerais and an activist born in the streets and networks. She is 30 years old and currently lives between Contagem and Belo Horizonte."
+      },
+      "carol": {
+        "role": "Communication Manager",
+        "about": "Carol is a journalist and popular educator. She holds a master's degree in Communication and Sociability from the Universidade Federal de Minas Gerais (UFMG), where she researched contemporary phenomena of social contestation. For 10 years, she has been working with communication, education and mobilization, through different civil society organizations. She coordinated the Communication of Áurea Carolina's campaign for the Chamber of Deputies and was part of the communication team during her four years in office. At NOSSAS, she acts as Communication Manager, coordinating institutional communication processes and seeking to ensure harmony between the different teams."
       },
       "carolina": {
         "role": "Articulator at Amazônia de Pé",
@@ -200,10 +207,6 @@
         "role": "Mobilizer",
         "about": "Clareana has worked as a National Youth Counselor, Advisor at the Osasco Municipal Administration, Advisor to the National Mobilization Secretariat of the Workers' Party, Parliamentary Advisor at the House of Representatives, and various jobs in political campaigns and activism. In parallel, Clareana is an astrologer, tarologist, and practitioner of the African matrix religion."
       },
-      "cledisson": {
-        "role": "Head of Advocacy",
-        "about": "Cledisson manages the advocacy area at NOSSAS, developing conjunctural and political risk analysis and developing advocacy strategies with partner organizations and decision makers. Before that, Cledisson was Executive Secretary of the National Human Rights Council of the Presidency of the Republic of Brazil from 2015 to 2016 and Parliamentary Advisor at the Legislative Assembly of Minas Gerais. Cledisson has a master's degree in Rural Development from UFRGS and  is a PhD student in Social Sciences from UFRRJ."
-      },
       "danielle": {
         "role": "Media Analyst at Amazônia de Pé",
         "about": "Danielle holds a degree in Journalism from the University of Brasília (UnB) and a master's degree in Political Communication from the London School of Economics and Political Science (LSE). She worked as communications advisor for the PSOL national directory and was part of the communications team of federal deputy Talíria Petrone (PSOL-RJ). She has worked on several electoral campaigns and was a member of the CHAMA and Ocupa Política networks, focused on planning and managing social networks and audiovisual production. At NOSSAS she works as a media analyst in the Amazônia de Pé project."
@@ -211,14 +214,6 @@
       "fabiana": {
         "role": "Operations Intern",
         "about": "Fabiana is studying International Relations at the Fluminense Federal University. For a year now, she has been the vice-president of Argos Consultoria Internacional - the university's junior company, focusing on Brazilian insertion in international trade and in high global production chains. In 2022 Fabiana will assume the presidency of the company. Fabiana is from Volta Redonda and is a NOSSAS Fundraising Intern."
-      },
-      "fabio": {
-        "role": " Audiovisual Producer at Amazônia de Pé",
-        "about": "Fábio is graduated in communications from UFRJ with a degree in journalism. Since graduation, he has focused on the production and management of content in audiovisual formats, starting his career in the university television news program at UFRJ, with subsequent passage through television channels and TV and Cinema productions. He was a student at Escola de Cinema Darcy Ribeiro, where he deepened his knowledge in the field of audiovisual scripting and is currently conducting research on cinema and childhood in the master's program in Cinema and Audiovisual at PPGCine-UFF. He currently holds the position of Audiovisual Producer at NOSSAS, allocated in the Amazônia de Pé project, where he also leads the Creators for Climate program."
-      },
-      "gabriela": {
-        "role": "Head of Service at Mapa do Acolhimento",
-        "about": "Gabriela is an anti-racist feminist and worked as an coordinator on the “Feminicidades” project, which aims to give voice to all types of women. She is a psychologist who graduated from PUC-SP, specializing in assisting women in situations of gender violence at IBCCRIM, with a focus on the Maria da Penha Law, Public Services, NGOs and domestic violence. Gabriela has a specialization in collective health from the Health Institute of the State Department of Health."
       },
       "gabrielly": {
         "role": "Articulator at Amazônia de Pé",
@@ -244,21 +239,9 @@
         "role": "Programmer",
         "about": "Igor is a software developer and music producer. Igor has extensive programming experience and has been contributing to the development of new technologies at NOSSAS for years. Igor is a member of the Python Brasil Association, is passionate about music, culture and technology."
       },
-      "isabel": {
-        "role": "Executive Assistant",
-        "about": "Isabel has worked with production, HR and diversity management. Currently Isabel works as an editorial assistant for Greg News and is a personal assistant to NOSSAS’s Executive Director, providing support in her routine exchanges with partners and teams. Isabel has a degree in Business Administration from PUC-Rio with a specialization in Human Resources and Diversity, from ESG-UQÀM."
-      },
-      "isabella": {
-        "role": "Trainee at Mapa do Acolhimento",
-        "about": "Isabella is from São Paulo, is 21 years old, is a Psychology student and joined the team as an intern at Mapa do Acolhimento. Her previous experiences were with the organizational sector, working in Human Resources, but she always had a passion for the social area. With the opportunities that emerged in this area, she worked with people in vulnerable situations in the center of São Paulo applying harm reduction, and also with institutions aimed at senior citizens, always with a Psychology perspective. Isa dreams of being an instrument of improvement for many people!"
-      },
       "jerlan": {
         "role": "Manager",
         "about": "Native from Rio Grande do Norte and passionate about João Pessoa, Jerlan is Manager at NOSSAS. He has a degree in Chemical Engineering from the Federal University of Paraiba (UFPB), with experience at Sapienza Università di Roma as a visiting student. Jerlan has worked as an Executive Director at Minha Jampa - a branch of Rede Nossas Cidades in the Northeast. Optimistic and a good mood person, Jerlan loves to tell stories, enjoy his family and cook pizza while listening to his favorite podcasts."
-      },
-      "juliana": {
-        "role": "Mobilizer at Mapa do Acolhimento",
-        "about": "Juliana Martins lives in São Paulo and she is part of the Representation and Strategy team at NOSSAS. She has a Law degree and a large experience in the public administration and she has already worked with several organizations of the third sector. Passionate about Human Rights and Democracy, Juliana has got an attentive focus about ethnicity, gender and territory."
       },
       "kaianaku": {
         "role": "Articulator at Amazônia de Pé",
@@ -267,10 +250,6 @@
       "karina": {
         "role": "Mobilization Coordinator at Amazônia de Pé",
         "about": "Karina is a biologist and environmentalist from Maranhão. Karina worked as coordinator of the Climate Working Group of the Engajamundo Youth Organization between 2018 and 2020, has been a leader in the USBEA Youth Protagonism community since 2015 and is part of the network of global leaders, International Exchange Alumni. Karina is passionate about education and culture, she loves dancing, walking on stilts and other circus skills. Karina is part of her local church's mission group and loves dialogues and stories."
-      },
-      "karol": {
-        "role": "Mobilization Manager at Em Luta",
-        "about": "Karol has a journalism degree from Cásper Líbero School and lives in São Paulo. She has worked in the communication coordination of the state deputy Marina Helou (Rede-SP). Karol is a volunteer at Virada Política and Vote Nelas. She has worked for Revista Saúde and acted as an Advocacy and Government Relations advisor. Karol has worked as Coordinator at Minha Sampa from 2017 to 2019, and at present she is Mobilization Manager at NOSSAS."
       },
       "larissa": {
         "role": "Producer at Amazônia de Pé",
@@ -288,14 +267,6 @@
         "role": "Mobilizer",
         "about": "Leticia has always been driven by the rights of migrants and refugees and by forms of integration in the city. At NOSSAS, she works on the training front for the Mobilizers Program. Before that, Leticia was an International Cooperation Assistant at the Center for International Health Relations at Fiocruz. Letícia has a master's degree in Management and Analysis of International Policies from PUC-Rio and a degree in International Relations from UFF."
       },
-      "livia": {
-        "role": "Campaigns Manager at Mapa do Acolhimento",
-        "about": "A campaigner at Nossas, Lívia has previously worked on projects in the areas of gender, sustainability and human rights in organizations such as Actionaid and Amnesty International. She’s a graduate in International Relations from the Federal University of Rio de Janeiro with a specialization in Ecoliteracy from the University of Coimbra and UNESCO."
-      },
-      "luana": {
-        "role": "Multimedia Content Producer at Amazônia de Pé",
-        "about": "An Amazonian artist, Luana considers design her best form of expression. Graduated in Social Communication - Advertising and Propaganda from UFPA, she has 7 years of experience in the field of art direction. In addition to having already developed content production projects, audiovisual editions and creative direction. Over the years, she has had the opportunity to work with social networks, political marketing, public and institutional communication. She is passionate about lettering, collage and illustration. Her creations are inspired by the Amazon, her hometown and her daily life. Luana sees beauty in the simplest of details and believes that art should be created with a purpose, capable of making a difference in people's lives. Luana is a Multimedia Content Producer at Amazônia de Pé."
-      },
       "luciana": {
         "role": "Mobilizer",
         "about": "Luciana is from Manaus and has been working with social projects related to education and humanization in the city for some years. In parallel to her work at NOSSAS, she coordinates a voluntary project that guides young people and adults from underprivileged communities who are interested in sitting Brazil’s National High School Exam, ENEM. She has a degree in Public Relations from UFAM and has a specialization in Business Communication and Digital Media."
@@ -304,41 +275,29 @@
         "role": "Training Manager",
         "about": "Maira is from Pernambuco, and she is interested in the issues of human rights, gender, sexual and reproductive Rights and drug policy. Anti-prohibition, feminist activist, Maira is a member of Nacional de Feministas Antiproibicionistas (RENFA) e the Articulação de Mulheres Brasileiras (AMB). Before NOSSAS, Maira worked as a reporter for Diario de Pernambuco and Fiocruz. Maira has a degree in Social Communication."
       },
-      "manuela": {
-        "role": "Mobilizer at Mapa do Acolhimento ",
-        "about": "From Pernambuco, living in Rio de Janeiro, Manuela holds a PhD and a Master's degree in Communication from Universidade Federal Fluminense and a Journalism degree from UFPE. She has a multidisciplinary trajectory, with experience in the fields of photography, audiovisual, visual arts, and in feminist and anti-prohibitionist activism."
-      },
-      "marcia": {
-        "role": "Articulator at Mapa do Acolhimento",
-        "about": "Márcia is a black, bisexual woman, dreamer and writer, born in Minas Gerais. She is a lawyer, specialized in criminal law and criminal procedure, and understands that the law is paradoxical and can be extremely violent with everything that escapes the white-heterocispatriarchal norm. Master and PhD student in Law at UFMG, in her researches, Márcia uses the afropessimist and black feminist lenses for a critical reading of the law and the State."
-      },
       "maria-alice": {
         "role": "Mobilization Intern",
         "about": "Currently living in Belo Horizonte, Maria Alice has being a designer for 2 years and is a student of Design at UFMG. Being from a small town in the countryside of São Paulo, she has a strong relationship with nature and simplicity, trying to reflect this in her graphic work. As a bisexual woman, she is deeply involved with LGBTQIA+ issues."
+      },
+      "maria-julia": {
+        "role": "PMO/Project Manager",
+        "about": "Maju has a degree in international relations with a focus on conflict resolution and international cooperation. She specializes in strategic communication and social innovation management in theory and practice, over more than ten years of professional experience (seven of them in the social sector). After starting her career in private sector communication companies, she was the first hire of NOSSAS, an organization that she helped structure from the beginning. Maju went through leadership positions in all areas; mobilization, technology, training, strategy and recruitment. At the moment, she fulfills the role of PMO/Project Manager in the organization. And to sustain the mental health of a Piscean-Scorpian in this life, the carioca needed to turn things around. Today she lives in a village in the south of Bahia, between sea and river, where she makes nature and poetry her allies for a healthier life."
       },
       "matheus": {
         "role": "Mobilizer",
         "about": "Matheus is a Mobilizer at NOSSAS and brings in his baggage multiple experiences in the area of communication. He has worked for advertising agencies, technology companies and NGOs. He worked with the social and labor integration of migrants and refugees in the state of Santa Catarina, together with the Círculos de Hospitalidade Organization. He also participated in the Oportunidades Project, implemented by the IOM (International Organization for Migration). Being in touch with nature, listening to the sound of the sea and good music are part of his daily therapy. DJ in his spare time and pioneer of vegan cuisine."
       },
-      "paula": {
-        "role": "Trainee at Mapa do Acolhimento",
-        "about": "Paula Eduarda was born in Cacoal - Rondonia, is 23 years old, is a Social Service student at the Federal University of Mato Grosso (UFMT). Paula is part of the Center for Studies and Research on Gender Relations (NUEPOM), and works as an Intern in Social Service at Mapa do Acolhimento. Previously, she worked as a Social Service intern at the Human Rights Reference Center of Mato Grosso (CRDH / MT) and at the Municipal Housing and Land Regularization Secretariat of Cuiabá (SMHARF). She is a black woman, bisexual, from the popular classes, allied to black feminism and the anti-racist struggle. She is dedicated to researching race relations, gender and sexuality, based on decolonial readings. Passionate about the writing process, she transforms everything she feels into poetry."
-      },
       "paulo": {
         "role": "Territory Analyst at Amazônia de Pé",
         "about": "For 2 years, Paulo coordinated Engajamundo's WG on Climate Change - working with mobilization, training and political advocacy with young people from all over Brazil. He has been part of 4 delegations to different COPs (UN International Climate Change Conference) where he worked with communication strategies, activism and lobbying. He worked as Campaigner at Purpose, and Project Assistant at ICE (Instituto de Cidadania Empresarial). He is from Feira de Santana-BA and works as a Territory Analyst in the NOSSAS Amazônia de Pé campaign."
-      },
-      "pirola": {
-        "role": "Head of Technology",
-        "about": "Pirola is CTO at NOSSAS. A  leader of self-taught development from São Paulo, Pirola joined the team to work as a programmer, but with his vast technical knowledge, he quickly joined the coordination team and now he supervises all technology-related projects at NOSSAS. Before joining the organization, Pirola worked as an infographics specialist during the 2010 presidential elections in Brazil. A nature lover, in his spare time he likes to surf and spend time with his partner and son."
       },
       "renata": {
         "role": "Partnerships Coordinator at Amazônia de Pé",
         "about": "Renata is a biologist and Master in Ecology. She has worked for 11 years in the third sector, working for national and international organizations such as WCS, WAP, INPA, Movimento Ficha Verde, Instituto Mamiraua, Purpose and ABCD. Renata was a member of the creative council for the sustainable turnaround in Manaus, migrated to the Amazon, and for 7 years worked on the issue of land use rights for traditional, riverside and indigenous populations, working on the issues of land use rights, articulation between civil society and government, mobilization and campaign strategy. She is currently part of the NOSSAS team as Partnership Coordinator in the Amazônia de Pé campaign."
       },
-      "sany": {
-        "role": "Communications Coordinator at Mapa do Acolhimento",
-        "about": "Sany has worked in communications since 2013. She has experience in content production for digital media, design, audiovisual production, consulting and education. In her spare time, Suny likes to practice circus activities, play percussion and immerse herself more and more in literature written by black women. Sany graduated in Advertising and specialized in the Production and Creation of Digital Content by ESPM."
+      "romulo": {
+        "role": "Gestor Executivo",
+        "about": "Romulo Silva holds a bachelor's degree in Social Sciences from PUC Minas, a Master's degree in Education from the School of Education at UFMG, and a specialist degree in Cultural Management from the School of Public Policy at UEMG. He is a Hip Hop creator, cultural producer, and popular educator, and has been a researcher and professor at the UFMG Youth Observatory. In the last years he integrated the forum of coordinators of the mandate of Representative Áurea Carolina, doing direct advisory and coordinating \"Emenda Geral\", public consultation for the allocation of resources of the parliamentary amendments. At NOSSAS, he is an Executive Manager, advising the executive director and developing strategies and partnerships for the institutional team."
       },
       "sarah1": {
         "role": "Data Engineer",
@@ -348,13 +307,9 @@
         "role": "Financial Analyst",
         "about": "Sarah is from São Paulo, born in Itapecerica da Serra, holds a bachelor's degree in Business Administration from the Universidade do Estado de Minas Gerais and a postgraduate degree in Business Financial Management from Mackenzie. She was part of the Junior Enterprise Movement for the economic development of Carangola and region, and thinking about deconstructing racism and empowering black women in the city, she developed in partnership the group “Mulheres Negras Carangola”, sharing knowledge and giving new meaning to local stories. In recent years, she has served as financial and administrative coordinator for the youth activist organization Engajamundo. Sarah believes that we are all part of the solution and potential instruments to build a more utopian society."
       },
-      "tayna": {
-        "role": "Analyst at Mapa do Acolhimento",
-        "about": "Before joining the Sustainability team at NOSSAS, Tayná worked with customer services and customer relations, technical and functional support, active payment collection and sales, as well as working in education, as a classroom assistant in primary and secondary education. Tayná is a graduate student in Humanities with a specialization in Social Communication."
-      },
-      "thalita": {
-        "role": "Articulator at Mapa do Acolhimento",
-        "about": "Thalita is a feminist and anti-racist from Bahia. She is a defender of human rights with a special interest in topics at the intersection between race and gender that collaborate in the fight for justice and remedy of inequalities. She has a degree in Social Work from UFBA, where she discovered the areas of social welfare and socio-legal assistance, knowledge that she develops in her work in the Mapa do Acolhimento."
+      "tayane": {
+        "role": "Operations Center Coordinator",
+        "about": "Tayane started her professional life working with accounting and finance, but at the first opportunity she decided to dive into the area of HR and people management. She seeks to reflect in her professional life concepts that are aligned with her experience and personal trajectory. She got tired of being a “brunette” or a “mulata” and is rediscovering herself as a black woman. She enjoys being connected with nature, outdoor activities and enjoying the wonders of Rio de Janeiro in her free time. She holds a degree in Accounting, Management Processes and is currently studying an MBA in Strategic People Management. She joined NOSSAS as the Operations Center Coordinator."
       },
       "tonia": {
         "role": "Financial Coordinator",
