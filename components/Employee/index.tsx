@@ -6,7 +6,7 @@ import { EmployeeItem } from "./EmployeeItem";
 interface Employee {
   avatar: string;
   name: string;
-  role: string;
+  role?: string;
   about?: string;
   team: string;
   networks?: Record<string, string>;
