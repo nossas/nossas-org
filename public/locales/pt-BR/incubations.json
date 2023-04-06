@@ -1,48 +1,53 @@
 {
-    "cover": "Conheça nosso programa de incubação",
-    "whats-is": {
-        "title": "Incubar: <br/><strong>o que é isso?</strong>",
-        "description": "Oferecemos capacitação e apoio para desenvolver ou acelerar projetos de mobilização ou solidariedade utilizando as metodologias elaboradas pelo NOSSAS."
-    },
-    "we-offer": {
-        "title": "A gente oferece",
-        "1": "Formação em ferramentas e estratégias de comunicação",
-        "2": "Compartilhamento de metodologias e tecnologias de mobilização",
-        "3": "Criação e posicionamento de marca",
-        "4": "Soluções em organização de pessoas, treinamentos e gestão de voluntariado"
-    },
-    "projects": {
-        "title": "O que já <br/><strong>incubamos</strong>",
-        "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
-        "carousel": {
-            "1": {
-                "title": "Acolhe LGBT+",
-                "description": "Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários.",
-                "action": "Saiba mais"
-            },
-            "2": {
-                "title": "Me Representa",
-                "description": "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas.",
-                "action": "Saiba mais"
-            },
-            "3": {
-                "title": "Defezap",
-                "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
-            },
-            "4": {
-                "title": "Rede nossas cidades",
-                "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
-                "action": "Saiba mais"
-            },
-            "5": {
-                "title": "Beta",
-                "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
-                "action": "Saiba mais"
-            },
-            "6": {
-                "title": "Rede de Apoio Psicológico",
-                "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los."
-            }
-        }
+  "cover": "Conheça nosso programa de incubação",
+  "whats-is": {
+    "title": "Incubar: <br/><strong>o que é isso?</strong>",
+    "description": "Oferecemos capacitação e apoio para desenvolver ou acelerar projetos de mobilização ou solidariedade utilizando as metodologias elaboradas pelo NOSSAS."
+  },
+  "we-offer": {
+    "title": "A gente oferece",
+    "1": "Formação em ferramentas e estratégias de comunicação",
+    "2": "Compartilhamento de metodologias e tecnologias de mobilização",
+    "3": "Criação e posicionamento de marca",
+    "4": "Soluções em organização de pessoas, treinamentos e gestão de voluntariado"
+  },
+  "projects": {
+    "title": "O que já <br/><strong>incubamos</strong>",
+    "description": "Conheça alguns dos projetos que já passaram por nosso processo de incubação e hoje são referência em suas áreas de atuação.",
+    "carousel": {
+      "mapa": {
+        "title": "Mapa do Acolhimento",
+        "description": "INSERIR DESCRIÇÃO",
+        "action": "Saiba mais"
+      },
+      "1": {
+        "title": "Acolhe LGBT+",
+        "description": "Essa rede de solidariedade para a comunidade LGBTQIA+ conecta pessoas que precisam de apoio psicológico com profissionais voluntários.",
+        "action": "Saiba mais"
+      },
+      "2": {
+        "title": "Me Representa",
+        "description": "A plataforma promove, a cada eleição, o encontro digital entre candidatos(as) e eleitores(as) que priorizem as mesmas pautas.",
+        "action": "Saiba mais"
+      },
+      "3": {
+        "title": "Defezap",
+        "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
+      },
+      "4": {
+        "title": "Rede nossas cidades",
+        "description": "Grupos de ativistas de quatro cidades espalhadas em três regiões do país fazem hoje parte da Rede Nossas Cidades, após processo de incubação.",
+        "action": "Saiba mais"
+      },
+      "5": {
+        "title": "Beta",
+        "description": "A primeira robô feminista do Facebook acompanha a tramitação de projetos de lei sobre direitos das mulheres e avisa quando tem cheiro de retrocesso no ar!",
+        "action": "Saiba mais"
+      },
+      "6": {
+        "title": "Rede de Apoio Psicológico",
+        "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los."
+      }
     }
+  }
 }

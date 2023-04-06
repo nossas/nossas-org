@@ -99,6 +99,13 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
           showStatus
           items={[
             <ImageTextIncubations
+              src="/static/media/s3/mapadoacolhimento.png"
+              title={t("projects.carousel.mapa.title")}
+              description={t("projects.carousel.mapa.description")}
+              href=""
+              linkText={t("projects.carousel.mapa.action")}
+            />,
+            <ImageTextIncubations
               src="/static/media/s3/meacolhelgbt.png"
               title={t("projects.carousel.1.title")}
               description={t("projects.carousel.1.description")}
