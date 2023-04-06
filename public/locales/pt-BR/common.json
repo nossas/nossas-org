@@ -113,7 +113,7 @@
       "manifesta": {
         "title": "M.a.n.i.f.e.s.t.a sem censura",
         "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
-        "navigate": "Acesse agora!"
+        "navigate": "Pressione o Secretário de Cultura"
       },
       "1": {
         "title": "Amazônia de Pé",
@@ -129,6 +129,7 @@
     "navigation": {
       "join-us": "Junte-se a nós",
       "about": "Conheça o NOSSAS",
+      "mobilizations": "Participe de uma campanha",
       "donate": "FAÇA UMA DOAÇÃO",
       "work-with-us": "Trabalhe conosco"
     },

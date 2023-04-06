@@ -107,13 +107,13 @@
     "sliders": {
       "tiraope": {
         "title": "Tira o Pé da Minha Serra",
-        "description": "A performance of the show m.a.n.i.f.e.s.t.a, by Companhia de Dança do Palácio das Artes, was abruptly canceled by the state government of Minas Gerais. We need to come together for the show to come back!",
+        "description": "The 2022 mobilization for Serra do Curral made history! And this was only possible because many people acted together. It turns out that the victories were temporary. And now we have an opportunity to consolidate them.",
         "navigate": "Join the campaign!"
       },
       "manifesta": {
         "title": "M.a.n.i.f.e.s.t.a sem censura",
-        "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
-        "navigate": "Acesse agora!"
+        "description": "A performance of the show m.a.n.i.f.e.s.t.a, by Companhia de Dança do Palácio das Artes, was abruptly canceled by the state government of Minas Gerais. We need to come together for the show to come back!",
+        "navigate": "Press the Secretary Leônidas Oliveira!"
       },
       "1": {
         "title": "Amazônia de Pé",
@@ -129,6 +129,7 @@
     "navigation": {
       "join-us": "Join us",
       "about": "About NOSSAS",
+      "mobilizations": "join a campaign",
       "donate": "Make a donation",
       "work-with-us": "Work with us"
     },

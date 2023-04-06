@@ -35,7 +35,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/",
+            src: "/static/media/we-are-doing/tiraope.png",
             href: "https://www.tiraopedaminhaserra.org/",
             alt: t("we-are-doing.sliders.tiraope.title"),
             title: t("we-are-doing.sliders.tiraope.title"),
@@ -43,7 +43,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.tiraope.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/",
+            src: "/static/media/we-are-doing/manifesta.png",
             href: "https://www.manifestasemcensura.minhabh.org.br/",
             alt: t("we-are-doing.sliders.manifesta.title"),
             title: t("we-are-doing.sliders.manifesta.title"),
