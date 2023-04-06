@@ -5,6 +5,7 @@ import { Section } from "../components/Page";
 interface ImageTextListProps {
   imgScale?: number;
   title?: ReactNode | string;
+  description?: ReactNode | string;
   items: {
     icon: ReactNode;
     description: string;
@@ -16,14 +17,19 @@ interface ImageTextListProps {
 const ImageTextListBox: React.FC<ImageTextListProps> = ({
   imgScale,
   title,
+  description,
   items,
   width,
   maxWidth,
 }) => (
   <Section direction="column" spacing="60px">
-    <Heading as="h2" variant="tag" mb={16}>
-      {title}
-    </Heading>
+    <Stack spacing={-10}>
+      <Heading as="h2" variant="tag" mb={16}>
+        {title}
+      </Heading>
+      <Text>{description}</Text>
+    </Stack>
+
     <Flex justify="center">
       <Stack
         direction={["column", "column", "column", "row"]}

@@ -51,6 +51,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
       <ImageTextListBox
         maxWidth="1400px"
         title={t("functionalities.title")}
+        description={t("functionalities.description")}
         items={[
           {
             icon: <Computer />,
