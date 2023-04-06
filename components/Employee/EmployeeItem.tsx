@@ -13,18 +13,10 @@ import {
 import { DrawerInfo } from "./DrawerInfo";
 
 import IconEyeSlash from "./IconEyeSlash";
-
-interface Employee {
-  avatar: string;
-  name: string;
-  role: string;
-  about?: string;
-  team: string;
-  networks?: Record<string, string>;
-}
+import { EmployeeType } from "./types";
 
 interface EmployeeItemProps {
-  data: Employee;
+  data: EmployeeType;
 }
 
 export const EmployeeItem = ({ data }: EmployeeItemProps) => {

@@ -1,19 +1,11 @@
 import React from "react";
 import * as react from "@chakra-ui/react";
-
-interface Employee {
-  avatar: string;
-  name: string;
-  role: string;
-  about?: string;
-  team: string;
-  networks?: Record<string, string>;
-}
+import { EmployeeType } from "./types";
 
 interface DrawerInfoProps {
   isOpen: boolean;
   handleClose: () => void;
-  data: Employee;
+  data: EmployeeType;
 }
 
 export const DrawerInfo = ({ isOpen, handleClose, data }: DrawerInfoProps) => {

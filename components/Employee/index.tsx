@@ -2,20 +2,12 @@ import React from "react";
 import { Box, Stack, Heading, Text, Grid } from "@chakra-ui/react";
 
 import { EmployeeItem } from "./EmployeeItem";
-
-interface Employee {
-  avatar: string;
-  name: string;
-  role?: string;
-  about?: string;
-  team: string;
-  networks?: Record<string, string>;
-}
+import { EmployeeType } from "./types";
 
 interface EmployeeTeamProps {
   title: string;
   description?: string;
-  members: Employee[];
+  members: EmployeeType[];
 }
 
 export const EmployeeTeam = ({
