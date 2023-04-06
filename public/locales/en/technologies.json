@@ -1,33 +1,61 @@
 {
-    "cover": "Get to know BONDE, our technology tool",
-    "begin": {
-        "title": "How BONDE <br/><strong>emerged</strong>",
-        "description": "BONDE is a platform created by NOSSAS’ tech team to power our campaigns. In it, you can find tools used to build impact-driven mobilizations. We now share this resource with peer organizations looking to extend their impact and reach."
-    },
-    "functionalities": {
-        "title": "Features",
-        "items": {
-            "computer": "Webpage builder to create campaign pages",
-            "email": "Pressure tool to put pressure on decision makers by email, phone or with a petition",
-            "money": "Crowdfunding platform to raise money for a cause",
-            "subscription": "Application form to register and coordinate volunteers",
-            "communication": "Solidarity platform to create networks between volunteers and people seeking help"
-        }
-    },
-    "use": {
-        "title": "DISCOVER <strong>BONDE</strong>",
-        "description": "With our technology anyone can create pressure campaigns, crowdfunding campaigns, raise funds for an organization, create solidarity networks without needing any knowledge of programming.",
-        "action": " Visit the webpage"
-    },
-    "who-used": {
-        "title": "Check out who has used <strong>BONDE for their initiatives</strong>"
-    },
-    "campaigns": {
-        "title": "Campaigns which <strong>made history</strong>",
-        "carousel": {
-            "amazonia": " A bill to make land-grabbing easier was put before the Chamber of Deputies, but thanks to the campaign more than 30,000 people were mobilized and they managed to get the bill thrown out.",
-            "palmas": "This was a campaign to enshrine in law an emergency package of measures to improve working conditions for doctors, nurses, intensive care physiotherapists and nursing auxiliaries and assistants working on the frontline against Covid-19.",
-            "agora": "All Out held a campaign to pressurize Brazil's Supreme Federal Court into making discrimination against LGBTQ+ people a crime. The mobilization lasted for more than 90 days and the campaign managed to gather more than 700 thousand signatures. The bill was passed!"
-        }
+  "cover": "Explore our activism technologies",
+  "begin": {
+    "title": "Technology and <br/><strong>incidence</strong>",
+    "description": "For over ten years we have been experimenting and developing social technologies to make Brazil and Latin America more inclusive and democratic places."
+  },
+  "functionalities": {
+    "title": "Features",
+    "items": {
+      "computer": "Quickly create pressure campaigns that directly impact public policy",
+      "redes": "Automatically connect women at risk with volunteer psychologists and lawyers through a solidarity network",
+      "communication": "Communicate efficiently through chatbots for legislative monitoring, action and dissemination of important agendas",
+      "money": "Develop crowdfunding campaigns with autonomy and without intermediaries"
     }
+  },
+  "technologies": {
+    "title": "OUR <strong>TECHNOLOGIES</strong>",
+    "carousel": {
+      "1": {
+        "title": "BONDE",
+        "description": "Made by activists for activists, BONDE gathered tools to pressure decision makers, raise funds, create personalized campaign websites and raise social causes.",
+        "action": "Learn more +"
+      },
+      "2": {
+        "title": "PANELA DE PRESSÃO",
+        "description": "Our first technology at the service of popular participation: with Panela de Pressão, anyone could set up their own campaign in a few clicks."
+      },
+      "3": {
+        "title": "DEFEZAP",
+        "description": "Defezap is a pioneering system for denouncing state violence in Rio de Janeiro, directly on WhatsApp, guaranteeing the victim's confidentiality.",
+        "action": "Saiba mais"
+      },
+      "4": {
+        "title": "MAPA DO ACOLHIMENTO",
+        "description": "The platform connects women who experience gender-based violence with volunteer psychologists and lawyers in a matter of minutes.",
+        "action": "Saiba mais"
+      },
+      "5": {
+        "title": "BETA",
+        "description": "Facebook's first feminist bot was designed to track women's rights bills and warn when there was a whiff of backlash in the air.",
+        "action": "Saiba mais"
+      }
+    }
+  },
+  "use": {
+    "title": "DISCOVER <strong>BONDE</strong>",
+    "description": "With our technology anyone can create pressure campaigns, crowdfunding campaigns, raise funds for an organization, create solidarity networks without needing any knowledge of programming.",
+    "action": " Visit the webpage"
+  },
+  "who-used": {
+    "title": "Check out who has used <strong>BONDE for their initiatives</strong>"
+  },
+  "campaigns": {
+    "title": "Campaigns which <strong>made history</strong>",
+    "carousel": {
+      "amazonia": " A bill to make land-grabbing easier was put before the Chamber of Deputies, but thanks to the campaign more than 30,000 people were mobilized and they managed to get the bill thrown out.",
+      "palmas": "This was a campaign to enshrine in law an emergency package of measures to improve working conditions for doctors, nurses, intensive care physiotherapists and nursing auxiliaries and assistants working on the frontline against Covid-19.",
+      "agora": "All Out held a campaign to pressurize Brazil's Supreme Federal Court into making discrimination against LGBTQ+ people a crime. The mobilization lasted for more than 90 days and the campaign managed to gather more than 700 thousand signatures. The bill was passed!"
+    }
+  }
 }
