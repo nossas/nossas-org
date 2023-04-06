@@ -106,72 +106,58 @@
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
       "supervia": {
-        "title": "Supervia, aumento não!",
-        "description": "Mais um ano, mais uma proposta de aumento no preço das passagens. Dessa vez, a passagem de trem no Rio de Janeiro vai passar a custar R$7,40 a partir de fevereiro. E, enquanto as tarifas aumentam, a qualidade do serviço oferecido só cai. Queremos um transporte público acessível e de qualidade para todos!",
-        "navigate": "Pressione para barrar o aumento da passagem de trem! "
-      },
-      "0": {
-        "title": "Fora Ibaneis!",
-        "description": "O terrorismo que tomou conta de Brasília em 8 de janeiro não pode passar impune. E o governador do DF, Ibaneis Rocha, foi cúmplice dos crimes. Pressione o presidente do Câmara Legislativa do Distrito Federal, Wellington Luiz, pela abertura imediata do processo de Impeachment do governador Ibaneis Rocha.",
-        "navigate": "Pressione!"
-      },
-      "honra-não-é-desculpa": {
-        "title": "Honra Não é Desculpa",
-        "description": "Campanha pela aprovação do Projeto de Lei 2325/21, que elimina a legítima defesa da honra como recurso argumentativo em casos de violência de gênero. Mais de 25 mil pessoas se engajaram e, em julho de 2022, a lei foi aprovada no Senado. Agora, ela retornou à Câmara, onde aguarda votação.",
-        "navigate": "Pressione!"
-      },
-      "1": {
-        "title": "Amazônia de Pé",
-        "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
-        "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé!"
-      },
-      "estatuto-nascituro": {
-        "title": " Não ao Estatuto do Nascituro!",
-        "description": "Deputados fundamentalistas querem aprovar o Estatuto do Nascituro, que acaba com o aborto em caso de anencefalia e dificulta ainda mais o procedimento em caso de estupro e risco de morte.",
-        "navigate": "Pressione para barrar esse retrocesso no direito de meninas e mulheres!"
-      },
-      "auxilio-realengo": {
-        "title": "Auxílio para as famílias de Realengo já!",
-        "description": "A Prefeitura do Rio de Janeiro tornou a construção do Parque de Realengo um pesadelo. Às vésperas do Natal, foram demolidas lojas de mais de 40 famílias de comerciantes que trabalhavam há décadas perto da área onde será construído o parque. Agora, essas pessoas estão sem fonte de seu sustento e podem passar o pior natal de suas vidas.",
-        "navigate": "Pressione agora para garantir um auxílio aos comerciantes do entorno do Parque de Realengo!"
+        "tiraope": {
+          "title": "Tira o Pé da Minha Serra",
+          "description": "A luta pela Serra do Curral em 2022 fez história! E isso só foi possível porque muita gente agiu. E agiu em conjunto. Acontece que as vitórias foram provisórias. E temos agora uma oportunidade para consolidá-las.",
+          "navigate": "Acesse agora!"
+        },
+        "manifesta": {
+          "title": "M.a.n.i.f.e.s.t.a sem censura",
+          "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
+          "navigate": "Acesse agora!"
+        },
+        "1": {
+          "title": "Amazônia de Pé",
+          "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
+          "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé!"
+        }
       }
-    }
-  },
-  "media": "Na <strong>mídia</strong>",
-  "see": "Saiba +",
-  "know-more": "Saiba mais +",
-  "footer": {
-    "navigation": {
-      "join-us": "Junte-se a nós",
-      "about": "Conheça o NOSSAS",
-      "donate": "Faça uma doação",
-      "work-with-us": "Trabalhe conosco"
     },
-    "social": {
-      "title": "Siga nas redes sociais"
-    },
-    "newsletter": {
-      "title": "Fique por dentro",
-      "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
-      "success": {
-        "title": "Valeu!",
-        "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
+    "media": "Na <strong>mídia</strong>",
+    "see": "Saiba +",
+    "know-more": "Saiba mais +",
+    "footer": {
+      "navigation": {
+        "join-us": "Junte-se a nós",
+        "about": "Conheça o NOSSAS",
+        "donate": "Faça uma doação",
+        "work-with-us": "Trabalhe conosco"
       },
-      "form": {
-        "email": {
-          "placeholder": "Seu e-mail",
-          "required": "Informe seu e-mail",
-          "invalid": "OPS! Confira o e-mail"
+      "social": {
+        "title": "Siga nas redes sociais"
+      },
+      "newsletter": {
+        "title": "Fique por dentro",
+        "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
+        "success": {
+          "title": "Valeu!",
+          "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
         },
-        "firstname": {
-          "placeholder": "Nome",
-          "required": "Informe seu nome"
-        },
-        "lastname": {
-          "placeholder": "Sobrenome"
-        },
-        "submit": "Salvar"
+        "form": {
+          "email": {
+            "placeholder": "Seu e-mail",
+            "required": "Informe seu e-mail",
+            "invalid": "OPS! Confira o e-mail"
+          },
+          "firstname": {
+            "placeholder": "Nome",
+            "required": "Informe seu nome"
+          },
+          "lastname": {
+            "placeholder": "Sobrenome"
+          },
+          "submit": "Salvar"
+        }
       }
     }
   }
-}

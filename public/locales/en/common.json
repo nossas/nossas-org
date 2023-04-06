@@ -105,35 +105,20 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
-      "supervia": {
-        "title": "Supervia, aumento não!",
-        "description": "Another year, another proposal to increase public transport fares. This time, the price of train tickets in Rio de Janeiro will cost R$7.40 starting in February. And, while tariffs increase, the quality of the offered service only drops. We want affordable and quality public transport for everyone! ",
-        "navigate": "Press to stop the train fare increase!"
+      "tiraope": {
+        "title": "Tira o Pé da Minha Serra",
+        "description": "A luta pela Serra do Curral em 2022 fez história! E isso só foi possível porque muita gente agiu. E agiu em conjunto. Acontece que as vitórias foram provisórias. E temos agora uma oportunidade para consolidá-las.",
+        "navigate": "Access now!"
       },
-      "0": {
-        "title": "Fora Ibaneis!",
-        "description": "The terrorism that took over Brasilia on January 8 cannot go unpunished. And the governor of the DF, Ibaneis Rocha, was an accomplice to the crimes. Pressure the President of the Legislative Chamber of the Federal District, Wellington Luiz, for the immediate opening of the Impeachment process of Governor Ibaneis Rocha.",
-        "navigate": "Press!"
-      },
-      "honra-não-é-desculpa": {
-        "title": "Honra Não é Desculpa",
-        "description": "297 / 5.000 Resultados de tradução Resultado da tradução Campaign for the approval of Bill 2325/21, which eliminates the legitimate defense of honor as an argumentative resource in cases of gender violence. More than 25,000 people got involved, and in July 2022, the law passed the Senate. Now, it has returned to the Chamber of Deputies, where it's awaiting the vote.",
-        "navigate": " Join us!"
+      "manifesta": {
+        "title": "M.a.n.i.f.e.s.t.a sem censura",
+        "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
+        "navigate": "Acesse agora!"
       },
       "1": {
         "title": "Amazônia de Pé",
         "description": "With the advance of the climate crisis and the devastation of the Amazon, it is urgent to act so that the forest can stand. The Amazônia de Pé is a bill of popular initiative that proposes that the public forests of the region are destined to those who historically proved that they know how to preserve the forest: indigenous peoples, quilombolas and conservation units. The future of the forest and life on the planet is in our hands!",
         "navigate": "Find out how your signature keeps the Amazon forest standing!"
-      },
-      "estatuto-nascituro": {
-        "title": " Não ao Estatuto do Nascituro!",
-        "description": "Fundamentalist deputies want to approve the Statute of the Unborn Child, which ends abortion in cases of anencephaly and makes the procedure even more difficult in cases of rape and risk of death.",
-        "navigate": "Press to stop this setback for girls and women's rights!"
-      },
-      "auxilio-realengo": {
-        "title": "Auxílio para as famílias de Realengo já!",
-        "description": "The City Hall of Rio de Janeiro made the construction of a public park in Realengo turn into a nightmare. With the Holidays coming, businesses belonging to more than 40 families that for decades had occupied the near area of where the park will be built were demolished. Now, these people are without a source of income and may have the worst Christmas of their lives.",
-        "navigate": "Join the campaign now to guarantee an aid to the community around the Realengo Park!"
       }
     }
   },

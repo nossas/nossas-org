@@ -35,28 +35,20 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/supervia.png",
-            href: "https://www.superviaaumentonao.meurio.org.br/",
-            alt: t("we-are-doing.sliders.supervia.title"),
-            title: t("we-are-doing.sliders.supervia.title"),
-            description: t("we-are-doing.sliders.supervia.description"),
-            link: t("we-are-doing.sliders.supervia.navigate"),
+            src: "/static/media/we-are-doing/",
+            href: "https://www.tiraopedaminhaserra.org/",
+            alt: t("we-are-doing.sliders.tiraope.title"),
+            title: t("we-are-doing.sliders.tiraope.title"),
+            description: t("we-are-doing.sliders.tiraope.description"),
+            link: t("we-are-doing.sliders.tiraope.navigate"),
           },
           {
-            src: "/static/media/we-are-doing/fora-ibaneis.png",
-            href: "https://foraibaneis.org.br/",
-            alt: t("we-are-doing.sliders.0.title"),
-            title: t("we-are-doing.sliders.0.title"),
-            description: t("we-are-doing.sliders.0.description"),
-            link: t("we-are-doing.sliders.0.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/fora-ibaneis.png",
-            href: "https://foraibaneis.org.br/",
-            alt: t("we-are-doing.sliders.0.title"),
-            title: t("we-are-doing.sliders.0.title"),
-            description: t("we-are-doing.sliders.0.description"),
-            link: t("we-are-doing.sliders.0.navigate"),
+            src: "/static/media/we-are-doing/",
+            href: "https://www.manifestasemcensura.minhabh.org.br/",
+            alt: t("we-are-doing.sliders.manifesta.title"),
+            title: t("we-are-doing.sliders.manifesta.title"),
+            description: t("we-are-doing.sliders.manifesta.description"),
+            link: t("we-are-doing.sliders.manifesta.navigate"),
           },
           {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
@@ -65,34 +57,6 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             title: t("we-are-doing.sliders.1.title"),
             description: t("we-are-doing.sliders.1.description"),
             link: t("we-are-doing.sliders.1.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/honra-nao-e-desculpa.png",
-            href: "https://honranaoedesculpa.nossas.org/",
-            alt: t("we-are-doing.sliders.honra-não-é-desculpa.title"),
-            title: t("we-are-doing.sliders.honra-não-é-desculpa.title"),
-            description: t(
-              "we-are-doing.sliders.honra-não-é-desculpa.description"
-            ),
-            link: t("we-are-doing.sliders.honra-não-é-desculpa.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/nao-estatuto-nascituro.png",
-            href: "https://naoaoestatutodonascituro.mapadoacolhimento.org.br",
-            alt: t("we-are-doing.sliders.estatuto-nascituro.title"),
-            title: t("we-are-doing.sliders.estatuto-nascituro.title"),
-            description: t(
-              "we-are-doing.sliders.estatuto-nascituro.description"
-            ),
-            link: t("we-are-doing.sliders.estatuto-nascituro.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/auxilio-realengo.png",
-            href: "https://www.parquerealengoverde.meurio.org.br/",
-            alt: t("we-are-doing.sliders.auxilio-realengo.title"),
-            title: t("we-are-doing.sliders.auxilio-realengo.title"),
-            description: t("we-are-doing.sliders.auxilio-realengo.description"),
-            link: t("we-are-doing.sliders.auxilio-realengo.navigate"),
           },
         ]}
       />
