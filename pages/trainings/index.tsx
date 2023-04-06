@@ -62,15 +62,6 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
           infiniteLoop
           items={[
             {
-              src: "/static/media/trainings/geracao-que-move.png",
-              href: "https://geracaoquemove.nossas.org/",
-              alt: t("now.carousel.1.title"),
-              title: t("now.carousel.1.title"),
-              description: t("now.carousel.1.description"),
-              link: t("now.carousel.1.action"),
-            },
-
-            {
               src: "/static/media/trainings/programa-de-mobilizadores.png",
               href: "https://mobilizadores.nossas.org/",
               alt: t("now.carousel.3.title"),
@@ -96,6 +87,14 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
           infiniteLoop
           isMobile={ua?.isMobile || false}
           items={[
+            {
+              src: "/static/media/trainings/geracao-que-move.png",
+              href: "https://geracaoquemove.nossas.org/",
+              alt: t("now.carousel.1.title"),
+              title: t("now.carousel.1.title"),
+              description: t("now.carousel.1.description"),
+              link: t("now.carousel.1.action"),
+            },
             {
               src: "/static/media/trainings/our-victories/muvuca.png",
               href: "https://www.muvuca.nossas.org/",
