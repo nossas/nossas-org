@@ -10,7 +10,9 @@ import {
 const PX = ["30px", "6%"];
 const PY = ["50px", "80px"];
 
-export interface Props extends Omit<SimpleGridProps, "spacing">, StackProps {
+export interface Props
+  extends Omit<SimpleGridProps, "spacing" | "columnGap" | "gap" | "rowGap">,
+    StackProps {
   columns?: any;
 }
 

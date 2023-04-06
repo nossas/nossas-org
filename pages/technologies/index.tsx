@@ -2,14 +2,7 @@ import React from "react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import {
-  Box,
-  Heading,
-  Link,
-  Img as Image,
-  SimpleGrid,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Heading, Link, Img as Image, SimpleGrid } from "@chakra-ui/react";
 
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";

@@ -2,15 +2,7 @@ import React from "react";
 import { WithUserAgentProps, withUserAgent } from "next-useragent";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import {
-  Heading,
-  Text,
-  Image,
-  Stack,
-  SimpleGrid,
-  Button,
-  Box,
-} from "@chakra-ui/react";
+import { Heading, Text, Image, Stack, SimpleGrid, Box } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
@@ -104,8 +96,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               link: t("victories.carousel.muvuca.action"),
             },
             {
-              src:
-                "/static/media/trainings/our-victories/jovens-mobilizadoras.png",
+              src: "/static/media/trainings/our-victories/jovens-mobilizadoras.png",
               href: "https://www.programademobilizadoras.nossas.org/",
               alt: t("victories.carousel.jovens-mobilizadoras.title"),
               title: t("victories.carousel.jovens-mobilizadoras.title"),

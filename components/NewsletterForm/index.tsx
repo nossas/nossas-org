@@ -69,7 +69,7 @@ const NewsletterForm = ({ inverted }: any) => {
             >
               {({ handleSubmit }: FormikProps<Values>) => (
                 <Form>
-                  <Stack column="column" spacing={2}>
+                  <Stack spacing={2}>
                     <Stack direction="row" spacing={2} alignItems="flex-end">
                       <InputField
                         name="first_name"
