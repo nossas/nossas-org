@@ -96,7 +96,8 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               link: t("victories.carousel.muvuca.action"),
             },
             {
-              src: "/static/media/trainings/our-victories/jovens-mobilizadoras.png",
+              src:
+                "/static/media/trainings/our-victories/jovens-mobilizadoras.png",
               href: "https://www.programademobilizadoras.nossas.org/",
               alt: t("victories.carousel.jovens-mobilizadoras.title"),
               title: t("victories.carousel.jovens-mobilizadoras.title"),
@@ -159,7 +160,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
       </Section>
 
       {i18n.language === "pt-BR" && (
-        <Section>
+        <Section bgColor="#F7F7F7">
           <SimpleGrid
             columns={[1, null, null, 2]}
             templateColumns={["auto", null, null, "582px auto"]}

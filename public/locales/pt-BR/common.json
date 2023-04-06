@@ -105,59 +105,57 @@
   "we-are-doing": {
     "title": "Campanhas <strong>no ar</strong>",
     "sliders": {
-      "supervia": {
-        "tiraope": {
-          "title": "Tira o Pé da Minha Serra",
-          "description": "A luta pela Serra do Curral em 2022 fez história! E isso só foi possível porque muita gente agiu. E agiu em conjunto. Acontece que as vitórias foram provisórias. E temos agora uma oportunidade para consolidá-las.",
-          "navigate": "Acesse agora!"
-        },
-        "manifesta": {
-          "title": "M.a.n.i.f.e.s.t.a sem censura",
-          "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
-          "navigate": "Acesse agora!"
-        },
-        "1": {
-          "title": "Amazônia de Pé",
-          "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
-          "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé!"
-        }
+      "tiraope": {
+        "title": "Tira o Pé da Minha Serra",
+        "description": "A luta pela Serra do Curral em 2022 fez história! E isso só foi possível porque muita gente agiu. E agiu em conjunto. Acontece que as vitórias foram provisórias. E temos agora uma oportunidade para consolidá-las.",
+        "navigate": "Acesse agora!"
+      },
+      "manifesta": {
+        "title": "M.a.n.i.f.e.s.t.a sem censura",
+        "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
+        "navigate": "Acesse agora!"
+      },
+      "1": {
+        "title": "Amazônia de Pé",
+        "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",
+        "navigate": "Acesse para saber como sua assinatura mantém a Amazônia de Pé!"
       }
     },
     "media": "Na <strong>mídia</strong>",
     "see": "Saiba +",
-    "know-more": "Saiba mais +",
-    "footer": {
-      "navigation": {
-        "join-us": "Junte-se a nós",
-        "about": "Conheça o NOSSAS",
-        "donate": "Faça uma doação",
-        "work-with-us": "Trabalhe conosco"
+    "know-more": "Saiba mais +"
+  },
+  "footer": {
+    "navigation": {
+      "join-us": "Junte-se a nós",
+      "about": "Conheça o NOSSAS",
+      "donate": "Faça uma doação",
+      "work-with-us": "Trabalhe conosco"
+    },
+    "social": {
+      "title": "Siga nas redes sociais"
+    },
+    "newsletter": {
+      "title": "Fique por dentro",
+      "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
+      "success": {
+        "title": "Valeu!",
+        "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
       },
-      "social": {
-        "title": "Siga nas redes sociais"
-      },
-      "newsletter": {
-        "title": "Fique por dentro",
-        "description": "Inscreva-se para receber notificações sobre nossas campanhas, novidades sobre os projetos e outras oportunidades de ação:",
-        "success": {
-          "title": "Valeu!",
-          "description": "Que bom que você tá aqui :) Enviaremos através deste e-mail as novidades sobre projetos, informes e campanhas do NOSSAS."
+      "form": {
+        "email": {
+          "placeholder": "Seu e-mail",
+          "required": "Informe seu e-mail",
+          "invalid": "OPS! Confira o e-mail"
         },
-        "form": {
-          "email": {
-            "placeholder": "Seu e-mail",
-            "required": "Informe seu e-mail",
-            "invalid": "OPS! Confira o e-mail"
-          },
-          "firstname": {
-            "placeholder": "Nome",
-            "required": "Informe seu nome"
-          },
-          "lastname": {
-            "placeholder": "Sobrenome"
-          },
-          "submit": "Salvar"
-        }
+        "firstname": {
+          "placeholder": "Nome",
+          "required": "Informe seu nome"
+        },
+        "lastname": {
+          "placeholder": "Sobrenome"
+        },
+        "submit": "Salvar"
       }
     }
   }
