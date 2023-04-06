@@ -26,6 +26,7 @@ export const ImageTextIncubations: React.FC<ImageTextIncubationsProps> = ({
       <Img
         objectFit="cover"
         boxSize={["100%", null, null, null, "357px"]}
+        maxW={["611px"]}
         src={src}
         alt={alt}
       />
