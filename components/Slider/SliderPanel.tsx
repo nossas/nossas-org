@@ -51,7 +51,7 @@ const SliderPanel: React.FC<Props> = ({ items, infiniteLoop, columns = 2 }) => {
     const lastItemsCount = columns - items.length;
     if (lastItemsCount > 0) {
       const part = renderGroupItems[renderGroupItems.length - 1];
-      items.unshift(part.slice(columns - lastItemsCount, columns));
+      items.unshift(part?.slice(columns - lastItemsCount, columns));
     }
 
     renderGroupItems.push(items);

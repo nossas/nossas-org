@@ -14,6 +14,9 @@ export interface Props
   extends Omit<SimpleGridProps, "spacing" | "columnGap" | "gap" | "rowGap">,
     StackProps {
   columns?: any;
+  columnGap?: any;
+  rowGap?: any;
+  bgColor?: any;
 }
 
 const Section: React.FC<Props> = ({
@@ -22,6 +25,7 @@ const Section: React.FC<Props> = ({
   backgroundColor,
   children,
   columns,
+  columnGap,
   ...props
 }) => {
   return !!columns ? (
