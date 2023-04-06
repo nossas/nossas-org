@@ -27,7 +27,7 @@ const Footer = () => {
         columnGap={[0, "90px"]}
         alignItems="baseline"
       >
-        <Box>
+        <Box textTransform="uppercase">
           <NextLink href="/">
             <Image
               src="/static/media/logos/footer_nossas_logo.png"
@@ -37,14 +37,20 @@ const Footer = () => {
 
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
             <ListItem>
+              <NextLink href="/about">
+                <Link>{t("footer.navigation.about")}</Link>
+              </NextLink>
+            </ListItem>
+
+            <ListItem>
               <NextLink href="/#join-us">
                 <Link>{t("footer.navigation.join-us")}</Link>
               </NextLink>
             </ListItem>
 
             <ListItem>
-              <NextLink href="/about">
-                <Link>{t("footer.navigation.about")}</Link>
+              <NextLink href="/mobilizations">
+                <Link>{t("footer.navigation.mobilizations")}</Link>
               </NextLink>
             </ListItem>
 
