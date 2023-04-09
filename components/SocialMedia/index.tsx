@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Heading, Img, Link, Stack } from "@chakra-ui/react";
+import { Heading, Link, Stack } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "./IconsSVG";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Youtube,
+  Email,
+} from "./IconsSVG";
 
 interface SocialMediaProps {
   color?: string;
@@ -71,12 +78,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
       </Stack>
       {!flat && (
         <Stack>
-          <Img
-            mt={2}
-            maxWidth="200px"
-            src="static/media/footer/email.png"
-            alt="Email do Nossas"
-          />
+          <Email />
         </Stack>
       )}
     </Stack>
