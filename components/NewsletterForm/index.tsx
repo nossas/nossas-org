@@ -14,21 +14,16 @@ interface Values {
   email: string;
 }
 
-const Header = ({ inverted, title, description }) => (
+const Header = ({ title, description }) => (
   <>
-    <Heading
-      as="h4"
-      color={inverted ? "white" : "blue.main"}
-      fontWeight="bold"
-      size="md"
-    >
+    <Heading as="h4" color="blue.main" fontWeight="bold" size="md">
       {title}
     </Heading>
     <Text size="xs">{description}</Text>
   </>
 );
 
-const NewsletterForm = ({ inverted }: any) => {
+const NewsletterForm = () => {
   const { t, i18n } = useTranslation("common");
   const widgetId = getWidgetId("newsletter", i18n.language as any);
 
@@ -38,7 +33,6 @@ const NewsletterForm = ({ inverted }: any) => {
         widgetId={widgetId}
         successComponent={() => (
           <Header
-            inverted={inverted}
             title={t("footer.newsletter.success.title")}
             description={t("footer.newsletter.success.description")}
           />
@@ -47,7 +41,6 @@ const NewsletterForm = ({ inverted }: any) => {
         {({ submit }: any) => (
           <>
             <Header
-              inverted={inverted}
               title={t("footer.newsletter.title")}
               description={t("footer.newsletter.description")}
             />
