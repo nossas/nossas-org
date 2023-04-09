@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Heading, Link, Stack } from "@chakra-ui/react";
+import { Heading, Link, Stack, Text } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import {
   Facebook,
@@ -77,8 +77,13 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
         </MediaLink>
       </Stack>
       {!flat && (
-        <Stack>
+        <Stack direction="row" alignItems="center">
           <Email />
+          <Link href="mailto:contato@nossas.org">
+            <Text fontSize="20px" color="#606373" fontWeight="bold">
+              contato@nossas.org
+            </Text>
+          </Link>
         </Stack>
       )}
     </Stack>
