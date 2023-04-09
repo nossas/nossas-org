@@ -16,7 +16,7 @@ const _default = {
       px: "20px !important",
       color: "white",
       fontWeight: "normal",
-      fontSize: ["21px", null, "14px"],
+      fontSize: ["21px", null, "18px"],
       _focus: itemStyle,
       _hover: itemStyle,
       _active: itemStyle,
