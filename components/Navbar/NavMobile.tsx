@@ -18,7 +18,7 @@ import I18n from "../I18nButton";
 import Donation from "../Donation";
 import SocialMedia from "../SocialMedia";
 import { NavLink, Bars } from "./Elements";
-import { NossasLogo } from "../IconsSVG/Navbar";
+import { NossasLogo } from "../IconsSVG/Logos";
 
 const MobileStyled = styled.div`
   display: none;

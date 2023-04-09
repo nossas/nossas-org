@@ -21,7 +21,7 @@ import I18n from "../I18nButton";
 import { Nav, NavLink, NavSide, NavMenu } from "./Elements";
 import { MenuItem as MenuItemMobile, MenuItemGroup } from "./MenuItemsMobile";
 import NavMobile from "./NavMobile";
-import { NossasLogo } from "../IconsSVG/Navbar";
+import { NossasLogo } from "../IconsSVG/Logos";
 
 const MenuStyled = styled.div<{ variant: string; isOpen: boolean }>`
   display: flex;

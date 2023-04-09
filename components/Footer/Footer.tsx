@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Grid,
-  UnorderedList,
-  ListItem,
-  Link,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Grid, UnorderedList, ListItem, Link } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import NextLink from "next/link";
 
@@ -14,6 +7,7 @@ import Section from "../Page/Section";
 import Donation from "../Donation";
 import NewsletterForm from "../NewsletterForm";
 import SocialMedia from "../SocialMedia";
+import { FooterLogo } from "../IconsSVG/Logos";
 
 const Footer = () => {
   const { t, i18n } = useTranslation("common");
@@ -29,10 +23,7 @@ const Footer = () => {
       >
         <Box textTransform="uppercase">
           <NextLink href="/">
-            <Image
-              src="/static/media/logos/footer_nossas_logo.png"
-              alt="Logo do Nossas"
-            />
+            <FooterLogo />
           </NextLink>
 
           <UnorderedList styleType="none" ml={0} mt={[5, 20]}>
