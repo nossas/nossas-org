@@ -17,7 +17,7 @@
     "carousel": {
       "mapa": {
         "title": "Mapa do Acolhimento",
-        "description": "INSERIR DESCRIÇÃO",
+        "description": "Reduzir a imagem para o padrão do carrossel e inserir a descrição do Mapa do Acolhimento: O Mapa do Acolhimento é uma rede de solidariedade que conecta mulheres que sofrem ou sofreram violência de gênero a psicólogas e advogadas dispostas a ajudá-las de forma voluntária.",
         "action": "Saiba mais"
       },
       "1": {
@@ -32,7 +32,8 @@
       },
       "3": {
         "title": "Defezap",
-        "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima."
+        "description": "O Defezap é um sistema pioneiro de denúncias contra a violência de Estado no Rio de Janeiro, direto no WhatsApp, garantindo o sigilo da vítima.",
+        "action": "Saiba mais"
       },
       "4": {
         "title": "Rede nossas cidades",
@@ -46,7 +47,8 @@
       },
       "6": {
         "title": "Rede de Apoio Psicológico",
-        "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los."
+        "description": "Em 2020, conectamos trabalhadores da saúde que estavam na linha de frente do combate ao COVID-19 a psicólogas e psicólogos voluntários dispostos a atendê-los.",
+        "action": "Saiba mais"
       }
     }
   }

@@ -102,7 +102,7 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
               src="/static/media/s3/mapadoacolhimento.png"
               title={t("projects.carousel.mapa.title")}
               description={t("projects.carousel.mapa.description")}
-              href=""
+              href="https://www.mapadoacolhimento.org/"
               linkText={t("projects.carousel.mapa.action")}
             />,
             <ImageTextIncubations
@@ -122,6 +122,8 @@ const Incubations: React.FC<WithUserAgentProps> = ({ ua }) => {
             <ImageTextIncubations
               src="/static/media/s3/defezap.png"
               title={t("projects.carousel.3.title")}
+              href="https://www.defezap.org.br/"
+              linkText={t("projects.carousel.3.action")}
               description={t("projects.carousel.3.description")}
             />,
             <ImageTextIncubations

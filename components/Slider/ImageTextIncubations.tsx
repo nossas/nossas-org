@@ -36,7 +36,7 @@ export const ImageTextIncubations: React.FC<ImageTextIncubationsProps> = ({
             {title}
           </Heading>
         </Link>
-        <Text dangerouslySetInnerHTML={{ __html: description }} />
+        <Text dangerouslySetInnerHTML={{ __html: description }} maxW={1900} />
         {href && linkText ? (
           <Link href={href} target="_blank" colorScheme="orange">
             {`${linkText} +`}
