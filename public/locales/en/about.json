@@ -7,7 +7,7 @@
   },
   "timeline": {
     "title": "Timeline",
-    "description": "Learn more about our history",
+    "description": "Learn more about our history:",
     "2011": {
       "1": "NOSSAS is founded as Meu Rio, a multi-cause organization bringing Rio’s residents closer to local politics."
     },
@@ -136,7 +136,7 @@
       }
     },
     "founders": {
-      "title": "Fundadores",
+      "title": "Founders",
       "alessandra": {
         "role": "Co-fundadora",
         "about": "Alessandra é uma ativista, diretora, produtora e escritora com vasta experiência em mobilização de pessoas. Foi membro-fundadora da agência nova-iorquina Purpose, que trouxe para o Brasil antes de co-fundar o NOSSAS. Foi curadora do blog Agora É Que São Elas, colunista da Folha de São Paulo e palestrante do TED Global. Atualmente dirige o programa de jornalismo satírico Greg News, na HBO, e é fellow da Obama Foundation e da rede de empreendedores sociais Ashoka. Alessandra é formada em Economia e Direitos Humanos pela Columbia University."
@@ -153,7 +153,7 @@
         "about": "Popular educator and master in political science, Áurea Carolina is a brazilian activist with a history in the struggles of women, black people, youth, traditional peoples and communities and peripheral populations. In 2016, she was elected the most voted councilor in Belo Horizonte. In 2018, she was elected federal deputy for Minas Gerais - the most voted woman in the state. She was head of the Culture Commission of the Chamber of Deputies and, at the end of 2022, collaborated with the transition team of the Lula government for the refoundation of the Ministry of Culture. She was a member of the Gabinetona political project, the Ocupa Política network and the Progressive International global network. In 2019, she was recognized by Most Influential People of African Descent as one of the 100 Most Influential Young Black People in the World in Politics and Governance. For her work in the fight against mining, she was recognized in 2020 by the Prêmio Congresso em Foco as one of the best parliamentarians in the climate and sustainability category. She is currently the Executive Director of NOSSAS."
       },
       "virginia": {
-        "role": "Deputy director",
+        "role": "Deputy Director",
         "about": "Virginia has worked as Editorial Project Manager at Éditions Gallimard and has led public and institutional communication projects in French agencies. In Brazil, she worked in third sector organizations focused on culture and social justice. At NOSSAS, she supervises the areas of Operations, Communications and Sustainability. Virginia has a degree in Political Philosophy from the Sorbonne and a postgraduate degree in Communication from Instituto CELSA."
       },
       "manoela": {
