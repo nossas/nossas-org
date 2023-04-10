@@ -42,7 +42,7 @@ const DescriptionBox: React.FC<Props> = ({
         {title}
       </Heading>
 
-      <Text>{description}</Text>
+      <Text maxW={405}>{description}</Text>
     </Stack>
 
     {children}
