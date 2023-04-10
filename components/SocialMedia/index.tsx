@@ -80,7 +80,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color, flat }) => {
         <Stack direction="row" alignItems="center">
           <Email />
           <Link href="mailto:contato@nossas.org">
-            <Text fontSize="20px" color="#606373" fontWeight="bold">
+            <Text fontSize="20px" color="gray.soft" fontWeight="bold">
               contato@nossas.org
             </Text>
           </Link>

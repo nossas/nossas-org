@@ -36,7 +36,7 @@ const CARD_OPTIONS = {
     base: {
       height: "2.5rem",
       iconColor: "#2D00A1",
-      color: "#606373",
+      color: "#gray.soft",
       fontWeight: "normal",
       fontFamily: "Droid Sans",
       fontSize: "16px",

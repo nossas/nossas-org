@@ -19,7 +19,7 @@ const Header = ({ title, description }) => (
     <Heading as="h4" color="blue.main" fontWeight="bold" size="md">
       {title}
     </Heading>
-    <Text fontSize="18px" color="#606373" fontWeight="bold" lineHeight="23px">
+    <Text fontSize="18px" color="gray.soft" fontWeight="bold" lineHeight="23px">
       {description}
     </Text>
   </>
