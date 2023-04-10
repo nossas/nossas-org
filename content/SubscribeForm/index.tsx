@@ -30,7 +30,7 @@ interface SubscribeFormProps {
 const colors = {
   blue: "blue.main",
   pink: "pink.main",
-  green: "green",
+  green: "green.light",
 };
 
 const phoneRegExp = /^\+\d{2}\s\(\d{2}\)\s\d{4,5}-?\d{4}$/;
@@ -52,7 +52,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
         widgetId={widgetId}
         successComponent={({ data }) => (
           <SuccessPanel
-            color="green"
+            color="green.light"
             title={
               <div
                 dangerouslySetInnerHTML={{

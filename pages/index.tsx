@@ -157,7 +157,7 @@ const Home: React.FC<WithUserAgentProps> = ({ ua }) => {
             <Heading
               as="h2"
               size="lg"
-              color="green"
+              color="green.light"
               mt={7}
               dangerouslySetInnerHTML={{
                 __html: t("sustainability.donate", {

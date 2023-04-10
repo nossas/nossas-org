@@ -25,17 +25,17 @@ const WorkWithUs: React.FC = () => (
           </>
         }
         description={`
-          O NOSSAS é uma organização que impulsiona o ativismo democrático 
-          e solidário no Brasil. Juntos, defendemos a democracia e fazemos 
-          pressão pública por um país mais justo. Somos uma organização sem 
-          fins lucrativos e por trás de tudo isso estão pessoas: mobilizadoras, 
+          O NOSSAS é uma organização que impulsiona o ativismo democrático
+          e solidário no Brasil. Juntos, defendemos a democracia e fazemos
+          pressão pública por um país mais justo. Somos uma organização sem
+          fins lucrativos e por trás de tudo isso estão pessoas: mobilizadoras,
           programadoras, comunicadoras, cientistas de dados, designers.
         `}
       />
     </Section>
 
     <Section direction="column" spacing={[10]} bgColor="gray.light">
-      <Heading as="h2" color="green">
+      <Heading as="h2" color="green.light">
         NOSSAS <b>VAGAS</b>
       </Heading>
 

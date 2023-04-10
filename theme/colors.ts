@@ -2,7 +2,10 @@ const _default = {
   black: "#000000",
   white: "#FFFFFF",
   red: "#FF2B4E",
-  green: "#00C3B0",
+  green: {
+    light: "#6ECFC2",
+    main: "#00C3B0",
+  },
   yellow: "#FFAE00",
   gray: {
     dark: "#424242",

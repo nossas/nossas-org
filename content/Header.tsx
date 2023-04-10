@@ -3,7 +3,7 @@ import { Box, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 
 type HeaderProps = {
   title: any;
-  titleColor?: "blue.main" | "pink.main" | "green.main" | "orange.main";
+  titleColor?: "blue.main" | "pink.main" | "green.light" | "orange.main";
   description: React.ReactElement | string;
 };
 

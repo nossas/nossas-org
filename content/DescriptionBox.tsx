@@ -14,7 +14,7 @@ interface Props {
 const colors = {
   blue: "blue.main",
   orange: "orange.main",
-  green: "green",
+  green: "green.light",
 };
 
 const DescriptionBox: React.FC<Props> = ({

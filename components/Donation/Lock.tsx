@@ -32,7 +32,7 @@ const Lock = () => {
       alignItems="center"
     >
       <Icon />
-      <Text color="green" fontSize="12px" w="48px">
+      <Text color="green.light" fontSize="12px" w="48px">
         {t("donation.form.security")}
       </Text>
     </Stack>

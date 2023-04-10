@@ -145,7 +145,7 @@ const QuemSomos: React.FC = () => {
             margin="0 auto"
             maxW={[226, 282]}
             maxH={[232, 374]}
-            src="/static/media/s3/sustentabilidade2.png"
+            src="/static/media/s3/who.png"
             alt={t("who-finances.alt")}
           />
 
@@ -153,7 +153,7 @@ const QuemSomos: React.FC = () => {
             <Heading
               as="h2"
               size="lg"
-              color="green"
+              color="green.light"
               dangerouslySetInnerHTML={{
                 __html: t("who-finances.title", {
                   interpolation: { escapeValue: false },

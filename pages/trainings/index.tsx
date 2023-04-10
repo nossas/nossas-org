@@ -173,7 +173,7 @@ const Trainings: React.FC<WithUserAgentProps> = ({ ua }) => {
               textAlign={["center", null, null, "left"]}
               spacing={["20px"]}
             >
-              <Heading as="h2" color="green">
+              <Heading as="h2" color="green.light">
                 <div
                   dangerouslySetInnerHTML={{
                     __html: t("participate.title", {
