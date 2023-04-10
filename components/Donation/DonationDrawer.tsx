@@ -10,6 +10,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { Form } from "formik";
+import { DonationLogo } from "../IconsSVG/Logos";
 
 // import { withTranslation } from "../../i18n";
 
@@ -63,10 +64,7 @@ const Donation: React.FC<DonationProps> = ({
               right={["20px", "45px"]}
             />
             <DrawerHeader>
-              <Image
-                src="/static/media/logos/donation_nossas_logo.png"
-                alt="NOSSAS"
-              />
+              <DonationLogo />
             </DrawerHeader>
             <DrawerBody>
               {children}
