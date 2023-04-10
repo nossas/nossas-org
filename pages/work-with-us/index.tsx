@@ -34,43 +34,53 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section direction="column" spacing={[10]} bgColor="gray.light">
-      <Heading as="h2" color="green.light">
-        NOSSAS <b>VAGAS</b>
-      </Heading>
+    <Section spacing={[10]} bgColor="gray.light">
+      <Stack
+        direction={["column", "column", "row"]}
+        alignItems="center"
+        spacing={[10, 10, 0, 0]}
+        justifyContent="space-between"
+        maxW={1420}
+      >
+        <Stack alignItems={["center", "center", "baseline"]}>
+          <Heading as="h2" color="green.light">
+            NOSSAS <b>VAGAS</b>
+          </Heading>
 
-      <Stack alignItems="center" spacing={4}>
-        <Trio />
-        <Text
-          fontFamily="Bebas Neue"
-          fontSize="30px"
-          color="black"
-          maxW="297px"
-          textAlign="center"
-        >
-          Quando abrirmos novas vagas, elas estarão aqui!
-        </Text>
+          <Text
+            fontSize="30px"
+            color="gray.soft"
+            maxW={["300px", "450px", "297px", "297px"]}
+          >
+            Quando abrirmos novas vagas, elas estarão aqui!
+          </Text>
+        </Stack>
+
+        <Image
+          width={[300, 350, 500]}
+          src="/static/media/s3/work-with-us.png"
+        />
       </Stack>
     </Section>
 
-    <Section display="flex">
-      <SimpleGrid
-        columns={[1, null, null, 2]}
-        templateColumns={["auto", null, null, "582px auto"]}
-        rowGap="30px"
+    <Section direction="column">
+      <Stack
+        direction={["column", "column", "row"]}
         alignItems="center"
+        spacing={[10, 10, 0, 0]}
+        justifyContent="space-between"
       >
-        <Box>
-          <Image
-            transform="scale(0.8)"
-            objectFit="cover"
-            src="/static/media/s3/workwithus.png"
-            margin="0 auto"
-          />
-        </Box>
-        <Stack>
-          <Heading size="md">POLÍTICA AFIRMATIVA</Heading>
-          <Text textAlign={["center", null, null, "left"]}>
+        <Image
+          objectFit="cover"
+          src="/static/media/s3/workwithus.png"
+          width={[300, 350, 500]}
+        />
+        <Stack alignItems={["center", "center", "baseline"]}>
+          <Heading as="h2" color="orange.main">
+            POLÍTICA <b>AFIRMATIVA</b>
+          </Heading>
+
+          <Text maxW={600}>
             Somos uma equipe comprometida com justiça e equidade, mas nossa
             composição ainda não reflete de forma adequada a diversidade do país
             onde vivemos. Por isso, em nossos processos seletivos priorizamos a
@@ -78,7 +88,7 @@ const WorkWithUs: React.FC = () => (
             pessoas trans e moradoras de periferias do Brasil.
           </Text>
         </Stack>
-      </SimpleGrid>
+      </Stack>
     </Section>
   </Body>
 );
