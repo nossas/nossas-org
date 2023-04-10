@@ -128,8 +128,8 @@ const QuemSomos: React.FC = () => {
 
       {/* Equipe */}
       <Section spacing={["60px", null, null, null, "100px"]}>
-        <BoardMembers />
         <FounderMembers />
+        <BoardMembers />
         <LeadersMembers />
         <TeamMembers />
       </Section>

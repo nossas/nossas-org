@@ -146,9 +146,9 @@
       }
     },
     "leaders": {
-      "title": "Gestores Executivos",
+      "title": "Directorship",
       "aurea": {
-        "role": "Diretora Executiva",
+        "role": "Diretora-executiva",
         "about": "Educadora popular e mestra em ciência política, Áurea Carolina é uma ativista brasileira com trajetória nas lutas de mulheres, negritude, juventudes, povos e comunidades tradicionais e populações periféricas. Em 2016, foi eleita a vereadora mais votada de Belo Horizonte. Em 2018, foi eleita deputada federal por Minas Gerais - a mulher mais votada para o cargo no estado. Foi titular da Comissão de Cultura da Câmara dos Deputados e, ao final de 2022, colaborou com a equipe de transição do governo Lula para a refundação do Ministério da Cultura. Integrou o projeto político Gabinetona, a rede Ocupa Política e a rede global Progressive International. Em 2019, foi reconhecida pelo Most Influential People of African Descent como uma das 100 pessoas jovens negras mais influentes do mundo na área de política e governança. Por sua atuação no enfrentamento à mineração, foi reconhecida em 2020 pelo Prêmio Congresso em Foco como uma das melhores parlamentares na categoria clima e sustentabilidade. Hoje é Diretora Executiva do NOSSAS."
       },
       "virginia": {
@@ -156,7 +156,7 @@
         "about": "Virginia atuou como gerente de projetos editoriais nas Éditions Gallimard e pilotou projetos de comunicação pública e institucional em agências de comunicação na França. Ao regressar ao Brasil, atuou em organizações do terceiro setor que trabalham com cultura e justiça social. No NOSSAS, supervisiona as áreas de operações, comunicação e sustentabilidade. Ela é formada em Filosofia Política pela Sorbonne e pós-graduada em Comunicação pelo Instituto CELSA."
       },
       "manoela": {
-        "role": "Diretora de Representação e Estratégia",
+        "role": "Diretora de Estratégia",
         "about": "Manoela é especialista em direitos humanos e estudos de gênero e ativista pelos direitos das mulheres. Criou e coapresenta o podcast Novo Normal e contribui como colunista para vários veículos, como Folha de São Paulo, Veja, Volcánica e Mídia Ninja. Antes do NOSSAS, fez parte da equipe da Open Society Foundations LATAM. Manoela é doutora em segurança do cidadão pelo Programa de Pós-Graduação em Relações Internacionais San Tiago Dantas."
       },
       "daniela": {
@@ -168,7 +168,7 @@
         "about": "Talita lidera a área de Tecnologia e Inteligência do NOSSAS, atuando na intersecção entre tecnologia, dados e estratégia. Formada em Comunicação e Multimeios, se especializou em Gestão de Produto e UX. Como consultora, trabalhou com grandes empresas e startups guiando processos de inovação e design. Criou o bootcamp de UX Design da Mastertech, onde foi coordenadora e professora. Há cinco anos atrás direcionou essa experiência para o terceiro setor, trabalhando com o desenvolvimento de tecnologias para mobilização social, projetos de justiça climática e combate à violência de gênero."
       },
       "roberto": {
-        "role": "Estrategista de Cidades",
+        "role": "Diretor de Mobilização e Cidades",
         "about": "Roberto é arquiteto, urbanista e pesquisador com ampla experiência em prática arquitetônica, desenvolvimento urbano e tecnologia da informação. É editor da revista Piseagrama e professor na UFMG, tendo passado antes pelos laboratórios de pesquisa Laboratório Gráfico para Experimentação Arquitetônica (LAGEAR/UFMG) e Laboratório de Material Didático Multimídia (LMDM/CETEC MG). Roberto também é diretor e co-fundador da Hometeka."
       }
     },
