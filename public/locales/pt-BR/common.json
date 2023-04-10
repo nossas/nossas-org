@@ -115,6 +115,21 @@
         "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
         "navigate": "Pressione o Secretário de Cultura"
       },
+      "abastece": {
+        "title": "Abastece sem mistério",
+        "description": "Em plena pandemia, o valor gasto com combustível pelos  vereadores sofreu um aumento de quase R$1 milhão de reais. Mesmo com reuniões online! Como se explica isso? Pedimos transparência já!",
+        "navigate": "Pressione por transparência já"
+      },
+      "soschuvas": {
+        "title": "SOS Chuvas",
+        "description": "Mais de 50 famílias do Bairro Monte das Oliveiras foram diretamente atingidas pelas fortes chuvas torrenciais que assolaram Manaus nas últimas semanas. Precisamos dar uma resposta emergencial às suas principais necessidades!",
+        "navigate": "Doe agora"
+      },
+      "bolsa-construtora-nao": {
+        "title": "Bolsa construtora não",
+        "description": "A prefeitura de BH quer dar desconto para construtoras fazerem grandes prédios dentro do perímetro da avenida do Contorno. Só que esse “desconto” vai sair de recursos que iriam para moradias populares, áreas verdes e mobilidade urbana pra cidade toda.",
+        "navigate": "Envie seu recado ao prefeito"
+      },
       "1": {
         "title": "Amazônia de Pé",
         "description": "Com o avanço da crise climática e da devastação da Amazônia, é urgente agir para que a floresta fique de pé. A Amazônia de Pé é um projeto de lei de iniciativa popular que propõe que as florestas públicas da região sejam destinadas àqueles que historicamente provaram que sabem como preservar a floresta: povos indígenas, quilombolas e unidades de conservação. O futuro da floresta e da vida no planeta está em nossas mãos!",

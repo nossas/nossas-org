@@ -84,7 +84,7 @@ export const EmployeeItem = ({ data }: EmployeeItemProps) => {
             position="absolute"
             top="0"
             padding="12px"
-            bg="linear-gradient(180deg, rgba(81, 32, 206, 0.2) 0%, rgba(45, 0, 161, 0.2) 100%)"
+            bg="linear-gradient(180deg, rgba(45, 0, 161, 0.4) 0%, rgba(45, 0, 161, 0.4) 100%)"
             cursor="pointer"
           />
         )}

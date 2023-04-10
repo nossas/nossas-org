@@ -52,6 +52,32 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.manifesta.navigate"),
           },
           {
+            src: "/static/media/we-are-doing/abastece.png",
+            href: "https://www.abastecesemmisterio.meurio.org.br/",
+            alt: t("we-are-doing.sliders.abastece.title"),
+            title: t("we-are-doing.sliders.abastece.title"),
+            description: t("we-are-doing.sliders.abastece.description"),
+            link: t("we-are-doing.sliders.abastece.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/sos.png",
+            href: "https://soschuvas.minhamanaus.org.br/",
+            alt: t("we-are-doing.sliders.soschuvas.title"),
+            title: t("we-are-doing.sliders.soschuvas.title"),
+            description: t("we-are-doing.sliders.soschuvas.description"),
+            link: t("we-are-doing.sliders.soschuvas.navigate"),
+          },
+          {
+            src: "/static/media/we-are-doing/bolsa.png",
+            href: "https://bolsaconstrutoranao.com/",
+            alt: t("we-are-doing.sliders.bolsa-construtora-nao.title"),
+            title: t("we-are-doing.sliders.bolsa-construtora-nao.title"),
+            description: t(
+              "we-are-doing.sliders.bolsa-construtora-nao.description"
+            ),
+            link: t("we-are-doing.sliders.bolsa-construtora-nao.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",
             href: "https://amazoniadepe.org.br/",
             alt: t("we-are-doing.sliders.1.title"),
