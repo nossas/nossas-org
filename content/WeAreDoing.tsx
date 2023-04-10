@@ -23,6 +23,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         as="h2"
         size="lg"
         color="orange.main"
+        maxW={[250, 250, 800]}
         dangerouslySetInnerHTML={{
           __html: t("we-are-doing.title", {
             interpolation: { escapeValue: false },

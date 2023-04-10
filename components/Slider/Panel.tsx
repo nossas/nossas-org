@@ -50,7 +50,7 @@ export const Panel: React.FC<{ items: Item }> = ({ items: item }) => {
               <Arrow />
             </>
           ) : (
-            t("know-more")
+            t("we-are-doing.know-more")
           )}
         </Link>
       </Stack>
