@@ -1,12 +1,17 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Box, Heading, Stack, SimpleGrid } from "@chakra-ui/layout";
-import { Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Stack, Link, Flex } from "@chakra-ui/layout";
+import { Button, Image, Text } from "@chakra-ui/react";
 
 import Header from "../../content/Header";
 import { Body, Section } from "../../components/Page";
 import Hero from "../../components/Hero";
-import { Trio } from "../../components/IconsSVG/Functionalities";
+import {
+  Computer,
+  ComputerBlue,
+  People,
+  Trio,
+} from "../../components/IconsSVG/Functionalities";
 
 const WorkWithUs: React.FC = () => (
   <Body>
@@ -34,32 +39,77 @@ const WorkWithUs: React.FC = () => (
       />
     </Section>
 
-    <Section spacing={[10]} bgColor="gray.light">
-      <Stack
-        direction={["column", "column", "row"]}
-        alignItems="center"
-        spacing={[10, 10, 0, 0]}
-        justifyContent="space-between"
-        maxW={1420}
-      >
-        <Stack alignItems={["center", "center", "baseline"]}>
-          <Heading as="h2" color="green.light">
-            NOSSAS <b>VAGAS</b>
-          </Heading>
+    <Section direction="column" spacing={[10]} bgColor="gray.light">
+      <Heading as="h2" color="green.light">
+        NOSSAS <b>VAGAS</b>
+      </Heading>
 
-          <Text
+      <Stack
+        maxW="1600px"
+        direction={["column", "column", "row"]}
+        spacing={[10, 14, 20, 138, 188]}
+        justifyContent="center"
+        textAlign="center"
+      >
+        <Stack alignItems="center" spacing={4}>
+          <Computer />
+
+          <Text fontSize="30px" fontWeight="bold" maxW="247px">
+            Programadora Full-stack II
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/programadora-fullstack-ii"
+            target="blank"
+          >
+            <Button size="md" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={4}>
+          <ComputerBlue />
+
+          <Text fontSize="30px" fontWeight="bold" maxW="210px">
+            Analista de Dados I
+          </Text>
+
+          <Link href="https://bit.ly/AnalistaDeDados" target="blank">
+            <Button size="md" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        <Stack alignItems="center" spacing={4}>
+          <Computer />
+
+          <Text fontSize="30px" fontWeight="bold" maxW="210px">
+            Programadora Web I
+          </Text>
+
+          <Link
+            href="https://nossas.recruitee.com/o/programadora-web-i"
+            target="blank"
+          >
+            <Button size="md" width="140px">
+              Saiba mais
+            </Button>
+          </Link>
+        </Stack>
+
+        {/* <Text
             fontSize="30px"
             color="gray.soft"
             maxW={["300px", "450px", "297px", "297px"]}
           >
             Quando abrirmos novas vagas, elas estarão aqui!
-          </Text>
-        </Stack>
-
-        <Image
+          </Text> */}
+        {/* <Image
           width={[300, 350, 500]}
           src="/static/media/s3/work-with-us.png"
-        />
+        /> */}
       </Stack>
     </Section>
 
