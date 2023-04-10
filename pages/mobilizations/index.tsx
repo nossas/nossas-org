@@ -62,6 +62,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.orçamento-secreto.description"
               ),
               href: "https://fimdoorcamentosecreto.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/orçamento-cultura-fica.png",
@@ -71,6 +72,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.orçamento-cultural-fica.description"
               ),
               href: "https://leisdacultura.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/triplique.png",
@@ -80,6 +82,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.triplique-seu-voto.description"
               ),
               href: "https://tripliqueseuvoto.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/passe-livre.png",
@@ -87,6 +90,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.passe-livre.title"),
               description: t("our-victories.carousel.passe-livre.description"),
               href: "https://www.passelivrepelademocracia.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/vatapa.png",
@@ -96,6 +100,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.vatapa-buraco.description"
               ),
               href: "https://www.vatapaburaco.minhamanaus.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/rol.png",
@@ -105,6 +110,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.rol-exemplificativo.description"
               ),
               href: "https://rolexemplificativosalva.nossas.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/essa-conta.png",
@@ -114,6 +120,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.essa-conta-eu-não-pago.description"
               ),
               href: "https://essacontaeunaopago.minhamanaus.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/lei-paulo-gustavo.png",
@@ -123,6 +130,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
                 "our-victories.carousel.lei-paulo-gustavo.description"
               ),
               href: "https://leipaulogustavosim.nossas.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/fora-gabriel-monteiro.png",
@@ -130,6 +138,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.1.title"),
               description: t("our-victories.carousel.1.description"),
               href: "https://www.foragabrielmonteiro.meurio.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/cade-meu-absorvente.png",
@@ -137,6 +146,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.2.title"),
               description: t("our-victories.carousel.2.description"),
               href: "https://www.cademeuabsorvente.nossas.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/paraisopolis.png",
@@ -144,6 +154,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.3.title"),
               description: t("our-victories.carousel.3.description"),
               href: "https://paraisopolis.minhasampa.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src:
@@ -152,6 +163,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.4.title"),
               description: t("our-victories.carousel.4.description"),
               href: "https://www.acolhimentonaoseterceiriza.minhasampa.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/meia-entrada-sim.png",
@@ -159,6 +171,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.5.title"),
               description: t("our-victories.carousel.5.description"),
               href: "https://www.meiaentradasim.minhasampa.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/meu-corpo-meu-diu.png",
@@ -166,6 +179,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.6.title"),
               description: t("our-victories.carousel.6.description"),
               href: "https://www.meucorpomeudiu.nossas.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/camarotedavacina.jpg",
@@ -173,6 +187,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.7.title"),
               description: t("our-victories.carousel.7.description"),
               href: "https://www.camarotedavacinanao.nossas.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/restingaemangue.png",
@@ -180,6 +195,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.8.title"),
               description: t("our-victories.carousel.8.description"),
               href: "https://www.restingaemangueficam.nossas.org/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/rededeprotecao.jpg",
@@ -187,6 +203,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.9.title"),
               description: t("our-victories.carousel.9.description"),
               href: "https://www.auxilioparasaude.nossas.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/semaulasemenem.jpg",
@@ -194,6 +211,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.10.title"),
               description: t("our-victories.carousel.10.description"),
               href: "https://www.semaulasemenem.nossas.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/renda-basica.jpg",
@@ -201,6 +219,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.11.title"),
               description: t("our-victories.carousel.11.description"),
               href: "https://www.rendabasica.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/paulista.jpg",
@@ -208,6 +227,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.12.title"),
               description: t("our-victories.carousel.12.description"),
               href: "https://www.paulistaaberta.minhasampa.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/escola.jpg",
@@ -215,6 +235,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.13.title"),
               description: t("our-victories.carousel.13.description"),
               href: "https://www.escolanaosedestroi.meurio.org.br/",
+              link: t("our-victories.link"),
             },
             {
               src: "/static/media/our-victories/rio-sem-canudo.jpg",
@@ -222,6 +243,7 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: t("our-victories.carousel.14.title"),
               description: t("our-victories.carousel.14.description"),
               href: "https://www.riosemcanudo.meurio.org.br/",
+              link: t("our-victories.link"),
             },
           ]}
         />

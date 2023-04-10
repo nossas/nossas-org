@@ -214,6 +214,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: "Saldão da Amazônia",
               description: t("campaigns.carousel.amazonia"),
               href: "https://www.saldaodaamazonia.org.br/",
+              link: t("campaigns.link"),
             },
             {
               src: "/static/media/s3/maisquepalmas.png",
@@ -221,6 +222,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: "Mais do que palmas",
               description: t("campaigns.carousel.palmas"),
               href: "http://www.mais-que-palmas.bonde.org/",
+              link: t("campaigns.link"),
             },
             {
               src: "/static/media/s3/ahoraeagora.png",
@@ -228,6 +230,7 @@ const Technologies: React.FC<WithUserAgentProps> = ({ ua }) => {
               title: "A hora é agora",
               description: t("campaigns.carousel.agora"),
               href: "https://www.stf.alloutbrasil.org/",
+              link: t("campaigns.link"),
             },
           ]}
         />

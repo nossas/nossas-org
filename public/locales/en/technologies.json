@@ -49,10 +49,11 @@
     "action": " Visit the webpage"
   },
   "who-used": {
-    "title": "Check out who has used <strong>BONDE for their initiatives</strong>"
+    "title": "Check out who has used <strong>our technologies for their initiatives </strong>"
   },
   "campaigns": {
     "title": "Campaigns which <strong>made history</strong>",
+    "link": "Find out more",
     "carousel": {
       "amazonia": " A bill to make land-grabbing easier was put before the Chamber of Deputies, but thanks to the campaign more than 30,000 people were mobilized and they managed to get the bill thrown out.",
       "palmas": "This was a campaign to enshrine in law an emergency package of measures to improve working conditions for doctors, nurses, intensive care physiotherapists and nursing auxiliaries and assistants working on the frontline against Covid-19.",

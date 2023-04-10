@@ -117,18 +117,18 @@
       },
       "abastece": {
         "title": "Abastece sem mistério",
-        "description": "Em plena pandemia, o valor gasto com combustível pelos  vereadores sofreu um aumento de quase R$1 milhão de reais. Mesmo com reuniões online! Como se explica isso? Pedimos transparência já!",
-        "navigate": "Pressione por transparência já"
+        "description": "In the middle of the pandemic, the amount spent on fuel by councilors has increased by almost R$1 million reais. Even with online meetings! How can this be explained? We ask for transparency now!",
+        "navigate": "Press for transparency now!"
       },
       "soschuvas": {
         "title": "SOS Chuvas",
-        "description": "Mais de 50 famílias do Bairro Monte das Oliveiras foram diretamente atingidas pelas fortes chuvas torrenciais que assolaram Manaus nas últimas semanas. Precisamos dar uma resposta emergencial às suas principais necessidades!",
-        "navigate": "Doe agora"
+        "description": "More than 50 families from the neighborhood Monte das Oliveiras were directly affected by the torrential rains that hit Manaus in the last few weeks. We need to give an emergency response to their main needs!",
+        "navigate": "Donate now!"
       },
       "bolsa-construtora-nao": {
         "title": "Bolsa construtora não",
-        "description": "A prefeitura de BH quer dar desconto para construtoras fazerem grandes prédios dentro do perímetro da avenida do Contorno. Só que esse “desconto” vai sair de recursos que iriam para moradias populares, áreas verdes e mobilidade urbana pra cidade toda.",
-        "navigate": "Envie seu recado ao prefeito"
+        "description": "Belo Horizonte wants to give a discount for construction companies to build large buildings within the perimeter of the Contorno Avenue. But this “discount” will come out of resources that would go to affordable housing, green areas and urban mobility for the entire city.",
+        "navigate": "Send your message to the mayor"
       },
       "1": {
         "title": "Amazônia de Pé",
@@ -145,7 +145,7 @@
       "join-us": "Join us",
       "about": "About NOSSAS",
       "mobilizations": "join a campaign",
-      "donate": "Make a donation",
+      "donate": "MAKE A DONATION",
       "work-with-us": "Work with us"
     },
     "social": {
