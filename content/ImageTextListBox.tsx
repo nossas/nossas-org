@@ -39,7 +39,7 @@ const ImageTextListBox: React.FC<ImageTextListProps> = ({
         justifyItems="center"
         justifyContent="center"
         alignItems="baseline"
-        flexWrap="wrap"
+        flexWrap="nowrap"
       >
         {items.map(({ icon, description }, i) => (
           <Stack
