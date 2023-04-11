@@ -194,6 +194,7 @@ const QuemSomos: React.FC = () => {
             columns={[2, null, null, null, 4]}
             rowGap={["20px", null, null, null, "45px"]}
             pt="75px"
+            gridColumnGap={["70", 0]}
           >
             <Link href="https://www.co-impact.org/" isExternal>
               <Image
