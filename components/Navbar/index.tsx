@@ -201,7 +201,7 @@ const Navbar: React.FC = () => {
             </MenuItemGroup>
           </NavMobile>
           <NavLink href="/">
-            <Stack>
+            <Stack width={["80%", null, null, null]}>
               <NossasLogo />
             </Stack>
           </NavLink>

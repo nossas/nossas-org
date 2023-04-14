@@ -18,7 +18,7 @@ import I18n from "../I18nButton";
 import Donation from "../Donation";
 import SocialMedia from "../SocialMedia";
 import { NavLink, Bars } from "./Elements";
-import { NossasLogo } from "../IconsSVG/Logos";
+import { NossasLogoMenu } from "../IconsSVG/Logos";
 
 const MobileStyled = styled.div`
   display: none;
@@ -63,7 +63,7 @@ const NavMobile = ({ children }) => {
                   <FaTimes width={13} height={11} />
                 </Button>
                 <NavLink href="/">
-                  <NossasLogo />
+                  <NossasLogoMenu />
                 </NavLink>
               </Stack>
               <Donation variant="outline">{t("navbar.donate")}</Donation>
