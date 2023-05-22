@@ -49,30 +49,14 @@ const WorkWithUs: React.FC = () => (
         direction={["column", "column", "row"]}
         spacing={[10, 14, 20, 138, 188]}
         justifyContent="center"
+        alignItems="center"
         textAlign="center"
       >
-        <Stack alignItems="center" spacing={4}>
-          <Computer />
-
-          <Text fontSize="30px" fontWeight="bold" maxW="247px">
-            Programadora Full-stack II
-          </Text>
-
-          <Link
-            href="https://nossas.recruitee.com/o/programadora-fullstack-ii"
-            target="blank"
-          >
-            <Button size="md" width="140px">
-              Saiba mais
-            </Button>
-          </Link>
-        </Stack>
-
-        <Stack alignItems="center" spacing={4}>
+        {/* <Stack alignItems="center" spacing={4}>
           <ComputerBlue />
 
           <Text fontSize="30px" fontWeight="bold" maxW="210px">
-            Analista de Dados I
+            Name
           </Text>
 
           <Link href="https://bit.ly/AnalistaDeDados" target="blank">
@@ -80,13 +64,13 @@ const WorkWithUs: React.FC = () => (
               Saiba mais
             </Button>
           </Link>
-        </Stack>
+        </Stack> */}
 
-        <Stack alignItems="center" spacing={4}>
+        {/* <Stack alignItems="center" spacing={4}>
           <Computer />
 
           <Text fontSize="30px" fontWeight="bold" maxW="210px">
-            Programadora Web I
+            Name
           </Text>
 
           <Link
@@ -97,19 +81,19 @@ const WorkWithUs: React.FC = () => (
               Saiba mais
             </Button>
           </Link>
-        </Stack>
+        </Stack> */}
 
-        {/* <Text
-            fontSize="30px"
-            color="gray.soft"
-            maxW={["300px", "450px", "297px", "297px"]}
-          >
-            Quando abrirmos novas vagas, elas estarão aqui!
-          </Text> */}
-        {/* <Image
+        <Text
+          fontSize="30px"
+          color="gray.soft"
+          maxW={["300px", "450px", "297px", "297px"]}
+        >
+          Quando abrirmos novas vagas, elas estarão aqui!
+        </Text>
+        <Image
           width={[300, 350, 500]}
           src="/static/media/s3/work-with-us.png"
-        /> */}
+        />
       </Stack>
     </Section>
 
