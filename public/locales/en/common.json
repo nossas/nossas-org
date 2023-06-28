@@ -105,30 +105,15 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "salveaflorestamanaos": {
+        "title": "Salve a Floresta Manaós",
+        "description": "The main protected green area in the urban context of Manaus is at risk of having its territory reduced through Bill 582/21. We need to send our message to the mayor David Almeida to veto this setback and save the Forest Manaós!",
+        "navigate": "Help Manaós Forest!"
+      },
       "tiraope": {
         "title": "Tira o Pé da Minha Serra",
         "description": "The 2022 mobilization for Serra do Curral made history! And this was only possible because many people acted together. It turns out that the victories were temporary. And now we have an opportunity to consolidate them.",
         "navigate": "Join the campaign!"
-      },
-      "manifesta": {
-        "title": "M.a.n.i.f.e.s.t.a sem censura",
-        "description": "A performance of the show m.a.n.i.f.e.s.t.a, by Companhia de Dança do Palácio das Artes, was abruptly canceled by the state government of Minas Gerais. We need to come together for the show to come back!",
-        "navigate": "Press the Secretary Leônidas Oliveira!"
-      },
-      "abastece": {
-        "title": "Abastece sem mistério",
-        "description": "In the middle of the pandemic, the amount spent on fuel by councilors has increased by almost R$1 million reais. Even with online meetings! How can this be explained? We ask for transparency now!",
-        "navigate": "Press for transparency now!"
-      },
-      "soschuvas": {
-        "title": "SOS Chuvas",
-        "description": "More than 50 families from the neighborhood Monte das Oliveiras were directly affected by the torrential rains that hit Manaus in the last few weeks. We need to give an emergency response to their main needs!",
-        "navigate": "Donate now!"
-      },
-      "bolsa-construtora-nao": {
-        "title": "Bolsa construtora não",
-        "description": "Belo Horizonte wants to give a discount for construction companies to build large buildings within the perimeter of the Contorno Avenue. But this “discount” will come out of resources that would go to affordable housing, green areas and urban mobility for the entire city.",
-        "navigate": "Send your message to the mayor"
       },
       "1": {
         "title": "Amazônia de Pé",

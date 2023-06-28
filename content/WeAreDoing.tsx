@@ -36,46 +36,22 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/salve-floresta.png",
+            href: "https://www.salveaflorestamanaos.minhamanaus.org.br/",
+            alt: t("we-are-doing.sliders.salveaflorestamanaos.title"),
+            title: t("we-are-doing.sliders.salveaflorestamanaos.title"),
+            description: t(
+              "we-are-doing.sliders.salveaflorestamanaos.description"
+            ),
+            link: t("we-are-doing.sliders.salveaflorestamanaos.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/tiraope.png",
             href: "https://www.tiraopedaminhaserra.org/",
             alt: t("we-are-doing.sliders.tiraope.title"),
             title: t("we-are-doing.sliders.tiraope.title"),
             description: t("we-are-doing.sliders.tiraope.description"),
             link: t("we-are-doing.sliders.tiraope.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/manifesta.png",
-            href: "https://www.manifestasemcensura.minhabh.org.br/",
-            alt: t("we-are-doing.sliders.manifesta.title"),
-            title: t("we-are-doing.sliders.manifesta.title"),
-            description: t("we-are-doing.sliders.manifesta.description"),
-            link: t("we-are-doing.sliders.manifesta.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/abastece.png",
-            href: "https://www.abastecesemmisterio.meurio.org.br/",
-            alt: t("we-are-doing.sliders.abastece.title"),
-            title: t("we-are-doing.sliders.abastece.title"),
-            description: t("we-are-doing.sliders.abastece.description"),
-            link: t("we-are-doing.sliders.abastece.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/sos.png",
-            href: "https://soschuvas.minhamanaus.org.br/",
-            alt: t("we-are-doing.sliders.soschuvas.title"),
-            title: t("we-are-doing.sliders.soschuvas.title"),
-            description: t("we-are-doing.sliders.soschuvas.description"),
-            link: t("we-are-doing.sliders.soschuvas.navigate"),
-          },
-          {
-            src: "/static/media/we-are-doing/bolsa.png",
-            href: "https://bolsaconstrutoranao.com/",
-            alt: t("we-are-doing.sliders.bolsa-construtora-nao.title"),
-            title: t("we-are-doing.sliders.bolsa-construtora-nao.title"),
-            description: t(
-              "we-are-doing.sliders.bolsa-construtora-nao.description"
-            ),
-            link: t("we-are-doing.sliders.bolsa-construtora-nao.navigate"),
           },
           {
             src: "/static/media/we-are-doing/amazonia-de-pe.png",

@@ -105,30 +105,15 @@
   "we-are-doing": {
     "title": "Campanhas que <strong>estão rolando</strong>",
     "sliders": {
+      "salveaflorestamanaos": {
+        "title": "Salve a Floresta Manaós",
+        "description": "A principal área verde protegida em contexto urbano de Manaus corre risco de ter seu território reduzido por meio do Projeto de Lei 582/21. Precisamos enviar nosso recado ao prefeito David Almeida para vetar esse retrocesso e salvar a APA Floresta Manaós!",
+        "navigate": "Ajude a salvar a Floresta Manaós!"
+      },
       "tiraope": {
         "title": "Tira o Pé da Minha Serra",
         "description": "A luta pela Serra do Curral em 2022 fez história! E isso só foi possível porque muita gente agiu. E agiu em conjunto. Acontece que as vitórias foram provisórias. E temos agora uma oportunidade para consolidá-las.",
         "navigate": "Apoie a mobilização pela Serra de pé!"
-      },
-      "manifesta": {
-        "title": "M.a.n.i.f.e.s.t.a sem censura",
-        "description": "A reapresentação do espetáculo m.a.n.i.f.e.s.t.a, da Companhia de Dança do Palácio das Artes, foi abruptamente cancelada pelo governo de Romeu Zema. Precisamos nos mobilizar pela volta do espetáculo!",
-        "navigate": "Pressione o Secretário de Cultura"
-      },
-      "abastece": {
-        "title": "Abastece sem mistério",
-        "description": "Em plena pandemia, o valor gasto com combustível pelos  vereadores sofreu um aumento de quase R$1 milhão de reais. Mesmo com reuniões online! Como se explica isso? Pedimos transparência já!",
-        "navigate": "Pressione por transparência já"
-      },
-      "soschuvas": {
-        "title": "SOS Chuvas",
-        "description": "Mais de 50 famílias do Bairro Monte das Oliveiras foram diretamente atingidas pelas fortes chuvas torrenciais que assolaram Manaus nas últimas semanas. Precisamos dar uma resposta emergencial às suas principais necessidades!",
-        "navigate": "Doe agora"
-      },
-      "bolsa-construtora-nao": {
-        "title": "Bolsa construtora não",
-        "description": "A prefeitura de BH quer dar desconto para construtoras fazerem grandes prédios dentro do perímetro da avenida do Contorno. Só que esse “desconto” vai sair de recursos que iriam para moradias populares, áreas verdes e mobilidade urbana pra cidade toda.",
-        "navigate": "Envie seu recado ao prefeito"
       },
       "1": {
         "title": "Amazônia de Pé",
