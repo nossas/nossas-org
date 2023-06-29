@@ -55,6 +55,16 @@ const Mobilizations: React.FC<WithUserAgentProps> = ({ ua }) => {
           isMobile={ua?.isMobile || false}
           items={[
             {
+              src: "/static/media/our-victories/folha-secreta-nao.jpg",
+              alt: t("our-victories.carousel.folha-secreta-nao.title"),
+              title: t("our-victories.carousel.folha-secreta-nao.title"),
+              description: t(
+                "our-victories.carousel.folha-secreta-nao.description"
+              ),
+              href: "https://folhasecretanao.meurio.org.br/",
+              link: t("our-victories.link"),
+            },
+            {
               src: "/static/media/our-victories/fim-do-orcamento.png",
               alt: t("our-victories.carousel.orçamento-secreto.title"),
               title: t("our-victories.carousel.orçamento-secreto.title"),

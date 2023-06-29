@@ -46,6 +46,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
             link: t("we-are-doing.sliders.salveaflorestamanaos.navigate"),
           },
           {
+            src: "/static/media/we-are-doing/ta-vazando-gas.jpg",
+            href: "https://tavazandogas.meurio.org.br/",
+            alt: t("we-are-doing.sliders.tavazandogas.title"),
+            title: t("we-are-doing.sliders.tavazandogas.title"),
+            description: t("we-are-doing.sliders.tavazandogas.description"),
+            link: t("we-are-doing.sliders.tavazandogas.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/tiraope.png",
             href: "https://www.tiraopedaminhaserra.org/",
             alt: t("we-are-doing.sliders.tiraope.title"),
