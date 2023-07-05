@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas que <strong>estão rolando</strong>",
     "sliders": {
+      "spnaoestaavenda": {
+        "title": "SP Não Está a Venda",
+        "description": "O novo Plano Diretor foi aprovado na Câmara de Vereadores, sem a participação popular e estudos de viabilidade técnica. Os artigos 102 e 80 desse projeto só irão trazer mais trânsito e menos qualidade de vida para o paulistano, por isso precisamos exigir que o Prefeito Ricardo Nunes vete esses dois artigos e garanta uma cidade com mais qualidade de vida e menos trânsito! Envie seu recado para o prefeito Ricardo Nunes para barrar mais trânsito em SP.",
+        "navigate": "Ajude SP a ter mais qualidade de vida"
+      },
       "salveaflorestamanaos": {
         "title": "Salve a Floresta Manaós",
         "description": "A principal área verde protegida em contexto urbano de Manaus corre risco de ter seu território reduzido por meio do Projeto de Lei 582/21. Precisamos enviar nosso recado ao prefeito David Almeida para vetar esse retrocesso e salvar a APA Floresta Manaós!",
