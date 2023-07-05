@@ -36,6 +36,14 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
+            src: "/static/media/we-are-doing/sp-nao-esta-a-venda.png",
+            href: "https://www.spnaoestaavenda.minhasampa.org.br/",
+            alt: t("we-are-doing.sliders.spnaoestaavenda.title"),
+            title: t("we-are-doing.sliders.spnaoestaavenda.title"),
+            description: t("we-are-doing.sliders.spnaoestaavenda.description"),
+            link: t("we-are-doing.sliders.spnaoestaavenda.navigate"),
+          },
+          {
             src: "/static/media/we-are-doing/salve-floresta.png",
             href: "https://www.salveaflorestamanaos.minhamanaus.org.br/",
             alt: t("we-are-doing.sliders.salveaflorestamanaos.title"),
