@@ -183,6 +183,10 @@
         "role": "Designer",
         "about": "Ana Claudia is from Manaus, graduated in Graphic Design from Uninorte and graduated in Visual Arts from the Federal University of Amazonas. At NOSSAS, she works as a Senior Mobilizer and Designer, thinking about impactful visual strategies that engage and mobilize through the organization's projects. Having built her career in third sector organizations in Amazon such as Idesam and Fundação Amazônia Sustentável, she believes that design can play a social and questioning role, acting as a tool for transforming society."
       },
+      "barbara": {
+        "role": "Data Analyst",
+        "about": "Bárbara Gomes is a great enthusiast for technology, health-tech and technological innovations. With a very interdisciplinary profile, she believes that creativity and innovation come from the combination of several different areas. Graduated in International Relations and currently a student of Systems Analysis and Development, she has diverse experiences with technology, data analysis and technical tools. Carioca da gema, loves the beach, mate and sun!"
+      },
       "camila": {
         "role": "Mobilizer",
         "about": "Camila is from Minas Gerais, graduated in Social Communication with qualification in Journalism from UFMG and post-graduated in Writing and Creation from the University of Fortaleza. She has been acting as an activist in Belo Horizonte since 2012, forging herself on issues such as intersectional feminism, the right to the city, youth rights and other popular struggles. She has also been working as an independent cultural and audiovisual producer since 2014, having participated in series, films, film clubs, reading clubs, soirées and other initiatives. She was a communicator in the campaigns of Áurea Carolina (2018) and Célia Xakriabá (2022) to federal deputies and was part of Andréia de Jesus’ mandate in the Assembly of Minas Gerais for two years. She currently collaborates as a Mobilizer I at NOSSAS, with special dedication to Minha BH."
@@ -211,6 +215,10 @@
         "role": "Operations Intern",
         "about": "Fabiana is studying International Relations at the Fluminense Federal University. She started her IR career through Foreign Trade through the junior company, where she led a team of 30 people for one and a half years. After joining NOSSAS in 2022, she found herself in the third sector and she intends to specialize more every day in this area. Fabiana was born in Volta Redonda and is an Operations Intern at NOSSAS."
       },
+      "gabriel": {
+        "role": "Mobilizer",
+        "about": "Gabriel Lopo is from Montes Claros (MG), lives and works in the city of Belo Horizonte. He is a communicator, with 10 years of experience in activism and mobilization with the Youth Forum of Greater BH. He worked in the LabMAIS+ project of Sesc MG and culture and also coordinated the communication of the Toca na Favela Festival. Likes contemporary art and studying about music, having an authorial and personal work of visual arts and insertion in the cultural scene of Belo Horizonte."
+      },
       "gabrielly": {
         "role": "Articulator at Amazônia de Pé",
         "about": "Gabrielly Lima is from Manaus. She is an internationalist and postgraduate student in Project Management and Third Sector Organizations. Coordinator of SDSN Jovem Amazônia, she has experience in diasporas, 2030 Agenda and youth leadership."
@@ -222,6 +230,10 @@
       "gloria": {
         "role": "Programmer",
         "about": "Glória is from Bahia, currently living in Recife. She likes to learn about technology, information security and music. In addition, Gloria always pays attention to environments that encourage the growth of women in technology. An ex-law student, she decided to drop out of the course to dedicate herself to software development, going through Reprograma and starting her degree in Computer Science at UFPE."
+      },
+      "guilherme": {
+        "role": "Mobilizer",
+        "about": "Communicator working in political mobilization, he is also a journalist in training and a columnist on human rights and culture in independent media. Graduated in Geography from UNICAMP, with experience in popular and anti-racist education projects."
       },
       "gustavo": {
         "role": "Communications Analyst at Amazônia de Pé",
@@ -238,6 +250,10 @@
       "jerlan": {
         "role": "City Campaign Manager",
         "about": "Native from Rio Grande do Norte and passionate about João Pessoa, Jerlan holds a degree in Chemical Engineering from the Federal University of Paraiba (UFPB), with experience at Sapienza Università di Roma as a visiting student. In NOSSAS, he is City Manager at the Mobilization team. He served as Executive Director of Minha Jampa, one of the branches of the Nossas Cidades Network in the Northeast. Optimistic and good-natured, Jerlan loves to tell stories, enjoy his family and cook pizza while listening to his favorite podcasts."
+      },
+      "joao": {
+        "role": "Developer",
+        "about": "João is from Niteroi, now living in the north zone of Rio de Janeiro. Graduated in Systems Analysis and Development from Estácio de Sá and currently attending a postgraduate course in Software Architecture offered by PUC Minas and started working with programming in 2019. In addition, he researches digital humanities and inequality, culture and digital inclusion. Passionate about music, literature, video games and trying to make his hobby of collecting records to produce content about records and is also learning to disco. You will find him at rap shows, samba rodas and hardcore shows in Rio de Janeiro."
       },
       "kaianaku": {
         "role": "Articulator at Amazônia de Pé",
@@ -263,6 +279,10 @@
         "role": "Mobilization Coordinator",
         "about": "Letícia is Mobilization Coordinator at NOSSAS. Besides being Letícia from Meu Rio, she coordinates the organization's Training area, organizing the Mobilizers Program and dealing with the organization's regrants program. She has a master's degree in Management and Analysis of International Policies from PUC-Rio and a degree in International Relations from UFF. Previously, she was an International Cooperation Assistant at the Center for International Relations in Health (Cris) at Fiocruz. She has always been driven by migration, gender and race guidelines."
       },
+      "lucas": {
+        "role": "Advocacy Manager",
+        "about": "Lucas Louback is a human rights activist with extensive work in impoverished territories made vulnerable by violent conflict. He holds a degree in theology, a graduate degree in social sciences and was a research assistant at the Center for Brazilian Studies at San Diego State University. He has coordinated social impact and advocacy projects at the local and national level for the reduction of inequalities, and has built strategies for the implementation of public policies in peripheral territories. Lucas is passionate about the life of the Brazilian people, social justice and dreams of full democracy in the national territory."
+      },
       "luciana": {
         "role": "Mobilization Coordinator",
         "about": "Luciana is Mobilization Coordinator at NOSSAS. Before arriving at the organization she has worked with social projects related to Education and Humanization in the city of Manaus for some years and coordinated a voluntary project aimed at classes with free guidance for young people and adults from poor communities who are interested in taking the ENEM -  the Brazilian national exam to evaluate high school students. She has a degree in Public Relations from UFAM and has a specialization in Business Communication and Digital Media."
@@ -274,6 +294,10 @@
       "maria-alice": {
         "role": "Mobilization Intern",
         "about": "Currently living in Belo Horizonte, Maria Alice has being a designer for 2 years and is a student of Design at UFMG. Being from a small town in the countryside of São Paulo, she has a strong relationship with nature and simplicity, trying to reflect this in her graphic work. As a bisexual woman, she is deeply involved with LGBTQIA+ issues."
+      },
+      "miguel": {
+        "role": "Developer",
+        "about": "Miguel Soares is a programmer, popular technology educator and studies Science and Humanities at UFABC. Has two cats, enjoys reading books, crocheting, cycling and researching popular culture and music."
       },
       "maria-julia": {
         "role": "PMO/Project Manager",
@@ -302,6 +326,10 @@
       "tayane": {
         "role": "Operations Center Coordinator",
         "about": "Tayane started her professional life working with accounting and finance, but at the first opportunity she decided to dive into the area of HR and people management. She seeks to reflect in her professional life concepts that are aligned with her experience and personal trajectory. She got tired of being a “brunette” or a “mulata” and is rediscovering herself as a black woman. She enjoys being connected with nature, outdoor activities and enjoying the wonders of Rio de Janeiro in her free time. She holds a degree in Accounting, Management Processes and is currently studying an MBA in Strategic People Management. She joined NOSSAS as the Operations Center Coordinator."
+      },
+      "victor": {
+        "role": "Operations Analyst",
+        "about": "Victor holds a bachelor's degree in Accounting and an MBA in Financial Management and Controllership. After starting his career in private sector companies, he migrated to the third sector, where he no longer intends to leave. As a participant in social actions focused on the street population of Rio de Janeiro, he became one of the founders of the Ação na Rua project. At NOSSAS, Victor is an Operations Analyst."
       }
     }
   },

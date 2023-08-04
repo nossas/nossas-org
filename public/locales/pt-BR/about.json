@@ -182,6 +182,10 @@
         "role": "Designer",
         "about": "Ana Claudia é manauara, formada em Design Gráfico pela Uninorte e licenciada em Artes Visuais pela Universidade Federal do Amazonas. No NOSSAS atua como Designer e Mobilizadora Sênior pensando estratégias visuais de impacto que engajem e mobilizem através dos projetos da organização. Tendo construído sua trajetória em organizações do terceiro setor na Amazônia como Idesam e a Fundação Amazônia Sustentável, acredita que o design pode ter um papel social e questionador, atuando como ferramenta de transformação da sociedade."
       },
+      "barbara": {
+        "role": "Analista de Dados",
+        "about": "Bárbara Gomes é uma grande entusiasta por tecnologia,health-tech e inovações tecnológicas. Possui um perfil bastante interdisciplinar, acreditando que a criatividade e a inovação venham da junção de várias áreas diferentes. Graduada em Relações Internacionais e atualmente estudante de Análise e Desenvolvimento de Sistemas, possui experiências diversas com tecnologia, análise de dados e ferramentas técnicas. Carioca da gema, adora praia, mate e sol!"
+      },
       "camila": {
         "role": "Mobilizadora",
         "about": "Camila é mineira, graduada em Comunicação Social com habilitação em Jornalismo pela UFMG e pós-graduada em Escrita e Criação pela Universidade de Fortaleza. Atua como ativista em Belo Horizonte desde 2012, se forjando nas ruas e nas redes em temas como o feminismo interseccional, o direito à cidade, os direitos das juventudes e outras lutas populares. Atua também como produtora cultural e audiovisual independente desde 2014, tendo participado em séries, filmes, cineclubes, clubes de leitura, saraus e outras iniciativas. Foi comunicadora nas campanhas de Áurea Carolina (2018) e Célia Xakriabá (2022) a deputadas federais e integrou por dois anos o mandato de Andréia de Jesus na Assembleia de Minas. Atualmente colabora como Mobilizadora I no NOSSAS, com especial dedicação a Minha BH."
@@ -210,6 +214,10 @@
         "role": "Estagiária de Operações",
         "about": "Fabiana cursa Relações Internacionais na Universidade Federal Fluminense. Iniciou sua carreira de RI por meio do Comércio Exterior através da empresa júnior do curso, onde liderou por 1 ano e meio uma equipe de 30 pessoas. Porém após ingressar no NOSSAS em 2022 se encontrou totalmente no terceiro setor, sendo a área que pretende se especializar cada dia mais. Fabiana é natural de Volta Redonda e Estagiária de Operações do NOSSAS."
       },
+      "gabriel": {
+        "role": "Mobilizador",
+        "about": "Gabriel Lopo é de Montes Claros (MG), vive e trabalha em BH. É um comunicador, com experiência de 10 anos no ativismo e mobilização junto do Fórum das Juventudes da Grande BH. Trabalhou no projeto LabMAIS+ do Sesc MG e cultura e também coordenou a comunicação do Festival Toca na Favela. Gosta muito de arte contemporânea e estudar sobre música, tendo um trabalho autoral e pessoal de artes visuais e inserção na cena cultural de BH."
+      },
       "gabrielly": {
         "role": "Articuladora da Amazônia de Pé",
         "about": "Internacionalista, sagitariana, nascida em Manaus no ano de 2000 mas criada no interior do Maranhão. Desde os 16 anos pautando o Ativismo Climático, tendo trabalhado em agendas de Desenvolvimento Sustentável e Juventudes, bem como em projetos de defesa dos direitos humanos e pautas de gênero. Com especialização em Gestão de Projetos do terceiro setor, atualmente trabalha como analista na área de mobilização da Campanha Amazônia de Pé."
@@ -221,6 +229,10 @@
       "gloria": {
         "role": "Programadora",
         "about": "Glória é baiana, atual moradora de Recife e faz parte da equipe de tecnologia do Nossas como programadora. Ex-estudante de Direito, decidiu deixar o curso para se dedicar ao desenvolvimento de software, passando pela Reprograma e iniciando a graduação em Ciência da Computação na UFPE. Além disso, está sempre atenta a ambientes que incentivam o crescimento de mulheres na tecnologia."
+      },
+      "guilherme": {
+        "role": "Mobilizador",
+        "about": "Comunicador com atuação em mobilização política, é jornalista em formação e colunista de direitos humanos e cultura em mídias independentes. Graduado em Geografia pela UNICAMP, com experiência em projetos de educação popular e antirracista."
       },
       "gustavo": {
         "role": "Analista de Comunicação da Amazônia de Pé",
@@ -237,6 +249,10 @@
       "jerlan": {
         "role": "Gestor de Cidades",
         "about": "Potiguar de certidão e pessoense de coração, Jerlan é formado em Engenharia Química pela UFPB, com passagem na Sapienza Università di Roma e chega para integrar o time de Mobilização como Gestor de Cidades. Atuou como Diretor Executivo da Minha Jampa, um dos braços da Rede Nossas Cidades no Nordeste. Otimista e bem-humorado, adora contar histórias, curtir a família e fazer pizza enquanto escuta seus podcasts preferidos."
+      },
+      "joao": {
+        "role": "Desenvolvedor",
+        "about": "João é Niteroiense agora morando na zona norte do Rio de Janeiro. Formado em Analise e Desenvolvimento de Sistemas pela Estácio de Sá e atualmente cursa uma pós graduação em Arquitetura de Software ofertado pela PUC Minas e começou a trabalhar com programação em 2019. Além disso, pesquisa sobre humanidades digitais e desigualdade, cultura e inclusão digital. Apaixonado por música, literatura, videogames e tentando fazer do seu hobby de colecionar discos para produzir conteúdo sobre discos e também está aprendendo a discotecar. Você irá encontrar ele em shows de rap, rodas de sambas e shows de hardcore no Rio de Janeiro."
       },
       "kaianaku": {
         "role": "Articuladora da Amazônia de Pé",
@@ -262,6 +278,10 @@
         "role": "Coordenadora de Mobilização",
         "about": "Letícia Castro é Coordenadora de Mobilização no NOSSAS. Além de ser a Letícia do Meu Rio, ela coordena a área de Treinamento da organização, organizando o Programa de Mobilizadores e lidando com os editais de repasse de dinheiro da organização. Ela é mestre em Gestão e Análises de Políticas Internacionais pela PUC-Rio e graduada em Relações Internacionais pela UFF. Anteriormente, foi Assistente de Cooperação Internacional no Centro de Relações Internacionais em Saúde (Cris) da Fiocruz. É movida pelas pautas migratórias, de gênero e raça."
       },
+      "lucas": {
+        "role": "Gestor de Advocacy",
+        "about": "Lucas Louback é ativista pelos direitos humanos com ampla atuação em territórios empobrecidos e vulnerabilizados por conflitos violentos. É graduado em teologia, graduando em ciências-sociais e foi pesquisador auxiliar no centro de estudos brasileiros da San Diego State University. Coordenou projetos de impacto social e advocacy em nível local e nacional em prol da redução de desigualdades, e construiu estratégias para  implementação de políticas públicas em territórios periféricos. Lucas, é apaixonado pela vida do povo brasileiro, justiça social e sonha com a plena democracia no território nacional."
+      },
       "luciana": {
         "role": "Coordenadora de Mobilização",
         "about": "Manauara, Luciana atua com projetos sociais relacionados à educação e humanização na cidade de Manaus há alguns anos. Em paralelo ao seu trabalho no NOSSAS, ela coordena um projeto voluntário que orienta jovens e adultos de comunidades carentes que têm interesse em realizar o Enem. Ela é formada em Relações Públicas pela UFAM e tem especialização em Comunicação Empresarial e Mídias Digitais."
@@ -277,6 +297,10 @@
       "maria-julia": {
         "role": "PMO/Gestora de Projetos",
         "about": "Maju é formada em relações internacionais com foco em resolução de conflitos e cooperação internacional. Se especializou em comunicação estratégica e gestão de inovação social na teoria e prática, tendo mais de dez anos de experiência profissional (sete deles no setor social). Depois de iniciar sua carreira em empresas de comunicação do setor privado, foi a primeira contratação do NOSSAS, organização que ajudou a estruturar desde o início. Maju passou por cargos de liderança em todas as áreas; mobilização, tecnologia, treinamentos, estratégia e captação. No momento, cumpre o papel de PMO/Gestora de Projetos na organização. E para sustentar a saúde mental de uma pisciana-escorpiana nessa vida, a carioca precisou dar uma reviravolta. Hoje mora em uma vila no sul da Bahia, entre mar e rio, onde faz da natureza e da poesia suas aliadas por uma vida mais saudável."
+      },
+      "miguel": {
+        "role": "Desenvolvedor",
+        "about": "Miguel Soares é programadore, educador popular de tecnologia e estuda Ciência e Humanidades na UFABC. Tem dois gatos, curte ler livros, fazer crochê, andar de bike e pesquisar sobre cultura popular e música."
       },
       "paulo": {
         "role": "Analista de Comunidades da Amazônia de Pé",
@@ -301,6 +325,10 @@
       "tayane": {
         "role": "Coordenadora do núcleo de Operações",
         "about": "Tayane iniciou sua vida profissional trabalhando com contabilidade e finanças, mas na primeira oportunidade decidiu mergulhar na área de RH e gestão de pessoas. Busca refletir na sua vida profissional conceitos que estejam alinhados com sua vivência e trajetória pessoal. Cansou de ser morena ou Mulata e está se re descobrindo como Mulher preta. Gosta de estar conectada com a natureza, atividades ao ar livre e de apreciar as maravilhas do Rio de Janeiro nas horas vagas. É formada em Contabilidade, Processos Gerenciais e atualmente cursa MBA em Gestão Estratégica de Pessoas. Entra no NOSSAS como Coordenadora do núcleo de Operações."
+      },
+      "victor": {
+        "role": "Analista de Operações",
+        "about": "Victor é bacharel em Ciências Contábeis e possui MBA em Gestão Financeira e Controladoria. Após iniciar a sua carreira em empresas do setor privado, migrou para o terceiro setor, de onde não pretende mais sair. Participante de ações sociais voltadas à população de rua carioca, tornou-se um dos fundadores do projeto Ação na Rua. No NOSSAS, Victor é Analista de Operações."
       }
     }
   },
