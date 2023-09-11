@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas que <strong>estão rolando</strong>",
     "sliders": {
+      "aeleicaodoano": {
+        "title": "A Eleição do Ano",
+        "description": "A plataforma de inovação tecnológica A Eleição do Ano conecta o eleitorado com candidaturas alinhadas ao ECA na escolha dos Conselhos Tutelares das cidades do Brasil em 1º de outubro.",
+        "navigate": "Encontre a candidatura perfeita para você"
+      },
       "spnaoestaavenda": {
         "title": "SP Não Está a Venda",
         "description": "O novo Plano Diretor foi aprovado na Câmara de Vereadores, sem a participação popular e estudos de viabilidade técnica. Os artigos 102 e 80 desse projeto só irão trazer mais trânsito e menos qualidade de vida para o paulistano, por isso precisamos exigir que o Prefeito Ricardo Nunes vete esses dois artigos e garanta uma cidade com mais qualidade de vida e menos trânsito! Envie seu recado para o prefeito Ricardo Nunes para barrar mais trânsito em SP.",
