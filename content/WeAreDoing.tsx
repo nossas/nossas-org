@@ -36,7 +36,7 @@ const WeAreDoing: React.FC<Props> = ({ ua, backgroundColor }) => {
         isMobile={ua?.isMobile || false}
         items={[
           {
-            src: "/static/media/we-are-doing/a-eleicao-do-ano.png",
+            src: "/static/media/we-are-doing/a-eleicao-do-ano.jpg",
             href: "https://www.aeleicaodoano.org/",
             alt: t("we-are-doing.sliders.aeleicaodoano.title"),
             title: t("we-are-doing.sliders.aeleicaodoano.title"),
