@@ -145,13 +145,6 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/ana-claudia.png",
-          name: "Ana Claudia",
-          role: t("teams.team.anaclaudia.role"),
-          about: t("teams.team.anaclaudia.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/barbara.png",
           name: "Bárbara",
           role: t("teams.team.barbara.role"),
@@ -257,24 +250,10 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
-          avatar: "/static/media/team/igor.jpg",
-          name: "Igor",
-          role: t("teams.team.igor.role"),
-          about: t("teams.team.igor.about"),
-          team: t("teams.team.title"),
-        },
-        {
           avatar: "/static/media/team/jerlan.jpg",
           name: "Jerlan",
           role: t("teams.team.jerlan.role"),
           about: t("teams.team.jerlan.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/joao.png",
-          name: "João",
-          role: t("teams.team.joao.role"),
-          about: t("teams.team.joao.about"),
           team: t("teams.team.title"),
         },
         {
@@ -369,6 +348,13 @@ export const TeamMembers: React.FC = () => {
           team: t("teams.team.title"),
         },
         {
+          avatar: "/static/media/team/raphaela.jpeg",
+          name: "Raphaela",
+          role: t("teams.team.raphaela.role"),
+          about: t("teams.team.raphaela.about"),
+          team: t("teams.team.title"),
+        },
+        {
           avatar: "/static/media/team/renata.png",
           name: "Renata",
           role: t("teams.team.renata.role"),
@@ -401,13 +387,6 @@ export const TeamMembers: React.FC = () => {
           name: "tayane",
           role: t("teams.team.tayane.role"),
           about: t("teams.team.tayane.about"),
-          team: t("teams.team.title"),
-        },
-        {
-          avatar: "/static/media/team/victor.png",
-          name: "Victor",
-          role: t("teams.team.victor.role"),
-          about: t("teams.team.victor.about"),
           team: t("teams.team.title"),
         },
       ]}

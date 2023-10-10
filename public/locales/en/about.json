@@ -179,10 +179,6 @@
         "role": "Communications Analyst",
         "about": "Alice is from Manaus, graduated in Journalism from the Federal University of Amazonas and Communications Analyst at NOSSAS. She worked in communication advisory services for public entities and the third sector. She is a volunteer at Instituto Tchibum, where she is part of the Communication department. She is interested in traditional knowledge about the Amazon and is curious about the diversity of Brazil and the world."
       },
-      "anaclaudia": {
-        "role": "Designer",
-        "about": "Ana Claudia is from Manaus, graduated in Graphic Design from Uninorte and graduated in Visual Arts from the Federal University of Amazonas. At NOSSAS, she works as a Senior Mobilizer and Designer, thinking about impactful visual strategies that engage and mobilize through the organization's projects. Having built her career in third sector organizations in Amazon such as Idesam and Fundação Amazônia Sustentável, she believes that design can play a social and questioning role, acting as a tool for transforming society."
-      },
       "barbara": {
         "role": "Data Analyst",
         "about": "Bárbara Gomes is a great enthusiast for technology, health-tech and technological innovations. With a very interdisciplinary profile, she believes that creativity and innovation come from the combination of several different areas. Graduated in International Relations and currently a student of Systems Analysis and Development, she has diverse experiences with technology, data analysis and technical tools. Carioca da gema, loves the beach, mate and sun!"
@@ -243,17 +239,9 @@
         "role": "Production and Culture Manager at Amazônia de Pé",
         "about": "Helena is a cultural manager, producer and researcher. Helena holds a BA in Visual Arts (FASM, 2007) and a Master's in Community Social Work from the Universidad Complutense de Madrid (2020), with a dissertation on the presence of the community approach in public cultural management. Before NOSSAS, she worked as a manager at Vila Itororó Canteiro Aberto, was part of the production team of the Fundação Bienal de São Paulo, is one of the creators of the PLUS cultural exchange platform (São Paulo - Munich, DE) and coordinated projects linked to institutions such as Sesc SP and Goethe-Institut. Since 2014, she has also coordinated the Landversation-project by Nigerian artist Otobong Nkanga, and was part of the team in the new phase of the Museum of Modern Art in Rio de Janeiro. At NOSSAS, Helena is the production and culture coordinator for the Amazônia de Pé project."
       },
-      "igor": {
-        "role": "Programmer",
-        "about": "Igor is a software developer and music producer. Igor has extensive programming experience and has been contributing to the development of new technologies at NOSSAS for years. Igor is a member of the Python Brasil Association, is passionate about music, culture and technology."
-      },
       "jerlan": {
         "role": "City Campaign Manager",
         "about": "Native from Rio Grande do Norte and passionate about João Pessoa, Jerlan holds a degree in Chemical Engineering from the Federal University of Paraiba (UFPB), with experience at Sapienza Università di Roma as a visiting student. In NOSSAS, he is City Manager at the Mobilization team. He served as Executive Director of Minha Jampa, one of the branches of the Nossas Cidades Network in the Northeast. Optimistic and good-natured, Jerlan loves to tell stories, enjoy his family and cook pizza while listening to his favorite podcasts."
-      },
-      "joao": {
-        "role": "Developer",
-        "about": "João is from Niteroi, now living in the north zone of Rio de Janeiro. Graduated in Systems Analysis and Development from Estácio de Sá and currently attending a postgraduate course in Software Architecture offered by PUC Minas and started working with programming in 2019. In addition, he researches digital humanities and inequality, culture and digital inclusion. Passionate about music, literature, video games and trying to make his hobby of collecting records to produce content about records and is also learning to disco. You will find him at rap shows, samba rodas and hardcore shows in Rio de Janeiro."
       },
       "kaianaku": {
         "role": "Articulator at Amazônia de Pé",
@@ -307,6 +295,10 @@
         "role": "Community Analyst at Amazônia de Pé",
         "about": "For 2 years, Paulo coordinated the working group on Climate Change at Engajamundo - working with mobilization, training and political advocacy with young people from all over Brazil. He has already been part of 4 delegations to different COPs, (UN International Conference on Climate Change) where he worked with communication strategies, activism and lobbying. He has already been part of the Purpose Climate Lab as a Campaigner, on the Actionnaid campaign team facilitating training on Climate Justice with young people in Africa and Asia, and was an assistant for social impact projects at ICE (Institute of Corporate Citizenship). He is from Feira de Santana - BA and works as a Community Analyst in the Amazônia de Pé campaign by NOSSAS."
       },
+      "raphaela": {
+        "role": "Operations Analyst",
+        "about": "Raphaela started her professional career in Human Resources at the age of 15 through an NGO project aimed at getting young people from the periphery into the job market. Seven years ago she moved into the administrative and financial areas and since then she has worked in search of professional development and growth. She has a technical degree in Administration and is studying for a degree in Accounting. She likes camping, taking part in outdoor activities and events and watching series."
+      },
       "renata": {
         "role": "Strategy and Partnerships Manager at Amazônia de Pé",
         "about": "Renata is a biologist and recently graduated. She migrated to the Amazon, where he lived and worked for 7 years in direct contact with the indigenous and riverside realities. She specialized in public policies on land use rights by traditional populations and holds a Master's Degree in Ecology from the National Institute for Research in the Amazon. She has been working in the third sector for 11 years, working for national and international organizations such as WCS, WAP, INPA, MoFV, Instituto Mamirauá, Purpose and ABCD, acting on the agenda of political strategy, articulation between civil society and government, advocacy, mobilization and campaigns strategy. Currently, she is part of the NOSSAS team as Strategy and Partnership Manager in the Amazônia de Pé campaign."
@@ -326,10 +318,6 @@
       "tayane": {
         "role": "Operations Center Coordinator",
         "about": "Tayane started her professional life working with accounting and finance, but at the first opportunity she decided to dive into the area of HR and people management. She seeks to reflect in her professional life concepts that are aligned with her experience and personal trajectory. She got tired of being a “brunette” or a “mulata” and is rediscovering herself as a black woman. She enjoys being connected with nature, outdoor activities and enjoying the wonders of Rio de Janeiro in her free time. She holds a degree in Accounting, Management Processes and is currently studying an MBA in Strategic People Management. She joined NOSSAS as the Operations Center Coordinator."
-      },
-      "victor": {
-        "role": "Operations Analyst",
-        "about": "Victor holds a bachelor's degree in Accounting and an MBA in Financial Management and Controllership. After starting his career in private sector companies, he migrated to the third sector, where he no longer intends to leave. As a participant in social actions focused on the street population of Rio de Janeiro, he became one of the founders of the Ação na Rua project. At NOSSAS, Victor is an Operations Analyst."
       }
     }
   },
