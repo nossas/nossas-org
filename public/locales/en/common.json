@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "devolvenossobusao": {
+        "title": "Devolve Nosso Busão",
+        "description": "Did you know that São Paulo’s buses vanish in broad daylight? Over 1 billion trips have disappeared in a decade! The situation is outrageous and leaves those who need it most stranded. Check the map to see if your bus line has vanished and urge the mayor to return the bus lines to the people!",
+        "navigate": "Access our map and urge the mayor now!"
+      },
       "aeleicaodoano": {
         "title": "A Eleição do Ano",
         "description": "“The Year’s Choice” connects citizens with compromised candidates to the Guardianship Council oh each Brazilian city. The choice will happen at October 1st.",

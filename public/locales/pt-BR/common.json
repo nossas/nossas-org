@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas que <strong>estão rolando</strong>",
     "sliders": {
+      "devolvenossobusao": {
+        "title": "Devolve Nosso Busão",
+        "description": "Você sabia que os ônibus de São Paulo desaparecem à luz do dia? Mais de 1 bilhão de viagens em uma década sumiram! A situação é absurda e deixa na mão quem mais precisa. Veja no mapa se sua linha sumiu e pressione agora o prefeito a devolver as linhas de ônibus para a população!",
+        "navigate": "Acesse nosso mapa e pressione agora o prefeito!"
+      },
       "aeleicaodoano": {
         "title": "A Eleição do Ano",
         "description": "A plataforma de inovação tecnológica A Eleição do Ano conecta o eleitorado com candidaturas alinhadas ao ECA na escolha dos Conselhos Tutelares das cidades do Brasil em 1º de outubro.",
