@@ -115,23 +115,27 @@
       "members": {
         "anacarolina": {
           "role": "Diretora do ISER",
-          "about": "Cientista política e pesquisadora, Ana Carolina é especialista em políticas públicas locais e participação social. Foi gerente programática na Fundación Avina, onde fomentou experimentos em desenvolvimento urbano, gerenciamento local e inovação política na América Latina, e hoje é diretora do ISER, organização que promove estudos e pesquisas sobre religião e justiça social no Brasil. Tem mestrado em Relações Internacionais e é doutoranda pelo CPDOC/FGV."
+          "about": "Cientista política e pesquisadora, Ana Carolina dedica-se a pesquisas sobre o sistema político brasileiro, eleições e o papel de grupos religiosos na política. Foi assessora da Prefeitura de São Paulo e gerente de programas para a América Latina da Fundación Avina. Atualmente é diretora executiva do ISER - Instituto de Estudos da Religião e colunista de política da revista Piauí. Tem mestrado em Relações Internacionais e é doutoranda pelo CPDOC/FGV."
         },
         "anapaula": {
           "role": "Fundadora da Casa Rede e colunista do jornal O Globo",
-          "about": "Ana Paula é escritora, produtora e colunista do jornal O Globo. Atualmente, vive entre Rio de Janeiro e Luanda, onde dirige a produtora Aláfia e o espaço cultural Casa Rede. Foi produtora e apresentadora do programa \"Querendo Assunto\", tem contos e poesias publicados em coletâneas nacionais e internacionais e, desde 2016, tem contribuído regularmente com a revista feminista AzMina."
+          "about": "Ana Paula Lisboa é escritora, editora, apresentadora e colunista. Favelada e carioca de nascimento, atualmente divide a vida entre o Rio de Janeiro e Luanda, capital de Angola. Escreve periodicamente na newsletter \"Cabeça de Sardinha\" e para o \"Segundo Caderno\" do jornal O Globo, além de editar o jornal comunitário \"Maré de Notícias\"."
+        },
+        "atila": {
+          "role": "Diretor da Fundação Ford",
+          "about": "Atila Roque é Historiador, Cientista Político e Diretor da Fundação Ford no Brasil. Exerceu papel de liderança em diferentes organizações da sociedade civil no Brasil e no exterior. Foi Diretor Executivo da ActionAid International nos EUA e do INESC (Instituto de Estudos Socioeconômicos). Antes de assumir a Fundação Ford, em 2017, foi  Diretor Executivo da Anistia Internacional no Brasil."
         },
         "branca": {
           "role": "Fundadora e presidente da Rádio Novelo",
-          "about": "Branca é filantropa e Presidente do Conselho Administrativo do Instituto Serrapilheira, primeira instituição privada, sem fins lucrativos, de fomento à ciência no Brasil. Ela também é presidente da Rádio Novelo e apresentadora do podcast \"Maria vai com as outras\", sobre mulheres no mercado de trabalho. Foi professora da PUC-Rio por mais de 10 anos e possui experiência sólida em comunicação para grandes audiências."
+          "about": "Branca Vianna é fundadora da produtora de podcasts Rádio Novelo e idealizadora e apresentadora dos podcasts Praia dos Ossos, Crime e Castigo e Rádio Novelo Apresenta. Branca é intérprete simultânea de formação e exerceu essa profissão por 25 anos, até virar podcaster."
         },
-        "felipe": {
-          "role": "Diretor de investimentos da Luminate",
-          "about": "À frente da Direção de investimentos na América Latina da Luminate, Felipe apoia a organização no fortalecimento de iniciativas e políticas públicas de direitos digitais, transparência financeira, independência da mídia e tecnologia cívica na região. Antes de entrar na Luminate, ele foi estrategista no Banco Mundial para a promoção da transparência nas instâncias de governo. Também foi membro fundador da Open Contracting Partnership."
+        "enrica": {
+          "role": "Líder do Mapa do Acolhimento",
+          "about": "Enrica é feminista e mãe. Nasceu no Rio de Janeiro, mas morou, estudou e trabalhou na Bélgica, na África do Sul e no Japão. É formada em Ciências Políticas pela New School, com especialização em Estudos Globais e História e é mestranda em Resolução de Conflito e Desenvolvimento da Universidade para a Paz da ONU na Costa Rica. Fez parte do time de liderança do NOSSAS por 9 anos e hoje lidera o Mapa do Acolhimento, iniciativa que se originou na organização e se tornou uma entidade própria em 2023."
         },
-        "ines": {
-          "role": "Diretora do Instituto Betty & Jacob Lafer",
-          "about": "Inês é especialista em iniciativas filantrópicas e políticas públicas focadas em crianças e adolescentes. Ela iniciou sua carreira como psicóloga no SESI antes de tornar-se consultora na Kairós Desenvolvimento Social em projetos nas áreas de criança e adolescência e assistência social. Foi gerente programática na Fundação Maria Cecília Souto Vidigal, assistente técnica na Comissão Municipal de Direitos Humanos de São Paulo e gerente de projetos no IDIS."
+        "semayat": {
+          "role": "Co-fundadora da Nós, mulheres da periferia",
+          "about": "Jornalista formada pela Universidade Metodista de São Paulo e escritora, Semayat é cofundadora do site jornalístico Nós, mulheres da periferia. Hoje ocupa o cargo de diretora de conteúdo. Atualmente, também é consultora jornalística no podcast Mano a Mano, liderado pelo rapper Mano Brown. Entre 2018 e 2020 foi coordenadora de comunicação no Instituto Vladimir Herzog."
         }
       }
     },
@@ -236,7 +240,7 @@
       },
       "helena": {
         "role": "Gestora de Produção e Cultura da Amazônia de Pé",
-        "about": "Helena é gestora cultural, produtora e pesquisadora. Helena é Bacharel em Artes Visuais (FASM, 2007) e Mestre em Trabalho Social Comunitário pela Universidad Complutense de Madrid (2020), com uma dissertação sobre a presença da abordagem comunitária na gestão cultural pública. Antes do NOSSAS, trabalhou como gestora na Vila Itororó Canteiro Aberto, integrou a equipe de produção da Fundação Bienal de São Paulo, é uma das idealizadoras da plataforma de intercâmbio cultural PLUS (São Paulo - Munique, DE) e coordenou projetos vinculados a instituições como Sesc SP e Goethe-Institut. Desde 2014, também coordena o Landversation - projeto da artista nigeriana Otobong Nkanga, e fez parte da equipe na nova fase do Museu de Arte Moderna do Rio de Janeiro. No NOSSAS, Helena é coordenadora de produção e cultura no projeto Amazônia de Pé."
+        "about": "Helena é gestora cultural, produtora e pesquisadora. Suas práticas e pesquisas articulam campos como cultura, políticas públicas, território, processos participativos e de base comunitária. Helena é bacharel em Artes Visuais (2007) e mestre em Trabalho Social Comunitário pela Universidade Complutense de Madrid (2020), com uma pesquisa sobre a presença da abordagem comunitária na gestão cultural pública. Antes do NOSSAS, trabalhou em organizações públicas e da sociedade civil, como a Secretaria Municipal de Cultura de SP, o MAM Rio e a Fundação Bienal de SP. No NOSSAS atua como gestora de produção e cultura do movimento Amazônia de Pé."
       },
       "jerlan": {
         "role": "Gestor de Cidades",
@@ -272,7 +276,7 @@
       },
       "luciana": {
         "role": "Coordenadora de Mobilização",
-        "about": "Manauara, Luciana atua com projetos sociais relacionados à educação e humanização na cidade de Manaus há alguns anos. Em paralelo ao seu trabalho no NOSSAS, ela coordena um projeto voluntário que orienta jovens e adultos de comunidades carentes que têm interesse em realizar o Enem. Ela é formada em Relações Públicas pela UFAM e tem especialização em Comunicação Empresarial e Mídias Digitais."
+        "about": "Manauara, formada em Relações Públicas com especialização em Comunicação Empresarial e Mídias Digitais. Atua como Coordenadora de Mobilizações no NOSSAS e é integrante da Diretoria do Instituto Tchibum, com projetos voltados à Educação e Humanização na cidade de Manaus."
       },
       "maira": {
         "role": "Gestora de Treinamento",
@@ -286,9 +290,9 @@
         "role": "PMO/Gestora de Projetos",
         "about": "Maju é formada em relações internacionais com foco em resolução de conflitos e cooperação internacional. Se especializou em comunicação estratégica e gestão de inovação social na teoria e prática, tendo mais de dez anos de experiência profissional (sete deles no setor social). Depois de iniciar sua carreira em empresas de comunicação do setor privado, foi a primeira contratação do NOSSAS, organização que ajudou a estruturar desde o início. Maju passou por cargos de liderança em todas as áreas; mobilização, tecnologia, treinamentos, estratégia e captação. No momento, cumpre o papel de PMO/Gestora de Projetos na organização. E para sustentar a saúde mental de uma pisciana-escorpiana nessa vida, a carioca precisou dar uma reviravolta. Hoje mora em uma vila no sul da Bahia, entre mar e rio, onde faz da natureza e da poesia suas aliadas por uma vida mais saudável."
       },
-      "miguel": {
-        "role": "Desenvolvedor",
-        "about": "Miguel Soares é programadore, educador popular de tecnologia e estuda Ciência e Humanidades na UFABC. Tem dois gatos, curte ler livros, fazer crochê, andar de bike e pesquisar sobre cultura popular e música."
+      "miguel-soares": {
+        "role": "Programadore",
+        "about": "Miguel Soares é desenvolvedore de software, educadore popular de tecnologia e estuda Ciência e Humanidades na UFABC. Tem dois gatos, curte ler livros, fazer crochê e escrever."
       },
       "paulo": {
         "role": "Analista de Comunidades da Amazônia de Pé",
