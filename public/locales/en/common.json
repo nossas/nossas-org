@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "What <strong>we're doing</strong>",
     "sliders": {
+      "aguamaiscaranao": {
+        "title": "Água Mais Cara Não",
+        "description": "Governor Tarcísio de Freitas seeks to privatize Sabesp. Beyond being unconstitutional, it will raise water tariffs and be a disaster. To stop this, we will pressure state deputies to vote against this absurdity!",
+        "navigate": "Support the mobilization against the increase in water tariffs"
+      },
       "devolvenossobusao": {
         "title": "Devolve Nosso Busão",
         "description": "Did you know that São Paulo’s buses vanish in broad daylight? Over 1 billion trips have disappeared in a decade! The situation is outrageous and leaves those who need it most stranded. Check the map to see if your bus line has vanished and urge the mayor to return the bus lines to the people!",

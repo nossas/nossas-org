@@ -105,6 +105,11 @@
   "we-are-doing": {
     "title": "Campanhas que <strong>estão rolando</strong>",
     "sliders": {
+      "aguamaiscaranao": {
+        "title": "Água Mais Cara Não",
+        "description": "O governador Tarcísio de Freitas quer privatizar a Sabesp. Além de inconstitucional, vai aumentar a tarifa de água e ser um desastre. Para barrar, vamos pressionar deputados estaduais a votar contra esse absurdo!",
+        "navigate": "Apoie a mobilização contra o aumento da tarifa de água"
+      },
       "devolvenossobusao": {
         "title": "Devolve Nosso Busão",
         "description": "Você sabia que os ônibus de São Paulo desaparecem à luz do dia? Mais de 1 bilhão de viagens em uma década sumiram! A situação é absurda e deixa na mão quem mais precisa. Veja no mapa se sua linha sumiu e pressione agora o prefeito a devolver as linhas de ônibus para a população!",
