@@ -12,8 +12,9 @@ import { createApolloClient } from "../lib";
 // add global css
 import "../styles/globals.css";
 import { useRouter } from "next/router";
+import { initializeGA, logPageView } from "../utils/analytics";
 
-ReactGA.initialize("G-7R11G6KBCH");
+initializeGA("G-7R11G6KBCH");
 
 const theme = extendTheme(nossas);
 
@@ -22,7 +23,7 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    ReactGA.pageview(router.pathname);
+    logPageView(router.pathname);
   }, [router.pathname]);
 
   return (
@@ -33,9 +34,5 @@ function App({ Component, pageProps }) {
     </ChakraProvider>
   );
 }
-
-App.getInitialProps = async (appContext) => ({
-  ...(await NextApp.getInitialProps(appContext)),
-});
 
 export default appWithTranslation(App);
