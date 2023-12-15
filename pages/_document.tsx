@@ -37,6 +37,23 @@ class MyDocument extends Document {
             crossOrigin=""
           />
           <link href="/styles/globals.css" rel="stylesheet" />
+
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-7R11G6KBCH"
+          ></script>
+          <script>
+            dangerouslySetInnerHTML=
+            {{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-7R11G6KBCH');
+              `,
+            }}
+          </script>
         </Head>
         <body>
           <Main />
